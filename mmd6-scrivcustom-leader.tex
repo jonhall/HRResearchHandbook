@@ -1,0 +1,245 @@
+\documentclass[a4paper,12pt,oneside,landscape]{memoir}
+\footnotesinmargin
+
+\usepackage{ifdraft}
+
+\usepackage[svgnames]{xcolor}
+
+%%%For Activities and the like
+\usepackage[many]{tcolorbox}
+\newtcolorbox{activity}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=Pink!80!white,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+	title=%\textbf
+		{\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID}}
+
+\newtcolorbox{discussion}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=Pink!80!white,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+title={Discussion\hfill \#\CurrentQuestionID},
+}
+
+\newtcolorbox{tip}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=Green!20!white,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+title={Discussion\hfill \#\CurrentQuestionID},
+}
+
+%%%For question solution pairs, with delayed printing
+\usepackage{exsheets}
+\SetupExSheets{
+	headings=empty,
+	question/pre-hook=\begin{activity},
+	question/post-hook=\end{activity},
+	solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
+	solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
+	solution/print=true,
+	}
+\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
+%%For layout
+\usepackage{geometry}
+\geometry{
+%  showframe,
+%  paperwidth=6in,
+%  paperheight=9in,
+%	asymmetric,
+  left=1cm,
+  right=1cm,
+  top=1.5cm,
+  bottom=1.5cm,
+  marginparsep=8mm,
+  marginparwidth=75mm,
+  includemp,
+  includehead,
+}
+
+%%Number \section and \subsection only
+\setcounter{secnumdepth}{2}
+
+%\usepackage{marginnote}
+%\def\footnote#1{\marginnote{\footnotesize\textit{#1}}}
+%\renewcommand*{\raggedleftmarginnote}{}
+
+%\usepackage{lipsum}
+
+ %%Guidance environment
+\newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
+          {\textbf{Guidance}}}
+    {}
+  
+\def\exampleColor{CornflowerBlue!40!white}
+  
+\newtcolorbox{example}[1]{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\exampleColor,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{#1}}%
+  
+\newtcolorbox{running}[1]{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\exampleColor,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{#1}}%
+
+%%Quote environment
+\renewtcolorbox{quote}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=Linen,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{Quote}}%
+  
+
+%%For tables
+\usepackage{longtable,tabulary}
+%%Hack for @{}lllll@{} instead of @{}LLLL@{}
+\newcolumntype{l}{L}
+%%so that tables extend into margin
+\newcommand{\tablewidth}{1.2\textwidth}
+%%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
+\makeatletter
+
+\def\ltabulary{%
+	\def\endfirsthead{\\}%
+	\def\endhead{\\}%
+	\def\endfoot{\\}%
+	\def\endlastfoot{\\}%
+	\def\tabulary{%
+		\def\TY@final{%
+			\def\endfirsthead{\LT@end@hd@ft\LT@firsthead}%
+			\def\endhead{\LT@end@hd@ft\LT@head}%
+			\def\endfoot{\LT@end@hd@ft\LT@foot}%
+			\def\endlastfoot{\LT@end@hd@ft\LT@lastfoot}%
+			\longtable}%
+		\let\endTY@final\endlongtable
+		\TY@tabular}%
+%	\dimen@\columnwidth
+%	\advance\dimen@-\LTleft
+%	\advance\dimen@-\LTright
+	\tabulary}%\dimen@}
+
+\def\endltabulary{\endtabulary}
+
+\makeatother
+
+\usepackage{booktabs}%%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
+
+\usepackage{fontspec}
+
+\usepackage{iffont}
+\settofirstfound{\mainfont}{
+	Lato Light,
+	Arial,
+	}
+\settofirstfound{\boldfont}{
+	Lato Bold,
+	} 
+\setmainfont[BoldFont=\boldfont]{\mainfont}
+
+%%Bibtex stuff
+\usepackage[
+	backend=bibtex,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN}
+\addbibresource{collatedBib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{\printsolutions
+	\printbibliography}
+
+%%Answer environment
+\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
+\item}
+    {\end{trivlist}}
+
+%%\doublespacing
+%\usepackage{calc}
+%\usepackage[textheight=26\baselineskip+10pt]{geometry}
+%\usepackage{fancyhdr}
+
+%\usepackage[inline,shortlabels]{enumitem}
+\usepackage{hyperref}
+\usepackage{xurl}
+
+%\def\@maketitle{\newpage
+%    \begin{flushleft}%
+%        \let\footnote\thanks%
+%       {\LARGE\bfseries\sffamily \@title \par\medskip}%
+%       {\large\@author\par}%
+%       {\large\@date}%
+%    \end{flushleft}\par\vskip\baselineskip%
+%    \thispagestyle{empty}}%
+
+%%Hack for diagrams
+\let\oldincludegraphics=\includegraphics
+\def\includegraphics[#1]{\oldincludegraphics[width=\textwidth]}
+\let\textbf=\textsc
+
+\title{Master Research\\ Handbook}
+\author{Lucia Rapanotti and Jon Hall}
