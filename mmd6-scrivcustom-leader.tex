@@ -5,6 +5,15 @@
 
 \usepackage[svgnames]{xcolor}
 
+\usepackage[textsize=tiny,obeyFinal]{todonotes}
+% 2022-10-11: so that todos don't eat following spaces.
+% https://tex.stackexchange.com/questions/11802/todo-note-steals-space
+\usepackage{xpatch}
+\makeatletter
+\xpretocmd{\todo}{\@bsphack}{}{}
+\xapptocmd{\todo}{\@esphack}{}{}
+\makeatother
+
 %%%For Activities and the like
 \usepackage[many]{tcolorbox}
 \newtcolorbox{activity}{
