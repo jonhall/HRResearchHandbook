@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,landscape]{memoir}
+\documentclass[a4paper,12pt,oneside,landscape]{memoir}
 \usepackage[perpage,side,symbol*]{footmisc}
 
 \usepackage{ifdraft}
@@ -166,7 +166,7 @@ title={Tip},
 %%Hack for @{}lllll@{} instead of @{}LLLL@{}
 \newcolumntype{l}{L}
 %%so that tables extend into margin
-\newcommand{\tablewidth}{1.2\textwidth}
+\newcommand{\tablewidth}{1.4\textwidth}
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
 \makeatletter
 
@@ -233,7 +233,7 @@ title={Tip},
 %\usepackage[textheight=26\baselineskip+10pt]{geometry}
 %\usepackage{fancyhdr}
 
-%\usepackage[inline,shortlabels]{enumitem}
+\usepackage[inline,shortlabels]{enumitem}
 \usepackage{hyperref}
 \usepackage{xurl}
 
