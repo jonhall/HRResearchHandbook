@@ -166,7 +166,7 @@ title={Tip},
 %%Hack for @{}lllll@{} instead of @{}LLLL@{}
 \newcolumntype{l}{L}
 %%so that tables extend into margin
-\newcommand{\tablewidth}{1.4\textwidth}
+\newcommand{\tablewidth}{1.2\textwidth}
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
 \makeatletter
 
@@ -246,10 +246,8 @@ title={Tip},
 %    \end{flushleft}\par\vskip\baselineskip%
 %    \thispagestyle{empty}}%
 
-%%Hack for diagrams
-\let\oldincludegraphics=\includegraphics
-\def\includegraphics[#1]{\oldincludegraphics[width=\textwidth]}
-\let\textbf=\textsc
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
 
 \title{Master Research\\ Handbook}
 \author{Lucia Rapanotti and Jon Hall}
