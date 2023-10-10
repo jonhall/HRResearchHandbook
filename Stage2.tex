@@ -474,40 +474,48 @@ There are sequences, there are good sequences; and there are perfect sequences. 
 
 The perfect sequence will meet the following rule:
 %
-\paragraph{Rule 1 of argument sequences:} \textit{no earlier argument will depend on a later argument}.
+\paragraph{Rule 1 of argument construction:} \textit{no earlier argument will depend on a later argument}.
 
-That's it. With this rule, you're making your readers' job easier: when they come to try to understand your later argument they will have everything they need to have to do so.
+That's it. With this rule, you're building an argument tree\footnote{Technically, a directed acyclic graph, but the difference shouldn't worry you.} making your reader's job easier: when they come to try to understand a later argument they will have everything they need to have to do so.
 
-Of course, the perfect argument doesn't always exist – arguments can be circular\footnote{Circular arguments aren't great in terms of when they say about the logic by which they're constructed, but do sometimes happen.}. 
+Anything argument structure that breaks this rule – a tree with cycles, for instance, in which an earlier argument depends on a later one – makes your readers' job harder.\footnote{Not impossible, though.}. 
 
 \begin{example}{A circular argument}
-Let's look at a circular argument:
+Let's look at a simple circular argument:
 
-\paragraph{Argument:} 
-\blockquote{Small businesses are the only way the economy can truly work well. The stimulation and employment they provide is invaluable. And, it is this stimulation and employment which allows small businesses to truly thrive.}
+%\paragraph{Argument:} 
+%\blockquote{Small businesses are the only way the economy can truly work well. The stimulation and employment they provide is invaluable. And, it is this stimulation and employment which allows small businesses to truly thrive.}
+%%
+%\begin{description}%[label={Premise \arabic*:}]
+%\item [Claim 1] Small businesses are required for an economy to function.
+%%\item [Reason] Small businesses employ people and strengthen the economy.
+%\item [Claim 2] A working economy is required for a small business to function.
+%\end{description}
 %
-\begin{description}%[label={Premise \arabic*:}]
-\item [Claim 1] Small businesses are required for an economy to function.
-%\item [Reason] Small businesses employ people and strengthen the economy.
-\item [Claim 2] A working economy is required for a small business to function.
-\end{description}
+%The above argues the importance of small businesses to an economy whilst claiming that the economy requires small business and entrepreneurs; and also that small business and entrepreneurs require a working economy. In the BCW model, we could restate this as:
+%
 
-The above argues the importance of small businesses to an economy whilst claiming that the economy requires small business and entrepreneurs; and also that small business and entrepreneurs require a working economy. In the BCW model, we could restate this as:
-
+\paragraph{Argument 1}
 \begin{description}%[label={Premise \arabic*:}]
-\item [Claim 1] Small businesses are required for an economy to function.
+\item [Claim 1] Small businesses\footnote{Adapted from \url{https://helpfulprofessor.com/circular-reasoning-fallacy-examples/}} are required for an economy to function.
 \item [Reason 1]Small businesses employ people and strengthen the economy.
 \end{description}
 
+\paragraph{Argument 2}
 \begin{description}
-\item [Claim 2] A working economy is required for a small business to function.
-\item [Reason 2]A working economy is more able to provide the investment that allows small business to grow.
+\item [Claim 2] A strong economy is required for a small business to function.
+\item [Reason 2]A strong economy is more able to provide the investment that small business need to grow.
 \end{description}
-
-In this argument small business and entrepreneurs are both the cause of a working economy and the consequence of one.
 \end{example}
 
-Thing is, there is an actual circular relationship between small business and economies – that they support each other is often the reason why an economy  grows. The problem for us is that we can't we need to consult an economist for a more valid explanation for why this circularity exists.\footnote{Adapted from \url{https://helpfulprofessor.com/circular-reasoning-fallacy-examples/}}
+These arguments together give that small businesses are both the cause of a working economy and the consequence of one; they depend on each other. Inverting their order does change this, and so it looks like Rule 1 is broken no matter what we do.
+
+Thing is, there is an actual circular relationship between small business and economies – that they support each other is often the reason why an economy  grows. The problem with this circular argument is that it tries to separates a single argument into two. Unresolvable circular arguments are often the result of trying to do this and so point to some additional thinking that is needed.
+
+\paragraph{Spiral Arguments}
+Another type of argument that looks circular but isn't is a spiral argument. A spiral argument again has (at least) two parts, the claim of which appears to depend on another claim which depends on the first claim. Add example here – there's one at \url{https://www.catholic.com/tract/proving-inspiration}. While there can be a get out clause of a spiral argument – a reason it doesn't break Rule 1 – a spiral argument can be less than convincing, even wrong, if the circularity in it isn't absolutely removed.
+
+****
 
 \begin{question}[subtitle={Activity: Developing your literature review outline}] Based on the arguments you developed in the previous activity, write an outline of your literature review which indicates which arguments to include and in which order. Review and revise your outline, until you are satisfied that all the arguments you wish to make are included and they follow logically from each other.
 
