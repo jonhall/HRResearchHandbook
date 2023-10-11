@@ -252,5 +252,9 @@ title={Tip},
 
 \setcounter{secnumdepth}{3}
 
+%%\begin{stolen} to identify uncredited material
+\newenvironment{stolen}[1]{\bgroup\color{red}\marginpar{Material stolen from #1}}{\egroup}
+\newenvironment{adapted}[1]{\bgroup\color{blue}\marginpar{Material adapted from #1}}{\egroup}
+
 \title{Master Research\\ Handbook}
 \author{Lucia Rapanotti and Jon Hall}
