@@ -6,6 +6,10 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{csquotes}
 
+%%Underconstruction logo visible from overview
+\newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}
+\newcommand{\UCL}{\ {\color{pink}\rule{2cm}{2cm}}}
+
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 % 2022-10-11: so that todos don't eat following spaces.
 % https://tex.stackexchange.com/questions/11802/todo-note-steals-space
@@ -96,15 +100,6 @@ title={Tip},
   includehead,
 }
 
-%%Number \section and \subsection only
-\setcounter{secnumdepth}{2}
-
-%\usepackage{marginnote}
-%\def\footnote#1{\marginnote{\footnotesize\textit{#1}}}
-%\renewcommand*{\raggedleftmarginnote}{}
-
-%\usepackage{lipsum}
-
  %%Guidance environment
 \newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
           {\textbf{Guidance}}}
@@ -161,9 +156,13 @@ title={Tip},
   after=\par\bigskip,
   title=\textbf{Quote}}%
   
-
+%%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
+\usepackage{booktabs}
+\usepackage{multicol}
 %%For tables
 \usepackage{longtable,tabulary}
+%%For additional caption options
+\usepackage{caption}
 %%Hack for @{}lllll@{} instead of @{}LLLL@{}
 \newcolumntype{l}{L}
 %%so that tables extend into margin
@@ -182,6 +181,8 @@ title={Tip},
 			\def\endhead{\LT@end@hd@ft\LT@head}%
 			\def\endfoot{\LT@end@hd@ft\LT@foot}%
 			\def\endlastfoot{\LT@end@hd@ft\LT@lastfoot}%
+%JGH Not yet working	\let\caption\LT@caption%%JGH 2023-10-13: Added to allow ltabulary captions
+%			\let\LT@mcol\multicolumn%%JGH 2023-10-13
 			\longtable}%
 		\let\endTY@final\endlongtable
 		\TY@tabular}%
@@ -191,10 +192,9 @@ title={Tip},
 	\tabulary}%\dimen@}
 
 \def\endltabulary{\endtabulary}
+%%Allows captions in longtables
 
 \makeatother
-
-\usepackage{booktabs}%%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
 
 %\usepackage{csquotes}
 %\usepackage{fontspec}

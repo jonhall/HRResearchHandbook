@@ -13,9 +13,10 @@ Stage 2 works from the assumption that you have now a fair idea of how the resea
 The good news\footnote{The bad news is that if you haven't picked up everything, you may need to refer back to Stage 1. We will leave breadcrumbs throughout the chapter to help you do this if you need to.} is that this assumption means that there is less to read in Stage 2 and we will not take you through the research process step by detailed step, but focus on \textit{additional} knowledge and skills you'll need to progress.
 
 \begin{table}[htbp]
-\small
 \caption{Stage 2 (15\% of project length) activities\label{tab:stage2}}
-\begin{tabulary}{\tablewidth}{@{}LLp{1cm}L@{}} \toprule
+\small
+\begin{tabulary}{\tablewidth}{@{}LLp{1cm}L@{}} 
+\toprule
  \textbf{Research activity} & \textbf{Stage 2} & \textbf{Effort} & \textbf{Suggested focus of your interaction with your supervisor} \\
 \midrule
 
@@ -28,7 +29,6 @@ The good news\footnote{The bad news is that if you haven't picked up everything,
  \textbf{Reporting, critical reflection and conclusions} & Assess research progress and write up Stage 2 report & 25\% & Any further improvements required, particularly in relation to critical thinking and academic writing \\
  \textbf{Work planning and risk management} & At stage start, re-assess risk and work plan and adjust as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required to address deficiencies or manage risk \\
 \bottomrule
-
 \end{tabulary}
 \end{table}
 
@@ -697,7 +697,7 @@ Did they fall asleep (again)? Will they come back and help for future versions?
 \end{guidance}
 \end{question}
 
-\subsubsection{YOur role: Assessing scope, planning and iterating}
+\subsubsection{Your role: Assessing scope, planning and iterating}
 
 Even if you hit gold first time with your literature search, you are likely to require several iterations of the literature review process in order to develop your full review. In our 5-stage framework, we recommend you develop a comprehensive initial draft of your literature survey by the end of Stage 2, with the bulk of the work on gathering and assimilating articles completed in Stage 1 to allow more time for synthesis in Stage 2. At each iteration\footnote{You'll study how to reflect on things like this later in this stage.}, you should assess the work that still needs to be done and decide what should come next.
 
@@ -798,6 +798,20 @@ In this handbook we will use the term research method as a synonym for research 
 
 In this section, we recall a wide range of research methods commonly applied in research, particularly at Masters level.
 
+%%JGH 2023-10-13: Commands to keep Activity text consistent across all research methods.
+\newcommand{\ActivityRMUse}[2][]{
+%%optional argument is addition information, should include initial ", " so fit in the sentence 
+%%mandatory argument is research method
+\begin{question}[subtitle={Activity: Considering #2\todo[inline]{templated: check for sense}}]%
+Consider the extent to which #2{} could be used in your research project, and in which form#1. Write down your answer.
+%
+\begin{guidance}
+If you think #2 will be helpful, you might like to look at the resources at the end of this chapter. If you don't think it will be useful for your project, write down the reason – it might come in handy later.
+\end{guidance}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+}
+
 \subsubsection{Data collection methods}
 
 \paragraph{Questionnaires}
@@ -813,12 +827,7 @@ Questionnaires are a data generation technique applicable when:
 
 Questionnaires can be \textbf{self-administered}, in the sense that the respondents complete the questionnaire without the researcher being present, or \textbf{researcher-administered}, in which case the researcher asks the questions and writes down the responses.
 
-\begin{question}[subtitle={Activity: Considering questionnaires}] In relation to your project aim and objectives, reflect on the extent questionnaires may be useful and which form of questionnaire is more likely to fit your needs. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{questionnaires}
 
 \paragraph{Interviews}
 An \textbf{interview} is a form of conversation between the researcher and one or more interviewees, designed by the researcher to gain insights and opinions on a specific topic. The researcher guides and controls the conversation and asks the questions. The interviewees' answers constitute the generated data that is subsequently analysed by the researcher.
@@ -835,12 +844,7 @@ Interviews can be one-on-one, between the researcher and one interviewee at a ti
 
 Interviews can be fully planned or quite open-ended. The former are termed \textbf{structured} and use pre-determined, identical questions with all the interviewees, while the latter are termed \textbf{unstructured} and typically start by introducing a topic but then let the interviewee talk freely around their ideas, experience and beliefs. Somewhere in between are \textbf{semi-structured} interviews, where the researcher selects some themes and related questions upfront, but then adapt them depending on how the conversation with the interviewee develops.
 
-\begin{question}[subtitle={Activity: Considering interviews}] In relation to your project aim and objectives, reflect on the extent interviews may apply and which form of interview is more likely to fit your needs. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{interviews}
 
 \paragraph{Delphi technique}
 With the \textbf{Delphi} technique, a group of experts are consulted with a view of obtaining a consensus on a particular issue or topic. It involves an iterative process of collecting, synthesising and circulating anonymous judgements from those experts to eventually arrive at a consensual view. More precisely, each subject expert is initially consulted separately by the researcher, who then anonymises and collates the group responses and circulate them to the same group of experts. The process is repeated until a consensus is reached.
@@ -849,13 +853,7 @@ This technique is based on the idea that a group of people are more likely to ar
 
 The Delphi technique is particularly suited to situations in which the researcher wishes to improve their understanding of an under-explored problem or issue in order to inform decision-making.
 
-\begin{question}[subtitle={Activity: Considering the Delphi technique}] In relation to your project aim and objectives, reflect on the extent the Delphi technique may apply. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{the Delphi technique}
 
 \paragraph{Observations and measurements}
 \textbf{Observations} are used in research to find out what people actually do or what actually happens in a particular context, rather than what has been reported about it. Observations can be of people's behaviour or interactions, e.g., observing a formal meeting in an organisation, or of events and processes, for instance observing a queue at the post-office or a computer-controlled production plant. As such, observations can generate all kinds of data, qualitative and quantitative. Quantitative observations are often referred to as \textbf{measurements}, e.g., the length of time a particular customer has spent waiting in the queue at the post office.
@@ -864,25 +862,14 @@ There are two main types of research observation, \textbf{systematic} vs. \textb
 
 In participant observations, the researcher participates directly in the situation under study and produces a rich description of what happens based on what they experience. For instance, in relation to the previous example, the researcher might join the queue at the post office and record their experience in great detail, or even join the staff in the post office to understand why queues are longer or shorter for certain tasks.
 
-\begin{question}[subtitle={Activity: Considering observations and measurements}] In relation to your project aim and objectives, reflect on the extent observations may apply and which type of observations may suit your needs. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{observations and measurements}
 
 \paragraph{Using existing documents or data sets}
 The previous techniques can be used to generate primary evidence.
 
 Academic research, however, can also use secondary evidence as its starting point. This can be represented by existing documents of may forms, from academic articles to documents found in organisations, e.g. laws, policies and procedures, reports, formal minutes of meetings, informal communications, etc. Similarly, there are plenty of publicly available data sets that can be used, created by academic communities or private and public organisations, such as business financial data or statistical data from the UK Office for National Statistics or data from social network platforms. As already noted, the academic literature at the core of your literature review is a form of secondary evidence.
 
-\begin{question}[subtitle={Activity: Considering reusing existing evidence}] In relation to your project aim and objectives, reflect on the extent you may be able to reuse secondary evidence, which form this may take and which sources of secondary evidence are available to you. Jot down your answer.
-
-\begin{guidance}It may well be that you won't use secondary evidence (other than the academic literature) for your project, in which case you should articulate the reason.
-
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{reusing existing evidence}
 
 \subsubsection{Data analysis methods}
 
@@ -891,45 +878,23 @@ Spreadsheets, tables, charts and graphs are the bread and butter of data analysi
 
 A \textbf{spreadsheet} is a digital tool you can use to capture, display and manipulate data arranged in tables, that is arranged in rows and columns. Common spreadsheets include Microsoft Excel, Apple Numbers and Google Sheets. Spreadsheets are among the most used digital tools, so it is likely you are already familiar with at least their basic functionalities. Spreadsheets have become quite sophisticated tools, including all sort of charts and graphs, as well as programmatic capabilities which allow you to code quite complex data manipulation functions. Some of those advanced functionalities could be advantageous to your research, so it is worth spending some time considering what they can offer to your project. There are plenty of tutorials and other documentation online you can use to learn more.
 
-\begin{question}[subtitle={Activity: Understanding features of spreadsheets}] Conduct a web search on your spreadsheet of choice to find summaries and tutorials on core and advanced functionalities which may be useful in your project.
+\ActivityRMUse{spreadsheets}
 
-\begin{guidance}You should make a note of how you could use such functionality in your research, and bookmark web pages of particular relevance to which you may want to return to later on.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\paragraph{Charts and graphs} are visual representations of data, usually employed to summarise data, and highlight or identify interesting patterns. All modern spreadsheets provide a wide range of charts and graphs which allow you to visualise data from spreadsheet tables.
 
-\paragraph{}
-\textbf{Charts} and \textbf{graphs} are visual representations of data, usually employed to summarise data, and highlight or identify interesting patterns. All modern spreadsheets provide a wide range of charts and graphs which allow you to visualise data from spreadsheet tables.
+\ActivityRMUse{visualisation representations}
 
-\begin{question}[subtitle={Activity: Investigating visualisation functionalities}] Investigate the visualisation functionalities of your spreadsheet of choice, identifying those which may be useful in your project.
-
-\begin{guidance}You should make a note of how you may use such visualisations in your research and keep track of useful examples and instructions to which you may return later on.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\paragraph{}
+\paragraph{Data analytics}
 Alongside spreadsheets a growing number of \textbf{data analytics} tools are also available: these are sophisticated digital tools which extend spreadsheet capabilities for collating and visualising data to include some degree of automated analysis, both statistical and based on Machine Learning algorithms. Tools like Tableau and Power BI are notable examples: both are available in free versions for community use and for study.
 
-\begin{question}[subtitle={Activity: Understanding features of data analytics tools}] Conduct a web search on Tableau and Power BI to identify tutorials and other documentation which illustrate their key functionalities. Consider if such tools may be of use in your project, and jot down their potential use.
-
-\begin{guidance}You should identify which of such tools, if any, you may be able to use in your research. You should consider the time which you will require to become proficient in their use, and bookmark web pages of particular relevance to which you may want to return to later on.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{data analytics tools}
 
 \paragraph{Statistical analysis}
 \textbf{Statistical analysis} is a broad collection of techniques used to investigate trends, patterns, and relationships in quantitative data. It is a well established field of study with wide application across all kinds of research, and well developed tool support. IN particular, both spreadsheets and data analytics tools include functionalities which allow you to calculate statistical measures on data, check statistical relationships between variables and data sets, and generate basic statistical models. Bespoke statistical tools also exist for more advanced statistical analysis and modelling, like IBM SSPS or Minitab, which are also available in free versions for students.
 
 T802 will not require you to use any advanced statistics, and will assume you are already familiar with some of the basic concepts, should you need to apply them, particularly descriptive statistics and correlation. However, should your project require advanced statistical analysis, then you will need to become proficient in good time to carry out your analysis and interpretation of findings in the second half of your project work.
 
-\begin{question}[subtitle={Activity: Considering statistical analysis}] In the context of your project and in relation to the types of data you will require, reflect on whether you may apply statistical analysis, either basic or advanced techniques. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider these techniques useful for your project, in which case you should articulate the reason.
-
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{statistical analysis}
 
 \paragraph{Thematic analysis}
 \textbf{Thematic analysis} is a way of analysing qualitative data, particularly texts, e.g., transcriptions of interviews or answers to questionnaires or existing text documents, in order to find out something about people's views, opinions, knowledge, etc.
@@ -938,24 +903,14 @@ At its core is the identification by the researcher of recurring themes, their d
 
 There are two basic types of thematic analysis, inductive and deductive. In \textbf{inductive thematic} \textbf{analysis} the themes emerge from the data and are not pre-defined, while in \textbf{deductive thematic} \textbf{analysis} some themes are established upfront, possibly based on an existing theory or previous research, which are then used to analyse the qualitative data.
 
-\begin{question}[subtitle={Activity: Considering thematic analysis}] In the context of your project and in relation to the types of data you will require, reflect on whether you may apply thematic analysis. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{thematic analysis}
 
 \paragraph{Content analysis}
 \textbf{Content analysis} is a way to investigate certain words, themes, or concepts in qualitative data, whether text, images, videos, or other.
 
 It can be either quantitative, where the focus is on, for instance, counting the occurrence of those words, themes or concepts, or qualitative, where the focus is on interpreting and understanding their meaning and relationships. As such it can be used for many purposes, from discovering and understanding patterns, to looking at intentions behind what is expressed, or to highlight differences of use in different contexts.
 
-\begin{question}[subtitle={Activity: Considering content analysis}] In the context of your project and in relation to the types of data you will require, reflect on whether you may apply content analysis. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{content analysis}
 
 \subsubsection{Modelling methods}
 At its essence, a \textbf{model} is an abstraction or representation of something, be that a system, a structure or a behaviour. Modelling is used across many disciplines, so a vast repertoire of modelling techniques exist.
@@ -981,12 +936,7 @@ There are many different kinds of systems diagrams. For examples, \textbf{system
 
 System diagrams have an accepted structure, format and notation but what you choose to describe and include within a system and its components will depend on your own viewpoint. Systems diagrams can be shared with others as learning devices to promote more understanding of a situation.
 
-\begin{question}[subtitle={Activity: Considering systems diagrams}] Reflect on whether you may use systems diagrams in your research, which particular kind may be of particular use and for which purpose. Justify your answer. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{systems diagrams}
 
 \paragraph{UML modelling}
 UML (\textbf{Unified Modeling Language}) is a graphical language for visualising, specifying or documenting various artefacts in the process of developing software systems. If you have studied a software engineering module for your qualification, you may be already familiar with UML.
@@ -995,46 +945,30 @@ UML can be used as a `sketching' language, to capture elements of systems inform
 
 In a T802 project, UML can be used to help you understand existing systems in context, or plan the development of new innovative artefacts.
 
-\begin{question}[subtitle={Activity: Considering ML modelling}] In the context of your project, reflect on whether you may apply UML modelling and for which purpose. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{UML modelling}
 
 \paragraph{Problem diagrams}
-\textbf{Problem diagrams} have their roots in software requirements engineering as a diagrammatic technique to capture requirements in a real-world context to inform the specification of a new software system to satisfy them. They have been subsequently generalised for application to general engineering problems for which some novel solution artefact is to be developed in a real-world context, to guide design and ensure fitness-for-purpose. Problem diagrams span the problem-solution space divide by focusing on those phenomena that characterise a problem and constrain its solution.
+have their roots in software requirements engineering as a diagrammatic technique to capture requirements in a real-world context to inform the specification of a new software system to satisfy them. They have been subsequently generalised for application to general engineering problems for which some novel solution artefact is to be developed in a real-world context, to guide design and ensure fitness-for-purpose. Problem diagrams span the problem-solution space divide by focusing on those phenomena that characterise a problem and constrain its solution.
 
 In the context of T802 projects, problem diagrams can help you develop a good understanding of real-world requirements in context and explore both constraints and effects of designing new systems for that context.
 
-\begin{question}[subtitle={Activity: Considering problem diagrams}] In the context of your project, reflect on whether you may use problem diagrams and for which purpose. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{problem diagrams}
 
 \paragraph{Statistical modelling}
 Many \textbf{statistical modelling techniques} exist. The most commonly applied include those used to model relations between variables, e.g., how crop yields relate to environmental factors, such as soil quality or meteorological conditions, or to model real-world processes, e.g., the spreading of a disease in a population. Once a statistical model is defined, it can then be used to make predictions of what might happen in the real world.
 
 As per advanced statistical analysis, statistical modelling requires well developed statistical knowledge and skills, which you should already possess if you are considering their use in your T802 project.
 
-\begin{question}[subtitle={Activity: Considering statistical modelling}] In the context of your project, reflect on whether you may need statistical modelling and for which purpose. Jot down your answer.
-
-\begin{guidance}It may well be that you don't consider this technique useful for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{statistical modelling}
 
 \subsubsection{Research strategies}
 
-A \textbf{research strategy} is a systematisation of a set of research methods, applied in order to address research problems of a particular kind. The term \emph{methodology} is also sometimes used in the literature with a similar meaning, although methodology also means the study of research methods, so it is an overloaded term this handbook will avoid.
+A \textbf{research strategy}\footnote{Our favourite take on \textit{strategy} is: \enquote{The essence of strategy is choosing what not to do} from the economist \textit{Michael Porter}. Your research strategy should do this – by giving you a focus – so choose carefully, and use the activities wisely.} is a systematisation of a set of research methods, applied in order to address research problems of a particular kind. The term \emph{methodology} is also sometimes used in the literature with a similar meaning, although methodology also means the study of research methods, so it is an overloaded term this handbook will avoid.
 
 This section provides an overview of some of the best known and most commonly applied research strategies, particularly at Masters level. Note that this not an exhaustive account: for instance it does not cover observational research and ethnography, which are often applied in the social sciences, to observe participants and phenomena in their natural setting usually over long periods of time, so that they are not suited to the time constraints of a Masters project.
 
-\subsubsection{Survey research}
-\textbf{Survey research} aims to gain insights which are valid across a target population, by collecting data from a predefined sample in a standardised and systematic way.
+\paragraph{Survey research}
+aims to gain insights which are valid across a target population, by collecting data from a predefined sample in a standardised and systematic way.
 
 A typical application of survey research is to predict the outcome of an upcoming general election by polling data from a representative sample of voters.
 
@@ -1046,15 +980,10 @@ For survey research to be successful, you must be able to access an appropriate 
 
 The advantages of this strategy are that it can produce a lot of data in a relatively short time, and you can replicate your data collection process on different samples or on the same sample at a later time. However, among its disadvantages are the depth in the data that can sometimes be lacking, its focus on what can be measured, the fact that it cannot reveal cause-and-effect relationships, and can only provide a snapshot at a particular time.
 
-\begin{question}[subtitle={Activity: Considering survey research}] In the context of your project, reflect on whether this strategy might be appropriate and justified, and if so, which data collection and analysis methods you may adopt. Jot down your answer.
+\ActivityRMUse{survey research}
 
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\subsubsection{Experimental research}
-\textbf{Experiments} are used to investigate cause and effect relationships between factors by testing hypothesis or proving\slash disproving causal links.
+\paragraph{Experimental research}
+is used to investigate cause and effect relationships between factors by testing hypothesis or proving\slash disproving causal links.
 
 For instance, you may run an experiment to test ways in which the use of mobile phones just before going to sleep affect people's sleeping patterns.
 
@@ -1070,15 +999,9 @@ For experiments to be successful you must be able to control factors which can a
 
 Experimental research has well established processes and protocols and is particularly well suited to the consideration of cause-and-effect relations. However, it has its pros and cons. Laboratory experiments are very reliable due to the high level of control, but can be very artificial, with little or no relation to a real-world context. The opposite is true for field experiments.
 
-\begin{question}[subtitle={Activity: Considering experimental research}] In the context of your project, reflect on whether this strategy might be appropriate, and if so, which hypotheses you may wish to test and which type of experiment you may apply. Jot down your answer.
+\ActivityRMUse{experimental research}
 
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\subsubsection{Design science research}
-\textbf{Design science} seeks to generate new knowledge about a significant problem or its solution via the design of an artefact. It simultaneously generates knowledge about the problem, the artefact and the method used to design it. Artefact indicates anything made by humans, so this is a very broad definition, encompassing all that does not exist in nature.
+\paragraph{Design science research} seeks to generate new knowledge about a significant problem or its solution via the design of an artefact. It simultaneously generates knowledge about the problem, the artefact and the method used to design it. Artefact indicates anything made by humans, so this is a very broad definition, encompassing all that does not exist in nature.
 
 Lots of research in Computing is an expression of design science, for instance designing new algorithms able to emulate human cognition.
 
@@ -1088,14 +1011,9 @@ For design science research to be successful you must be able to argue that it i
 
 An advantage of design science research is that it leads to tangible artefacts which fit real-world contexts, and it is particularly suited to emerging and rapidly changing technology-related fields of study, where new problems emerge all the time and known solutions are sparse or become rapidly obsolete. The latter is also a disadvantage, of course, as new solutions may be short lived. Also, it may be difficult to generalise outcomes to different real-world settings. Depending on the nature of the artefact being designed, advanced technical skills may be required.
 
-\begin{question}[subtitle={Activity: Considering design science research}] In the context of your project, reflect on whether this strategy might be appropriate, and if so, in which ways would the artefact design be novel and contribute new knowledge. Jot down your answer.
+\ActivityRMUse{design science research}
 
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\subsubsection{Case study research}
+\paragraph{Case study research}
 A \textbf{case study} is used to investigate in great depth a notable instance of what is under study, in its real-world context. Case studies focus on the `how?' and `why?', and what you seek can span from exploring possible questions or hypotheses for follow-up research, to providing a detailed account of a phenomenon in its natural context, to explaining why certain outcomes or phenomena have occurred.
 
 For instance, an example of case study could be a detailed investigation of the US Equifax social security breach of 2017, in which 143 million of their consumer records were stolen by hackers. This may be descriptive of the chain of events that took place or explicative of why things happened the way they did.
@@ -1106,15 +1024,10 @@ For a case study to be conducted successfully you must be able to analyse the ch
 
 Case studies allow you to study a complex situation where several factors are at play, and to explore alternative meanings and explanations. However, case studies are time-consuming, difficult to perform rigorously and with limited generalisation beyond the particular instance under study.
 
-\begin{question}[subtitle={Activity: Considering case study research}] In the context of your project, reflect on whether this strategy might be appropriate, and which data collection and analysis methods you may adopt. You should also think of whether you will have sufficient time to collect and analyse the amount to evidence required. Jot down your answer.
+\ActivityRMUse{case study research}
 
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\subsubsection{Systemic inquiry}
-\textbf{Systemic inquiry} is used to explore complex, messy problematic situations involving multiple and often contrasting perspectives, with the aim of transforming the situation for social betterment.
+\paragraph{Systemic inquiry}
+is used to explore complex, messy problematic situations involving multiple and often contrasting perspectives, with the aim of transforming the situation for social betterment.
 
 Systemic inquiry is based on concepts and principles of systems thinking and systems practice, so that it is the research strategy of choice for T802 projects related to the Systems Thinking in Practice (STiP) Masters degree.
 
@@ -1128,15 +1041,9 @@ Study Note: Grey literature is the term used for the collection of information p
 
 Systemic inquiry helps you make sense of complex situations of change and uncertainty, while acknowledging that the research will not deliver `certainty' in terms of `problem-solving' associated with complex situations. Instead, with its STiP principles of humility, empathy, and inevitable fallibility, reflexivity can support development of trust amongst participants, including trust with the researcher in co-exploring the situation.
 
-\begin{question}[subtitle={Activity: Considering systemic inquiry}] In the context of your project, reflect on whether a systemic inquiry might be appropriate, and which data collection\slash analysis\slash modeling methods you may adopt. Jot down your answer.
+\ActivityRMUse[, and which data collection/analysis/modelling methods you should adopt]{systemic inquiry}
 
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-\subsubsection{}
-\textbf{References}
+\subsubsection{References}\todo{Here or chapter end? I like it here, so could do both.}
 
 Kincheloe, J. L. (2011). Describing the bricolage: Conceptualizing a new rigor in qualitative research. In Key works in critical pedagogy (pp. 177--189). Brill.
 
@@ -1151,12 +1058,7 @@ Data collection and analysis will depend on the particular combination of method
 
 The main advantage of mixed methods research is that it can provide a more holistic understanding of the phenomena under study, and facilitate different avenues for exploration. It is particularly suited to situations in which neither quantitative nor qualitative methods alone can provide sufficient insights. However, mixed methods make research design more complex and demanding in terms of execution time, skills required and data variety to handle and analyse.
 
-\begin{question}[subtitle={Activity: Considering mixed methods research}] In the context of your project, reflect on whether this strategy might be appropriate. If so, which methods would you combine in your project? Jot down your answer.
-
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse[they should be combined]{mixed methods research}
 
 \subsubsection{Systematic review research}
 A \textbf{systematic review} is a literature review linked to a clearly defined research problem or question. It uses a rigorous set of criteria to identify, select, and critically appraise relevant research from previously published studies in order to generate a scholarly synthesis of the evidence in relation to that problem or question. Such a synthesis is meant to advance a field of research.
@@ -1169,19 +1071,14 @@ To be successful, a systematic review has to be both systematic and extensive, w
 
 Because of their explicit set of criteria, systematic reviews are considered transparent, reliable, and easy to replicate. However, they can be very time-consuming due to the large body of work to review. Also, in striving to piece together evidence from potentially very different studies, they may obscure important differences. Narrative reviews may also be subject to bias.
 
-\begin{question}[subtitle={Activity: Considering systematic review research}] In the context of your project, reflect on whether this strategy might be appropriate. Jot down your answer.
-
-\begin{guidance}It may well be that you won't use this strategy for your project, in which case you should articulate the reason.
-\end{guidance}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+\ActivityRMUse{systematic review research}
 
 \subsubsection{Philosophical traditions}
 Research methods and research strategies are strongly related to \textbf{philosophical traditions}, which are world-views that inform how one should conduct research. Philosophical traditions may sound a bit esoteric, but they matter in that they make explicit assumptions behind research design choices, influencing what a researcher chooses to research and the way they may go about collecting evidence or interpreting findings.
 
 The term \emph{research paradigm} is also used in the literature with a similar meaning.
 
-\paragraph{}
+
 Each philosophical tradition embodies a set of beliefs around three fundamental philosophical issues:
 
 - The nature of our world, which relates to questions such as: What is there? What kind of categories do things belong to? How are those categories related? The part of philosophy dealing with these questions is called \textbf{ontology}. In research design, ontology determines which phenomena are there to be studied as part of the research, and underlies our experience of the world. Hence, ontology is closely connected with the kind of observations we make or evidence we gather.
@@ -1192,7 +1089,7 @@ Each philosophical tradition embodies a set of beliefs around three fundamental 
 
 In what follows, I will provide a brief introduction to some of the better known and most often cited traditions. However, you should be aware that their definitions are not universal, their boundaries not clear-cut, and it is very rarely the case that a research design will fit a specific tradition neatly. You should, instead, consider each of these traditions as a `wrapper' of convenience for a set of beliefs on research practice which have emerged from different disciplines and cultures, and also be aware that such beliefs have changed over time, and continue to do so.
 
-\subsubsection{Positivism}
+\paragraph{Positivism}
 \textbf{Positivism} is perhaps the oldest tradition, with roots in the natural sciences. It sees the world as ordered and regular, with universal laws governing its functioning, and assumes it can be investigated objectively.
 
 Specifically, positivism encompasses the following set of beliefs:
@@ -1223,10 +1120,9 @@ Axiology: positivism values objectivity above all, and dismisses individual's su
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\paragraph{}
 Positivism has attracted criticism particularly from the social sciences, which consider some of its beliefs untenable, primarily that researchers are totally objective and not influenced by their own values and beliefs, or that knowledge is made of perfectly generalisable truths. This has led to other traditions, which we consider next.
 
-\subsubsection{Interpretivism\slash Constructivism}
+\paragraph{Interpretivism/Constructivism}
 With its roots in the social sciences, \textbf{interpretivism} seeks to identify, explore and explain phenomena in social settings, acknowledging that people perceive the world in different ways, mediated by their beliefs, attitudes and values.
 
 Specifically, interpretivism encompasses the following set of beliefs:
@@ -1256,7 +1152,7 @@ Axiology: The researcher's values and beliefs matter. The strength of their inte
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsubsection{Critical theory}
+\paragraph{Critical theory}
 Perhaps not as well established as the previous traditions, \textbf{critical theory} originated in the fields of sociology, philosophy and political theory.
 
 Like interpretivism, it assumes multiple interpretations of reality in social contexts. However, it goes a step further by asserting that reality is shaped by those who are powerful, who legitimate particular ways of perceiving the world: `truth' is inherently political, defined by those in charge to the disadvantage of many, and challenged by those who wish to promote equality.
@@ -1275,7 +1171,7 @@ Axiology: The researcher has the moral responsibility to make things better in s
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsubsection{Indigeneous}
+\paragraph{Indigeneous}
 The traditions I have described so far are attracting increasing criticisms in that they are seen as Western-European centric and often imposed on other indigenous cultures as a result of colonialism.
 
 In counterposition, an indigenous research tradition has emerged with a social and political agenda of decolonisation of indigenous societies. It emphasises the connection between the researcher and their own culture, in the sense that cultural practices and forms of expressions should be reflected in the way the research is conducted, including language, metaphors, oral traditions and knowledge systems. It also advocates an holistic approach which strives to reach a balance between different areas of life, integrating intellectual, social, political, economic, psychological and spiritual dimensions.
@@ -1292,20 +1188,21 @@ Axiology: The researcher has a social and political agenda of decolonisation of 
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsubsection{Sketching your research design}
+\subsection{Sketching your research design}
 It is time for you to put what you have leant into practice to produce a first sketch of the research design for your project. The next set of activities will help you summarise your choices in relation to each of its building blocks.
 
-\subsubsection{Data and evidence}
-Table 1 provides a summary of the type of data and evidence that were introduced in Stage 1. In the next activity you will reflect on those which are most relevant to your project.
+\todo{This move to data/evidence seems a bit abrupt}
 
-Table 1 - Common types of data\slash evidence in a research project
+\subsubsection{Data and evidence}
+Table~\ref{tab:dataevidence} provides a summary of the type of data and evidence that were introduced in Stage 1. In the next activity you will reflect on those which are most relevant to your project.
 
 \begin{table}[htbp]
 \begin{minipage}{\linewidth}
 \setlength{\tymax}{0.5\linewidth}
 \centering
 \small
-\begin{tabulary}{\textwidth}{@{}ll@{}} \toprule
+\caption{Common types of data/evidence used in a research project}\label{tab:dataevidence}
+\begin{tabulary}{\textwidth}{@{}LL@{}} \toprule
  \textbf{Types of data\slash evidence} & \\
 \midrule
 
@@ -1320,24 +1217,23 @@ Table 1 - Common types of data\slash evidence in a research project
 \end{minipage}
 \end{table}
 
-\begin{question}[subtitle={ACTIVITY: Detailing data and evidence}] For each type in the table, comment on whether it may be needed in your project.
+\begin{question}[subtitle={ACTIVITY: Considering data and evidence}] Consider whether you will need to use qualitative or quantitative data in your project. Write down 
 
-\begin{guidance}For those needed in your project, you should also give specific examples and indicate the source.
+\begin{guidance}You should use the second column to help you decide, i.e., \enquote{I'll be using a survey combining a Likert scale with free text answers, so that means I'll be using Ordinals, and so quantitative, and Other, and so qualitative.}
+
+For each needed in your project, you should also give specific examples and indicate the source.
 \end{guidance}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
 
 \subsubsection{Research methods}
-Table 1 provides a summary of research methods introduced in this section. In the next activity you will reflect on those which are most relevant to your project.
+Table~\ref{tab:remmet} provides a summary of research methods introduced in this section. In the next activity you will reflect on those which are most relevant to your project.
 
-Table 1 - Research methods introduced in this section
-
-\begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
-\centering
+{\begin{table}[htbp]
 \small
-\begin{tabulary}{\textwidth}{@{}ll@{}} \toprule
+\caption{Research methods introduced in this section\label{tab:remmet}}
+\begin{tabulary}{\tablewidth}{@{}LL@{}} 
+\toprule
  \textbf{Types of method} & \\
 \midrule
 
@@ -1347,7 +1243,7 @@ Table 1 - Research methods introduced in this section
  & \textbf{Observations\slash measurements} direct observation\slash measurement to find out what people actually do or what actually happens in a particular context \\
  & \textbf{Existing documents\slash data sets} reusing secondary data\slash evidence \\
  & \textbf{Other} any other collection method you know which may be applicable \\
- \textbf{Data analysis} & \textbf{Tables and chats} to summarise and visualise data, and identify interesting patterns \\
+ \textbf{Data analysis} & \textbf{Tables and charts} to summarise and visualise data, and identify interesting patterns \\
  & \textbf{Statistical analysis} to investigate trends, patterns, and relationships in quantitative data \\
  & \textbf{Thematic analysis} to identify recurring themes, their definition and relationships \\
  & \textbf{Content analysis} to investigate certain words, themes, or concepts \\
@@ -1358,10 +1254,8 @@ Table 1 - Research methods introduced in this section
  & \textbf{Statistical modelling} to model relations between variables and being able to make predictions \\
  & \textbf{Other} any other modelling method you know which may be applicable \\
 \bottomrule
-
 \end{tabulary}
-\end{minipage}
-\end{table}
+\end{table}}
 
 \begin{question}[subtitle={ACTIVITY: Detailing research methods}] For each method in the table, comment on whether it is applicable.
 
@@ -1371,32 +1265,31 @@ Table 1 - Research methods introduced in this section
 \color{black}
 
 \subsubsection{Research strategies}
-Table 1 provides a summary of research strategies introduced in this section. In the next activity you will reflect on those which are most relevant to your project.
-
-Table 1 - Research strategies introduced in this section
+Table~\ref{tab:resstrat}\todo{Table needs to break across pages}
+ provides a summary of research strategies introduced in this section. In the next activity you will reflect on those which are most relevant to your project.
 
 \begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
+\caption{Research strategies introduced in this section\label{tab:resstrat}}
 \centering
 \small
-\begin{tabulary}{\textwidth}{@{}lllllll@{}} \toprule
+\begin{ltabulary}{\tablewidth}{@{}p{2cm}LLLLLL@{}}
+\toprule
+
  \textbf{name} & \textbf{aim} & \textbf{data collection} & \textbf{data analysis} & \textbf{success factors} & \textbf{advantages} & \textbf{disadvantages} \\
 \midrule
 
  \textbf{survey research} & to gain insights which are valid across a target population, by collecting data from a predefined sample in a standardised and systematic way & you need to identify upfront which data you will collect in a standardise matter, your target population and sample & you seek patterns in the sample data collected to devise generalisations to the wider population & you must be able to access an appropriate sample and generate a sufficient volume of data & - can produce a lot of data in a short time - data collection can be replicated on different samples, or the same sample on a later time & * lack of depth * focus on what can be measured * provides a snapshot at a particular time, rather than a longitudinal view * can't reveal cause-and-effect relationships \\
- \textbf{experimental research} & to investigate cause and effect relationships between factors by testing hypothesis or proving\slash disproving causal links & you need first to state the hypothesis to be tested, then make detailed observations and measurements of outcomes and any changes that take place when particular factors are introduced or removed & you seek to explain causal links between factors under study, looking at your observations and measurements under the different experimental conditions & you must be able to control factors which may affect the outcome. This is possible in laboratory experiments, while the level of control in field experiments is diminished. & * there are well established processes and protocols * tailored to the study of causal relations & * Laboratory experiments are very reliable due to the high level of control, but can be very artificial, with little or no relation to a real-world context * The opposite is true for field experiments \\
+ \textbf{experiment\-al research} & to investigate cause and effect relationships between factors by testing hypothesis or proving\slash disproving causal links & you need first to state the hypothesis to be tested, then make detailed observations and measurements of outcomes and any changes that take place when particular factors are introduced or removed & you seek to explain causal links between factors under study, looking at your observations and measurements under the different experimental conditions & you must be able to control factors which may affect the outcome. This is possible in laboratory experiments, while the level of control in field experiments is diminished. & * there are well established processes and protocols * tailored to the study of causal relations & * Laboratory experiments are very reliable due to the high level of control, but can be very artificial, with little or no relation to a real-world context * The opposite is true for field experiments \\
  \textbf{design science research} & to generate new knowledge about a significant problem or its solution via the design of an artefact. It simultaneously generates knowledge about the problem, the artefact and the method used to design it. By artefact is meant anything made by humans, so this is a very broad definition encompassing all that does not exist in nature & you need to both articulate the problem, and design, construct and evaluate the solution artefact & you need shed new insights on the problem, and argue how solution and solution process contribute new knowledge & you must be able to argue that it is not `normal' design & * leads to tangible artefacts which fit a real-world context * is particularly suited to emerging and rapidly changing technology-related fields of study & * might be difficult to generalise to other real-world settings * may require advanced technical skills * may lead to short shelf-life of the research, particularly in technological volatile fields of study where technology becomes quickly obsolete \\
- \textbf{case study research} & to investigate in great depth a notable instance of what is under study, in its real-world context & you must be able to articulate your personal stake in the situation, for example, a deeply felt interest or active involvement , rather than assuming and claiming unbiased passive `neutral' observation. You must also keep your own journal during the course of your research inquiry, & you may seek to explore questions or hypotheses for follow-up research, or provide a detailed account of a phenomenon in its natural context, or explain why certain outcomes or phenomena have occurred & you must be able to analyse the significant instance holistically and in context & * allows the study of a complex situation where several factors are at play * iallows the researchers to explore alternative meanings and explanations & * can be time-consuming and access may be difficult to obtain * may be perceived as lacking rigour * insights may be difficult to generalise \\
+ \textbf{case study research} & to investigate in great depth a notable instance of what is under study, in its real-world context & you must be able to articulate your personal stake in the situation, for example, a deeply felt interest or active involvement , rather than assuming and claiming unbiased passive `neutral' observation. You must also keep your own journal during the course of your research inquiry, & you may seek to explore questions or hypotheses for follow-up research, or provide a detailed account of a phenomenon in its natural context, or explain why certain outcomes or phenomena have occurred & you must be able to analyse the significant instance holistically and in context & * allows the study of a complex situation where several factors are at play * allows the researchers to explore alternative meanings and explanations & * can be time-consuming and access may be difficult to obtain * may be perceived as lacking rigour * insights may be difficult to generalise \\
  \textbf{systemic inquiry} & to explore complex, messy situations involving multiple and often contrasting perspectives, with the aim of transforming the situation for social betterment. & - bricolage research applies, in which you can complement traditional research methods with other tools and techniques from your existing repertoire of expertise and professional tradition - your research journal contributes evidence & * mainly a qualitative endeavour * bricolage research applies, in which you can complement traditional research methods with other tools and techniques from your existing repertoire of expertise and professional tradition & * you must articulate your research problem with reference to one of more systems of interest, and frame the research in terms of possible systems change. * you must articulate your personal stake in the situation * You must also have access to sources of different perspectives on the situation under study in order to generate your evidence & * helps you make sense of complex situations of change and uncertainty * support development of trust amongst participants, including trust with the researcher in co-exploring the situation & - acknowledges that the research will not deliver `certainty' in terms of `problem-solving' associated with complex situations \\
  \textbf{mixed methods research} & to gain different perspectives on phenomena of interest, by exploring connections and contradictions between quantitative and qualitative data & will depend on the particular combination of methods selected & a key aspect is consideration of how connections between findings are established, through comparing and contrasting data from the different methods applied & you must be able to apply competently different kinds of methods & * can provide a more holistic understanding of the phenomena under study, and facilitate different avenues for exploration * particularly suited to situations in which neither quantitative nor qualitative methods alone can provide sufficient insights & * add complexity to the research design * can be demanding and time consuming \\
  \textbf{systematic review research} & to generate a scholarly synthesis of evidence in relation to a specific research problem or question & you need to establish and apply a rigorous set of criteria to identify, select, and critically appraise relevant research from previously published studies & you need to generate a critical synthesis of evidence based on the selected set of criteria & - your review must be both systematic and extensive - you need to be a skilled critical thinker and academic writer & - is considered transparent, reliable, and easy to replicate & - can be very time-consuming * is only as reliable as the studies reviewed * can be difficult to synthesise findings from potentially very different studies \\
 \bottomrule
-
-\end{tabulary}
-\end{minipage}
+\end{ltabulary}
 \end{table}
 
+\todo{They may already have done this}
 \begin{question}[subtitle={ACTIVITY: Detailing research strategies }] For each strategy in the table, comment on whether it is applicable to your research.
 
 \begin{guidance}For those applicable to your project, you should say why that's the case, with reference to your research problem, and aim and objectives. You should also comment on which research methods you may apply within, based on your previous research methods analysis, and on how likely you are to be able to apply it successfully.
@@ -1455,23 +1348,19 @@ Your review does not need to be extensive: a couple of references for each strat
 
 \subsubsection{Annotated reading list}
 
-\begin{itemize}
-\item There are many books and web portals which cover a variety of research strategies and methods. You could start from the following:
+\todo{Move these into body, and make standard bibliographic references(!)}
+
+There are many resources which cover a variety of research strategies and methods in more detail that we can here. You could start from the following:
 
 \begin{itemize}
 \item GO-GN (2020), Research Methods handbook, \href{https://go-gn.net/wp-content/uploads/2020/07/GO-GN-Research-Methods.pdf}{https:\slash \slash go-gn.net\slash wp-content\slash uploads\slash 2020\slash 07\slash GO-GN-Research-Methods.pdf} This is a practical introduction to research methods for phd research, written with contributions from doctoral research students.
 
-\item
-
 \item Oates, B.J. (2006) Researching information systems and computing, SAGE. This is very good read for novice research students, particularly in information systems and computing disciplines. It provides a clear, practical and comprehensive introduction to academic research, including key definitions, methods and techniques.
 
-\item
-
 \item The SAGE research portal at \href{https://methods-sagepub-com.libezproxy.open.ac.uk}{https:\slash \slash methods-sagepub-com.libezproxy.open.ac.uk} contains a great variety of resources on both strategies and methods, from articles to video tutorials
-
 \end{itemize}
 
-\item If you are interested in Design Science Research, then you could start from:
+\paragraph{For Design Science Research} start from:
 
 \begin{itemize}
 \item vom Brocke J., Hevner A., Maedche A. (2020) Introduction to Design Science Research. In: vom Brocke J., Hevner A., Maedche A. (eds) Design Science Research. Cases, Cham. \href{https://doi.org/10.1007/978-3-030-46781-4_1}{https:\slash \slash doi.org\slash 10.1007\slash 978-3-030-46781-4\_1}, which is possibly the most up-to-date introduction to the topic.
@@ -1480,14 +1369,14 @@ Your review does not need to be extensive: a couple of references for each strat
 
 \end{itemize}
 
-\item An oft-cited reference on case study research is:
+\paragraph{For case study research} start from:
 
 \begin{itemize}
 \item Yin, R.K., 2009. Case study research: Design and methods. Applied social research methods series, Vol. 5. Fourth Edition, Sage.
 
 \end{itemize}
 
-\item If you are interested in systemic inquiry you could start here:
+\paragraph{For systemic inquiry} start from:
 
 \begin{itemize}
 \item Ison, R. (2017). Systemic inquiry. Ch. 10 in Part 3 Systems Practice: How to Act (pp. 251--274). Springer, London, which is also available as eBook Reading
@@ -1500,7 +1389,7 @@ Your review does not need to be extensive: a couple of references for each strat
 
 \end{itemize}
 
-\item Problem diagrams are part of a wider approach to problem oriented engineering, with roots in software development, but more widely applicable to most forms of design and engineering. The following references are a good starting point:
+\paragraph{Problem diagrams} are part of a wider approach called problem oriented engineering, with roots in software development, but more widely applicable to most forms of design and engineering. The following references are a good starting point:
 
 \begin{itemize}
 \item Jackson, M., 2005. Problem frames and software engineering. Information and Software Technology, 47(14), pp.903--912.
@@ -1509,47 +1398,37 @@ Your review does not need to be extensive: a couple of references for each strat
 
 \end{itemize}
 
-\item UML is a modelling language with roots in software engineering. It is now an international standard that can be found at:
+\paragraph{UML} is a modelling language with roots in software engineering. It is now an international standard that can be found at:
 
 \begin{itemize}
 \item \href{https://www.iso.org/standard/52854.html}{https:\slash \slash www.iso.org\slash standard\slash 52854.html}
 
-\item Many tutorials are available online, so it should be relatively easy for you to find an introductory one. There are also many UML digital modelling tools, some of which are open source and free to use
+\item However, many tutorials are available online, so it should be relatively easy for you to find an introductory one. There are also many UML digital modelling tools, some of which are open source and free to use
 
 \end{itemize}
 
-\item If you wish to find out more about working with table, graphs and charts, you could start with the following free resources from The Open University, UK:
+\paragraph{For tables, graphs and charts} start with the following free resources: \href{https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/working-charts-graphs-and-tables/content-section-0?active-tab=description-tab}{`Working with charts, graphs and tables'} %
+%
+%\item  `More working with charts, graphs and tables' at:
+%
+%\href{https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/more-working-charts-graphs-and-tables/content-section-0?active-tab=content-tab}{https:\slash \slash www.open.edu\slash openlearn\slash science-maths-technology\slash mathematics-statistics\slash more-working-charts-graphs-and-tables\slash content-section-0?active-tab=content-tab}
+%
+or the UK BBC Skillswise site at: \href{https://www.bbc.co.uk/teach/skillswise/graphs/zmkpqp3}{https:\slash \slash www.bbc.co.uk\slash teach\slash skillswise\slash graphs\slash zmkpqp3}.\todo{Annotated bibliography needs completing for all research methods.}
 
-\begin{itemize}
-\item `Working with charts, graphs and tables' at:
-
-\end{itemize}
-
-\end{itemize}
-
-\href{https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/working-charts-graphs-and-tables/content-section-0?active-tab=description-tab}{https:\slash \slash www.open.edu\slash openlearn\slash science-maths-technology\slash mathematics-statistics\slash working-charts-graphs-and-tables\slash content-section-0?active-tab=description-tab}
-
-- `More working with charts, graphs and tables' at:
-
-\href{https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/more-working-charts-graphs-and-tables/content-section-0?active-tab=content-tab}{https:\slash \slash www.open.edu\slash openlearn\slash science-maths-technology\slash mathematics-statistics\slash more-working-charts-graphs-and-tables\slash content-section-0?active-tab=content-tab}
-
-or the UK BBC Skillswise site at:
-
-\href{https://www.bbc.co.uk/teach/skillswise/graphs/zmkpqp3}{https:\slash \slash www.bbc.co.uk\slash teach\slash skillswise\slash graphs\slash zmkpqp3}
+\UCJ
 
 \section{Reporting in Stage 2}
-At the end of Stage 2, we recommend you complete a report, extending that of Stage 1, covering the work you have carried on in this stage. As already indicated, writing end-of-stage reports throughout your project will help you consolidate your work, develop your dissertation incrementally, and improve your critical thinking and academic writing skills as you go along.
 
-The recommended structure and content for the Stage 2 report is indicated in Table 1.
+Well, you're reached the end of stage 2. You're really speeding along now.
 
-Table 1 -- Report structure and content guidance
+At the end of Stage 2, we recommend you complete a report, extending that of Stage 1, covering the work you have carried out in this stage. As already indicated, writing end-of-stage reports throughout your project will help you consolidate your work, develop your dissertation incrementally, and improve your critical thinking and academic writing skills as you go along.
+
+The recommended structure and content for the Stage 2 report is indicated in Table~\ref{tab:S2report}.
 
 \begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
+\caption{Report structure and content guidance\label{tab:S2report}}
 \centering
-\footnotesize
-\begin{tabulary}{\textwidth}{@{}LL@{}} \toprule
+\begin{tabulary}{\tablewidth}{@{}LL@{}} \toprule
  \textbf{Structure} & \textbf{Content guidance} \\
 \midrule
 
@@ -1566,7 +1445,6 @@ Table 1 -- Report structure and content guidance
 \bottomrule
 
 \end{tabulary}
-\end{minipage}
 \end{table}
 
 \begin{question}[subtitle={Activity: Putting your report together}] Using your word processor of choice, and starting from your Stage 1 report, create a report with the structured indicated in Table 1, and fill it in by following the guidance provided in the table, and making good use of your notes and summaries from all related activities you have carried out so far.
@@ -1576,19 +1454,13 @@ Table 1 -- Report structure and content guidance
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\paragraph{}
-After you have filled in your report with as much material as you can, you should review and revise it until you are happy with your account, and ready to move on. This may take more than one iteration, but you should ensure you do not delay unnecessarily your work for the follow-up stage.
-
-In the next activity, you will use Table 1 to assess whether your report is of good standard.
-
-Table 1 - Criteria to review your report
+In the next activity, you will use Table~\ref{tab:criteriaStage2} to assess whether your report is of good standard.
 
 \begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
 \centering
+\caption{Criteria to review your report\label{tab:criteriaStage2}}
 \small
-\begin{tabulary}{\textwidth}{@{}ll@{}} \toprule
+\begin{tabulary}{\tablewidth}{@{}LL@{}} \toprule
  \textbf{Criteria} & \textbf{Prompts} \\
 \midrule
 
@@ -1602,7 +1474,6 @@ Table 1 - Criteria to review your report
 \bottomrule
 
 \end{tabulary}
-\end{minipage}
 \end{table}
 
 \begin{question}[subtitle={Activity: Reviewing your report}] Apply the criteria in Table 1 to review your current report and write up a summary of your assessment.
@@ -1612,5 +1483,11 @@ Table 1 - Criteria to review your report
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\paragraph{}
+
 As previously stated, writing up your report is an excellent way to communicate the work you have completed and still planning to do, and something tangible you can share with your supervisor for their formative feedback.
+
+\section{Reflecting}
+
+After you have filled in your report with as much material as you can, you should review and revise it until you are happy with the story that you are telling about your research, and ready to move on. This may take more than one iteration, but you should ensure you do not delay unnecessarily your work for the follow-up stage.
+
+\todo{Add something more here}.
