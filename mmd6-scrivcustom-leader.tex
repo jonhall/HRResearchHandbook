@@ -256,5 +256,21 @@ title={Tip},
 \newenvironment{stolen}[1]{\bgroup\color{red}\marginpar{Material stolen from #1}}{\egroup}
 \newenvironment{adapted}[1]{\bgroup\color{blue}\marginpar{Material adapted from #1}}{\egroup}
 
+%%To keep reflection consistent across stages, this file brings all reflective stuff together – removed 2023-10-16
+%\RequirePackage{comment}
+%\excludecomment{Stage1Reflection}
+%\excludecomment{Stage2Reflection}
+%\excludecomment{Stage3Reflection}
+%\excludecomment{Stage4Reflection}
+%
+%\excludecomment{Stage5Reflection}
+%
+%%For progress indicator
+\usepackage{lastpage}
+\usepackage{refcount}
+\usepackage{intcalc}
+
+%\newcommand{\reflect}[1]{\includecomment{#1}\input{Stagereflect}\excludecomment{#1}}
+
 \title{Master Research\\ Handbook}
 \author{Lucia Rapanotti and Jon Hall}
