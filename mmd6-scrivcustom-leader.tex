@@ -1,15 +1,48 @@
 \documentclass[a4paper,12pt,oneside,landscape]{memoir}
+
+%%Footnotes
 \usepackage[perpage,side,symbol*]{footmisc}
 
+%%options interpretation
 \usepackage{ifdraft}
 
+%%Colors
 \usepackage[svgnames]{xcolor}
+
+%%Bibtex stuff
+\usepackage[
+	backend=bibtex,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN}
+\addbibresource{collatedBib}
+
+%%Extended list environments
+\usepackage[inline,shortlabels]{enumitem}
+
+%%Xrefs
+\usepackage{hyperref}
+\usepackage{xurl}
+
+%%Graphics
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+
+%%Numbering options to subsection
+\setcounter{secnumdepth}{3}
+
+%%Quotes
 \usepackage{csquotes}
+%\AtBeginEnvironment{quote}{\itshape}
 
 %%Underconstruction logo visible from overview
 \newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}
 \newcommand{\UCL}{\ {\color{pink}\rule{2cm}{2cm}}}
 
+%%Todo notes
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 % 2022-10-11: so that todos don't eat following spaces.
 % https://tex.stackexchange.com/questions/11802/todo-note-steals-space
@@ -20,6 +53,12 @@
 \makeatother
 
 %%%For Activities and the like
+\newcommand{\exampleColor}{CornflowerBlue!40!white}
+\newcommand{\activityColor}{Pink!80!white} 
+\newcommand{\discussionColor}{\activityColor} 
+\newcommand{\tipColor}{Green!20!white} 
+\newcommand{\quoteColor}{Linen} 
+\newcommand{\frameColor}{black!50!white}
 \usepackage[many]{tcolorbox}
 \newtcolorbox{activity}{
 %  enhanced,
@@ -27,8 +66,8 @@
   pad at break=2mm,
   left=2mm,
   right=2mm,
-  colback=Pink!80!white,
-  colframe=black!50!white,
+  colback=\activityColor,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
   frame hidden, 
@@ -44,8 +83,8 @@
   pad at break=2mm,
   left=2mm,
   right=2mm,
-  colback=Pink!80!white,
-  colframe=black!50!white,
+  colback=\discussionColor,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
   frame hidden, 
@@ -55,14 +94,19 @@
 title={Discussion\hfill \#\CurrentQuestionID},
 }
 
+ %%Guidance environment
+\newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
+          {\textbf{Guidance}}}
+    {}
+
 \newtcolorbox{tip}{
 %  enhanced,
   breakable,
   pad at break=2mm,
   left=2mm,
   right=2mm,
-  colback=Green!20!white,
-  colframe=black!50!white,
+  colback=\tipColor,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
   frame hidden, 
@@ -72,41 +116,6 @@ title={Discussion\hfill \#\CurrentQuestionID},
 title={Tip},
 }
 
-%%%For question solution pairs, with delayed printing
-\usepackage{exsheets}
-\SetupExSheets{
-	headings=empty,
-	question/pre-hook=\begin{activity},
-	question/post-hook=\end{activity},
-	solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
-	solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
-	solution/print=true,
-	}
-\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
-%%For layout
-\usepackage{geometry}
-\geometry{
-%  showframe,
-%  paperwidth=6in,
-%  paperheight=9in,
-%	asymmetric,
-  left=1cm,
-  right=1cm,
-  top=1.5cm,
-  bottom=1.5cm,
-  marginparsep=8mm,
-  marginparwidth=75mm,
-  includemp,
-  includehead,
-}
-
- %%Guidance environment
-\newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
-          {\textbf{Guidance}}}
-    {}
-  
-\def\exampleColor{CornflowerBlue!40!white}
-  
 \newtcolorbox{example}[1]{
 %  enhanced,
   breakable,
@@ -146,8 +155,8 @@ title={Tip},
   pad at break=2mm,
   left=2mm,
   right=2mm,
-  colback=Linen,
-  colframe=black!50!white,
+  colback=\quoteColor,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
 %  frame hidden, 
@@ -155,18 +164,53 @@ title={Tip},
   before=\par\vspace*{2mm},
   after=\par\bigskip,
   title=\textbf{Quote}}%
+
+%%%For question solution pairs, with delayed printing
+\usepackage{exsheets}
+\SetupExSheets{
+	headings=empty,
+	question/pre-hook=\begin{activity},
+	question/post-hook=\end{activity},
+	solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
+	solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
+	solution/print=true,
+	}
+\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
+
+%%Answer environment
+%%Is this used?
+\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
+\item}
+    {\end{trivlist}}
+
+%%For layout
+\usepackage{geometry}
+\geometry{
+%  showframe,
+%  paperwidth=6in,
+%  paperheight=9in,
+%	asymmetric,
+  left=1cm,
+  right=1cm,
+  top=1.5cm,
+  bottom=1.5cm,
+  marginparsep=8mm,
+  marginparwidth=75mm,
+  includemp,
+  includehead,
+}
   
 %%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
-\usepackage{booktabs}
-\usepackage{multicol}
-%%For tables
-\usepackage{longtable,tabulary}
+\usepackage{booktabs}%%For fancy lines in tables
+\usepackage{multicol}%%For multiple columns
+
 %%For additional caption options
-\usepackage{caption}
-%%Hack for @{}lllll@{} instead of @{}LLLL@{}
-\newcolumntype{l}{L}
-%%so that tables extend into margin
-\newcommand{\tablewidth}{1.4\textwidth}
+%%Allows captions in longtables
+%\usepackage{caption}
+\usepackage{float}
+
+%%For tables
+\usepackage{longtable,tabulary}%%tabulary gives L column
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
 \makeatletter
 
@@ -192,11 +236,17 @@ title={Tip},
 	\tabulary}%\dimen@}
 
 \def\endltabulary{\endtabulary}
-%%Allows captions in longtables
+
+%%so that tables extend into margin
+\newcommand{\tablewidth}{1.4\textwidth}
 
 \makeatother
 
-%\usepackage{csquotes}
+%%Hack for @{}lllll@{} instead of @{}LLLL@{}
+%%Remove when all tables properly formatted
+\newcolumntype{l}{L}
+
+%%Reinstate when in final version
 %\usepackage{fontspec}
 %
 %\usepackage{iffont}
@@ -209,68 +259,20 @@ title={Tip},
 %	} 
 %\setmainfont[BoldFont=\boldfont]{\mainfont}
 
-%%Bibtex stuff
-\usepackage[
-	backend=bibtex,
-	style=authoryear,
-	autocite=inline,
-	sortcites,
-	backref=true
-]{biblatex}
-\addbibresource{MY-BIB-CLEAN}
-\addbibresource{collatedBib}
 
 %%Ensure bibliography always included, even if \end{document} early
-\AtEndDocument{\printsolutions
+\AtEndDocument{%
+\ifoptionfinal{\printsolutions}{}
 	\printbibliography}
-
-%%Answer environment
-\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
-\item}
-    {\end{trivlist}}
-
-%%\doublespacing
-%\usepackage{calc}
-%\usepackage[textheight=26\baselineskip+10pt]{geometry}
-%\usepackage{fancyhdr}
-
-\usepackage[inline,shortlabels]{enumitem}
-\usepackage{hyperref}
-\usepackage{xurl}
-
-%\def\@maketitle{\newpage
-%    \begin{flushleft}%
-%        \let\footnote\thanks%
-%       {\LARGE\bfseries\sffamily \@title \par\medskip}%
-%       {\large\@author\par}%
-%       {\large\@date}%
-%    \end{flushleft}\par\vskip\baselineskip%
-%    \thispagestyle{empty}}%
-
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
-
-\setcounter{secnumdepth}{3}
 
 %%\begin{stolen} to identify uncredited material
 \newenvironment{stolen}[1]{\bgroup\color{red}\marginpar{Material stolen from #1}}{\egroup}
 \newenvironment{adapted}[1]{\bgroup\color{blue}\marginpar{Material adapted from #1}}{\egroup}
 
-%%To keep reflection consistent across stages, this file brings all reflective stuff together – removed 2023-10-16
-%\RequirePackage{comment}
-%\excludecomment{Stage1Reflection}
-%\excludecomment{Stage2Reflection}
-%\excludecomment{Stage3Reflection}
-%\excludecomment{Stage4Reflection}
-%
-%\excludecomment{Stage5Reflection}
-%
 %%For progress indicator
 \usepackage{lastpage}
 \usepackage{refcount}
 \usepackage{intcalc}
-
-%\newcommand{\reflect}[1]{\includecomment{#1}\input{Stagereflect}\excludecomment{#1}}
 
 \title{Master Research\\ Handbook}
 \author{Lucia Rapanotti and Jon Hall}
