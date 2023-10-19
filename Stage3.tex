@@ -1,18 +1,33 @@
-\chapter*{Stage 3: Second research increment}
+\chapter{Stage 3: Second research increment}
+
+By now you will have some mastery of the techniques and tools that you need to \enquote{do} research at masters level. You may have ideas about what you still need to do\footnote{If not, don't worry – we've got you covered with this chapter!} and so will have ideas about what come next.
+
+With those skills, you're developing into an independent researcher\footnote{Being an independent researcher isn't one of the examined outcomes of masters research, but that you're feeling confident in your research is good.} and you may feel that this book holds nothing more for you. 
+
+Stay with us a little longer though: the next sections aren't as long as those that you've studied already – you'll be doing more yourself, honing the skills you've picked up as you go along – but they might help to keep you systematic and on the path to submission. 
+
+\newcommand{\percentthroughbook}{
+%\thepage
+%\getpagerefnumber{LastPage}
+\intcalcDiv{\intcalcMul{\thepage}{100}}{\getpagerefnumber{LastPage}}\%
+}
+
+You won't be surprised to know that stage 3 comes next; there's another research increment coming.
+
+%%Removed for now
+%You're now $\percentthroughbook{}$ through this book – not long to go before you're finished. Stick with us for a while longer.
 
 \section{Introducing stage 3}
-In Stage 3 you will focus on adding detail to both your aim and objectives, and your research design. Stage 3 assumes that you have completed your Stage 2 work, and possibly discussed it with your supervisor, particularly your research design choices.
 
-With reference to our 5-stage framework, the activities which are in focus in Stage 3 are recalled in Table 1, which also provides some guidelines for your interaction with your supervisor during this stage.
+In Stage 3 you will focus on adding detail to both your aim and objectives and your research design. Stage 3 assumes that you have completed your Stage 2 work, and possibly discussed it with your supervisor\footnote{If your proposal still requires some `remedial' work to fully satisfy your course requirements then you should carry that out before moving on.}, particularly your research design choices.
 
-Table 1 - Stage 3 activities
+With reference to our 5-stage framework, the activities which are in focus in Stage 3 are recalled in Table~\ref{tab:stage3acts}, which also provides some guidelines for your interaction with your supervisor during this stage.
 
 \begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
+\caption{Stage 3 activities\label{tab:stage3acts}}
 \centering
 \small
-\begin{tabulary}{\tablewidth}{@{}llll@{}} \toprule
+\begin{tabulary}{\tablewidth}{@{}LLLL@{}} \toprule
  \textbf{Research activities} & \textbf{Stage 3} \textbf{(20\% of project length)} & \textbf{Effort within stage} & \textbf{Suggested focus of your interaction with your supervisor} \\
 \midrule
 
@@ -21,16 +36,15 @@ Table 1 - Stage 3 activities
  \textbf{Setting research aim and objectives} & Finalise aim and objectives, and define tasks and deliverables & 10\% & Suitability of tasks and deliverables from objectives \\
  \textbf{Choosing the research design} & Complete research design, with detailed consideration of data and evidence, research strategy, research methods and procedures & 20\% & Suitability of research procedures \\
  \textbf{Gathering and analysing evidence} & Conduct pilot work to test aspects of your research design & 35\% & Scope of your pilot work \\
- \textbf{Interpreting and evaluating findings} & n\slash a & 0\% & \\
+ \textbf{Interpreting and evaluating findings} & n/a & 0\% & \\
  \textbf{Reporting, critical reflection and conclusions} & Assess research progress and write up Stage 3 report & 25\% & Any further improvements required \\
  \textbf{Work planning and risk management} & At stage start, review work from previous stage and project risk; adjust plan as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required \\
 \bottomrule
 
 \end{tabulary}
-\end{minipage}
 \end{table}
 
-\begin{question}[subtitle={Activity: Understanding the effort needed in this stage}] Consider Table 1 carefully, taking notice of the entries in the `Effort within stage' column. Make a note of the activities which are most prominent in this stage and what is expected under each.
+\begin{question}[subtitle={Activity: Understanding the effort needed in this stage}] Consider Table~\ref{tab:stage3acts} carefully, taking notice of the entries in the `Effort within stage' column. Write down the most time-consuming activities in this stage and what is expected under each.
 
 \begin{solution}Developing your research design further and conducting your pilot work will constitute your major effort in this stage (55\% of the study time in total): your pilot work will be an initial test of some aspects of your research design, including a proof-of-concept application of some of your chosen methods.
 \end{solution}\end{question}
@@ -38,37 +52,55 @@ Table 1 - Stage 3 activities
 \color{black}
 
 \section{Identifying tasks and deliverables}
-Recall from Stage 1 that your research aim indicates the specific way in which your research will address the knowledge gap you have identified with your research problem, while your objectives help you break that down into 3 to 4 high-level steps you must take to achieve the aim, as shown in the example below (repeated from Stage 1).
+Recall from Stage 1 that 
+%
+\begin{itemize}
+\item your research aim tells the reader how your research will address the knowledge gap that you have found through your literature review, 
+\item your objectives help you break it down into 3 to 4 high-level steps you must take to achieve the aim.
+\end{itemize}
+%
+It is now time to break your research objectives down even further – into tasks – to help you plan your detailed research work to meet each of them. 
 
-\begin{example}{Example --Â Applying Machine Learning}Assume the research aim is stated as:
+\subsection{Research tasks}
 
-\emph{to apply Machine Learning (ML) to improve the accuracy of resources and time forecasting in the context of small engineering plants}
+While a research objective indicates what you need to achieve, \textbf{research tasks} specify the work that you need to complete to get there, so they address the question of what you need to do to meet the objective.
 
-Some related objectives could be the following:
+As a running example, we'll be working with the following research objectives, which you saw in Example~\ref{ex:machinelearning} in Stage 1\footnote{See page~\pageref{ex:machinelearning}.}\todo{What was the research problem?}:
 
-1. To identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants
+\todo{Removed example to remove error}
+%\begin{example}%
+{Recap: Applying Machine Learning}
+Given the following research aim:
 
-2. To test the accuracy of forecasting of those techniques
+\blockquote{to apply Machine Learning (ML) to improve the accuracy of resources and time forecasting in the context of small engineering plants}
 
-3. To provide recommendations as to how integrate those techniques effectively in engineering practice in order to improve forecasting accuracy
+Some related objectives could be the following\todo{JGH: these were two bullet lists, which I merged for simplicity.}:
 
-Objective 1 allows us to identify specific ML techniques to be used in the project, to ensure the work is feasible within the time-frame of the project. Objective 2 allows us to investigate and compare how accurate the chosen techniques are in their forecasting application. Objective 3 allows us to draw some conclusions from the research conducted and make recommendations to improve professional practice.
+\begin{description}%[start=0,label={(\bfseries R\arabic*):}]
+\item [Objective 1] To identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants, which will allow us to identify specific ML techniques to be used in the project, to ensure the work is feasible within the time-frame of the project. 
 
-Note how those objectives build on each other and, if successfully completed, they contribute to meet the overall aim.
-\end{example}
+\item [Objective 2] To test the accuracy of forecasting of those techniques which will allow us to investigate and compare how accurate the chosen techniques are in their forecasting application. 
 
-\paragraph{}
-It is now time to break your research objectives down even further, into tasks to help you plan your detailed research work to meet each of them. While a research objective indicates what you need to achieve, \textbf{research tasks} specify the work that you need to complete to get there, so they address the question of what you need to do to meet the objective.
+\item [Objective 3] To provide recommendations as to how integrate those techniques effectively in engineering practice in order to improve forecasting accuracy which will allows us to draw some conclusions from the research conducted and make recommendations to improve professional practice.
+\end{description}
+
+Note how those objectives were designed to build on each other and, when successfully completed, they'd contribute to meet the overall aim.
+%%JGH removed to correct float lost error
+%\end{example}
 
 Closely related to tasks are \textbf{deliverables}: these are the tangible things produced by your task work.
 
-\begin{example}{Example --Â cont'd}In our example, the first objective is met once we have identified the relevant ML techniques. There are two complementary ways to do this: to look at the literature and to ask practitioners. As a result, we could break this objective down into the tasks, and deliverables, indicated in the following table
+\begin{example}{Example – cont'd}In our example, the first objective is met once we have identified the relevant ML techniques. There are two complementary ways to do this: to look at the literature and to ask practitioners. As a result, we could break this objective down into the tasks, and deliverables, indicated in the following table
 
-\paragraph{Table}
-\textbar{} \textbf{Objective} \textbar{} \textbf{Tasks} \textbar{} \textbf{Deliverables} \textbar{}
-\textbar{} :----- \textbar{} :----- \textbar{} :----- \textbar{}
-\textbar{} \textbf{To identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants} \textbar{} to investigate the academic literature in order to identify relevant ML techniques \textbar{} a collection of relevant ML techniques reported in the literature \textbar{}
-\textbar{} \textbar{} to ask practitioners which techniques they employ \textbar{} a collection of relevant ML techniques used in professional practice \textbar{}\end{example}
+\begin{tabulary}{\tablewidth}{@{}LL@{}}
+\multicolumn{2}{c}{\textbf{Objective 1: to identify which ML techniques...}}\\
+\toprule
+\textbf{Tasks} & \textbf{Deliverables} \\\midrule
+to investigate the academic literature in order to identify relevant ML techniques & a collection of relevant ML techniques reported in the literature \\
+to ask practitioners which techniques they employ & a collection of relevant ML techniques used in professional practice \\
+\bottomrule
+\end{tabulary}
+\end{example}
 
 \begin{question}[subtitle={ACTIVITY: Establishing tasks and deliverables}] Consider your research objectives. For each, identify related tasks and deliverables.
 
@@ -77,21 +109,22 @@ Closely related to tasks are \textbf{deliverables}: these are the tangible thing
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\paragraph{}
-Your tasks and deliverables don't need to be perfect at this stage, and are likely to be revised as you progress through your project. However, it is important that you have thought about specific work you will need to carry out to meet your objectives.
+Your tasks and deliverables don't need to be perfect in stage 3 – there are two more stages to perfect them afterall – and are likely to be revised as you progress through your project. However, it is important that you have thought about specific work you will need to carry out to meet your objectives.
 
 \section{Relating tasks to research methods}
 The way to carry out your tasks and meet your objectives is through the application of research methods.
 
 \begin{example}{EXAMPLE - cont'd }Following on from our previous example, we have extended the table to include an indication and justification of candidate research methods for each task.
 
-\paragraph{TABLE}
-\textbar{} \textbf{Objective} \textbar{} \textbf{Tasks} \textbar{} \textbf{Deliverables} \textbar{} \textbf{Relevant research methods} \textbar{} \textbf{Justification and feasibility} \textbar{}
-\textbar{} :----- \textbar{} :----- \textbar{} :----- \textbar{} :----- \textbar{} :----- \textbar{}
-\textbar{} \textbf{To identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants} \textbar{} to investigate the academic literature in order to identify relevant ML techniques \textbar{} a collection of relevant ML techniques reported in the literature \textbar{} review of existing literature \textbar{} I can access relevant literature via my university library \textbar{}
-\textbar{} \textbar{} to ask practitioners which techniques they employ \textbar{} a collection of relevant ML techniques used in professional practice \textbar{} questionnaire, possibly followed by interviews \textbar{} I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \textbar{}\end{example}
+\begin{tabulary}{\tablewidth}{@{}LLLL@{}}
+\multicolumn{4}{c}{\textbf{Objective 1: to identify which ML techniques...}}\\
+\toprule
+\textbf{Tasks} & \textbf{Deliverables} & \textbf{Relevant research methods} &\textbf{Justification and feasibility}\\\midrule
+to investigate the academic literature in order to identify relevant ML techniques & a collection of relevant ML techniques reported in the literature & review of existing literature & I can access relevant literature via my university library \\
+to ask practitioners which techniques they employ & a collection of relevant ML techniques used in professional practice & questionnaire, possibly followed by interviews & I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \\\bottomrule
+\end{tabulary}
+\end{example}
 
-\paragraph{}
 Note that the choice of research methods in relation to your research tasks is an essential part of your research design. In fact, the two influence each other: your objectives and related tasks direct you towards specific research methods, which in turn have to be part of your overall research design.
 
 \begin{question}[subtitle={ACTIVITY: Associating methods to tasks and deliverables}] Extend your tasks and deliverables table with your candidate research methods, including stating why they apply and are feasible for your project. Revise your research design draft from Stage 2 so that is consistent with those choices.
@@ -149,7 +182,7 @@ Your \textbf{pilot work} will be a small scale test of some of the methods and p
 
 As such, your pilot work may not contribute directly to your aim and objectives, but it should help you decide whether you can actually do what you have planned to do, or inform how your research design and project plan should change instead.
 
-There are no constraints on what you can do for your pilot work, other than you should exercise some aspect of your research design. It is therefore essential that you you agree what you are going to do with your supervisor first.
+There are no constraints on what you can do for your pilot work, other than you should exercise some aspect of your research design. It is therefore essential that you agree what you are going to do with your supervisor first.
 
 \begin{question}[subtitle={Activity: Planning and executing your pilot work}] Plan your pilot work and discuss your plan with your supervisor.
 
@@ -174,16 +207,13 @@ This is a substantial activity, which will take you up to 35\% of your study tim
 \color{black}
 
 \section{Reporting in Stage 3}
-At the end of Stage 3, you should complete a report, extending that of Stage 2 and covering the work you have carried on in this stage. Its recommended structure and content are indicated in Table 1.
+At the end of Stage 3, you should complete a report, extending that of Stage 2 and covering the work you have carried on in this stage. Its recommended structure and content are indicated in Table~\ref{tab:reportStructure}.
 
-Table 1 -- Report structure and content guidance
-
-\begin{table}[htbp]
-\begin{minipage}{\linewidth}
-\setlength{\tymax}{0.5\linewidth}
+\begin{table}[H]
 \centering
-\small
-\begin{tabulary}{\textwidth}{@{}ll@{}} \toprule
+\footnotesize
+\caption{Report structure and content guidance\label{tab:reportStructure}}
+\begin{ltabulary}{\tablewidth}{@{}LL@{}} \toprule
  \textbf{Structure} & \textbf{Content guidance} \\
 \midrule
 
@@ -199,29 +229,25 @@ Table 1 -- Report structure and content guidance
  Appendix - Work schedule & You should include your revised work plan as an appendix \\
  Appendix - Risk assessment table & You should include your updated risk table as an appendix \\
 \bottomrule
-
-\end{tabulary}
-\end{minipage}
+\end{ltabulary}
 \end{table}
 
-\begin{question}[subtitle={Activity: Putting your report together}] Using your word processor of choice, and starting from your previous report, complete your Stage 3 report by applying the structure and guidance in Table 1, and making good use of your notes and summaries from all related activities you have carried out so far.
+\begin{question}[subtitle={Activity: Putting your report together}] Using your word processor of choice, and starting from your previous report, complete your Stage 3 report by applying the structure and guidance in Table~\ref{tab:ReviewCrit}, and making good use of your notes and summaries from all related activities you have carried out so far.
 
 \begin{guidance}In this first pass at putting together your report, you should focus primarily on completeness, ensuring that each section includes at least draft content.
 \end{guidance}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsubsection{}
-As in the previous stages, after you have filled in your report you should review and revise it iteratively until you are happy with your account, and are ready to move on.
-
-Table 1 - Criteria to review your report
+As in the previous stages, after you have filled in your report you should review and revise it iteratively until you are happy with your account, and are ready to move on. 
 
 \begin{table}[htbp]
 \begin{minipage}{\linewidth}
 \setlength{\tymax}{0.5\linewidth}
 \centering
+\caption{Criteria to review your report\label{tab:ReviewCrit}}
 \small
-\begin{tabulary}{\textwidth}{@{}ll@{}} \toprule
+\begin{tabulary}{\tablewidth}{@{}LL@{}} \toprule
  \textbf{Criteria} & \textbf{Prompts} \\
 \midrule
 
@@ -244,4 +270,11 @@ Table 1 - Criteria to review your report
 \end{guidance}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
+
+\section{Reflection: Stage 3}
+
+%%More here
+
+%%Repeated reflection activity
+\input{Shared/reflectActivity}
 
