@@ -31,6 +31,9 @@
 \usepackage{graphicx}
 \graphicspath{{Figures/}}
 
+%%To control paragraph separation
+\usepackage{parskip}
+
 %%Numbering options to subsection
 \setcounter{secnumdepth}{3}
 
@@ -238,7 +241,8 @@ title={Tip},
 \def\endltabulary{\endtabulary}
 
 %%so that tables extend into margin
-\newcommand{\tablewidth}{1.4\textwidth}
+\newdimen\tablewidth
+\setlength{\tablewidth}{1.4\textwidth}
 
 \makeatother
 
