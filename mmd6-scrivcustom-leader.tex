@@ -1,5 +1,7 @@
 \documentclass[a4paper,12pt,oneside,landscape]{memoir}
 
+\usepackage{xparse}
+
 %%Footnotes
 \usepackage[perpage,side,symbol*]{footmisc}
 
@@ -23,6 +25,7 @@
 %%Extended list environments
 \usepackage[inline,shortlabels]{enumitem}
 
+
 %%Xrefs
 \usepackage{hyperref}
 \usepackage{xurl}
@@ -38,8 +41,8 @@
 \setcounter{secnumdepth}{3}
 
 %%Quotes
-\usepackage{csquotes}
-%\AtBeginEnvironment{quote}{\itshape}
+\usepackage[threshold=15,thresholdtype=words]{csquotes}
+\AtBeginEnvironment{quote}{\itshape}
 
 %%Underconstruction logo visible from overview
 \newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}

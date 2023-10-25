@@ -1,8 +1,26 @@
+%%Candidate to move to headers
+%\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\}%
+
+\newcommand{\hwidth}[1]{\makebox[0pt][l]{#1}}
+\DeclareExpandableDocumentCommand{\tabletitle}{m}{\hwidth{\textbf{#1}}\\}
+
+%%Structures the report table, headings to the left in a list, explanation to the right
+%%#1 = caption label
+\newenvironment{ReportStructureTable}[1]{%
+	\setlist{noitemsep,topsep=0pt,partopsep=0pt} %compress list
+	\begin{longtable}{@{}p{0.3\tablewidth}>{\vspace{-3pt}}p{0.7\tablewidth}@{}}%%JGH \vspace{-3pt} is a hack to align first lines
+	\caption{Report structure and content guidance\label{#1}}\\
+	\toprule
+	\textbf{Suggested structure} & \textbf{Content guidance} \\
+	\midrule%
+}%
+{\end{longtable}}
+
 \chapter{Stage 3: Second research increment}
 
-By now you will have some mastery of the techniques and tools that you need to \enquote{do} research at masters level. You may have ideas about what you still need to do\footnote{If not, don't worry – we've got you covered with this chapter!} and so will have ideas about what come next.
+By now you will have some mastery of the techniques and tools that you need to \enquote{do} research at masters level. You may also have ideas about what you still need to do in the next step\footnote{If not, don't worry – we've got you covered with this chapter!}.
 
-With those skills, you're developing into an independent researcher\footnote{Being an independent researcher isn't one of the examined outcomes of masters research, but that you're feeling confident in your research is good.} and you may feel that this book holds nothing more for you. 
+With the skills you have so far gained, you're developing into an independent researcher\footnote{Being an independent researcher isn't one of the examined outcomes of masters research, but that you're feeling confident in your research is good.} and you may feel that this book holds nothing more for you. 
 
 Stay with us a little longer though: the next sections aren't as long as those that you've studied already – you'll be doing more yourself, honing the skills you've picked up as you go along – but they might help to keep you systematic and on the path to submission. 
 
@@ -31,14 +49,14 @@ With reference to our 5-stage framework, the activities which are in focus in St
  \textbf{Research activity} & \textbf{Stage 3} \textbf{(20\% of project length)} & \textbf{Effort within stage} & \textbf{Suggested focus of your interaction with your supervisor} \\
 \midrule
 
- \textbf{Identifying the research problem} & Adjust, if needed & 2\% & \\
- \textbf{Reviewing the literature} & Adjust, if needed & 3\% & \\
- \textbf{Setting research aim and objectives} & Finalise aim and objectives, and define tasks and deliverables & 10\% & Suitability of tasks and deliverables from objectives \\
- \textbf{Choosing the research design} & Complete research design, with detailed consideration of data and evidence, research strategy, research methods and procedures & 20\% & Suitability of research procedures \\
- \textbf{Gathering and analysing evidence} & Conduct pilot work to test aspects of your research design & 35\% & Scope of your pilot work \\
- \textbf{Interpreting and evaluating findings} & n/a & 0\% & \\
- \textbf{Reporting, critical reflection and conclusions} & Assess research progress and write up Stage 3 report & 25\% & Any further improvements required \\
- \textbf{Work planning and risk management} & At stage start, review work from previous stage and project risk; adjust plan as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required \\
+ \tabletitle{Identifying the research problem} & Adjust, if needed & 2\% & \\
+ \tabletitle{Reviewing the literature} & Adjust, if needed & 3\% & \\
+ \tabletitle{Setting research aim and objectives} & Finalise aim and objectives, and define tasks and deliverables & 10\% & Suitability of tasks and deliverables from objectives \\
+ \tabletitle{Choosing the research design} & Complete research design, with detailed consideration of data and evidence, research strategy, research methods and procedures & 20\% & Suitability of research procedures \\
+ \tabletitle{Gathering and analysing evidence} & Conduct pilot work to test aspects of your research design & 35\% & Scope of your pilot work \\
+ \tabletitle{Interpreting and evaluating findings} & n/a & 0\% & \\
+ \tabletitle{Reporting, critical reflection and conclusions} & Assess research progress and write up Stage 3 report & 25\% & Any further improvements required \\
+ \tabletitle{Work planning and risk management} & At stage start, review work from previous stage and project risk; adjust plan as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required \\
 \bottomrule
 
 \end{tabulary}
@@ -77,40 +95,37 @@ Finally, we'll talk about the \textbf{deliverables}: these are the tangible thin
 
 \subsubsection{Decomposing objectives into tasks}
 
-\todo{Temporarily removed example to remove lost float}
-%\begin{example}
-{Recap: Applying Machine Learning}
-Given the following research aim:
-
+\begin{example}{Recap: Applying Machine Learning}
+In Stage 2, we refined Clara's research aim, which was:
+%
 \blockquote{to apply Machine Learning (ML) to improve the accuracy of resources and time forecasting in the context of small engineering plants}
-
-Some related objectives \textit{could} be the following\todo{JGH: these were two bullet lists, which I merged for simplicity.}\todo{\textit{Could}: Have the research objectives not already been defined?}:
+%
+to three following three objectives:\todo[inline]{JGH: needs doing if not already done}
 
 \begin{description}%[start=0,label={(\bfseries R\arabic*):}]
-\item [Objective 1] To identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants, which will allow us to identify specific ML techniques to be used in the project, to ensure the work is feasible within the time-frame of the project. 
+\item [Objective 1] to identify which ML techniques are applicable to resource and time forecasting in the context of small engineering plants, which will allow us to identify specific ML techniques to be used in the project, to ensure the work is feasible within the time-frame of the project. 
 
-\item [Objective 2] To test the accuracy of forecasting of those techniques which will allow us to investigate and compare how accurate the chosen techniques are in their forecasting application. 
+\item [Objective 2] to test the accuracy of forecasting of those techniques which will allow us to investigate and compare how accurate the chosen techniques are in their forecasting application. 
 
-\item [Objective 3] To provide recommendations as to how integrate those techniques effectively in engineering practice in order to improve forecasting accuracy which will allows us to draw some conclusions from the research conducted and make recommendations to improve professional practice.
+\item [Objective 3] to provide recommendations as to how integrate those techniques effectively in engineering practice in order to improve forecasting accuracy which will allows us to draw some conclusions from the research conducted and make recommendations to improve professional practice.
 \end{description}
 
-%Note how those objectives were designed to build on each other and, when successfully completed, they'd contribute to meet the overall aim.
-%%JGH removed to correct float lost error
-%\end{example}
+Note how those objectives were designed to build on each other and, when successfully completed, they'd contribute to meet the overall aim.
+\end{example}
 
 \begin{example}{Example – cont'd}In our example, the first objective is met once we have identified the relevant ML techniques. There are two complementary ways to do this: to look at the literature and to ask practitioners. As a result, we could break this objective down into the tasks, and deliverables, indicated in the following table
 
-\begin{tabulary}{\tablewidth}{@{}LL@{}}
-\multicolumn{2}{c}{\textbf{Objective 1: to identify which ML techniques...}}\\
+\begin{longtable}{@{}p{0.1\textwidth}@{}p{0.9\textwidth}@{}}
+\caption{Objective 1: to identify which ML techniques...}\\
 \toprule
-\textbf{Tasks} & \textbf{Deliverables} \\\midrule
-to investigate the academic literature in order to identify relevant ML techniques & a collection of relevant ML techniques reported in the literature \\
-to ask practitioners which techniques they employ & a collection of relevant ML techniques used in professional practice \\
+\textbf{Task} & \textbf{Deliverable} \\\midrule
+\tabletitle{to identify relevant ML techniques in the academic literature} & a collection of relevant ML techniques reported in the literature \\\\
+\tabletitle{to ask practitioners which techniques they employ} & a collection of relevant ML techniques used in professional practice \\
 \bottomrule
-\end{tabulary}
+\end{longtable}
 \end{example}
 
-\begin{question}[subtitle={ACTIVITY: Establishing tasks and deliverables}] Consider your research objectives. For each, identify related tasks and deliverables.
+\begin{question}[subtitle={ACTIVITY: Establishing tasks and deliverables}] Consider your research objectives. For each, identify related tasks and deliverables.\todo[inline]{I don't think I could do this at this point.}
 
 \begin{guidance}You should draw a table similar to that in our running example. You should ensure that the tasks provide a reasonable break down of your objectives into discrete pieces of work.
 \end{guidance}\end{question}
@@ -124,12 +139,12 @@ The way to carry out your tasks and meet your objectives is through the applicat
 
 \begin{example}{EXAMPLE - cont'd }Following on from our previous example, we have extended the table to include an indication and justification of candidate research methods for each task.
 
-\begin{tabulary}{\tablewidth}{@{}LLLL@{}}
-\multicolumn{4}{c}{\textbf{Objective 1: to identify which ML techniques...}}\\
+\begin{tabulary}{\textwidth}{@{}LLLL@{}}
+%\caption{\textbf{Objective 1: to identify which ML techniques...}
 \toprule
-\textbf{Tasks} & \textbf{Deliverables} & \textbf{Relevant research methods} &\textbf{Justification and feasibility}\\\midrule
-to investigate the academic literature in order to identify relevant ML techniques & a collection of relevant ML techniques reported in the literature & review of existing literature & I can access relevant literature via my university library \\
-to ask practitioners which techniques they employ & a collection of relevant ML techniques used in professional practice & questionnaire, possibly followed by interviews & I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \\\bottomrule
+\textbf{Task\hspace{1cm}} & \textbf{Deliverable} & \textbf{Relevant research methods} &\textbf{Justification and feasibility}\\\midrule
+\tabletitle{to investigate the academic literature in order to identify relevant ML techniques} & a collection of relevant ML techniques reported in the literature & review of existing literature & I can access relevant literature via my university library \\\\
+\tabletitle{to ask practitioners which techniques they employ} & a collection of relevant ML techniques used in professional practice & questionnaire, possibly followed by interviews & I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \\\bottomrule
 \end{tabulary}
 \end{example}
 
@@ -204,20 +219,19 @@ There are no constraints on what you can do for your pilot work, other than you 
 
 Once you have agreed the way forward, execute your plan and write a summary of both its execution and outcomes.
 
-\begin{guidance}Your summary should include:
-
-- an indication of which aspects of your research design your pilot work was concerned with
-
-- any methods and procedures applied
-
-- any data or evidence gathered, including possible modelling, artefact design or prototyping, appropriately presented and summarised
-
-- lessons learnt and any resulting revision to your research design and project plan, particularly in relation to construct and internal validity of your research design.
-
-To complete this activity successfully, it is essential that you agree your pilot work plan with your supervisor upfront, and discuss your progress on a regular basis.
-
+\begin{guidance}
 This is a substantial activity, which will take you up to 35\% of your study time.
 
+Your summary should include:
+%
+\begin{itemize}
+\item an indication of which aspects of your research design your pilot work was concerned with
+\item any methods and procedures applied
+\item any data or evidence gathered, including possible modelling, artefact design or prototyping, appropriately presented and summarised
+\item lessons learnt and any resulting revision to your research design and project plan, particularly in relation to construct and internal validity of your research design.
+\end{itemize}
+%
+To complete this activity successfully, it is essential that you agree your pilot work plan with your supervisor upfront, and discuss your progress on a regular basis.
 \end{guidance}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
@@ -225,50 +239,52 @@ This is a substantial activity, which will take you up to 35\% of your study tim
 \section{Reporting in Stage 3}
 At the end of Stage 3, you should complete a report, extending that of Stage 2 and covering the work you have carried on in this stage. The structure we suggest and an indication of the contents are shown in Table~\ref{tab:reportStructure}.
 
-%\begin{table}[H]
-%\centering
-%\footnotesize
-{\newcommand{\tabletitle}[1]{\multicolumn{2}{@{}p{\tablewidth}}{\noindent\textbf{#1}}}
-\setlist{nosep,noitemsep,topsep=-2\parskip} %remove vertical before enums
-\begin{longtable}{@{}p{0.3\tablewidth}p{0.7\tablewidth}@{}} 
-\caption{Report structure and content guidance\label{tab:reportStructure}}\\
-\toprule
- \textbf{Suggested structure} & \textbf{Content guidance} \\
-\midrule
-%
-\noindent\textbf{Title} & Your title should capture succinctly research problem and aim\\[2ex]
+%%Report Structure Table is repeated throughout the thesis. This is the template
+%%Format is:
+%%\begin{ReportStructureTable}
+%%	\tabletitle{Section 1: Introduction}\\
+%%	\begin{enumerate}[label={1.\arabic*:}]
+%%	\item Background to the research 
+%%	\item Justification for the research 
+%%	\end{enumerate}
+%%	& This section should provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. It should be well articulated and supported by evidence \\
+%%\end{ReportStructureTable}
+%%Still to do: remove space from above enumerate environment
+%%Sets the chapter across two columns in bold
+\begin{ReportStructureTable}{tab:reportStructure}
+\tabletitle{Title} & Your title should succinctly capture your research problem and aim\\\\
 \tabletitle{Section 1: Introduction}\\
 \begin{enumerate}[label={1.\arabic*:}]
 \item Background to the research 
 \item Justification for the research 
 \end{enumerate}
-& This section should provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. It should be well articulated and supported by evidence \\[2ex]
+& This section should provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. It should be well articulated and supported by evidence \\\\
 \tabletitle{Section 2: Literature review}\\
 \begin{enumerate}[label={2.\arabic*:}]
 \item Review of existing relevant knowledge 
 \item Critical summary, including knowledge gap to be addressed by the research 
 \end{enumerate}
-& Your review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and possible knowledge gaps. Most of your citations should point to academic articles. Your critical summary should highlight key insights from your review and provide a strong justification for your proposed research. Both coverage and depth of your review matter. You should ensure that your review is well structured, with a logical narrative flow and your arguments are well supported by evidence  \\[2ex]
+& Your review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and possible knowledge gaps. Most of your citations should point to academic articles. Your critical summary should highlight key insights from your review and provide a strong justification for your proposed research. Both coverage and depth of your review matter. You should ensure that your review is well structured, with a logical narrative flow and your arguments are well supported by evidence  \\\\
 \tabletitle{Section 3: Research definition}\\
 \begin{enumerate}[label={3.\arabic*:}]
 \item Problem statement 
 \item Aim, objectives, tasks and deliverables
 \item Knowledge contribution
 \end{enumerate}
-& You should ensure that your research problem is well articulated and appropriate for your course and your personal and professional circumstances, that your aim and objectives are consistent with research problem, that tasks and deliverables break down your objectives appropriately and are clearly related to your chosen research methods, and that the intended knowledge contribution of your research is clearly articulated \\[2ex]
-\tabletitle{Section 4: Research design}\\
+& You should ensure that your research problem is well articulated and appropriate for your course and your personal and professional circumstances, that your aim and objectives are consistent with research problem, that tasks and deliverables break down your objectives appropriately and are clearly related to your chosen research methods, and that the intended knowledge contribution of your research is clearly articulated \\
+\tabletitle{Section 4: Research design}\\\\
 \begin{enumerate}[label={4.\arabic*:}]
 \item Evidence and data 
 \item Research strategy and methods
 \item Research procedures
 \item Ethical, legal and EDI considerations
 \end{enumerate}
-& This section should demonstrated your critical engagement with all elements of research design, including a detailed account of the data and evidence needed in your research, the research methods and research strategies you will to apply, and how you will apply them within your project. Your account should be supported by a clear rationale and insights from the related literature, and appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethical and legal matters, and that your research will comply with your course and university requirements\\[2ex]
+& This section should demonstrated your critical engagement with all elements of research design, including a detailed account of the data and evidence needed in your research, the research methods and research strategies you will to apply, and how you will apply them within your project. Your account should be supported by a clear rationale and insights from the related literature, and appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethical and legal matters, and that your research will comply with your course and university requirements\\\\
 \tabletitle{Section 5: Analysis and interpretation}\\
 \begin{enumerate}[label={5.\arabic*:}]
 \item Pilot work
 \end{enumerate}
-& This section should report on a well thought-out pilot work which clearly and competently test some significant aspect of your research design. It should demonstrate good critical reflection on outcomes and highlight any adjustments needed as a result. \\[2ex]
+& This section should report on a well thought-out pilot work which clearly and competently test some significant aspect of your research design. It should demonstrate good critical reflection on outcomes and highlight any adjustments needed as a result. \\\\
 \tabletitle{Section 6: Assessment of your proposed research}\\
 \begin{enumerate}[label={6.\arabic*:}]
 \item Qualification fit
@@ -277,33 +293,19 @@ At the end of Stage 3, you should complete a report, extending that of Stage 2 a
 \item Statement of feasibility
 \item Personal reflection on research process
 \end{enumerate}
-& In this section you should continue to argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging. \\[2ex]
+& In this section you should continue to argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging. \\\\
 \tabletitle{Section 7: Planning, scheduling and risk assessment}\\
 \begin{enumerate}[label={7.\arabic*:}]
 \item Key priorities in follow-up stage
 \item Personal and professional fit
 \item Risk assessment
 \end{enumerate}
-& In this section you should reflect on the progress you have made in Stage 2 and establish your priorities for the next stage. You should also review your risk assessment as appropriate.\\[2ex]
-\tabletitle{Section 8: References}\\ & You should keep your growing references in good order and ensure you apply the required bibliographical style consistently. Ideally, you should use a BMT to generate and integrate your references within your report\\[2ex]
-\tabletitle{Appendix A: Work schedule}\\& You should include your revised work plan as an appendix\\[2ex]
-\tabletitle{Appendix B: Risk assessment table}\\& You should include your updated risk table as an appendix \\
+& In this section you should reflect on the progress you have made in Stage 2 and establish your priorities for the next stage. You should also review your risk assessment as appropriate.\\\\
+\tabletitle{Section 8: References}\\ & You should keep your growing references in good order and ensure you apply the required bibliographical style consistently. Ideally, you should use a BMT to generate and integrate your references within your report\\\\
+\textbf{Appendix A: Work schedule}& Your revised work plan\\\\
+\textbf{Appendix B: Risk assessment table}& Your revised risk table \\
 \bottomrule
-\end{longtable}}
-%\end{table}
-\endinput
-%
- Sect 2 -  2.1  2.2  & \\
- Sect 3 -  3.1  3.2  3.3  &  \\
- Sect 4 -  4.1  4.2  4.3  4.4  &  \\
- Sect 5 -  5.1  & \\
- Sect 6 -  6.1  6.2  6.3  6.4  6.5  &  \\
- Sect 7 -  7.1  7.2  7.3  & \\
-  &  \\
-  &  \\
- \bottomrule
-\end{ltabulary}
-\end{table}
+\end{ReportStructureTable}
 
 \endinput
 
@@ -326,13 +328,13 @@ As in the previous stages, after you have filled in your report you should revie
  \textbf{Criteria} & \textbf{Prompts} \\
 \midrule
 
- \textbf{Completeness} & Are all sections of the suggested structure completed in line with the guidance provided? \\
- \textbf{Good academic writing practices} & Have you applied good academic writing practices throughout? \\
- \textbf{Logical structure and flow} & Have you structured your narrative appropriately to ensure a logical flow of arguments? \\
- \textbf{Supporting references or evidence} & Are your key arguments supported by appropriate references or other evidence? \\
- \textbf{Citation and reference style} & Do all your citations and references comply with the required bibliographical style? \\
- \textbf{Avoiding plagiarism} & Have you acknowledged the work of others and distinguished it from your own appropriately? \\
- \textbf{Standard of English (or any modern language you use)} & Have you proof-read your report carefully to remove all typos and grammatical errors? \\
+ \tabletitle{Completeness} & Are all sections of the suggested structure completed in line with the guidance provided? \\
+ \tabletitle{Good academic writing practices} & Have you applied good academic writing practices throughout? \\
+ \tabletitle{Logical structure and flow} & Have you structured your narrative appropriately to ensure a logical flow of arguments? \\
+ \tabletitle{Supporting references or evidence} & Are your key arguments supported by appropriate references or other evidence? \\
+ \tabletitle{Citation and reference style} & Do all your citations and references comply with the required bibliographical style? \\
+ \tabletitle{Avoiding plagiarism} & Have you acknowledged the work of others and distinguished it from your own appropriately? \\
+ \tabletitle{Standard of English (or any modern language you use)} & Have you proof-read your report carefully to remove all typos and grammatical errors? \\
 \bottomrule
 
 \end{tabulary}
