@@ -42,7 +42,8 @@
 
 %%Quotes
 \usepackage[threshold=15,thresholdtype=words]{csquotes}
-\AtBeginEnvironment{quote}{\itshape}
+\AddToHook{env/quote/before}{\it}
+
 
 %%Underconstruction logo visible from overview
 \newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}
