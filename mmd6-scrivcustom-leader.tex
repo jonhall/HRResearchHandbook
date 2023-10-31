@@ -216,11 +216,13 @@ title={Tip},
 %\usepackage{caption}
 \usepackage{float}
 
-%%For tables
-\usepackage{longtable,tabulary}%%tabulary gives L column
+%%For tables – intention is to migrate to tabularray
+\usepackage{longtable,tabulary,tabularray}
+\UseTblrLibrary{varwidth}%%For itemize in entries
+
+%%tabulary gives L column
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
 \makeatletter
-
 \def\ltabulary{%
 	\def\endfirsthead{\\}%
 	\def\endhead{\\}%

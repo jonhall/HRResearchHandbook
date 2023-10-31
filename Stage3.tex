@@ -1,8 +1,8 @@
 %%Candidate to move to headers
-%\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\}%
+\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\}%
 
 \newcommand{\hwidth}[1]{\makebox[0pt][l]{#1}}
-\DeclareExpandableDocumentCommand{\tabletitle}{m}{\hwidth{\textbf{#1}}\\}
+\DeclareExpandableDocumentCommand{\tabletitle}{m}{\SetCell[c=2]{\textbf{#1}}&\\}
 
 %%Structures the report table, headings to the left in a list, explanation to the right
 %%#1 = caption label
@@ -37,29 +37,32 @@ You won't be surprised to know that stage 3 comes next; there's another research
 
 \section{Introducing stage 3}
 
-In Stage 3 you will focus on adding detail to both your aim and objectives and your research design. Stage 3 assumes that you have completed your Stage 2 work, and possibly discussed it with your supervisor\footnote{If your proposal still requires some `remedial' work to fully satisfy your course requirements then you should carry that out before moving on.}, particularly your research design choices.
-
-With reference to our 5-stage framework, the activities which are in focus in Stage 3 are recalled in Table~\ref{tab:stage3acts}, which also provides some guidelines for your interaction with your supervisor during this stage.
-
 \begin{table}[htbp]
 \caption{Stage 3 activities\label{tab:stage3acts}}
 \centering
 \small
-\begin{tabulary}{\tablewidth}{@{}LLLL@{}} \toprule
- \textbf{Research activity} & \textbf{Stage 3} \textbf{(20\% of project length)} & \textbf{Effort within stage} & \textbf{Suggested focus of your interaction with your supervisor} \\
-\midrule
-
- \tabletitle{Identifying the research problem} & Adjust, if needed & 2\% & \\
- \tabletitle{Reviewing the literature} & Adjust, if needed & 3\% & \\
- \tabletitle{Setting research aim and objectives} & Finalise aim and objectives, and define tasks and deliverables & 10\% & Suitability of tasks and deliverables from objectives \\
- \tabletitle{Choosing the research design} & Complete research design, with detailed consideration of data and evidence, research strategy, research methods and procedures & 20\% & Suitability of research procedures \\
- \tabletitle{Gathering and analysing evidence} & Conduct pilot work to test aspects of your research design & 35\% & Scope of your pilot work \\
- \tabletitle{Interpreting and evaluating findings} & n/a & 0\% & \\
- \tabletitle{Reporting, critical reflection and conclusions} & Assess research progress and write up Stage 3 report & 25\% & Any further improvements required \\
- \tabletitle{Work planning and risk management} & At stage start, review work from previous stage and project risk; adjust plan as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required \\
-\bottomrule
-
-\end{tabulary}
+\begin{tblr}{colspec={X[10]X[1,r]X[4]},
+row{even}={font=\bfseries,},
+row{odd}={2-Z}{preto={\quad},},
+row{1}={font=\bfseries},
+}% \toprule
+Research activity
+ 	& \SetCell[c=1]{c}{Effort within stage} & Suggested focus of your interaction with your supervisor \\
+%\midrule
+%
+\SetCell[c=2]{l}{Identifying the research problem}\\
+	Adjust, if needed & 2\% & \\
+\SetCell[c=2]{l}{Reviewing the literature}\\ 
+	Adjust, if needed & 3\% & \\
+\SetCell[c=2]{l}{Setting research aim and objectives}\\ 
+	Finalise aim and objectives, and define tasks and deliverables & 10\% & Suitability of tasks and deliverables from objectives \\
+\SetCell[c=2]{l}{\textbf{Choosing the research design}}\\ Complete research design, with detailed consideration of data and evidence, research strategy, research methods and procedures & 20\% & Suitability of research procedures \\
+\SetCell[c=2]{l}{\textbf{Gathering and analysing evidence}}\\ Conduct pilot work to test aspects of your research design & 35\% & Scope of your pilot work \\
+\SetCell[c=2]{l}{\textbf{Interpreting and evaluating findings}}\\ n/a & 0\% & \\
+\SetCell[c=2]{l}{\textbf{Reporting, critical reflection and conclusions}}\\ Assess research progress and write up Stage 3 report & 25\% & Any further improvements required \\
+\SetCell[c=2]{l}{\textbf{Work planning and risk management}}\\ At stage start, review work from previous stage and project risk; adjust plan as needed If you have received feedback from supervisor on your previous stage work, adjust plan to include any revision recommended & 5\% & Any major adjustment required \\
+%\bottomrule
+\end{tblr}
 \end{table}
 
 \todo{This is a repeated activity through all stages, and so should be templated.}\begin{question}[subtitle={Activity: Understanding the effort needed in this stage}] Consider Table~\ref{tab:stage3acts} carefully, taking notice of the entries in the `Effort within stage' column. Write down the most time-consuming activities in this stage and what is expected under each.
@@ -69,7 +72,25 @@ With reference to our 5-stage framework, the activities which are in focus in St
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\section{Identifying tasks and deliverables}
+\section{Research \enquote{recipes}}
+
+For a couple of minutes, think about cheesecake, stew, pizza, or a nice bouillabaisse.
+
+\bigskip
+
+Now, think about cream cheese, biscuits and ginger; some potatoes, carrots, and a blue cheese; quality olive oil, mozzarella, and tomato; and some fresh garlic and fish\todo{Choose some better dishes...}.
+
+\bigskip
+
+Your mouth is probably watering, like mine, at the thought of good food. Good food is made from good ingredients and good ingredients have to be fresh and of good quality to make the best dishes. Having a good recipe really makes it all worthwhile.
+
+With good ingredients and the right recipe, you can eat well.
+
+It's the same with research: and this section is all about finding the best ingredients to make some tasty research. With the right ingredients in the right recipe, you will write well and communicate with your readers well. 
+
+There are nigh-on 40 research ingredients – research tasks, they're called – that you might come across in the literature\footnote{More, if you they use alternative names.}, and they need to be combined in the right recipes – research designs – for the tastiest research combinations. There are some – validity and bias, for instance – that – like olive oil and onion – will be a part of every recipe you cook. Others, like \enquote{X} and \enquote{Y}, will allow you to communicate with research experts in their own language.
+
+
 Recall from Stage 1 that 
 %
 \begin{itemize}
@@ -79,9 +100,146 @@ Recall from Stage 1 that
 %
 You're now at the point where you need to think about how you will meet each of your research objectives. That means breaking them down even further into \textit{research tasks}. Research tasks may not be simple to achieve, but they're last step in your research structure.
 
-\subsection{Research tasks}
+\subsection{Research Design}
 
-While a research objective indicates what you need to achieve, \textbf{research tasks} tell you the work that you need to complete to get there, so they address the question of what you need to do to meet the objective. Research tasks are the building blocks from which research is built.
+While a research objective indicates what you need to achieve, \textbf{research tasks} tell you the work that you need to complete to get there, so they address the question of what you need to do to meet the objective. Research tasks are the raw ingredients from which research is built. 
+
+Research designs are the recipes for good research, combining research tasks into meaningful ways of doing research.
+
+In this book, we cover 4 of the most important research designs in science: Experimental, Quasi-experimental, Non-experimental, and Design Science Research.
+
+\subsection{Structuring research}
+
+Like a recipe, research needs to be structured. The structure you use depends on your resources – massive research labs with many hundreds, even thousands, of researchers may be able to run many different strands of research at the same time\footnote{According to \url{https://www.nature.com/articles/nature.2015.17567}, there are 5,154 authors on the paper \fullcite{aad2015combined}, in a collaboration between ATLAS and CMS, \blockquote{two massive detectors at the Large Hadron Collider (LHC) at CERN, Europe’s particle-physics lab near Geneva, Switzerland}.}, each contributing a small part towards an overall research goal. 
+
+Imagine having to manage that collaboration: 5154 researchers working in parallel.
+
+You aren't likely to have access to such resources. That's good, in a way, because you can keep the research simple and your research can be linear: one step after another. 
+
+Given that you're resource limited means we can plot your research as a single line
+%
+\newcommand{\taskline}[0]{\ \rule[0.5ex]{1cm}{1pt}\ }
+\[T\taskline T\taskline\cdots\taskline T\taskline T	
+\]
+%
+each node $T$ being one task, taken from one of the entries in Table~\ref{tab:researchTasks}. The design is simple because it's linear, and so there's not much to think about:
+%
+\begin{itemize}
+\item how long the line should be;
+\item what each $T$ will be.
+\end{itemize}
+%
+More complex research designs, those involving multiple researchers, for instance,  will require some amount of sophisticated project management to ensure that the sequencing of parallel research tasks is done correctly.
+
+The table below introduces more than 30 research tasks – the possible $T$s above – and for each gives a brief introduction and a key reference from which you can find out more\todo{Paraphrase descriptions in the table; more to come here.}.
+
+\subsection{A simple research design}
+
+As an example of a simple research design, the shortest research design possible is
+%
+\[R\taskline O\taskline X \taskline O\]
+%
+which means (from the table)
+%
+\begin{itemize}
+\item [R] Randomise sample from population, then
+\item [O] Observe, then
+\item [X] Change experimental variable, then
+\item [O] Observe, again.
+\end{itemize}
+%
+This form of research design is called \enquote{Experimental research}\footnote{There are simpler research designs} and is what you might think of as the quintessential scientific research – doing experiments on a population, a drug trial, for instance.
+
+Even though we have called this a simple research design, it doesn't mean that the results that you can obtain by using it will be simple, it could be that the drug you're testing will make amazing strides in curing some illness, improving the lives of millions of people. What we mean by \emph{simple} is simply that there are few steps in the research. Simple doesn't mean, either, that the work that will need to go onto each step is simple, quick, or trivial. Observation, for instance, is an immensely difficult thing to do correctly; in the worst case, it may take many months of work to get to the point where you \enquote{change the experimental variable} – administer the drug, for instance – and so have something to observe.
+
+
+
+\newcommand{\midtitle}[2]{\SetCell[c=3]{l}{\textbf{Research Strategy: #1}~\parencite{#2}}\\*%
+	Code&Description&Comments\\*%
+	}
+\SetCiteCommand{\parencite}
+\begin{longtblr}[%
+	expand=\midtitle,%\middditle needs to be expanded so that pattern matching from LaTeX3 can work
+	caption={Research: tasks, codes and descriptions},%caption is an outer key
+	label={tab:researchTasks},%we can add a label
+]{%
+	colspec = {r|X[2,l]X[7]},%first column right aligned, then 2/7 of remaining width
+%	column{1}={preto={\qquad}},%this doesn't seem to work
+%	row{1} = {font=\bfseries},%first row is bold, but don't need it because of \midtitle
+	measure=vbox,%needed to allow lists, \UseTblrLibrary{varwidth} added above
+	}
+%	Code&Description&Comments\\
+\midtitle{Experimental}{marczyk2005essentials}
+	 R&	Randomise sample from population& \textcquote[p.124]{marczyk2005essentials}{A true experimental design is one in which study participants are randomly assigned to experimental and control groups. We have discussed randomization in previous chapters, so this chapter will simply highlight the importance of randomization in terms of the strength of a research design. Although randomization is typically described using examples such as rolling dice, flipping a coin, or picking a number out of a hat, most studies now rely on the use of random numbers tables to help them assign their research participants (as discussed in Chapters 2 and 3).}\\
+	 O&	Observe phenomenon&\textcquote[p.119]{marczyk2005essentials}{Observation is another versatile approach to data collection. This approach relies on the direct observation of the construct of interest, which is often some type of behavior. In essence, if you can observe it, you can find some way of measuring it. The use of this approach is widespread in a variety of research, educational, and treatment settings.}\\
+	 X&	Change experimental variable&\textcquote[p.127]{marczyk2005essentials}{experimental manipulation (independent variable)}\\
+	 Y&	Change other variable&\textcquote[p.127]{marczyk2005essentials}{experimental manipulation (other variable)}\\
+	\\
+\midtitle{Quasi-experimental}{marczyk2005essentials}
+	 NR&		Non-random sampling&\textcquote[p.138]{marczyk2005essentials}{when randomized designs are not feasible, researchers must often make use of quasi-experimental designs. A good rule of thumb is that researchers should attempt to use the most rigorous research design possible, striving to use a randomized experimental design whenever possible (Campbell, 1969).
+	 
+	 Cook and Campbell (1979) present a variety of quasi-experimental designs, which can be divided into two main categories: nonequivalent comparison-group designs and interrupted time-series designs. In this section, we will discuss these two major groups of quasi-experimental designs, followed by a brief overview of single-subjects designs.}\\
+	 REV&	Before the intervention, then after&\textcquote[p.142]{marczyk2005essentials}{\textbf{Reversal Time-Series Design} Also known as an ABA design (detailed on page 145), the reversal time-series design is basically a multi-subject variation of the single-subject reversal design, which will be discussed later in this chapter. The basic goal of this design is to establish causality by presenting and withdrawing an intervention, or independent variable, one to several times while concurrently measuring change in the dependent variable (as depicted in the following). As in the simple time-series design, this design begins with a series of pretests to observe normal ﬂuctuations in baseline. The name “reversal” refers to the idea that causality can be inferred if changes that occur following the presentation of an intervention diminish or “reverse” when the independent variable is withdrawn.}\\
+	 ABA&	Before, Intervention, After&See REV.\\
+	 ABABA&	Iterated ABA&See REV.\\
+	 ABABA...&Further Iterated ABA	&See REV.\\
+	 EC&	Establish control&\textcquote[p.144]{marczyk2005essentials}{As with time-series designs, single-subject designs typically begin by establishing a stable baseline. Establishing a stable baseline involves taking repeated measures of a participant’s behavior (dependent variable) prior to the administration of any intervention to make certain that the participant’s behavior is occurring at a consistent rate. To obtain a stable baseline, the researcher must make special efforts to control all relevant environmental variables that otherwise might affect the participant’s responses. If the researcher does not know, or is uncertain, about which variables are relevant, the researcher must attempt to keep the participant’s environment as constant as possible by maintaining highly controlled conditions.}\\
+	 1P&	Single participant&\textcquote[p.144]{marczyk2005essentials}{Not to be confused with non-experimental single-subject case studies, which are covered later in this chapter, the single-subject experimental design has a long and respected tradition in empirical research. According to Kazdin (2003c), single-subject experiments might be seen as true experiments because they “can demonstrate causal relationships and can rule out or make implausible threats to validity with the same elegance of group research” (p. 273). Similar to other experimental designs, the single subject design seeks to (1) establish that changes in the dependent variable occur following introduction of the independent variable (temporal precedence) and (2) identify differences between study conditions.
+	 
+	 The one way that single-subject designs differ from other experimental designs is in how they establish control, and thereby demonstrate that changes in a dependent variable are not due to extraneous variables. For example, experimental designs rely on randomization to equally distribute extraneous variables and on statistical techniques to control for such factors if they are found. Alternatively, single-subject designs eliminate between-subject variables by using only one participant, and they control for relevant environmental factors by establishing a stable baseline of the dependent variable. If change occurs following the introduction of the intervention, or independent variable, the researcher can reasonably assume that the change was due to the intervention and not to extraneous factors.}\\
+	 SB&	Stable Baseline&See 1P\\
+	 RC&	Retain control of Env&See 1P\\
+	 \\
+\midtitle{Non-experimental}{yin2009case}
+	CS& 	Choose subject&\textcquote[p.144]{marczyk2005essentials}{single-subject designs eliminate between-subject variables by using only one participant, and they control for relevant environmental factors by establishing a stable baseline of the dependent variable. If change occurs following the introduction of the intervention, or independent variable, the researcher can reasonably assume that the change was due to the intervention and not to extraneous factors.
+	
+	As with time-series designs, single-subject designs typically begin by establishing a stable baseline. Establishing a stable baseline involves taking repeated measures of a participant’s behavior (dependent variable) prior to the administration of any intervention to make certain that the participant’s behavior is occurring at a consistent rate. To obtain a stable baseline, the researcher must make special efforts to control all relevant environmental variables that otherwise might affect the participant’s responses. If the researcher does not know, or is uncertain, about which variables are relevant, the researcher must attempt to keep the participant’s environment as constant as possible by maintaining highly controlled conditions.}\\
+	Comp&	Comprehensive description&\textcquote[p.148]{marczyk2005essentials}{the focus of the case-study approach is on individuality and describing the individual as comprehensively as possible. The case study requires a considerable amount of information, and therefore conclusions are based on a much more detailed and comprehensive set of information than is typically collected by experimental and quasi-experimental studies.}\\
+	IDIP&	In-depth interviews with participants&\textcquote[p.148]{marczyk2005essentials}{Case studies of individual participants often include in-depth interviews with participants ...}\\
+	IDIC&	In-depth interviews with collaterals&\textcquote[p.148]{marczyk2005essentials}{...and collaterals (e.g., friends, family members, colleagues), review of medical records, observation, and excerpts from participants’ personal writings and diaries}\\
+	RA&		Review of artefacts&\textcquote[p.148]{marczyk2005essentials}{According to Kazdin (1982), the major characteristics of case studies are the following:
+	\begin{itemize}
+		\item They involve the intensive study of an individual, family, group, institution, or other level that can be conceived of as a single unit.
+		\item The information is highly detailed, comprehensive, and typically reported in narrative form as opposed to the quantified scores on a dependent measure.
+		\item They attempt to convey the nuances of the case, including specific contexts, extraneous influences, and special idiosyncratic details.
+		\item The information they examine may be retrospective or archival.
+	\end{itemize}}\\
+%	(RQ)&	Research question??\\
+	PROPS&	Identify propositions&\textcquote[p.28]{yin2009case}{\textbf{Study propositions} [...] each proposition directs attention to something that should be examined within the scope of study.}\\
+	UNITS&	Identify units&\textcquote[p.29]{yin2009case}{\textbf{Unit of analysis} [...] related to the fundamental problem of defining what the \enquote{case} is [... what the primary unit of analysis is].
+	
+Without such questions and propositions, you might be tempted to cover \enquote{everything} about the individual(s), which is impossible to do.}\\
+	LINKS&	Identify how is data linked to propositions&\textcquote[p.34ff]{yin2009case}{be aware of the main choices and how they might suit your case study]}\\
+	CRITS&Which are criteria to interpret findings&\textcquote[p.34]{yin2009case}{Criteria for interpreting a study's findings}\\
+	THD&Theory Development&\textcquote[p.35]{yin2009case}{[including types on p.37]}\\
+	GEN&Generalisation&\textcquote[p.38]{yin2009case}{[including Fig 2.2]}\\
+	NAR&Narrative&\textcquote[p.121]{yin2009case}{Certain types of narrative, produced by a case study investigator upon completion of all data collection, also may be considered a formal part of the database and not part of the final case study report. The narrative reflects a special practice that should be used more frequently: to have case study investigators compose open-ended answers to the questions in the case study protocol. This practice has been used on several occasions in multiple-case studies designed by the author (see BOX 24). 
+	
+	[Box 24]
+	
+		In such a situation, each answer represents your attempt to integrate the available evidence and to converge upon the facts of the matter or their tentative interpretation. The process is actually an analytic one and is the start of the case study analysis. The format for the answers may be considered analogous to that of a comprehensive "take-home" exam, used in academic courses. You the investigator\todo[inline]{[Should be included, or does this come from other writing bits?]}}\\
+	{NSC\\NEI\\NID}&Nuance from the specific context/extraneous influences/idiosyncratic details&\textcquote{kazdin1982single}{According to Kazdin(1982), the major characteristics of case studies are the following:
+		\begin{itemize}
+			\item  They involve the intensive study of an individual, family, group, institution, or other level that can be conceived of as a single unit.
+			\item The information is highly detailed, comprehensive, and typically reported in narrative form as opposed to the quantiﬁed scores on a dependent measure.
+			\item They attempt to convey the nuances of the case, including speciﬁc contexts, extraneous inﬂuences, and special idiosyncratic details.
+			\item The information they examine may be retrospective or archival.
+		\end{itemize}}\\ 
+%	NEI&Nuance from extraneous influences\\ 
+%	NID&Nuance from idiosyncratic details\\
+	\\
+\midtitle{Design Science Research}{oates2007researching}
+	PSA&Problem solving awareness&\textcquote[p.111]{oates2007researching}{Awareness is the recognition and articulation of a problem, which can come from studying the literature where authors identify areas for further research, or reading, about new findings in another discipline, or from practitioners or clients expressing the need for something, or from field research or from new developments in technology.}\\
+	PSS&Problem solving suggestion&\textcquote[p.112]{oates2007researching}{Suggestion involves a creative leap from curiosity about the problem to offering a very tentative idea of how the problem might be addressed}\\
+	PSD&Problem solving development&\textcquote[p.112]{oates2007researching}{Development is where the tentative design idea is implemented. How this is done depends on the kind of IT artefact being proposed. For example, an algorithm might need the construction of a formal proof. A new user interface embodying novel theories about human cognition will require software development. A systems development method will need to be captured in a manual that can then be followed in a systems development project. A new approach in digital art might require the development of an art portfolio tracing the development of the artist's creative ideas.}\\
+	PSE&Problem solving evaluation&\textcquote[p.112]{oates2007researching}{Evaluation examines the developed artefact and looks for an assessment of its worth and deviations from expectations.}\\
+	PSC&Problem solving conclusion&\textcquote[p.112]{oates2007researching}{Conclusion is where the results from the design process are consolidated and written up, and the knowledge gained is identified, together with any loose ends - unexpected or anomalous results that cannot yet be explained and could be the subject of further research.}\\
+\midtitle{General}{}	
+	VALID&	Threats to validity&\textcquote[p.40]{yin2009case}{fours (general) tests for validity}\\
+	BIAS&	Reflection on bias&\textcquote[p.72]{yin2009case}{[Avoiding bias for case studies]}\\ 
+\end{longtblr}
+
+\section{Research design}
 
 As you get deeper and deeper into the detail of your research, the steps you'll need to take will become more and more specialised, determined by the area that you are researching in. In all the possible research areas that there are, there could be hundreds of different types of research tasks. So we need to approach breaking down your research objectives into tasks in a systematic way.
 
