@@ -75,7 +75,13 @@ Research activity
 
 \section{Your research design}
 
-As you get deeper and deeper into the detail of your research, the steps you'll need to take will become more and more specialised, determined by the area that you are researching in. In all the possible research areas that there are, there could be hundreds of different types of research tasks. So we need to approach breaking down your research objectives into tasks in a systematic way.
+Each research area has its well-worn paths to successful knowledge contributions. In Stage 3, you're now at the point where you'll join researchers in your chosen area on one of those paths: as you get deeper and deeper into your research, the steps you'll take will become more and more specialised. So we need to approach breaking down your research objectives into tasks in a systematic way.
+
+The bad news is that there are hundreds of possible steps you could take at any point. The table below counts around 50 possible steps. 
+
+The good news is that, for your particular area, there will be a small subset that you need to know about. 
+
+In this section, we're going to do three things.
 
 First, we'll show you how objectives can be structured into tasks through the running example that you know so well by now: Clara's \textit{Applying Machine Learning} that you first saw in Example~\ref{ex:machinelearning}. 
 
@@ -85,7 +91,7 @@ Finally, we'll talk about the \textbf{deliverables}: these are the tangible thin
 
 \subsection{Research \enquote{recipes}}
 
-For a couple of minutes, we want you to kick back, and think about your favourite dishes: perhaps a nice cheesecake, or a succulent stew, perfect pizza, or a bouncy bouillabaisse.
+For the next couple of minutes, kick back and think about your favourite foods: perhaps a cool cheesecake, or a succulent stew, a perfect pizza, or a bouncy bouillabaisse.
 
 \bigskip
 
@@ -209,7 +215,7 @@ Add Validity, BIAS, Reporting.
 	caption={Research: tasks, codes and descriptions},%caption is an outer key
 	label={tab:researchTasks},%we can add a label
 ]{%
-	colspec = {r|X[2,l]X[7]},%first column right aligned, then 2/7 of remaining width
+	colspec = {>{\arabic{rownum}–}r|X[2,l]X[7]},%first column right aligned, then 2/7 of remaining width
 %	column{1}={preto={\qquad}},%this doesn't seem to work
 %	row{1} = {font=\bfseries},%first row is bold, but don't need it because of \midtitle
 	measure=vbox,%needed to allow lists, \UseTblrLibrary{varwidth} added above
@@ -292,12 +298,34 @@ Without such questions and propositions, you might be tempted to cover \enquote{
 	BIAS&	Reflection on bias&\textcquote[p.72]{yin2009case}{[Avoiding bias for case studies]}\\ 
 	REP&	Reporting&Something here\\
 \midtitle{Data Generation}{oates2007researching}
-	INT&\textcquote[p.36]{oates2007researching}{\textbf{Interview}: a particular kind of conversation between people where, at least at the beginning of the interview if not all the way through, the researcher controls both the agenda and the proceedings and will ask most of the questions. One-to-one and group interviews are possible. (See Chapter 13.)}\\
+	INT&Interview&\textcquote[p.36]{oates2007researching}{\textbf{Interview}: a particular kind of conversation between people where, at least at the beginning of the interview if not all the way through, the researcher controls both the agenda and the proceedings and will ask most of the questions. One-to-one and group interviews are possible. (See Chapter 13.)}\\
 	OBS&Observation&\textcquote[p.36]{oates2007researching}{\textbf{Observations}: watching and paying attention to what people actually do, rather than what they report they do. Often involves looking, but it can involve the other senses too: hearing, smelling, touching and tasting. (See Chapter 14.)}\\
 	QUES&Questionnaire&\textcquote[p.36]{oates2007researching}{\textbf{Questionnaire}: a pre-defined set of questions assembled in a pre-determined order. Respondents are asked to answer the questions, often via multiple choice options, thus providing the researcher with data that can be analysed and interpreted. (See Chapter 15.)}\\
 	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes 'multimedia documents': visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Chapter 16.)}\\
+	EVAL&Evaluate&\textcquote[p.40]{oates2007researching}{\textbf{Evaluating the Research Process}
+		Now that you know something of the research process, you can start to analyse and evaluate how well other researchers have described their process. Use the Evaluation Guide' below to help you.
+
+EVALUATION GUIDE: RESEARCH PROCESS
+%
+\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
+\item Do the researchers make clear their research question(s)?
+\item Do the researchers explain the theory (ies) they use to conceptualize the research topic?
+\item Do the researchers make clear both their strategy and the data generation method(s) within that strategy?
+\item Do the researchers indicate their criteria for judging the success or usefulness of their work?
+\item Is there a clear process summarized, from the original motivation and literature review through to final outcome(s)? If not, how does that affect your confidence in the research and its reporting?
+\end{enumerate}}\\
 \end{longtblr}
-\end{document}
+
+\subsection{Alternative models of the research process}
+
+See \parencite[p.39]{oates2007researching} for two more models for the research process (in the context of Information Systems and Computing)
+%
+\begin{itemize}
+\item Conceptualise, operationalise, generalise;
+\item The SLDC (Software Development Life Cycle) Analogy.
+\end{itemize}
+%
+
 
 
 %As a running example, we'll be working with the following research objectives, which you saw in Example~\ref{ex:machinelearning} in Stage 1\footnote{See page~\pageref{ex:machinelearning}.}\todo{What was the research problem?}:
