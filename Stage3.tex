@@ -47,7 +47,7 @@ row{odd}={2-Z}{preto={\quad},},
 row{1}={font=\bfseries},
 }% \toprule
 Research activity
- 	& \SetCell[c=1]{c}{Effort within stage} & Suggested focus of your interaction with your supervisor \\
+ 	& \SetCell[c=1]{c}{Effort within stage} & Suggested supervisor focus\\
 %\midrule
 %
 \SetCell[c=2]{l}{Identifying the research problem}\\
@@ -121,7 +121,9 @@ In this book, we cover 4 of the most important research designs in science: Expe
 
 \subsection{Structuring research}
 
-Like a recipe, research needs to be structured. The structure you use depends on your resources – massive research labs with many hundreds, even thousands, of researchers may be able to run many different strands of research at the same time\footnote{According to \url{https://www.nature.com/articles/nature.2015.17567}, there are 5,154 authors on the paper \fullcite{aad2015combined}, in a collaboration between ATLAS and CMS, \blockquote{two massive detectors at the Large Hadron Collider (LHC) at CERN, Europe’s particle-physics lab near Geneva, Switzerland}.}, each contributing a small part towards an overall research goal. \textit{George Aad}, the first author, has the perfect surname for an academic.
+Like a recipe, research needs to be structured. 
+
+To a large extent, the structure you use depends on your resources: massive research labs with many hundreds, even thousands, of researchers may need to run many different strands of research at the same time\footnote{According to \url{https://www.nature.com/articles/nature.2015.17567}, there are 5,154 authors on the paper \fullcite{aad2015combined}, in a collaboration between ATLAS and CMS, \blockquote{two massive detectors at the Large Hadron Collider (LHC) at CERN, Europe’s particle-physics lab near Geneva, Switzerland}. \textit{George Aad}, the first author, has the perfect surname for an academic.}, each contributing a small part towards an overall research goal. 
 
 Imagine having to manage that collaboration: 5154 researchers working in parallel.
 
@@ -152,7 +154,7 @@ The point of a methods section is to report
 enough information to understand and replicate your study, including detailed information on the sample, measures, and procedures used.	
 \end{stolen}
 
-You may have come across 
+You may have come across\todo{complete.}.
 
 \subsection{A simple research design: Experimental Research}
 
@@ -212,7 +214,8 @@ Add Validity, BIAS, Reporting.
 	measure=vbox,%needed to allow lists, \UseTblrLibrary{varwidth} added above
 	}
 %	Code&Description&Comments\\
-\midtitle{Experimental}{marczyk2005essentials}
+\midtitle{Experimental}{marczyk2005essentials,oates2007researching}
+	EXP&Experiment&\textcquote[p.35]{oates2007researching}{\textbf{Experiment}: focuses on investigating cause and effect relationships, testing hypotheses and seeking to prove or disprove a causal link between a factor and an observed outcome. There is 'before' and 'after' measurement, and all factors that might affect the results are carefully excluded from the study, other than the one factor that is thought will cause the 'after' result. (See Chapter 9.)}\\
 	 R&	Randomise sample from population& \textcquote[p.124]{marczyk2005essentials}{A true experimental design is one in which study participants are randomly assigned to experimental and control groups. We have discussed randomization in previous chapters, so this chapter will simply highlight the importance of randomization in terms of the strength of a research design. Although randomization is typically described using examples such as rolling dice, flipping a coin, or picking a number out of a hat, most studies now rely on the use of random numbers tables to help them assign their research participants (as discussed in Chapters 2 and 3).}\\
 	 O&	Observe phenomenon&\textcquote[p.119]{marczyk2005essentials}{Observation is another versatile approach to data collection. This approach relies on the direct observation of the construct of interest, which is often some type of behavior. In essence, if you can observe it, you can find some way of measuring it. The use of this approach is widespread in a variety of research, educational, and treatment settings.}\\
 	 X&	Change experimental variable&\textcquote[p.127]{marczyk2005essentials}{experimental manipulation (independent variable)}\\
@@ -233,14 +236,18 @@ Add Validity, BIAS, Reporting.
 	 SB&	Stable Baseline&See 1P\\
 	 RC&	Retain control of Env&See 1P\\
 	 \\
-\midtitle{Non-experimental}{yin2009case}
+\midtitle{Non-experimental}{yin2009case,oates2007researching}
+	CASE&Case Study&\textcquote[p.35]{oates2007researching}{\textbf{Case study}: focuses on one instance of the 'thing' that is to be investigated: an organization, a department, an information system, a discussion forum, a systems developer, a development project, a decision and so on. The aim is to obtain a rich, detailed insight into the 'life' of that case and its complex relationships and processes. (See Chapter 10.)}\\
+	AR&Action research&\textcquote[p.35]{oates2007researching}{\textbf{Action research}: focuses on research into action. The researchers plan to do something in a real-world situation, do it, and then reflect on what happened or was learnt, and then begin another cycle of plan-act-reflect. (See Chapter 11.)}\\
+	ETH&Ethanography&\textcquote[p.35]{oates2007researching}{Ethnography: focuses on understanding the culture and ways of seeing of a particular group of people. The researcher spends time in the field, taking part in the life of the people there, rather than being a detached observer. (See Chapter 12.)}\\
 	CS& 	Choose subject&\textcquote[p.144]{marczyk2005essentials}{single-subject designs eliminate between-subject variables by using only one participant, and they control for relevant environmental factors by establishing a stable baseline of the dependent variable. If change occurs following the introduction of the intervention, or independent variable, the researcher can reasonably assume that the change was due to the intervention and not to extraneous factors.
 	
 	As with time-series designs, single-subject designs typically begin by establishing a stable baseline. Establishing a stable baseline involves taking repeated measures of a participant’s behavior (dependent variable) prior to the administration of any intervention to make certain that the participant’s behavior is occurring at a consistent rate. To obtain a stable baseline, the researcher must make special efforts to control all relevant environmental variables that otherwise might affect the participant’s responses. If the researcher does not know, or is uncertain, about which variables are relevant, the researcher must attempt to keep the participant’s environment as constant as possible by maintaining highly controlled conditions.}\\
 	Comp&	Comprehensive description&\textcquote[p.148]{marczyk2005essentials}{the focus of the case-study approach is on individuality and describing the individual as comprehensively as possible. The case study requires a considerable amount of information, and therefore conclusions are based on a much more detailed and comprehensive set of information than is typically collected by experimental and quasi-experimental studies.}\\
 	IDIP&	In-depth interviews with participants&\textcquote[p.148]{marczyk2005essentials}{Case studies of individual participants often include in-depth interviews with participants ...}\\
 	IDIC&	In-depth interviews with collaterals&\textcquote[p.148]{marczyk2005essentials}{...and collaterals (e.g., friends, family members, colleagues), review of medical records, observation, and excerpts from participants’ personal writings and diaries}\\
-	RA&		Review of artefacts&\textcquote[p.148]{marczyk2005essentials}{According to Kazdin (1982), the major characteristics of case studies are the following:
+	SUR& Surveys&\textcquote[p.33]{oates2007researching}{\textbf{Survey}: focuses on obtaining the same kinds of data from a large group of people (or events), in a standardized and systematic way. You then look for patterns in the data using statistics so that you can generalize to a larger population than the group you targeted. (See Chapter 7.)}\\
+	RA&	Review of artefacts&\textcquote[p.148]{marczyk2005essentials}{According to Kazdin (1982), the major characteristics of case studies are the following:
 	\begin{itemize}
 		\item They involve the intensive study of an individual, family, group, institution, or other level that can be conceived of as a single unit.
 		\item The information is highly detailed, comprehensive, and typically reported in narrative form as opposed to the quantified scores on a dependent measure.
@@ -272,20 +279,41 @@ Without such questions and propositions, you might be tempted to cover \enquote{
 %	NID&Nuance from idiosyncratic details\\
 	\\
 \midtitle{Design Science Research}{oates2007researching}
+	D\&C&Design and creation&\textcquote{oates2007researching}{\textbf{Design and creation}: focuses on developing new IT products, or artefacts. Often the new IT product is a computer-based system, but it can also be some element of the development process such as a new construct, model or method. (See Chapter 8.)}
 	PSA&Problem solving awareness&\textcquote[p.111]{oates2007researching}{Awareness is the recognition and articulation of a problem, which can come from studying the literature where authors identify areas for further research, or reading, about new findings in another discipline, or from practitioners or clients expressing the need for something, or from field research or from new developments in technology.}\\
 	PSS&Problem solving suggestion&\textcquote[p.112]{oates2007researching}{Suggestion involves a creative leap from curiosity about the problem to offering a very tentative idea of how the problem might be addressed}\\
 	PSD&Problem solving development&\textcquote[p.112]{oates2007researching}{Development is where the tentative design idea is implemented. How this is done depends on the kind of IT artefact being proposed. For example, an algorithm might need the construction of a formal proof. A new user interface embodying novel theories about human cognition will require software development. A systems development method will need to be captured in a manual that can then be followed in a systems development project. A new approach in digital art might require the development of an art portfolio tracing the development of the artist's creative ideas.}\\
 	PSE&Problem solving evaluation&\textcquote[p.112]{oates2007researching}{Evaluation examines the developed artefact and looks for an assessment of its worth and deviations from expectations.}\\
 	PSC&Problem solving conclusion&\textcquote[p.112]{oates2007researching}{Conclusion is where the results from the design process are consolidated and written up, and the knowledge gained is identified, together with any loose ends - unexpected or anomalous results that cannot yet be explained and could be the subject of further research.}\\
-\midtitle{General}{}	
+\midtitle{General}{}
+	LITREV& Literature Review&\textcquote[p.33]{oates2007researching}{literature review in Figure 3.1}\\
 	VALID&	Threats to validity&\textcquote[p.40]{yin2009case}{fours (general) tests for validity}\\
 	BIAS&	Reflection on bias&\textcquote[p.72]{yin2009case}{[Avoiding bias for case studies]}\\ 
+	REP&	Reporting&Something here\\
+\midtitle{Data Generation}{oates2007researching}
+	INT&\textcquote[p.36]{oates2007researching}{\textbf{Interview}: a particular kind of conversation between people where, at least at the beginning of the interview if not all the way through, the researcher controls both the agenda and the proceedings and will ask most of the questions. One-to-one and group interviews are possible. (See Chapter 13.)}\\
+	OBS&Observation&\textcquote[p.36]{oates2007researching}{\textbf{Observations}: watching and paying attention to what people actually do, rather than what they report they do. Often involves looking, but it can involve the other senses too: hearing, smelling, touching and tasting. (See Chapter 14.)}\\
+	QUES&Questionnaire&\textcquote[p.36]{oates2007researching}{\textbf{Questionnaire}: a pre-defined set of questions assembled in a pre-determined order. Respondents are asked to answer the questions, often via multiple choice options, thus providing the researcher with data that can be analysed and interpreted. (See Chapter 15.)}\\
+	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes 'multimedia documents': visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Chapter 16.)}\\
 \end{longtblr}
+\end{document}
 
 
 %As a running example, we'll be working with the following research objectives, which you saw in Example~\ref{ex:machinelearning} in Stage 1\footnote{See page~\pageref{ex:machinelearning}.}\todo{What was the research problem?}:
 
 \subsection{Decomposing objectives into tasks}
+
+You've chosen your research design based on area, and you've got your research objectives from Section~\ref{sect:???}. How do you go about mapping one into the other?
+
+Our suggested template for creating objectives had three components: identify, assess, and recommend.
+%
+%
+\begin{description}
+\item [identify:] literature review; questionnaire, interviews; problem solving awareness, ...
+\item [assess:]	what goes here? problem solving suggestions; interviews; problem solving development; ...
+\item [recommend:] what goes here? problem solving evaluation; problem solving conclusion; validity; bias; ...
+\end{description}
+%
 
 \todo{Turn this example into identifying which research design.}
 
