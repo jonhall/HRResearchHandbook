@@ -301,7 +301,7 @@ Without such questions and propositions, you might be tempted to cover \enquote{
 	INT&Interview&\textcquote[p.36]{oates2007researching}{\textbf{Interview}: a particular kind of conversation between people where, at least at the beginning of the interview if not all the way through, the researcher controls both the agenda and the proceedings and will ask most of the questions. One-to-one and group interviews are possible. (See Chapter 13.)}\\
 	OBS&Observation&\textcquote[p.36]{oates2007researching}{\textbf{Observations}: watching and paying attention to what people actually do, rather than what they report they do. Often involves looking, but it can involve the other senses too: hearing, smelling, touching and tasting. (See Chapter 14.)}\\
 	QUES&Questionnaire&\textcquote[p.36]{oates2007researching}{\textbf{Questionnaire}: a pre-defined set of questions assembled in a pre-determined order. Respondents are asked to answer the questions, often via multiple choice options, thus providing the researcher with data that can be analysed and interpreted. (See Chapter 15.)}\\
-	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes 'multimedia documents': visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Chapter 16.)}\\
+	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes \enquote{multimedia documents}: visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Chapter 16.)}\\
 	EVAL&Evaluate&\textcquote[p.40]{oates2007researching}{\textbf{Evaluating the Research Process}
 		Now that you know something of the research process, you can start to analyse and evaluate how well other researchers have described their process. Use the Evaluation Guide' below to help you.
 
@@ -390,13 +390,19 @@ The way to carry out your tasks and meet your objectives is through the applicat
 
 \begin{example}{EXAMPLE - cont'd }Following on from our previous example, we have extended the table to include an indication and justification of candidate research methods for each task.
 
-\begin{tabulary}{\textwidth}{@{}LLLL@{}}
+\begin{tblr}{colspec={XXXX},
+row{1}={font=\bfseries},
+}
 %\caption{\textbf{Objective 1: to identify which ML techniques...}
-\toprule
-\textbf{Task\hspace{1cm}} & \textbf{Deliverable} & \textbf{Relevant research methods} &\textbf{Justification and feasibility}\\\midrule
-\tabletitle{to investigate the academic literature in order to identify relevant ML techniques} & a collection of relevant ML techniques reported in the literature & review of existing literature & I can access relevant literature via my university library \\\\
-\tabletitle{to ask practitioners which techniques they employ} & a collection of relevant ML techniques used in professional practice & questionnaire, possibly followed by interviews & I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \\\bottomrule
-\end{tabulary}
+%\hline[1pt]
+Task&Deliverable&Relevant research methods&Justification and feasibility\\
+%\hline[0.5pt]
+\SetCell[c=3]{l}{to investigate the academic literature in order to identify relevant ML techniques}\\ 
+&a collection of relevant ML techniques reported in the literature & review of existing literature & I can access relevant literature via my university library\\
+\SetCell[c=3]{l}{to ask practitioners which techniques they employ}\\ 
+& a collection of relevant ML techniques used in professional practice & questionnaire, possibly followed by interviews & I have access to professional networks, which I could use to distribute the questionnaire, and possibly to recruit participants for follow-up interviews \\
+%\hline[1pt]
+\end{tblr}
 \end{example}
 
 Note that the choice of research methods in relation to your research tasks is an essential part of your research design. In fact, the two influence each other: your objectives and related tasks direct you towards specific research methods, which in turn have to be part of your overall research design.
