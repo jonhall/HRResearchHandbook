@@ -206,7 +206,7 @@ More here from \textcite{oates2007researching}.
 
 Add Validity, BIAS, Reporting.
 
-\newcommand{\midtitle}[2]{\SetCell[c=3]{l}{\textbf{Research Strategy: #1}~\parencite{#2}}\\*%
+\newcommand{\midtitle}[2]{\SetCell[c=3]{l,clear=preto}{\textbf{Research Strategy: #1}~\parencite{#2}}\\*%
 	Code&Description&Comments\\*%
 	}
 \SetCiteCommand{\parencite}
@@ -215,6 +215,7 @@ Add Validity, BIAS, Reporting.
 	caption={Research: tasks, codes and descriptions},%caption is an outer key
 	label={tab:researchTasks},%we can add a label
 ]{%
+	width=\tablewidth,
 	colspec = {>{\arabic{rownum}–}r|X[2,l]X[7]},%first column right aligned, then 2/7 of remaining width
 %	column{1}={preto={\qquad}},%this doesn't seem to work
 %	row{1} = {font=\bfseries},%first row is bold, but don't need it because of \midtitle
@@ -297,11 +298,28 @@ Without such questions and propositions, you might be tempted to cover \enquote{
 	VALID&	Threats to validity&\textcquote[p.40]{yin2009case}{fours (general) tests for validity}\\
 	BIAS&	Reflection on bias&\textcquote[p.72]{yin2009case}{[Avoiding bias for case studies]}\\ 
 	REP&	Reporting&Something here\\
+	TRI&	Triangulation&\textcquote[p.37]{oates2007researching}{The use of more than one data generation method to corroborate findings and enhance their validity is called method triangulation. Many types of triangulation are possible in a research project:
+	%
+\begin{itemize}
+\item Method triangulation: the study uses two or more data generation methods.
+\item Strategy triangulation: the study uses two or more research strategies.
+\item Time triangulation: the study takes place at two or more different points in time.
+\item Space triangulation: the study takes place in two or more different countries or cultures to overcome the parochialism of a study based in just one country or culture.
+\item Investigator triangulation: the study is carried out by two or more researchers who then compare their accounts.
+\item Theoretical triangulation: the study draws on two or more theories rather than one theoretical perspective only.
+\end{itemize}
+%
+
+
+Researching Information Systems and Computing
+Triangulation gives researchers multiple modes of \enquote{attack} on their research question.
+However, researchers differ over whether they should expect triangulation of method or time or space, and so on, to lead to consistency of findings. It depends on their underlying research philosophy (see Chapters 19 and 20 for a detailed explanation). \enquote{Positivists} subscribe to the idea of a single \enquote{truth} or \enquote{reality} and would expect the multiple lines of attack to lead to a consistent set of findings. Interpretivists', on the other hand, do not subscribe to the idea of a single reality, believing any notion of 'reality' to be constructed by individuals and groups, so there are multiple realities for people in our world, and different research approaches are likely to lead to different findings. Interview data about recollections of a meeting and company minutes of the same meeting, for example, are two different \enquote{stories}, created by different people for different audiences. Interpretivists would not always expect to see convergence in the data they generate using triangulation.}\\
 \midtitle{Data Generation}{oates2007researching}
 	INT&Interview&\textcquote[p.36]{oates2007researching}{\textbf{Interview}: a particular kind of conversation between people where, at least at the beginning of the interview if not all the way through, the researcher controls both the agenda and the proceedings and will ask most of the questions. One-to-one and group interviews are possible. (See Chapter 13.)}\\
 	OBS&Observation&\textcquote[p.36]{oates2007researching}{\textbf{Observations}: watching and paying attention to what people actually do, rather than what they report they do. Often involves looking, but it can involve the other senses too: hearing, smelling, touching and tasting. (See Chapter 14.)}\\
 	QUES&Questionnaire&\textcquote[p.36]{oates2007researching}{\textbf{Questionnaire}: a pre-defined set of questions assembled in a pre-determined order. Respondents are asked to answer the questions, often via multiple choice options, thus providing the researcher with data that can be analysed and interpreted. (See Chapter 15.)}\\
-	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes \enquote{multimedia documents}: visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Chapter 16.)}\\
+	DOC&Documents&\textcquote[p.36]{oates2007researching}{\textbf{Documents}: documents that already exist prior to the research (for example, policy documents, minutes of meetings and job descriptions) and documents that are made solely for the purposes of the research task (for example, a researcher's logbook or design models). Also includes \enquote{multimedia documents}: visual data sources (for example, photographs, diagrams, videos and animations), aural sources (for example, sounds and music) and electronic sources (for example, websites, computer games and electronic bulletin boards). (See Taspic
+	Chapter 16.)}\\
 	EVAL&Evaluate&\textcquote[p.40]{oates2007researching}{\textbf{Evaluating the Research Process}
 		Now that you know something of the research process, you can start to analyse and evaluate how well other researchers have described their process. Use the Evaluation Guide' below to help you.
 
