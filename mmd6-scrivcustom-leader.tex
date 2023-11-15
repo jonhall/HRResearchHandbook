@@ -207,7 +207,7 @@ title={Tip},
 %%For additional caption options
 %%Allows captions in longtables
 %\usepackage{caption}
-\usepackage{float}
+%\newcolumntype{l}{L}
 
 %%For tables
 \usepackage{longtable,tabulary}%%tabulary gives L column
@@ -259,6 +259,16 @@ title={Tip},
 %	} 
 %\setmainfont[BoldFont=\boldfont]{\mainfont}
 
+%%Bibtex stuff
+\usepackage[
+	backend=bibtex,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN}
+\addbibresource{collatedBib}
 
 %%Ensure bibliography always included, even if \end{document} early
 \AtEndDocument{%
