@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.1012.1128                               -->
+<workbook original-version='18.1' source-build='2023.2.3 (20232.23.1012.1128)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (descStats)' inline='true' name='federated.1xrxmt80b16g0319yczp21iofvbz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='descStats' name='excel-direct.0wls1uf04ktovk1ep6p810n5gcgc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/lr38/Desktop/masters-handbook/Examples/descStats.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0wls1uf04ktovk1ep6p810n5gcgc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:A15:no:A1:A15:0' header='no' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0wls1uf04ktovk1ep6p810n5gcgc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:A15:no:A1:A15:0' header='no' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:A15:no:A1:A15:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>false</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_1058BB1A9F294BEBB07235007553B5CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='weight' datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_1058BB1A9F294BEBB07235007553B5CE]' role='measure' type='quantitative' />
+      <column caption='weight (bin)' datatype='integer' name='[weight (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[F1]' peg='0' size='5' />
+      </column>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_1058BB1A9F294BEBB07235007553B5CE'>
+            <properties context=''>
+              <relation connection='excel-direct.0wls1uf04ktovk1ep6p810n5gcgc' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:A15:no:A1:A15:0' header='no' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (descStats)' name='federated.1xrxmt80b16g0319yczp21iofvbz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xrxmt80b16g0319yczp21iofvbz'>
+            <column caption='weight' datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xrxmt80b16g0319yczp21iofvbz].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1xrxmt80b16g0319yczp21iofvbz].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refboxplot'>
+            <format attr='boxplot-style' id='refline0' value='modern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.1xrxmt80b16g0319yczp21iofvbz].[none:F1:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xrxmt80b16g0319yczp21iofvbz].[none:F1:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1xrxmt80b16g0319yczp21iofvbz].[none:F1:qk]</cols>
+      </table>
+      <simple-id uuid='{6FBCF67E-89C5-4484-BAD3-19F83B898E42}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (descStats)' name='federated.1xrxmt80b16g0319yczp21iofvbz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xrxmt80b16g0319yczp21iofvbz'>
+            <column caption='weight' datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#f28e2b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1xrxmt80b16g0319yczp21iofvbz].[cnt:F1:qk]</rows>
+        <cols>[federated.1xrxmt80b16g0319yczp21iofvbz].[none:F1:qk]</cols>
+      </table>
+      <simple-id uuid='{1A0001EC-0CFD-4EBD-9F44-86405771ED54}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (descStats)' name='federated.1xrxmt80b16g0319yczp21iofvbz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xrxmt80b16g0319yczp21iofvbz'>
+            <column caption='weight' datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weight (bin)]' derivation='None' name='[none:weight (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='weight (bin)' datatype='integer' name='[weight (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[F1]' peg='0' size='5' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#f28e2b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1xrxmt80b16g0319yczp21iofvbz].[cnt:F1:qk]</rows>
+        <cols>[federated.1xrxmt80b16g0319yczp21iofvbz].[none:weight (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1xrxmt80b16g0319yczp21iofvbz].[weight (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{37B2AF6E-1405-4551-AA57-ADD4787BD148}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xrxmt80b16g0319yczp21iofvbz].[none:F1:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15727A76-15A0-452C-9035-9907E678CC6D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1BFEB039-04BD-44E3-BEFC-A535B72B3304}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xrxmt80b16g0319yczp21iofvbz].[none:weight (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E3B4226D-C2CB-4706-8491-B671E5078015}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='79' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAHDUlEQVR4nO3dzYsceR3H8U9V9XTPQzaZcUwnGkQICQnCoIkQ4wOsZx9uiyDRw7p/gMKK
+      Hjz5yN5FUfAoexKVeAruQZAQJKtCEAkBM5dkSZZAsmMmPTVV9ft5kO7MTPfs/FoyPU5/3q/b
+      zHyr6tfd9U53z+x2ZTHGKMBUa5xhWsG0SQ6gf/KHEBRCUJZlSduFEJTnefIxUvbbX0vK7DjH
+      Z/bgjz/O7DjnwW6zSQFUVaXV1VUtLy9reXlZklQURcqmqutardbeh4kxKoSQtN8QgiQl3Ump
+      x5/m2f6DnzJ70GsdZ3ac82C32aQkW62Wer0eL4EwdZICKMtS8/Pz6nQ6+70eYKKSnpNmZ2d1
+      9uzZ/V4LMHFp70qAKUUAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsJYc
+      QAhhP9cBHIikAKqq0u3bt/XgwYP9Xg8wUa2UoTzP1TSNut2umqZRCEExxqQDhBBU13XSbIwx
+      ab/9mZRnpXGOz+yL3+ebb/1Db/11dfD1j177vD78wZdeyBrGOQ92zv7yD3/TX/55Py2Auq41
+      Nzensiw1NzcnSSqKImVT1XWtVmvvw8QYFUJI2m//RuT53k9gqcef5tn+g58y+6KPv1E1em+9
+      fP6NLN9zm9Q1jHMe7JztlbXeWy/TAuh0Ojpz5kzKKHCo8FsgWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWBv6XKAY
+      o65fv64sy3Tp0iXNzMwcxLqAiRj5wVi9Xk91XSd/+htwWA29BHr69KkePnyoY8eOHcR6gIka
+      CmBhYUErKyt68uSJVldXR20DTI2hAPI8V1VVkqSyLIc2AKbJyJdAc3NzOnr0qM6fP38QawIm
+      ZiiAI0eOaG1tTXfv3uWqMJh6I/8OkOe5ut0uvwXC1BsZQLvd1uPHj5OvAgMcViMDmJ+fV9M0
+      k14LMHFDfwhbW1vTiRMndOXKFWVZdhBrAiZm6BkghKBr167pxo0bvAnG1BsKYHFxUcePH9ed
+      O3d4D4CpN/K/Bbp8+bLOnTuXdPU94DAbOsNjjLp69apu3ryZfL1Y4LAa+Qxw+vRpVVXF3wEw
+      9YaeAbIs0+bmJi9/YGHkWX7q1Ck9evRo0msBJm7Xf+bb7TZ/DMPUGxnAvXv31Ov1Jr0WYOKG
+      3gRXVaVut6uyLNVqjXyPDEyNkf8/wP3797WxscFLIEy9oX/il5aWdOHCBbVaLZ4BMPVGnuFL
+      S0uTXgdwIPhlP6wRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
+      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwlBRBjVFVV+70WYOKSPvotxqhbt27p4sWLg6/HuX5Y
+      f7Zugsrq+ccttlu5ZlrFtpmU/Y4zO87cYZnd2KzVhKimaVQUQQuzM7vOrm9UUpSa0Kg9EzXb
+      3vsh33r/PiufXyWoyLOh7fec3XFTYowKIYycfVZWilFqmkatImj+fW7Xs7JS0/z3Io5FkWu+
+      M6OqCdrccn51Zgq1inxondLzZSV/9uHCwoJCCMqybHAjUvS3kaS3b7+jN968PvjZN77wCX3p
+      02cHCxv3hE5Zw9bjT8vsT379Z93617uDr3/zg1eUj9gmRunKD387+HrldFfff/Xl5OOXVbNt
+      +0+e+5C+97XPjZxd36j09R//fvCzT33slL771c8o7iggxqgnTzf06htXB9/77MpH9PpXLuvb
+      P/+j3nn0b0nSB16a1a++8+Vd1/mtn17Tu4/XJUndxXn94vUv6k9/X9XPfvf2YOabr1zSyx//
+      6OC4/TUP7hyN8QywuLiouq7V6XQUY0y+fNLW2Tzf/iDlWTb4WT+qlP32b0TKVWz+17X+P89m
+      2n4/FnkxdN/297Vtuy33d8rxi2bH9tq+/bbZvBk5uzPmPM+HHrf+urLt33zftY6azbPt+82z
+      fLCPnedMf11JARRFoZMnT6aMAocKvwWCNQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKAtf8AirbcpxJtvyMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2 (2)' width='192'>
+      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
+      8QMAgP8BZ4gmkfmn11IAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
