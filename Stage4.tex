@@ -33,7 +33,7 @@ Gathering and analysing evidence will constitute by far your major effort in thi
 %%Hack to correct tcbox behaviour
 \color{black}
 
-Note that your data analysis and interpretation may also prompt you to look for more evidence, including, perhaps, reviewing more academic literature or even re-think or adjust your current aim an objectives. Therefore, so you should expect some level of iteration back to activities you have carried out in previous stages, and revision of things you have written.
+Note that your data analysis and interpretation may also prompt you to look for more evidence, including, perhaps, reviewing more academic literature or even re-think or adjust your current aim an objectives. Therefore, so you should expect some iteration back to activities you have carried out in previous stages, and revision of things you have written.
 
 By the end of Stage 4 your data collection, analysis and interpretation should be on a solid ground, and consistent with your aim and objectives. Your research design description should also be close to its final form. If that's not the case, then you will need to re-consider carefully both your project risk and work plan. Given the criticality of this stage, it is essential that you work very closely with your supervisor throughout.
 
@@ -42,24 +42,63 @@ This section assumes that you have gathered a certain amount of data and evidenc
 
 Your choice of data analysis methods will depend on two key factors: the kind of data and evidence you have, and what you are trying to achieve, that is your aim and objectives. 
 
-This section provides an introduction to the most commonly applied data analysis methods: it is far from complete and does not go very deeply into the details of each method. Instead, its purpose is to help you make your initial selection, after which you should review the related specialised literature to help you apply your chosen methods correctly. Your tutor's guidance will also be essential to this.
+This section provides an introduction to the most commonly applied data analysis methods: it is far from complete and does not go very deeply into the details of each method. Instead, its purpose is to help you make your initial selection, after which you should review the related specialised literature to help you apply your chosen methods appropriately within your project. Your tutor's guidance will also be essential to this.
 
 \subsection{Summarising data with tables}
-*** LR -- decide what is relevant to include, starting with frequency, contingency (aka cross tabulation/two-ways) and pivot tables
+In your research you may collect or make use of large amounts of raw data, possibly stored in a spreadsheet or database, so that a first step is to decide how to process such data in order to facilitate your analysis and to provide summaries for your dissertation.
 
-In your research you may collect large amounts of raw data, possibly stored in a spreadsheet or database, so the issue arises as to how these can be reported in your dissertation and properly analysed.
-
-To this end, tables are versatile tools which can help you summarise and analyse all sort of data, hence they are used extensively in research and often found in dissertations. We are looking at some common types in this section.
+To this end, tables are versatile tools used extensively in research and often found in dissertations. We will look at some key types in this section.
 
 \paragraph{Pivot tables}
-One way to summarise data is the use a \textit{pivot table} whose entries are aggregations of individual values out of larger tables, spreadsheets or databases.
 
-***to do example and activity (maybe how to do a pivot table in Excel)
+Pivot tables are used to summarise, sort, reorganise or group raw data from a spreadsheet, and also perform calculations on them such as counting or generating totals. As such, they are very powerful and versatile. 
 
-\paragraph{Contingency tables}
+For instance, assume we have collected data concerning all students who have studied a particular module over a period of time. For each student, we have both demographic data, such as age, gender, ethnicity, etc. and study data, such as study co-hort, outcome and degree studied. These make up several hundred entries in a spreadsheet, which makes it difficult to analyse them and identify patterns of interest. Pivot tables can help, for instance, by allowing us to summarise the data in many different ways which can help us answer questions we may have. For instance, we may like to know how the outcomes differ between co-horts, in which case, we may a pivot table where **** change example so that we can have both counts and something else!!!! 
+
+
+Activity - investigate pivot tables in Excel 
 
 
 \paragraph{Frequency tables}
+Frequency tables are used to summarise the frequency (or count) of values taken by a categorical variables in a data set. For instance, after studying a degree, a student's outcome may be classed as distinction, merit, pass or fail. A frequency table can then be used to summarise the frequency of each class of outcome for a particular students' cohort, as shown in Table~\ref{tab:frequencyTableExample}. Frequency tables can, of course be created as pivot tables.
+ 
+\begin{table}[htbp]
+\caption{Example of frequency table\label{tab:frequencyTableExample}}
+\small
+\begin{tabulary}{\tablewidth}{@{}LLLLL@{}} 
+\toprule
+  & \textbf{Distinction} & \textbf{Merit} & \textbf{Pass} & \textbf{Fail} \\
+\midrule
+ \textbf{Outcome} & 12 & 26 & 42 & 5\\
+\bottomrule
+\end{tabulary}
+\end{table}
+
+
+\paragraph{Contingency tables} Contingency tables\footnote{Also known as \textit{cross-tabulation} tables.} are a form of frequency tables used to tabulate the value frequencies of two categorical variables. For instance, following from our previous example, we may like to tabulate the outcome value frequencies in the cohort against gender, as shown in Table~\ref{tab:contingencyTableExample}. Contingency tables too can also be created as pivot tables.
+
+
+\begin{table}[htbp]
+\caption{Example of contingency table\label{tab:contingencyTableExample}}
+\small
+\begin{tabulary}{\tablewidth}{@{}LLLLL@{}} 
+\toprule
+ \textbf{Outcome by Gender} & \textbf{Distinction} & \textbf{Merit} & \textbf{Pass} & \textbf{Fail} \\
+\midrule
+\textbf{Female} & 7 & 12 & 21 & 2\\
+\textbf{Male} & 5 & 13 & 19 & 3\\
+\textbf{Other} & 0 & 1 & 2 & 0\\
+\midrule
+\textbf{Totals} & 12 & 26 & 42 & 5\\
+\bottomrule
+\end{tabulary}
+\end{table}
+
+Contingency tables are frequently used to summarise and analyse data collected in survey research, and are a key tool in statistical analysis.
+
+
+\subsection{Graphs and charts}
+***to decide how far to go -- rabbit hole!
 
 
 \subsection{Statistical analysis}
