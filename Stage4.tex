@@ -1,6 +1,6 @@
 \chapter*{Stage 4: Analysing data and evidence}
 
-You've now reached Stage 4, which means your project end is rapidly approaching. In this stage you are in the midst of your data gathering and analysis, which is possibly the most exciting, yet demanding, part of your research: this is where you get the chance to make your original contribution to knowledge.
+You've now reached Stage 4, which means your project end is rapidly approaching. In this stage you are in the midst of your data gathering and analysis, which is possibly the most exciting, yet demanding, part of your research: this is where you get an opportunity to make your original contribution to knowledge.
 
 With reference to our 5-stage framework, the activities which are in focus in Stage 4 are summarised in Table~\ref{tab:stage4}, which also provides some guidelines for your interaction with your supervisor during this stage.
 
@@ -40,27 +40,63 @@ By the end of Stage 4 your data collection, analysis and interpretation should b
 \section{Choosing and applying data analysis methods}
 This section assumes that you have gathered a certain amount of data and evidence, so that you can proceed with some analysis\footnote{If that's not the case, then, you should go back to Stage 3, Section~\ref{sect:???} which focuses on data collection methods. You should also discuss your progress with your supervisor, revisiting your project risk around access to the required data and evidence.}.
 
-Your choice of data analysis methods will depend on two key factors: the kind of data and evidence you have, and what you are trying to achieve, that is your aim and objectives. 
+Your choice of data analysis methods will depend on the following factors: the kind of data and evidence you have, and what you are trying to achieve, that is your aim and objectives, in the context of the research strategy(ies) you have chosen to apply.
 
-This section provides an introduction to the most commonly applied data analysis methods: it is far from complete and does not go very deeply into the details of each method. Instead, its purpose is to help you make your initial selection, after which you should review the related specialised literature to help you apply your chosen methods appropriately within your project. Your tutor's guidance will also be essential to this.
+This section provides an introduction to some common analysis methods. It is far from complete and does not go very deeply into the details of each method: entire books have been written on any of them! By studying this section, you won't become an expert in any of these methods, but you will have gained enough understanding to be able to make a judicious selection for your project. After that, you should review the related specialised literature to help you apply your chosen methods appropriately. You should also talk regularly to your supervisor for further guidance.
 
-\subsection{Summarising data with tables}
-In your research you may collect or make use of large amounts of raw data, possibly stored in a spreadsheet or database, so that a first step is to decide how to process such data in order to facilitate your analysis and to provide summaries for your dissertation.
+\subsection{Using tables}
+In your research you may collect or make use of large amounts of raw data, possibly stored in a spreadsheet or database, so that a first step is for you to decide how to process them in order to facilitate your analysis and to generate summaries for your dissertation.
 
-To this end, tables are versatile tools used extensively in research and often found in dissertations. We will look at some key types in this section.
+To this end, tables are used extensively in research and often found in dissertations.
 
 \paragraph{Pivot tables}
 
-Pivot tables are used to summarise, sort, reorganise or group raw data from a spreadsheet, and also perform calculations on them such as counting or generating totals. As such, they are very powerful and versatile. 
+Pivot tables can be used to summarise, sort, filter, re-organise or group data organised in rows and columns, and perform calculations on them, such as counting, generating totals or averages, and much more. Pivot tables are both powerful and versatile\footnote{In fact, they are so versatile that we'll only be able to provide few illustrative examples. Much, much more can be found online!}, and one of the most widespread tools for data analysis.
 
-For instance, assume we have collected data concerning all students who have studied a particular module over a period of time. For each student, we have both demographic data, such as age, gender, ethnicity, etc. and study data, such as study co-hort, outcome and degree studied. These make up several hundred entries in a spreadsheet, which makes it difficult to analyse them and identify patterns of interest. Pivot tables can help, for instance, by allowing us to summarise the data in many different ways which can help us answer questions we may have. For instance, we may like to know how the outcomes differ between co-horts, in which case, we may a pivot table where **** change example so that we can have both counts and something else!!!! 
+You can generate a pivot table from any data set organised in rows and columns, regardless of whether the values are quantitative or qualitiative: all common spreadsheet applications\footnote{From MS Excel to Apple Numbers to Google Sheets.} include this function.
+
+Figure~\ref{fig:exampleDataSet} gives an example: these are the first few raws of a data set related to the US housing market\footnote{It was taken from one of Kaggle's free datasets, the housing price dataset. Kaggle is possibly the largest and best known online community for data science and machine learning.}. The dataset contains over 9,316 entries, each corresponding to a distinct property. Each property is characterised by a number of attributes: size in square feet, number of bedrooms and bathrooms, type of neighbourhood, the year it was built and its market price in US dollars. As you can see, this table includes both numerical and categorical variables.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{Figures/exampleDataSet.pdf}
+\caption{First few rows of the example dataset}
+\label{fig:exampleDataSet}
+\end{figure}
+
+Pivot tables can be used to summarise such data to answer certain questions. For instance, we may be interested in the average house price by neighbourhood and number of bedrooms, which would result in the pivot table in Figure~\ref{fig:pivot1}, which gives the average price of each combination. The `grand totals' in the table are also averages, by row and by column.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{Figures/pivot1.pdf}
+\caption{Pivot table of average property prices by neighbourhood and number of bedrooms}
+\label{fig:pivot1}
+\end{figure}
+
+Alternatively, we may be interested in finding out how many properties of each kind have been built in each neighbourhood. In this case the pivot table would look like that in Figure~\ref{fig:pivot2}. The grand totals in this case are counts. Note how we have added combinations of bedroom and bathroom numbers to characterise each type of property.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{Figures/pivot2.pdf}
+\caption{Pivot table of property counts by neighbourhood and number of bedrooms/bathrooms}
+\label{fig:pivot2}
+\end{figure}
+
+These are just but two examples of questions about the data you can address by using pivot tables, out of a vast range of the possibilities. If your data are organised in tables, then it is well worth spending some time becoming familiar with pivot tables.
+
+\begin{question}[subtitle={Activity: Pivot tables in Excel}] Download the housing price data set from Kaggle and re-create the pivot tables in our example. Come up with other questions you could ask of the data and generate related pivot tables.	
+\begin{guidance}
+Feel free to use your preferred spreadsheet application for this activity, as long as it supports pivot tables -- most do.
+
+You may have to register with Kaggle to gain access to the data set. 
+
+The Excel help facility and documentation provides all the info you need to create a pivot table. However, you could also browse some of the very many freely available online resources and tutorials on this topic.
+\end{guidance}
+\end{question}	
 
 
-Activity - investigate pivot tables in Excel 
-
-
-\paragraph{Frequency tables}
-Frequency tables are used to summarise the frequency (or count) of values taken by a categorical variables in a data set. For instance, after studying a degree, a student's outcome may be classed as distinction, merit, pass or fail. A frequency table can then be used to summarise the frequency of each class of outcome for a particular students' cohort, as shown in Table~\ref{tab:frequencyTableExample}. Frequency tables can, of course be created as pivot tables.
+\paragraph{Frequency and contingency tables}
+Frequency tables are used to summarise the frequency (or count) of values taken by a categorical variables in a data set. For instance, after studying a degree, a student's outcome may be classed as distinction, merit, pass or fail. A frequency table can then be used to summarise the frequency of each class of outcome for a particular students' cohort, as shown in Table~\ref{tab:frequencyTableExample}.
  
 \begin{table}[htbp]
 \caption{Example of frequency table\label{tab:frequencyTableExample}}
@@ -74,9 +110,7 @@ Frequency tables are used to summarise the frequency (or count) of values taken 
 \end{tabulary}
 \end{table}
 
-
-\paragraph{Contingency tables} Contingency tables\footnote{Also known as \textit{cross-tabulation} tables.} are a form of frequency tables used to tabulate the value frequencies of two categorical variables. For instance, following from our previous example, we may like to tabulate the outcome value frequencies in the cohort against gender, as shown in Table~\ref{tab:contingencyTableExample}. Contingency tables too can also be created as pivot tables.
-
+Contingency tables\footnote{Also known as \textit{cross-tabulation} tables.} are a form of frequency tables used to tabulate the value frequencies of two categorical variables. For instance, following from our previous example, we may like to tabulate the outcome value frequencies in the cohort against gender, as shown in Table~\ref{tab:contingencyTableExample}. 
 
 \begin{table}[htbp]
 \caption{Example of contingency table\label{tab:contingencyTableExample}}
@@ -96,10 +130,7 @@ Frequency tables are used to summarise the frequency (or count) of values taken 
 
 Contingency tables are frequently used to summarise and analyse data collected in survey research, and are a key tool in statistical analysis.
 
-
-\subsection{Graphs and charts}
-***to decide how far to go -- rabbit hole!
-
+Both frequency and contingency tables can be generated as pivot tables in a spreadsheet. In fact, the table in Figure~\ref{fig:pivot2} is a contingency table. 
 
 \subsection{Statistical analysis}
 
@@ -115,7 +146,7 @@ This is used to describe various attributes of a data set. The basics are:
 	\item count, to establish how many entries there are in the data set
 	\item range, to establish the span of the data set as the difference between its smallest (minimum) and largest (maximum) values 
 	\item centrality, to establish the `centre' of the data set. Three measures are commonly used: the \textit{mean}, which provides the average value of the data set; the \textit{median}, which provides its mid point\footnote{Remember that quantitative data can be ordered.}; and the \textit{mode}, which indicates the value that occurs most frequently, if any\footnote{There is no mode if no value is repeated in the data set.}
-	\item dispersion, to establish how close to the mean or otherwise the values in the data set are.   The \textit{standard deviation} is the measure used for this purpose\footnote{It is based on a mathematical formula which considers the distance of each value in the data from the mean. It is not essential for you to know such formula, which is automatically computed by spreadsheets and statistical software. Of course, you can always look it up the literature...}. The larger the standard deviation, the greater the dispersion.
+	\item dispersion, to establish how close to the mean or otherwise the values in the data set are.   The \textit{standard deviation} is a common measure used for this purpose\footnote{It is based on a mathematical formula which considers the distance of each value in the data from the mean. It is not essential for you to know such formula, which is automatically computed by spreadsheets and statistical software. Of course, you can always look it up the literature...}. The larger the standard deviation, the greater the dispersion.
 	\item skewness, to establish how symmetrically distributed the values in the data set are in relation to the centre. In the case of perfect symmetry, skewness is equal to zero, and mean and median are equal. When asymmetric, mean and median are different and the distribution may be either right (mean smaller than median, and negative skewness) or left (mean greater than median, and positive skewness) skewed.   
 \end{itemize}
 
@@ -123,13 +154,14 @@ This is used to describe various attributes of a data set. The basics are:
 %
 %A normal distribution represents data that when plotted on a graph results in a \textit{bell curve}, exemplified in Figure~\ref{fig:bellcurve}. 
 
-These are lots of definitions to digest, particularly if you haven't these terms before! The following activity should help.
+These are lots of definitions to digest, particularly if you haven't encountered these terms before! The following activity should help.
 
 \begin{question}[subtitle={Activity: Descriptive statistics in Excel}] Assume you have measured the weight in grams of each apple in a basket, obtaining the following numbers: 105, 120, 122, 125, 127, 128, 129, 130, 132, 133, 135, 135, 138, 140, 128. Enter these data in an Excel sheet and use its built-in data analysis function to generate the related descriptive statistics.
 \begin{guidance}
 In the current version of Excel, you can access this function from the Data tab, by pressing the Data Analysis button. If you find it difficult to locate this function, you should check some of the many tutorials on this topic which are freely available online.
 \end{guidance}
 \begin{solution}
+
 You should have obtained the following values:
 
 \begin{tabulary}{\tablewidth}{@{}LL@{}} 
@@ -175,7 +207,7 @@ Before we do that, however, it is worth noticing that while a bar chart works fo
 \label{fig:histogram}
 \end{figure}
 
-In order to visualise skewness, a useful chart is the boxplot, illustrated in Figure~\ref{fig:boxplot} for our example. This is made of a `box' around the median of the data, and some `whiskers' on each side of the box\footnote{Which is why this chart is also called a \textit{box and whiskers} plot.}. It is obtained by dividing up the data into quartiles, each containing a quarter (or 25\%) of the data, with the median in the centre. The box includes the two quartiles on each side of the median, which, together, account for half of the values in the data set. The whiskers account for the two other quartiles, with a caveat: if there are very extreme values, these are treated as possible outliers and left out of the whiskers. That is, in fact, the case in our example where value 105 is treated as an outlier in the chart: it is a dot on its own, not included in the left whisker. The whisker length provides an indication of skewness: in our example the right whisker is longer, so the data distribution is right skewed (in line with the negative skewness value in the descriptive statistics).
+In order to visualise skewness, a useful chart is the boxplot, illustrated in Figure~\ref{fig:boxplot} for our example. This is made of a `box' around the median of the data, and some `whiskers' on each side of the box\footnote{Which is why this chart is also called a \textit{box and whiskers} plot.}. It is obtained by dividing up the data into quartiles, each containing a quarter (or 25\%) of the data, with the median in the centre. The box includes the two quartiles on each side of the median, which, together, account for half of the values in the data set. The whiskers account for the two other quartiles, with a caveat: if there are very extreme values, these are treated as possible outliers and left out of the whiskers. That is, in fact, the case in our example where value 105 is treated as an outlier in the chart: it is a dot on its own, not included in the left whisker. The whisker length provides an indication of skewness: in our example the right whisker is longer, so the data distribution is right skewed (consistent with the negative skewness value in the descriptive statistics).
 
 \begin{figure}[htbp]
 \centering
@@ -184,7 +216,7 @@ In order to visualise skewness, a useful chart is the boxplot, illustrated in Fi
 \label{fig:boxplot}
 \end{figure}
 
-To be more precise, the relation between a boxplot and its underlying statistical features is illustrated in Figure~\ref{fig:boxplotFeatures}. The two quartiles around the median represent the interquartile range (IQR) of the data set, with the whisker lengths calculated based on the formulae in the figure, which allow the identification of extreme values, represented separately as outliers. An outlier, therefore, is just a value which is distant from most of the other values in the data set: it may point to an error, which should be corrected, or an anomaly, which may require further investigations, but that's not necessarily the case. In all cases, it's good practice to investigate outliers to understand why they have occurred. 
+To be more precise, the relation between a boxplot and its underlying statistical features is illustrated in Figure~\ref{fig:boxplotFeatures}. The two quartiles around the median represent the interquartile range (IQR) of the data set, with the whisker lengths calculated based on the formulae in the figure, which allow the identification of extreme values, represented separately as outliers. An outlier, therefore, is just a value which is distant from most of the other values in the data set: it may point to an error, which should be corrected, or an anomaly, which may require further investigation, but that's not necessarily the case. In all cases, it's good practice to investigate outliers to understand why they have occurred. 
 
 \begin{figure}[htbp]
 \centering
@@ -209,15 +241,44 @@ If you have collected qualitative data, it is time for you to have a go at analy
 \begin{question}[subtitle={Activity: Applying descriptive statistics to your data}] 
 Calculate descriptive statistics for your data set, and generate appropriate charts.
 \begin{guidance}
-MS Excel is relatively straightforward to use for this purpose, but feel free to use other tools  you may be familiar with, including statistical or data analytics packages. If you do, you should ensure they support the functions we have discussion in this section.
+MS Excel is relatively straightforward to use for this purpose, but feel free to use other tools  you may be familiar with, including statistical or data analytics packages. If you do, you should ensure they support the functions we have discussed in this section.
 \end{guidance}
 \end{question}
 
 
-\subsubsection{Inferential statistics}
-Inferential statistics relies on the concepts of population and sample: the \textit{population} is the entire group you are interested in studying -- say, all UK voters in a general election; while the \textit{sample} is the portion or subset of that group you have access to in your research. Then the aim of inferential statistics is to establish whether patterns you have observed in your sample can be generalised to, i.e., inferred for, the whole population and possibly used to make predictions about that population, or whether they are the result of chance. For this, it is essential that the sample is representative of the population, something we will consider in some detail in Section~\ref{sect:sampling}.
+***to do -- summarise which descriptive statistics apply to different kind of data: nominal, interval/ratio and ordinal
 
-In inferential statistics this is achieved by testing hypotheses, where an \textit{hypothesis} is an proposition you wish to test -- in essence, an educated guess you have come up with based on some observations you have made, but has yet to proved. 
+\subsubsection{Inferential statistics}
+Inferential statistics relies on the concepts of population and sample: the \textit{population} is the entire group you are interested in studying -- say, all UK voters in a general election; while the \textit{sample} is the portion or subset of that group you have access to in your research. Then the aim of inferential statistics is to establish whether patterns or effects you have observed in the sample can be generalised to, i.e., inferred for, the whole population, or whether they are the result of chance. For this, it is essential that the sample is representative of the population, something we will consider in some detail in Section~\ref{sect:sampling}.
+
+In inferential statistics this is achieved through statistical tests. A statistical test tells you whether the proposition\footnote{You can think of a proposition as an educated guess you have made based on some observations, but that has yet to be supported by evidence.} you wish to test on your sample is likely to be true in the population under study. To do so, a statistical test returns a measure of \textit{statistical significance}, which is used to provide evidence (or otherwise) that the pattern or effect you see in your sample is also likely to exist in the population, and is not just the effect of chance\footnote{Contrary to the common language meaning of 'significance' as big or important. Statistical significance is only an indication that the effect is likely to exist in the population, where it may well be small or unimportant!}. As a corollary, if your sample is very large, almost all effects observed in the sample will be likely present in the population; vice-versa, if your sample is very small, most effects observed in the sample are unlikely to be present in the population, unless they are really very large.
+
+Each statistical test comprises the following elements.
+
+\paragraph{Hypotheses} There are two,  \textit{null and alternative} hypotheses. Inferential statistics assumes you can't prove something to be true, but you can disprove something by finding an exception. The classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the null hypothesis to what you want to disprove about the population, with the alternative hypothesis being what you are really interested to find out. So, the null hypothesis is a statement of no pattern/effect in the population.
+
+\paragraph{Significance} This is level of statistical significance for the test. It's known as the alpha ($\alpha$) value from the Greek name of the mathematical variable used to express it. Most tests are run with $\alpha=0.05$, which gives a 5\% probability that we may infer that the null hypothesis is disproved while in actually it is correct\footnote{This is called a Type I error in Statistics.}.
+
+\paragraph{Sample} You need to have a (representative) sample of the population on which to perform the test.
+
+\paragraph{p-value} This is the probability calculated for you test by your statistical package, and which is used to decide the outcome of the test.
+
+\paragraph{Decision} This is based on the p-value in relation to the $\alpha$ value: if the p-value is less than the $\alpha$ value, then the null hypothesis is \textit{rejected}, i.e. disproved, which means your alternative hypothesis that there is an effect in the population is supported by statistical evidence.
+
+
+
+
+
+
+
+
+The measure of statistical significance returned by a statistical test is the \textit{p-value}, which is a probability.
+
+
+In inferential statistics there are very many tests to choose from, which depend on the data you have, say nominal vs numerical, how many samples are involved in the analysis, and the purpose of your analysis, say, comparing samples or identifying relationships.
+
+
+***go through the Dr Nic's tutorials and then summarise
 
 Among the most common inferential statistical tests are:
 
@@ -260,7 +321,7 @@ Random sampling include:
 
 Non random sampling include:
 \begin{itemize}
-	\item subjective sampling, the researcher chooses based on the researcher's own judgement and research aim. Used for small populations or especially rare population; target individuals with particular knowledge or expertise; prone to bias and unlikely to lead to generalisable results. Better suite for narrow and deep
+	\item subjective\footnote{aka purpose -- check terminology in Rosen's boob!} sampling, the researcher chooses based on the researcher's own judgement and research aim. Used for small populations or especially rare population; target individuals with particular knowledge or expertise; prone to bias and unlikely to lead to generalisable results. Better suite for narrow and deep
 	\item convenient sampling, participants selected based on their availability or accessibility. Quick and easy, but unlikely to reproduce a representative sample, and prone to bias
 	\item snowball sampling, rely on referral from previous participants to recruit new ones. When difficult to identify or access a population or when the topic is sensitive or tabu. Highly prone to bias and unlikely to reproduce a representative sample
 \end{itemize}
