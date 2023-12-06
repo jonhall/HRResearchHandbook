@@ -1,9 +1,8 @@
 \chapter*{Stage 4: Analysing data and evidence}
 
-You've now reached Stage 4, which means your project end is rapidly approaching. In this stage you are in the midst of your data gathering and analysis, which is possibly the most exciting, yet demanding, part of your research: this is where you get an opportunity to make your original contribution to knowledge.
+You've now reached Stage 4, which means the end of your project is in sight. In this stage you are in the midst of your data gathering and analysis, which is possibly the most exciting, yet demanding, part of your research: this is where you get an opportunity to make your original contribution to knowledge.
 
 With reference to our 5-stage framework, the activities which are in focus in Stage 4 are summarised in Table~\ref{tab:stage4}, which also provides some guidelines for your interaction with your supervisor during this stage.
-
 
 \begin{table}[htbp]
 \caption{Research activities addressed in Stage 4 (20\% of project length)\label{tab:stage4}}
@@ -134,25 +133,29 @@ Both frequency and contingency tables can be generated as pivot tables in a spre
 
 \subsection{Statistical analysis}
 
-Statistical analysis in an umbrella terms for a set of methods which can be applied to quantitative and categorical data\footnote{Refer back to Section~\ref{sect:??} for a definition.}. There are two broad categories:
+Statistical analysis in an umbrella terms for a set of methods which can be applied to numerical and categorical data. More precisely, in statistics data types are classified as:
+
+\begin{itemize}
+	\item scalar, which includes all measurements and counts; with reference to the types in Section\ref{sect:evidenceAndData}, these are all numerical data, continuous, discrete, interval and ratio data.
+	\item categorical, both ordinal and nominal.
+	\end{itemize}
+
+There are two broad categories of statistical methods:
 \begin{itemize}
 	\item descriptive statistics, whose aim is to describe data; and
 	\item inferential statistics, whose aim is to make predictions from data.
 \end{itemize}
 
 \subsubsection{Descriptive statistics} 
-This is used to describe various attributes of a data set. The basics are:
+These are used to describe various attributes of a data set. The basics are:
 \begin{itemize}
 	\item count, to establish how many entries there are in the data set
-	\item range, to establish the span of the data set as the difference between its smallest (minimum) and largest (maximum) values 
-	\item centrality, to establish the `centre' of the data set. Three measures are commonly used: the \textit{mean}, which provides the average value of the data set; the \textit{median}, which provides its mid point\footnote{Remember that quantitative data can be ordered.}; and the \textit{mode}, which indicates the value that occurs most frequently, if any\footnote{There is no mode if no value is repeated in the data set.}
-	\item dispersion, to establish how close to the mean or otherwise the values in the data set are.   The \textit{standard deviation} is a common measure used for this purpose\footnote{It is based on a mathematical formula which considers the distance of each value in the data from the mean. It is not essential for you to know such formula, which is automatically computed by spreadsheets and statistical software. Of course, you can always look it up the literature...}. The larger the standard deviation, the greater the dispersion.
-	\item skewness, to establish how symmetrically distributed the values in the data set are in relation to the centre. In the case of perfect symmetry, skewness is equal to zero, and mean and median are equal. When asymmetric, mean and median are different and the distribution may be either right (mean smaller than median, and negative skewness) or left (mean greater than median, and positive skewness) skewed.   
+	\item centrality, to establish the `centre' of the data set. Three measures are commonly used: the \textit{mean}, which provides the average value of the data set; the \textit{median}, which provides its mid point\footnote{Remember that quantitative data can be ordered.}; and the \textit{mode}, which indicates the value that occurs most frequently, if any\footnote{There is no mode if no value is repeated in the data set.} 
+	\item dispersion, to establish the spread of the data in the data set. Range and standard deviation are two common measures. The \textit{range} is the difference between smallest (minimum) and largest (maximum) values. The \textit{standard deviation} is based on a mathematical formula which considers the distance of each value in the data set from the mean. It is not essential for you to know such formula, which is automatically computed by spreadsheets and statistical software\footnote{Of course, you can always look it up the literature...}. The larger the standard deviation, the greater the dispersion.
+	\item skewness, to establish how symmetrically distributed the values in the data set are in relation to the centre. In the case of perfect symmetry, skewness is equal to zero, and mean and median are equal. When asymmetric, mean and median are different and the distribution may be either right (mean smaller than median, and negative skewness) or left (mean greater than median, and positive skewness) skewed. A perfectly symmetric distribution is usually referred to as a \textit{normal distribution} or \textit{bell curve}, from the shape of the line that can be obtained by plotting the data on a chart\footnote{This oversimplifies the topic in order to give some intuition in case you have not come across these terms before. A lot more should be said about the normal distribution and its pivotal role in statistics!}.
 \end{itemize}
 
-%In addition, two other attributes are defined relative to a \textit{normal distribution}\footnote{Or \textit{Gaussian distribution}, from one of the mathematicians, Carl Friedrich Gauss, who helped develop this concept.}: you will hear a lot about the normal distribution if you study or apply any statistics, so it is well worth becoming familiar with this concept.
-%
-%A normal distribution represents data that when plotted on a graph results in a \textit{bell curve}, exemplified in Figure~\ref{fig:bellcurve}. 
+Not all descriptive statistics apply to categorical data. In particular, the mode is used as the main measure of centrality for nominal data, while the median is used for ordinal data which are not numeric.
 
 These are lots of definitions to digest, particularly if you haven't encountered these terms before! The following activity should help.
 
@@ -189,25 +192,25 @@ In your dissertation, you can easily present such descriptive statistics as a ta
 
 In addition, charts can be used to visualise the data and examine their descriptive statistics. 
 
-With discrete data, like in our example, you can use a \textit{bar chart}. The one in Figure~\ref{fig:barchart} uses the apple weights from the previous activity: on the horizontal, we have the distinct weights, and on the vertical, their frequencies, that is how many times each weight appears in the data set. Given the values you have obtained for the data set descriptive statistics, you can easily locate on the chart min and max values, and mean, median and mode. In this case, the two `peaks' correspond to the two modes we mentioned in the activity. You can also check that most of the values are within 8.55 from the mean, either way: the only values left out are 105 (to the left) and 138 and 140 (to the right). Skewness is not obviously visualised on this bar chart, so that we will use a different chart for that.
+With scalar data, like in our example, you can use a \textit{histogram}. The one in Figure~\ref{fig:histogramBin1} uses the apple weights from the previous activity: on the horizontal, we have the distinct weights, and on the vertical, their frequencies, that is how many times each weight appears in the data set. Given the values you have obtained for the data set descriptive statistics, you can easily locate on the chart min and max values, and mean, median and mode. In this case, the two `peaks' correspond to the two modes we mentioned in the activity. You can also check that most of the values are within 8.55 from the mean, either way: the only values left out are 105 (to the left) and 138 and 140 (to the right). Skewness is not obviously visualised on this chart, so that we will use a different chart for that purpose.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{Figures/barchart.pdf}
-\caption{Bar chart for the apple weights}
+\caption{Histogram for the apple weights (bin size = 1)}
 \label{fig:barchart}
 \end{figure}
 
-Before we do that, however, it is worth noticing that while a bar chart works for this example, more generally you should use a \textit{histogram} for  quantitative data, particularly for continuous numbers.  Figure~\ref{fig:histogram} illustrates a possible histogram for our example. In this case, the apple weights are aggregated in `bins', each spanning a set of values, which depends on the size of the bin: we have used a bin size of 5 in the figure. The frequencies are then by bin, rather than individual weights. In our example, however, it is easier to visualise and investigate the descriptive statistics with a bar chart.
+Before we do that, however, it is worth noticing that given our small data set of discrete values, we have used a histogram with `bin' size equal to one, which allows us to plot each individual apple weight. A bin is essentially a way to group a number of values, with the size establishing the spread of each bin: this is necessary with large data sets and/or with continuous data. Frequencies are then calculated by bin. Figure~\ref{fig:histogram} illustrates a histogram for our example, in which the bin size is 5: that is, each bin spans a set of 5 possible values. 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=12cm]{Figures/histogram.pdf}
-\caption{Histogram for the apple weights, with bin size equal to 5}
+\includegraphics[width=12cm]{Figures/histogramBin5.pdf}
+\caption{Histogram for the apple weights (bin size = 5)}
 \label{fig:histogram}
 \end{figure}
 
-In order to visualise skewness, a useful chart is the boxplot, illustrated in Figure~\ref{fig:boxplot} for our example. This is made of a `box' around the median of the data, and some `whiskers' on each side of the box\footnote{Which is why this chart is also called a \textit{box and whiskers} plot.}. It is obtained by dividing up the data into quartiles, each containing a quarter (or 25\%) of the data, with the median in the centre. The box includes the two quartiles on each side of the median, which, together, account for half of the values in the data set. The whiskers account for the two other quartiles, with a caveat: if there are very extreme values, these are treated as possible outliers and left out of the whiskers. That is, in fact, the case in our example where value 105 is treated as an outlier in the chart: it is a dot on its own, not included in the left whisker. The whisker length provides an indication of skewness: in our example the right whisker is longer, so the data distribution is right skewed (consistent with the negative skewness value in the descriptive statistics).
+In order to visualise both spread and skewness, a useful chart is the boxplot, illustrated in Figure~\ref{fig:boxplot} for our example. This is made of a `box' around the median of the data, and some `whiskers' on each side of the box\footnote{Which is why this chart is also called a \textit{box and whiskers} plot.}. It is obtained by dividing up the data into quartiles, each containing a quarter (or 25\%) of the data, with the median in the centre. The box includes the two quartiles on each side of the median, which, together, account for half of the values in the data set. The whiskers account for the two other quartiles, with a caveat: if there are very extreme values, these are treated as possible outliers and left out of the whiskers. This is, in fact, the case in our example where value 105 is treated as an outlier in the chart: it is a dot on its own, not included in the left whisker. The whisker length provides an indication of skewness: in our example the right whisker is longer, so the data distribution is right skewed (consistent with the negative skewness value in the descriptive statistics).
 
 \begin{figure}[htbp]
 \centering
@@ -216,7 +219,7 @@ In order to visualise skewness, a useful chart is the boxplot, illustrated in Fi
 \label{fig:boxplot}
 \end{figure}
 
-To be more precise, the relation between a boxplot and its underlying statistical features is illustrated in Figure~\ref{fig:boxplotFeatures}. The two quartiles around the median represent the interquartile range (IQR) of the data set, with the whisker lengths calculated based on the formulae in the figure, which allow the identification of extreme values, represented separately as outliers. An outlier, therefore, is just a value which is distant from most of the other values in the data set: it may point to an error, which should be corrected, or an anomaly, which may require further investigation, but that's not necessarily the case. In all cases, it's good practice to investigate outliers to understand why they have occurred. 
+To be more precise, the relation between a boxplot and its underlying statistical features is illustrated in Figure~\ref{fig:boxplotFeatures}. The two quartiles around the median represent the interquartile range (IQR) of the data set, with the whisker lengths calculated based on the formulae in the figure, which allow the identification of lower and upper bounds beyond which values are seen as extreme and represented separately as outliers. An outlier, therefore, is just a value which is distant from most of the other values in the data set: it may point to an error, which should be corrected, or an anomaly, which may require further investigation, but that's not necessarily the case. In all cases, it's good practice to investigate outliers to understand why they have occurred. 
 
 \begin{figure}[htbp]
 \centering
@@ -232,114 +235,135 @@ In the current version of Excel, you can generate these charts from the Insert t
 \end{guidance}
 \end{question}
 
-Calculating descriptive statistics and visualising the data in bar charts, histograms and boxplots, is often the first step in quantitative data analysis, as these provide useful summaries and visualisations of key properties of a data set. And as you have found out in the activities, you do not need to be a statistician to be able to generate them!
 
-Descriptive statistics may also help you identify errors or anomalies in the data, and can inform possible follow-up analysis, including inferential statistical analysis. Depending on your research aim and objectives, they could also be all you need in your project.
+Table~\ref{tab:charts} summarises useful charts that can be applied to visualise your data and their descriptive statistics: it includes charts we have not used in our examples, but which are very common, so that you can find plenty of study materials online should you wish to look them up and use them.
 
-If you have collected qualitative data, it is time for you to have a go at analysing them using descriptive statistics.
+\begin{table}
+	\caption{Common charts to visualise data sets and their descriptive statistics}
+	\label{tab:charts}
+\begin{tabulary}{\tablewidth}{@{}LLL@{}} 
+\textbf{Chart} & \textbf{Variable(s)} & \textbf{Purpose} \\
+bar chart & one categorical & to visualise counts/frequencies/proportions/percentages \\
+staked bar chart & two categorical & to compare   counts/frequencies/proportions/percentages between two groups\\
+histogram & one scalar & to visualise distribution, including centrality, dispersion and skewness \\
+scatter diagram & two scalar & to visualise relationships and possible outliers \\
+boxplot & one scale or one categorical & to visualise spread, skewness, median, IQR and possible outliers \\
+line chart & one scalar by time & to visualise change over time \\
+\end{tabulary}
+\end{table}
+
+
+Calculating descriptive statistics and visualising data in appropriate charts, should be the first step in your statistical data analysis, as these provide useful summaries and visualisations of key properties of your data set. And, as you have found out in the activities, you do not need to be a statistician to be able to generate them!
+
+Descriptive statistics may also help you identify errors or anomalies in the data, and can inform possible follow-up analysis, including inferential statistical analysis. Depending on your research aim and objectives, they could also be all you need in your project. 
+
+If you have collected scalar or categorical data, it is time for you to have a go at analysing them using descriptive statistics and charts.
 
 \begin{question}[subtitle={Activity: Applying descriptive statistics to your data}] 
 Calculate descriptive statistics for your data set, and generate appropriate charts.
 \begin{guidance}
-MS Excel is relatively straightforward to use for this purpose, but feel free to use other tools  you may be familiar with, including statistical or data analytics packages. If you do, you should ensure they support the functions we have discussed in this section.
+MS Excel is relatively straightforward to use for this purpose, but feel free to use other tools you may be already familiar with, including statistical or data analytics packages. Whichever tool you use, you should ensure it supports the functionalities we have discussed in this section.
 \end{guidance}
 \end{question}
 
 
-***to do -- summarise which descriptive statistics apply to different kind of data: nominal, interval/ratio and ordinal
-
-\subsubsection{Inferential statistics}
+\subsubsection{Inferential statistics}\label{sect:inferentialStatistics}
 Inferential statistics relies on the concepts of population and sample: the \textit{population} is the entire group you are interested in studying -- say, all UK voters in a general election; while the \textit{sample} is the portion or subset of that group you have access to in your research. Then the aim of inferential statistics is to establish whether patterns or effects you have observed in the sample can be generalised to, i.e., inferred for, the whole population, or whether they are the result of chance. For this, it is essential that the sample is representative of the population, something we will consider in some detail in Section~\ref{sect:sampling}.
 
-In inferential statistics this is achieved through statistical tests. A statistical test tells you whether the proposition\footnote{You can think of a proposition as an educated guess you have made based on some observations, but that has yet to be supported by evidence.} you wish to test on your sample is likely to be true in the population under study. To do so, a statistical test returns a measure of \textit{statistical significance}, which is used to provide evidence (or otherwise) that the pattern or effect you see in your sample is also likely to exist in the population, and is not just the effect of chance\footnote{Contrary to the common language meaning of 'significance' as big or important. Statistical significance is only an indication that the effect is likely to exist in the population, where it may well be small or unimportant!}. As a corollary, if your sample is very large, almost all effects observed in the sample will be likely present in the population; vice-versa, if your sample is very small, most effects observed in the sample are unlikely to be present in the population, unless they are really very large.
+In inferential statistics this is achieved through statistical tests. A statistical test tells you whether the proposition\footnote{You can think of a proposition as an educated guess you have made based on some observations, but that has yet to be supported by evidence.} you wish to test on your sample is likely to be true in the population under study. To do so, a statistical test returns a measure of \textit{statistical significance}, which is used to provide evidence (or otherwise) that the pattern or effect you see in your sample is also likely to exist in the population, and is not just the effect of chance\footnote{Contrary to the common language meaning of `significance' as big or important, statistical significance only indicates that the effect is likely to exist in the population, where it may well be small or unimportant!}. As a corollary, if your sample is very large, almost all effects observed in the sample will be likely present in the population; vice-versa, if your sample is very small, most effects observed in the sample are unlikely to be present in the population, unless they are really very large.
 
 Each statistical test comprises the following elements.
 
-\paragraph{Hypotheses} There are two,  \textit{null and alternative} hypotheses. Inferential statistics assumes you can't prove something to be true, but you can disprove something by finding an exception. The classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the null hypothesis to what you want to disprove about the population, with the alternative hypothesis being what you are really interested to find out. So, the null hypothesis is a statement of no pattern/effect in the population.
-
-\paragraph{Significance} This is level of statistical significance for the test. It's known as the alpha ($\alpha$) value from the Greek name of the mathematical variable used to express it. Most tests are run with $\alpha=0.05$, which gives a 5\% probability that we may infer that the null hypothesis is disproved while in actually it is correct\footnote{This is called a Type I error in Statistics.}.
-
-\paragraph{Sample} You need to have a (representative) sample of the population on which to perform the test.
-
-\paragraph{p-value} This is the probability calculated for you test by your statistical package, and which is used to decide the outcome of the test.
-
-\paragraph{Decision} This is based on the p-value in relation to the $\alpha$ value: if the p-value is less than the $\alpha$ value, then the null hypothesis is \textit{rejected}, i.e. disproved, which means your alternative hypothesis that there is an effect in the population is supported by statistical evidence.
-
-
-
-
-
-
-
-
-The measure of statistical significance returned by a statistical test is the \textit{p-value}, which is a probability.
-
-
-In inferential statistics there are very many tests to choose from, which depend on the data you have, say nominal vs numerical, how many samples are involved in the analysis, and the purpose of your analysis, say, comparing samples or identifying relationships.
-
-
-***go through the Dr Nic's tutorials and then summarise
-
-Among the most common inferential statistical tests are:
-
-tests for means, tests for proportions and testes for relationships
-
-choice factors: data; sample; purpose
-
-
-
 \begin{itemize}
-\item 1 sample t-test for mean
-\item 1 sample z-test for mean	
+	\item \textbf{Hypotheses} There are two,  \textit{null} and \textit{alternative} hypotheses. Inferential statistics assumes you can't prove something to be true, but you can disprove something by finding an exception. Here is a classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the null hypothesis to what you want to disprove about the population, with the alternative hypothesis being what you are really interested in finding out. So, the null hypothesis is a statement of no pattern/effect in the population.
+	\item \textbf{Significance} This is level of statistical significance for the test. It's known as the \textit{alpha} ($\alpha$) value from the Greek name of the mathematical variable used to express it. Most tests are run with $\alpha=0.05$, which gives a 5\% probability that we may infer that the null hypothesis is disproved while in actually it is correct\footnote{This is called a Type I error in Statistics.}.
+	\item \textbf{Sample(s)} You need to have a (representative) sample of the population on which to perform the test. Multiple samples are used in some tests, typically to compare specific statistics in different populations or their changes over time or after applying a treatment.
+	\item \textbf{p-value} This is the probability calculated for your test by your statistical package, and which is used to decide the outcome of the test.
+	\item \textbf{Decision} This is based on the p-value in relation to the $\alpha$ value: if the p-value is less than the $\alpha$ value, then the null hypothesis is \textit{rejected}, i.e. disproved, which means your alternative hypothesis that there is an effect in the population is supported by statistical evidence.
 \end{itemize}
 
+There are very many statistical tests to choose from, depending on the kind of data you have and their distribution, the purpose of your analysis and the number of samples involved. Statistical tests are applicable to both scalar and categorical data and can be used to compare values of specific statistics or to establish statistical relationships between variables.  The latter can be associations or correlations: the existence of an \textit{association} between variables means that one variable can be used to provide some information about the other; \textit{correlation} is a particular type of association such that the two variables always change together, for instance they both increase or decreases at the same time, or when one increases the other always decreases.
+
+We will not cover all possible statistical tests in this introductory section, and only provide a summary of those most commonly applied. This is given in Tables~\ref{tab:testsForComparison} and \ref{tab:testsForAssociation}.
+
+\begin{table}
+	\caption{Common statistical tests for comparison. \textit{Parametric} tests apply to normally distributed data, while \textit{non parametric} tests to skewed distributions.}
+	\label{tab:testsForComparison}
+\begin{tabulary}{\tablewidth}{@{}LLLLLL@{}} 
+\textbf{Purpose} & \textbf{Variables} & \textbf{Example} & \textbf{Parametric} & \textbf{Non parametric} & \textbf{Notes}  \\
+\toprule
+to compare the sample mean against a specific value & one scalar & to investigate whether AA batteries of a particular brand have the claimed lifespan  & one sample t-test & n/a  & \\
+\midrule
+to compare the sample proportion against a specific value & one categorical & to investigate the proportion of people who voted for a particular party in a city against that for the whole country & one sample z-test & n/a  & \\
+\midrule
+to compare the means of two independent samples & scalar & to compare the mean scores (dependent) of students studying the same subject with two different teaching approaches (explanatory) & independent t-test & Mann-Whitney test/ Wilcoxon rank sum  & two samples are \textit{independent} when there is no reason to believe that observations in one sample are influenced or determined by those in the other\\
+\midrule
+to compare the means of three or more independent samples & scalar dependent; nominal explanatory & to compare the mean scores (dependent) of students studying the same subject with three or more different teaching approaches (explanatory) & one-way ANOVA & Kruskal-Wallis test \\
+\midrule
+to compare the average difference between paired samples against a particular value & scalar dependent; time or condition as explanatory & to compare the blood pressure readings (dependent) of a group of people before and after exercising (explanatory) & paired t-test & Wilcoxon signed
+rank test &  in paired samples each data point in one sample is uniquely matched to a data point in the other sample; this happens, for instance, when we measure a factor before and after an intervention, or take different readings for the same individuals. Paired samples are not independent.\\
+\midrule
+\end{tabulary}
+\end{table}
+
+\begin{table}
+	\caption{Common statistical tests for association. \textit{Parametric} tests apply to normally distributed data, while \textit{non parametric} tests to skewed distributions.}
+	\label{tab:testsForAssociation}
+\begin{tabulary}{\tablewidth}{@{}LLLLLL@{}} 
+\textbf{Purpose} & \textbf{Variables} & \textbf{Example} & \textbf{Parametric} & \textbf{Non parametric} & \textbf{Notes}  \\
+\toprule
+to investigate correlation between two continuous variables & scalar dependent and explanatory & to investigate the relation between blood pressure (dependent) and age (explanatory)  & Pearson’s Correlation Coefficient & Spearman’s Correlation Coefficient & \\
+\midrule
+to investigate association between two categorical variables & categorical dependent and explanatory & to find out if there are gender (categorical) differences in the choice of modes of transport (categorical) in a city & chi-squared & n/a  &  \\
+\midrule
+to investigate association between two categorical variables when the sample is small & categorical dependent and explanatory & to find out if there are gender (categorical) differences in the choice of modes of transport (categorical) in a city  & Fisher's Exact test & n/a & the sample size $n$ should be less than 20 \\
+\midrule
+to predict the value of one variable from that of one or more other variables & scalar dependent and any kind of explanatory & to predict house prices (dependent) based on location (explanatory, categorical) and number of bedrooms (explanatory, scalar) & linear regression & n/a & linear regression relies on associations between dependent and explanatory variables\\
+\midrule
+to predict the value of a binary variable from that of two or more other variables & binary categorical dependent and any kind of explanatory & to predict whether a customer is likely or not to purchase a certain product (dependent) based on previous purchased products (explanatory, categorical) and average annual spent (explanatory, scalar) & logistic regression & n/a & a binary variable has only two possible values, so that logistic regression calculates the probability of each value based on the values of the explanatory variables. Because of this logistic regression can be used as a classification method \\
+\midrule
+\end{tabulary}
+\end{table}
+
+Even if these tests are only a sub-set of all statistical tests available, there is a lot to digest. The next activity should help you use these table to choose an appropriate test. 
+
+\begin{question}[subtitle={Activity: Choosing an appropriate test}] 
+Consider the following scenarios: for each, use the information in the tables to decide which test to apply and what the null hypothesis should be. For each, write down your reasoning, choice and null hypothesis.
 
 \begin{itemize}
-	\item t-test: to compare the means of two groups to establish if they are genuinely different or if the difference is just the effect of chance. For instance,  a university may like to test whether there are significant differences in mean scores of students studying the same subject with different teachers. The underlying assumption is that the two student groups are \textit{independent}, that is there is no reason to believe that the performance of one group is influenced or determined by that of the other.
-	\item paired t-test: the same as the t-test, but focusing on the performance of one particular group over time. For instance, to establish if the mean scores of a particular student group change from one study module to the next within a degree.
-	\item one-way ANOVA: to compare the means of multiple groups. For instance, in a country with standardised school tests, an education authority may like to compare the mean scores of students from different schools taking the same test. There are several flavours of ANOVA tests.
-	\item chi-square: to establish if there are differences in the proportion of different categories, so this test applies to categorical variables\footnote{Which can be either quantitative (ordinal) or qualitative (nominal), so that this test can also be used as a qualitative analysis method.}. In this way, this test allows you to establish whether there are relationships between categorical variables. For instance, a local authority may like to find out if there are gender differences in the choice of modes of transport.
-	\item correlation: to assess the relationship between two numerical variables, to establish whether they change together in some way, specifically if an increase in one  is associated with an increase or decrease in the other. For instance, you could test if there is a correlation between the time a person spends watching television and their physical fitness. This test produces a coefficient between -1 and 1, which tells you both the strength of the correlation and its direction: a coefficient close to 1 means that the two variables always change together and in the same direction (either up or down); a coefficient close to -1 indicates that they change together, but in opposite directions (one up, one down); and a coefficient close to 0 means that they change independently. Importantly, correlation is not causation: only because two variables change together, does not mean that changes in one cause the other to change.
-	\item regression: to make predictions on the value of one variable (known as the \textit{dependent} variable) based on the value of another variable or a set of other variables (known as the \textit{independent} variable(s)). For instance, you may use regression to estimate house prices (dependent variable) based on a number of variables such as location, type of house, number of bedrooms, etc. (independent variables). Regression too is based on correlation and does not imply causation between independent and dependent variables. There are many different types of regression.
-\end{itemize}
-
-\paragraph{Choosing an appropriate test}
-
-** to do -- criteria and activities to test understanding of the different tests based on given scenarios
-
-\subsubsection{Sampling}\label{sect:sampling}
-Inferential statistics require the sample to be representative of the population of interest, with sampling the process of selecting a sample from the population. 
-
-Broadly, sampling is classified into random\footnote{Also known as \textit{probability} sampling.} and non random. In random sampling an algorithm is established to extract the sample from the population, while in non-random sampling, the choice is based on the judgement and discretion of the researcher. The former is used when the ability to generalise to the population is paramount, while the latter when the depth and richness of the sample is more important. As a result, the former is used more in quantitative research, and the latter in qualitative research.
-
-Random sampling include:
+	\item \textit{Scenario 1} to investigate the amount of sugar contained in baby food of a particular brand against a recommended threshold, from a sample of 30 products of that brand.
+	\item \textit{Scenario 2} to investigate the number of products per hour of two manufacturing machines in the same plant, by observing the two machines' output over 24 hours. 
+	\item \textit{Scenario 3} to investigate the effect of temperature on the consumption of ice cream in a particular city over 12 months.
+	\item \textit{Scenario 4} to investigate whether taste in chocolate types, say white vs milk or dark, is related to gender in particular country.
+	\end{itemize}
+\begin{guidance}
+To simplify things, always assume a normal distribution.
+\end{guidance}
+\begin{solution}
+Assuming normal distributions, for each scenario, we have considered:
 \begin{itemize}
-	\item simple random sampling, where each member of the population has exactly the same chance to be selected. It is easy and efficient to implement, and given the complete randomness of the sample, generalisation is fairly reliable. However, if the population has large sub-groups, these may be over-represented in the sample, with minority groups being under-represented 
-	\item stratified random sampling, where sub-groups of the population are defined based on common characteristics, the \textit{strata}, and sampling is random across those strata. The strata not mutually exclusive: for instance, the population may have sub-groups defined by gender, ethnicity and level of education, which may overlap. This gets round the over/under representation problem of simple random sampling.
-	\item cluster sampling, where the population is divided up in naturally occurring separate clusters, and the sample is obtained by randomly selecting some clusters and then randomly selecting members of those clusters. 
+	\item the kind of data
+	\item number of samples and their size
+	\item purpose of the investigation
 \end{itemize}
-
-Non random sampling include:
+This is what we have concluded:
 \begin{itemize}
-	\item subjective\footnote{aka purpose -- check terminology in Rosen's boob!} sampling, the researcher chooses based on the researcher's own judgement and research aim. Used for small populations or especially rare population; target individuals with particular knowledge or expertise; prone to bias and unlikely to lead to generalisable results. Better suite for narrow and deep
-	\item convenient sampling, participants selected based on their availability or accessibility. Quick and easy, but unlikely to reproduce a representative sample, and prone to bias
-	\item snowball sampling, rely on referral from previous participants to recruit new ones. When difficult to identify or access a population or when the topic is sensitive or tabu. Highly prone to bias and unlikely to reproduce a representative sample
+	\item \textit{Scenario 1} scalar variable (amount of sugar); one sample of 30 products; to compare the sample mean against the recommended threshold. The test to use is a t-test with null hypothesis that the sample mean is above the threshold.
+	\item \textit{Scenario 2}  scalar dependent (number of products per hour) and categorical explanatory (which machine); two samples (one per machine over the time span); to compare the means of products per hours for the two machines; there is no reason to think that the working of one machine may influence that of the other. The test to use is an independent t-test with null hypothesis that the two sample means are different.
+	\item \textit{Scenario 3} scalar dependent (level of ice cream consumption) and scalar explanatory (temperature); one sample over the period; to investigate any relationship between the two variables. The test to apply is Pearson's correlation with null hypothesis that there is no association between the two variables.  If, in addition, we wanted to make predictions on ice cream consumption based on temperature, then we could also apply linear regression.
+	\item \textit{Scenario 4} both dependent (chocolate taste) and explanatory (gender) are categorical; one sample from the country; to investigate association. The test to use is a Chi-squared with null hypothesis that gender has no association with chocolate taste.
 \end{itemize}
+\end{solution}
+\end{question}
 
-
-how to choose --- 
-factors: aim and resources
-
-aim: generalisable findings vs riche and deep insight
-resources and practical constraints: multiple options 
-
-Trade-offs are needed. As long as you explain and justify and acknowledge the limitations, it's ok.
 
 
 \subsection{ML methods???}
 
 
-%%%use of generative AI to add to ethics section
+%%% LR -- to decide whether to include!!!!
+
+%use of generative AI to add to ethics section
 %constraints on the use of generative AI in research:
 %- university policies: check with your university!!!! generative AI and IP issues
 %- technology capabilities: still developing; as a human researcher you need to check and double check anything that AI does
@@ -356,31 +380,32 @@ tasks that you can fast track with AI
 issue -- black box nature
 
 
-
-
-\subsection{Choosing the right method for your research}
-Type of data and your research aim and objective
-
-
-type of data table, and which method apply!!!!!
-
-https://stats.oarc.ucla.edu/other/mult-pkg/whatstat/
-
-
-Skewness -- and methods which apply
-
-
-Nature of research questions, and related hypothesis
-
-1) assess characteristics of your sample --> descriptive
-2) predict outcomes --> both descriptive and inferential
-
-
-
-
 \subsection{Qualitative data analysis -- to do}
 
 
+\subsection{Sampling}\label{sect:sampling}
+
+Sampling is the process of selecting a sample from the population of interest, and is relevant both in quantitative and qualitative research. 
+
+Broadly speaking, sampling is classified into random\footnote{Also known as \textit{probability} sampling.} and non random. In random sampling an algorithm is established to extract the sample from the population, while in non-random sampling, the choice is based on the judgement and discretion of the researcher. The former is used when the ability to generalise to the population is paramount, while the latter when the depth and richness of the sample is more important. As a result, the former is used more in quantitative research, and the latter in qualitative research.
+
+Random sampling include:
+\begin{itemize}
+	\item simple random sampling, where each member of the population has exactly the same chance to be selected. It is easy and efficient to implement, and given the complete randomness of the sample, generalisation is fairly reliable. However, if the population has large sub-groups, these may be over-represented in the sample, with minority groups being under-represented 
+	\item stratified random sampling, where sub-groups of the population are defined based on common characteristics, the \textit{strata}, and sampling is random across those strata. The strata not mutually exclusive: for instance, the population may have sub-groups defined by gender, ethnicity and level of education, which may overlap. This gets round the over/under representation problem of simple random sampling.
+	\item cluster sampling, where the population is divided up in naturally occurring separate clusters, and the sample is obtained by randomly selecting some clusters and then randomly selecting members of those clusters. 
+\end{itemize}
+
+Non random sampling include:
+\begin{itemize}
+	\item subjective\footnote{aka purpose -- check terminology in Rosen's book!} sampling, where the researcher chooses based on the researcher's own judgement and research aim. Used for small populations or especially rare population; target individuals with particular knowledge or expertise; prone to bias and unlikely to lead to generalisable results. Better suite for narrow and deep
+	\item convenient sampling, where participants are selected based on their availability or accessibility. This is quick and easy, but unlikely to produce a representative sample, so it can be prone to bias
+	\item snowball sampling, which relies on referral from previous participants to recruit new ones. This is an effective approach when a population is difficult to access or when the topic is sensitive or tabu. This too is unlikely to generate a representative sample, and it highly prone to bias.
+\end{itemize}
+
+Another important consideration is sample size,  which is particularly important in inferential statistics. As observed in Section~\ref{sect:inferentialStatistics}, in this context, if your sample is very large, almost all effects observed in the sample will be likely present in the population, where they may or may not be meaningful; vice-versa, if your sample is very small, most effects observed in the sample are unlikely to be present in the population, unless they are really large effect. As a rule of thumb, most tests require a sample size of at least 30 observations, but more precise sample size estimates can be made based on population size and expected significance level\footnote{Formulae for the ideal sample size are easily found in the literature and online.}
+
+In summary, when choosing a sample, you need to consider various factors, including the aim of your study, the kind of methods you are applying, and the level of access you may have. Trade-offs are likely involved and you may not be able to obtain an ideal sample. Nevertheless, your sample may still be useful to your research, as long as you explain and justify how it was obtained and what its limitation are.
 
 \section{Writing up your analysis --- to do}
 
