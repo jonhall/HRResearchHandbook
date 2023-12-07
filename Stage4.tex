@@ -52,7 +52,7 @@ To this end, tables are used extensively in research and often found in disserta
 
 Pivot tables can be used to summarise, sort, filter, re-organise or group data organised in rows and columns, and perform calculations on them, such as counting, generating totals or averages, and much more. Pivot tables are both powerful and versatile\footnote{In fact, they are so versatile that we'll only be able to provide few illustrative examples. Much, much more can be found online!}, and one of the most widespread tools for data analysis.
 
-You can generate a pivot table from any data set organised in rows and columns, regardless of whether the values are quantitative or qualitiative: all common spreadsheet applications\footnote{From MS Excel to Apple Numbers to Google Sheets.} include this function.
+You can generate a pivot table from any data set organised in rows and columns, regardless of whether the values are quantitative or qualitative: all common spreadsheet applications\footnote{From MS Excel to Apple Numbers to Google Sheets.} include this function.
 
 Figure~\ref{fig:exampleDataSet} gives an example: these are the first few raws of a data set related to the US housing market\footnote{It was taken from one of Kaggle's free datasets, the housing price dataset. Kaggle is possibly the largest and best known online community for data science and machine learning.}. The dataset contains over 9,316 entries, each corresponding to a distinct property. Each property is characterised by a number of attributes: size in square feet, number of bedrooms and bathrooms, type of neighbourhood, the year it was built and its market price in US dollars. As you can see, this table includes both numerical and categorical variables.
 
@@ -181,8 +181,8 @@ count & 15 \\
 \end{tabulary}
 
 There are 15 values in this data set, with range 35 (the difference between maximum and minimum values).
-In terms of centrality, the mean (128.47) is slightly smaller than the median (129), and Excel reports a mode at 128. In reality, if you look at the data you will see that there are two modes in this data set\footnote{Statisticians call this bi-modal.}, 128 and 135, but Excel only returns the first encountered!
-In terms of dispersion, the standard deviation is telling us that most apple weights are within 8.55 grams below or above the mean, so the apple weights are similar in the apple baskets.
+In terms of centrality, the mean (128.47) is slightly smaller than the median (129), and Excel reports a mode at 128. In reality, if you look at the data you will see that there are two modes in this data set\footnote{Statisticians call this \textit{bi-modal}.}, 128 and 135, but Excel only returns the first encountered!
+In terms of dispersion, the standard deviation is telling us that most apple weights are within 8.55 grams of the mean (below or above), so the apple weights are similar in the apple baskets.
 Note that the skewness is negative, which is consistent with the mean being smaller than median, so the data distribution is right skewed. 
 \end{solution}\end{question}
 %%Hack to correct tcbox behaviour
@@ -192,7 +192,7 @@ In your dissertation, you can easily present such descriptive statistics as a ta
 
 In addition, charts can be used to visualise the data and examine their descriptive statistics. 
 
-With scalar data, like in our example, you can use a \textit{histogram}. The one in Figure~\ref{fig:histogramBin1} uses the apple weights from the previous activity: on the horizontal, we have the distinct weights, and on the vertical, their frequencies, that is how many times each weight appears in the data set. Given the values you have obtained for the data set descriptive statistics, you can easily locate on the chart min and max values, and mean, median and mode. In this case, the two `peaks' correspond to the two modes we mentioned in the activity. You can also check that most of the values are within 8.55 from the mean, either way: the only values left out are 105 (to the left) and 138 and 140 (to the right). Skewness is not obviously visualised on this chart, so that we will use a different chart for that purpose.
+With scalar data, like in our example, you can use a \textit{histogram}. The one in Figure~\ref{fig:histogramBin1} uses the apple weights from the previous activity: on the horizontal axis, we have the distinct weights, and on the vertical axis, their frequencies, that is how many times each weight appears in the data set. Given the values you have obtained for the data set descriptive statistics, you can easily locate on the chart min and max values, and mean, median and mode. In this case, the two `peaks' correspond to the two modes we mentioned in the activity. You can also check that most of the values are within 8.55 grams from the mean, either way: the only values left out are 105 (to the left) and 138 and 140 (to the right). Skewness is not obviously notable on this chart, so that we will use a different chart for that purpose.
 
 \begin{figure}[htbp]
 \centering
@@ -201,7 +201,7 @@ With scalar data, like in our example, you can use a \textit{histogram}. The one
 \label{fig:barchart}
 \end{figure}
 
-Before we do that, however, it is worth noticing that given our small data set of discrete values, we have used a histogram with `bin' size equal to one, which allows us to plot each individual apple weight. A bin is essentially a way to group a number of values, with the size establishing the spread of each bin: this is necessary with large data sets and/or with continuous data. Frequencies are then calculated by bin. Figure~\ref{fig:histogram} illustrates a histogram for our example, in which the bin size is 5: that is, each bin spans a set of 5 possible values. 
+Before we do that, however, it is worth noticing that given our small data set of discrete values, we have used a histogram with `bin' size equal to one, which allows us to plot each individual apple weight. A \textit{bin} in a histogram is essentially a way to group a number of values, with bin size establishing the spread of each bin. Frequencies are then calculated by bin. Grouping values in bins is necessary with large data sets and/or with continuous data.  Figure~\ref{fig:histogram} illustrates a histogram for our example, in which the bin size is 5: that is, each bin spans a set of 5 possible values. 
 
 \begin{figure}[htbp]
 \centering
@@ -275,16 +275,16 @@ In inferential statistics this is achieved through statistical tests. A statisti
 Each statistical test comprises the following elements.
 
 \begin{itemize}
-	\item \textbf{Hypotheses} There are two,  \textit{null} and \textit{alternative} hypotheses. Inferential statistics assumes you can't prove something to be true, but you can disprove something by finding an exception. Here is a classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the null hypothesis to what you want to disprove about the population, with the alternative hypothesis being what you are really interested in finding out. So, the null hypothesis is a statement of no pattern/effect in the population.
+	\item \textbf{Hypotheses} There are two, \textit{null} and \textit{alternative} hypotheses. Inferential statistics assumes you can't prove something to be true, but you can disprove something by finding an exception. Here is a classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the null hypothesis to what you want to disprove about the population, with the alternative hypothesis being what you are really interested in finding out. So, the null hypothesis is usually a statement of no pattern/effect in the population.
 	\item \textbf{Significance} This is level of statistical significance for the test. It's known as the \textit{alpha} ($\alpha$) value from the Greek name of the mathematical variable used to express it. Most tests are run with $\alpha=0.05$, which gives a 5\% probability that we may infer that the null hypothesis is disproved while in actually it is correct\footnote{This is called a Type I error in Statistics.}.
-	\item \textbf{Sample(s)} You need to have a (representative) sample of the population on which to perform the test. Multiple samples are used in some tests, typically to compare specific statistics in different populations or their changes over time or after applying a treatment.
+	\item \textbf{Sample(s)} You need to have one or more (representative) samples of the population of interest  on which to perform the test. Multiple samples are used in some tests, typically to compare specific statistics in different groups within the population or changes within a group over time or after applying a treatment.
 	\item \textbf{p-value} This is the probability calculated for your test by your statistical package, and which is used to decide the outcome of the test.
 	\item \textbf{Decision} This is based on the p-value in relation to the $\alpha$ value: if the p-value is less than the $\alpha$ value, then the null hypothesis is \textit{rejected}, i.e. disproved, which means your alternative hypothesis that there is an effect in the population is supported by statistical evidence.
 \end{itemize}
 
-There are very many statistical tests to choose from, depending on the kind of data you have and their distribution, the purpose of your analysis and the number of samples involved. Statistical tests are applicable to both scalar and categorical data and can be used to compare values of specific statistics or to establish statistical relationships between variables.  The latter can be associations or correlations: the existence of an \textit{association} between variables means that one variable can be used to provide some information about the other; \textit{correlation} is a particular type of association such that the two variables always change together, for instance they both increase or decreases at the same time, or when one increases the other always decreases.
+There are very many statistical tests to choose from, depending on the kind of data you have and their distribution, the purpose of your analysis and the number of samples involved. Statistical tests are applicable to both scalar and categorical data and can be used to compare values of specific statistics or to establish statistical associations between variables, where an \textit{association} between variables means that one variable can be used to provide some information about the other. The term \textit{correlation} is used to denote a particular type of association such that the two associated variables always change together, for instance they both increase or decrease at the same time, or when one increases the other always decreases. Statistical tests for association aim at estimating the strength (the extent changes in one lead to changes in the other) and direction (whether they change in the same or opposite way) of their possible correlation.
 
-We will not cover all possible statistical tests in this introductory section, and only provide a summary of those most commonly applied. This is given in Tables~\ref{tab:testsForComparison} and \ref{tab:testsForAssociation}.
+We will not cover all possible statistical tests in this introductory section, and only provide a summary of those most commonly applied. These are given in Tables~\ref{tab:testsForComparison} and \ref{tab:testsForAssociation}.
 
 \begin{table}
 	\caption{Common statistical tests for comparison. \textit{Parametric} tests apply to normally distributed data, while \textit{non parametric} tests to skewed distributions.}
@@ -301,7 +301,7 @@ to compare the means of two independent samples & scalar & to compare the mean s
 to compare the means of three or more independent samples & scalar dependent; nominal explanatory & to compare the mean scores (dependent) of students studying the same subject with three or more different teaching approaches (explanatory) & one-way ANOVA & Kruskal-Wallis test \\
 \midrule
 to compare the average difference between paired samples against a particular value & scalar dependent; time or condition as explanatory & to compare the blood pressure readings (dependent) of a group of people before and after exercising (explanatory) & paired t-test & Wilcoxon signed
-rank test &  in paired samples each data point in one sample is uniquely matched to a data point in the other sample; this happens, for instance, when we measure a factor before and after an intervention, or take different readings for the same individuals. Paired samples are not independent.\\
+rank test &  in paired samples each data point in one sample is uniquely matched to a data point in the other sample; this happens, for instance, when we measure a factor before and after an intervention, or take different readings for the same group of individuals. Because of this, paired samples are not independent.\\
 \midrule
 \end{tabulary}
 \end{table}
@@ -379,9 +379,66 @@ tasks that you can fast track with AI
 
 issue -- black box nature
 
+\subsection{Qualitative analysis}
 
-\subsection{Qualitative data analysis -- to do}
+As indicated in Section~\ref{sect:dataAnalysisMethods}, common methods for qualitative data analysis include content, thematic, narrative or discourse analysis. For all of them, the first essential step is coding, which we discuss in this section.
 
+\subsubsection{Coding qualitative data}
+
+A \textit{code} is essential a label which describes a piece of qualitative data, with \textit{coding} the process of creating and assigning codes to categorise those extracts. 
+
+Coding is important and it helps you ensure that your analysis is systematic, and the codes will help you explore themes and patterns. However, codes are not themes: they are just labels used to group similar types of data, developed to support your follow-up analysis. 
+
+There are two main approaches to coding. In \textit{deductive coding}, the codes are decided upfront, before looking at the data, and may be based on your research problem phenomena, or  may have emerged from your literature review, including codes possibly used in previous studies. In \textit{inductive} coding, the codes emerge from the data and are not pre-defined. Deducting and inductive coding can also be combined by starting with a set of pre-defined codes then adding new codes as you review the data.
+
+Whichever the approach is, you should follow a two-pass coding process. The first pass consists in going through the whole data set in order to establish which codes to use. In the second pass you apply the codes to the data bit by bit, say by line by line in a text, or frame by frame in a video, etc. In the second pass, the initial codes are reviewed or may become more detailed.
+
+There are also various ways to choose the codes. For instance, \textit{in vivo} coding uses the exact language which occurs in the data: this is used, in particular, for participants' speech, especially when different languages are used. On the other hand, \textit{descriptive} coding\footnote{This is a very common approach, although there are others which you can research in the literature.} uses words which encapsulate a general idea, such as `sport' or `running': this is particularly useful for non textual data, like images or videos. 
+
+Finally, whichever codes you end up with, you should ensure they are properly defined, so that their are unambiguous and can be applied consistently. You can use a \textit{codebook} for this purpose, which lists all the codes and their intended meaning, and that you can revisit and refine throughout the coding process.
+
+The last step before detailed analysis is \textit{code categorisation}, which is the process of reviewing what you have coded and organise it into categories. For instance, from codes such as `football', `tennis' and `rugby' you may define a category 'sports'. In this way, you both organise your data and establish connections between codes and coded information.
+
+From codes and categories, you can then proceed with your chosen analysis method, whether content, thematic, narrative, discourse analysis or other, in order to identify patterns and themes and provide your own interpretation of the data.
+
+
+Although there are specialised tools for coding text\footnote{And even AI-based one which will do some initial coding for you...}, you can simply used your word processor, by using colours or comments to code segments of text. 
+
+\begin{question}[subtitle={Activity: Using your word processor to code text}] 
+*** give a text and ask to perform:
+1) perform a 2-pass of inductive coding; write down the resulting codes
+2) perform a 2-pass deductive coding, using codes: .... 
+\begin{solution}
+****
+\end{solution}
+\end{question}
+
+\subsubsection{Presenting qualitative data}
+
+While quantitative data can be summarised and presented using tables and charts, the same does not necessarily apply to qualitative data, which given their heterogeneous nature cannot be easily set out in a standard manner. 
+
+Conveying the depth and richness of qualitative data in a succinct way is challenging, so that both selectivity and creativity are needed in presenting the data. 
+
+For textual data, like interview transcripts, verbatim quotations are often used to illustrate specific themes or points, or support certain conclusions. However, an excessive use of quotations will result in overlong accounts of the work, which may be difficult to follow and may even obscure the main findings. Therefore it is important to select quotations which are particularly representative or poignant, avoiding verbose details that can be succinctly presented in the narrative around those quotations.
+
+Diagrams, schematics or drawings can also be used effectively and imaginatively to present qualitative data and their analysis. Data visualisation is, in fact, a discipline in its own right\footnote{Edward Tufte is one of the most influential figures in this field. His books provide compelling examples on how to use visualisation to present and analyse highly complex data.}, so that some visualisation techniques can be applied to qualitative data.
+
+\begin{question}[subtitle={Activity: Visualisation techniques for qualitative data}] 
+Conduct a web search on techniques for visualising qualitative data. List the techniques you have found and what they are used for.
+\begin{solution}
+You may have encountered some or all of the following techniques:
+\begin{itemize}
+	\item diagrams and schematics, to convey complex processes or structures
+	\item graphic timelines, to summarise key events and their order
+	\item word clouds, to summarise emerging themes and concepts, and their relative frequencies
+	\item mind maps, to visualise how different ideas relate or contribute to a central concept or topic
+	\item heat maps, to highlight trends or differences in tabulated data
+	\item icons, alongside brief descriptions, to represent and quickly identify specific concepts 
+	\item bespoke drawings, for data which cannot be easily visualised using other standard techniques
+	\item pie charts and bar charts, to summarise proportions and counts\footnote{Which are actually quantitative, but may be the result of qualitative data analysis.} of categorical data.
+\end{itemize}
+\end{solution}
+\end{question}
 
 \subsection{Sampling}\label{sect:sampling}
 
@@ -393,7 +450,7 @@ Random sampling include:
 \begin{itemize}
 	\item simple random sampling, where each member of the population has exactly the same chance to be selected. It is easy and efficient to implement, and given the complete randomness of the sample, generalisation is fairly reliable. However, if the population has large sub-groups, these may be over-represented in the sample, with minority groups being under-represented 
 	\item stratified random sampling, where sub-groups of the population are defined based on common characteristics, the \textit{strata}, and sampling is random across those strata. The strata not mutually exclusive: for instance, the population may have sub-groups defined by gender, ethnicity and level of education, which may overlap. This gets round the over/under representation problem of simple random sampling.
-	\item cluster sampling, where the population is divided up in naturally occurring separate clusters, and the sample is obtained by randomly selecting some clusters and then randomly selecting members of those clusters. 
+	\item cluster sampling, where the population is divide up in naturally occurring separate clusters, and the sample is obtained by randomly selecting some clusters and then randomly selecting members of those clusters. 
 \end{itemize}
 
 Non random sampling include:
