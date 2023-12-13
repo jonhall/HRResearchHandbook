@@ -980,31 +980,23 @@ It is important to acknowledge that there is no standard way of referring to phe
 \item As inferences from other phenomena: statements such as ``the number of bugs in the software were estimated from the number of bug reports'' -- the observables are the number of bugs reported.
 \end{itemize}
 
-\begin{example}{Going back to our example of safety-critical development, one of the review articles we found in our search...}Going back to our example, one of the review articles we found in our search is:
+\begin{example}{Going back to our example of safety-critical development...}...one of the review articles we found in our search is:
 
-Vahid Garousi, Michael Felderer,   a  r   Murat Karap    ak, U  ur Y  lmaz (2018). Testing embedded software: A survey of the literature, Information and Software Technology, Volume 104, Pages 14--45, ISSN 0950--5849, https:\slash \slash doi.org\slash 10.1016\slash j.infsof.2018.06.016.
+\fullcite{garousi2018testing}
 
-Its abstract\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.} reads:
+Its abstract reads\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.}:
 
-``Context
+\newcommand{\firstquotedparagraph}[1]{\textbf{#1}\quad}%%So that textcquote places quotes in correct place
 
-Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
+\textcquote{garousi2018testing}{\firstquotedparagraph{Context}\quad Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
 
-Objective
+\paragraph{Objective} However, reviewing and getting an overview of the entire state-of-the-art and the – practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
 
-However, reviewing and getting an overview of the entire state-of-the-art and the --practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
+\paragraph{Method} To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion\slash exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
 
-Method
+\paragraph{Results} Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
 
-To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion\slash exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
-
-Results
-
-Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
-
-Conclusion
-
-The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques \slash  approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an ``index'' to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.''
+\paragraph{Conclusion} The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques/approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an ``index'' to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.}
 
 \end{example}
 
