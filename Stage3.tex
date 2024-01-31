@@ -1,11 +1,22 @@
 %%Candidate to move to headers
-\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\}%
+%\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\ }%
 
-\newcommand{\hwidth}[1]{\makebox[0pt][l]{#1}}
-\DeclareExpandableDocumentCommand{\tabletitle}{m}{\SetCell[c=2]{\textbf{#1}}&\\}
+%\newcommand{\hwidth}[1]{\makebox[0pt][l]{#1}}
+%\DeclareExpandableDocumentCommand{\tabletitle}{m}{\SetCell[c=2]{\textbf{#1}}&\\ }
 
 %%Structures the report table, headings to the left in a list, explanation to the right
 %%#1 = caption label
+
+%%Resource type = fulltext cite in itemized list
+\DeclareCiteCommand{\resourcelistcite}
+  {\usebibmacro{prenote}\begin{itemize}\item[] }
+  {\usedriver
+     {\DeclareNameAlias{sortname}{default}}
+     {\thefield{entrytype}}
+     {\printfield{annote}}}
+  {\item[] \addspace}
+  {\end{itemize}\usebibmacro{postnote}}
+
 \newenvironment{ReportStructureTable}[1]{%
 	\setlist{nosep} %compress any lists
 	\begin{longtable}{@{}p{0.3\tablewidth}>{\vspace{-3pt}}p{0.7\tablewidth}@{}}%%JGH \vspace{-3pt} is a hack to align first lines
@@ -16,6 +27,8 @@
 }%
 {\end{longtable}}
 
+\newenvironment{MoreDetails}[0]{\subsubsection{More details} The following citations provide good starting points for further reading: }{}
+
 \chapter{Stage 3: Second research increment}
 
 By now you will have some mastery of the techniques and tools that you need to \emph{do} research at masters level. You may also have ideas about what you still need to do in the next step\footnote{If not, don't worry – we've got you covered with this chapter!}.
@@ -24,11 +37,11 @@ With the skills you have so far gained, you're developing into an independent re
 
 Stay with us a little longer though: the next sections aren't as long as those that you've studied already – you'll be doing more yourself, honing the skills you've picked up as you go along – but they might help to keep you systematic and on the path to submission. 
 
-\newcommand{\percentthroughbook}{
-%\thepage
-%\getpagerefnumber{LastPage}
-\intcalcDiv{\intcalcMul{\thepage}{100}}{\getpagerefnumber{LastPage}}\%
-}
+%\newcommand{\percentthroughbook}{
+%%\thepage
+%%\getpagerefnumber{LastPage}
+%\intcalcDiv{\intcalcMul{\thepage}{100}}{\getpagerefnumber{LastPage}}\%
+%}
 
 You won't be surprised to know that stage 3 comes next; there's another research increment coming.
 
@@ -73,6 +86,8 @@ Research activity
 %%Hack to correct tcbox behaviour
 \color{black}
 
+%\end{document}
+
 \section{Research design}
 
 To make a contribution to knowledge we do research. Practically, to do research, we combine a number of research tasks into a framework. The framework is indicated by the research area, the type of contribution we wish to make, and the difficulties we face along the way.
@@ -107,12 +122,12 @@ These are not unimportant issues to answer. However, and as for ontology and epi
 
 Before we meet research methods, however, it's worth thinking more about what is the foundations of ontology, epistemology and methodology is the research \textit{paradigm}, the system of beliefs, ideas, values, and habits that guide (and constrain) a researcher's way of thinking about the world.
 
-\subsection{Researcher mindset: a brief introduction}
+\subsection{Your researcher mindset}
 
 Depending on your background, you may have begun your research studies with a particular mindset – as a scientist, a social scientist, or someone embedded within an organisation. This will flavour your approach to research. 
 
 That's not a bad thing – many have been there before and constructed \emph{research paradigms} that characterise useful mindsets for researchers to have. There are four well-known research paradigms:
-%
+
 [ADAPTED from https://proofed.com/writing-tips/the-four-types-of-research-paradigms-a-comprehensive-guide/
 \begin{description}%[start=0,label={(\bfseries R\arabic*):}]
 \item [The Positivist Research Paradigm] which assumes that there is a single, objective reality that can be accurately known, described and explained. Positivists depend on observation of this reality to gain knowledge of it.
@@ -172,13 +187,11 @@ Quality criteria are authenticity and trust in the researcher and others in thei
 See \cite{}.
 \end{description}
 ]
-%\end{document}
 
 [Add illustration of the differences between the four main paradigms.]
 
 Each paradigm is suggestive of the research means by which a knowledge contribution will be made. At the highest level, above the tasks mentioned above, the research means is a research \textit{strategy}, by which we mean a collection of recipes for doing research that will, if followed accurately, lead to a contribution to knowledge \emph{even in the presence of uncertainty}. When chosen (or constructed), a research strategy consists of research tasks that interact in more or less complex ways\footnote{Which depend on many factors, including...} but which are sufficiently detailed that the researcher knows what to do next, even if that means making a choice between two or more next steps.
 
-%\end{document}
 
 With uncertainty a product of many contextual characteristics, including the view-point of the researcher themselves, the simpler research strategies stem from the simpler contexts. Thus, highly constrained contexts, such as the natural sciences, tend to have simpler strategies as there is less uncertainty to contend with.
 
@@ -200,10 +213,10 @@ while the strategy\todo{Andrews calls it a research model.} described in \textci
 
 %\end{document}
 
-\begin{figure}[hbt]
+\begin{figure}[hbtp]
 \centering{
   \includegraphics[width=0.4\textwidth]{andrews2005placefig1.jpg}
-  \caption[A complex research strategy for education research]{A complex and complete model of education research~\parencite[, Figure 1]{andrews2005place}
+  \caption[A complex research strategy for education research]{A complex research strategy for education research~\parencite[, Figure 1]{andrews2005place}
   \label{fig:andrews1}
   	}  
   }
@@ -213,11 +226,9 @@ Although each research paradigm is sufficiently distinct as to indicate differen
 
 %[Add other research elements here]
 
-%\end{document}
 
 \section{Your research design}
 
-%\end{document}
 
 Each research area has its more-or-less well-worn paths to a successful knowledge contribution. In Stage 3, you're now at the point where you'll join researchers in your chosen area on one of those paths: as you get deeper and deeper into your research, the steps you'll take will become more and more specialised. So we need to approach breaking down your research objectives into tasks in a systematic way.
 
@@ -225,13 +236,16 @@ The bad news is that there are many possible tasks you could perform at any poin
 
 The good news is that, for your particular area in masters research, there will likely be only a small subset that you need to know about.
 
-%\end{document}
-
 \bigskip
 
 Our approach to this task is unapologetically practical. 
 
-First, we'll do a mini skills\footnote{Another word is: } assessment. Then we'll look at the evaluative drivers of research. Given the outcomes of these, you'll craft a method from research tasks.
+%\end{document}
+
+First, we'll do a mini skills\todo{Another word is: audit} 
+assessment. Then we'll look at the evaluative drivers of research. Given the outcomes of these, you'll choose a research strategy and craft a method from research tasks.
+
+%\end{document}
 
 Although you don't have to follow this route – all the materials are available below should you wish to take your own path – through the skills assessment we hope to guide your choice away from research tasks that will exercise skills you don't yet have. For, although we do not doubt that you will be able to pick them up over time, the bounded time available for masters research mitigates against learning many new skills, some of which are research tasks in themselves.
 
@@ -270,6 +284,8 @@ Between these are the research task choice that are constrained by (and build up
 %\bigskip
 %
 %\todo{Reused from below.}
+
+%\end{document}
 
 Recall from Stage 1 that 
 %
@@ -332,6 +348,8 @@ The contribution to knowledge of survey research is to uncover patterns that can
 
 \subsubsection{Is the survey research strategy right for me?}
 
+%\endinput
+
 Evaluation sets certain requirements of the researcher for them to be successful. These include that:
 	\begin{enumerate}
 	\item you're in a position in which you have access to the population so that deep analysis can be performed. If this is not possible, for instance, because this is your first time accessing the population, you might like to consider use case study research instead;
@@ -341,11 +359,12 @@ Evaluation sets certain requirements of the researcher for them to be successful
 	\item conclusions from survey research rely on the veracity of the responses received. If there's any reason to doubt your respondents' honesty, additional care should be taken. There are techniques to avoid this (see \textcite{}, for instance) but they add complexity to the strategy. If the development of a relationship of trust between research and population is critical to the research, then some form of ethnographic research might be more appropriate.
 	\end{enumerate}
 
-\subsubsection{More details}
+\begin{MoreDetails}
 
-If the outcome of reading the previous section is that you think that surgery research is suitable, you might like to look into the following articles that go into more detail, either in a general setting, or in specific areas.
+%If the outcome of reading the previous section is that you think that the survey research strategy is suitable, you might like to look into the following articles that go into more detail, either in a general setting, or in specific areas.
 
-
+\resourcelistcite{dillman2014internet,oates2008researching,johannesson2014research}
+\end{MoreDetails}
 
 \subsection{Design and creation research}
 
@@ -363,9 +382,10 @@ The contribution to knowledge is that which can be learned from the creation of 
 
 Typically the process of problems solving – the interactions between actors (customers, clients, designers, others), technologies and/or knowledge – is the source of data. This includes the nature of the problem solving process, whether it is linear or iterative, for instance, or the ways in which problem and solution understanding and validation are conducted.
 
+
 \subsubsection{Evaluation}
 
-Evaluation of the design and creation research strategy typically consists of the following questions~\parencite[p.122 (adapted)]{oates2008researching}:
+Evaluation of the design and creation research strategy typically consists of the following questions~\parencite[p.122, adapted]{oates2008researching}:
 					%
 	\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
 	\item Is an artifice designed and created to the satisfaction of the  stakeholders?
@@ -386,6 +406,8 @@ Evaluation of the design and creation research strategy typically consists of th
 
 \subsubsection{Is the design and creation research strategy right for me?}
 
+%\endinput
+
 Although the design and creation research strategy may explore the development of new skills for a product, most often those skills will need to be learned by the developer (if you don't already possess them). This might be valuable from a personal perspective, but will not, by their nature, make a contribution to knowledge – learning them means that they exist already! Learning new skills is a time consuming task even for those with the right propensity for development. Ask yourself if the skills you will need can be fitted into your research, and assess carefully whether they are a realistic addition to the time that your research will take.
  
 The design and creation research strategy will typically work with in a customer/developer relationship, with developer and creator not being the same person. The customer/client will set the requirements and context for the product, with the developer working on its development for that context to emmet those requirements. If you do not have access to a real-world problem owner then this strategy is not applicable. 
@@ -394,10 +416,9 @@ If there is a customer, but their need for a solution to their problem is urgent
 
 To make a contribution to knowledge there should be demonstrable novelty needed to produce the solution, or in the process, or som other aspect of the development. If you cannot clearly identify that novelty, then you will not be able to claim a contribution to knowledge.
 
-\subsubsection{More details}
-
-
-***
+\begin{MoreDetails}
+\\resourcelistcite{oates2008researching}
+\end{MoreDetails}
 
 \subsection{Experimental research}
 
@@ -434,6 +455,8 @@ There are many variants of the experimental research strategy, including\footnot
 	\item [Solomon four-group design] see~\textcite[p.126]{oates2008researching}
 	\item see \textcite{field2002design}
 	\end{description}
+	
+%\endinput
 		
 
 \subsubsection{Data Generation} 
@@ -470,9 +493,11 @@ Although widely applicable, the experimental research strategy is not universall
 
 In these cases, another research strategy should be chosen\footnote{Can we give guidance on which one?}
 				
-\subsubsection{More details}
+\begin{MoreDetails}
+\resourcelistcite{oates2008researching,johannesson2014research,field2002design,kalaian2008encyclopedia}	
+\end{MoreDetails}
 
-***
+%\endinput
 
 \subsection{Case study research}
 
@@ -540,6 +565,8 @@ An experienced researcher evaluating case study research will ask the following 
 	\item Overall, how effectively was the case study research strategy applied and reported?
 	\end{enumerate}
 	%
+	
+%\endinput
 					
 \subsubsection{Is this strategy right for me?}
 
@@ -559,9 +586,10 @@ Access to policy, processes, and procedures within an organisation will require 
 %\end{enumerate}
 %			
 
-\subsubsection{More details}
+\begin{MoreDetails}
+\resourcelistcite{oates2008researching,johannesson2014research}
+\end{MoreDetails}
 
-*** 
 
 \subsection{Action research}
 
@@ -621,125 +649,530 @@ Adapted from~\textcite[p.168]{oates2008researching}%
 					
 					\item Do envisage issues working with others in complex, problematic and unpredictable real-world situations? If so, consider ???
 					\end{itemize}
-					
 
-\subsubsection{More details}
+\begin{MoreDetails}
+\resourcelistcite{oates2008researching,johannesson2014research}
+\end{MoreDetails}
 
-***
+
+%\endinput
 
 \subsection{Ethnography}
 
+The Ethnography research strategy attempts to describe people or cultures. It has its roots in anthropology.
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
+Ethnography contributes to knowledge through the study of phenomena in their natural epistemo-socio-technological setting, where their context influences how they are reacted to~\parencite[p.182, adapted]{oates2008researching}, providing a rich, detailed picture of a particular situation or work practices, placing them in their real-world context~\parencite[p.181]{oates2008researching}.
 
-\subsubsection{Variants}
+%\subsubsection{Focus}
 
-\subsubsection{Data Collection}
+%\subsubsection{Variants}
+
+\subsubsection{Data Generation}
+
+***
 
 \subsubsection{Evaluation}
 
+\parencite[p.180, adapted]{oates2008researching}%
+	\begin{itemize}
+	\item Have the lifestyles, meanings and beliefs of the epistemo-socio-technological setting been described adequately?
+	
+	\item Are the data generation methods that were used described? Did they lead to sufficient data having been collected?
+	
+	\item Was adequate time spent in the field? What reflection has been done on the time spent in the field?
+	
+	\item Is the approach holistic \parencite{}, semiotic \parencite{},  or critical \parencite{}?
+	
+	\item Is the ethnography a standalone description, or has it been linked to theory, other ethnographies or issues in other cultures?
+	
+	\item Does the research include a reflective account of the researcher?
+	
+	\item To which extent is the research presented as an ethnographic construction rather than as a literal description?
+	
+	\item What limitations in the ethnography have been recognised?
+	
+	\item Which other flaws and/or omissions in the reporting of the ethnography have been described?
+	
+	\item Overall, how effectively has the ethnography research strategy been?
+	\end{itemize}					
+
 \subsubsection{Is this strategy right for me?}
 
-\subsubsection{More details}
+\parencite[p.182,adapted]{oates2008researching}
+Ethnography requires you to be a researcher located within the context of your situated research. This can take extensive amounts of time, such as might be the case if the context of your research is the organisation for which you work. However, if you have yet to have identified the context, or have yet to reach out to it, then this requirement may mean that ethnographic research will not be successful. If you are not already close to your context of research, you may wish to consider case study research instead.
+
+Even if you are already located within the context of your ethnographic research, the context must be accepting of an ethnographic approach for your research to be successful. An organisation, for instance, in which there is a culture of strict compartmentalisation may not provide sufficient opportunities for ethnographic research. 
+
+In ethnographic research you allow the culture to determine the outcomes of the research. This precludes bias and prejudice. If there is any possibility that you could be biased to a particular outcome – as might happen if you feel you already know the outcome and are simply trying to confirm this – then ethnography is unlikely to lead to a successful outcome for your research. Any competent ethnographer will be particularly sensitive to expressions of bias, even if they aren't even intentional. Indeed, such bias may preclude any successful research strategy being applied.
+
+Ethnography is analytical in the extreme. Should you not have an analytical mindset, then ethnography should be avoided.
+
+%					\begin{itemize}
+%%					\item you don't have extensive periods of time to be a located researcher: try case studies instead;
+%%					\item are you especially biased, perhaps not intentionally, so as to be unable to give a account? If so, try ???
+%%					\item are you sure you have an analytical mindset that will lead to useful research outputs? If not, try ???
+%%					\item is the research context in which you are located accepting of the values of ethnography?
+%					\end{itemize}
+%					%
+					
+
+\begin{MoreDetails}
+\resourcelistcite{oates2008researching,johannesson2014research}
+\end{MoreDetails}
+
 
 \subsection{Systematic research reviews}
 
+A systematic research review provides a definitive guide to the literature for a specified research topic. MAy allow further conclusions from across the literature to be drawn where, for instance, there is insight from across the literature not contained in individual research papers.
+
 \subsubsection{Knowledge contribution}
 
+Systematic research reviews relies on explicit, reproducible methods for identifying all relevant primary research the world over in all languages; similarly for the critical appraisal of identified research; the results of studies systematically brought together. Acts through literature searching, screening, data extraction, and analysis~\parencite[p.24]{wright2007write}.
+				
 \subsubsection{Focus}
 
-\subsubsection{Variants}
+See~\textcite{moher2009preferred} for PRISMA statement, a 27-item check-list. The aim of the PRISMA Statement is to help authors improve the reporting of systematic reviews and meta-analyses. PRISMA may also be useful for critical appraisal of published systematic reviews. However, the PRISMA checklist is not a quality assessment instrument to gauge the quality of a systematic review.
+
+%\subsubsection{Variants}
 
 \subsubsection{Data Collection}
 
+Systematic review research involves the process of systematically bringing together the results of any research, including qualitative or mixed methods research studies; the identification of all primary research relevant to the defined review (research) question, a critical appraisal of this research, and a synthesis of the findings \parencite{pollock2018systematic}.
+				
 \subsubsection{Evaluation}
 
-\subsubsection{Is this strategy right for me?}
+Evaluation of the systematic research review will involve answers to the following:
 
-\subsubsection{More details}
+%
+	\begin{itemize}
+	\item has the researcher accessed all relevant primary research in the area? Are the criteria they have used to find the primary research explicit and reproducible? Were there any deviations from this protocol and, if so, is there clear reasons where and why documented?
+	
+	\item Have the relative strengths and weaknesses of the research reviewed been described? To which extent have any identified conflicts between sources been identified and resolved?
+	
+	\item To what extent has a definitive synthesis from the literature been achieved? 	\item To which extent have statistics been used across the survey to, for instance, produce overarching conclusions? To which extent has precision and/or generalisability been improved through the systematic research review?
+
+	\item given the research question, to which extent is the review type the most appropriate ~\parencite[p.142]{pollock2018systematic}?
+	
+	\item have implications for future research and practice been discussed both for the research question and in other areas that were raised by the review?
+	
+	\item do you discuss the updating of the review~\parencite[p.142]{pollock2018systematic}?
+	
+	\item To which extent is the limits of current knowledge described?
+	\end{itemize}
+
+%{\parencite[adapted]{wright2007write}: 
+%%
+%	\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
+%%	\item Clarifying the relative strengths and weaknesses of the literature on the question, 
+%%	\item Summarising a large amount of literature, 
+%%	\item Resolving literature conflicts, 
+%%	\item Evaluating the need for large interventions, 
+%%	\item Avoiding a redundant unnecessary interventions, 
+%%	\item Increasing the statistical power of smaller studies, 
+%	\item Improving the precision or identify of smaller interventions, and 
+%	\item Improving the generalisability of intervention outcomes.
+%	\end{enumerate}
+%	%
+					
+\subsubsection{Is this strategy right for me?}
+%
+Are you able to consult all available literature, i.e., do you have access to a university library with a large research collection in your chosen discipline? If not, although there are ways of obtaining research that isn't in your library's collection, such as by contacting the author(s) directly. Although most authors will be happy to sent their published research to you, the round trip time can introduce lengthy delays in the research process, or make analysis of the literature in a particular area more difficult and systematic as you wait for the requested research to arrive. You may also need to be persistent to ensure that a busy author is aware of your research need.
+
+The most successful systematic research surveys begin from a broad focus that is, perhaps, narrowed down as research progresses. The original question should not therefore be so narrow as to restrict the initial literature down too far – there must be some opportunity for conclusions from \emph{across} the research to be reached. Moreover, in an area in which there is little room for disagreement, it may be that study heterogeneity~\parencite[p.27]{wright2007write} precludes meta-analysis.
+
+You will be expected to have stated the explicit inclusion and exclusion criteria for the survey research so that another research would be able to find the same collection. The particular choice of focus may make this a difficult task. For instance, survey research in the area of information technology (IT) may lead to a search term in which \enquote{IT} is part of your search terms, and this may have the unfortunate effect of not revealing anything useful – \enquote{it} is a very common word.
+
+You should not allow any inherent bias that you have influence your documentation of the literature. This is often difficult to do.
+
+
+%	\begin{itemize}
+%%	\item unable to consult all relevant literature; if so perhaps you're only trying to complete a preliminary literature review? \parencite[p.414]{andrews2005place}
+%%	\item identified focus is too narrow to provide generalisable results~\parencite{wright2007write}
+%%	\item difficult to construct strict inclusion and exclusion criteria for the survey
+%%	\item no meaningful conclusion reached due to paucity of literature
+%%	\item study heterogeneity precludes meta-analysis, the authors of the systematic review need to summarise the findings based on the strength of the individual studies and reach conclusions if indicated~\parencite[p.27]{wright2007write}
+%%	\item won't be more comprehensive than what exists~\parencite[p.405]{andrews2005place}
+%%	\item there is some latent bias possible~\parencite[p.405]{andrews2005place}
+%%	\item it will not transparent or nor replicable~\parencite[p.405]{andrews2005place}
+%	\end{itemize}
+%	%
+					
+
+\begin{MoreDetails}
+\resourcelistcite{wright2007write,moher2009preferred,pollock2018systematic}
+\end{MoreDetails}
+
+
+%\endinput
 
 \subsection{Grounded theory}
 
+\textcquote{drew202310-grounded}{Grounded theory aims to understand social phenomena by systematically collecting and analyzing data without preconceived notions or theoretical frameworks. The process involves iterative coding and constant comparison of data to generate concepts, categories, and relationships.}
+
+\textcquote[3.1.5]{johannesson2014research}{Grounded theory is a research strategy that strives to develop theories through the analysis of empirical data. In contrast to experiments, grounded theory does not start with a hypothesis to be tested but instead with data from which a theory can be generated. Grounded theory also differs from research strategies, such as ethnography, which are content to provide rich descriptions of particular situations, but no theories. Grounded theory challenges a top-down theorising approach, in which the researcher first develops a theory and then checks whether it conforms to empirical data. Instead, grounded theory insists that empirical data is the starting point, upon which theories are to be built. Theory emerges through analysis and is grounded in the data.}
+
+\textcquote{drew202310-grounded}{Grounded theory is an innovative way to gather qualitative data that can help introduce new thoughts, theories, and ideas into academic literature. While it has its strength in allowing the “data to do the talking”, it also has some key limitations – namely, often, it leads to results that have already been found in the academic literature. Studies that try to build upon current knowledge by testing new hypotheses are, in general, more laser-focused on ensuring we push current knowledge forward. Nevertheless, a grounded theory approach is very useful in many circumstances, revealing important new information that may not be generated through other approaches. So, overall, this methodology has great value for qualitative researchers, and can be extremely useful, especially when exploring specific case study projects. I also find it to synthesize well with action research projects.}
+
+%\endinput
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
+A theory derived from empirical data\footnote{Examples here: \url{https://helpfulprofessor.com/grounded-theory-examples/}}
+%\subsubsection{Focus}
 
-\subsubsection{Variants}
+%\subsubsection{Variants}
 
 \subsubsection{Data Collection}
 
+%\endinput
+
+Empirical data is extant;~\textcquote[p.13]{strauss1998basics}{In fact, Patton (1990), a qualitative evaluation researcher, made the comment, \enquote{Qualitative evaluation inquiry draws on both critical and creative thinking – both the science and the art of analysis} (p. 434). He went on to provide a list of behaviors that he found useful for promoting creative thinking, something every analyst should keep in mind. These include (a) being open to multiple possibilities; (b) generating a list of options; (c) exploring various possibilities before choosing any one; (d) making use of multiple avenues of expression such as art, music, and metaphors to stimulate thinking; (e) using nonlinear forms of thinking such as going back and forth and circumventing around a subject to get a fresh perspective; (f) diverging from one's usual ways of thinking and working, again to get a fresh perspective; (g) trusting the process and not holding back; (h) not taking shortcuts but rather putting energy and effort into the work; and (i) having fun while doing it (pp. 434–435).~\parencite{patton1990qualitative}}
+
+%\endinput
+
 \subsubsection{Evaluation}
 
+%\endinput
+
+\textcquote{corbin1990grounded}{The success of a research project is judged by its products. Except in unusual instances when these are only orally presented, the study design and methods, findings, theoretical formulations, and conclusions are judged through publication. Yet, how are these to be evaluated and by what criteria? When judging qualitative research it is not appropriate, we have asserted, to use criteria ordinarily used to judge the procedures and canons of quantitative studies. It has been one of the aims of this paper to show how the grounded theory approach accepts the usual scientific canons but redefines them carefully to make them appropriate to its specific procedures. In the instance of any grounded theory study, the specific procedures and canons as described above should be part of its evaluation.}
+
+%\endinput
+
+%\textcite{smith1997understanding}
+%					\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
+%					\item are all processes~\parencite[remove when checked]{strauss1998basics} made explicit? 
+%					\item have a range of data sources been used?
+%					\item {}[add as general initial item]Was the research question which originated the study included in the final report? 
+%					\item were the phenomena to be studied observable in social interaction?
+%					\item {}[general]does the literature review allow the reader to identify the issues that the researcher found interesting initially? ~\parencite{smith1997understanding}
+%					\item {}[general?]does the literature review provide a backdrop against which the new findings can be evaluated?~\parencite{smith1997understanding}
+%					\item have the outcomes been triangulated - has more than one way of arriving at the theory been used?~\parencite{smith1997understanding}
+%					\item has a wide range of participants been used? Did the importance of an issue come through repeatedly? Did the participants agree with the analysis process?~\parencite{smith1997understanding}
+%					\item has the extent to which the theory is supported by the extant data been described?~\parencite{smith1997understanding} 
+%					\item what new insight do the developed theories provide?~\parencite{smith1997understanding} 
+%					\item {}[general and specific]have ideas for further study and implication for practice been discussed~\parencite{smith1997understanding}?
+%					\end{enumerate} 
+%					%
+%					and from \textcite[p.425]{corbin1990grounded}
+%					%
+%					%
+%					\begin{itemize}
+%					\item [The Research Process:]
+%					\begin{enumerate}[label={Criterion \arabic*:}]
+%						\item How was the original sample selected? What grounds (selective sampling)?
+%						\item What major categories emerged? 
+%						\item What were some of the events, incidents, actions, and so on that (as indicators) pointed to some of these major categories?
+%						\item On the basis of what categories did theoretical sampling proceed? That is, how did theoretical formulations guide some of the data collection? After the theoretical sampling was done, how representative did these categories prove to be?
+%						\item What were some of the hypotheses pertaining to conceptual relations (that is, among categories), and on what grounds were they formulated and tested?
+%						\item Were there instances when hypotheses did not hold up against what was actually seen? How were these discrepancies accounted for? How did they affect the hypotheses?
+%						\item How and why was the core category selected? Was this selection sudden or gradual, difficult or easy? On what grounds were the final analytic decisions made?
+%					\end{enumerate}
+%
+%					\item [Empirical Grounding of Findings]
+%\begin{enumerate}[label={Criterion \arabic*:}]
+\paragraph{Are concepts generated?}
+
+\textcquote{corbin1990grounded}{Since the basic building blocks of any grounded theory is a set of concepts grounded in the data, the first question to be asked of any publication is: Does it generate (via coding-categorizing activity) or at least use concepts, and what is or are their source or sources? If concepts are drawn from common usage (such as, “uncertainty”) but not put to technical use, then these are not concepts in the sense of being part of a grounded theory, for they are not actually grounded in the data themselves.}
+					
+\paragraph{Are the concepts systematically related?}
+					
+\textcquote{corbin1990grounded}{The name of the scientific game is systematic conceptualization through conceptual linkages. So, the questions to ask here of a grounded theory publication are whether such linkages have been made and do they seem to be grounded in the data? Furthermore, are the linkages systematically carried out? As in other qualitative writing, the linkages are unlikely to be presented as a listing of hypotheses or in propositional or other formal terms but will be woven throughout the text of the publication.}
+					
+					\paragraph{Are there many conceptual linkages and are the categories well developed? Do they have conceptual density?}
+					
+\textcquote{corbin1990grounded}{If there are only a few specified conceptual relationships, even if grounded and identified systematically, this leaves something to be desired in terms of the overall grounding of the theory. A grounded theory should be tightly linked, both in terms of categories to their subcategories and between categories in the final integration in terms of the paradigm features conditions, context, action/interaction (strategies) and consequences. Also categories, as mentioned in the body of the paper, should be theoretically dense (have many properties that are dimensionalized). It is the tight linkages, in terms of the paradigm features and density of the categories, that give a theory its explanatory power. Without these, the theory is less than satisfactory.}
+					
+					\paragraph{Is there much variation built into the theory?}
+					
+\textcquote{corbin1990grounded}{Some qualitative studies report only about a single phenomenon and establish only a very few conditions under which it appears, and specify only a few actions/interactions that characterize it, and a limited number or range of consequences. By contrast, a grounded theory monograph should be judged in terms of the range of its variations and the specificity with which these are spelled out in relation to the data that are their source. In a published paper, the range of variations touched upon may be more limited, but the author should at least suggest that the fully study included their specification.}
+					
+					\paragraph{Are the broader conditions that affect the phenomenon under study built into its explanation?}
+					
+\textcquote{corbin1990grounded}{The grounded theory mode of research requires that the explanatory conditions brought into analysis are not restricted to those that seem to have immediate bearing on the phenomenon under study. That is, the analysis should not be so “microscopic” as to disregard conditions that derive from more “macroscopic” sources: for instance, those such as economic conditions, social movements, trends, cultural values, and so forth.
+					
+These also must not simply be listed as background material but directly linked to phenomena through their effect on action/interaction, and through these latter to consequences. Therefore, any grounded theory publication that either omits these broader conditions or fails to explicate their specific connections to the phenomenon(a) under investigation, falls short in its empirical grounding.}
+
+
+					
+					\paragraph{Has “process” been taken into account?}
+					
+\textcquote{corbin1990grounded}{Identifying and specifying change or movement in the form of process is an important part of grounded theory research. Any change must be linked to the conditions that gave rise to it. Process may be described as stages or phases and also as fluidity or movement of action/interaction over the passage of time in response to prevailing conditions.}
+					
+					\paragraph{Do the theoretical findings seem significant and to what extent?}
+					
+\textcquote{corbin1990grounded}{The question of significance is generally thought of in terms of the relative importance of a theory for stimulating further studies and for giving useful explanations of a range of phenomena. We have in mind here, however, the adequacy of a study’s empirical grounding in relation to its actual analysis insofar as this combination of activities succeeds or fails, in some degree, at producing useful theoretical findings. If the researcher simply follows the grounded theory procedures/canons without any imagination or insight into what the data are reflecting - because he or she fails to see what they are really saying except in terms of trivial or well known phenomena - then the published findings can be judged as failing on this criterion. Recollect that there is an interplay between the researcher and the data, and no method, certainly not the grounded theory one, can insure that the interplay will be creative. This depends on three characteristics of the researcher: analytic ability, theoretical sensitivity, and sensitivity to the subtleties of the action/interaction (plus sufficient writing ability to convey the findings). Of course, a creative interplay also depends on the other pole of the re­searcher-data equation: the quality of the data collected or utilized. An unimaginative analysis may in a technical sense be adequately grounded in the data, but actually it is insufficiently grounded for the researcher’s theoretical purposes. This is because the researcher either does not draw on the fuller resources of data or fails to push data collection far enough.}
+
+%\endinput
+
+\textcquote{corbin1990grounded}{This double set of criteria, for the research process and for the empirical grounding of the theoretical findings, bear directly on the issues of how verified any given grounded theory study is and how this is to be ascertained. When the study is published,, if components of the research process are clearly laid out and if there are sufficient cues in the publication itself, then the presented theory or theoretical formulations can be assessed in terms of degrees of plausibility. We can judge under what conditions the theory might fit with “reality”, give understanding, and be useful (practically and in theoretical terms). Researchers themselves can be rendered more aware of precisely what their operations have been and the possible inadequacies of these operations. In other words, they would be able to identify and convey what were the limitations of their study.}
+
+%\endinput
 \subsubsection{Is this strategy right for me?}
 
-\subsubsection{More details}
+%
+\begin{itemize}
+\item Without extant data, grounded theory cannot get started, use Experiment instead
+\item A theory is not the goal state: if no theory is required, use ethnography instead
+\item the research question is too focussed\footnote{Meaning?}: 
+\end{itemize}
+%
+				
+\begin{MoreDetails}
+\resourcelistcite{smith1997understanding,corbin1990grounded,strauss1998basics,gibson2013rediscovering,charmaz2014constructing}
+\end{MoreDetails}
+
 
 \subsection{Phenomenology}
 
+\textcquote[3.1.7]{johannesson2014research}{Phenomenology is a research strategy that focuses on the perceptions and experiences of people as well as their feelings and emotions.}
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
+\textcquote[3.1.7]{johannesson2014research}{The goal of a phenomenological study is not to establish cause and effect relationships or to describe a population through statistical means. Instead, it aims to describe and understand the lived experiences of people and thereby provide insight about the topic being studied.}
 
-\subsubsection{Variants}
+%\subsubsection{Focus}
+%
+%\subsubsection{Variants}
 
-\subsubsection{Data Collection}
+\subsubsection{Data Generation}
+
+Data generation for the Phenomelogy research strategy is mainly through the long, unstructured interview, designed for the subject to: \textcquote[3.1.7]{johannesson2014research}{really tell their own story without being unduly influenced by the researchers.}
+				
+				\textcquote[, 26m29s]{office2020the-phenomenological}{interviews, follow-up interviews (to address any gaps in data like misunderstandings, missing information, unclear information, etc.), focus groups, field notes, journaling, audio recording, and video recording.
+				A combination of instruments is ideal rather than one so that findings are rich, but dissertation students should also be realistic about choosing various instruments so that they do not overwhelm themselves with unrealistic expectations.}
 
 \subsubsection{Evaluation}
 
+\parencite[1h0m39s]{office2020the-phenomenological} 
+				%
+					\begin{itemize}
+					\item Will the experience as described be understandable to any reader and can be identified by anyone who has had that particular experience?
+					\item Is the description of the phenomenon clearly presented so that experience differs from other experiences that are similar? {\color{red}what does this mean?}
+					\item Are quotations from the data used to demonstrate the emergence of themes?
+					\item Is there a discussion of discrepancies among participants and how those discrepancies were factored in data analysis?
+					\item Have meaning units, themes, and summaries been described?
+					\item Are meaning units grouped together to form themes?
+					\item Are themes combined to form a composite summary of the phenomenon?
+					\item Are quotes used to support the findings?
+					\item Research participants will have their individual ways of experiencing a certain phenomenon. Have you looked for these common to all or most of the participants and not clustered meaning units together where significant differences exist?
+					\end{itemize}
+					%
+					and the research process
+					%
+					\begin{itemize}
+					\item Bracketing/Epoché/Phenomenological reduction - have you discussed how judgments were suspended to focus on analysis of experience. How did you use suspend your judgments to focus on the analysis of participants' experiences?
+					\item Horizon - during data analysis, what was your present experience, your horizon? The horizon cannot be bracketed so you will need to discuss that not everything could have been realized by you, the researcher. This discussion might also lead into a discussion about future research implications in Chapter 5.
+					\item Intentionality - discuss your level of scrutiny of the data you analyzed. How did you keep your focus on the topic you were studying? Perhaps you slowed down and dwelled on each narrative and did not pass over the details of the account as if you understood it already.
+					\item Dasein - How has your Dasein (being-there) affected the research? How did the research affect your Dasein?
+					\item Fore-sight/Fore-conception - What was your preconceived knowledge about the phenomenon you were studying?
+					\item Hermeneutic Circle - How did were your understandings revised as you analyzed the data?
+					\end{itemize}
+					%
+
+					%
+
+%				Phenomenology is sometimes presented as having similarities with ethnography \parencite[p.52]{johannesson2014research}, and this leads us to the following evaluation criteria{\color{red} sense?}:
+%					\parencite[p.180, adapted for phenomology]{oates2008researching}%
+%					\begin{itemize}
+%					\item Does the research focus on lifestyle, meaning, and belief?
+%					\item Are the data generation methods that were used described? Did they lead to sufficient data having been collected?
+%					\item How long did you spend in the field? Do you think this was long enough?
+%					\item Do you describe your approach holistic, semiotic or critical?
+%					\item Is the phenomenology a standalone description, or is it linked to theory, other phenomenology or issues in your culture?
+%					\item Have you included an account of you as researcher?
+%					\item Have you presented an phenomenological construction rather than a literal description?
+%					\item What limitations in the phenomenology have you recognised?
+%					\item Which other flaws and/or omissions in your reporting of the phenomenology do you admit?
+%					\item Overall, how effectively has your phenomenological strategy been?
+%					\end{itemize}
+					and \parencite[29m \textit{ff}]{office2020the-phenomenological}
+					%
+						\begin{itemize}
+						\item have you described the \enquote{what, when, where, and how} of the study? What has be done? When the steps were sequenced? Where each step happened? How each step happened?
+						\item have you described where will data be collected? Who collected the data? How often and how much data was collected? How long it took to collect the data? How the data was recorded? (ex: transcriptions, video recordings, audio recordings) Were there follow ups to interviews?
+						\end{itemize}
+						%
+				
+
 \subsubsection{Is this strategy right for me?}
 
-\subsubsection{More details}
+%
+\begin{itemize}
+\item is your audience expecting scientific rigour? If so, choose ???
+\item does your data (source) allow analysis above the data, or will the outputs be mostly descriptive?
+\item are you short of time for data collection? If so, consider ???
+\item do you appreciate the value of deep philosophical discourse?
+\item ...
+\end{itemize}
+
+\begin{MoreDetails}
+\resourcelistcite{merleau1956phenomenology,anderson1991qualitative,smith2018phenomenology,shudak2018phenomenology,academic-educational-materials2019understanding,office2020the-phenomenological,groenewald2004a-phenomenological,hycner1985some}
+\end{MoreDetails}
+
 
 \subsection{Simulation}
 
+The simulation research strategy builds an explicative mechanism to imitate the behaviour of a real-world artefact.
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
-
+\textcquote{dooley2017simulation}{[S]imulation helps answer the question \enquote{What if?}} 
+%\subsubsection{Focus}
+%
 \subsubsection{Variants}
 
-\subsubsection{Data Collection}
+The three main schools of simulation practice are \parencite{dooley2017simulation}:
+		%
+	\begin{itemize}
+	\item Discrete event simulation, which involves modeling the organizational system as a set of entities evolving over time according to the availability of resources and the triggering of events.
+	\item System dynamics, which involves identifying the key “state” variables that define the behavior of the system, and then relating those variables to one another through coupled, differential equations.
+	\item Agent-based simulation, which involves agents that attempt to maximize their fitness (utility) functions by interacting with other agents and resources; agent behavior is determined by embedded schema which are both interpretive and action-oriented in nature.
+	\end{itemize}
+	%
 
+\subsubsection{Data Generation}
+
+\textcquote{dooley2017simulation}{Simulation enables studies of more complex systems because it creates observations by \enquote{moving forward} into the future, whereas other research methods attempt to look backwards across history to determine what happened, and how.}
+
+Depending on the context in which the simulation is studied or used. May include:
+	%
+	\begin{itemize}
+	\item observations, interviews, questionnaires, documents, in-depth description when supporting social objectives
+	\item accuracy, predicative capability, when used to model real-world processes – think weather forecasting
+	\item ...
+	\end{itemize}
+	%
+				
 \subsubsection{Evaluation}
+
+For computer simulations:
+
+\begin{itemize}
+\item Good development: has a documented set of requirements been maintained? Has a change control process been implemented?Is there a corresponding document (or version) control process.
+
+\item Has the architecture been documented? What is its relationship to the model?
+
+\item Have a variety of testing methods, including code walk-throughs, scenario testing, and user testing been used to establish code quality?
+
+\item Was a project plan for coding and testing developed?
+
+\item how close is the simulation's behaviour to the \enquote{real} answer? Do the results make sense?
+
+\item has the simulation been compared to any extant quantitative behaviour available? Does it match exactly, distributionally (a variable of interest has statistically similar characteristics), or pattern-wise (variables are generally related to one another in a valid manner, but perhaps differ from reality)?
+
+\item Which experimental set-up was used? Was it appropriate?
+
+\item Have observations from analysis been noted, and results discussed in order to sense-make? Has over-interpretation of the results been avoided so that retrofitting to theories is avoided?
+\end{itemize}
+
+For mathematical and statistical modelling:
+
+%
+\begin{itemize}
+\item ...
+\end{itemize}
+%
 
 \subsubsection{Is this strategy right for me?}
 
-\subsubsection{More details}
+Do I already have the computing/mathematical/statistical skills that I need to underpin the research?
+
+Do I have access to documentation sufficient to allow a simulation to be built?
+
+\begin{MoreDetails}
+\resourcelistcite{dooley2017simulation}
+\end{MoreDetails}
+
 
 \subsection{Mathematical and logical proof}
 
+\textcquote[3.1.9]{johannesson2014research}{A proof is a rigorous deductive argument that demonstrates the truth of a certain proposition.}
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
+Establishes the absolute truth status of a proposition.
 
-\subsubsection{Variants}
+%\subsubsection{Focus}
+%
+%\subsubsection{Variants}
 
-\subsubsection{Data Collection}
+\subsubsection{Data Generation}
+
+No data generation, although iteration and extensive exploration through examples may be needed to identify the extent to which proof is possible.
 
 \subsubsection{Evaluation}
 
+Formal evaluation by the community of mathematicians within some logical system. Potential for automated checking should computational tools exist.
+
 \subsubsection{Is this strategy right for me?}
 
-\subsubsection{More details}
+Do I have a formal background in logic? One way to determine whether my background is suitable would be to read the first few pages of \textcite{lakatos2015proofs}\footnote{Up to page 9  is available through google books} and consider my level of engagement with the process of proof.
+
+Do I have a community of mathematicians that would be willing to check my proof as it develops?
+
+Is the situation to which I want to apply formal proof amenable to formalisation? If not, then the notion of formal proof might not apply. Even if a formalisation is possible, does it already exist or would I also need to formalise the area first. If you have difficulty answering this question, it may be that this research strategy is not for you. 
+
+Am I trying to predict future behaviours of a system? If so, mathematical, statistical or computational modelling might be a better option.
+
+\begin{MoreDetails}
+\resourcelistcite{Kleene1964,lakatos2015proofs,antonini2011examples}
+\end{MoreDetails}
 
 \subsection{Mixed methods research}
 
+\textcquote{johnson2007toward}{Mixed methods research is the type of research in which a researcher or team of researchers combines elements of qualitative and quantitative research approaches (e.g., use of qualitative and quantitative viewpoints, data collection, analysis, inference techniques) for the broad purposes of breadth and depth of understanding and corroboration.}
+
 \subsubsection{Knowledge contribution}
 
-\subsubsection{Focus}
+The Mixed methods research strategy combined the knowledge contributions of each method used. In addition, \textcquote[p.119, quoting \emph{Huey Chen}]{johnson2007toward}{[the methods] can be adapted, altered, or synthesized to fit the research and cost situations of the study (modified form mixed methods).}
 
-\subsubsection{Variants}
+\textcquote[p.119, quoting \emph{Valerie Caracelli}]{johnson2007toward}{[P]lanfully [combining] methods of different types (qualitative and quantitative) to provide a more elaborated understanding of the phenomenon of interest (including its context) and, as well, to gain greater confidence in the conclusions generated by the evaluation study.}
 
-\subsubsection{Data Collection}
+%\subsubsection{Focus}
+%
+%\subsubsection{Variants}
+%
+\subsubsection{Data Generation}
+
+Those of the individual methods, combined with those of the methods mixed. The latter form provides for triangulation: \textcquote[p.291]{denzin1978research}{the combination of methodologies in the study of the same phenomenon}: \textcquote[p.3]{webb2000unobtrusive}{If a proposition can survive the onslaught of a series of imperfect measures, with all their irrelevant error, confidence should be placed in it. Of course, this confidence is increased by minimizing error in each instrument and by a reasonable belief in the different and divergent effects of the sources of error.}
 
 \subsubsection{Evaluation}
 
 \subsubsection{Is this strategy right for me?}
 
+Mixed methods research requires competence in more than a single research method, which takes time; it is unlikely that at this stage in your research career you will have a developed understanding sufficient to apply the mixed methods research strategy. However, it may be that your work is part of broader mixed methods research, perhaps led by your supervisor. If that is the case, then refer to the description of the particular method you are being asked to work with.
+
+Even if you are contemplating mixed methods research, perhaps as an extended research agenda leading to a PhD, at this point it may be that a focus on a single method as part of the mixed methods research will achieve what is required. If this is that case, then you should discuss with your supervisor. 
+
 \subsubsection{More details}
 
-\end{document}
+[Add summary of decision process as a diagram]
+
+\section{What to do now}
+
+Having read the previous section, at this point, you've two things to do:
+%
+\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
+\item use your research aims and the \enquote{Is it right for me} to choose a research strategy, and for this strategy, to
+\item use the evaluation criteria to determine your results chapter.
+\end{enumerate}
+%
+
+
+\begin{figure}[hbtp]
+\centering{
+  \includegraphics[width=0.7\textwidth]{Figures/researchStrategies}
+  \caption{Research strategy choices 
+  \label{fig:researchStrategies}
+  	}  
+  }
+\end{figure}
+
+
+\endinput
+
 
 \subsection{Structuring research}
 
@@ -1248,4 +1681,3 @@ As in the previous stages, after you have filled in your report you should revie
 
 %%Repeated reflection activity
 \input{Shared/reflectActivity}
-
