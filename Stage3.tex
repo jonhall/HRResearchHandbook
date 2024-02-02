@@ -12,8 +12,11 @@
   {\usebibmacro{prenote}\begin{itemize}\item[] }
   {\usedriver
      {\DeclareNameAlias{sortname}{default}}
-     {\thefield{entrytype}}
-     {\printfield{annote}}}
+     {\thefield{entrytyper}}
+  } 
+%     {%
+%		\footnote{\thefield{annotation}}
+%	 }
   {\item[] \addspace}
   {\end{itemize}\usebibmacro{postnote}}
 
@@ -140,7 +143,8 @@ This research paradigm is mostly used in natural sciences, physical sciences, or
 
 Positivism\todo{From \url{https://image.slidesharecdn.com/lecture21-111207045819-phpapp02/95/research-paradigms-20-728.jpg?cb=1415227903}} leads to knowledge as explanations constructed from hypotheses thus established as laws or facts. As an example, think of Newton's explanation of the action of forces on matter that is encoded as his 3 Laws of Motion, for instance.
 
-Apropos Newton's Laws, with so much invested in them, you might see that Einstein's insight into the intimate connection between space and time could lead to something of a crisis in the Positivist movement\todo{Check this was the cause, at least arguably!}, with \textcite{kuhn2012structure}. If not a complete rethink, then Einstein's work inspired a substantial away from the established \enquote{laws} and \enquote{facts}, which were neither any longer. 
+Apropos Newton's Laws, with so much invested in them, you might see that Einstein's insight into the intimate connection between space and time could lead to something of a crisis in the Positivist movement~(see, for instance, \textcite{lakatos2014falsification})%, with \textcite{kuhn2012structure}
+. If not a complete rethink, then Einstein's work inspired a substantial away from the established \enquote{laws} and \enquote{facts}, which were neither any longer. \textcite{laka}
 
 The serious rethink led to post-positivism\footnote{Not the most creative name, you must admit.} which, rather than facts and law, relied on falsification, i.e., any posited theory must be testable, the currency of a theory being determined by whether or not it had yet been proven false. A theory is falsifiable if offers predictions that can be tested.\footnote{However, even in post-positivism, falsifiable theories that have been tested and failed, can still be useful. Like Newton Laws of motion, for instance, which provide a very good approximation at low energies.} 
 
@@ -329,21 +333,30 @@ The contribution to knowledge of survey research is to uncover patterns that can
 
 %\subsubsection{Variants}
 
-\subsubsection{Data Generation} Suggested by the name, a survey – a standardised set of questions administered to a number of respondents – allows the researcher to gather information about a population.
+\subsubsection{Data Generation} 
+
+Suggested by the name, a survey – a standardised set of questions administered to a number of respondents – allows the researcher to gather information about a population. Surveys can take many forms, from interviews to questionnaires to focus groups, but authors vary on what they consider appropriate.\footnote{Be sure to consider any supplied preparatory reading on the survey research strategy to ensure that you meet your supervisor's (or other's) expectations of what will be appropriate.}
 
 \subsubsection{Evaluation} The following questions are typically asked of the knowledge contribution made through survey research
-~\parencite[p.105 (adapted)]{oates2008researching}\footnote{For each, indicate impact.}:
-	%
+~\parencite[p.105 (adapted)]{oates2008researching}:
 	\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
 	\item Is coverage of the parent population appropriately wide and inclusive? Typically, this reduces to the question of whether the sample size is large enough, but may need more analysis in some cases (see stats section).
-	\item Are the data generation methods used appropriate and feasible?
-	\item Is the sampling frame and techniques used explained? {\color{red}Clarify \enquote{sampling frame}}
-	\item Is the response rate adequate and how were non-respondents handled?
-	\item Are the differences between respondents and non-respondents investigated? Are these differences significant?
-	\item What additional data would have been useful?
-	\item Are any generalisations made about the parent population appropriate?
+	
+	\item Is there a reflection on the adequacy of the sample frame? Would additional data would have been useful?
+	
+	\item Are the data generation methods used appropriate and feasible? Has their design and construction been adequately described?
+	
+	\item Are the sampling frame – the source database from which a sample is drawn\footnote{Although it may not be an actual computer database} – and sampling techniques used adequately explained?
+	
+	\item Is the response rate adequate? If not, was there appropriate reflection on the effects on the current survey and on future surveys? How were non-respondents handled?
+	
+	\item Is there an adequate discussion on the differences between respondents and non-respondents? Is any significant differences discussed in the context of this and future work?
+	
+	\item If generalisations have been made about the parent population, are they appropriate? What reasoning chains have led to the generalisations made?
+	
 	\item What limitations, flaws, errors and/or omission are there in your use of surveys?
-	\item Overall, has the survey strategy been successful?
+	
+	\item Overall, has the survey research strategy been successful?
 	\end{enumerate}
 
 \subsubsection{Is the survey research strategy right for me?}
@@ -359,20 +372,23 @@ Evaluation sets certain requirements of the researcher for them to be successful
 	\item conclusions from survey research rely on the veracity of the responses received. If there's any reason to doubt your respondents' honesty, additional care should be taken. There are techniques to avoid this (see \textcite{}, for instance) but they add complexity to the strategy. If the development of a relationship of trust between research and population is critical to the research, then some form of ethnographic research might be more appropriate.
 	\end{enumerate}
 
-\begin{MoreDetails}
+\begin{MoreDetails}\footnote{Add annotations to cites.}
 
 %If the outcome of reading the previous section is that you think that the survey research strategy is suitable, you might like to look into the following articles that go into more detail, either in a general setting, or in specific areas.
 
-\resourcelistcite{dillman2014internet,oates2008researching,johannesson2014research}
+\resourcelistcite{dillman2014internet,
+	%oates2008researching,
+	%johannesson2014research,
+	kalaian2008encyclopedia}
 \end{MoreDetails}
 
 \subsection{Design and creation research}
 
-The design and creation research strategy focuses on developing new solutions to problem, a problem being a need in context. The new solution can be an artefact, process, policy, model, method, anything that satisfies the need in context.
+The design and creation research strategy\footnote{AKA Design science research strategy.} focuses on developing new solutions to problem, a problem being a need in context. The new solution can be an artefact, process, policy, model, method, anything that satisfies the need in context.
 
 \subsubsection{Knowledge contribution}
 
-The contribution to knowledge is that which can be learned from the creation of an artefact as the solution of a problem. Knowledge contributions therefore come from an exploration of the artefact artefact itself, or from its design, development, use, or other characteristics of the real-world problem solving process.
+The contribution to knowledge is that which can be learned from the creation of an artefact as the solution of a problem. Knowledge contributions therefore come from an exploration of the artefact itself, or from its design, development, use, or other characteristics of the real-world problem solving process.
 
 %\subsubsection{Focus}
 
@@ -380,7 +396,7 @@ The contribution to knowledge is that which can be learned from the creation of 
 
 \subsubsection{Data Generation}
 
-Typically the process of problems solving – the interactions between actors (customers, clients, designers, others), technologies and/or knowledge – is the source of data. This includes the nature of the problem solving process, whether it is linear or iterative, for instance, or the ways in which problem and solution understanding and validation are conducted.
+Typically the process of problem solving – the interactions between actors (customers, clients, designers, others), technologies and/or knowledge – is the source of data. This includes the nature of the problem solving process, whether it is linear or iterative, for instance, or the ways in which problem and solution understanding and validation are conducted.
 
 
 \subsubsection{Evaluation}
@@ -417,7 +433,7 @@ If there is a customer, but their need for a solution to their problem is urgent
 To make a contribution to knowledge there should be demonstrable novelty needed to produce the solution, or in the process, or som other aspect of the development. If you cannot clearly identify that novelty, then you will not be able to claim a contribution to knowledge.
 
 \begin{MoreDetails}
-\\resourcelistcite{oates2008researching}
+\resourcelistcite{oates2008researching,brocke2020introduction}
 \end{MoreDetails}
 
 \subsection{Experimental research}
@@ -436,27 +452,27 @@ The experiment strategy contributes to knowledge through allowing cause and effe
 
 %\subsubsection{Focus}
 %
-\subsubsection{Variants}
-
-There are many variants of the experimental research strategy, including\footnote{Add context of application for each}:
+%\subsubsection{Variants}
 %
-	\begin{description}
- 	\item [True] see~\textcite[p.126]{oates2008researching}
-	\item [Quasi] see~\textcite[p.133]{oates2008researching}
-	\item [Uncontrolled] see~\textcite[p.134]{oates2008researching}
-	\end{description}
-	%
-\noindent and, even more specialised, for social science applications
-	%
-	\begin{description}
-	\item [One group, pre-test and post-test] see~\textcite[p.135]{oates2008researching}
-	\item [Static group comparison] see~\textcite[p.135]{oates2008researching}
-	\item [Pre-test/post-test control group] see~\textcite[p.135]{oates2008researching}
-	\item [Solomon four-group design] see~\textcite[p.126]{oates2008researching}
-	\item see \textcite{field2002design}
-	\end{description}
-	
-%\endinput
+%There are many variants of the experimental research strategy, including\footnote{Add context of application for each}:
+%%
+%	\begin{description}
+% 	\item [True] see~\textcite[p.126]{oates2008researching}
+%	\item [Quasi] see~\textcite[p.133]{oates2008researching}
+%	\item [Uncontrolled] see~\textcite[p.134]{oates2008researching}
+%	\end{description}
+%	%
+%\noindent and, even more specialised, for social science applications
+%	%
+%	\begin{description}
+%	\item [One group, pre-test and post-test] see~\textcite[p.135]{oates2008researching}
+%	\item [Static group comparison] see~\textcite[p.135]{oates2008researching}
+%	\item [Pre-test/post-test control group] see~\textcite[p.135]{oates2008researching}
+%	\item [Solomon four-group design] see~\textcite[p.126]{oates2008researching}
+%	\item see \textcite{field2002design}
+%	\end{description}
+%	
+%%\endinput
 		
 
 \subsubsection{Data Generation} 
@@ -487,14 +503,16 @@ Although widely applicable, the experimental research strategy is not universall
 	\begin{itemize}
 	\item when the cause/effect relationship is complex, for instance, depending on many factors;
 	\item when confounding factors and variable cannot be isolated;
-	\item when no falsifiable hypothesis can be identified.
+	\item when no falsifiable hypothesis can be identified;
 	\item {\color{red}others?}
 	\end{itemize}
 
 In these cases, another research strategy should be chosen\footnote{Can we give guidance on which one?}
 				
 \begin{MoreDetails}
-\resourcelistcite{oates2008researching,johannesson2014research,field2002design,kalaian2008encyclopedia}	
+\resourcelistcite{%oates2008researching,
+	%johannesson2014research,
+	field2002design}	
 \end{MoreDetails}
 
 %\endinput
@@ -511,24 +529,28 @@ The knowledge contribution is a detailed insightful description of the phenomeno
 
 \subsubsection{Variants}
 
-Case studies come in many forms~\parencite[p.151, adapted]{oates2008researching}%
+Case studies come in many forms:%
 	\begin{itemize}
-	\item exploratory: in which ...
-	\item multiple: in which ...
-	\item longitudinal: in which...
+	\item exploratory: in which the researcher explores a research problem sufficiently to be able to conduct a further study. If you're considering studying for a PhD after your masters research, then this might provide a head start for future research ~\parencite[p.143, adapted]{oates2008researching};
+
+	\item  multiple: in which the researcher provides a \enquote{rich, detailed analysis of a phenomenon and its context}. This provides an opportunity, for instance, for multiple stakeholder views to be taken into account as they experience the phenomena in context in different ways, in some ways moving toward a phenomenological account or in which the relationships between phenomena can be aanlysed~\parencite[p.143, adapted]{oates2008researching}; 
+
+	\item longitudinal: in which the researcher considers the state of a phenomenon over time. This offers a natural storytelling context in which change in the phenomenon and/or its context can be analysed~\parencite[p.143, adapted]{oates2008researching};
+
+	\item in combination: in which combinations of the above are analysed, including how relationships between phenomena and/or stakeholders develop over time or in response to contextual factors.
 	\end{itemize}
-and have possible foci \parencite[p.44]{johannesson2014research}:
-	\begin{itemize} 
-	\item Focus on One Instance. The idea is \enquote{To see a World in a Grain of Sand, And a Heaven in a Wild Flower, Hold Infinity in the palm of your hand, And Eternity in an hour} as expressed by William Blake (2012).
-	
-	\item Focus on Depth. As much information as possible about the instance studied should be obtained, without shying away from any details.
-	
-	\item Natural Setting. The instance exists before and independently of the research project, and it should be studied in its ordinary context; it should not be moved to, or created in, a laboratory.
-	
-	\item Relationships and Processes. The instance should be studied in a holistic way, taking into account all the relationships and processes within the instance as well as in its environment.
-	
-	\item Multiple Sources and Methods. Multiple information sources should be consulted in order to obtain rich, many-faceted knowledge about the instance; when doing this, different data collection methods could be used, such as interviews and observation.
-	\end{itemize}
+%and have many possible foci \parencite[p.44, adapted]{johannesson2014research}:
+%	\begin{itemize} 
+%	\item Focus on One Instance: in which a single  The idea is \enquote{To see a World in a Grain of Sand, And a Heaven in a Wild Flower, Hold Infinity in the palm of your hand, And Eternity in an hour} as expressed by William Blake (2012).
+%	
+%	\item Focus on Depth. As much information as possible about the instance studied should be obtained, without shying away from any details.
+%	
+%	\item Natural Setting. The instance exists before and independently of the research project, and it should be studied in its ordinary context; it should not be moved to, or created in, a laboratory.
+%	
+%	\item Relationships and Processes. The instance should be studied in a holistic way, taking into account all the relationships and processes within the instance as well as in its environment.
+%	
+%	\item Multiple Sources and Methods. Multiple information sources should be consulted in order to obtain rich, many-faceted knowledge about the instance; when doing this, different data collection methods could be used, such as interviews and observation.
+%	\end{itemize}
 					
 \subsubsection{Data Collection}
 
@@ -578,7 +600,6 @@ As an other example of potential difficulties, as well as access to the engineer
 
 Access to policy, processes, and procedures within an organisation will require interaction with others. Even if you already have a good relationship with them they might not have the time to assist you sufficiently for your data generation to be successful.
 
-***
 %%
 %\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
 %\item large amounts of data are needed: use ??? instead
@@ -587,7 +608,7 @@ Access to policy, processes, and procedures within an organisation will require 
 %			
 
 \begin{MoreDetails}
-\resourcelistcite{oates2008researching,johannesson2014research}
+\resourcelistcite{oates2008researching}%,johannesson2014research}
 \end{MoreDetails}
 
 
