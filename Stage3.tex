@@ -143,7 +143,7 @@ This research paradigm is mostly used in natural sciences, physical sciences, or
 
 Positivism\todo{From \url{https://image.slidesharecdn.com/lecture21-111207045819-phpapp02/95/research-paradigms-20-728.jpg?cb=1415227903}} leads to knowledge as explanations constructed from hypotheses thus established as laws or facts. As an example, think of Newton's explanation of the action of forces on matter that is encoded as his 3 Laws of Motion, for instance.
 
-Apropos Newton's Laws, with so much invested in them, you might see that Einstein's insight into the intimate connection between space and time could lead to something of a crisis in the Positivist movement~(see, for instance, \textcite{lakatos2014falsification})%, with \textcite{kuhn2012structure}
+Apropos Newton's Laws, with so much invested in them, you might see that Einstein's insight into the intimate connection between space and time together with other observations taht contradicted Newton, could lead to something of a crisis in the Positivist movement~(see, for instance, \textcite{lakatos2014falsification})%, with \textcite{kuhn2012structure}
 . If not a complete rethink, then Einstein's work inspired a substantial away from the established \enquote{laws} and \enquote{facts}, which were neither any longer. \textcite{laka}
 
 The serious rethink led to post-positivism\footnote{Not the most creative name, you must admit.} which, rather than facts and law, relied on falsification, i.e., any posited theory must be testable, the currency of a theory being determined by whether or not it had yet been proven false. A theory is falsifiable if offers predictions that can be tested.\footnote{However, even in post-positivism, falsifiable theories that have been tested and failed, can still be useful. Like Newton Laws of motion, for instance, which provide a very good approximation at low energies.} 
@@ -319,7 +319,7 @@ After a brief description of the strategy, we delve into the following details:
 \item describe any variants that exist and the choices that constitute them
 \item describe the ways in which data is generated for the strategy
 \item describe how a contribution to knowledge using the strategy will be evaluated
-\item a number of references that you give more detail if you are seriosly considering the strategy.
+\item a number of references that you give more detail if you are seriously considering the strategy.
 \end{itemize}
 %
 
@@ -337,25 +337,42 @@ From the third of these, you'll be able to structure your research report – yo
 
 \subsection{Your initial research strategy candidate list}
 
+%\todo{This is a repeated activity through all stages, and so should be templated.}
+\begin{question}[subtitle={Activity: Understanding the effort needed in this stage}] Consider Table~\ref{tab:stage3acts} carefully, taking notice of the entries in the `Effort within stage' column. Write down the most time-consuming activities in this stage and what is expected under each.
+
+\begin{solution}Developing your research design further and conducting your pilot work will constitute your major effort in this stage (55\% of the study time in total): your pilot work will be an initial test of some aspects of your research design, including a proof-of-concept application of some of your chosen methods.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+
 \newcommand{\tick}{$\square$}
 
-\begin{tblr}{rcc}
-	\textbf{Research Strategy candidate}&\textbf{Considered}&\textbf{Excluded}\\
+\begin{question}[subtitle={Activity: Choosing a research strategy}] The next activity you should complete is lengthy and may take a long time to complete, with auxiliary reading, up to one week. 
+
+The aim of this activity is to complete the following table, Table~\ref{tab:ResearchStrategyChoice}, which will track your progress in choosing a research strategy. Although it make not look much, completing each line is a substantial piece of work.
+\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{table}
+\caption{Research strategy choice\label{tab:ResearchStrategyChoice}}
+\begin{tabulary}{\tablewidth}{rccl}
+	\textbf{Research Strategy candidate}&\textbf{Considered}&\textbf{Excluded}&\textbf{Reason excluded}\\\toprule
 	Survey&\tick&\tick\\
 	Design and Creation&\tick&\tick\\
-	Experimental&\tick&\tick\\
+	Experiment&\tick&\tick\\
 	Case study&\tick&\tick\\
 	Action research&\tick&\tick\\
-	Enthography&\tick&\tick\\
+	Ethnography&\tick&\tick\\
 	Systematic research&\tick&\tick\\
 	Grounded theory&\tick&\tick\\
 	Phenomenology&\tick&\tick\\
 	Simulation&\tick&\tick\\
 	Mixed methods&\tick&\tick
-\end{tblr}
-
-
-
+\end{tabulary}
+%%Hack to correct tcbox behaviour
+\end{table}
 
 \subsection{Survey research}
 
@@ -407,16 +424,22 @@ Evaluation sets certain requirements of the researcher for them to be successful
 	\item the difficulty of conducting two or more surveys also mitigates against trying to establish causes and effects. Again, reconsider phenomena or use an experimental research strategy instead;
 	\item conclusions from survey research rely on the veracity of the responses received. If there's any reason to doubt your respondents' honesty, additional care should be taken. There are techniques to avoid this (see \textcite{}, for instance) but they add complexity to the strategy. If the development of a relationship of trust between research and population is critical to the research, then some form of ethnographic research might be more appropriate.
 	\end{enumerate}
+	
+\newcommand{\RSActivity}[2]{\begin{question}[subtitle={Activity: Considering #1}]
+	Having read the above subsection, do you consider #1 to be a serious candidate for your research strategy?
+%	
+\begin{guidance}
+	If so, add the following references to your list of reading:
+\resourcelistcite{#2}
+	\end{guidance}
+	\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}}
 
-\begin{MoreDetails}\footnote{Add annotations to cites.}
-
-%If the outcome of reading the previous section is that you think that the survey research strategy is suitable, you might like to look into the following articles that go into more detail, either in a general setting, or in specific areas.
-
-\resourcelistcite{dillman2014internet,
+\RSActivity{Survey Research}{dillman2014internet,
 	%oates2008researching,
 	%johannesson2014research,
 	kalaian2008encyclopedia}
-\end{MoreDetails}
 
 \subsection{Design and creation research}
 
@@ -468,9 +491,7 @@ If there is a customer, but their need for a solution to their problem is urgent
 
 To make a contribution to knowledge there should be demonstrable novelty needed to produce the solution, or in the process, or som other aspect of the development. If you cannot clearly identify that novelty, then you will not be able to claim a contribution to knowledge.
 
-\begin{MoreDetails}
-\resourcelistcite{oates2008researching,brocke2020introduction}
-\end{MoreDetails}
+\RSActivity{Design and creation research strategy}{oates2008researching,brocke2020introduction}
 
 \subsection{Experimental research}
 
@@ -552,12 +573,10 @@ Although widely applicable, the experimental research strategy is not universall
 	\end{itemize}
 
 In these cases, another research strategy should be chosen\footnote{Can we give guidance on which one?}
-				
-\begin{MoreDetails}
-\resourcelistcite{%oates2008researching,
+
+\RSActivity{experimental research strategy}{%oates2008researching,
 	%johannesson2014research,
 	field2002design}	
-\end{MoreDetails}
 
 %\endinput
 
@@ -651,10 +670,7 @@ Access to policy, processes, and procedures within an organisation will require 
 %\end{enumerate}
 %			
 
-\begin{MoreDetails}
-\resourcelistcite{oates2008researching}%,johannesson2014research}
-\end{MoreDetails}
-
+\RSActivity{case study research}{oates2008researching}
 
 \subsection{Action research}
 
@@ -715,10 +731,7 @@ Adapted from~\textcite[p.168]{oates2008researching}%
 					\item Do envisage issues working with others in complex, problematic and unpredictable real-world situations? If so, consider ???
 					\end{itemize}
 
-\begin{MoreDetails}
-\resourcelistcite{oates2008researching,johannesson2014research}
-\end{MoreDetails}
-
+\RSActivity{action research}{oates2008researching,johannesson2014research}
 
 %\endinput
 
@@ -783,9 +796,7 @@ Ethnography is analytical in the extreme. Should you not have an analytical mind
 %					%
 					
 
-\begin{MoreDetails}
-\resourcelistcite{oates2008researching,johannesson2014research}
-\end{MoreDetails}
+\RSActivity{ethnography}{oates2008researching,johannesson2014research}
 
 
 \subsection{Systematic research reviews}
@@ -865,9 +876,7 @@ You should not allow any inherent bias that you have influence your documentatio
 %	%
 					
 
-\begin{MoreDetails}
-\resourcelistcite{wright2007write,moher2009preferred,pollock2018systematic}
-\end{MoreDetails}
+\RSActivity{systematic research survey}{wright2007write,moher2009preferred,pollock2018systematic}
 
 
 %\endinput
@@ -984,9 +993,7 @@ These also must not simply be listed as background material but directly linked 
 \end{itemize}
 %
 				
-\begin{MoreDetails}
-\resourcelistcite{smith1997understanding,corbin1990grounded,strauss1998basics,gibson2013rediscovering,charmaz2014constructing}
-\end{MoreDetails}
+\RSActivity{case study research}{smith1997understanding,corbin1990grounded,strauss1998basics,gibson2013rediscovering,charmaz2014constructing}
 
 
 \subsection{Phenomenology}
@@ -1072,9 +1079,7 @@ Data generation for the Phenomelogy research strategy is mainly through the long
 \item ...
 \end{itemize}
 
-\begin{MoreDetails}
-\resourcelistcite{merleau1956phenomenology,anderson1991qualitative,smith2018phenomenology,shudak2018phenomenology,academic-educational-materials2019understanding,office2020the-phenomenological,groenewald2004a-phenomenological,hycner1985some}
-\end{MoreDetails}
+\RSActivity{phenomenology}{merleau1956phenomenology,anderson1991qualitative,smith2018phenomenology,shudak2018phenomenology,academic-educational-materials2019understanding,office2020the-phenomenological,groenewald2004a-phenomenological,hycner1985some}
 
 
 \subsection{Simulation}
@@ -1132,7 +1137,7 @@ For computer simulations:
 \item Have observations from analysis been noted, and results discussed in order to sense-make? Has over-interpretation of the results been avoided so that retrofitting to theories is avoided?
 \end{itemize}
 
-For mathematical and statistical modelling:
+For simulation:
 
 %
 \begin{itemize}
@@ -1146,10 +1151,7 @@ Do I already have the computing/mathematical/statistical skills that I need to u
 
 Do I have access to documentation sufficient to allow a simulation to be built?
 
-\begin{MoreDetails}
-\resourcelistcite{dooley2017simulation}
-\end{MoreDetails}
-
+\RSActivity{simulation}{dooley2017simulation}
 
 \subsection{Mathematical and logical proof}
 
@@ -1181,9 +1183,7 @@ Is the situation to which I want to apply formal proof amenable to formalisation
 
 Am I trying to predict future behaviours of a system? If so, mathematical, statistical or computational modelling might be a better option.
 
-\begin{MoreDetails}
-\resourcelistcite{Kleene1964,lakatos2015proofs,antonini2011examples}
-\end{MoreDetails}
+\RSActivity{mathematical and logical proof}{Kleene1964,lakatos2015proofs,antonini2011examples}
 
 \subsection{Mixed methods research}
 
@@ -1211,31 +1211,47 @@ Mixed methods research requires competence in more than a single research method
 
 Even if you are contemplating mixed methods research, perhaps as an extended research agenda leading to a PhD, at this point it may be that a focus on a single method as part of the mixed methods research will achieve what is required. If this is that case, then you should discuss with your supervisor. 
 
-\subsubsection{More details}
-
-[Add summary of decision process as a diagram]
-
+%\subsubsection{More details}
+%
+%[Add summary of decision process as a diagram]
+%
 \section{What to do now}
 
-Having read the previous section, at this point, you've two things to do:
-%
-\begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
-\item use your research aims and the \enquote{Is it right for me} to choose a research strategy, and for this strategy, to
-\item use the evaluation criteria to determine your results chapter.
-\end{enumerate}
-%
-
+\begin{question}[subtitle={Activity: Mixed methods follow up}]
+	Schedule some time with you supervisor to discuss your thought processes in choosing a research strategy. 
+\end{question}
 
 \begin{figure}[hbtp]
 \centering{
   \includegraphics[width=0.7\textwidth]{Figures/researchStrategies}
-  \caption{Research strategy choices 
+  \caption{Research strategy choices
   \label{fig:researchStrategies}
   	}  
   }
 \end{figure}
 
+\subsection{Research skills audit}
 
+\begin{question}[subtitle={Activity: Skills audit}]
+Something here
+\end{question}
+
+\subsection{For your chosen research strategy}
+
+\begin{question}[subtitle={Activity: Dissertation structure}]
+
+Whichever tool you've chosen in which to write your dissertation, create chapters entitled \enquote{research strategy}, \enquote{method}, and \enquote{Evaluation}. 
+
+\begin{guidance}
+	For the research strategy chapter, make notes from the paper you've read on the general form of the research strategy. 
+
+For the method chapter, add details on the methods that are used in the research strategy. For a complex strategy such as ethnography, you may not use all of them, but you will need to be explicit – when you come to complete it – as to which you have excluded and the reasons for their exclusion. 
+
+For the evaluation chapter, create subsections for each of the questions of your chosen research strategy from the lists above.
+\end{guidance}
+	
+\end{question}
+\color{black}
 \endinput
 
 
