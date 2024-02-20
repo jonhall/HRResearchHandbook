@@ -737,7 +737,7 @@ The approach we introduce in this section is one that we have used many hundreds
 
 \end{itemize}
 
-Kershav's approach is summarised in Table~\ref{tab:Keshav}.
+Keshav's approach is summarised in Table~\ref{tab:Keshav}.
 
 \begin{table}[htbp]
 \begin{minipage}{\linewidth}
@@ -1009,6 +1009,7 @@ During processing you need an efficient way to decide which of the papers in you
   You should keep an open mind at this point, as it is likely the articles you are considering will use a different terminology from yours. Nevertheless, you should be able to judge whether they are close enough to elements of your own research problem, particularly the knowledge gap and its context.  
   
 
+<<<<<<< HEAD
 %{\color{red} LR -- this, till the end of the sub-section, needs work; for Jon to do}
 %
 %It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
@@ -1066,6 +1067,56 @@ During processing you need an efficient way to decide which of the papers in you
 %\end{solution}\end{question}
 %%%Hack to correct tcbox behaviour
 %\color{black}
+=======
+It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
+
+{\color{red} LR -- this, till the end of the sub-section, needs work; for Jon to do}
+\begin{itemize}
+\item Directly: statements such as ``the prices of software services were \emph{observable} in this study'' -- the observables are the prices of software services.
+
+\item Indirectly: statement such as ``the prices of software services were \emph{not directly observable} in this study, so we used the proxy of hours worked accumulated across the team of developers'' -- the observables are the number of hours worked.
+
+\item As measurable: statements such as ``the number of bugs in the software were given through the collection of bug reports'' -- the observables are the bugs in the software.
+
+\item As inferences from other phenomena: statements such as ``the number of bugs in the software were estimated from the number of bug reports'' -- the observables are the number of bugs reported.
+\end{itemize}
+
+\begin{example}{Going back to our example of safety-critical development...}...one of the review articles we found in our search is:
+
+\fullcite{garousi2018testing}
+
+Its abstract reads\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.}:
+
+\newcommand{\firstquotedparagraph}[1]{\textbf{#1}\quad}%%So that textcquote places quotes in correct place
+
+\textcquote{garousi2018testing}{\firstquotedparagraph{Context}\quad Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
+
+\paragraph{Objective} However, reviewing and getting an overview of the entire state-of-the-art and the – practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
+
+\paragraph{Method} To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion\slash exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
+
+\paragraph{Results} Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
+
+\paragraph{Conclusion} The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques/approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an ``index'' to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.}
+
+\end{example}
+
+\begin{question}[subtitle={Activity: the relevance of early hits to your search terms}] For five of the hits to the search you conducted in Activity ??, fill in the relevancy matrix below, and score them for relevance.
+
+\begin{ltabulary}{\textwidth} {@{}LLL@{}}
+\textbf{Type}&\textbf{Comment}&\textbf{Score}\endhead
+ Direct & TBD& TBD\\
+ Indirect & & \\
+ Measurable & & \\
+ Inferences & & \\
+Complete this...& &
+\end{ltabulary}
+
+\begin{solution}TBD
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+>>>>>>> edit-stage3
 
 \paragraph{What to do when you find a potentially relevant paper}
 First thing you should do is to record it in your BMT. You should record it with the search term that you used to find it so that you can rerun the search to:
@@ -1518,7 +1569,12 @@ Thus, most academic research will be based on data and evidence. Data is the raw
 \begin{itemize}
 \item \textbf{Numerical} data are numbers\footnote{Yes, they are!}, such as the number of students registered on a module or the temperature in the UK in July (continuous). Simplifying a little, when numerical data has a whole-number values it is called discrete, otherwise it is continuous\footnote{Given the fundamental nature of energy, and the vagaries of quantum physics, it may be that we're incorrect in stating that real--world temperature is actually a continuous variable. However, even if it isn't, its values lie on a continuous scale.}. In either case, appropriate mathematical and statistical operations can be applied.
 
+<<<<<<< HEAD
 \item \textbf{Ordinal} data can be arranged in an order, but are not necessarily numerical. An example is the very widely used Likert scale\footnote{Almost certainly, the most recent survey you completed would have used the 5--point Likert scale mentioned here.} often used in questionnaires to elicit opinions. An example of a 5-point Likert scale is that ranging from `Strongly disagree' to `Strongly agree' with `Disagree', `Neither Disagree nor Agree', and `Agree' in the middle. While these values can be arranged in order\footnote{This might be done by giving `Strongly disagree' the numerical value 1, `Disagree' the numerical value 2, and so on.}, mathematical and statistical operations can only be applied in a limited way, for instance, taking the mean (or average) score of responses on a Likert scale.
+=======
+\item \textbf{Ordinal} data can be arranged in an order, but are not necessarily numerical. An example is the very widely used Likert scale\footnote{Almost certainly, the most recent survey you completed would have used the 5--point Likert scale mentioned here.} often used in questionnaires to elicit opinions. An example of a 5-point Likert scale is that ranging from Strongly disagree to Strongly agree with Disagree, Neither Disagree nor Agree, and Agree in the middle. While these values can be arranged in order\footnote{This might be done by giving Strongly disagree the numerical value 1, Disagree the numerical value 2, and so on.}, mathematical and statistical operations can only be applied with care, for instance, taking the mean (or average) score.\todo{Work in this reference.}
+\footnote{Read more about Likert scales use (and misuse) in \textcite{carifio2007ten}.]
+>>>>>>> edit-stage3
 
 \item \textbf{Interval} data are ordinal data, but for which we can know the distance between any two data points. For instance, calendar dates are interval data in the sense that we can calculate the time interval between two given dates, e.g., the number of days in between.
 
@@ -2091,7 +2147,11 @@ We feel exactly the same -- reflecting on what you've written causes a lot of gr
 
 At the same time, we've learned a lot from that reflection. For instance, we've been able to split up complex issues into more digestible chunks; we've identified new links between topics that we hadn't thought about before; we've read more about what the students we have worked with to understand more precisely their contributions; we've taken apart the materials we have written to ensure their validity in the Master's research context; and, last but not least, we've been able to generalise much of what we know of this topic to be more applicable across the board, while at the same time realising that there are special topics that will affect only a small part of our readership.
 
+<<<<<<< HEAD
 Reflection is the key to become a competent research practitioner. It is what allows you to constructs meaning around your own research practice, by turning back on yourself, becoming your own observer of your research attitude and actions. Understaning your research stance and  how it influences your research research process through ever deeper reflection as you progress, is the best way to become a competent researcher and produce research which engages (and impresses) your reader\footnote{{\ldots}and your examiner, who will want to know that you have reflected deeply on what you have done.} and keep them reading to the end.
+=======
+We feel exactly the same -- reflecting on what you've written causes a lot of grief, especially when you realise that it's not as good as it could have been\footnote{We've reflected on the materials for this book many many times{\ldots} that's meant redrafting, adding extra and -- hurtfully --  having to remove stuff that just wasn't good enough. It's changed --  for the better we hope -- because of it. You are free to disagree, and we'd welcome your reflection on it too.} and there are very good reasons to improve it.
+>>>>>>> edit-stage3
 
 Reflection is also the thinking of radical thoughts. There is a context into which all research fits that colours the knowledge that is its primary contribution, making it less valuable, less distinct, less out there. That context is a hegemony of received wisdom, of `common sense thinking', of uncritical investigation, none of which are necessarily knowledge. Reflection --  ''the voluntary disobedience of thought and reasoned undocility'' according to Foucault (1985) -- is your way of breaking that mould, of stepping out of conventionalism and of shaking up the world.
 

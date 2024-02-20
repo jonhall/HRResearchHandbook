@@ -1,10 +1,17 @@
 \documentclass[a4paper,12pt,oneside,landscape]{memoir}
 
+\usepackage{xparse}
+
 %%Footnotes
 \usepackage[perpage,side,symbol*]{footmisc}
 
+%%Temporary margin change
+\usepackage{changepage}
+
 %%options interpretation
 \usepackage{ifdraft}
+
+\usepackage{amssymb}
 
 %%Colors
 \usepackage[svgnames]{xcolor}
@@ -23,6 +30,7 @@
 %%Extended list environments
 \usepackage[inline,shortlabels]{enumitem}
 
+
 %%Xrefs
 \usepackage{hyperref}
 \usepackage{xurl}
@@ -31,12 +39,16 @@
 \usepackage{graphicx}
 \graphicspath{{Figures/}}
 
+%%To control paragraph separation
+\usepackage{parskip}
+
 %%Numbering options to subsection
 \setcounter{secnumdepth}{3}
 
 %%Quotes
-\usepackage{csquotes}
-%\AtBeginEnvironment{quote}{\itshape}
+\usepackage[threshold=15,thresholdtype=words,autopunct]{csquotes}
+\AddToHook{env/quote/before}{\textit}
+
 
 %%Underconstruction logo visible from overview
 \newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}
@@ -206,14 +218,23 @@ title={Tip},
 
 %%For additional caption options
 %%Allows captions in longtables
+<<<<<<< HEAD
 %\usepackage{caption}
 %\newcolumntype{l}{L}
+=======
+\usepackage{caption}
+\usepackage{float}
+>>>>>>> edit-stage3
 
-%%For tables
-\usepackage{longtable,tabulary}%%tabulary gives L column
+\input{tables}
+%%%For tables – intention is to migrate to tabularray
+%\usepackage{longtable,tabulary,tabularray}
+%\UseTblrLibrary{varwidth}%%For itemize in entries
+%\UseTblrLibrary{counter}%%For counters in tables
+
+%%tabulary gives L column
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
 \makeatletter
-
 \def\ltabulary{%
 	\def\endfirsthead{\\}%
 	\def\endhead{\\}%
@@ -238,7 +259,8 @@ title={Tip},
 \def\endltabulary{\endtabulary}
 
 %%so that tables extend into margin
-\newcommand{\tablewidth}{1.4\textwidth}
+\newdimen\tablewidth
+\setlength{\tablewidth}{1.4\textwidth}
 
 \makeatother
 

@@ -1,0 +1,188 @@
+\documentclass[10pt]{article}
+
+\title{ A research task toolkit }
+\author{Lucia Rapanotti \& Jon G.~Hall}
+%%Uncomment for date and version
+%\date{\footnotesize\today; Version: \version}
+
+%%For versioning
+\usepackage{mVersion}
+\setVersion{1.0}
+\increaseBuild
+
+%%Either wordlike or geometry but not both
+%\usepackage{wordlike}
+\usepackage[
+margin=2cm %%wide margins all round
+]{geometry}
+
+
+%%for fancy page headings. Uncomment \pagestyle below to include poetix in footer
+\usepackage{fancyhdr}
+\fancyhead[L,C,R]{} 
+\fancyfoot[L]{\poetix}
+\fancyfoot[C]{\thepage} 
+%\pagestyle{fancy}
+
+\usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
+
+%%Fonts stuff
+%%Explicit Italic, etx, for Texifier's old format
+\usepackage{mathspec}
+\setmainfont[
+	Mapping=tex-text,
+	BoldFont={* Bold},
+	ItalicFont={* Italic},
+	BoldItalicFont={* Bold Italic},
+%%Turns off ligatures
+%	Ligatures=NoCommon,
+%	Ligatures=NoRare,
+]{Baskerville}
+\setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
+
+%%Graphics
+\usepackage[allcolors=blue,final]{hyperref}
+\usepackage{graphicx}
+\graphicspath{/Figures/} % Default path is <root directory>/Figures
+
+
+%%Bibtex stuff
+\usepackage[
+	backend=bibtex,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN}
+\addbibresource{collatedBib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{\printbibliography}
+
+
+\usepackage{tabularray}
+\UseTblrLibrary{varwidth}%%For itemize in entries
+
+
+\usepackage[textsize=tiny,obeyFinal]{todonotes}
+% 2022-10-11: so that todo don't eat following spaces.
+% https://tex.stackexchange.com/questions/11802/todo-note-steals-space
+\usepackage{xpatch}
+\makeatletter
+\xpretocmd{\todo}{\@bsphack}{}{}
+\xapptocmd{\todo}{\@esphack}{}{}
+\makeatother
+
+
+%%Set up page look
+\usepackage{parskip}
+\usepackage{setspace}
+
+%%\doublespacing
+%\usepackage{calc}
+%\usepackage[textheight=26\baselineskip+10pt]{geometry}
+\usepackage{fancyhdr}
+
+\usepackage[inline,shortlabels]{enumitem}
+\usepackage{hyperref}
+\usepackage{xurl}
+
+%\def\@maketitle{\newpage
+%    \begin{flushleft}%
+%        \let\footnote\thanks%
+%       {\LARGE\bfseries\sffamily \@title \par\medskip}%
+%       {\large\@author\par}%
+%       {\large\@date}%
+%    \end{flushleft}\par\vskip\baselineskip%
+%    \thispagestyle{empty}}%
+
+\begin{document}
+\newcommand{\midtitle}[2]{\SetCell[c=3]{l}{\textbf{Research Strategy: #1}~\parencite{#2}}\\*%
+	Code&Description&Comments\\*%
+	}
+
+\SetCiteCommand{\parencite}
+\begin{longtblr}[%
+	expand=\midtitle,%\middditle needs to be expanded so that pattern matching from LaTeX3 can work
+	caption={Research: tasks, codes and descriptions},%caption is an outer key
+	label={tab:researchTasks},%we can add a label
+]{%
+	colspec = {r|X[2,l]X[7]},%first column right aligned, then 2/7 of remaining width
+%	column{1}={preto={\qquad}},%this doesn't seem to work
+%	row{1} = {font=\bfseries},%first row is bold, but don't need it because of \midtitle
+	measure=vbox,%needed to allow lists, \UseTblrLibrary{varwidth} added above
+	}
+%	Code&Description&Comments\\
+\midtitle{Experimental}{marczyk2005essentials}
+	 R&	Randomise sample from population& \textcquote[p.124]{marczyk2005essentials}{A true experimental design is one in which study participants are randomly assigned to experimental and control groups. We have discussed randomization in previous chapters, so this chapter will simply highlight the importance of randomization in terms of the strength of a research design. Although randomization is typically described using examples such as rolling dice, flipping a coin, or picking a number out of a hat, most studies now rely on the use of random numbers tables to help them assign their research participants (as discussed in Chapters 2 and 3).}\\
+	 O&	Observe phenomenon&\textcquote[p.119]{marczyk2005essentials}{Observation is another versatile approach to data collection. This approach relies on the direct observation of the construct of interest, which is often some type of behavior. In essence, if you can observe it, you can find some way of measuring it. The use of this approach is widespread in a variety of research, educational, and treatment settings.}\\
+	 X&	Change experimental variable&\textcquote[p.127]{marczyk2005essentials}{experimental manipulation (independent variable)}\\
+	 Y&	Change other variable&\textcquote[p.127]{marczyk2005essentials}{experimental manipulation (other variable)}\\
+	\\
+\midtitle{Quasi-experimental}{marczyk2005essentials}
+	 NR&		Non-random sampling&\textcquote[p.138]{marczyk2005essentials}{when randomized designs are not feasible, researchers must often make use of quasi-experimental designs. A good rule of thumb is that researchers should attempt to use the most rigorous research design possible, striving to use a randomized experimental design whenever possible (Campbell, 1969).
+	 
+	 Cook and Campbell (1979) present a variety of quasi-experimental designs, which can be divided into two main categories: nonequivalent comparison-group designs and interrupted time-series designs. In this section, we will discuss these two major groups of quasi-experimental designs, followed by a brief overview of single-subjects designs.}\\
+	 REV&	Before the intervention, then after&\textcquote[p.142]{marczyk2005essentials}{\textbf{Reversal Time-Series Design} Also known as an ABA design (detailed on page 145), the reversal time-series design is basically a multi-subject variation of the single-subject reversal design, which will be discussed later in this chapter. The basic goal of this design is to establish causality by presenting and withdrawing an intervention, or independent variable, one to several times while concurrently measuring change in the dependent variable (as depicted in the following). As in the simple time-series design, this design begins with a series of pretests to observe normal ﬂuctuations in baseline. The name “reversal” refers to the idea that causality can be inferred if changes that occur following the presentation of an intervention diminish or “reverse” when the independent variable is withdrawn.}\\
+	 ABA&	Before, Intervention, After&See REV.\\
+	 ABABA&	Iterated ABA&See REV.\\
+	 ABABA...&Further Iterated ABA	&See REV.\\
+	 EC&	Establish control&\textcquote[p.144]{marczyk2005essentials}{As with time-series designs, single-subject designs typically begin by establishing a stable baseline. Establishing a stable baseline involves taking repeated measures of a participant’s behavior (dependent variable) prior to the administration of any intervention to make certain that the participant’s behavior is occurring at a consistent rate. To obtain a stable baseline, the researcher must make special efforts to control all relevant environmental variables that otherwise might affect the participant’s responses. If the researcher does not know, or is uncertain, about which variables are relevant, the researcher must attempt to keep the participant’s environment as constant as possible by maintaining highly controlled conditions.}\\
+	 1P&	Single participant&\textcquote[p.144]{marczyk2005essentials}{Not to be confused with non-experimental single-subject case studies, which are covered later in this chapter, the single-subject experimental design has a long and respected tradition in empirical research. According to Kazdin (2003c), single-subject experiments might be seen as true experiments because they “can demonstrate causal relationships and can rule out or make implausible threats to validity with the same elegance of group research” (p. 273). Similar to other experimental designs, the single subject design seeks to (1) establish that changes in the dependent variable occur following introduction of the independent variable (temporal precedence) and (2) identify differences between study conditions.
+	 
+	 The one way that single-subject designs differ from other experimental designs is in how they establish control, and thereby demonstrate that changes in a dependent variable are not due to extraneous variables. For example, experimental designs rely on randomization to equally distribute extraneous variables and on statistical techniques to control for such factors if they are found. Alternatively, single-subject designs eliminate between-subject variables by using only one participant, and they control for relevant environmental factors by establishing a stable baseline of the dependent variable. If change occurs following the introduction of the intervention, or independent variable, the researcher can reasonably assume that the change was due to the intervention and not to extraneous factors.}\\
+	 SB&	Stable Baseline&See 1P\\
+	 RC&	Retain control of Env&See 1P\\
+	 \\
+\midtitle{Non-experimental}{yin2009case}
+	CS& 	Choose subject&\textcquote[p.144]{marczyk2005essentials}{single-subject designs eliminate between-subject variables by using only one participant, and they control for relevant environmental factors by establishing a stable baseline of the dependent variable. If change occurs following the introduction of the intervention, or independent variable, the researcher can reasonably assume that the change was due to the intervention and not to extraneous factors.
+	
+	As with time-series designs, single-subject designs typically begin by establishing a stable baseline. Establishing a stable baseline involves taking repeated measures of a participant’s behavior (dependent variable) prior to the administration of any intervention to make certain that the participant’s behavior is occurring at a consistent rate. To obtain a stable baseline, the researcher must make special efforts to control all relevant environmental variables that otherwise might affect the participant’s responses. If the researcher does not know, or is uncertain, about which variables are relevant, the researcher must attempt to keep the participant’s environment as constant as possible by maintaining highly controlled conditions.}\\
+	Comp&	Comprehensive description&\textcquote[p.148]{marczyk2005essentials}{the focus of the case-study approach is on individuality and describing the individual as comprehensively as possible. The case study requires a considerable amount of information, and therefore conclusions are based on a much more detailed and comprehensive set of information than is typically collected by experimental and quasi-experimental studies.}\\
+	IDIP&	In-depth interviews with participants&\textcquote[p.148]{marczyk2005essentials}{Case studies of individual participants often include in-depth interviews with participants ...}\\
+	IDIC&	In-depth interviews with collaterals&\textcquote[p.148]{marczyk2005essentials}{...and collaterals (e.g., friends, family members, colleagues), review of medical records, observation, and excerpts from participants’ personal writings and diaries}\\
+	RA&		Review of artefacts&\textcquote[p.148]{marczyk2005essentials}{According to Kazdin (1982), the major characteristics of case studies are the following:
+	\begin{itemize}
+		\item They involve the intensive study of an individual, family, group, institution, or other level that can be conceived of as a single unit.
+		\item The information is highly detailed, comprehensive, and typically reported in narrative form as opposed to the quantified scores on a dependent measure.
+		\item They attempt to convey the nuances of the case, including specific contexts, extraneous influences, and special idiosyncratic details.
+		\item The information they examine may be retrospective or archival.
+	\end{itemize}}\\
+%	(RQ)&	Research question??\\
+	PROPS&	Identify propositions&\textcquote[p.28]{yin2009case}{\textbf{Study propositions} [...] each proposition directs attention to something that should be examined within the scope of study.}\\
+	UNITS&	Identify units&\textcquote[p.29]{yin2009case}{\textbf{Unit of analysis} [...] related to the fundamental problem of defining what the \enquote{case} is [... what the primary unit of analysis is].
+	
+Without such questions and propositions, you might be tempted to cover \enquote{everything} about the individual(s), which is impossible to do.}\\
+	LINKS&	Identify how is data linked to propositions&\textcquote[p.34ff]{yin2009case}{be aware of the main choices and how they might suit your case study]}\\
+	CRITS&Which are criteria to interpret findings&\textcquote[p.34]{yin2009case}{Criteria for interpreting a study's findings}\\
+	THD&Theory Development&\textcquote[p.35]{yin2009case}{[including types on p.37]}\\
+	GEN&Generalisation&\textcquote[p.38]{yin2009case}{[including Fig 2.2]}\\
+	NAR&Narrative&\textcquote[p.121]{yin2009case}{Certain types of narrative, produced by a case study investigator upon completion of all data collection, also may be considered a formal part of the database and not part of the final case study report. The narrative reflects a special practice that should be used more frequently: to have case study investigators compose open-ended answers to the questions in the case study protocol. This practice has been used on several occasions in multiple-case studies designed by the author (see BOX 24). 
+	
+	[Box 24]
+	
+		In such a situation, each answer represents your attempt to integrate the available evidence and to converge upon the facts of the matter or their tentative interpretation. The process is actually an analytic one and is the start of the case study analysis. The format for the answers may be considered analogous to that of a comprehensive "take-home" exam, used in academic courses. You the investigator\todo[inline]{[Should be included, or does this come from other writing bits?]}}\\
+	{NSC\\NEI\\NID}&Nuance from the specific context/extraneous influences/idiosyncratic details&\textcquote{kazdin1982single}{According to Kazdin(1982), the major characteristics of case studies are the following:
+		\begin{itemize}
+			\item  They involve the intensive study of an individual, family, group, institution, or other level that can be conceived of as a single unit.
+			\item The information is highly detailed, comprehensive, and typically reported in narrative form as opposed to the quantiﬁed scores on a dependent measure.
+			\item They attempt to convey the nuances of the case, including speciﬁc contexts, extraneous inﬂuences, and special idiosyncratic details.
+			\item The information they examine may be retrospective or archival.
+		\end{itemize}}\\ 
+%	NEI&Nuance from extraneous influences\\ 
+%	NID&Nuance from idiosyncratic details\\
+	\\
+\midtitle{Design Science Research}{oates2007researching}
+	PSA&Problem solving awareness&\textcquote[p.111]{oates2007researching}{Awareness is the recognition and articulation of a problem, which can come from studying the literature where authors identify areas for further research, or reading, about new findings in another discipline, or from practitioners or clients expressing the need for something, or from field research or from new developments in technology.}\\
+	PSS&Problem solving suggestion&\textcquote[p.112]{oates2007researching}{Suggestion involves a creative leap from curiosity about the problem to offering a very tentative idea of how the problem might be addressed}\\
+	PSD&Problem solving development&\textcquote[p.112]{oates2007researching}{Development is where the tentative design idea is implemented. How this is done depends on the kind of IT artefact being proposed. For example, an algorithm might need the construction of a formal proof. A new user interface embodying novel theories about human cognition will require software development. A systems development method will need to be captured in a manual that can then be followed in a systems development project. A new approach in digital art might require the development of an art portfolio tracing the development of the artist's creative ideas.}\\
+	PSE&Problem solving evaluation&\textcquote[p.112]{oates2007researching}{Evaluation examines the developed artefact and looks for an assessment of its worth and deviations from expectations.}\\
+	PSC&Problem solving conclusion&\textcquote[p.112]{oates2007researching}{Conclusion is where the results from the design process are consolidated and written up, and the knowledge gained is identified, together with any loose ends - unexpected or anomalous results that cannot yet be explained and could be the subject of further research.}\\
+\midtitle{General}{}	
+	VALID&	Threats to validity&\textcquote[p.40]{yin2009case}{fours (general) tests for validity}\\
+	BIAS&	Reflection on bias&\textcquote[p.72]{yin2009case}{[Avoiding bias for case studies]}\\ 
+\end{longtblr}
+
+
+\end{document}
