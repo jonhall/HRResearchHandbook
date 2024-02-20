@@ -1507,16 +1507,19 @@ Thus, most academic research will be based on data and evidence. Data is the raw
 \textbf{Quantitative data} are data that can be quantified or measured, and be given numerical values. They include the following types:
 
 \begin{itemize}
-\item \textbf{Numerical} data are numbers\footnote{Yes, they are!}, such as the number of students registered on a module or the temperature in the UK in July (continuous). Simplifying a little, when numerical data has a whole-number values it is called discrete, otherwise it is continuous\footnote{Given the fundamental nature of energy, and the vagaries of quantum physics, it may be that we're incorrect in stating that real--world temperature is actually a continuous variable. However, even if it isn't, its values lie on a continuous scale.}. In either case, appropriate mathematical and statistical operations can be applied.
+\item \textbf{Numerical} data are numbers\footnote{Yes, they are!}, such as the number of students registered on a module or the temperature in the UK in July. Simplifying a little, when numerical data has a whole-number value it is called discrete, otherwise it is continuous\footnote{Given the fundamental nature of energy, and the vagaries of quantum physics, it may be that we're incorrect in stating that real--world temperature is actually a continuous variable. However, even if it isn't, its values lie on a continuous scale.}. In either case, appropriate mathematical and statistical operations can be applied to them, values can be ordered, and the interval between two numbers can be calculated exactly.
 
-\item \textbf{Ordinal} data can be arranged in an order, but are not necessarily numerical. An example is the very widely used Likert scale\footnote{Almost certainly, the most recent survey you completed would have used the 5--point Likert scale mentioned here.} often used in questionnaires to elicit opinions. An example of a 5-point Likert scale is that ranging from Strongly disagree to Strongly agree with Disagree, Neither Disagree nor Agree, and Agree in the middle. While these values can be arranged in order\footnote{This might be done by giving Strongly disagree the numerical value 1, Disagree the numerical value 2, and so on.}, mathematical and statistical operations can only be applied with care, for instance, taking the mean (or average) score.\todo{Work in this reference.}
+\item \textbf{Ordinal} data are non numerical data that can be arranged in an order. An example is the very widely used Likert scale\footnote{Almost certainly, the most recent survey you completed would have used the 5--point Likert scale mentioned here.} often used in questionnaires to elicit opinions. An example of a 5-point Likert scale is that ranging from `Strongly disagree' to `Strongly agree' with `Disagree', `Neither Disagree nor Agree', and `Agree' in the middle. While these values can be arranged in order\footnote{This might be done by giving `Strongly disagree' the numerical value 1, `Disagree' the numerical value 2, and so on.}, mathematical and statistical operations can only be applied in a limited way, for instance, taking the mean (or average) score of responses on a Likert scale.
 \footnote{Read more about Likert scales use (and misuse) in \textcite{carifio2007ten}.}
 
-\item \textbf{Interval} data are ordinal data, but for which we can know the distance between any two data points. For instance, calendar dates are interval data in the sense that we can calculate the time interval between two given dates, e.g., the number of days in between.
+\item \textbf{Interval} data are data which can be arranged on a scale, so that we can calculate the distance between any two data points. All numerical data are also interval data, but interval data may not be numerical. For instance, calendar dates are interval data as we can calculate the time interval between two given dates, e.g., the number of days in between.
 
+\item \textbf{Ratio} data are numerical data with an absolute zero considered as a point of origin, that is no negative values are possible. Examples include a person's high, weight or their wage from employment: none of these can take a meaningful value less than zero.
 \end{itemize}
 
-\textbf{Qualitative data, on the other hand,} are descriptive in nature and defy ordering. Sentences, words, images, sounds, etc., are all examples of qualitative data. An important subclass of qualitative data is \textbf{categorical} data\footnote{Categorial data, also called nominal data, because data is categorised or named. An example might be Dog, Cat, Alligator, Rock.} which is data that cannot be ordered and on which mathematical operations and functions don't apply.
+\textbf{Qualitative data, on the other hand,} are descriptive in nature and defy ordering. Sentences, images, sounds, etc., are all examples of qualitative data. An important subclass of qualitative data is \textbf{nominal} data commonly used to denote categories, for instance, Dog, Cat, Alligator, etc. These data cannot be ordered and mathematical operations and functions don't apply to them.
+
+Note that in Statistics ordinal data and nominal data are called \textbf{categorical} data, exactly because they are used to denote categories, which may or may not be ordered. This also means that categorical data span the quantitative/qualitative divide.
 
 Data and evidence are also classed as:
 
@@ -1524,11 +1527,11 @@ Data and evidence are also classed as:
 
 - \textbf{secondary}, when already available from previous research, and re-used during new research.
 
-The academic literature that will be at the core of your literature review\footnote{A bit or a hint for the next Activity:)} is secondary evidence, as are all other published academic and non academic documents, e.g., laws, policies and procedures, official reports, etc.
+The academic literature that will be at the core of your literature review\footnote{A bit or a hint for the next Activity :)} is secondary evidence, as are all other published academic and non academic documents, e.g., laws, policies and procedures, official reports, etc.
 
 \begin{example}{Curriculum Analytics example, cont'd} 
 In our example, to conduct our research we would need to make use of a range of curriculum data which are likely to include both quantitative (e.g., number of students, pass rates, etc.) and qualitative data (e.g., components of a programme of study, learning outcomes, etc.). These will be all secondary data, in the sense that they will be provided by the target university for us to apply a range of modelling techniques.
-In terms of outcomes of our research, we are envisaging some form of stakeholders' evaluation of the effectiveness of the techniques, so we are likely to generate, as primary evidence, mainly  qualitative data.
+In terms of outcomes of our research, we are envisaging some form of stakeholders' evaluation of the effectiveness of the techniques, so we are likely to generate, as primary evidence, mainly  qualitative data. 
 \end{example}
 
 \begin{question}[subtitle={Activity: Considering types of data and evidence in your project}] List and justify the kinds of data and evidence your research will make use of or generate. 
@@ -1590,7 +1593,7 @@ Your responsibilities as a researcher, many of which we will consider in this se
 
 \item Comply with legal requirements in relation to health and safety and the protection of personal data.
 
-\item Guard against all form of bias in your research.
+\item Guard against all forms of bias in your research.
 
 \end{itemize}
 
@@ -1633,7 +1636,7 @@ Our university has a very comprehensive set of ethical guidelines and codes for 
 \color{black}
 
 
-\subsubsection{Personal data in research}
+\subsubsection{Personal data in research}\label{sect:personalData}
 In your research, you may wish to collect data about your human participants. The collection and use of this kind of data is usually regulated by law, although the specifics may change from country to country, and the university with which you're studying might add specific guidance too.
 
 Within the European Union, the EU General Data Protection Regulation (GDPR) applies.\footnote{At the time of writing{\ldots}} GDPR defines \textbf{personal data} as any information which may identify a living person, be that a name or a personal identification number, or a combination of physical characteristics, or cultural or social identities, and establishes rules for the use of such data.
@@ -1755,7 +1758,7 @@ Generalisation, on the other hand, can be used when more specific data can be re
 
 It is therefore important that you consider carefully how personal data are to be used in your project when choosing an anonymisation technique.
 
-\subsection{Equity, Diversity and Inclusion in research}
+\subsubsection{Equity, Diversity and Inclusion in research}
 Equity, diversity, and inclusion (EDI for short) are important ethical considerations in research. Not only is EDI important for society, but good research EDI leads to better research as your and others' biases can be compensated for.
 
 In the UK, national EDI definitions and principles have been established across the academic sector by UK Research and Innovation, which is a government body that brings together all UK research councils responsible for supporting research and knowledge exchange in UK higher education institutions. In your own country, similar guidance may also exist.
@@ -1809,40 +1812,6 @@ Your answer may include some of the following:
 \color{black}
 
 
-\subsubsection{Bias in research}\label{sect:biasInResearch}
-
-Bias is a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence. Cognitive bias, in particular, prevents people from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning. 
-
-Bias is problematic when it leads to the unfair treatment of others, particularly as a result of pre-conceptions or prejudice.  Bias is subtle. We are all affected by it. It is easy to see in others, but extremely difficult to see in oneself.
-
- Bias can damage research findings, leading to outcomes which are unreliable, and casting doubt on the claimed knowledge contribution. To be a good researcher you should assume that you are affected by many different forms of bias and work to eliminate them from your work. The upside is that you will be a better researcher for doing this.
- 
- Several forms of bias have been recognised in research: you can do some preliminary work on identifying general biases that might affect you by looking on the web.
-
-\begin{question}[subtitle={Activity: Bias in research}]  Conduct a web search on types of bias affecting research and ways to mitigate them. List and summarise the main kinds you find, and their counter-measures. Make sure you include bias which relate to the use of data\footnote{Data bias is becoming more and more topical with the rise of AI algorithms which may replace human decision makers.}.
-
-\begin{solution}Among others, you may have encountered the following:
-
-\begin{itemize}
-\item Confirmation bias, which is the tendency to favour the selection, analysis and interpretation of data which support the researcher's prior beliefs. A way to counteract it is to consider your own beliefs and actively look for reasons why you might be wrong. Another way is to ask colleagues and/or your peers to review your work, including your arguments and results. 
-
-\item Observation bias\footnote{Observation bias is also known as the Hawthorne effect. You can read about the original Hawthorne experiment here: \textbackslash{}url\{\href{https://en.wikipedia.org/wiki/Hawthorne_effect}{https:\slash \slash en.wikipedia.org\slash wiki\slash Hawthorne\_effect}\}}, which is the tendency of participants being observed during a study to change their behaviour, possibly to please the researcher or provide the answers they think the research is seeking. A way to counteract it is to complement your observation with other kinds of data collection and compare the outcomes -- this is called triangulation.
-
-\item Selection bias, which occurs when data is selected subjectively, leading to samples which are not representative of the population under study. A common way to avoid selection bias is randomisation.
-
-\item Recall bias, which is the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories of the past. Reducing the recall period, for instance by interviewing participant soon after the fact, or  asking then to keep detailed diaries of their experience are ways to mitigating it. 
-
-\item Algorithmic bias, particularly in relation to AI applications, which occurs when an algorithm produces outcomes systematically and repeatably which disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic in itself, so much remains unknown. However, involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outcome is an effective approach, alongside ensuring that the working of the algorithm are transparent to its users, and its behaviour can be explained.
-\end{itemize}
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
-All bias can damage your research. However, confirmation bias is very easy to fall into, can be very disruptive, and can arise when you have too personal a stake in the research beyond the project itself. For example, you may be the manager of a process you are seeking to improve. This means that you will have a stake in the research subject beyond meeting your Masters academic requirements. Although this can be a strength, in that, since you already have an interest in, and knowledge of, the research subject and context, you are likely to have insights into the causes of problems and the factors that have an impact on them, it can also be a weakness in that it may lead you to focus on evidence that confirms any existing beliefs that you might have about how the process should improve, while dismissing evidence that does not support them\footnote{In the worst case, you might find that your current approach to improvement is wrong which might be visible to others within your organisation. If you find yourself in this situation and, in our experience, it does happen, it can be very hard to deal with this sort of bias.}. This may result in a lack of objectivity, and a tendency to make subjective judgements instead of an evaluation based on sound evidence.
-
-Another effect of confirmation bias is that you clearly see a problem where no-one in your readership does. So much so that you don't feel you have to explain the problem or convince others that it exists.
-
-In our experience, both of these can hamper progress. The latter is especially pernicious: that you see a problem is great, but can you find sufficient evidence in the academic literature?
 
 \subsubsection{Research involving animals}
 %to do
@@ -1912,6 +1881,14 @@ It relies on algorithms trained on vast amounts of digital data, from which they
 
 Learning and originality have a specific meaning in GenAI. Learning is the process followed by the algorithm to build an abstract model from the data used in training, which can then be used to generate content similar to those data, be that text, images, sounds, or other. Originality refers to the fact that the particular content generated is not copied from an existing repository, but constructed by the algorithm based on its abstract model combined with the vast repository of information it has access to: as a result no two answers to the same user's query are exactly the same.
 
+\subsubsection{Use of AI in research}
+*** to do!!!! -- go back to video on youtube
+
+\subsubsection{Bias in research}\label{sect:biasInResearch}
+
+Bias is a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence. Cognitive bias, in particular, prevents people from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning. 
+
+Bias is problematic when it leads to the unfair treatment of others, particularly as a result of pre-conceptions or prejudice.  Bias is subtle. We are all affected by it. It is easy to see in others, but extremely difficult to see in oneself.
 
 \begin{question}[subtitle={Activity: Investigating GenAI systems}] 
 Conduct a web search on GenAI systems. List the ones you have found and indicate their use.
@@ -1941,6 +1918,34 @@ GenAI is a fascinating subject, which is generating, as it may be expected, much
 
 Because of this, organisations, and particularly academic institutions, are developing their own rules and regulations on the use of GenAI by staff and students. If you are considering using GenAI in your project, you should become familiar with your university' position on what you can and can't do.
 
+ Bias can damage research findings, leading to outcomes which are unreliable, and casting doubt on the claimed knowledge contribution. To be a good researcher you should assume that you are affected by many different forms of bias and work to eliminate them from your work. The upside is that you will be a better researcher for doing this.
+ 
+ Several forms of bias have been recognised in research: you can do some preliminary work on identifying general biases that might affect you by looking on the web.
+
+\begin{question}[subtitle={Activity: Bias in research}]  Conduct a web search on types of bias affecting research and ways to mitigate them. List and summarise the main kinds you find, and their counter-measures. Make sure you include bias which relate to the use of data\footnote{Data bias is becoming more and more topical with the rise of AI algorithms which may replace human decision makers.}.
+
+\begin{solution}Among others, you may have encountered the following:
+
+\begin{itemize}
+\item Confirmation bias, which is the tendency to favour the selection, analysis and interpretation of data which support the researcher's prior beliefs. A way to counteract it is to consider your own beliefs and actively look for reasons why you might be wrong. Another way is to ask colleagues and/or your peers to review your work, including your arguments and results. 
+
+\item Observation bias\footnote{Observation bias is also known as the Hawthorne effect. You can read about the original Hawthorne experiment here: \textbackslash{}url\{\href{https://en.wikipedia.org/wiki/Hawthorne_effect}{https:\slash \slash en.wikipedia.org\slash wiki\slash Hawthorne\_effect}\}}, which is the tendency of participants being observed during a study to change their behaviour, possibly to please the researcher or provide the answers they think the research is seeking. A way to counteract it is to complement your observation with other kinds of data collection and compare the outcomes -- this is called triangulation.
+
+\item Selection bias, which occurs when data is selected subjectively, leading to samples which are not representative of the population under study. A common way to avoid selection bias is randomisation.
+
+\item Recall bias, which is the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories of the past. Reducing the recall period, for instance by interviewing participant soon after the fact, or  asking then to keep detailed diaries of their experience are ways to mitigating it. 
+
+\item Algorithmic bias, particularly in relation to AI applications, which occurs when an algorithm produces outcomes systematically and repeatably which disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic in itself, so much remains unknown. However, involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outcome is an effective approach, alongside ensuring that the working of the algorithm are transparent to its users, and its behaviour can be explained.
+\end{itemize}
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+All bias can damage your research. However, confirmation bias is very easy to fall into, can be very disruptive, and can arise when you have too personal a stake in the research beyond the project itself. For example, you may be the manager of a process you are seeking to improve. This means that you will have a stake in the research subject beyond meeting your Masters academic requirements. Although this can be a strength, in that, since you already have an interest in, and knowledge of, the research subject and context, you are likely to have insights into the causes of problems and the factors that have an impact on them, it can also be a weakness in that it may lead you to focus on evidence that confirms any existing beliefs that you might have about how the process should improve, while dismissing evidence that does not support them\footnote{In the worst case, you might find that your current approach to improvement is wrong which might be visible to others within your organisation. If you find yourself in this situation and, in our experience, it does happen, it can be very hard to deal with this sort of bias.}. This may result in a lack of objectivity, and a tendency to make subjective judgements instead of an evaluation based on sound evidence.
+
+Another effect of confirmation bias is that you clearly see a problem where no-one in your readership does. So much so that you don't feel you have to explain the problem or convince others that it exists.
+
+In our experience, both of these can hamper progress. The latter is especially pernicious: that you see a problem is great, but can you find sufficient evidence in the academic literature?
 \begin{question}[subtitle={Activity: Understanding your university's guidelines on generative AI}] Using your university's intranet look up any policy or guideline related to the use of generative AI. Write a brief summary of what you have found out which may be relevant to your Masters project work.
 \begin{solution} 
 Our university explicitly states some admissible and not admissible uses of GenAI. In particular, it considers inadmissible, and a form of plagiarism, to copy and paste content generated by an AI system without proper attribution. On the other hand, admissible uses include:
