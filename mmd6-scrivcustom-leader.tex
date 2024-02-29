@@ -3,7 +3,11 @@
 \usepackage{xparse}
 
 %%Footnotes
-\usepackage[perpage,side,symbol*]{footmisc}
+\usepackage[perpage,side,marginal,symbol*]{footmisc}
+\usepackage{ textcomp }%%For text cricle
+
+\DefineFNsymbols{hallrapanotti}{{\color{red}\textbullet}{\color{green}\textbullet}{\color{blue}\textbullet}{\color{orange}\textbullet}{\color{gray}\textbullet}{\color{purple}\textbullet}{\color{black}\textbullet}}
+\setfnsymbol{hallrapanotti}
 
 %%Temporary margin change
 \usepackage{changepage}
@@ -22,10 +26,15 @@
 	style=authoryear,
 	autocite=inline,
 	sortcites,
-	backref=true
+	backref=true,
 ]{biblatex}
 \addbibresource{MY-BIB-CLEAN}
 \addbibresource{collatedBib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{%
+\ifoptionfinal{\printsolutions}{}
+	\printbibliography}
 
 %%Extended list environments
 \usepackage[inline,shortlabels]{enumitem}
@@ -277,21 +286,6 @@ title={Tip},
 %	} 
 %\setmainfont[BoldFont=\boldfont]{\mainfont}
 
-%%Bibtex stuff
-\usepackage[
-	backend=bibtex,
-	style=authoryear,
-	autocite=inline,
-	sortcites,
-	backref=true
-]{biblatex}
-\addbibresource{MY-BIB-CLEAN}
-\addbibresource{collatedBib}
-
-%%Ensure bibliography always included, even if \end{document} early
-\AtEndDocument{%
-\ifoptionfinal{\printsolutions}{}
-	\printbibliography}
 
 %%\begin{stolen} to identify uncredited material
 \newenvironment{stolen}[1]{\bgroup\color{red}\marginpar{Material stolen from #1}}{\egroup}
