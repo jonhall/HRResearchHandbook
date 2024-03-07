@@ -1,3 +1,5 @@
+\renewcommand*{\mkccitation}[1]{~(#1)}
+
 \chapter*{Stage 4: Gathering and analysing data}
 
 You've now reached Stage 4, which means the end of your project is now in sight. In this stage you will be in the midst of your data gathering and analysis, which is possibly the most exciting, yet demanding, part of your research: this is where you get an opportunity to make your original contribution to knowledge.
@@ -39,21 +41,21 @@ By the end of Stage 4 your data generation, analysis and interpretation should b
 
 \section{Generating raw research data}
 
-Your \textit{raw data} represent any data and evidence you generate as part of your research. 
+Your \textit{raw data} represent any data\footnote{Some authors may also describe data as \emph{evidence}.} you generate as part of your research. 
 
 Which data you generate and how it is determined by the choices you have made in your research design, informed by your research aim and objectives. In this section, we look at key topics in generating data. This section provides 
 %
 \begin{itemize}
-\item design tips and techniques
-\item a workflow to get your data generation going
-\item weaknesses exposed through the data generating technique
-\item further sources to consult for more detail
+\item design tips and techniques for each technique;
+\item a basic workflow to get your data generation going;
+\item weaknesses exposed through the data generating technique;
+\item further sources to consult for more detail.
 \end{itemize}
 %
 
 %\subsection{Data generation}
 
-When we say \enquote{data generation}, we don't necessarily mean that you will create a new-to-the-world \enquote{data}\footnote{Although this might indeed be the outcome of your data generation.} We simply mean new-to-your-masters-project data. 
+When we say \enquote{data generation}, we don't necessarily mean that you will create a new-to-the-world \enquote{data}\footnote{Although this might indeed be the outcome of your data generation.}. We simply mean new-to-your-masters-project data. 
 
 New-to-your-masters-project covers a multitude of sins, including:
 %
@@ -77,7 +79,7 @@ In the following, we step through the most used data generation methods – thos
 
 \subsection{Sampling: what, who (and how) to choose}\label{sect:DG:sampling}
 
-A core element of many of the data generating techniques described below is the choice of data source. You've already had experience of choosing data sources when you conducted your literature search as part of Stage~\ref{stage:?}\footnote{You might remember the relatively complex procedures for recording search terms, discovered papers, their relationships, and your growing collection of notes on them.}. \todo{More here} 
+A core element of many of the data generating techniques described below is the choice of data source\footnote{Of course, you've already had experience of choosing data sources when you conducted your literature search as part of Stage~\ref{stage:?}; you might remember the relatively complex procedures for recording search terms, discovered papers, their relationships, and your growing collection of notes on them.}. \todo{More here} 
 
 Unless you had infinite amounts of time – which you didn't – and infinite patience – which you might have – you could never be 100\% certain that your literature search collected \emph{all} relevant papers  the search space is infeasibly large (and not indexed particularly well). But you were systematic and achieved a practically good\footnote{By \emph{practically good}, we mean you found the most of the most important papers, some other papers, and didn't have to read \emph{every single paper}. I.e., you found a \emph{representative sample}.} coverage because of that.\todo{More here?}
 
@@ -124,7 +126,9 @@ You can skip this activity if sampling is not indicated by your choice of resear
 \todo{Add other core techniques here; which are there?}
 
 \newcommand{\ResGenTechnique}[1]{\begin{question}[subtitle={Activity: Do I need to know about #1}]
-Check back to your choice of research strategy. If you've chosen one that uses #1. If so, read the next section and complete the activities.
+Check back to your list of candidate research strategies that you complete in Section~\ref{sec:??}. Does it include a research strategy involving data generation using #1? 
+
+If so, read the next section and complete the activities.
 \end{question}}
 
 \newcommand{\ResGenExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
@@ -133,6 +137,32 @@ To find out more about #1, take a look at these resources:
 \cites{#2}
 
 \end{question}}
+
+\section{Data gathering tools and techniques}
+
+\subsection{Observations}\label{sect:DG:observations}
+
+\ResGenTechnique{Observations}
+
+Empirical data is the benchmark against which theories and advances in knowledge are made, and observation is the way in which empirical data is generated. In effect, \textcquote{marvasti2014analysing}{Observation is the foundation of science.}
+
+\subsubsection{Observation tools}
+
+\blockcquote{daston2011introduction}{Observation is the most pervasive and fundamental practice of all modern sciences, both natural and human. It is also among the most refined and variegated. Observation educates the senses, calibrates judgment, picks out objects of scientific inquiry, and forges \enquote{thought collectives}. Its instruments include not only the naked senses, but also tools such as the telescope and the microscope, the questionnaire, the photographic plate, the glassed-in beehive, the Geiger counter, and a myriad of other ingenious inventions designed to make the invisible visible, the evanescent permanent, and the abstract concrete. Where is society? How blue is the sky? Which ways do X-rays scatter? Over the course of centuries, scientific observers have devised ways to answer these and many other riddles.}
+
+That the techniques of observation have grown alongside the sciences means that there are a  vast collection and many, many deep specialisations of them in specific circumstances. Whole books have been written on them and we can give but a very shallow introduction to them. We will, however, note that they can be observed is core to the characteristics of phenomena, and so it is the phenomena that you have identified as part of your research problem that you will be observing, whether they are interactions between atoms, between school children, or even your own actions, thoughts, and – perhaps even – biases. 
+
+This means that all research strategies will, to some extend, test your ability to observe. 
+
+It may be that, in the course of your research, you will observe related or proxy phenomena, as needs must. Part of your observation skills will be to identify those related to and proxies for. Part of your observations will be your ability to record those observations and to iterate those records into structures that capture the characteristics that are necessary to do the research on their back. 
+
+\subsubsection{Workflow}
+
+todo{Is there something to add here? Perhaps some precis of marvasti or one of the other sources?}
+
+\subsubsection{Other things to think about}
+
+\ResGenExtras{observations}{daston2011introduction,marvasti2014analysing,simpson2003using,driscoll2011introduction,angrosino2011observations}
 
 \subsection{Interviews}\label{sect:DG:sampling}
 
@@ -165,7 +195,14 @@ The semi-structured interview does not naturally time-bound the interaction, and
 
 \subsubsection{Workflow}
 
-Your characteristics\footnote{Domain knowledge, needs for deep insight, etc.} will determine whether you choose structure, semi-structured, or the unstructured form. 
+Your characteristics will determine whether you choose structure, semi-structured, or the unstructured form. Essentially, if you:
+%
+\begin{itemize}
+\item already have a good level of domain knowledge then you can use on the less structured interview models, as you will be able to follow your participants' answers more easily and direct their comments towards your research areas\footnote{Of course, you can always use structured interviews even if you do have domain knowledge – there's nothing to stop you.}. If you don't already have a good level of domain knowledge, then you will be putting more effort into the design of the interview, so that you can simply capture your participants' responses to your – well-designed – questions. 
+\item need deep insight then, again, you should use the less structured interview forms as these can allow you to probe your participants responses\footnote{The less structured interview form you choose, the more domain knowledge you'll need. See the previous item.}.
+\item more here...
+\end{itemize}
+%
 
 Your next step is to identify whom to interview – see the section on sampling above for guidance.
 
@@ -232,50 +269,53 @@ Repeat this with as many willing participants as you can until you're happy with
 \ResGenExtras{interviews}{[C13]{oates2008researching}[p43]{johannesson2014research}[p194]{secor2010social}[p250]{hays2003case}{mcclure2002common}[p52]{peoples2020write}[6397]{jorgensen2001grounded}[]{hycner1985some,englander2012interview,ramsook2018methodological}{robertson2002automated}[C4]{kielmann2012introduction}}
 
 
-\subsection{Journalling}\label{sect:DG:journalling}\todo{This section adapted from \cite{hayman2012journaling}.}
+\subsection{Journalling}\label{sect:DG:journalling}\todo{This section currently adapted from \cite{hayman2012journaling}.}
 
 \ResGenTechnique{Journalling}
 
-Journalling asks research participants to record and reflect on research-focussed experiences as \textcquote{hayman2012journaling}{a way of thinking, understanding, and learning.} Journalling can be used in two ways:
-%
-\begin{itemize}
-\item as a learning strategy for research participants, as so is often located in ethnographic research, or in data generation for grounded theory. The researcher is interested in the ability of journalling to expose elements and processes involved in deep learning, problem solving, critical thinking development, and reasoning.
+Journalling asks research participants to record and reflect on research-focussed experiences as \textcquote{hayman2012journaling}{a way of thinking, understanding, and learning.} One popular use of journalling is as a learning strategy for research participants, as so is often located in ethnographic research, or in data generation for grounded theory. The researcher is interested in the ability of journalling to expose elements and processes involved in deep learning, problem solving, critical thinking development, and reasoning.
 
-\item by the researcher, as a way of recording and reflecting on the practice of research, \emph{as the research progresses}, and so may also feed into subsequent episodes of reflexivity\footnote{See below.}.
-\end{itemize}
+%%
+%\begin{itemize}
 %
+%\item by the researcher, as a way of recording and reflecting on the practice of research, \emph{as the research progresses}, and so may also feed into subsequent episodes of reflexivity\footnote{See below.}.
+%\end{itemize}
+%%
 
 \subsubsection{Journalling tools}
 
+\todo{Add something here}
+
 \subsubsection{Workflow}
 
-A researcher that wishes to journal with research participants should ...
+%The two uses of journaling lead to two related but different workflows.
+%
+%\paragraph{For research participants}
+%
+Journaling\todo{Adapted from~\textcite{giguere2012self-reflective}.} or \emph{self-reflective writing} can help research participants to reconstruct their thoughts from an activity or situation, indicating how they develop over time.
 
-There are three identified challenges for journalling \cite{hayman2012journaling}:
+The structure of a self-reflective portfolio should include 
+%
+\begin{itemize}
+\item goals of the reflection: established once at the beginning of the journaling exercise
+\item journaling entries contributed by participants: the use of these is to help the participant reconstruct their thoughts and development from the research exercise. To ensure that the researcher goal of the journal is approached, the researcher should develop journaling prompts. They can be broader or narrower in scope, and guide the focus of the participant onto journal entries that will be useful for the research goals.
+
+There are three identified challenges for journalling \parencite{hayman2012journaling}:
 %
 \begin{enumerate}%[start=0,label={(\bfseries R\arabic*):}]
-\item poor participation:
-\item feeling exposed: 
-\item staying on track: 
+\item poor participation: as a researcher, you want to collect as rich a journal from each participant as possible. To assist in this goal, any guidance provided should be sincere, nonjudgmental, and conversational.
+\item feeling exposed: a participant may feel vulnerable or anxious documenting \enquote{sometimes intimate details of their lives} or by a perceived lack of writing skills. 
+
+One method of allaying fears associated with journaling is to provide clear instructions, identify specific objectives, and provide ongoing support and guidance~\cite{taylor2006research}.
+\item staying on track: Journaling \enquote{momentum} of the participant should be monitored, if possible, during the research process. A participant that becomes distracted or demotivated might be helped to refocus their efforts through restatement of the research goal, with prompts repeated as necessary.
 \end{enumerate}
-%
+\end{itemize}
 
 \subsubsection{Other things to think about}
 
 \newcommand{\ed}[0]{Ed}
 
 \ResGenExtras{journalling}{[\ed]{kadarisman2017classroom}[]{burns2009action}[p55]{peoples2020write}[]{feinblum2016journaling}[]{hayman2012journaling}{mcgrath202115}[\ed]{ovens2020weaving}}
-
-
-\subsection{Observations}\label{sect:DG:observations}
-
-\ResGenTechnique{Observations}
-
-\subsubsection{Observation tools}
-
-\subsubsection{Workflow}
-
-\subsubsection{Other things to think about}
 
 \subsection{Questionnaires}\label{sect:questionnaireDesign}
 
@@ -287,7 +327,8 @@ Questionnaires\footnote{Questionnaires are just one in a rich collection of \emp
 
 If you do use a questionnaire, its thoughtful design is of critical importance. Otherwise, you might be asking your (willing) sample to spend a considerable amount of their valuable time answering questions the content of which are not helpful for your research. As they might not be so willing to help a second time, getting the questions right\footnote{Often called \emph{questionnaire design}, although this conjures up glossy format and whizzy web-pages which is of secondary importance. Unless, your questionnaire is about the design of questionnaires, of course.} the first time is important. 
 
-Administering questionnaires are nowhere near as difficult as they used to be as the number of online resources for doing so increases. And, probably because of this, there are plenty of resources in the literature and online to help you design your questions.\footnote{Check out the following resources: \cites{}.} Their descriptions can be a little technical, however, so the following glossary and other tough points might help you engage with them better.
+Administering questionnaires are nowhere near as difficult as they used to be as the number of online resources for doing so increases. And, probably because of this, there are plenty of resources in the literature and online to help you design your questions.%\footnote{Check out the following resources: \cites{}.} 
+Their descriptions can be a little technical, however, so the following glossary and other tough points might help you engage with them better.
 
 \paragraph{Essential questions} %You should identify 
 the smallest possible set of questions you absolutely need to ask to address your research aim and objectives. While using several questions will give you richer data sets, long questionnaires tend to put people off, so that fewer people may be willing to participate. 
