@@ -514,7 +514,7 @@ In both cases, the goal is to explore how and why certain phenomena are related.
 \color{black}
 
 \subsubsection{Predictive Problems }
-Predictive problem aim to predict future phenomena. The goal is usually to define a model, extrapolating from current knowledge, that allows predictions to be made together with an assessment of how accurate they might be.
+Predictive problems aim to predict future phenomena. The goal is usually to define a model, extrapolating from current knowledge, that allows predictions to be made together with an assessment of how accurate they might be.
 
 \begin{example}{Examples of predictive problems}To quantify the potential impact on fresh water consumption of recycling domestic bathroom water in the UK within the next decade. This is important both from an economical and an environmental perspective, as fresh water is becoming a scarce resource, so its preservation is imperative.
 
@@ -737,7 +737,7 @@ The approach we introduce in this section is one that we have used many hundreds
 
 \end{itemize}
 
-Kershav's approach is summarised in Table~\ref{tab:Keshav}.
+Keshav's approach is summarised in Table~\ref{tab:Keshav}.
 
 \begin{table}[htbp]
 \begin{minipage}{\linewidth}
@@ -1009,63 +1009,54 @@ During processing you need an efficient way to decide which of the papers in you
   You should keep an open mind at this point, as it is likely the articles you are considering will use a different terminology from yours. Nevertheless, you should be able to judge whether they are close enough to elements of your own research problem, particularly the knowledge gap and its context.  
   
 
-%{\color{red} LR -- this, till the end of the sub-section, needs work; for Jon to do}
-%
-%It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
-%
-%\begin{itemize}
-%\item Directly: statements such as ``the prices of software services were \emph{observable} in this study'' -- the observables are the prices of software services.
-%
-%\item Indirectly: statement such as ``the prices of software services were \emph{not directly observable} in this study, so we used the proxy of hours worked accumulated across the team of developers'' -- the observables are the number of hours worked.
-%
-%\item As measurable: statements such as ``the number of bugs in the software were given through the collection of bug reports'' -- the observables are the bugs in the software.
-%
-%\item As inferences from other phenomena: statements such as ``the number of bugs in the software were estimated from the number of bug reports'' -- the observables are the number of bugs reported.
-%\end{itemize}
-%
-%\begin{example}{Going back to our example of safety-critical development, one of the review articles we found in our search...}Going back to our example, one of the review articles we found in our search is:
-%
-%Vahid Garousi, Michael Felderer,   a  r   Murat Karap    ak, U  ur Y  lmaz (2018). Testing embedded software: A survey of the literature, Information and Software Technology, Volume 104, Pages 14--45, ISSN 0950--5849, https:\slash \slash doi.org\slash 10.1016\slash j.infsof.2018.06.016.
-%
-%Its abstract\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.} reads:
-%
-%``Context
-%
-%Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
-%
-%Objective
-%
-%However, reviewing and getting an overview of the entire state-of-the-art and the --practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
-%
-%Method
-%
-%To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion\slash exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
-%
-%Results
-%
-%Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
-%
-%Conclusion
-%
-%The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques \slash  approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an ``index'' to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.''
-%
-%\end{example}
-%
-%\begin{question}[subtitle={Activity: the relevance of early hits to your search terms}] For five of the hits to the search you conducted in Activity ??, fill in the relevancy matrix below, and score them for relevance.
-%
-%\begin{ltabulary}{\textwidth} {@{}LLL@{}}
-%\textbf{Type}&\textbf{Comment}&\textbf{Score}\endhead
-% Direct & TBD& TBD\\
-% Indirect & & \\
-% Measurable & & \\
-% Inferences & & \\
-%Complete this...& &
-%\end{ltabulary}
-%
-%\begin{solution}TBD
-%\end{solution}\end{question}
-%%%Hack to correct tcbox behaviour
-%\color{black}
+It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
+
+{\color{red} LR -- this, till the end of the sub-section, needs work; for Jon to do}
+\begin{itemize}
+\item Directly: statements such as ``the prices of software services were \emph{observable} in this study'' -- the observables are the prices of software services.
+
+\item Indirectly: statement such as ``the prices of software services were \emph{not directly observable} in this study, so we used the proxy of hours worked accumulated across the team of developers'' -- the observables are the number of hours worked.
+
+\item As measurable: statements such as ``the number of bugs in the software were given through the collection of bug reports'' -- the observables are the bugs in the software.
+
+\item As inferences from other phenomena: statements such as ``the number of bugs in the software were estimated from the number of bug reports'' -- the observables are the number of bugs reported.
+\end{itemize}
+
+\begin{example}{Going back to our example of safety-critical development...}...one of the review articles we found in our search is:
+
+\fullcite{garousi2018testing}
+
+Its abstract reads\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.}:
+
+\newcommand{\firstquotedparagraph}[1]{\textbf{#1}\quad}%%So that textcquote places quotes in correct place
+
+\textcquote{garousi2018testing}{\firstquotedparagraph{Context}\quad Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
+
+\paragraph{Objective} However, reviewing and getting an overview of the entire state-of-the-art and the – practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
+
+\paragraph{Method} To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion\slash exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
+
+\paragraph{Results} Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
+
+\paragraph{Conclusion} The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques/approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an ``index'' to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.}
+
+\end{example}
+
+\begin{question}[subtitle={Activity: the relevance of early hits to your search terms}] For five of the hits to the search you conducted in Activity ??, fill in the relevancy matrix below, and score them for relevance.
+
+\begin{ltabulary}{\textwidth} {@{}LLL@{}}
+\textbf{Type}&\textbf{Comment}&\textbf{Score}\endhead
+ Direct & TBD& TBD\\
+ Indirect & & \\
+ Measurable & & \\
+ Inferences & & \\
+Complete this...& &
+\end{ltabulary}
+
+\begin{solution}TBD
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
 
 \paragraph{What to do when you find a potentially relevant paper}
 First thing you should do is to record it in your BMT. You should record it with the search term that you used to find it so that you can rerun the search to:
@@ -1519,6 +1510,7 @@ Thus, most academic research will be based on data and evidence. Data is the raw
 \item \textbf{Numerical} data are numbers\footnote{Yes, they are!}, such as the number of students registered on a module or the temperature in the UK in July. Simplifying a little, when numerical data has a whole-number value it is called discrete, otherwise it is continuous\footnote{Given the fundamental nature of energy, and the vagaries of quantum physics, it may be that we're incorrect in stating that real--world temperature is actually a continuous variable. However, even if it isn't, its values lie on a continuous scale.}. In either case, appropriate mathematical and statistical operations can be applied to them, values can be ordered, and the interval between two numbers can be calculated exactly.
 
 \item \textbf{Ordinal} data are non numerical data that can be arranged in an order. An example is the very widely used Likert scale\footnote{Almost certainly, the most recent survey you completed would have used the 5--point Likert scale mentioned here.} often used in questionnaires to elicit opinions. An example of a 5-point Likert scale is that ranging from `Strongly disagree' to `Strongly agree' with `Disagree', `Neither Disagree nor Agree', and `Agree' in the middle. While these values can be arranged in order\footnote{This might be done by giving `Strongly disagree' the numerical value 1, `Disagree' the numerical value 2, and so on.}, mathematical and statistical operations can only be applied in a limited way, for instance, taking the mean (or average) score of responses on a Likert scale.
+\footnote{Read more about Likert scales use (and misuse) in \textcite{carifio2007ten}.}
 
 \item \textbf{Interval} data are data which can be arranged on a scale, so that we can calculate the distance between any two data points. All numerical data are also interval data, but interval data may not be numerical. For instance, calendar dates are interval data as we can calculate the time interval between two given dates, e.g., the number of days in between.
 
@@ -1881,14 +1873,64 @@ Your university is likely to have an IP policy which establishes, among others, 
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsubsection{Use of AI in research}
-*** to do!!!! -- go back to video on youtube
+\subsubsection{Use of generative AI in research}
+
+Generative Artificial Intelligence (GenAI) is an emerging digital technology able to generate new content automatically in response to prompts from the user. Its current capabilities include the automatic generation of text, images, videos, music or computer code.
+
+It relies on algorithms trained on vast amounts of digital data, from which they learn recurrent patterns and structures, which they then apply to generate original content. For instance, a GenAI system trained on English text will learn patterns related to the English grammar alongside structures and expressions commonly used in writing, and frequent combinations and sequences of words and phrases. Such patterns and structures are then used to generate original English text in response to a user's query: often such responses are indistinguishable from those of a human English writer. 
+
+Learning and originality have a specific meaning in GenAI. Learning is the process followed by the algorithm to build an abstract model from the data used in training, which can then be used to generate content similar to those data, be that text, images, sounds, or other. Originality refers to the fact that the particular content generated is not copied from an existing repository, but constructed by the algorithm based on its abstract model combined with the vast repository of information it has access to: as a result no two answers to the same user's query are exactly the same.
+
+\begin{question}[subtitle={Activity: Investigating GenAI systems}] 
+Conduct a web search on GenAI systems. List the ones you have found and indicate their use.
+\begin{solution} 
+At the time of writing, these are among the most used GenAI systems:
+\begin{itemize}
+	\item ChatGPT and Bard: these are conversational systems in that they allow users to conduct conversations in written natural language. They can be used to answer specific questions, for language translation and even creative writing.
+	\item DALL E: this is an image and art generation system. It can be used to produce images from a text description, or to edit or enhance existing images.
+	\item AIVA: this a system to generate music. It can generate new songs in a great variety of styles and genres.
+	\item  Copilot: this is a system to generate code in a variety of programming languages. It can assist a software developer by suggesting new code, completing code being written or generating documentation. 
+\end{itemize}
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+Impressive as it may be, GenAI has a number of pitfalls you should be aware of. Firstly, the content generated depends heavily on the data set used to train the algorithm, so that any intrinsic bias in the data set will also be present in the new content generated. For instance, if discriminatory language is present in the training data, the same will be the case in the content generated by the algorithm.
+
+Secondly, the technology is designed to fill in any gap there may be in their knowledge base with plausible, but made-up information, so that what is generated may not be true or reliable. The term `hallucination' is used to denote such behaviour, although fabrication would probably be a more accurate term! So, for instance, if you ask the AI to provide a summary of a particular topic including a list of references on which the summary is based,  more often than not, those references will include completely made-up entries, although constructed in a way which makes them look perfectly legitimate (by applying the pattern learnt for references from academic papers used in the training process). Hallucination means that you can't necessarily rely on the veracity of the content generated, and any significant use of it in your research is only possibly after you have double checked both accuracy and authenticity, and, ideally where it comes from. 
+
+Another important consideration is that not being copied from somewhere else doesn't mean novelty: although originally expressed, the content is still pieced together from what is already known, so there is no new knowledge contribution or creative invention. Equally, the algorithm has no understanding or critical insight of what is generated: it is just very clever at putting the puzzle together from existing pieces and rules learnt. As a result, you should not expect deep or critical accounts of a topic of interest, but you may still obtain good factual summaries or descriptions.
+
+Even with these drawbacks, GenAI can be a useful tool in research, particular to get you started on specific tasks, like gathering some initial information on a particular topic, identifying some initial articles to read, or even summarising certain literature, as long as you then put your own effort and work to generate your own content which is both authentic, unbiased and creative. 
+
+A final consideration is that the content generated by the AI is not your own work, so it should be treated as any other secondary source you use, and clearly identified and distinguished from your work, to avoid any accusation of plagiarism. In fact, you should be open and transparent in your use of GenAI in all aspects of your research.
+
+GenAI is a fascinating subject, which is generating, as it may be expected, much controversy. At the extremes are those who focus solely on the risks or the opportunities it affords, often overestimating what the technology can actually do. The state-of-the-art is somewhere in the middle: yes, there are both risks and opportunities, but as often with technology, the issue is what people choose to do with it. 
+
+Because of this, organisations, and particularly academic institutions, are developing their own rules and regulations on the use of GenAI by staff and students. If you are considering using GenAI in your project, you should become familiar with your university' position on what you can and can't do
+
+\begin{question}[subtitle={Activity: Understanding your university's guidelines on generative AI}] Using your university's intranet look up any policy or guideline related to the use of generative AI. Write a brief summary of what you have found out which may be relevant to your Masters project work.
+\begin{solution} 
+Our university explicitly states some admissible and not admissible uses of GenAI. In particular, it considers inadmissible, and a form of plagiarism, to copy and paste content generated by an AI system without proper attribution. On the other hand, admissible uses include:
+\begin{itemize}
+	\item to make materials more accessible, for instance by auto-generating transcripts of audio or image captions,
+	\item to help with spelling and grammar in written text, and generally to help your improve your writing skills,
+	\item to prompt you to develop new ideas,
+	\item to revise basic knowledge on a particular topic.
+\end{itemize}
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+
+
 
 \subsubsection{Bias in research}\label{sect:biasInResearch}
 
 Bias is a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence. Cognitive bias, in particular, prevents people from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning. 
 
 Bias is problematic when it leads to the unfair treatment of others, particularly as a result of pre-conceptions or prejudice.  Bias is subtle. We are all affected by it. It is easy to see in others, but extremely difficult to see in oneself.
+
 
  Bias can damage research findings, leading to outcomes which are unreliable, and casting doubt on the claimed knowledge contribution. To be a good researcher you should assume that you are affected by many different forms of bias and work to eliminate them from your work. The upside is that you will be a better researcher for doing this.
  
@@ -1907,7 +1949,7 @@ Bias is problematic when it leads to the unfair treatment of others, particularl
 
 \item Recall bias, which is the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories of the past. Reducing the recall period, for instance by interviewing participant soon after the fact, or  asking then to keep detailed diaries of their experience are ways to mitigating it. 
 
-\item Algorithmic bias, particularly in relation to AI applications, which occurs when an algorithm produces outcomes systematically and repeatably which disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic in itself, so much remains unknown. However, involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outcome is an effective approach, alongside ensuring that the working of the algorithm are transparent to its users, and its behaviour can be explained.
+\item Algorithmic bias, particularly in relation to AI applications, which occurs when an algorithm produces outcomes systematically and repeatably which disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic, and much remains unknown. Involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outputs is one approach, alongside ensuring that the working of the algorithm are transparent to its users, and its behaviour can be explained.
 \end{itemize}
 \end{solution}\end{question}
 %%Hack to correct tcbox behaviour
@@ -1918,6 +1960,8 @@ All bias can damage your research. However, confirmation bias is very easy to fa
 Another effect of confirmation bias is that you clearly see a problem where no-one in your readership does. So much so that you don't feel you have to explain the problem or convince others that it exists.
 
 In our experience, both of these can hamper progress. The latter is especially pernicious: that you see a problem is great, but can you find sufficient evidence in the academic literature?
+
+
 
 \section{Managing risk}\label{sect:stage1ManagingRisk}
 ``What could possibly go wrong in a flourishing concern like the Brixleigh Bank\footnote{Later in the book, Brixleigh's Bank is shown to be a Ponsi scheme -- a gigantic fraud -- which fails.}? My dear, you are too fond of conjuring up imaginary evils.'' -- Matilda Mary Pollard's \emph{Cora: Three Years of a Girl's Life}, 1882
@@ -1968,7 +2012,7 @@ On mitigation: if you don't think you can develop all necessary technical skills
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsection{Study time}
+\subsubsection{Study time}
 Consider the time which is required for your project --- you may have to go back to your estimates from Chapter~\ref{chp:framework}. To succeed in your Masters project it is essential you sustain a continuous effort throughout, with little scope for making time up when you are not able to, or for taking long breaks. The key question, therefore is whether any other commitments, professional or personal, may get in the way and what you could do about it.
 
 \begin{question}[subtitle={Activity: Risk in relation to study time }] Consider your current personal and professional commitments, and study practices. Perform a risk analysis on whether you will be able to dedicate sufficient time to your project on a regular basis and write down the outcome.
@@ -1981,7 +2025,7 @@ Under mitigation\slash contingency, you should include any adjustments you may n
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\subsection{Resources}
+\subsubsection{Resources}
 Depending on your chosen research problem and aim, you may need access to participants, organisational information, third-party data, industrial case studies, etc., or you may need to acquire specialised software or hardware.
 
 It is important for you to assess how likely it is that you will be able to gain access to or acquire such resources and, should there be any cost involved, whether you can afford it.
@@ -2047,7 +2091,7 @@ We feel exactly the same -- reflecting on what you've written causes a lot of gr
 
 At the same time, we've learned a lot from that reflection. For instance, we've been able to split up complex issues into more digestible chunks; we've identified new links between topics that we hadn't thought about before; we've read more about what the students we have worked with to understand more precisely their contributions; we've taken apart the materials we have written to ensure their validity in the Master's research context; and, last but not least, we've been able to generalise much of what we know of this topic to be more applicable across the board, while at the same time realising that there are special topics that will affect only a small part of our readership.
 
-Reflection is the key to become a competent research practitioner. It is what allows you to constructs meaning around your own research practice, by turning back on yourself, becoming your own observer of your research attitude and actions. Understaning your research stance and  how it influences your research research process through ever deeper reflection as you progress, is the best way to become a competent researcher and produce research which engages (and impresses) your reader\footnote{{\ldots}and your examiner, who will want to know that you have reflected deeply on what you have done.} and keep them reading to the end.
+We feel exactly the same -- reflecting on what you've written causes a lot of grief, especially when you realise that it's not as good as it could have been\footnote{We've reflected on the materials for this book many many times{\ldots} that's meant redrafting, adding extra and -- hurtfully --  having to remove stuff that just wasn't good enough. It's changed --  for the better we hope -- because of it. You are free to disagree, and we'd welcome your reflection on it too.} and there are very good reasons to improve it.
 
 Reflection is also the thinking of radical thoughts. There is a context into which all research fits that colours the knowledge that is its primary contribution, making it less valuable, less distinct, less out there. That context is a hegemony of received wisdom, of `common sense thinking', of uncritical investigation, none of which are necessarily knowledge. Reflection --  ''the voluntary disobedience of thought and reasoned undocility'' according to Foucault (1985) -- is your way of breaking that mould, of stepping out of conventionalism and of shaking up the world.
 
