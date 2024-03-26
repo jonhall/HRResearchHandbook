@@ -2,15 +2,15 @@
 
 \usepackage{xparse}
 
+%%Colors
+\usepackage[svgnames]{xcolor}
+
 %%Footnotes
 \usepackage[perpage,side,marginal,symbol*]{footmisc}
-\usepackage{ textcomp }%%For text circle
+\usepackage{textcomp}%%For text circle
 
 \DefineFNsymbols{hallrapanotti}{{\color{red}\textbullet}{\color{green}\textbullet}{\color{blue}\textbullet}{\color{orange}\textbullet}{\color{gray}\textbullet}{\color{purple}\textbullet}{\color{black}\textbullet}}
 \setfnsymbol{hallrapanotti}
-
-%%Temporary margin change
-\usepackage{changepage}
 
 %%Temporary margin change
 \usepackage{changepage}
@@ -22,19 +22,22 @@
 %%For ordinals – \nth
 \usepackage{fmtcount}
 
-%%Colors
-\usepackage[svgnames]{xcolor}
+%%Quotes
+\usepackage[threshold=15,thresholdtype=words,autopunct]{csquotes}
+\AddToHook{env/quote/before}{\textit}
+\renewcommand{\mkccitation}[1]{\hfill(#1)}
 
-%%Bibtex stuff
+%\usepackage{babel}% recommended
+%%Biblatex stuff
 \usepackage[
-	backend=bibtex,
+%%	backend=bibtex,
 	style=authoryear,
 	autocite=inline,
 	sortcites,
 	backref=true,
 ]{biblatex}
-\addbibresource{MY-BIB-CLEAN}
-\addbibresource{collatedBib}
+\addbibresource{MY-BIB-CLEAN.bib}
+\addbibresource{collatedBib.bib}
 
 %%Ensure bibliography always included, even if \end{document} early
 \AtEndDocument{%
@@ -59,11 +62,6 @@
 %%Numbering options to subsection
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{2}
-
-%%Quotes
-\usepackage[threshold=15,thresholdtype=words,autopunct]{csquotes}
-\AddToHook{env/quote/before}{\textit}
-
 
 %%Underconstruction logo visible from overview
 \newcommand{\UCJ}{\ {\color{red}\rule{2cm}{2cm}}}
@@ -301,5 +299,9 @@ title={Tip},
 \usepackage{refcount}
 \usepackage{intcalc}
 
+%%Git integration
+\usepackage[nowatermark]{gitstatus}
+
 \title{Master Research\\ Handbook}
 \author{Lucia Rapanotti and Jon Hall}
+\date{Branch: \gitbranch\\\small Hash: \gitcommit}
