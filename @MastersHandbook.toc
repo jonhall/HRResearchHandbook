@@ -1,0 +1,99 @@
+\contentsline {chapter}{Contents}{1}{section*.1}%
+\contentsline {chapter}{\chapternumberline {1}Stage 3: Developing your research design}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducing stage 3}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research design foundation}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Researcher mindsets}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Positivist and post-positivism}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Anti-positivist (interpretivism)}{10}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Constructivism}{11}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Critical theory}{12}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Indigenous}{12}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}What's your mindset?}{13}{subsection.1.3.6}%
+\contentsline {section}{\numberline {1.4}Research strategies}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Defending your claim of new knowledge}{16}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Weaknesses and ways to deal with them}{18}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Where to defend your claim}{19}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Approaches to address weaknesses}{21}{subsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.3.1}Triangulation}{21}{subsubsection.1.5.3.1}%
+\contentsline {paragraph}{Data source triangulation}{22}{section*.17}%
+\contentsline {paragraph}{Investigator triangulation}{22}{section*.18}%
+\contentsline {paragraph}{Methodological triangulation}{22}{section*.19}%
+\contentsline {paragraph}{Theory triangulation}{22}{section*.20}%
+\contentsline {subsubsection}{\numberline {1.5.3.2}Reflexivity}{23}{subsubsection.1.5.3.2}%
+\contentsline {subsubsection}{\numberline {1.5.3.3}Returning to the literature}{26}{subsubsection.1.5.3.3}%
+\contentsline {section}{\numberline {1.6}Your research strategy candidate list}{26}{section.1.6}%
+\contentsline {paragraph}{Step 1}{28}{section*.23}%
+\contentsline {paragraph}{Step 2}{28}{section*.24}%
+\contentsline {paragraph}{Step 3}{28}{section*.25}%
+\contentsline {paragraph}{Step 4}{28}{section*.26}%
+\contentsline {subsection}{\numberline {1.6.1}Survey research}{30}{subsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.1}Knowledge contribution}{30}{subsubsection.1.6.1.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.2}Data generation and analysis}{30}{subsubsection.1.6.1.2}%
+\contentsline {subsubsection}{\numberline {1.6.1.3}Evaluation}{31}{subsubsection.1.6.1.3}%
+\contentsline {subsubsection}{\numberline {1.6.1.4}Is this strategy right for me?}{31}{subsubsection.1.6.1.4}%
+\contentsline {subsubsection}{\numberline {1.6.1.5}Suggested further reading}{32}{subsubsection.1.6.1.5}%
+\contentsline {subsection}{\numberline {1.6.2}Design and creation research}{32}{subsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.1}Knowledge contribution}{33}{subsubsection.1.6.2.1}%
+\contentsline {subsubsection}{\numberline {1.6.2.2}Data generation and analysis}{33}{subsubsection.1.6.2.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.3}Evaluation}{33}{subsubsection.1.6.2.3}%
+\contentsline {subsubsection}{\numberline {1.6.2.4}Is this strategy right for me?}{34}{subsubsection.1.6.2.4}%
+\contentsline {subsubsection}{\numberline {1.6.2.5}Suggested further reading}{35}{subsubsection.1.6.2.5}%
+\contentsline {subsection}{\numberline {1.6.3}Experimental research}{35}{subsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.1}Knowledge contribution}{35}{subsubsection.1.6.3.1}%
+\contentsline {subsubsection}{\numberline {1.6.3.2}Data generation and analysis}{35}{subsubsection.1.6.3.2}%
+\contentsline {subsubsection}{\numberline {1.6.3.3}Evaluation}{36}{subsubsection.1.6.3.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.4}Is this strategy right for me?}{37}{subsubsection.1.6.3.4}%
+\contentsline {subsubsection}{\numberline {1.6.3.5}Suggested further reading}{37}{subsubsection.1.6.3.5}%
+\contentsline {subsection}{\numberline {1.6.4}Case study research}{37}{subsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.1}Knowledge contribution}{37}{subsubsection.1.6.4.1}%
+\contentsline {subsubsection}{\numberline {1.6.4.2}Data collection and analysis}{38}{subsubsection.1.6.4.2}%
+\contentsline {subsubsection}{\numberline {1.6.4.3}Evaluation}{38}{subsubsection.1.6.4.3}%
+\contentsline {subsubsection}{\numberline {1.6.4.4}Is this strategy right for me?}{39}{subsubsection.1.6.4.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.5}Suggested further reading}{40}{subsubsection.1.6.4.5}%
+\contentsline {subsection}{\numberline {1.6.5}Action research}{40}{subsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.5.1}Knowledge contribution}{40}{subsubsection.1.6.5.1}%
+\contentsline {subsubsection}{\numberline {1.6.5.2}Data generation and analysis}{41}{subsubsection.1.6.5.2}%
+\contentsline {subsubsection}{\numberline {1.6.5.3}Evaluation}{41}{subsubsection.1.6.5.3}%
+\contentsline {subsubsection}{\numberline {1.6.5.4}Is this strategy right for me?}{42}{subsubsection.1.6.5.4}%
+\contentsline {subsubsection}{\numberline {1.6.5.5}Suggested further reading}{42}{subsubsection.1.6.5.5}%
+\contentsline {subsection}{\numberline {1.6.6}Ethnography}{43}{subsection.1.6.6}%
+\contentsline {subsubsection}{\numberline {1.6.6.1}Knowledge contribution}{43}{subsubsection.1.6.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.6.2}Data generation and analysis}{43}{subsubsection.1.6.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.6.3}Evaluation}{43}{subsubsection.1.6.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.6.4}Is this strategy right for me?}{44}{subsubsection.1.6.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.6.5}Suggested further reading}{45}{subsubsection.1.6.6.5}%
+\contentsline {subsection}{\numberline {1.6.7}Systematic research reviews}{45}{subsection.1.6.7}%
+\contentsline {subsubsection}{\numberline {1.6.7.1}Knowledge contribution}{45}{subsubsection.1.6.7.1}%
+\contentsline {subsubsection}{\numberline {1.6.7.2}Data collection and analysis}{46}{subsubsection.1.6.7.2}%
+\contentsline {subsubsection}{\numberline {1.6.7.3}Evaluation}{46}{subsubsection.1.6.7.3}%
+\contentsline {subsubsection}{\numberline {1.6.7.4}Is this strategy right for me?}{47}{subsubsection.1.6.7.4}%
+\contentsline {subsubsection}{\numberline {1.6.7.5}Suggested further reading}{48}{subsubsection.1.6.7.5}%
+\contentsline {subsection}{\numberline {1.6.8}Grounded theory}{48}{subsection.1.6.8}%
+\contentsline {subsubsection}{\numberline {1.6.8.1}Knowledge contribution}{48}{subsubsection.1.6.8.1}%
+\contentsline {subsubsection}{\numberline {1.6.8.2}Data collection and analysis}{48}{subsubsection.1.6.8.2}%
+\contentsline {subsubsection}{\numberline {1.6.8.3}Evaluation}{49}{subsubsection.1.6.8.3}%
+\contentsline {subsubsection}{\numberline {1.6.8.4}Is this strategy right for me?}{49}{subsubsection.1.6.8.4}%
+\contentsline {subsubsection}{\numberline {1.6.8.5}Suggested further reading}{50}{subsubsection.1.6.8.5}%
+\contentsline {subsection}{\numberline {1.6.9}Phenomenology}{50}{subsection.1.6.9}%
+\contentsline {subsubsection}{\numberline {1.6.9.1}Knowledge contribution}{50}{subsubsection.1.6.9.1}%
+\contentsline {subsubsection}{\numberline {1.6.9.2}Data Generation}{51}{subsubsection.1.6.9.2}%
+\contentsline {subsubsection}{\numberline {1.6.9.3}Evaluation}{51}{subsubsection.1.6.9.3}%
+\contentsline {subsubsection}{\numberline {1.6.9.4}Is this strategy right for me?}{52}{subsubsection.1.6.9.4}%
+\contentsline {subsection}{\numberline {1.6.10}Simulation}{53}{subsection.1.6.10}%
+\contentsline {subsubsection}{\numberline {1.6.10.1}Knowledge contribution}{53}{subsubsection.1.6.10.1}%
+\contentsline {subsubsection}{\numberline {1.6.10.2}Variants}{53}{subsubsection.1.6.10.2}%
+\contentsline {subsubsection}{\numberline {1.6.10.3}Data Generation}{54}{subsubsection.1.6.10.3}%
+\contentsline {subsubsection}{\numberline {1.6.10.4}Evaluation}{54}{subsubsection.1.6.10.4}%
+\contentsline {subsubsection}{\numberline {1.6.10.5}Is this strategy right for me?}{55}{subsubsection.1.6.10.5}%
+\contentsline {subsection}{\numberline {1.6.11}Mathematical and logical proof}{55}{subsection.1.6.11}%
+\contentsline {subsubsection}{\numberline {1.6.11.1}Knowledge contribution}{55}{subsubsection.1.6.11.1}%
+\contentsline {subsubsection}{\numberline {1.6.11.2}Data Generation}{56}{subsubsection.1.6.11.2}%
+\contentsline {subsubsection}{\numberline {1.6.11.3}Evaluation}{56}{subsubsection.1.6.11.3}%
+\contentsline {subsubsection}{\numberline {1.6.11.4}Is this strategy right for me?}{56}{subsubsection.1.6.11.4}%
+\contentsline {subsection}{\numberline {1.6.12}Mixed methods research}{57}{subsection.1.6.12}%
+\contentsline {subsubsection}{\numberline {1.6.12.1}Knowledge contribution}{57}{subsubsection.1.6.12.1}%
+\contentsline {subsubsection}{\numberline {1.6.12.2}Data Generation}{57}{subsubsection.1.6.12.2}%
+\contentsline {subsubsection}{\numberline {1.6.12.3}Evaluation}{57}{subsubsection.1.6.12.3}%
+\contentsline {subsubsection}{\numberline {1.6.12.4}Is this strategy right for me?}{57}{subsubsection.1.6.12.4}%
+\contentsline {section}{\numberline {1.7}What to do now}{58}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}For your chosen research strategy}{59}{subsection.1.7.1}%
