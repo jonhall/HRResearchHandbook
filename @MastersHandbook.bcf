@@ -2386,34 +2386,28 @@
     <bcf:citekey order="20" intorder="1">oates2008researching</bcf:citekey>
     <bcf:citekey order="21" intorder="1">moher2009preferred</bcf:citekey>
     <bcf:citekey order="22" intorder="1">drew202310-grounded</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">johannesson2014research</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">johannesson2014research</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">johannesson2014research</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">office2020the-phenomenological</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">office2020the-phenomenological</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">office2020the-phenomenological</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">merleau1956phenomenology</bcf:citekey>
-    <bcf:citekey order="29" intorder="2">anderson1991qualitative</bcf:citekey>
-    <bcf:citekey order="29" intorder="3">smith2018phenomenology</bcf:citekey>
-    <bcf:citekey order="29" intorder="4">shudak2018phenomenology</bcf:citekey>
-    <bcf:citekey order="29" intorder="5">academic-educational-materials2019understanding</bcf:citekey>
-    <bcf:citekey order="29" intorder="6">office2020the-phenomenological</bcf:citekey>
-    <bcf:citekey order="29" intorder="7">groenewald2004a-phenomenological</bcf:citekey>
-    <bcf:citekey order="29" intorder="8">hycner1985some</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">dooley2017simulation</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">dooley2017simulation</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">dooley2017simulation</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">dooley2017simulation</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">johannesson2014research</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">lakatos2015proofs</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Kleene1964introduction</bcf:citekey>
-    <bcf:citekey order="36" intorder="2">lakatos2015proofs</bcf:citekey>
-    <bcf:citekey order="36" intorder="3">antonini2011examples</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">denzin1978research</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">webb2000unobtrusive</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">merleau1956phenomenology</bcf:citekey>
+    <bcf:citekey order="23" intorder="2">anderson1991qualitative</bcf:citekey>
+    <bcf:citekey order="23" intorder="3">smith2018phenomenology</bcf:citekey>
+    <bcf:citekey order="23" intorder="4">shudak2018phenomenology</bcf:citekey>
+    <bcf:citekey order="23" intorder="5">academic-educational-materials2019understanding</bcf:citekey>
+    <bcf:citekey order="23" intorder="6">office2020the-phenomenological</bcf:citekey>
+    <bcf:citekey order="23" intorder="7">groenewald2004a-phenomenological</bcf:citekey>
+    <bcf:citekey order="23" intorder="8">hycner1985some</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">dooley2017simulation</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">dooley2017simulation</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">dooley2017simulation</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">dooley2017simulation</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">johannesson2014research</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">lakatos2015proofs</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Kleene1964introduction</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">lakatos2015proofs</bcf:citekey>
+    <bcf:citekey order="30" intorder="3">antonini2011examples</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">johnson2007toward</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">johnson2007toward</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">johnson2007toward</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">denzin1978research</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">webb2000unobtrusive</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
