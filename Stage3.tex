@@ -1707,72 +1707,96 @@ In choosing this strategy, you should consider the following:
 
 \subsection{Simulation}
 
-The simulation research strategy builds an explicative mechanism to imitate the behaviour of a real-world artefact.
+The simulation research strategy builds an explicative mechanism to imitate or reproduce the behaviour of a real-world artefact or system.
 
 \subsubsection{Knowledge contribution}
 
-\textcquote{dooley2017simulation}{[S]imulation helps answer the question \enquote{What if?}} 
+Simulation contributes knowledge by allowing the study of the simulated artefact or system under different conditions, in order to answer \enquote{What if?} questions, make predictions or gain insights on behaviour or properties, particularly when this can't be easily achieved directly on the real-world artefact or system.
+
+Simulations are pervasive across disciplines and vary greatly in their purpose, nature and design. For instance: financial simulations are used to study the behaviour of the global stock market; climate simulations to study possible effects of climate change; engineering simulations, to test the properties of materials under different stress conditions; social simulations to study to study human behaviour in social settings, to name just few examples.  
+
 %\subsubsection{Focus}
 %
-\subsubsection{Variants}
+%\subsubsection{Variants}
 
-The three main schools of simulation practice are \parencite{dooley2017simulation}:
-		%
-	\begin{itemize}
-	\item Discrete event simulation, which involves modeling the organizational system as a set of entities evolving over time according to the availability of resources and the triggering of events.
-	\item System dynamics, which involves identifying the key “state” variables that define the behavior of the system, and then relating those variables to one another through coupled, differential equations.
-	\item Agent-based simulation, which involves agents that attempt to maximize their fitness (utility) functions by interacting with other agents and resources; agent behavior is determined by embedded schema which are both interpretive and action-oriented in nature.
-	\end{itemize}
-	%
 
-\subsubsection{Data Generation}
+\subsubsection{Data generation and analysis}
 
-\textcquote{dooley2017simulation}{Simulation enables studies of more complex systems because it creates observations by \enquote{moving forward} into the future, whereas other research methods attempt to look backwards across history to determine what happened, and how.}
+Data are needed to inform the simulation design. Their kind and how to obtain it will depend strongly on the nature of the artefact or system under study and what your research aim is, so that all known methods for data generation apply. For instance, if you'd like to simulate a new aircraft design under different wind conditions, you will need to gather data on the physical characteristics of the aircraft and the materials to be used to build it, alongside meteorological data which can be used to perform tests under different conditions in the simulation. On the other hand, to simulate how size and age of a population may change in future decades within a particular geographical region, you will need to gather data on current population size and age, birth and mortality rates, migration rates in and out of the region, and conditions which may affect them over time. 
 
-Depending on the context in which the simulation is studied or used. May include:
-	%
-	\begin{itemize}
-	\item observations, interviews, questionnaires, documents, in-depth description when supporting social objectives
-	\item accuracy, predicative capability, when used to model real-world processes – think weather forecasting
-	\item ...
-	\end{itemize}
-	%
+Data are also needed to establish measures and criteria to evaluate whether the simulation is sufficiently representative of the artefact or system being simulated. This may involve comparing simulation outputs with empirical data or theoretical predictions, or gathering expert opinions on such outputs, with the aim of establishing the extent expectations are met or significant discrepancies exist. 
+
+Whichever methods you use to gather the necessary data to inform the simulation design, once constructed, the simulation should allow you to generate observations of the simulated artefact or system, both past, present and future, the latter being a unique characteristic of this research strategy\footnote{All other strategies can only look at the past or the present.}. Such observations can then be analysed in order to address the research question, as well as to evaluate the simulation against the established measures or critera. 
+
+The design and construction of a simulation requires advanced computational skills, often alongside mathematical and statistical skills. 
+
+%According to \parencite{dooley2017simulation}, the most common types\footnote{Although this list is not exhaustive} include:
+%		%
+%	\begin{itemize}
+%	\item Discrete event simulation, which involves modeling the organizational system as a set of entities evolving over time according to the availability of resources and the triggering of events.
+%	\item System dynamics, which involves identifying the key “state” variables that define the behavior of the system, and then relating those variables to one another through coupled, differential equations.
+%	\item Agent-based simulation, which involves agents that attempt to maximize their fitness (utility) functions by interacting with other agents and resources; agent behavior is determined by embedded schema which are both interpretive and action-oriented in nature.
+%	\end{itemize}
+%	%
+
+%Depending on the context in which the simulation is studied or used. May include:
+%	%
+%	\begin{itemize}
+%	\item observations, interviews, questionnaires, documents, in-depth description when supporting social objectives
+%	\item accuracy, predicative capability, when used to model real-world processes – think weather forecasting
+%	\item ...
+%	\end{itemize}
+%	%
 				
 \subsubsection{Evaluation}
 
-For computer simulations:
+Evaluation questions specific to this strategy:
 
-\begin{itemize}
-\item Good development: has a documented set of requirements been maintained? Has a change control process been implemented?Is there a corresponding document (or version) control process.
+\begin{enumerate}
+	\item Is the simulation design appropriate to address the research problem/answer the research question?
+	\item Were appropriate data gather to inform the simulation design? How were they chosen and why?
+	\item Were simulation performance measures or criteria clearly established? How were they chosen and why?
+	\item How was the simulation constructed? Were the appropriate computational/mathematical/statistical techniques applied?
+	\item How was the simulation tested and improved during its development?
+	\item How close are the simulation's outputs or behaviours to the real-world data? Do the results make sense?
+\end{enumerate}
 
-\item Has the architecture been documented? What is its relationship to the model?
-
-\item Have a variety of testing methods, including code walk-throughs, scenario testing, and user testing been used to establish code quality?
-
-\item Was a project plan for coding and testing developed?
-
-\item how close is the simulation's behaviour to the \enquote{real} answer? Do the results make sense?
-
-\item has the simulation been compared to any extant quantitative behaviour available? Does it match exactly, distributionally (a variable of interest has statistically similar characteristics), or pattern-wise (variables are generally related to one another in a valid manner, but perhaps differ from reality)?
-
-\item Which experimental set-up was used? Was it appropriate?
-
-\item Have observations from analysis been noted, and results discussed in order to sense-make? Has over-interpretation of the results been avoided so that retrofitting to theories is avoided?
-\end{itemize}
-
-For simulation:
-
+%For computer simulations:
 %
-\begin{itemize}
-\item ...
-\end{itemize}
+%\begin{itemize}
+%\item Good development: has a documented set of requirements been maintained? Has a change control process been implemented?Is there a corresponding document (or version) control process.
 %
+%\item Has the architecture been documented? What is its relationship to the model?
+%
+%\item Have a variety of testing methods, including code walk-throughs, scenario testing, and user testing been used to establish code quality?
+%
+%\item Was a project plan for coding and testing developed?
+%
+%\item how close is the simulation's behaviour to the \enquote{real} answer? Do the results make sense?
+%
+%\item has the simulation been compared to any extant quantitative behaviour available? Does it match exactly, distributionally (a variable of interest has statistically similar characteristics), or pattern-wise (variables are generally related to one another in a valid manner, but perhaps differ from reality)?
+%
+%\item Which experimental set-up was used? Was it appropriate?
+%
+%\item Have observations from analysis been noted, and results discussed in order to sense-make? Has over-interpretation of the results been avoided so that retrofitting to theories is avoided?
+%\end{itemize}
+%
+%For simulation:
+%
+%%
+%\begin{itemize}
+%\item ...
+%\end{itemize}
+%%
 
 \subsubsection{Is this strategy right for me?}
 
-Do I already have the computing/mathematical/statistical skills that I need to underpin the research?
+\begin{enumerate}
+	\item Do I already have the computing/mathematical/statistical skills that I need to undertake the research?
+	\item Do I have access to the data needed for the design and the evaluation of the simulation?
+\end{enumerate}
 
-Do I have access to documentation sufficient to allow a simulation to be built?
+\subsubsection{Suggested further reading}
 
 \RSActivity{simulation}{dooley2017simulation}
 
