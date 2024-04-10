@@ -2395,16 +2395,14 @@
     <bcf:citekey order="23" intorder="7">groenewald2004a-phenomenological</bcf:citekey>
     <bcf:citekey order="23" intorder="8">hycner1985some</bcf:citekey>
     <bcf:citekey order="24" intorder="1">dooley2017simulation</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">johannesson2014research</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">lakatos2015proofs</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Kleene1964introduction</bcf:citekey>
-    <bcf:citekey order="27" intorder="2">lakatos2015proofs</bcf:citekey>
-    <bcf:citekey order="27" intorder="3">antonini2011examples</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">johnson2007toward</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">denzin1978research</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">webb2000unobtrusive</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">lakatos2015proofs</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Kleene1964introduction</bcf:citekey>
+    <bcf:citekey order="26" intorder="2">lakatos2015proofs</bcf:citekey>
+    <bcf:citekey order="26" intorder="3">antonini2011examples</bcf:citekey>
+    <bcf:citekey order="26" intorder="4">johannesson2014research</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">johnson2007toward</bcf:citekey>
+    <bcf:citekey order="27" intorder="2">denzin1978research</bcf:citekey>
+    <bcf:citekey order="27" intorder="3">webb2000unobtrusive</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
