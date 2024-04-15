@@ -28,7 +28,7 @@
 %\NewColumnType{Z}{Q[cmd=\zerobox,wd=0pt]}%%Add column type that deletes a column
 
 \usepackage{emoji}
-\newcommand{\new}[1]{#1\emoji{eye}}
+\newcommand{\new}[1]{\bfseries #1}%\emoji{eye}}
 \newcommand{\update}{\emoji{flying-disc}}
 \usepackage{ninecolors}
 \usepackage{tcolorbox}
@@ -43,15 +43,12 @@
   hline{even} = {gray8,wd=5pt}, %column{2} = {co=1}, 
   colsep = 5pt,
   row{odd} = {gray8},% row{even} = {gray8},
+  column{1} = {fg=black, bg=azure8, font=\sffamily},%\bfseries\sffamily},
   row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
-  column{1} = {fg=gray2, bg=azure8, font=\bfseries\sffamily},
   rowhead = 1,
   colspec={X[8,l]X[1,c,wd=22pt]X[18]}
 }
 \NewTableCommand\reportheader{\SetCell[c=3]{l}}
-
-%%for section, etc, xreferencing without needing to identify part
-\usepackage{cleveref}
 
 %%To define reportenumerate list for report tables
 \usepackage{enumitem}
@@ -61,6 +58,9 @@
 %\setlist[reportenum,2]{resume}
 \newlist{reportitem}{itemize}{2}
 \setlist[reportitem]{nosep}
+
+%%for section, etc, xreferencing without needing to identify part
+\usepackage{cleveref}
 
 \newcommand{\basedOn}[1]{that is based on the work you completed in \cref{#1}}
 
@@ -191,7 +191,7 @@ At this stage, it
 	& At this stage you should:
  %
 \begin{itemize}[nosep]
-\item have collected and structured the papers for your initial literature review theme summaries \basedon{sect:stage1LiteratureReview}. Your focus should be on summarising, contrasting and comparing what has gone before with a particular focus on any holes in the literature that you will be attempting to fill with your contribution. As you read more, be aware that holes that you thought were there might close up, which is of relevance to the following section%You will build on this content in Stage 2 to write an extensive, well-argued literature review to demonstrate your in-depth engagement with the academic (and other) relevant literature. 
+\item have collected and structured the papers for your initial literature review theme summaries \basedOn{sect:stage1LiteratureReview}. Your focus should be on summarising, contrasting and comparing what has gone before with a particular focus on any holes in the literature that you will be attempting to fill with your contribution. As you read more, be aware that holes that you thought were there might close up, which is of relevance to the following section%You will build on this content in Stage 2 to write an extensive, well-argued literature review to demonstrate your in-depth engagement with the academic (and other) relevant literature. 
 \item identify any further reading you intend to undertake in Stage 2 as a result of completing Stage 1. (As your reading of the literature becomes more complete, this section will shrink. In the final draft, this section will not appear.) Be clear to describe how the papers you intend to read might relate to holes already found.%, although the expectation is that the bulk of your reading (and writing) has taken place in Stage 1, so that you can focus on synthesising your knowledge and understanding in the next stage
 \end{itemize}
 \\
@@ -258,11 +258,11 @@ At this stage, it
 \item Key priorities in follow-up stage
 \item Personal and professional fit
 \item Work schedule
-\item \update{} Risk assessment
+\item Risk assessment
 \item Risk Assessment Table
 \end{reportenum}
 %
- &\cref{sect:stage1WorkPlan} \cref{sect:stage1ManagingRisk}
+ &\cref{sect:stage1WorkPlan,sect:stage1ManagingRisk}
  & In this section you should reflect on the progress you have made in Stage 1 in relation to your initial work plan and establish your priorities for the next stage. For this, you should revise your initial work plan (\cref{sect:stage1WorkPlan}) accordingly. You should also summarise the outcome of your project risk assessment (\cref{sect:stage1ManagingRisk}).
 \\
 \end{reportblr}
