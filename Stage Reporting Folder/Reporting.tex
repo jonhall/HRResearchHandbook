@@ -1,15 +1,15 @@
-%To reduce warning overload 
-%\hfuzz 9999pt%%Doesn't affect overfull table reports
-%\vfuzz 9999pt
-%\vbadness=10001
-%\hbadness=10001
-\RequirePackage{silence}
-\WarningsOff*
-\WarningsOn[biblatex]
-\WarningFilter{latex}{Marginpar}
-\WarningFilter{latex}{Label}
-\WarningFilter{latex}{Float}
-%\ErrorsOff
+%%To reduce warning overload 
+%%\hfuzz 9999pt%%Doesn't affect overfull table reports
+%%\vfuzz 9999pt
+%%\vbadness=10001
+%%\hbadness=10001
+%\RequirePackage{silence}
+%\WarningsOff*
+%\WarningsOn[biblatex]
+%\WarningFilter{latex}{Marginpar}
+%\WarningFilter{latex}{Label}
+%\WarningFilter{latex}{Float}
+%%\ErrorsOff
 
 \documentclass[10pt,landscape]{article}
 
@@ -28,36 +28,154 @@
 %\NewColumnType{Z}{Q[cmd=\zerobox,wd=0pt]}%%Add column type that deletes a column
 
 \usepackage{emoji}
-\newcommand{\new}[1]{\bfseries #1}%\emoji{eye}}
+\newcommand{\new}[1]{\bfseries #1}%\emoji{eye}
 \newcommand{\update}{\emoji{flying-disc}}
 \usepackage{ninecolors}
 \usepackage{tcolorbox}
 
-\NewTblrEnviron{mytblr}
-\SetTblrInner[mytblr]{hlines,vlines}
-\SetTblrOuter[mytblr]{baseline=B}
+%\NewTblrEnviron{mytblr}
+%\SetTblrInner[mytblr]{hlines,vlines}
+%\SetTblrOuter[mytblr]{baseline=B}
+
+%%Report list formats 
+\usepackage{enumitem}
+%%To define reportenumerate list for report tables
+%\usepackage{enumitem}
+\newlist{reportenum}{enumerate}{2}
+\setlist[reportenum]{nosep}
+\setlist[reportenum,1]{label={\arabic*}}
+%\setlist[reportenum,2]{resume}
+\newlist{reportitem}{itemize}{1}
+\setlist[reportitem]{nosep,label=\textbullet}
 
 \NewTblrEnviron{reportblr}
 \SetTblrOuter[reportblr]{long,expand=\expanded}
-\SetTblrInner[reportblr]{measure=vbox, stretch=-1,%Allows lists in body
-  hline{even} = {gray8,wd=5pt}, %column{2} = {co=1}, 
+\SetTblrInner[reportblr]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+  hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
   colsep = 5pt,
-  row{odd} = {gray8},% row{even} = {gray8},
-  column{1} = {fg=black, bg=azure8, font=\sffamily},%\bfseries\sffamily},
+%  row{odd} = {gray8},% row{even} = {gray8},
+  column{1} = {fg=black, bg=azure8, font=\sffamily},%{\bfseries\sffamily},
   row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
   rowhead = 1,
-  colspec={X[8,l]X[1,c,wd=22pt]X[18]}
+%  colspec={X[8,l]X[1,c,wd=22pt]X[18]}
+  colspec={X[8,l]X[18]}
 }
 \NewTableCommand\reportheader{\SetCell[c=3]{l}}
 
-%%To define reportenumerate list for report tables
-\usepackage{enumitem}
-\newlist{reportenum}{enumerate}{2}
-\setlist[reportenum]{nosep}
-\setlist[reportenum,1]{label*={\arabic*}}
-%\setlist[reportenum,2]{resume}
-\newlist{reportitem}{itemize}{2}
-\setlist[reportitem]{nosep}
+\usepackage{ifthen}
+
+\newcommand{\ritem}[2]{%
+	\ifthenelse{\equal{#1}{!}}
+		%%new section
+		{\item[\color{red}\textbullet]\color{black}}
+		{\ifthenelse{\equal{#1}{*}}
+			%%updated section
+			{\item[\color{black}\textbullet]\color{black}}
+			%%not yet included						
+			{\item[\color{gray4}\textbullet]\color{gray4}}
+		}
+	#2}
+
+\newcommand{\titem}[2]{%
+	\ifthenelse{\equal{#1}{*}}%
+		{\color{black}}%
+		{\color{gray4}}%
+	#2}
+
+\newcommand\ReportTitle[1]{\reportheader \titem{#1}{Title}}
+
+\newcommand\ReportAbstract[5]
+	{\reportheader \titem{#1}{Abstract}
+	\begin{reportenum}
+		\ritem{#2} {Background}
+		\ritem{#3} {Research Outline}
+		\ritem{#4} {Research Design}
+		\ritem{#5} {Knowledge contribution}
+	\end{reportenum}
+}
+	
+\newcommand\ReportIntroduction[4]%
+	{\reportheader \titem{#1}{Chapter 1: Introduction}
+	\begin{reportenum}
+		\ritem {#2} {Background to the research}
+		\ritem {#3} {Justification for the research}
+		\ritem {#4} {Fitness of the research}
+	\end{reportenum}
+}
+
+\newcommand\ReportLitRev[3]%
+	{\reportheader \titem{#1}{Chapter 2: Literature review}
+	 \begin{reportenum}
+		\ritem {#2}{Review of existing relevant knowledge}
+		\ritem {#3}{Critical summary, including knowledge gap to be addressed by the research}
+	\end{reportenum}
+}
+
+\newcommand\ReportResearchDef[4]%
+	{\reportheader \titem{#1}{Chapter 3: Research Definition}
+		 \begin{reportenum}
+			\ritem{#2}  {Problem statement}
+			\ritem{#3}  {Aim, objectives, tasks and deliverables} 
+			\ritem{#4}  {Knowledge contribution}
+		\end{reportenum}
+	}
+
+\newcommand\ReportResearchDes[5]%
+	{\reportheader   \titem{#1}{Chapter 4: Research design}
+		 \begin{reportenum}
+			\ritem{#2}  {Data} 
+			\ritem{#3}  {Research strategy and methods} 
+			\ritem{#4}  {Research procedures} 
+			\ritem{#5}  {Ethical, legal and EDI considerations} 
+		\end{reportenum}
+	}
+
+\newcommand\ReportAnalysisInterp[4]%
+	{\reportheader  \titem{#1}{Chapter 5: Analysis and interpretation}
+		 \begin{reportenum}
+			\ritem{#2}  {Summary and analysis of data} 
+			\ritem{#3}  {Summary of key findings} 
+			\ritem{#4} {Interpretation in relation to aim and objectives} 
+		\end{reportenum}
+	}
+
+\newcommand\ReportEvalConc[7]%
+	{\reportheader   \titem{#1}{Chapter 6: Evaluation and conclusion}
+	 \begin{reportenum}
+		\ritem{#2}  {Evaluation against aim and objectives} 
+		\ritem{#3}  {Evaluation against related work in the literature} 
+		\ritem{#4}  {Implications for practice} 
+		\ritem{#5}  {Validity of the research} 
+		\ritem{#6}  {Further work} 
+		\ritem{#7}  {Personal reflection on your experience} 
+	\end{reportenum}
+}
+
+\newcommand\ReportRefs[1]{\reportheader \titem{#1}{References}}
+
+\newcommand\ReportAppendices[1]{\reportheader \titem{#1}{Appendices}}
+
+\newcommand\ReportProgressTracking[9]%
+	{\reportheader \titem{#1}{Progress tracking}
+	\begin{reportenum}
+		\ritem{#2}{Qualification fit}
+		\ritem{#3}{Personal and professional fit}
+		\ritem{#4}{Technical skills and resources needed}
+		\ritem{#5}{Statement of feasibility}
+		\ritem{#6}{Further reading to be completed}
+		\ritem{#7}{Work schedule}
+		\ritem{#8}{Risk assessment}
+		\ritem{#9}{Risk Assessment Table(s)}
+	\end{reportenum}
+}
+
+\newcommand\ReportReflection[3]%
+	{\reportheader \titem{#1}{Reflection}
+	\begin{reportenum}
+		\ritem{#2}{Personal reflection on research process}
+		\ritem{#3}{Key priorities in follow-up stage}
+	\end{reportenum}
+}
 
 %%for section, etc, xreferencing without needing to identify part
 \usepackage{cleveref}
@@ -67,523 +185,21 @@
 \begin{document}
 \maketitle
 
-Need to find a way of indicating where sections change in this.
+\include{Stage0}
 
 \clearpage
-\section*{Stage 0: Synopsis}
-
-\begin{reportblr}{}
-Part/Structure&Writing Goal(s)&Guidance\\
-\reportheader \new{Title}\\
-	&\cref{sect:stage0title}
-	&At this stage, your title should capture your research area and draft aim. Your title can – and probably will – change as your work progresses.\\
-
-\reportheader \new{Abstract}\\
-	\begin{reportenum}
-	\item \new{Background}	
-	\item \new{Research Outline}
-	\item \new{Research Design}
-	\item \new{Knowledge contribution}
-	\end{reportenum}
-
-	&\cref{sect:stage0abstract}
-	&At this stage, your abstract should capture your research area and possible knowledge contributions and include key papers that have inspired your choices.\\
-
-\reportheader 1~\new{Introduction}\\
-%\begin{reportenum}
-%	\item \new{Research topic
-%%	}\item Fitness of the research
-%\end{reportenum}
-	&\cref{sect:stage0ChoosingATopic}
-	& At this stage you should be able to give an introduction to your research topic and its wider context as your Introduction%
-\\
-
-\reportheader \new{References}\\
-	&\cref{stage0refs}
-	& At this stage you should be able to demonstrate your use of a BMT, mentioning key papers in the abstract. They should be in the required bibliographical style.
- \\
-
-%\reportheader \new{Progress tracking}\\
-%\begin{reportenum}
-%\item \new{Qualification fit}
-%}\item \new{Personal and professional fit
-%}\item \new{Technical skills and resources needed
-%}\item \new{Statement of feasibility
-%}\item \new{Personal reflection on research process
-%}\end{reportenum}
-%&\cref{stage0progress}
-%& In this section you should argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging.\\
-%
-%\reportheader \new{Reflection}\\
-%%
-%\begin{reportenum}%
-%\item \new{Key priorities in follow-up stage
-%}\item \new{Personal and professional fit
-%}\item \new{Work schedule
-%}\item \new{Risk assessment
-%}\item \new{Risk Assessment Table
-%}\end{reportenum}
-%%
-% &\cref{sect:stage0WorkPlan} \cref{sect:stage0ManagingRisk}
-% & In this section you should reflect on the progress you have made in Stage 1 in relation to your initial work plan and establish your priorities for the next stage. For this, you should revise your initial work plan (\cref{sect:stage1WorkPlan}) accordingly. You should also summarise the outcome of your project risk assessment (\cref{sect:stage1ManagingRisk}).
-%\\
-\end{reportblr}
+\include{Stage1}
 
 \clearpage
-\section*{Stage 1}
-
-\begin{reportblr}{}
-Part/Structure&Writing Goal(s)&Guidance\\
-\reportheader Working title\\
-	&%\cref{sect:stage1title}
-	&Updated in the light of your of your work on this stage\\
-
-\reportheader Abstract\\
-	\begin{reportenum}
-	\item Background	
-	\item Research Outline
-	\item Research Design
-	\item Knowledge contribution
-	\end{reportenum}
-
-	&%\cref{sect:stage1abstract}
-	&Updated in the light of your of your work on this stage. Materials from your abstract might form the basis of your Introduction and its subsections.\\
-
-\reportheader 1~Introduction\\
-\begin{reportenum}
-	\item \new{Background to the research}
-	\item \new{Justification for the research}
-%	\item Fitness of the research
-\end{reportenum}
-	&\cref{sect:stage1ChoosingATopic}
-	& At this stage you should be able to fill out your introduction from \cref{sect:stage0introduction}, adding an overview and a justification of your intended knowledge contribution in terms of the existing literature, but before the detailed work of subsequent stages. This should consist of: 
- %
-\begin{itemize}[nosep]
-\item an introduction to your research topic and its wider context (as background)
-\item the justification of the knowledge contribution your research will make, and include its relevance to you and your research context
-%\item the fitness of your research to your research context.
-\end{itemize}
-%
-This section should: 
- %
-\begin{itemize}[nosep]
-\item be well argued and supported by appropriate citations, 
-\item argue how the research fits within the scope of your qualification, and 
-\item describe how it meets any other personal, professional or organisational criteria that might exist
-\end{itemize}
-
-At this stage, it
-%
-\begin{itemize}[nosep]
-\item might have missing or only partially completed subsections where the literature has not yet, or only partially been covered
-\item lack complete justification of its worth
-\end{itemize}
-\\
-
-\reportheader \new{2~Literature review}\\
-%
-\begin{reportenum}%[start=0,label={(\bfseries R\arabic*):}]
-\item  \new{Draft review of relevant knowledge}
-\item \new{Planned further literature review}
-\end{reportenum}
-%
-	&\cref{sect:stage1LiteratureReview}
-	& At this stage you should:
- %
-\begin{itemize}[nosep]
-\item have collected and structured the papers for your initial literature review theme summaries \basedOn{sect:stage1LiteratureReview}. Your focus should be on summarising, contrasting and comparing what has gone before with a particular focus on any holes in the literature that you will be attempting to fill with your contribution. As you read more, be aware that holes that you thought were there might close up, which is of relevance to the following section%You will build on this content in Stage 2 to write an extensive, well-argued literature review to demonstrate your in-depth engagement with the academic (and other) relevant literature. 
-\item identify any further reading you intend to undertake in Stage 2 as a result of completing Stage 1. (As your reading of the literature becomes more complete, this section will shrink. In the final draft, this section will not appear.) Be clear to describe how the papers you intend to read might relate to holes already found.%, although the expectation is that the bulk of your reading (and writing) has taken place in Stage 1, so that you can focus on synthesising your knowledge and understanding in the next stage
-\end{itemize}
-\\
-
-\reportheader 3~Research definition\\
-\begin{reportenum}
-	\item \new{Problem statement}
-	\item \new{Aim and objectives}
-	\item \new{Knowledge contribution}
-	\end{reportenum}
-	&\cref{sect:stage1ResearchProblem} \cref{sect:stage1AimAndObjectives} \cref{sect:stage1LiteratureReview}
-	& At this stage you should be able to:
-	%
-\begin{itemize}[nosep]
-\item make a well articulated research problem statement \basedOn{sect:stage1research problem}
-\item complement this with your statement of your aim and objectives \basedOn{sect:stage1AimAndObjectives}
-\item describe clearly the intended knowledge contribution of your research which fits together with the holes in the literature that you have discovered \basedOn{sect:stage1LiteratureReview}
-\end{itemize}
-%
-  %You should refer back to the activities you conducted in %Sections~\cref{sect:stage1ResearchProblem} and \cref{sect:stage1AimAndObjectives}, but also to the theme summaries you produced at the end of Section~\cref{sect:stage1LiteratureReview}, particularly those which highlight knowledge gaps of interest
-\\
-
-\reportheader 4~Research design\\
-%
-\begin{reportenum}%
-\item  \new{Evidence and data}
-\item  \new{Research methods} 
-\item  \new{Ethics and other constraints}
-\end{reportenum}
-  &\cref{sect:stage1ResearchDesign}
-  & At this stage you should be able to:
-  %
-\begin{itemize}[nosep]
-\item demonstrate your engagement with research design, including descriptions of the kind of data, evidence, and methods you may need;
-\item justify these choices in relation to your research problem, aim and objectives
-\item evidence your careful consideration of ethics and regulations, and that your research will comply with your course and other constraints, including university guidelines, that you will be operating under during your research. 
-\end{itemize}
-\\
-
-\reportheader References\\
-	&\cref{stage1refs}
-	& At this stage you should be able to demonstrate your use of a BMT
-%
-\begin{itemize}[nosep]
-\item building an initial bibliography;
-\item in the required bibliographical style.
-\end{itemize}
- \\
-
-\reportheader Progress\\
-\begin{reportenum}
-\item Qualification fit
-\item Personal and professional fit
-\item Technical skills and resources needed
-\item \new{Statement of feasibility}
-\item Personal reflection on research process
-\end{reportenum}
-&\cref{stage1progress}
-& In this section you should argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging.\\
-
-\reportheader Reflection\\
-%
-\begin{reportenum}%
-\item Key priorities in follow-up stage
-\item Personal and professional fit
-\item Work schedule
-\item Risk assessment
-\item Risk Assessment Table
-\end{reportenum}
-%
- &\cref{sect:stage1WorkPlan,sect:stage1ManagingRisk}
- & In this section you should reflect on the progress you have made in Stage 1 in relation to your initial work plan and establish your priorities for the next stage. For this, you should revise your initial work plan (\cref{sect:stage1WorkPlan}) accordingly. You should also summarise the outcome of your project risk assessment (\cref{sect:stage1ManagingRisk}).
-\\
-\end{reportblr}
+\include{Stage2}
 
 \clearpage
-\section*{Stage 2}
-
-\begin{reportblr}{}
-Part/Structure&Writing goals at this stage&Ref(s)\\
-\reportheader Title\\ 
-& At this stage, your title should continue to capture succinctly your research problem and aim. If these have changed, you should consider whether you need to update your title accordingly.&\\
-
-\reportheader 1~Introduction\\ 
-\begin{reportenum}%
-\item  Background to the research 
-\item  Justification for the research 
-\item  Fitness of the research 
-\end{reportenum}
- & At this stage you should be able to give an overview of and justify your intended research before the detailed work of subsequent stages. This should consist of: 
- %
-\begin{itemize}[nosep]
-\item an introduction to your research topic and its wider context (as background);
-\item the justification of why the research is worth pursuing;
-\item the fitness of your research to your research context.
-\end{itemize}
-%
-This section should: 
- %
-\begin{itemize}[nosep]
-\item be well argued and supported by appropriate citations, 
-\item argue how the research fits within the scope of your qualification, and 
-\item describe how it meets any other personal, professional or organisational criteria that might exist.
-\end{itemize}
-
-\textit{You may review this section from Stage 1 to reflect your growing understanding of the topic in context derived from your literature review.}\\
-
-\reportheader 2~Literature review\\
-\begin{reportenum}%
-\item  Draft review of relevant knowledge 
-\item  Planned further literature review 
-\end{reportenum}
-& \textit{This section should consist of the current state of your current literature review, developed in this stage by following the advice in Section~\cref{sect:stage2literatureReview}}. At this point, it should be a substantial almost complete draft that is well structured and articulated through solid academic arguments. It should demonstrate your understanding of the main literature which relates to your research problem, clearly identifying the knowledge gap your project will address.
-&\cref{sect:stage2literatureReview}\\
- 
-\reportheader 3~Research definition\\ 
-\begin{reportenum}%
-\item  Problem statement 
-\item  Aim and objectives 
-\item  Knowledge contribution 
-\end{reportenum}
-& You should ensure that your research problem is well articulated, that your aim and objectives are consistent with the research problem, and that the intended knowledge contribution of your research is clearly argued. You should refer back to the activities you conducted in Sections~\cref{sect:stage1ResearchProblem} and \cref{sect:stage1AimAndObjectives}, but also to the theme summaries you produced at the end of Section~\cref{sect:stage1LiteratureReview}, particularly those which highlight knowledge gaps of interest& \\
- 
- \reportheader 4~Research design\\ 
- \begin{reportenum}%
-\item  Evidence and data 
-\item  Research methods 
-\item  Ethics and regulations 
-\end{reportenum}
-& This section should demonstrate your initial engagement with research design, particularly that you have thought about the kind of evidence and methods you may need, appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethics and regulations, and that your research will comply with your course and university requirements. You should refer back to Section~\cref{sect:stage1ResearchDesign} to develop the content of this section& \\
-
-\reportheader References\\ 
-& You should keep your references in good order and ensure you apply the required bibliographical style consistently. Ideally, you should use a BMT to generate and integrate your references within your report &\\
-
-\reportheader Progress\\
-\begin{reportenum}
-\item Qualification fit
-\item Personal and professional fit
-\item Technical skills and resources needed
-\item Statement of feasibility
-\item Personal reflection on research process
-\end{reportenum}
-& Contains your current argument for how your research is a good fit across all criteria. This should include clear rationale as to why you think what you are proposing is feasible. %next boxYou should also include your reflection on your growing understanding of the research process, including key learning and aspects you have found particularly challenging. &\\
-
-\reportheader Reflection\\
-%
-\begin{reportenum}%
-\item Key priorities in follow-up stage
-\item Personal and professional fit
-\item Work schedule
-\item Risk assessment
-\item Risk Assessment Table
-\end{reportenum}
-%
- & Contains your reflection on the progress you have made in Stage 1 in relation to your initial work plan, indicating to your priorities for the next stage and including an updated work plan (\cref{sect:stage2WorkPlan}), and the updated risks you face(\cref{sect:stage2ManagingRisk})
- &\cref{sect:stage2WorkPlan} \cref{sect:stage2ManagingRisk}\\
-\end{reportblr}
+\include{Stage3}
 
 \clearpage
-\section*{Stage 3}
-
-\begin{reportblr}{}
-Part/Structure&Writing goals at this stage&Ref(s)\\
-\reportheader Title\\ 
-& Your title should succinctly capture your research problem and aim\\
-
-\reportheader 1~Introduction\\
-\begin{reportenum}
-\item Background to the research 
-\item Justification for the research 
-\end{reportenum}
-& This section should provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. It should be well articulated and supported by evidence &\\
-
-\reportheader 2~Literature review\\
-\begin{reportenum}
-\item Review of existing relevant knowledge 
-\item Critical summary, including knowledge gap to be addressed by the research 
-\end{reportenum}
-& Your review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and possible knowledge gaps. Most of your citations should point to academic articles. Your critical summary should highlight key insights from your review and provide a strong justification for your proposed research. Both coverage and depth of your review matter. You should ensure that your review is well structured, with a logical narrative flow and your arguments are well supported by evidence & \\
-
-\reportheader 3~Research definition\\
-\begin{reportenum}
-\item Problem statement 
-\item Aim, objectives, tasks and deliverables
-\item Knowledge contribution
-\end{reportenum}
-& You should ensure that your research problem is well articulated and appropriate for your course and your personal and professional circumstances, that your aim and objectives are consistent with research problem, that tasks and deliverables break down your objectives appropriately and are clearly related to your chosen research methods, and that the intended knowledge contribution of your research is clearly articulated &\\
-
-\reportheader 4~Research design\\
-\begin{reportenum}
-\item Evidence and data 
-\item Research strategy and methods
-\item Research procedures
-\item Ethical, legal and EDI considerations
-\end{reportenum}
-& This section should demonstrated your critical engagement with all elements of research design, including a detailed account of the data and evidence needed in your research, the research methods and research strategies you will to apply, and how you will apply them within your project. Your account should be supported by a clear rationale and insights from the related literature, and appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethical and legal matters, and that your research will comply with your course and university requirements&\\
-
-\reportheader 5~Analysis and interpretation\\
-\begin{reportenum}
-\item Pilot work
-\end{reportenum}
-& This section should report on a well thought-out pilot work which clearly and competently test some significant aspect of your research design. It should demonstrate good critical reflection on outcomes and highlight any adjustments needed as a result. &\\
-
-\reportheader References\\ 
-	& You should keep your growing references in good order and ensure you apply the required bibliographical style consistently. Ideally, you should use a BMT to generate and integrate your references within your report&\\
-
-\reportheader Progress\\
-\begin{reportenum}
-\item Qualification fit
-\item Personal and professional fit
-\item Technical skills and resources needed
-\item Statement of feasibility
-\item Personal reflection on research process
-\end{reportenum}
-& In this section you should argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging. &\\
-
-\reportheader Reflection\\
-%
-\begin{reportenum}%
-\item Key priorities in follow-up stage
-\item Personal and professional fit
-\item Work schedule
-\item Risk assessment
-\item Risk Assessment Table
-\end{reportenum}
-%
- & In this section you should reflect on the progress you have made in Stage 1 in relation to your initial work plan and establish your priorities for the next stage. For this, you should revise your initial work plan (\cref{sect:stage3WorkPlan}) accordingly. You should also summarise the outcome of your project risk assessment (\cref{sect:stage3ManagingRisk}).
- &\cref{sect:stage3WorkPlan} \cref{sect:stage3ManagingRisk}\\
-\end{reportblr}
-%\end{document}
+\include{Stage4}
 
 \clearpage
-\section*{Stage 4}
-
-\begin{reportblr}{}
-Part/Structure&Writing goals at this stage&Ref(s)\\
-\reportheader Title\\ 
-	& Your title should continue to capture succinctly your research problem and aim. \textit{It is likely this is the same as, or very similar to, that in Stage 3}&\\
-
-\reportheader Abstract \\
-	& You should include your draft abstract providing a succinct account of your research to date \\
-
-\reportheader 1~Introduction \\
-\begin{reportenum}
-	\item  Background to the research 
-	\item  Justification for the research 
-	\item  fitness of the research 
-\end{reportenum}
-& This section should continue to provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. Its purpose is to introduce and justify your intended research in overview, before entering the detailed work of the subsequent sections. It should be well argued and supported by appropriate citations. In this section, you should also argue how the research fits within the scope of your qualification, and meets any other personal, professional or organisational criteria. \textit{You may review this section from Stage 1 to reflect your growing understanding of the topic in context derived from your literature review.} &\\
-
-\reportheader Literature review \\
-\begin{reportenum}
-	\item  Review of existing relevant knowledge 
-	\item  Critical summary, including knowledge gap to be addressed by the research 
-\end{reportenum}
-	& Your review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and possible knowledge gaps. Most of your citations should point to academic articles. Your critical summary should highlight key insights from your review and provide a strong justification for your proposed research. Both coverage and depth of your review matter. You should ensure that your review is well structured, with a logical narrative flow and your arguments are well supported by evidence &\\
-	
-\reportheader  Research definition \\
- \begin{reportenum}
-	\item  Problem statement 
-	\item  Aim, objectives, tasks and deliverables 
-	\item  Knowledge contribution 
-\end{reportenum}
-	& You should ensure that your research problem is well articulated and appropriate for your course and your personal and professional circumstances, that your aim and objectives are consistent with research problem, that tasks and deliverables break down your objectives appropriately and are clearly related to your chosen research methods, and that the intended knowledge contribution of your research is clearly articulated &\\
-
-\reportheader Research design \\
- \begin{reportenum}
-	\item  Evidence and data 
-	\item  Research strategy and methods 
-	\item  Research procedures 
-	\item  Ethical, legal and EDI considerations
-\end{reportenum} 
-	& This section should demonstrate your critical engagement with all elements of research design, including a detailed account of the data and evidence needed in your research, the research methods and research strategies chosen, with justification, and applied within your project. Your account should be supported by a clear rationale and insights from the related literature, and appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethical and legal matters, and that your research complies with your course and university requirements &\\
-
-\reportheader Analysis and interpretation \\
- \begin{reportenum}
-	\item  Summary and analysis of evidence 
-	\item  Summary of key findings 
-	\item  Interpretation in relation to aim and objectives 
-\end{reportenum}
-	& This section should demonstrate substantial progress towards generating and analysing your data and evidence, and interpreting them in relation to aim and objectives. It should demonstrate a competent execution of your research design, present appropriate summaries of evidence and data, supported by raw data in an appendix if needed. Key findings should be clearly identified and logically connected to evidence, with good critical reflection on their implications for aim and objectives. & \\
-
-\reportheader  References \\
-	& You should keep your growing references in good order and ensure you apply the required bibliographical style consistently. &\\
-
-\reportheader Work planning and risk assessment \\
- \begin{reportenum}
-	\item  Statement of progress 
-	\item  Key priorities in follow-up stage 
-	\item  Risk assessment 
-\end{reportenum}
-	& In this section you should reflect on the progress you have made in Stage 4 and establish your priorities for the next stage. You should also review your risk assessment as appropriate. &\\
-
-\reportheader  Appendix - Raw evidence \\
-	& If relevant, you should include a sample of your raw data as an appendix \\
-
-\reportheader  Appendix - Work schedule \\
-	& You should include your revised work plan as an appendix \\
-\reportheader  Appendix - Risk assessment table \\
-	& You should include your updated risk table as an appendix \\
-
-\reportheader Progress\\
-\begin{reportenum}
-\item Qualification fit
-\item Personal and professional fit
-\item Technical skills and resources needed
-\item Statement of feasibility
-\item Personal reflection on research process
-\end{reportenum}
-& In this section you should argue how your research is a good fit across all criteria. You should provide a clear rationale as to why you think what you are proposing is feasible. You should also reflect on your growing understanding of the research process, including key learning and aspects you have found particularly challenging. &\\
-
-\reportheader Reflection\\
-%
-\begin{reportenum}%
-\item Key priorities in follow-up stage
-\item Personal and professional fit
-\item Work schedule
-\item Risk assessment
-\item Risk Assessment Table
-\end{reportenum}
-%
- & In this section you should reflect on the progress you have made in Stage 1 in relation to your initial work plan and establish your priorities for the next stage. For this, you should revise your initial work plan (\cref{sect:stage4WorkPlan}) accordingly. You should also summarise the outcome of your project risk assessment (\cref{sect:stage4ManagingRisk}).
- &\cref{sect:stage4WorkPlan} \cref{sect:stage4ManagingRisk}\\
-\end{reportblr}
-
-\clearpage
-\section*{Stage 5}
-
-\begin{reportblr}{}
-Part/Structure&Writing goals at this stage&Ref(s)\\
-\reportheader Title\\ 
-	& Your title should capture succinctly your research problem and aim &\\
-	
-\reportheader  Abstract \\
-	& Your abstract should providing a succinct account of your research &\\
-	
-\reportheader  Chapter 1: Introduction \\
- \begin{reportenum}
-	\item  Background to the research 
-	\item  Justification for the research 
-	\item  Fitness of the research 
-\end{reportenum}
-	& This chapter should provide an introduction to your research topic in its wider context (as background) and your justification of why the research is worth pursuing. Its purpose is to introduce and justify your intended research in overview, before entering the detailed work of the subsequent chapters. It should be well argued and supported by appropriate citations. In this chapter, you should also argue how the research fits within the scope of your qualification, and meets any other personal, professional or organisational criteria.&\\
-
-\reportheader  Chapter 2: Literature review \\
- \begin{reportenum}
-	\item  Review of existing relevant knowledge 
-	\item  Critical summary, including knowledge gap to be addressed by the research 
-\end{reportenum}
-	& Your review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and possible knowledge gaps. Most of your citations should point to academic articles. Your critical summary should highlight key insights from your review and provide a strong justification for your proposed research. Both coverage and depth of your review matter. You should ensure that your review is well structured, with a logical narrative flow and your arguments are well supported by data &\\
-	
-\reportheader  Chapter 3: Research definition \\
- \begin{reportenum}
-	\item  Problem statement 
-	\item  Aim, objectives, tasks and deliverables 
-	\item  Knowledge contribution 
-\end{reportenum}
-	& You should ensure that your research problem is well articulated and appropriate for your course and your personal and professional circumstances, that your aim and objectives are consistent with research problem, that tasks and deliverables break down your objectives appropriately and are clearly related to your chosen research methods, and that the intended knowledge contribution of your research is clearly articulated &\\
-
-\reportheader   Chapter 4: Research design \\
- \begin{reportenum}
-	\item  Data 
-	\item  Research strategy and methods 
-	\item  Research procedures 
-	\item  Ethical, legal and EDI considerations 
-\end{reportenum}
-	& This chapter should demonstrated your critical engagement with all elements of research design, including a detailed account of the data needed in your research, the research methods and research strategies chosen, with justification, and applied within your project. Your account should be supported by a clear rationale and insights from the related literature, and appropriately justified in relation to your research problem, aim and objectives. It should also demonstrate your careful consideration of ethical and legal matters, and that your research complies with your course and university requirements &\\
-	
-\reportheader  Chapter 5: Analysis and interpretation \\
- \begin{reportenum}
-	\item  Summary and analysis of data 
-	\item  Summary of key findings 
-	\item  Interpretation in relation to aim and objectives 
-\end{reportenum}
-	& This chapter should provide a detailed account of your data generating, analysis, the findings you have derived and their interpretation in relation to your research aim and objectives. It should demonstrate a competent execution of your research design, present appropriate summaries of data, supported by raw data in an appendix if needed. Key findings should be clearly identified and logically connected to data, with good critical reflection on their implications for aim and objectives. &\\
-	
-\reportheader   Chapter 6: Evaluation and conclusion \\
- \begin{reportenum}
-	\item  Evaluation against aim and objectives 
-	\item  Evaluation against related work in the literature 
-	\item  Implications for practice 
-	\item  Validity of the research 
-	\item  Further work 
-	\item  Personal reflection on your experience 
-\end{reportenum}
-	& In this chapter you should reflect on the extent your research has met its stated aim and objectives, bringing together all your findings from both primary and secondary research work. You should also reflect how it has contributed new knowledge in relation to the literature you have reviewed. You should also assess the validity of your research and consider any implication for further research and, if applicable, for professional practice. You should also reflect on what you have learnt from a personal standpoint in relation to thinking and behaving as an academic researcher. &\\
-	
-\reportheader  References \\
-	& You should include all your references and ensure you apply the required bibliographical style consistently. &\\
-
-\reportheader  Appendix - Raw data \\
-	& If relevant, you should include a sample of your raw data as an appendix  &\\
-\end{reportblr}
+\include{Stage5}
 
 \end{document}
