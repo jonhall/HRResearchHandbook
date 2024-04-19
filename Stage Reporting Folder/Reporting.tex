@@ -58,7 +58,7 @@
   row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
   rowhead = 1,
 %  colspec={X[8,l]X[1,c,wd=22pt]X[18]}
-  colspec={X[8,l]X[18]}
+  colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[1]}
 }
 \NewTableCommand\reportheader{\SetCell[c=3]{l}}
 
@@ -182,11 +182,18 @@
 \usepackage{cleveref}
 
 \newcommand{\basedOn}[1]{that is based on the work you completed in \cref{#1}}
+%%repeated report table messages
+\newcommand\tablenocontent{No content at this stage}
+\newcommand\tablecites{You should include those references that you cite in new and/or update chapters}
+%\newcommand\tableconsiderprogress{Ensure all cited references are listed in this section}
+\newcommand\tablefinalise[1]{After completing your work for this state, finalise your #1}
+\newcommand\tableminor[1]{Reread and make any minor modifications to your #1}
+\newcommand\tablecheck[1]{You should check your #1 for correctness and completeness}
 
 \begin{document}
-\maketitle
-
-\include{Stage0}
+%\maketitle
+%
+%\include{Stage0}
 
 \clearpage
 \include{Stage1}
