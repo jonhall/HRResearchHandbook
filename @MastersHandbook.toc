@@ -1,0 +1,136 @@
+\contentsline {chapter}{Contents}{1}{section*.1}%
+\contentsline {section}{\numberline {0.1}Generating raw research data}{6}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Sampling: what, who (and how) to choose}{7}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Modern standards}{9}{subsection.0.1.2}%
+\contentsline {section}{\numberline {0.2}Data generation methods}{10}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Observations}{10}{subsection.0.2.1}%
+\contentsline {paragraph}{What to observe}{11}{section*.5}%
+\contentsline {paragraph}{Observation types}{11}{section*.6}%
+\contentsline {paragraph}{More on social observations}{11}{section*.7}%
+\contentsline {subsubsection}{\numberline {0.2.1.1}Procedural considerations}{12}{subsubsection.0.2.1.1}%
+\contentsline {paragraph}{The phenomena}{12}{section*.8}%
+\contentsline {paragraph}{The kind of observations}{12}{section*.9}%
+\contentsline {paragraph}{The time and place}{12}{section*.10}%
+\contentsline {paragraph}{The use of instruments}{12}{section*.11}%
+\contentsline {paragraph}{How to record your observations}{12}{section*.12}%
+\contentsline {subsubsection}{\numberline {0.2.1.2}Other things to think about}{13}{subsubsection.0.2.1.2}%
+\contentsline {paragraph}{Hawthorne effect}{13}{section*.13}%
+\contentsline {paragraph}{Observer bias}{13}{section*.14}%
+\contentsline {paragraph}{Volume of observations}{13}{section*.15}%
+\contentsline {subsubsection}{\numberline {0.2.1.3}Further reading}{14}{subsubsection.0.2.1.3}%
+\contentsline {subsection}{\numberline {0.2.2}Questionnaires}{14}{subsection.0.2.2}%
+\contentsline {paragraph}{Essential questions}{15}{section*.16}%
+\contentsline {paragraph}{Profiling questions}{15}{section*.17}%
+\contentsline {paragraph}{Demographic questions}{15}{section*.18}%
+\contentsline {paragraph}{Response options}{15}{section*.19}%
+\contentsline {subsubsection}{\numberline {0.2.2.1}Procedural considerations}{15}{subsubsection.0.2.2.1}%
+\contentsline {paragraph}{Using tools}{15}{section*.20}%
+\contentsline {paragraph}{Drafting, testing and piloting}{16}{section*.21}%
+\contentsline {subsubsection}{\numberline {0.2.2.2}Other things to think about}{16}{subsubsection.0.2.2.2}%
+\contentsline {paragraph}{Plain language}{16}{section*.22}%
+\contentsline {paragraph}{Unbiased language}{16}{section*.23}%
+\contentsline {paragraph}{Double-barrelled questions}{16}{section*.24}%
+\contentsline {paragraph}{Closed and open questions}{17}{section*.25}%
+\contentsline {paragraph}{Scales}{17}{section*.26}%
+\contentsline {paragraph}{Question grouping, ordering and flow}{17}{section*.27}%
+\contentsline {subsubsection}{\numberline {0.2.2.3}Further reading}{17}{subsubsection.0.2.2.3}%
+\contentsline {subsection}{\numberline {0.2.3}Interviews}{17}{subsection.0.2.3}%
+\contentsline {paragraph}{The structured interview}{18}{section*.28}%
+\contentsline {paragraph}{The semi-structured interview}{18}{section*.29}%
+\contentsline {paragraph}{The unstructured interview}{19}{section*.30}%
+\contentsline {subsubsection}{\numberline {0.2.3.1}Procedural considerations}{19}{subsubsection.0.2.3.1}%
+\contentsline {paragraph}{Interview type}{19}{section*.31}%
+\contentsline {paragraph}{Whom to interview}{19}{section*.32}%
+\contentsline {paragraph}{Ethical and legal matters}{19}{section*.33}%
+\contentsline {paragraph}{Testing and reviewing}{20}{section*.34}%
+\contentsline {paragraph}{Recording answers}{20}{section*.35}%
+\contentsline {paragraph}{Where to hold the interview}{21}{section*.36}%
+\contentsline {paragraph}{Opening and closing interviews}{21}{section*.37}%
+\contentsline {subsubsection}{\numberline {0.2.3.2}Other things to think about}{21}{subsubsection.0.2.3.2}%
+\contentsline {paragraph}{Making a checklist}{21}{section*.38}%
+\contentsline {paragraph}{Being a good interviewer}{21}{section*.39}%
+\contentsline {subsubsection}{\numberline {0.2.3.3}Further reading}{22}{subsubsection.0.2.3.3}%
+\contentsline {subsection}{\numberline {0.2.4}Focus groups}{22}{subsection.0.2.4}%
+\contentsline {subsubsection}{\numberline {0.2.4.1}Procedural considerations}{23}{subsubsection.0.2.4.1}%
+\contentsline {paragraph}{Group type}{23}{section*.40}%
+\contentsline {paragraph}{Group size}{23}{section*.41}%
+\contentsline {paragraph}{Participants}{23}{section*.42}%
+\contentsline {paragraph}{Moderation}{23}{section*.43}%
+\contentsline {paragraph}{Location}{24}{section*.44}%
+\contentsline {paragraph}{Choice of questions}{24}{section*.45}%
+\contentsline {paragraph}{Discussion etiquette}{24}{section*.46}%
+\contentsline {paragraph}{Recording the discussion}{24}{section*.47}%
+\contentsline {subsubsection}{\numberline {0.2.4.2}Other things to think about}{24}{subsubsection.0.2.4.2}%
+\contentsline {paragraph}{Groupthink}{24}{section*.48}%
+\contentsline {paragraph}{Social desirability bias}{24}{section*.49}%
+\contentsline {paragraph}{Group dynamics}{25}{section*.50}%
+\contentsline {subsubsection}{\numberline {0.2.4.3}Further reading}{25}{subsubsection.0.2.4.3}%
+\contentsline {subsection}{\numberline {0.2.5}Delphi method}{25}{subsection.0.2.5}%
+\contentsline {subsubsection}{\numberline {0.2.5.1}Operational considerations}{26}{subsubsection.0.2.5.1}%
+\contentsline {paragraph}{Selecting experts}{26}{section*.51}%
+\contentsline {paragraph}{Process}{26}{section*.52}%
+\contentsline {paragraph}{Consensus criteria}{26}{section*.53}%
+\contentsline {paragraph}{Location}{26}{section*.54}%
+\contentsline {subsubsection}{\numberline {0.2.5.2}Other things to think about}{27}{subsubsection.0.2.5.2}%
+\contentsline {paragraph}{Resources}{27}{section*.55}%
+\contentsline {paragraph}{Lack of discussion}{27}{section*.56}%
+\contentsline {paragraph}{Difficulty in reaching consensus}{27}{section*.57}%
+\contentsline {subsubsection}{\numberline {0.2.5.3}Further reading}{27}{subsubsection.0.2.5.3}%
+\contentsline {subsection}{\numberline {0.2.6}Journaling}{27}{subsection.0.2.6}%
+\contentsline {subsubsection}{\numberline {0.2.6.1}Procedural considerations}{28}{subsubsection.0.2.6.1}%
+\contentsline {paragraph}{Diary form}{28}{section*.58}%
+\contentsline {paragraph}{Prompts and guidance}{28}{section*.59}%
+\contentsline {paragraph}{Participants}{28}{section*.60}%
+\contentsline {paragraph}{Managing data}{28}{section*.61}%
+\contentsline {subsubsection}{\numberline {0.2.6.2}Other things to think about}{28}{subsubsection.0.2.6.2}%
+\contentsline {paragraph}{Subjectivity and bias}{28}{section*.62}%
+\contentsline {paragraph}{Limited generalisability}{29}{section*.63}%
+\contentsline {subsubsection}{\numberline {0.2.6.3}Further reading}{29}{subsubsection.0.2.6.3}%
+\contentsline {subsection}{\numberline {0.2.7}Fieldwork}{29}{subsection.0.2.7}%
+\contentsline {subsubsection}{\numberline {0.2.7.1}Operational considerations}{30}{subsubsection.0.2.7.1}%
+\contentsline {paragraph}{Logistics, equipment and budget}{30}{section*.64}%
+\contentsline {paragraph}{Permissions and ethical issues}{30}{section*.65}%
+\contentsline {paragraph}{Health and Safety}{31}{section*.66}%
+\contentsline {paragraph}{Managing data}{31}{section*.67}%
+\contentsline {subsubsection}{\numberline {0.2.7.2}Other things to think about}{31}{subsubsection.0.2.7.2}%
+\contentsline {paragraph}{Quality of results}{31}{section*.68}%
+\contentsline {paragraph}{Logistic challenges}{31}{section*.69}%
+\contentsline {paragraph}{Time and cost}{31}{section*.70}%
+\contentsline {subsubsection}{\numberline {0.2.7.3}Further reading}{32}{subsubsection.0.2.7.3}%
+\contentsline {subsection}{\numberline {0.2.8}Documents}{32}{subsection.0.2.8}%
+\contentsline {subsubsection}{\numberline {0.2.8.1}Procedural considerations}{33}{subsubsection.0.2.8.1}%
+\contentsline {paragraph}{Accessing documents}{33}{section*.72}%
+\contentsline {paragraph}{Selection criteria}{34}{section*.73}%
+\contentsline {paragraph}{Data management}{34}{section*.74}%
+\contentsline {subsubsection}{\numberline {0.2.8.2}Other things to think about}{34}{subsubsection.0.2.8.2}%
+\contentsline {paragraph}{Bias in documents}{34}{section*.75}%
+\contentsline {paragraph}{Interpretation challenges}{34}{section*.76}%
+\contentsline {paragraph}{Time and effort}{35}{section*.77}%
+\contentsline {subsubsection}{\numberline {0.2.8.3}Further reading}{35}{subsubsection.0.2.8.3}%
+\contentsline {subsection}{\numberline {0.2.9}Computational thinking}{35}{subsection.0.2.9}%
+\contentsline {subsubsection}{\numberline {0.2.9.1}Computational thinking tools}{36}{subsubsection.0.2.9.1}%
+\contentsline {subsubsection}{\numberline {0.2.9.2}Workflow}{37}{subsubsection.0.2.9.2}%
+\contentsline {subsubsection}{\numberline {0.2.9.3}Other things to think about}{38}{subsubsection.0.2.9.3}%
+\contentsline {subsection}{\numberline {0.2.10}Mathematical thinking}{38}{subsection.0.2.10}%
+\contentsline {subsubsection}{\numberline {0.2.10.1}Mathematical thinking tools}{39}{subsubsection.0.2.10.1}%
+\contentsline {subsubsection}{\numberline {0.2.10.2}Workflow}{40}{subsubsection.0.2.10.2}%
+\contentsline {subsubsection}{\numberline {0.2.10.3}Other things to think about}{40}{subsubsection.0.2.10.3}%
+\contentsline {subsection}{\numberline {0.2.11}Statistical thinking}{41}{subsection.0.2.11}%
+\contentsline {subsubsection}{\numberline {0.2.11.1}Workflow}{42}{subsubsection.0.2.11.1}%
+\contentsline {subsubsection}{\numberline {0.2.11.2}Other things to think about}{42}{subsubsection.0.2.11.2}%
+\contentsline {section}{\numberline {0.3}Managing your raw data}{42}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Analysis methods}{43}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Using tables to analyse data}{43}{subsection.0.4.1}%
+\contentsline {paragraph}{Pivot tables}{43}{section*.86}%
+\contentsline {paragraph}{Frequency and contingency tables}{47}{section*.90}%
+\contentsline {subsection}{\numberline {0.4.2}Statistical analysis}{47}{subsection.0.4.2}%
+\contentsline {subsubsection}{\numberline {0.4.2.1}Descriptive statistics}{48}{subsubsection.0.4.2.1}%
+\contentsline {subsubsection}{\numberline {0.4.2.2}Inferential statistics}{55}{subsubsection.0.4.2.2}%
+\contentsline {subsection}{\numberline {0.4.3}Qualitative analysis}{60}{subsection.0.4.3}%
+\contentsline {subsubsection}{\numberline {0.4.3.1}Coding qualitative data}{61}{subsubsection.0.4.3.1}%
+\contentsline {subsubsection}{\numberline {0.4.3.2}Presenting qualitative data}{63}{subsubsection.0.4.3.2}%
+\contentsline {section}{\numberline {0.5}Writing up your analysis}{64}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Interpreting and evaluating data}{65}{section.0.6}%
+\contentsline {section}{\numberline {0.7}Drafting an abstract for your project}{66}{section.0.7}%
+\contentsline {section}{\numberline {0.8}Reflecting and reporting in Stage 4}{67}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Takeaways}{68}{section.0.9}%
