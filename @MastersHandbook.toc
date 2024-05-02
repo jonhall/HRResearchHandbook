@@ -219,29 +219,48 @@
 \contentsline {paragraph}{Stakeholders and participants}{98}{section*.82}%
 \contentsline {paragraph}{Development process}{98}{section*.83}%
 \contentsline {subsubsection}{\numberline {1.10.1.2}Other things to think about}{98}{subsubsection.1.10.1.2}%
-\contentsline {paragraph}{Learning curve}{98}{section*.84}%
+\contentsline {paragraph}{Foundational knowledge}{98}{section*.84}%
 \contentsline {paragraph}{Model validity}{98}{section*.85}%
 \contentsline {paragraph}{Timing issues}{99}{section*.86}%
 \contentsline {subsubsection}{\numberline {1.10.1.3}Further reading}{99}{subsubsection.1.10.1.3}%
 \contentsline {subsection}{\numberline {1.10.2}Mathematical thinking}{99}{subsection.1.10.2}%
-\contentsline {subsubsection}{\numberline {1.10.2.1}Mathematical thinking tools}{100}{subsubsection.1.10.2.1}%
-\contentsline {subsubsection}{\numberline {1.10.2.2}Workflow}{100}{subsubsection.1.10.2.2}%
-\contentsline {subsubsection}{\numberline {1.10.2.3}Other things to think about}{101}{subsubsection.1.10.2.3}%
+\contentsline {subsubsection}{\numberline {1.10.2.1}Operational considerations}{100}{subsubsection.1.10.2.1}%
+\contentsline {paragraph}{Mathematical tools}{100}{section*.87}%
+\contentsline {paragraph}{Computational tools}{101}{section*.88}%
+\contentsline {paragraph}{Relevant examples}{101}{section*.89}%
+\contentsline {subsubsection}{\numberline {1.10.2.2}Other things to think about}{101}{subsubsection.1.10.2.2}%
+\contentsline {paragraph}{Foundational knowledge}{101}{section*.90}%
+\contentsline {paragraph}{Limitations of mathematical abstraction}{101}{section*.91}%
+\contentsline {subsubsection}{\numberline {1.10.2.3}Further reading}{102}{subsubsection.1.10.2.3}%
 \contentsline {subsection}{\numberline {1.10.3}Statistical thinking}{102}{subsection.1.10.3}%
-\contentsline {subsubsection}{\numberline {1.10.3.1}Workflow}{102}{subsubsection.1.10.3.1}%
-\contentsline {subsubsection}{\numberline {1.10.3.2}Other things to think about}{102}{subsubsection.1.10.3.2}%
-\contentsline {section}{\numberline {1.11}Data analysis methods}{103}{section.1.11}%
-\contentsline {subsection}{\numberline {1.11.1}Using tables to analyse data}{103}{subsection.1.11.1}%
-\contentsline {paragraph}{Pivot tables}{103}{section*.93}%
-\contentsline {paragraph}{Frequency and contingency tables}{105}{section*.97}%
-\contentsline {subsection}{\numberline {1.11.2}Statistical analysis}{107}{subsection.1.11.2}%
-\contentsline {subsubsection}{\numberline {1.11.2.1}Descriptive statistics}{108}{subsubsection.1.11.2.1}%
-\contentsline {subsubsection}{\numberline {1.11.2.2}Inferential statistics}{114}{subsubsection.1.11.2.2}%
-\contentsline {subsection}{\numberline {1.11.3}Qualitative analysis}{120}{subsection.1.11.3}%
-\contentsline {subsubsection}{\numberline {1.11.3.1}Coding qualitative data}{120}{subsubsection.1.11.3.1}%
-\contentsline {subsubsection}{\numberline {1.11.3.2}Presenting qualitative data}{122}{subsubsection.1.11.3.2}%
-\contentsline {section}{\numberline {1.12}Writing up your analysis}{123}{section.1.12}%
-\contentsline {section}{\numberline {1.13}Interpreting and evaluating data}{124}{section.1.13}%
-\contentsline {section}{\numberline {1.14}Drafting an abstract for your project}{125}{section.1.14}%
-\contentsline {section}{\numberline {1.15}Reflecting and reporting in Stage 4}{126}{section.1.15}%
-\contentsline {section}{\numberline {1.16}Takeaways}{127}{section.1.16}%
+\contentsline {subsubsection}{\numberline {1.10.3.1}Procedural considerations}{102}{subsubsection.1.10.3.1}%
+\contentsline {paragraph}{Sampling}{102}{section*.92}%
+\contentsline {paragraph}{Data quality}{102}{section*.93}%
+\contentsline {paragraph}{Choice of techniques}{102}{section*.94}%
+\contentsline {paragraph}{Statistical software}{103}{section*.95}%
+\contentsline {subsubsection}{\numberline {1.10.3.2}Other things to think about}{103}{subsubsection.1.10.3.2}%
+\contentsline {paragraph}{Foundational knowledge}{103}{section*.96}%
+\contentsline {paragraph}{Data bias}{103}{section*.97}%
+\contentsline {paragraph}{Confounding factors}{103}{section*.98}%
+\contentsline {paragraph}{Model assumptions}{103}{section*.99}%
+\contentsline {paragraph}{Ethical considerations}{104}{section*.100}%
+\contentsline {subsubsection}{\numberline {1.10.3.3}Further reading}{104}{subsubsection.1.10.3.3}%
+\contentsline {subsection}{\numberline {1.10.4}System thinking}{104}{subsection.1.10.4}%
+\contentsline {subsubsection}{\numberline {1.10.4.1}Procedural considerations}{105}{subsubsection.1.10.4.1}%
+\contentsline {subsubsection}{\numberline {1.10.4.2}Other things to think about}{105}{subsubsection.1.10.4.2}%
+\contentsline {subsubsection}{\numberline {1.10.4.3}Further reading}{105}{subsubsection.1.10.4.3}%
+\contentsline {section}{\numberline {1.11}Data analysis methods}{105}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Using tables to analyse data}{105}{subsection.1.11.1}%
+\contentsline {paragraph}{Pivot tables}{105}{section*.101}%
+\contentsline {paragraph}{Frequency and contingency tables}{109}{section*.105}%
+\contentsline {subsection}{\numberline {1.11.2}Statistical analysis}{109}{subsection.1.11.2}%
+\contentsline {subsubsection}{\numberline {1.11.2.1}Descriptive statistics}{110}{subsubsection.1.11.2.1}%
+\contentsline {subsubsection}{\numberline {1.11.2.2}Inferential statistics}{117}{subsubsection.1.11.2.2}%
+\contentsline {subsection}{\numberline {1.11.3}Qualitative analysis}{122}{subsection.1.11.3}%
+\contentsline {subsubsection}{\numberline {1.11.3.1}Coding qualitative data}{123}{subsubsection.1.11.3.1}%
+\contentsline {subsubsection}{\numberline {1.11.3.2}Presenting qualitative data}{125}{subsubsection.1.11.3.2}%
+\contentsline {section}{\numberline {1.12}Writing up your analysis}{126}{section.1.12}%
+\contentsline {section}{\numberline {1.13}Interpreting and evaluating data}{127}{section.1.13}%
+\contentsline {section}{\numberline {1.14}Drafting an abstract for your project}{128}{section.1.14}%
+\contentsline {section}{\numberline {1.15}Reflecting and reporting in Stage 4}{129}{section.1.15}%
+\contentsline {section}{\numberline {1.16}Takeaways}{130}{section.1.16}%
