@@ -1,102 +1,280 @@
 \contentsline {chapter}{Contents}{1}{section*.1}%
-\contentsline {chapter}{\chapternumberline {1}Stage 3: Developing your research design}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introducing stage 3}{5}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Research design foundation}{7}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Researcher mindsets}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Positivist and post-positivism}{9}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Anti-positivist (interpretivism)}{10}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Constructivism}{11}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Critical Theory}{11}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}Indigenous}{12}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.3.6}What's your mindset?}{13}{subsection.1.3.6}%
-\contentsline {section}{\numberline {1.4}Research strategies}{15}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Defending your claim of new knowledge}{16}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Weaknesses and ways to deal with them}{16}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Where to defend your claim}{19}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Approaches to address weaknesses}{21}{subsection.1.5.3}%
-\contentsline {subsubsection}{\numberline {1.5.3.1}Triangulation}{21}{subsubsection.1.5.3.1}%
-\contentsline {paragraph}{Data source triangulation}{22}{section*.9}%
-\contentsline {paragraph}{Investigator triangulation}{22}{section*.10}%
-\contentsline {paragraph}{Methodological triangulation}{22}{section*.11}%
-\contentsline {paragraph}{Theory triangulation}{22}{section*.12}%
-\contentsline {subsubsection}{\numberline {1.5.3.2}Reflexivity}{23}{subsubsection.1.5.3.2}%
-\contentsline {subsubsection}{\numberline {1.5.3.3}Returning to the literature}{26}{subsubsection.1.5.3.3}%
-\contentsline {section}{\numberline {1.6}Your research strategy candidate list}{26}{section.1.6}%
-\contentsline {paragraph}{Step 1}{28}{section*.15}%
-\contentsline {paragraph}{Step 2}{28}{section*.16}%
-\contentsline {paragraph}{Step 3}{28}{section*.17}%
-\contentsline {paragraph}{Step 4}{28}{section*.18}%
-\contentsline {paragraph}{Step 5}{29}{section*.19}%
-\contentsline {subsection}{\numberline {1.6.1}Survey research}{30}{subsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.1.1}Knowledge contribution}{30}{subsubsection.1.6.1.1}%
-\contentsline {subsubsection}{\numberline {1.6.1.2}Data generation and analysis}{30}{subsubsection.1.6.1.2}%
-\contentsline {subsubsection}{\numberline {1.6.1.3}Evaluation}{31}{subsubsection.1.6.1.3}%
-\contentsline {subsubsection}{\numberline {1.6.1.4}Is this strategy right for me?}{32}{subsubsection.1.6.1.4}%
-\contentsline {subsubsection}{\numberline {1.6.1.5}Further reading}{33}{subsubsection.1.6.1.5}%
-\contentsline {subsection}{\numberline {1.6.2}Design science research}{33}{subsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.2.1}Knowledge contribution}{33}{subsubsection.1.6.2.1}%
-\contentsline {subsubsection}{\numberline {1.6.2.2}Data generation and analysis}{33}{subsubsection.1.6.2.2}%
-\contentsline {subsubsection}{\numberline {1.6.2.3}Evaluation}{34}{subsubsection.1.6.2.3}%
-\contentsline {subsubsection}{\numberline {1.6.2.4}Is this strategy right for me?}{35}{subsubsection.1.6.2.4}%
-\contentsline {subsubsection}{\numberline {1.6.2.5}Further reading}{35}{subsubsection.1.6.2.5}%
-\contentsline {subsection}{\numberline {1.6.3}Experimental research}{35}{subsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.1}Knowledge contribution}{36}{subsubsection.1.6.3.1}%
-\contentsline {subsubsection}{\numberline {1.6.3.2}Data generation and analysis}{36}{subsubsection.1.6.3.2}%
-\contentsline {subsubsection}{\numberline {1.6.3.3}Evaluation}{36}{subsubsection.1.6.3.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.4}Is this strategy right for me?}{37}{subsubsection.1.6.3.4}%
-\contentsline {subsubsection}{\numberline {1.6.3.5}Further reading}{38}{subsubsection.1.6.3.5}%
-\contentsline {subsection}{\numberline {1.6.4}Case study research}{38}{subsection.1.6.4}%
-\contentsline {subsubsection}{\numberline {1.6.4.1}Knowledge contribution}{38}{subsubsection.1.6.4.1}%
-\contentsline {subsubsection}{\numberline {1.6.4.2}Data collection and analysis}{39}{subsubsection.1.6.4.2}%
-\contentsline {subsubsection}{\numberline {1.6.4.3}Evaluation}{39}{subsubsection.1.6.4.3}%
-\contentsline {subsubsection}{\numberline {1.6.4.4}Is this strategy right for me?}{40}{subsubsection.1.6.4.4}%
-\contentsline {subsubsection}{\numberline {1.6.4.5}Further reading}{41}{subsubsection.1.6.4.5}%
-\contentsline {subsection}{\numberline {1.6.5}Action research}{41}{subsection.1.6.5}%
-\contentsline {subsubsection}{\numberline {1.6.5.1}Knowledge contribution}{41}{subsubsection.1.6.5.1}%
-\contentsline {subsubsection}{\numberline {1.6.5.2}Data generation and analysis}{41}{subsubsection.1.6.5.2}%
-\contentsline {subsubsection}{\numberline {1.6.5.3}Evaluation}{42}{subsubsection.1.6.5.3}%
-\contentsline {subsubsection}{\numberline {1.6.5.4}Is this strategy right for me?}{42}{subsubsection.1.6.5.4}%
-\contentsline {subsubsection}{\numberline {1.6.5.5}Further reading}{43}{subsubsection.1.6.5.5}%
-\contentsline {subsection}{\numberline {1.6.6}Ethnography}{43}{subsection.1.6.6}%
-\contentsline {subsubsection}{\numberline {1.6.6.1}Knowledge contribution}{43}{subsubsection.1.6.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.6.2}Data generation and analysis}{44}{subsubsection.1.6.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.6.3}Evaluation}{44}{subsubsection.1.6.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.6.4}Is this strategy right for me?}{45}{subsubsection.1.6.6.4}%
-\contentsline {subsubsection}{\numberline {1.6.6.5}Further reading}{45}{subsubsection.1.6.6.5}%
-\contentsline {subsection}{\numberline {1.6.7}Systematic research reviews}{46}{subsection.1.6.7}%
-\contentsline {subsubsection}{\numberline {1.6.7.1}Knowledge contribution}{46}{subsubsection.1.6.7.1}%
-\contentsline {subsubsection}{\numberline {1.6.7.2}Data collection and analysis}{46}{subsubsection.1.6.7.2}%
-\contentsline {subsubsection}{\numberline {1.6.7.3}Evaluation}{46}{subsubsection.1.6.7.3}%
-\contentsline {subsubsection}{\numberline {1.6.7.4}Is this strategy right for me?}{47}{subsubsection.1.6.7.4}%
-\contentsline {subsubsection}{\numberline {1.6.7.5}Further reading}{48}{subsubsection.1.6.7.5}%
-\contentsline {subsection}{\numberline {1.6.8}Grounded theory}{48}{subsection.1.6.8}%
-\contentsline {subsubsection}{\numberline {1.6.8.1}Knowledge contribution}{49}{subsubsection.1.6.8.1}%
-\contentsline {subsubsection}{\numberline {1.6.8.2}Data collection and analysis}{49}{subsubsection.1.6.8.2}%
-\contentsline {subsubsection}{\numberline {1.6.8.3}Evaluation}{49}{subsubsection.1.6.8.3}%
-\contentsline {subsubsection}{\numberline {1.6.8.4}Is this strategy right for me?}{50}{subsubsection.1.6.8.4}%
-\contentsline {subsubsection}{\numberline {1.6.8.5}Further reading}{51}{subsubsection.1.6.8.5}%
-\contentsline {subsection}{\numberline {1.6.9}Phenomenology}{51}{subsection.1.6.9}%
-\contentsline {subsubsection}{\numberline {1.6.9.1}Knowledge contribution}{51}{subsubsection.1.6.9.1}%
-\contentsline {subsubsection}{\numberline {1.6.9.2}Data generation and analysis}{51}{subsubsection.1.6.9.2}%
-\contentsline {subsubsection}{\numberline {1.6.9.3}Evaluation}{51}{subsubsection.1.6.9.3}%
-\contentsline {subsubsection}{\numberline {1.6.9.4}Is this strategy right for me?}{52}{subsubsection.1.6.9.4}%
-\contentsline {subsubsection}{\numberline {1.6.9.5}Further reading}{53}{subsubsection.1.6.9.5}%
-\contentsline {subsection}{\numberline {1.6.10}Simulation}{53}{subsection.1.6.10}%
-\contentsline {subsubsection}{\numberline {1.6.10.1}Knowledge contribution}{53}{subsubsection.1.6.10.1}%
-\contentsline {subsubsection}{\numberline {1.6.10.2}Data generation and analysis}{53}{subsubsection.1.6.10.2}%
-\contentsline {subsubsection}{\numberline {1.6.10.3}Evaluation}{54}{subsubsection.1.6.10.3}%
-\contentsline {subsubsection}{\numberline {1.6.10.4}Is this strategy right for me?}{54}{subsubsection.1.6.10.4}%
-\contentsline {subsubsection}{\numberline {1.6.10.5}Further reading}{55}{subsubsection.1.6.10.5}%
-\contentsline {subsection}{\numberline {1.6.11}Mathematical and logical proof}{55}{subsection.1.6.11}%
-\contentsline {subsubsection}{\numberline {1.6.11.1}Knowledge contribution}{55}{subsubsection.1.6.11.1}%
-\contentsline {subsubsection}{\numberline {1.6.11.2}Data generation and analysis}{55}{subsubsection.1.6.11.2}%
-\contentsline {subsubsection}{\numberline {1.6.11.3}Evaluation}{56}{subsubsection.1.6.11.3}%
-\contentsline {subsubsection}{\numberline {1.6.11.4}Is this strategy right for me?}{56}{subsubsection.1.6.11.4}%
-\contentsline {subsubsection}{\numberline {1.6.11.5}Further reading}{56}{subsubsection.1.6.11.5}%
-\contentsline {subsection}{\numberline {1.6.12}Mixed methods research}{56}{subsection.1.6.12}%
-\contentsline {subsubsection}{\numberline {1.6.12.1}Knowledge contribution}{57}{subsubsection.1.6.12.1}%
-\contentsline {subsubsection}{\numberline {1.6.12.2}Data generation and analysis}{57}{subsubsection.1.6.12.2}%
-\contentsline {subsubsection}{\numberline {1.6.12.3}Evaluation}{58}{subsubsection.1.6.12.3}%
-\contentsline {subsubsection}{\numberline {1.6.12.4}Is this strategy right for me?}{58}{subsubsection.1.6.12.4}%
-\contentsline {subsubsection}{\numberline {1.6.12.5}Further reading}{58}{subsubsection.1.6.12.5}%
-\contentsline {section}{\numberline {1.7}Choosing and drafting your own research strategy}{59}{section.1.7}%
+\contentsline {chapter}{\chapternumberline {1}Stage 3: Developing your research design}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducing stage 3}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research design foundation}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Researcher mindsets}{11}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Positivist and post-positivism}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Anti-positivist (interpretivism)}{12}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Constructivism}{13}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Critical Theory}{13}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Indigenous}{14}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}What's your mindset?}{15}{subsection.1.3.6}%
+\contentsline {section}{\numberline {1.4}Research strategies}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Defending your claim of new knowledge}{18}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Weaknesses and ways to deal with them}{18}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Where to defend your claim}{21}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Approaches to address weaknesses}{23}{subsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.3.1}Triangulation}{23}{subsubsection.1.5.3.1}%
+\contentsline {paragraph}{Data source triangulation}{24}{section*.9}%
+\contentsline {paragraph}{Investigator triangulation}{24}{section*.10}%
+\contentsline {paragraph}{Methodological triangulation}{24}{section*.11}%
+\contentsline {paragraph}{Theory triangulation}{24}{section*.12}%
+\contentsline {subsubsection}{\numberline {1.5.3.2}Reflexivity}{25}{subsubsection.1.5.3.2}%
+\contentsline {subsubsection}{\numberline {1.5.3.3}Returning to the literature}{28}{subsubsection.1.5.3.3}%
+\contentsline {section}{\numberline {1.6}Your research strategy candidate list}{28}{section.1.6}%
+\contentsline {paragraph}{Step 1}{30}{section*.15}%
+\contentsline {paragraph}{Step 2}{30}{section*.16}%
+\contentsline {paragraph}{Step 3}{30}{section*.17}%
+\contentsline {paragraph}{Step 4}{30}{section*.18}%
+\contentsline {paragraph}{Step 5}{31}{section*.19}%
+\contentsline {subsection}{\numberline {1.6.1}Survey research}{32}{subsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.1}Knowledge contribution}{32}{subsubsection.1.6.1.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.2}Data generation and analysis}{32}{subsubsection.1.6.1.2}%
+\contentsline {subsubsection}{\numberline {1.6.1.3}Evaluation}{33}{subsubsection.1.6.1.3}%
+\contentsline {subsubsection}{\numberline {1.6.1.4}Is this strategy right for me?}{34}{subsubsection.1.6.1.4}%
+\contentsline {subsubsection}{\numberline {1.6.1.5}Further reading}{35}{subsubsection.1.6.1.5}%
+\contentsline {subsection}{\numberline {1.6.2}Design science research}{35}{subsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.1}Knowledge contribution}{35}{subsubsection.1.6.2.1}%
+\contentsline {subsubsection}{\numberline {1.6.2.2}Data generation and analysis}{35}{subsubsection.1.6.2.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.3}Evaluation}{36}{subsubsection.1.6.2.3}%
+\contentsline {subsubsection}{\numberline {1.6.2.4}Is this strategy right for me?}{37}{subsubsection.1.6.2.4}%
+\contentsline {subsubsection}{\numberline {1.6.2.5}Further reading}{37}{subsubsection.1.6.2.5}%
+\contentsline {subsection}{\numberline {1.6.3}Experimental research}{37}{subsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.1}Knowledge contribution}{38}{subsubsection.1.6.3.1}%
+\contentsline {subsubsection}{\numberline {1.6.3.2}Data generation and analysis}{38}{subsubsection.1.6.3.2}%
+\contentsline {subsubsection}{\numberline {1.6.3.3}Evaluation}{38}{subsubsection.1.6.3.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.4}Is this strategy right for me?}{39}{subsubsection.1.6.3.4}%
+\contentsline {subsubsection}{\numberline {1.6.3.5}Further reading}{40}{subsubsection.1.6.3.5}%
+\contentsline {subsection}{\numberline {1.6.4}Case study research}{40}{subsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.1}Knowledge contribution}{40}{subsubsection.1.6.4.1}%
+\contentsline {subsubsection}{\numberline {1.6.4.2}Data collection and analysis}{41}{subsubsection.1.6.4.2}%
+\contentsline {subsubsection}{\numberline {1.6.4.3}Evaluation}{41}{subsubsection.1.6.4.3}%
+\contentsline {subsubsection}{\numberline {1.6.4.4}Is this strategy right for me?}{42}{subsubsection.1.6.4.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.5}Further reading}{43}{subsubsection.1.6.4.5}%
+\contentsline {subsection}{\numberline {1.6.5}Action research}{43}{subsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.5.1}Knowledge contribution}{43}{subsubsection.1.6.5.1}%
+\contentsline {subsubsection}{\numberline {1.6.5.2}Data generation and analysis}{43}{subsubsection.1.6.5.2}%
+\contentsline {subsubsection}{\numberline {1.6.5.3}Evaluation}{44}{subsubsection.1.6.5.3}%
+\contentsline {subsubsection}{\numberline {1.6.5.4}Is this strategy right for me?}{44}{subsubsection.1.6.5.4}%
+\contentsline {subsubsection}{\numberline {1.6.5.5}Further reading}{45}{subsubsection.1.6.5.5}%
+\contentsline {subsection}{\numberline {1.6.6}Ethnography}{45}{subsection.1.6.6}%
+\contentsline {subsubsection}{\numberline {1.6.6.1}Knowledge contribution}{45}{subsubsection.1.6.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.6.2}Data generation and analysis}{46}{subsubsection.1.6.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.6.3}Evaluation}{46}{subsubsection.1.6.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.6.4}Is this strategy right for me?}{47}{subsubsection.1.6.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.6.5}Further reading}{47}{subsubsection.1.6.6.5}%
+\contentsline {subsection}{\numberline {1.6.7}Systematic research reviews}{48}{subsection.1.6.7}%
+\contentsline {subsubsection}{\numberline {1.6.7.1}Knowledge contribution}{48}{subsubsection.1.6.7.1}%
+\contentsline {subsubsection}{\numberline {1.6.7.2}Data collection and analysis}{48}{subsubsection.1.6.7.2}%
+\contentsline {subsubsection}{\numberline {1.6.7.3}Evaluation}{48}{subsubsection.1.6.7.3}%
+\contentsline {subsubsection}{\numberline {1.6.7.4}Is this strategy right for me?}{49}{subsubsection.1.6.7.4}%
+\contentsline {subsubsection}{\numberline {1.6.7.5}Further reading}{50}{subsubsection.1.6.7.5}%
+\contentsline {subsection}{\numberline {1.6.8}Grounded theory}{50}{subsection.1.6.8}%
+\contentsline {subsubsection}{\numberline {1.6.8.1}Knowledge contribution}{51}{subsubsection.1.6.8.1}%
+\contentsline {subsubsection}{\numberline {1.6.8.2}Data collection and analysis}{51}{subsubsection.1.6.8.2}%
+\contentsline {subsubsection}{\numberline {1.6.8.3}Evaluation}{51}{subsubsection.1.6.8.3}%
+\contentsline {subsubsection}{\numberline {1.6.8.4}Is this strategy right for me?}{52}{subsubsection.1.6.8.4}%
+\contentsline {subsubsection}{\numberline {1.6.8.5}Further reading}{53}{subsubsection.1.6.8.5}%
+\contentsline {subsection}{\numberline {1.6.9}Phenomenology}{53}{subsection.1.6.9}%
+\contentsline {subsubsection}{\numberline {1.6.9.1}Knowledge contribution}{53}{subsubsection.1.6.9.1}%
+\contentsline {subsubsection}{\numberline {1.6.9.2}Data generation and analysis}{53}{subsubsection.1.6.9.2}%
+\contentsline {subsubsection}{\numberline {1.6.9.3}Evaluation}{53}{subsubsection.1.6.9.3}%
+\contentsline {subsubsection}{\numberline {1.6.9.4}Is this strategy right for me?}{54}{subsubsection.1.6.9.4}%
+\contentsline {subsubsection}{\numberline {1.6.9.5}Further reading}{55}{subsubsection.1.6.9.5}%
+\contentsline {subsection}{\numberline {1.6.10}Simulation}{55}{subsection.1.6.10}%
+\contentsline {subsubsection}{\numberline {1.6.10.1}Knowledge contribution}{55}{subsubsection.1.6.10.1}%
+\contentsline {subsubsection}{\numberline {1.6.10.2}Data generation and analysis}{55}{subsubsection.1.6.10.2}%
+\contentsline {subsubsection}{\numberline {1.6.10.3}Evaluation}{56}{subsubsection.1.6.10.3}%
+\contentsline {subsubsection}{\numberline {1.6.10.4}Is this strategy right for me?}{56}{subsubsection.1.6.10.4}%
+\contentsline {subsubsection}{\numberline {1.6.10.5}Further reading}{57}{subsubsection.1.6.10.5}%
+\contentsline {subsection}{\numberline {1.6.11}Mathematical and logical proof}{57}{subsection.1.6.11}%
+\contentsline {subsubsection}{\numberline {1.6.11.1}Knowledge contribution}{57}{subsubsection.1.6.11.1}%
+\contentsline {subsubsection}{\numberline {1.6.11.2}Data generation and analysis}{57}{subsubsection.1.6.11.2}%
+\contentsline {subsubsection}{\numberline {1.6.11.3}Evaluation}{58}{subsubsection.1.6.11.3}%
+\contentsline {subsubsection}{\numberline {1.6.11.4}Is this strategy right for me?}{58}{subsubsection.1.6.11.4}%
+\contentsline {subsubsection}{\numberline {1.6.11.5}Further reading}{58}{subsubsection.1.6.11.5}%
+\contentsline {subsection}{\numberline {1.6.12}Mixed methods research}{58}{subsection.1.6.12}%
+\contentsline {subsubsection}{\numberline {1.6.12.1}Knowledge contribution}{59}{subsubsection.1.6.12.1}%
+\contentsline {subsubsection}{\numberline {1.6.12.2}Data generation and analysis}{59}{subsubsection.1.6.12.2}%
+\contentsline {subsubsection}{\numberline {1.6.12.3}Evaluation}{60}{subsubsection.1.6.12.3}%
+\contentsline {subsubsection}{\numberline {1.6.12.4}Is this strategy right for me?}{60}{subsubsection.1.6.12.4}%
+\contentsline {subsubsection}{\numberline {1.6.12.5}Further reading}{60}{subsubsection.1.6.12.5}%
+\contentsline {section}{\numberline {1.7}Choosing and drafting your own research strategy}{61}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Raw data}{66}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Sampling: what, who (and how) to choose}{67}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Modern standards}{69}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Managing raw data}{70}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9}Data generation methods}{71}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Observations}{71}{subsection.1.9.1}%
+\contentsline {paragraph}{What to observe}{72}{section*.6}%
+\contentsline {paragraph}{Observation types}{72}{section*.7}%
+\contentsline {paragraph}{More on social observations}{72}{section*.8}%
+\contentsline {subsubsection}{\numberline {1.9.1.1}Procedural considerations}{73}{subsubsection.1.9.1.1}%
+\contentsline {paragraph}{Phenomena}{73}{section*.9}%
+\contentsline {paragraph}{Kind of observations}{73}{section*.10}%
+\contentsline {paragraph}{Time and place}{73}{section*.11}%
+\contentsline {paragraph}{Use of instruments}{73}{section*.12}%
+\contentsline {paragraph}{How to record observations}{73}{section*.13}%
+\contentsline {subsubsection}{\numberline {1.9.1.2}Other things to think about}{74}{subsubsection.1.9.1.2}%
+\contentsline {paragraph}{Hawthorne effect}{74}{section*.14}%
+\contentsline {paragraph}{Observer bias}{74}{section*.15}%
+\contentsline {paragraph}{Volume of observations}{74}{section*.16}%
+\contentsline {subsubsection}{\numberline {1.9.1.3}Further reading}{75}{subsubsection.1.9.1.3}%
+\contentsline {subsection}{\numberline {1.9.2}Questionnaires}{75}{subsection.1.9.2}%
+\contentsline {paragraph}{Essential questions}{76}{section*.17}%
+\contentsline {paragraph}{Profiling questions}{76}{section*.18}%
+\contentsline {paragraph}{Demographic questions}{76}{section*.19}%
+\contentsline {paragraph}{Response options}{76}{section*.20}%
+\contentsline {subsubsection}{\numberline {1.9.2.1}Procedural considerations}{76}{subsubsection.1.9.2.1}%
+\contentsline {paragraph}{Using tools}{76}{section*.21}%
+\contentsline {paragraph}{Drafting, testing and piloting}{76}{section*.22}%
+\contentsline {subsubsection}{\numberline {1.9.2.2}Other things to think about}{77}{subsubsection.1.9.2.2}%
+\contentsline {paragraph}{Plain language}{77}{section*.23}%
+\contentsline {paragraph}{Unbiased language}{77}{section*.24}%
+\contentsline {paragraph}{Double-barrelled questions}{77}{section*.25}%
+\contentsline {paragraph}{Closed and open questions}{77}{section*.26}%
+\contentsline {paragraph}{Scales}{78}{section*.27}%
+\contentsline {paragraph}{Question grouping, ordering and flow}{78}{section*.28}%
+\contentsline {subsubsection}{\numberline {1.9.2.3}Further reading}{78}{subsubsection.1.9.2.3}%
+\contentsline {subsection}{\numberline {1.9.3}Interviews}{78}{subsection.1.9.3}%
+\contentsline {paragraph}{The structured interview}{79}{section*.29}%
+\contentsline {paragraph}{The semi-structured interview}{79}{section*.30}%
+\contentsline {paragraph}{The unstructured interview}{80}{section*.31}%
+\contentsline {subsubsection}{\numberline {1.9.3.1}Procedural considerations}{80}{subsubsection.1.9.3.1}%
+\contentsline {paragraph}{Interview type}{80}{section*.32}%
+\contentsline {paragraph}{Whom to interview}{80}{section*.33}%
+\contentsline {paragraph}{Ethical and legal matters}{80}{section*.34}%
+\contentsline {paragraph}{Testing and reviewing}{80}{section*.35}%
+\contentsline {paragraph}{Recording answers}{81}{section*.36}%
+\contentsline {paragraph}{Where to hold the interview}{81}{section*.37}%
+\contentsline {paragraph}{Opening and closing interviews}{82}{section*.38}%
+\contentsline {subsubsection}{\numberline {1.9.3.2}Other things to think about}{82}{subsubsection.1.9.3.2}%
+\contentsline {paragraph}{Making a checklist}{82}{section*.39}%
+\contentsline {paragraph}{Being a good interviewer}{82}{section*.40}%
+\contentsline {subsubsection}{\numberline {1.9.3.3}Further reading}{83}{subsubsection.1.9.3.3}%
+\contentsline {subsection}{\numberline {1.9.4}Focus groups}{83}{subsection.1.9.4}%
+\contentsline {subsubsection}{\numberline {1.9.4.1}Procedural considerations}{84}{subsubsection.1.9.4.1}%
+\contentsline {paragraph}{Group type}{84}{section*.41}%
+\contentsline {paragraph}{Group size}{84}{section*.42}%
+\contentsline {paragraph}{Participants}{84}{section*.43}%
+\contentsline {paragraph}{Moderation}{84}{section*.44}%
+\contentsline {paragraph}{Location}{85}{section*.45}%
+\contentsline {paragraph}{Choice of questions}{85}{section*.46}%
+\contentsline {paragraph}{Discussion etiquette}{85}{section*.47}%
+\contentsline {paragraph}{Recording the discussion}{85}{section*.48}%
+\contentsline {subsubsection}{\numberline {1.9.4.2}Other things to think about}{85}{subsubsection.1.9.4.2}%
+\contentsline {paragraph}{Groupthink}{85}{section*.49}%
+\contentsline {paragraph}{Social desirability bias}{85}{section*.50}%
+\contentsline {paragraph}{Group dynamics}{86}{section*.51}%
+\contentsline {subsubsection}{\numberline {1.9.4.3}Further reading}{86}{subsubsection.1.9.4.3}%
+\contentsline {subsection}{\numberline {1.9.5}Delphi}{86}{subsection.1.9.5}%
+\contentsline {subsubsection}{\numberline {1.9.5.1}Operational considerations}{87}{subsubsection.1.9.5.1}%
+\contentsline {paragraph}{Selecting experts}{87}{section*.52}%
+\contentsline {paragraph}{Process}{87}{section*.53}%
+\contentsline {paragraph}{Consensus criteria}{87}{section*.54}%
+\contentsline {paragraph}{Location}{87}{section*.55}%
+\contentsline {subsubsection}{\numberline {1.9.5.2}Other things to think about}{88}{subsubsection.1.9.5.2}%
+\contentsline {paragraph}{Resources}{88}{section*.56}%
+\contentsline {paragraph}{Lack of discussion}{88}{section*.57}%
+\contentsline {paragraph}{Difficulty in reaching consensus}{88}{section*.58}%
+\contentsline {subsubsection}{\numberline {1.9.5.3}Further reading}{88}{subsubsection.1.9.5.3}%
+\contentsline {subsection}{\numberline {1.9.6}Journaling}{88}{subsection.1.9.6}%
+\contentsline {subsubsection}{\numberline {1.9.6.1}Procedural considerations}{89}{subsubsection.1.9.6.1}%
+\contentsline {paragraph}{Diary form}{89}{section*.59}%
+\contentsline {paragraph}{Prompts and guidance}{89}{section*.60}%
+\contentsline {paragraph}{Participants}{89}{section*.61}%
+\contentsline {paragraph}{Managing data}{89}{section*.62}%
+\contentsline {subsubsection}{\numberline {1.9.6.2}Other things to think about}{89}{subsubsection.1.9.6.2}%
+\contentsline {paragraph}{Subjectivity and bias}{89}{section*.63}%
+\contentsline {paragraph}{Limited generalisability}{90}{section*.64}%
+\contentsline {subsubsection}{\numberline {1.9.6.3}Further reading}{90}{subsubsection.1.9.6.3}%
+\contentsline {subsection}{\numberline {1.9.7}Fieldwork}{90}{subsection.1.9.7}%
+\contentsline {subsubsection}{\numberline {1.9.7.1}Operational considerations}{91}{subsubsection.1.9.7.1}%
+\contentsline {paragraph}{Logistics, equipment and budget}{91}{section*.65}%
+\contentsline {paragraph}{Permissions and ethical issues}{92}{section*.66}%
+\contentsline {paragraph}{Health and Safety}{92}{section*.67}%
+\contentsline {paragraph}{Managing data}{92}{section*.68}%
+\contentsline {subsubsection}{\numberline {1.9.7.2}Other things to think about}{92}{subsubsection.1.9.7.2}%
+\contentsline {paragraph}{Quality of results}{92}{section*.69}%
+\contentsline {paragraph}{Logistic challenges}{93}{section*.70}%
+\contentsline {paragraph}{Time and cost}{93}{section*.71}%
+\contentsline {subsubsection}{\numberline {1.9.7.3}Further reading}{93}{subsubsection.1.9.7.3}%
+\contentsline {subsection}{\numberline {1.9.8}Documents}{93}{subsection.1.9.8}%
+\contentsline {subsubsection}{\numberline {1.9.8.1}Procedural considerations}{95}{subsubsection.1.9.8.1}%
+\contentsline {paragraph}{Accessing documents}{95}{section*.73}%
+\contentsline {paragraph}{Selection criteria}{95}{section*.74}%
+\contentsline {paragraph}{Data management}{95}{section*.75}%
+\contentsline {subsubsection}{\numberline {1.9.8.2}Other things to think about}{95}{subsubsection.1.9.8.2}%
+\contentsline {paragraph}{Bias in documents}{95}{section*.76}%
+\contentsline {paragraph}{Interpretation challenges}{96}{section*.77}%
+\contentsline {paragraph}{Time and effort}{96}{section*.78}%
+\contentsline {subsubsection}{\numberline {1.9.8.3}Further reading}{96}{subsubsection.1.9.8.3}%
+\contentsline {section}{\numberline {1.10}Modelling methods}{96}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Computational thinking}{97}{subsection.1.10.1}%
+\contentsline {subsubsection}{\numberline {1.10.1.1}Procedural considerations}{98}{subsubsection.1.10.1.1}%
+\contentsline {paragraph}{Programming language and paradigm}{98}{section*.79}%
+\contentsline {paragraph}{Computational mode}{98}{section*.80}%
+\contentsline {paragraph}{Delivery platform}{98}{section*.81}%
+\contentsline {paragraph}{Integrated Development Environment (IDE)}{98}{section*.82}%
+\contentsline {paragraph}{Stakeholders and participants}{98}{section*.83}%
+\contentsline {paragraph}{Development process}{98}{section*.84}%
+\contentsline {subsubsection}{\numberline {1.10.1.2}Other things to think about}{99}{subsubsection.1.10.1.2}%
+\contentsline {paragraph}{Foundational knowledge}{99}{section*.85}%
+\contentsline {paragraph}{Model validity}{99}{section*.86}%
+\contentsline {paragraph}{Timing issues}{99}{section*.87}%
+\contentsline {subsubsection}{\numberline {1.10.1.3}Further reading}{99}{subsubsection.1.10.1.3}%
+\contentsline {subsection}{\numberline {1.10.2}Mathematical thinking}{100}{subsection.1.10.2}%
+\contentsline {subsubsection}{\numberline {1.10.2.1}Operational considerations}{101}{subsubsection.1.10.2.1}%
+\contentsline {paragraph}{Mathematical tools}{101}{section*.88}%
+\contentsline {paragraph}{Computational tools}{101}{section*.89}%
+\contentsline {paragraph}{Relevant examples}{101}{section*.90}%
+\contentsline {subsubsection}{\numberline {1.10.2.2}Other things to think about}{101}{subsubsection.1.10.2.2}%
+\contentsline {paragraph}{Foundational knowledge}{101}{section*.91}%
+\contentsline {paragraph}{Limitations of mathematical abstraction}{102}{section*.92}%
+\contentsline {subsubsection}{\numberline {1.10.2.3}Further reading}{102}{subsubsection.1.10.2.3}%
+\contentsline {subsection}{\numberline {1.10.3}Statistical thinking}{102}{subsection.1.10.3}%
+\contentsline {subsubsection}{\numberline {1.10.3.1}Procedural considerations}{103}{subsubsection.1.10.3.1}%
+\contentsline {paragraph}{Sampling}{103}{section*.93}%
+\contentsline {paragraph}{Data quality}{103}{section*.94}%
+\contentsline {paragraph}{Choice of techniques}{103}{section*.95}%
+\contentsline {paragraph}{Statistical software}{103}{section*.96}%
+\contentsline {subsubsection}{\numberline {1.10.3.2}Other things to think about}{103}{subsubsection.1.10.3.2}%
+\contentsline {paragraph}{Foundational knowledge}{103}{section*.97}%
+\contentsline {paragraph}{Data bias}{103}{section*.98}%
+\contentsline {paragraph}{Confounding factors}{104}{section*.99}%
+\contentsline {paragraph}{Model assumptions}{104}{section*.100}%
+\contentsline {paragraph}{Ethical considerations}{104}{section*.101}%
+\contentsline {subsubsection}{\numberline {1.10.3.3}Further reading}{104}{subsubsection.1.10.3.3}%
+\contentsline {subsection}{\numberline {1.10.4}System thinking}{105}{subsection.1.10.4}%
+\contentsline {subsubsection}{\numberline {1.10.4.1}Procedural considerations}{106}{subsubsection.1.10.4.1}%
+\contentsline {paragraph}{Scope and boundaries}{106}{section*.102}%
+\contentsline {paragraph}{Stakeholders}{106}{section*.103}%
+\contentsline {paragraph}{Data gathering}{106}{section*.104}%
+\contentsline {paragraph}{Modelling}{106}{section*.105}%
+\contentsline {subsubsection}{\numberline {1.10.4.2}Other things to think about}{106}{subsubsection.1.10.4.2}%
+\contentsline {paragraph}{Complexity}{106}{section*.106}%
+\contentsline {paragraph}{Subjectivity and bias}{107}{section*.107}%
+\contentsline {paragraph}{Model validity}{107}{section*.108}%
+\contentsline {subsubsection}{\numberline {1.10.4.3}Further reading}{107}{subsubsection.1.10.4.3}%
+\contentsline {section}{\numberline {1.11}Data analysis methods}{107}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Using tables to analyse data}{108}{subsection.1.11.1}%
+\contentsline {paragraph}{Pivot tables}{108}{section*.109}%
+\contentsline {paragraph}{Frequency and contingency tables}{111}{section*.113}%
+\contentsline {subsubsection}{\numberline {1.11.1.1}Further reading}{112}{subsubsection.1.11.1.1}%
+\contentsline {subsection}{\numberline {1.11.2}Statistical analysis}{112}{subsection.1.11.2}%
+\contentsline {subsubsection}{\numberline {1.11.2.1}Descriptive statistics}{113}{subsubsection.1.11.2.1}%
+\contentsline {subsubsection}{\numberline {1.11.2.2}Inferential statistics}{120}{subsubsection.1.11.2.2}%
+\contentsline {subsubsection}{\numberline {1.11.2.3}Further reading}{126}{subsubsection.1.11.2.3}%
+\contentsline {subsection}{\numberline {1.11.3}Qualitative analysis}{126}{subsection.1.11.3}%
+\contentsline {paragraph}{Thematic analysis}{126}{section*.123}%
+\contentsline {paragraph}{Content analysis}{126}{section*.124}%
+\contentsline {paragraph}{Discourse analysis}{126}{section*.125}%
+\contentsline {paragraph}{Narrative analysis}{126}{section*.126}%
+\contentsline {subsubsection}{\numberline {1.11.3.1}Coding qualitative data}{127}{subsubsection.1.11.3.1}%
+\contentsline {subsubsection}{\numberline {1.11.3.2}Presenting qualitative data}{129}{subsubsection.1.11.3.2}%
+\contentsline {subsubsection}{\numberline {1.11.3.3}Further reading}{130}{subsubsection.1.11.3.3}%
+\contentsline {section}{\numberline {1.12}Writing up your analysis}{130}{section.1.12}%
+\contentsline {section}{\numberline {1.13}Interpreting and evaluating data}{131}{section.1.13}%
+\contentsline {section}{\numberline {1.14}Drafting an abstract for your project}{132}{section.1.14}%
+\contentsline {section}{\numberline {1.15}Reflecting and reporting in Stage 4}{133}{section.1.15}%
+\contentsline {section}{\numberline {1.16}Takeaways}{134}{section.1.16}%
