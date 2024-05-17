@@ -12,31 +12,52 @@
 %\ErrorsOff
 
 \input{mmd6-scrivcustom-leader}
-\def\mytitle{Masters Research Handbook}
-\def\myauthor{Lucia Rapanotti and Jon Hall}
+\title{Master Research\\ Handbook}
+\author{Lucia Rapanotti and Jon Hall}
+\date{Branch: \gitbranch\\\small Hash: \gitcommit}
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-%\includeonly{Stage5}
+%\input{mmd6-scrivcustom-begin}
 
-\input{mmd6-scrivcustom-begin}
+%Set numbering depth
+\setsecnumdepth{subsubsection}
+
+\begin{document}
+\maketitle
+
+\frontmatter
+%\setcounter{tocdepth}{3}
+\tableofcontents
+
+%\newpage
+%\listoffigures
+%
+%\newpage
+%\listoftables
 
 \include{Foreword}
 
-\include{Introduction}
+\include{HowTo}
 
-\include{FrameworkOverview}
+\mainmatter
 
-\include{Stage1}
+	\include{Introduction}
+	
+	\include{FrameworkOverview}
 
-\include{Stage2}
+	\include{Stage1}
+	
+	\include{Stage2}
+	
+	\include{Stage3}
+	
+	\include{Stage4}
+	
+	\include{Stage5}
 
-\include{Stage3}
+\backmatter
 
-\include{Stage4}
-
-\include{Stage5}
-
-\include{Closing}
+	\include{Closing}
 
 \end{document}
