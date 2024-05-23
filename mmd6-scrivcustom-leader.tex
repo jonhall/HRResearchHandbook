@@ -1,5 +1,12 @@
 \documentclass[a4paper,12pt,oneside,landscape]{memoir}
 
+%Set numbering depth
+\setsecnumdepth{subsubsection}
+%%memoir: Adjust spacing in toc for part number
+\renewcommand\partnumberline[1]{#1}
+\renewcommand*{\partname}{Stage}
+\renewcommand*{\partrefname}{Stage~}
+
 \usepackage{xparse}
 
 %%Colors
@@ -224,6 +231,7 @@ title={Tip},
   includemp,
   includehead,
 }
+
   
 %%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
 \usepackage{booktabs}%%For fancy lines in tables

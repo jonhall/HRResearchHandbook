@@ -1,79 +1,32 @@
 %%For tables – intention is to migrate to tabularray
 %%Updated macros from comments on tabularray https://github.com/lvjr/tabularray/issues/448
-\usepackage{longtable,tabulary,tabularray}
+\usepackage{longtable,tabulary,tabularray}%Remove longtable and tabulary when complete
 \UseTblrLibrary{varwidth}%%For itemize in entries
 \UseTblrLibrary{counter}%%For counters in tables
 
-\usepackage{xpatch}
+%\usepackage{xpatch}
 
-\makeatletter
-\ExplSyntaxOn
-% redefined to clear new specs "preto" and "appto" in addition
-\xapptocmd \__tblr_clear_spec_lists:
-  {
-    \__tblr_clear_one_spec_lists:n { preto } % added
-    \__tblr_clear_one_spec_lists:n { appto } % added
-  }
-  {} \PatchFailed
+%%Table definitions
 
-% redefined to use new spec "preto"
-\cs_gset_protected:Npn \__tblr_cell_preto_text:nnn #1 #2 #3
-  {
-    \tl_set:Nx \l__tblr_cell_text_tl { \__tblr_spec_item:nn { preto } { [#1][#2] } }
-    \tl_put_left:Nn \l__tblr_cell_text_tl {#3}
-    \__tblr_spec_gput:nnV { preto } { [#1][#2] } \l__tblr_cell_text_tl
-  }
-
-% redefined to use new spec "appto"
-\cs_gset_protected:Npn \__tblr_cell_appto_text:nnn #1 #2 #3
-  {
-    \tl_set:Nx \l__tblr_cell_text_tl { \__tblr_spec_item:ne { appto } { [#1][#2] } }
-    \tl_put_right:Nn \l__tblr_cell_text_tl {#3}
-    \__tblr_spec_gput:neV { appto } { [#1][#2] } \l__tblr_cell_text_tl
-  }
-
-\xpatchcmd \__tblr_get_cell_text_real:nn
-  { \tl_set:Nx \l__tblr_c_tl { \__tblr_spec_item:ne { text } {[#1][#2]} } }
-  {
-    \tl_set:Nx \l__tblr_c_tl {
-      \exp_not:e { \__tblr_spec_item:ne { preto } {[#1][#2]} }
-      \__tblr_spec_item:ne { text } {[#1][#2]}
-      \exp_not:e { \__tblr_spec_item:ne { appto } {[#1][#2]} }
-    }
-  }
-  { } \PatchFailed
-
-\msg_new:nnn { tabularray } { clear-not-implemented }
-  {
-    Clearing ~ effect ~ of ~ cell ~ key ~ ``#1'' ~
-    is ~ not ~ implemented ~ (yet).
-  }
-
-\keys_define:nn { tblr-cell-spec }
-  {
-    % clear = {<clist of cell keys>}
-    clear .code:n =
-      {
-        \clist_map_inline:nn {#1}
-          {
-            \cs_if_exist_use:cF { __tblr_cell_ ##1 _gclear: }
-              {
-                \msg_warning:nnn { tabularray } { clear-not-implemented } {##1}
-              }
-          }
-      }
-  }
-
-\cs_new_protected:Npn \__tblr_cell_preto_gclear:
-  { \__tblr_spec_item_gclear:nn {preto} {} }
-\cs_new_protected:Npn \__tblr_cell_appto_gclear:
-  { \__tblr_spec_item_gclear:nn {appto} {} }
-
-% #1 = spec item name, #2 = init value
-\cs_new_protected:Npn \__tblr_spec_item_gclear:nn #1#2
-  {
-    \__tblr_spec_gput:nen {#1}
-      {[\int_use:N \c@rownum][\int_use:N \c@colnum]} {#2}
-  }
-\ExplSyntaxOff
-\makeatother
+%%Research Activities, one per stage
+%%use 
+%%\begin{ResActtblr}[caption={...}]{}
+%%\tableheader	
+%%...
+%%\end{ResActtblr}
+\NewTblrEnviron{ResActtblr}
+\SetTblrOuter[ResActtblr]{long,expand=\reportheader,expand=\tableheader}
+\SetTblrInner[ResActtblr]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+  width=\tablewidth,
+  hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+  colsep = 5pt,
+%  row{odd} = {gray8},% row{even} = {gray8},
+  column{1} = {fg=black, bg=azure8, font=\sffamily},%{\bfseries\sffamily},
+  row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+  rowhead = 1,
+  colspec = {lX[8]X[13]X[-1]X[5]},
+}
+%%Shared line header
+\NewTableCommand\reportheader{\SetCell[c=5]{l}}
+%%Research Activities Table Header
+\newcommand\tableheader{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Interaction focus\\}

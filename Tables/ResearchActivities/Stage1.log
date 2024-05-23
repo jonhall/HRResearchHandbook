@@ -1,0 +1,246 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdftex 2024.4.10)  23 MAY 2024 11:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Stage1.tex
+(./Stage1.tex
+./Stage1.tex:2: Undefined control sequence.
+l.2 \begin
+          {table}[htbp]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:3: Undefined control sequence.
+l.3 \caption
+            {Research activities addressed in Stage 1 (15\% of project lengt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:3: Undefined control sequence.
+l.3 ...d in Stage 1 (15\% of project length)\label
+                                                  {tab:stage1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:4: Undefined control sequence.
+l.4 \small
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:5: Undefined control sequence.
+l.5 \begin
+          {tabulary}{\tablewidth}{@{}LLLLL@{}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:5: Undefined control sequence.
+l.5 \begin{tabulary}{\tablewidth
+                                }{@{}LLLLL@{}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:6: Undefined control sequence.
+l.6 \toprule
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:7: Undefined control sequence.
+l.7  \textbf
+            {Research process activities} & \textbf{Deliverables} & \textbf{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:7: Misplaced alignment tab character &.
+l.7  \textbf{Research process activities} &
+                                            \textbf{Deliverables} & \textbf{...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:7: Undefined control sequence.
+l.7 ...xtbf{Research process activities} & \textbf
+                                                  {Deliverables} & \textbf{L...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:7: Misplaced alignment tab character &.
+l.7 ...ocess activities} & \textbf{Deliverables} &
+                                                   \textbf{Learning Outcomes...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:7: Undefined control sequence.
+l.7 ...tivities} & \textbf{Deliverables} & \textbf
+                                                  {Learning Outcomes: by the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:7: Misplaced alignment tab character &.
+l.7 ...omes: by the end of this stage you will:} &
+                                                   \textbf{Effort} & \textbf...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:7: Undefined control sequence.
+l.7 ... the end of this stage you will:} & \textbf
+                                                  {Effort} & \textbf{Suggest...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:7: Misplaced alignment tab character &.
+l.7 ...f this stage you will:} & \textbf{Effort} &
+                                                   \textbf{Suggested focus o...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:7: Undefined control sequence.
+l.7 ...tage you will:} & \textbf{Effort} & \textbf
+                                                  {Suggested focus of your i...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+ \midrule 
+./Stage1.tex:9: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.9 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (0.357pt too wide) in paragraph at lines 2--9
+[]\tenrm table[htbp] Re-search ac-tiv-i-ties ad-dressed in Stage 1 (15% of project length)tab:stage1 tab-u-lary@LLLLL@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm t
+.\tenrm a
+.\tenrm b
+.\tenrm l
+.etc.
+
+./Stage1.tex:10: Undefined control sequence.
+l.10  \textbf
+             {Identifying the research problem} & initial research problem s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Stage1.tex:10: Misplaced alignment tab character &.
+l.10  \textbf{Identifying the research problem} &
+                                                  initial research problem s...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:10: Misplaced alignment tab character &.
+l.10 ...em} & initial research problem statement &
+                                                   be able to express a well...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:10: Misplaced alignment tab character &.
+l.10 ...o express a well-formed research problem &
+                                                   15\% & suitability in rel...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Stage1.tex:10: Misplaced alignment tab character &.
+l.10 ...ss a well-formed research problem & 15\% &
+                                                   suitability in relation t...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+)
+Runaway argument?
+ \textbf {Reviewing the literature} & summaries of literature reviewe\ETC.
+! File ended while scanning use of \\.
+<inserted text> 
+                \par 
+<*> Stage1.tex
+              
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> Stage1.tex
+              
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
