@@ -114,11 +114,43 @@ To find out more about #1, take a look at these resources:
 
 \end{question}}
 
-\section{Modern standards}
+\section{Sharing and anonymising data}
 
 Modern standards of research often require that your data be made available to other researchers so that your research can be verified or even rerun. In fact, it is increasingly the case that data sets are published and shared by entire research communities, often used as testbeds or benchmarks for new knowledge contributions. For instance, in medical applications of Machine Learning, in which new knowledge can be the fractional improvement of the performance of an AI algorithm to, say, diagnose a medical condition from images, not being able to share the data set you have used in your research can negate your knowledge contribution. Therefore, you should consider whether your data (or a sample of it) should appear as an appendix to your dissertation, or whether they should be made available in their entirety to your examiners, or even to the wider research community, and how.
 
-Modern standards of research also require you to comply with regulations on data privacy and protection\footnote{We discussed GDPR in Section~\ref{sect:GDPR}.}, so that as part of your data generation process you should also consider the need to anonymise data\footnote{There may be a route to your degree in which your thesis is not published. Should you have any concerns about the release of data, please do find time to discuss this with your supervisor, balancing the needs for total anonymity with those than can be achieved through data anonymisation.} without losing their research value for your project or the need to release commercial in confidence or otherwise sensitive data.  
+Modern standards of research also require you to comply with regulations on data privacy and protection\footnote{We discussed GDPR in Section~\ref{sect:personalData}.}. These put many constraints on the use of personal data as they are designed to protect the identity of the people they refer to. 
+Sometimes this can be an hindrance, particularly in reporting and sharing your research where there may be a need to also share the data used your study -- like in your dissertation. As a result, techniques have been developed to allow the use of such data without comprising their protection. These generally anonymise the data, i.e., the data is processed so that any link, direct or indirect, to a living person is removed.
+
+You should therefore  consider the need to anonymise data in your project and familiarise yourself which techniques you can apply to do so, which we consider in the next activity.
+
+\begin{question}[subtitle={Activity: Anonymising personal data}] Do a web search to identify techniques to anonymise personal data. List and summarise the main techniques you have found.
+
+\begin{solution}Among others, you may have encountered the following common approaches to anonymising personal data:
+
+\begin{itemize}
+\item hiding, which refers to removing personal data from a dataset, for instance, the name and address of participants in a study. Those categories are completely removed from the data set.
+
+\item masking, which refers to obfuscating personal data by replacing values with certain characters, for instance replacing all names and addresses with asterisks. As a result, the specific values are not visible, but their categories are retained in the data set.
+
+\item pseudonymisation, which refers to replacing identifying data with made-up identification data, for instance replacing names or addresses with fake ones.
+
+\item generalisation, which refers to replacing certain data with more general equivalent, for instance, replacing an exact address with an area code.
+
+\end{itemize}
+
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+Choosing a particular way of anonymising personal data will depend on how the data will be used and the level of information that needs preserving\footnote{A supervisor that has conducted research in the area of your project may have used data anonymising techniques before. It's always worth checking with them what level of anonymisation is needed, and which techniques should be used to achieve this.}.
+
+Among the techniques mentioned in the activity, hiding is the most destructive one in the sense that removing personal data from the data set will stop you tracking a participant in data collection over time. While this is good for anonymisation, it may be inappropriate for the research. In a clinical study, for instance, you might need to identify the outcomes of a series of tests with a particular individual. If you have removed all identifying information, this isn't possible.
+
+If you need to track participants through their data over time, pseudonymisation -- in which, say,  ``Cruella Deville'' is replaced by the made up identifier ``Mario Rossi'' allows you to track a named individual without giving any personal data away.
+
+Generalisation, on the other hand, can be used when more specific data can be replaced by more general one without loss of accuracy. So, an exact address with an area code may be appropriate in a study where geographical areas are the focus, so that exact addresses are not needed.
+
+It is therefore important that you consider carefully how personal data are to be used in your project when choosing an anonymisation technique. Commercially sensitive information also needs protecting from disclosure, so that anonymisation may also apply in this case.
 
 \section{Managing raw data}
 
