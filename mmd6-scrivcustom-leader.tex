@@ -84,15 +84,14 @@
 \xapptocmd{\todo}{\@esphack}{}{}
 \makeatother
 
-%%Fancy Environments
+%%Activity/Example/Quote/etc Environments
 \input{environments}
 
 %%Tables 
+%%so that tables extend into margin
+\newdimen\tablewidth
+\setlength{\tablewidth}{1.4\textwidth}
 \input{Tables/tables}
-
-%%Hack for @{}lllll@{} instead of @{}LLLL@{}
-%%Remove when all tables properly formatted
-\newcolumntype{l}{L}
 
 %%Reinstate when in final version
 %\usepackage{fontspec}

@@ -1,19 +1,22 @@
 %%https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
-\RequirePackage{booktabs}%%For fancy lines in tables
-\RequirePackage{multicol}%%For multiple columns
+\RequirePackage{booktabs}%%For fancy lines in tables:TODO: can be removed when tabularray
+\RequirePackage{multicol}%%For multiple columns:TODO: can be removed when tabularray
 
 %%For additional caption options
 %%Allows captions in longtables
+%%TODO: remove when tabularray
 \RequirePackage{caption}
 \RequirePackage{float}
 
 %%%For tables – intention is to migrate to tabularray
+%%TODO: Move to tabularray
 \RequirePackage{longtable,tabulary,tabularray}
 \UseTblrLibrary{varwidth}%%For itemize in entries
 \UseTblrLibrary{counter}%%For counters in tables
 
 %%tabulary gives L column
 %%David Carlisle's mix of tabulary and longtable from https://tex.stackexchange.com/questions/78075/multi-page-with-tabulary
+%%TODO: remove when tables moved to tabularray
 \makeatletter
 \def\ltabulary{%
 	\def\endfirsthead{\\}%
@@ -39,9 +42,6 @@
 
 \def\endltabulary{\endtabulary}
 
-%%so that tables extend into margin
-\newdimen\tablewidth
-\setlength{\tablewidth}{1.4\textwidth}
 %%Report list formats 
 \usepackage{enumitem}
 %%To define reportenumerate list for report tables
@@ -66,6 +66,7 @@
   colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[1]}
 }
 
+%%TODO: tidy up code for tables
 \usepackage{ifthen}
 
 \newcommand{\ritem}[2]{%
@@ -196,7 +197,7 @@
 
 \RequirePackage{tabularray}
 
-%%For tables – intention is to migrate to tabularray
+%%TODO: For tables – intention is to migrate to tabularray
 %%Updated macros from comments on tabularray https://github.com/lvjr/tabularray/issues/448
 \usepackage{longtable,tabulary,tabularray}%Remove longtable and tabulary when complete
 \UseTblrLibrary{varwidth}%%For itemize in entries
@@ -215,7 +216,7 @@
 \NewTblrEnviron{ResActtblr}
 \SetTblrOuter[ResActtblr]{long,expand=\reportline,expand=\tableheader}
 \SetTblrInner[ResActtblr]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
-  width=\textwidth,
+  width=\tablewidth,
   hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
   colsep = 5pt,
 %  row{odd} = {gray8},% row{even} = {gray8},
@@ -228,3 +229,10 @@
 \NewTableCommand\reportline[1]{\SetCell[c=#1]{l}}
 %%Research Activities Table Header
 \newcommand\tableheader{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\}
+
+%%TODO: Add risk table
+%%TODO: collect and add other tables
+
+%%Hack for @{}lllll@{} instead of @{}LLLL@{}
+%%TODO: Remove when all tables properly formatted
+\newcolumntype{l}{L}
