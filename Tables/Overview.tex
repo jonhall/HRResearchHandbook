@@ -1,0 +1,63 @@
+%%To reduce warning overload 
+%%\hfuzz 9999pt%%Doesn't affect overfull table reports
+%%\vfuzz 9999pt
+%%\vbadness=10001
+%%\hbadness=10001
+%\RequirePackage{silence}
+%\WarningsOff*
+%\WarningsOn[biblatex]
+%\WarningFilter{latex}{Marginpar}
+%\WarningFilter{latex}{Label}
+%\WarningFilter{latex}{Float}
+%%\ErrorsOff
+
+\documentclass[10pt,landscape]{article}
+
+\title{ Report content }
+\author{Jon G.~Hall}
+%%Uncomment for date and version
+%\date{\footnotesize\today; Version: \version}
+
+\usepackage[margin=1cm]{geometry}
+
+%%Migrating to tabularray as for tabular
+\RequirePackage{tabularray}
+\UseTblrLibrary{varwidth}%%For itemize in entries
+%\UseTblrLibrary{booktabs}%%For lines in entries
+%\newcommand{\zerobox}[1]{\setbox0=\vbox{#1}}
+%\NewColumnType{Z}{Q[cmd=\zerobox,wd=0pt]}%%Add column type that deletes a column
+
+\usepackage{emoji}
+\newcommand{\new}[1]{\bfseries #1}%\emoji{eye}
+\newcommand{\update}{\emoji{flying-disc}}
+\usepackage{ninecolors}
+\usepackage{tcolorbox}
+
+\input{tables.tex}
+
+\begin{document}
+%\maketitle
+%
+%\include{Stage0}
+
+\section*{Stage 1: Beginnings}
+\include{StageBegin/Stage1}
+\include{StageEnd/Stage1}
+
+\section*{Stage 2: Research Definition and Design}
+\include{StageBegin/Stage2}
+\include{StageEnd/Stage2}
+
+\section*{Stage 3: Data Generation}
+\include{StageBegin/Stage3}
+\include{StageEnd/Stage3}
+
+\section*{Stage 4: Completion}
+\include{StageBegin/Stage4}
+\include{StageEnd/Stage4}
+
+\section*{Stage 5: Writing up}
+\include{StageBegin/Stage5}
+\include{StageEnd/Stage5}
+
+\end{document}
