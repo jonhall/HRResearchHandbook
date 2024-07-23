@@ -1,12 +1,4 @@
 \part{The Research}\label{part:research}
-%%Candidate to move to headers
-%\DeclareExpandableDocumentCommand{\tabletitle}{O{2} m}{\\[1ex]\multicolumn{#1}{@{}p{\textwidth}@{}}{\textbf{#2}}\\ }%
-
-%\newcommand{\hwidth}[1]{\makebox[0pt][l]{#1}}
-%\DeclareExpandableDocumentCommand{\tabletitle}{m}{\SetCell[c=2]{\textbf{#1}}&\\ }
-
-%%Structures the report table, headings to the left in a list, explanation to the right
-%%#1 = caption label
 
 %%Resource type = fulltext cite in itemized list
 \DeclareCiteCommand{\resourcelistcite}
@@ -20,16 +12,6 @@
 %	 }
   {\item[] \addspace}
   {\end{itemize}\usebibmacro{postnote}}
-
-\newenvironment{ReportStructureTable}[1]{%
-	\setlist{nosep} %compress any lists
-	\begin{longtable}{@{}p{0.3\tablewidth}>{\vspace{-3pt}}p{0.7\tablewidth}@{}}%%JGH \vspace{-3pt} is a hack to align first lines
-	\caption{Report structure and content guidance\label{#1}}\\
-	\toprule
-	\textbf{Suggested structure} & \textbf{Content guidance} \\
-	\midrule%
-}%
-{\end{longtable}}
 
 \newenvironment{MoreDetails}[0]{\subsection{More details} The following citations provide good starting points for further reading: \label{ssect:MoreDetails}}{}
 
@@ -61,8 +43,8 @@ In Stage 3 you will focus on adding detail to both your aim and objectives and y
 
 With reference to our 5-stage framework, the activities which are in focus in Stage 3 are recalled in~\Cref{tab:stage3acts}, which also provides some guidelines for your interaction with your supervisor during this stage.
 
-\input{Tables/StageBegin/Stage3}
-\input{Tables/StageEnd/Stage3}
+%\input{Tables/StageBegin/Stage3}
+\input{WritingActivities/Stage3}
 
 %\todo{This is a repeated activity through all stages, and so should be templated.}
 \begin{question}[subtitle={Activity: Understanding the effort needed in this stage}] Consider~\Cref{tab:stage3acts} carefully, taking notice of the entries in the `Effort within stage' column. Write down the most time-consuming activities in this stage and what is expected under each.
@@ -72,7 +54,6 @@ With reference to our 5-stage framework, the activities which are in focus in St
 %%Hack to correct tcbox behaviour
 \color{black}
 
-%\end{document}
 
 
 \chapter{Defending your claim of new knowledge}\label{ch:DefendingYourClaim}
@@ -570,11 +551,9 @@ The 12 candidate research strategies we consider are listed in~\Cref{tab:Researc
 \end{itemize}
 %
 
-\newcommand{\tick}{$\square$}
-\begin{table}
-\caption{Research strategy choice\label{tab:ResearchStrategyChoice}}
-\begin{tabulary}{\tablewidth}{rccl}
-	\textbf{Research Strategy candidate}&\textbf{Considered}&\textbf{Excluded}&\textbf{Reason excluded}\\\toprule
+\newcommand{\tick}{$\Box$}
+\begin{SimpleFourColTable}[Research strategy choice\label{tab:ResearchStrategyChoice}][X[2]ccX[6]]
+	Research Strategy candidate&Considered&Excluded&Reason excluded\\
 	Survey&\tick&\tick\\
 	Design and Creation&\tick&\tick\\
 	Experiment&\tick&\tick\\
@@ -587,9 +566,7 @@ The 12 candidate research strategies we consider are listed in~\Cref{tab:Researc
 	Simulation&\tick&\tick\\
 	Mathematical and logical proof&\tick&\tick\\
 	Mixed methods&\tick&\tick
-\end{tabulary}
-%%Hack to correct tcbox behaviour
-\end{table}
+\end{SimpleFourColTable}
 
 
 This is a lot to digest! Rather than going through all the information about each strategy in turn, we recommend you take the following steps to first reduce your list of candidate strategies from which to arrive at your chosen one. 
@@ -1739,29 +1716,22 @@ At the end of the activity reach a decision on which research strategy, or combi
 
 Your final activity in this chapter is a writing task: to draft your chosen research strategy, as a starting point for the narrative you will develop during the remainder of your project and eventually include in your dissertation. We recommend you apply the template in~\Cref{tab:researchStrategyReport} to structure your writing.
 
-\begin{table}[htbp]
-\small
-\caption{How to summarise your research strategy\label{tab:researchStrategyReport}}
-\begin{tabulary}{\tablewidth}{@{}L|L@{}} 
-\toprule
-\textbf{Section} & \textbf{Content} \\
-\midrule
+\begin{SimpleTwoColTable}[How to summarise your research strategy\label{tab:researchStrategyReport}]
+	Section & Content \\
 Choice and justification & Indicate which strategy, or combination of strategies, you have chosen and justify this choice by considering how it aligns with the aim of your research in relation to the way it contributes\\
-\midrule
+
 Mindset and research paradigm & Discuss how this strategy is consistent with your own mindset, with reference to the research paradigms introduced in this chapter \\
-\midrule
+
 Reflexive statement & Summarise your own standpoint as a researcher, including specific assumptions, beliefs and potential bias you bring to the research, and the steps you will take ensure they will not weaken your research \\
-\midrule
+
 Data and sources & Indicate the kind of data you will need to generate and analyse in your project,  possible data sources you will focus on and how you will gain access \\
-\midrule
+
 Data generation and analysis methods & Indicate the selection of methods you intend to apply in your data generation and analysis. Explain why you think they are suitable and feasible \\
-\midrule
+
 Ethical issues & Indicate all ethical issues relevant to your chosen research strategy, including listing any regulations you may need to comply with, and explicit permissions you may need to obtain to be able to proceed with your research  \\
-\midrule
+
 Research evaluation & Reflect on the potential weaknesses which may affect your chosen strategy, and consider the related evaluation questions from the previous section, alongside other evaluation criteria you may have found in the literature. Highlights those which are most relevant to your project and indicate which actions you may take to address them\\
-\bottomrule
-\end{tabulary}
-\end{table} 
+\end{SimpleTwoColTable}
 
 \begin{question}[subtitle={Activity: Sketching your research strategy}]
 Apply the template in~\Cref{tab:researchStrategyReport} to provide a first draft account of your research strategy.
