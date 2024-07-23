@@ -1,17 +1,23 @@
-%%To reduce warning overload 
+%To reduce warning overload 
 %\hfuzz 9999pt%%Doesn't affect overfull table reports
 %\vfuzz 9999pt
 %\vbadness=10001
 %\hbadness=10001
 %\RequirePackage{silence}
-%\WarningsOff*
+%%\WarningsOff*
 %\WarningsOn[biblatex]
 %\WarningFilter{latex}{Marginpar}
 %\WarningFilter{latex}{Label}
 %\WarningFilter{latex}{Float}
 %\ErrorsOff
 
-\input{mmd6-scrivcustom-leader}
+\documentclass[a4paper,12pt,oneside,landscape,draft]{memoir}
+
+%%TODO: remove at end
+\usepackage[draft]{showlabels}
+
+%%Main document preamble files
+\input{ResBookHeader}
 
 \title{Academic Research\\%
 	a Guide for the Perplexed}
@@ -20,7 +26,10 @@
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-%\includeonly{Stage3}
+%\includeonly{Stage5}
+
+%\usepackage{showlabels}
+%\renewcommand{\showlabelfont}{\small\slshape\color{red}}
 
 \begin{document}
 \maketitle

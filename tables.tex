@@ -1,32 +1,263 @@
-%%For tables – intention is to migrate to tabularray
-%%Updated macros from comments on tabularray https://github.com/lvjr/tabularray/issues/448
-\usepackage{longtable,tabulary,tabularray}%Remove longtable and tabulary when complete
+%%Move to embedded table.tex
+%%Migrating to tabularray as for tabular
+\RequirePackage{tabularray}
 \UseTblrLibrary{varwidth}%%For itemize in entries
-\UseTblrLibrary{counter}%%For counters in tables
+\UseTblrLibrary{booktabs}%%For lines in entries
+\UseTblrLibrary{siunitx}%%For aligned decimal points
 
-%\usepackage{xpatch}
+%%For cvs input
+\usepackage{cvssimple}
 
-%%Table definitions
 
-%%Research Activities, one per stage
-%%use 
-%%\begin{ResActtblr}[caption={...}]{}
-%%\tableheader	
-%%...
-%%\end{ResActtblr}
-\NewTblrEnviron{ResActtblr}
-\SetTblrOuter[ResActtblr]{long,expand=\reportheader,expand=\tableheader}
-\SetTblrInner[ResActtblr]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
-  width=\tablewidth,
-  hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
-  colsep = 5pt,
-%  row{odd} = {gray8},% row{even} = {gray8},
-  column{1} = {fg=black, bg=azure8, font=\sffamily},%{\bfseries\sffamily},
-  row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
-  rowhead = 1,
-  colspec = {lX[8]X[13]X[-1]X[5]},
+%%All ResActTables follow this format
+\NewTableCommand{\ResActTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
+\NewTableCommand{\ResActChHeader}{\SetCell[c=5]{l}}
+\NewTableCommand{\ReportLineHeader}{\SetCell[c=3]{l}}
+
+\NewDocumentEnvironment{ResActTable}{O{Missing caption}+b}{
+	\begin{tblr}[long,caption={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+ 				 	width=1.4\textwidth,
+	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+				 	colsep = 5pt,
+					column{1} = {fg=black, bg=azure8, font=\sffamily},
+					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+					rowhead = 1,
+					colspec = {lX[8]X[13]X[-1]X[5]}}
+%Header					
+	&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
+%Body
+		#2
+	\end{tblr}}{}
+	
+%%All ReportTables follow this format
+\NewTableCommand{\ReportTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
+\NewTableCommand{\ReportChHeader}{\SetCell[c=5]{l}}
+
+\NewDocumentEnvironment{ReportTable}{O{Missing caption}+b}{
+	\begin{tblr}[long,caption={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+ 				 	width=1.4\textwidth,
+	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+				 	colsep = 5pt,
+					column{1} = {fg=black, bg=azure8, font=\sffamily},
+					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+					rowhead = 1,
+					colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[4]},
+					}
+%Header					
+	Part/Structure&\SetCell[c=1]{l}Guidance\\
+%Body
+		#2
+	\end{tblr}}{}
+	
+%%ReportTable auxiliaries
+\newcommand{\basedOn}[1]{that is based on the work you completed in \Cref{#1}}
+%%repeated report table messages
+\newcommand\tablenocontent{No content at this stage}
+\newcommand\tablecites{You should include those references that you cite in new and/or update chapters}
+%\newcommand\tableconsiderprogress{Ensure all cited references are listed in this section}
+\newcommand\tablefinalise[1]{After completing your work for this state, finalise your #1}
+\newcommand\tableminor[1]{Reread and make any minor modifications to your #1}
+\newcommand\tablecheck[1]{You should check your #1 for correctness and completeness}
+	
+	
+%%ReportTable list formats 
+\usepackage{enumitem}
+%%To define reportenumerate list for report tables
+%\usepackage{enumitem}
+\newlist{reportenum}{enumerate}{2}
+\setlist[reportenum]{nosep}
+\setlist[reportenum,1]{label={\arabic*}}
+%\setlist[reportenum,2]{resume}
+\newlist{reportitem}{itemize}{1}
+\setlist[reportitem]{nosep,label=\textbullet}
+
+%%TODO: remove when table update complete
+%\NewTblrEnviron{ReportTable}
+%\SetTblrOuter[ReportTable]{long}
+%\SetTblrInner[ReportTable]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+%  width=1.4\textwidth,
+%  hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+%  colsep = 5pt,
+%%  row{odd} = {gray8},% row{even} = {gray8},
+%  column{1} = {fg=black, bg=azure8, font=\sffamily},%{\bfseries\sffamily},
+%  row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+%  rowhead = 1,
+%%  colspec={X[8,l]X[1,c,wd=22pt]X[18]}
+%  colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[1]}
+%}
+
+%%TODO: tidy up code for tables
+\usepackage{ifthen}
+
+\newcommand{\ritem}[2]{%
+	\ifthenelse{\equal{#1}{!}}
+		%%new section
+		{\item[\color{red}\textbullet]\color{black}}
+		{\ifthenelse{\equal{#1}{*}}
+			%%updated section
+			{\item[\color{black}\textbullet]\color{black}}
+			%%not yet included						
+			{\item[\color{gray4}\textbullet]\color{gray4}}
+		}
+	#2}
+
+\newcommand{\titem}[2]{%
+	\ifthenelse{\equal{#1}{*}}%
+		{\color{black}}%
+		{\color{gray4}}%
+	#2}
+
+\newcommand\ReportTitle[1]{\ReportLineHeader\titem{#1}{Title}}
+
+\newcommand\ReportAbstract[5]
+	{\ReportLineHeader\titem{#1}{Abstract}
+	\begin{reportenum}
+		\ritem{#2} {Background}
+		\ritem{#3} {Research Outline}
+		\ritem{#4} {Research Design}
+		\ritem{#5} {Knowledge contribution}
+	\end{reportenum}
 }
-%%Shared line header
-\NewTableCommand\reportheader{\SetCell[c=5]{l}}
-%%Research Activities Table Header
-\newcommand\tableheader{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\}
+	
+\newcommand\ReportIntroduction[5]%
+	{\ReportLineHeader\titem{#1}{Chapter 1: Introduction}
+	\begin{reportenum}
+		\ritem {#2} {Background to the research}
+		\ritem {#3} {Justification for the research}
+		\ritem {#4} {Definitions}
+		\ritem {#5} {Outline of the dissertation}
+	\end{reportenum}
+}
+
+\newcommand\ReportLitRev[3]%
+	{\ReportLineHeader\titem{#1}{Chapter 2: Literature review}
+	 \begin{reportenum}
+		\ritem {#2}{Review of existing relevant knowledge}
+		\ritem {#3}{Critical summary, including knowledge gap to be addressed by the research}
+	\end{reportenum}
+}
+
+\newcommand\ReportResearchDef[4]%
+	{\ReportLineHeader\titem{#1}{Chapter 3: Research Definition}
+		 \begin{reportenum}
+			\ritem{#2}  {Problem statement}
+			\ritem{#3}  {Aim, objectives, tasks and deliverables} 
+			\ritem{#4}  {Knowledge contribution}
+		\end{reportenum}
+	}
+
+\newcommand\ReportResearchDes[5]%
+	{\ReportLineHeader  \titem{#1}{Chapter 4: Research design}
+		 \begin{reportenum}
+			\ritem{#2}  {Data Generation} 
+			\ritem{#3}  {Research strategy and methods} 
+			\ritem{#4}  {Research procedures} 
+			\ritem{#5}  {Ethical, legal and EDI considerations} 
+		\end{reportenum}
+	}
+
+\newcommand\ReportAnalysisInterp[4]%
+	{\ReportLineHeader \titem{#1}{Chapter 5: Analysis and interpretation}
+		 \begin{reportenum}
+			\ritem{#2}  {Summary and analysis of data} 
+			\ritem{#3}  {Summary of key findings} 
+			\ritem{#4} {Interpretation in relation to aim and objectives} 
+		\end{reportenum}
+	}
+
+\newcommand\ReportEvalConc[7]%
+	{\ReportLineHeader  \titem{#1}{Chapter 6: Evaluation and conclusion}
+	 \begin{reportenum}
+		\ritem{#2}  {Evaluation against aim and objectives} 
+		\ritem{#3}  {Evaluation against related work in the literature} 
+		\ritem{#4}  {Implications for practice} 
+		\ritem{#5}  {Validity of the research} 
+		\ritem{#6}  {Further work} 
+		\ritem{#7}  {Personal reflection on your experience} 
+	\end{reportenum}
+}
+
+\newcommand\ReportRefs[1]{\ReportLineHeader\titem{#1}{References}}
+
+\newcommand\ReportAppendices[1]{\ReportLineHeader\titem{#1}{Appendices}}
+
+\newcommand\ReportProgressTracking[9]%
+	{\ReportLineHeader\titem{#1}{Progress tracking}
+	\begin{reportenum}
+		\ritem{#2}{Qualification fit}
+		\ritem{#3}{Personal and professional fit}
+		\ritem{#4}{Technical skills and resources needed}
+		\ritem{#5}{Statement of feasibility}
+		\ritem{#6}{Further reading to be completed}
+		\ritem{#7}{Work schedule}
+		\ritem{#8}{Risk assessment}
+		\ritem{#9}{Risk Assessment Table(s)}
+	\end{reportenum}
+}
+
+\newcommand\ReportReflection[3]%
+	{\ReportLineHeader\titem{#1}{Reflection}
+	\begin{reportenum}
+		\ritem{#2}{Personal reflection on research process}
+		\ritem{#3}{Key priorities in follow-up stage}
+	\end{reportenum}
+}
+
+%%Simple Tables Definitions
+\NewDocumentEnvironment{SimpleTable}{mmO{Missing caption}+b}{
+	\begin{tblr}[long,caption={#3}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+ 				 	width=#1,
+	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+				 	colsep = 5pt,
+					column{1} = {fg=black, bg=azure8, font=\sffamily},
+					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+					rowhead = 1,
+					colspec = {#2},
+					}
+%Body
+		#4
+	\end{tblr}}{}
+	
+%%%Simple 2 column table
+\NewDocumentEnvironment{SimpleTwoColTable}{O{Missing caption}O{X[1]X[4]}+b}
+	{\begin{SimpleTable}{\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+%%%Simple 3 column table
+\NewDocumentEnvironment{SimpleThreeColTable}{O{Missing caption}O{X[1]X[6]X[6]}+b}
+	{\begin{SimpleTable}{\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+%%%Simple 4 column table
+\NewDocumentEnvironment{SimpleFourColTable}{O{Missing caption}O{X[1]X[8]X[8]X[8]}+b}
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+%%%Simple 5 column table
+\NewDocumentEnvironment{SimpleFiveColTable}{O{Missing caption}O{X[1]X[8]X[8]X[8]X[8]}+b}
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+%%%Simple 6 column table
+\NewDocumentEnvironment{SimpleSixColTable}{O{Missing caption}O{X[1]X[8]X[8]X[8]X[8]X[8]}+b}
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+%%%Simple 8 column table
+\NewDocumentEnvironment{SimpleEightColTable}{O{Missing caption}O{X[1]X[1]X[1]X[1]X[1]X[1]X[1]X[1]}+b}
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
+	#3	
+	\end{SimpleTable}
+	}{}
+
+\endinput

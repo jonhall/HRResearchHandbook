@@ -1,0 +1,91 @@
+%%Git integration
+\usepackage[nowatermark]{gitstatus}
+
+%%For layout
+\usepackage{geometry}
+\geometry{
+ showframe,
+%  paperwidth=6in,
+%  paperheight=9in,
+%	asymmetric,
+  left=1cm,
+  right=1cm,
+  top=1.5cm,
+  bottom=1.5cm,
+  marginparsep=8mm,
+  marginparwidth=75mm,
+  includemp,
+  includehead,
+}
+
+%%Colors
+\usepackage[svgnames]{xcolor}
+
+%%Footnotes
+\usepackage[perpage,side,marginal,symbol*]{footmisc}
+\DefineFNsymbols{hallrapanotti}{{\color{red}\textbullet}{\color{green}\textbullet}{\color{blue}\textbullet}{\color{orange}\textbullet}{\color{gray}\textbullet}{\color{purple}\textbullet}{\color{black}\textbullet}}
+\setfnsymbol{hallrapanotti}
+
+%%Set numbering depth
+\setsecnumdepth{subsubsection}
+%%memoir: Adjust spacing in toc for part number
+\renewcommand\partnumberline[1]{#1}
+\renewcommand*{\partname}{Stage}
+\renewcommand*{\partrefname}{Stage~}
+
+%\usepackage{babel}% recommended
+%%Biblatex stuff
+\usepackage[
+	backend=bibtex8,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true,
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN.bib}
+\addbibresource{collatedBib.bib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{%
+%%Removed \if for convenience, 2024-06-05
+%\ifoptionfinal{%\printsolutions}{}
+	\printbibliography}
+	
+%%Xrefs
+\usepackage{hyperref}
+\usepackage{xurl}
+
+\usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
+%%Uncomment for italicised quotes
+%\renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
+%\renewcommand{\mkblockquote}[4]{#1\emph{#2}#4#3}
+
+%%Graphics
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+
+%%Symbols
+\usepackage{amssymb}
+
+%%Numbering options to subsection
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+%%Table definitions
+\input{tables}
+
+%%Activity environment definitions
+\input{environments}
+	
+%%T.o.d.o notes
+\usepackage[textsize=tiny,obeyFinal]{todonotes}
+% 2022-10-11: so that todos don't eat following spaces.
+% https://tex.stackexchange.com/questions/11802/todo-note-steals-space
+%\usepackage{xpatch}
+%\makeatletter
+%\xpretocmd{\todo}{\@bsphack}{}{}
+%\xapptocmd{\todo}{\@esphack}{}{}
+%\makeatother
+
+%%Load lasts
+\usepackage{cleveref}

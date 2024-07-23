@@ -1,0 +1,148 @@
+%%%For Activities and the like
+%%TODO clean up Activity code
+\newcommand{\exampleColor}{CornflowerBlue!40!white}
+\newcommand{\activityColor}{Pink!80!white} 
+\newcommand{\discussionColor}{\activityColor} 
+\newcommand{\tipColor}{Green!20!white} 
+\newcommand{\quoteColor}{Linen} 
+\newcommand{\frameColor}{black!50!white}
+\usepackage[many]{tcolorbox}
+\newtcolorbox{activity}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\activityColor,
+  colframe=\frameColor,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+	title=%\textbf
+		{\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID}}
+
+\newtcolorbox{discussion}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\discussionColor,
+  colframe=\frameColor,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+title={Discussion\hfill \#\CurrentQuestionID},
+}
+
+ %%Guidance environment
+\newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
+          {\textbf{Guidance}}}
+    {}
+
+\newtcolorbox{tip}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\tipColor,
+  colframe=\frameColor,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+title={Tip},
+}
+
+\newtcolorbox{example}[1]{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\exampleColor,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{#1}}%
+  
+\newtcolorbox{running}[1]{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\exampleColor,
+  colframe=black!50!white,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{#1}}%
+
+%%Quote environment
+\renewtcolorbox{quote}{
+%  enhanced,
+  breakable,
+  pad at break=2mm,
+  left=2mm,
+  right=2mm,
+  colback=\quoteColor,
+  colframe=\frameColor,
+%  drop fuzzy midday shadow=black!50!yellow, 
+  width={\textwidth}, 
+%  frame hidden, 
+  segmentation hidden,
+  before=\par\vspace*{2mm},
+  after=\par\bigskip,
+  title=\textbf{Quote}}%
+
+%%%For question solution pairs, with delayed printing
+\usepackage{exsheets}
+\SetupExSheets{
+	headings=empty,
+	question/pre-hook=\begin{activity},
+	question/post-hook=\end{activity},
+	solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
+	solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
+	solution/print=true,
+	}
+%\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
+
+%%Answer environment
+%%Is this used?
+\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
+\item}
+    {\end{trivlist}}
+
+%%For layout
+\usepackage{geometry}
+\geometry{
+ showframe,
+%  paperwidth=6in,
+%  paperheight=9in,
+%	asymmetric,
+  left=1cm,
+  right=1cm,
+  top=1.5cm,
+  bottom=1.5cm,
+  marginparsep=8mm,
+  marginparwidth=75mm,
+  includemp,
+  includehead,
+}
