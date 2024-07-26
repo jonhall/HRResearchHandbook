@@ -29,9 +29,9 @@
 %%Set numbering depth
 \setsecnumdepth{subsubsection}
 %%memoir: Adjust spacing in toc for part number
-\renewcommand\partnumberline[1]{#1}
-\renewcommand*{\partname}{Stage}
-\renewcommand*{\partrefname}{Stage~}
+%\renewcommand\partnumberline[1]{#1}
+%\renewcommand*{\partname}{Stage}
+%\renewcommand*{\partrefname}{Stage~}
 
 %%Correcting tableofcontents overfull boxes
 %\usepackage{tocloft} % not loaded
@@ -45,6 +45,7 @@
 	autocite=inline,
 	sortcites,
 	backref=true,
+	refsegment=part,
 ]{biblatex}
 \addbibresource{MY-BIB-CLEAN.bib}
 \addbibresource{collatedBib.bib}

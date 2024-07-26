@@ -3,12 +3,8 @@
 %\vfuzz 9999pt
 %\vbadness=10001
 %\hbadness=10001
-%\RequirePackage{silence}
-%%\WarningsOff*
-%\WarningsOn[biblatex]
-%\WarningFilter{latex}{Marginpar}
+%\RequirePackage[save]{silence}
 %\WarningFilter{latex}{Label}
-%\WarningFilter{latex}{Float}
 %\ErrorsOff
 
 \documentclass[a4paper,12pt,oneside,landscape,draft]{memoir}
@@ -56,17 +52,23 @@
 	\include{FrameworkOverview}
 
 	\include{Stage1}
+	\printbibliography[segment=\therefsegment,title=Stage 1 \bibname]
 	
 	\include{Stage2}
+	\printbibliography[segment=\therefsegment,title=Stage 2 \bibname]
 	
 	\include{Stage3}
+	\printbibliography[segment=\therefsegment,title=Stage 3 \bibname]
 	
 	\include{Stage4}
+	\printbibliography[segment=\therefsegment,title=Stage 4 \bibname]
 	
 	\include{Stage5}
+	\printbibliography[segment=\therefsegment,title=Stage 5 \bibname]
 
 \backmatter
 
 	\include{Closing}
+	\printbibliography[title=Collated \bibname]
 
 \end{document}
