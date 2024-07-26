@@ -215,19 +215,30 @@
 					colspec = {#2},
 					}
 %Body
-		#4
+	#4
 	\end{tblr}}{}
 	
+%%%Simple Tables Definitions
+%\NewDocumentEnvironment{SimpleTable}{mmO{Missing caption}+b}{
+%	\begin{tblr}[long,caption={#3}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+% 				 	width=#1,
+%	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
+%				 	colsep = 5pt,
+%					column{1} = {fg=black, bg=azure8, font=\sffamily},
+%					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
+%					rowhead = 1,
+%					colspec = {#2},
+%					}
 %%%Simple 2 column table
 \NewDocumentEnvironment{SimpleTwoColTable}{O{Missing caption}O{X[1]X[4]}+b}
-	{\begin{SimpleTable}{\textwidth}{#2}[#1]
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
 	#3	
 	\end{SimpleTable}
 	}{}
 
 %%%Simple 3 column table
 \NewDocumentEnvironment{SimpleThreeColTable}{O{Missing caption}O{X[1]X[6]X[6]}+b}
-	{\begin{SimpleTable}{\textwidth}{#2}[#1]
+	{\begin{SimpleTable}{1.4\textwidth}{#2}[#1]
 	#3	
 	\end{SimpleTable}
 	}{}
