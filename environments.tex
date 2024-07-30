@@ -38,7 +38,7 @@
   segmentation hidden,
   before=\par\vspace*{2mm},
   after=\par\bigskip,
-title={Discussion\hfill \#\CurrentQuestionID},
+  title={Discussion\hfill \#\CurrentQuestionID},
 }
 
  %%Guidance environment
@@ -60,7 +60,7 @@ title={Discussion\hfill \#\CurrentQuestionID},
   segmentation hidden,
   before=\par\vspace*{2mm},
   after=\par\bigskip,
-title={Tip},
+  title={Tip},
 }
 
 \newtcolorbox{example}[1]{
@@ -70,7 +70,7 @@ title={Tip},
   left=2mm,
   right=2mm,
   colback=\exampleColor,
-  colframe=black!50!white,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
 %  frame hidden, 
@@ -86,7 +86,7 @@ title={Tip},
   left=2mm,
   right=2mm,
   colback=\exampleColor,
-  colframe=black!50!white,
+  colframe=\frameColor,
 %  drop fuzzy midday shadow=black!50!yellow, 
   width={\textwidth}, 
 %  frame hidden, 
@@ -129,20 +129,3 @@ title={Tip},
 \newenvironment{answer}{\textbf{Answer}\begin{trivlist}
 \item}
     {\end{trivlist}}
-
-%%For layout
-\usepackage{geometry}
-\geometry{
- showframe,
-%  paperwidth=6in,
-%  paperheight=9in,
-%	asymmetric,
-  left=1cm,
-  right=1cm,
-  top=1.5cm,
-  bottom=1.5cm,
-  marginparsep=8mm,
-  marginparwidth=75mm,
-  includemp,
-  includehead,
-}

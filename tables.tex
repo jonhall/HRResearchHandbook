@@ -1,4 +1,10 @@
 %%Move to embedded table.tex
+
+%%Tables and figures labelled consecutively – TODO: not working
+\RequirePackage{chngcntr}
+\counterwithout*{table}{part}
+\counterwithout*{figure}{part}
+
 %%Migrating to tabularray as for tabular
 \RequirePackage{tabularray}
 \UseTblrLibrary{varwidth}%%For itemize in entries
@@ -7,22 +13,62 @@
 
 %%Define the widest tables width
 \newlength{\widetablewidth}
+\newlength{\narrowtablewidth}
 \setlength{\widetablewidth}{\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
+\setlength{\narrowtablewidth}{\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
 
+\newcommand{\tableBackgroundColor}{black!90!white}
+
+%%Simple N column table
+\NewDocumentEnvironment{SimpleNColTable}{
+		m% 					% label
+		m%					% number of columns – not currently used
+		O{\the\widetablewidth}% 	% tablewidth (default: \widetablewidth)
+		m% 					% caption
+		O{X[1]*{10}{X[7]}}%	% optional colspec
+		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
+		}%
+		{
+		\begin{tblr}[
+				long,
+	 			label={#1},
+				caption={#4},
+			]{
+				measure=vbox, 
+				stretch=-1,%%Allows lists in body, with no padding
+	 			width = #3,
+				colspec = {#5},
+%		  		hlines = {wd=2pt}, %column{2} = {co=1}, 
+				colsep = 5pt,
+%TODO change colours to neutral/transparent, if possible.
+				column{1} = {fg=white, bg=\frameColor},%, font=\sffamily},
+				row{1} = {fg=white, bg=\frameColor},%, font=\bfseries\sffamily},
+				rowhead = 1,
+			}
+			#6
+		\end{tblr}
+	}{}
+
+%%Complex table definitions
 %%All ResActTables follow this format
 \NewTableCommand{\ResActTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
 \NewTableCommand{\ResActChHeader}{\SetCell[c=5]{l}}
 \NewTableCommand{\ReportLineHeader}{\SetCell[c=3]{l}}
 
 \NewDocumentEnvironment{ResActTable}{O{Missing caption}+b}{
-	\begin{tblr}[long,caption={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
- 				 	width=\widetablewidth,
-	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
-				 	colsep = 5pt,
-					column{1} = {fg=black, bg=azure8, font=\sffamily},
-					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
-					rowhead = 1,
-					colspec = {lX[8]X[13]X[-1]X[5]}}
+	\begin{tblr}[
+			long,
+			caption={#1}
+		]{
+			measure=vbox, 
+			stretch=-1,%%Allows lists in body, with no padding
+ 			width=\widetablewidth,
+%	  		hlines = {wd=2pt}, %column{2} = {co=1}, 
+			colsep = 5pt,
+			column{1} = {fg=white, bg=\frameColor},%, font=\sffamily},
+			row{1} = {fg=white, bg=\frameColor},%, font=\bfseries\sffamily},
+			rowhead = 1,
+			colspec = {lX[8]X[13]X[-1]X[5]}}
 %Header					
 	&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
 %Body
@@ -33,8 +79,12 @@
 \NewTableCommand{\ReportTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
 \NewTableCommand{\ReportChHeader}{\SetCell[c=5]{l}}
 
-\NewDocumentEnvironment{ReportTable}{O{Missing caption}+b}{
-	\begin{tblr}[long,caption={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
+\NewDocumentEnvironment{ReportTable}{
+		m					%label
+		O{Missing caption}	%caption
+		+b					%body
+		}{
+	\begin{tblr}[long,caption={#2},label={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
  				 	width=\widetablewidth,
 	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
 				 	colsep = 5pt,
@@ -46,7 +96,7 @@
 %Header					
 	Part/Structure&\SetCell[c=1]{l}Guidance\\
 %Body
-		#2
+		#3
 	\end{tblr}}{}
 	
 %%ReportTable auxiliaries
@@ -188,72 +238,5 @@
 	\end{reportenum}
 }
 
-%%Simple Tables Definitions
-\NewDocumentEnvironment{SimpleTable}{mmO{Missing caption}+b}{
-	\begin{tblr}[long,caption={#3}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
- 				 	width=#1,
-	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
-				 	colsep = 5pt,
-					column{1} = {fg=black, bg=azure8, font=\sffamily},
-					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
-					rowhead = 1,
-					colspec = {#2},
-					}
-%Body
-	#4
-	\end{tblr}}{}
-	
-%%%Simple Tables Definitions
-%\NewDocumentEnvironment{SimpleTable}{mmO{Missing caption}+b}{
-%	\begin{tblr}[long,caption={#3}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
-% 				 	width=#1,
-%	  			 	hlines = {gray8,wd=5pt}, %column{2} = {co=1}, 
-%				 	colsep = 5pt,
-%					column{1} = {fg=black, bg=azure8, font=\sffamily},
-%					row{1} = {fg=black, bg=azure8, font=\bfseries\sffamily},
-%					rowhead = 1,
-%					colspec = {#2},
-%					}
-%%%Simple 2 column table
-\NewDocumentEnvironment{SimpleTwoColTable}{O{Missing caption}O{X[1]X[4]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
-
-%%%Simple 3 column table
-\NewDocumentEnvironment{SimpleThreeColTable}{O{Missing caption}O{X[1]X[6]X[6]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
-
-%%%Simple 4 column table
-\NewDocumentEnvironment{SimpleFourColTable}{O{Missing caption}O{X[1]X[8]X[8]X[8]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
-
-%%%Simple 5 column table
-\NewDocumentEnvironment{SimpleFiveColTable}{O{Missing caption}O{X[8]X[8]X[8]X[8]X[8]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
-
-%%%Simple 6 column table
-\NewDocumentEnvironment{SimpleSixColTable}{O{Missing caption}O{X[1]X[1]X[1]X[1]X[1]X[1]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
-
-%%%Simple 8 column table
-\NewDocumentEnvironment{SimpleEightColTable}{O{Missing caption}O{X[1]X[1]X[1]X[1]X[1]X[1]X[1]X[1]}+b}
-	{\begin{SimpleTable}{\widetablewidth}{#2}[#1]
-	#3	
-	\end{SimpleTable}
-	}{}
 
 \endinput

@@ -1,10 +1,13 @@
 %%Git integration
 \usepackage[nowatermark]{gitstatus}
 
+%%For fakeverb, so tables show \verb
+\usepackage{codehigh}
+
 %%For layout
 \usepackage{geometry}
 \geometry{
- showframe,
+% showframe,
 %  paperwidth=6in,
 %  paperheight=9in,
 %	asymmetric,
@@ -51,10 +54,10 @@
 \addbibresource{collatedBib.bib}
 
 %%Ensure bibliography always included, even if \end{document} early
-\AtEndDocument{%
-%%Removed \if for convenience, 2024-06-05
-%\ifoptionfinal{%\printsolutions}{}
-	\printbibliography}
+%\AtEndDocument{%
+%%%Removed \if for convenience, 2024-06-05
+%%\ifoptionfinal{%\printsolutions}{}
+%	\printbibliography}
 	
 %%Xrefs
 \usepackage{hyperref}
@@ -76,12 +79,12 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{2}
 
-%%Table definitions
-\input{tables}
-
 %%Activity environment definitions
 \input{environments}
 	
+%%Table definitions
+\input{tables}
+
 %%T.o.d.o notes
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 % 2022-10-11: so that todos don't eat following spaces.
