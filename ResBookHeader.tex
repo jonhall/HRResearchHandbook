@@ -40,10 +40,6 @@
 %\usepackage{tocloft} % not loaded
 %\cftsetpnumwidth{1cm}
 
-%%Xrefs
-\usepackage{hyperref}
-\usepackage{xurl}
-
 \usepackage[UKenglish]{babel}% recommended
 %%Biblatex stuff
 \usepackage[
@@ -52,10 +48,15 @@
 	autocite=inline,
 	sortcites,
 	backref=true,
+%	backrefstyle=three,%consecutive pages are compressed
 	refsegment=part,
 ]{biblatex}
 \addbibresource{MY-BIB-CLEAN.bib}
 \addbibresource{collatedBib.bib}
+
+%%Xrefs
+\usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
+\usepackage{xurl}
 
 %%Ensure bibliography always included, even if \end{document} early
 %\AtEndDocument{%
