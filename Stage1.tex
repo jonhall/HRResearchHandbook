@@ -948,44 +948,48 @@ Most references in your literature review should be peer-reviewed, therefore you
 
 The number of peer-reviewed academic articles is very large and growing exponentially\footnote{2023 estimates put the number of published academic articles to between 40 and 50 millions, with 5 millions new articles published in 2022!}. So even without the grey literature, focussing on the most relevant articles for your research could be a challenge if not approached systematically.
 
-A good place to start is to brainstorm a set of search terms\footnote{A search term is a word or a combination of words that you can key into a search engine.} that bear a relationship to each of the elements of your research problem. As we've explained, a research problem has the following elements: a context including some phenomena of interest, a knowledge gap in relation to those phenomena, and a justification in terms of whom the stakeholders are and the reasons why the problem matters to them. Your quest for knowledge about each of them will drive your literature search.
+A good place to start is to brainstorm a set of search terms\footnote{\gloss{A search term} is a word or a combination of words that you can key into a search engine.} that bear a relationship to each of the elements of your research problem: our quest for knowledge about each of them will drive your literature search.
 
 Let's see how this could be done on an example.
 
 \begin{running}{Search terms from a research problem} Let us consider the following research problem:
 
-\blockquote{To evaluate the effectiveness of techniques to test embedded safety-critical software while the hardware is still unavailable. Full software testing can only occur once the software is embedded in its hardware. However, in many safety-critical avionics systems, this can happen very late in the development process, leading to expensive re-design if errors are found. Early software testing while the hardware is still unavailable could reduce such late occurrence of errors and expensive re-design.}
+\begin{quotation}
+To evaluate the effectiveness of techniques to test embedded safety-critical software while the hardware is still unavailable. Full software testing can only occur once the software is embedded in its hardware. However, in many safety-critical avionics systems, this can happen very late in the development process, leading to expensive re-design if errors are found. Early software testing while the hardware is still unavailable could reduce such late occurrence of errors and expensive re-design.
+\end{quotation}
 
-We can take each problem element in turn to identify possible search terms. In doing so, we have come up with those in the table below. This initial set should be sufficient to perform our initial search.
+We can take each problem element in turn to identify possible search terms. In doing so, we have come up with this initial set, which should be sufficient to perform our initial search:
 
-\begin{SimpleNColTable}{tab:searchTerms}{3}[\textwidth]{Brainstormed search term}[X[2]X[6]X[6]]
+\begin{SimpleNColTable}{tab:searchTerms}{3}[\textwidth]{Brainstormed search term}
+[X[3]X[6]X[6]]
  Problem element & From problem statement & Our brainstormed search terms \\
- Context & Avionics systems development & Avionic systems; system development \\
- Phenomena & Embedded software; safety-critical applications; testing approaches & Embedded software; safety-critical systems; software testing \\
- Knowledge gap & To evaluate the effectiveness of testing techniques when the hardware is not available & Testing techniques; effectiveness \\
- Stakeholders & Software developers, safety engineers within the context & Software developers; software engineers \\
- Reasons & Early software testing while the hardware is still unavailable could reduce the late occurrence of errors and expensive redesign. & Late errors; redesign
+ Context C& Avionics systems development & Avionic systems; system development \\
+ Phenomena P& Embedded software; safety-critical applications; testing approaches & Embedded software; safety-critical systems; software testing \\
+ Knowledge gap G& To evaluate the effectiveness of testing techniques when the hardware is not available & Testing techniques; effectiveness \\
+ Stakeholders S& Software developers, safety engineers within the context & Software developers; software engineers \\
+ Reasons R& Early software testing while the hardware is still unavailable could reduce the late occurrence of errors and expensive redesign. & Late errors; redesign
 \end{SimpleNColTable}
 \end{running}
 
-\begin{question}[subtitle={Activity: Search terms brainstorming}] Using your research problem, fill in a table similar to that in the example, indicating a few search terms you have brainstormed for each research problem element.
+\begin{question}[subtitle={Activity: Search terms brainstorming}] Using your research problem, fill in a table similar to that in the example, indicating search terms you have brainstormed for each problem element.
 
-\begin{guidance}The aim of this activity is to arrive at an initial set of search terms you can use to start your own literature search. You should start by words in your problem descriptions, but you could also include synonyms, particularly if you are not sure which technical terms are used in the literature.
+\begin{guidance}The aim of this activity is to arrive at an initial set of search terms you can use to start your own literature search. You should start by words in your problem statement, but you could also include synonyms, particularly if you are not sure which technical terms are used in the literature.
 
-You shouldn't worry too much if you have come up with too many or too few in relation to each element: you will have an opportunity to review and refine your choices later as this, too, is an iterative and incremental process.
+You shouldn't worry too much if you have come up with too many or too few terms in relation to each element: you will have an opportunity to review and refine your choices later --- this, too, is an iterative and incremental process.
 \end{guidance}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
 
-Your brainstormed search terms will provide a starting point for searching the literature. Initially, you should be prepared for the fact that very large numbers of articles might be returned with many of them irrelevant to your final goal of understanding your chosen topic. Therefore, you are likely to need to refine your search terms and also come up with ways to narrow down your search results to manageable set of relevant articles.
+Your brainstormed search terms will provide a starting point for searching the literature. Initially, you should be prepared for the fact that very large numbers of articles might be returned with many of them irrelevant to your final goal of understanding your chosen topic. Therefore, you will refine your search terms and find ways to narrow down your search results to manageable set of relevant articles.
 
-Search terms are often used in combination to create more complex search terms which may increase the likelihood of finding articles which are close to your topic of interest. Basic Boolean operators, as those described in Cref{tab:booleanoperators}, are used for this purpose.
+Search terms are often used in combination to create more complex search terms which may widen or narrow the number of results, so to increase the likelihood of finding articles which are close to your topic of interest. Basic Boolean operators\footnote{\gloss{Boolean operators} are used in Mathematics and Logic to build expressions which can be either true or false.} are used for this purpose, as indicated in \Cref{tab:booleanoperators}.
 
-\begin{SimpleNColTable}{tab:booleanoperators}{2}{Boolean operators for search terms}[X[1]X[3]]
- Boolean operator & Effect of the search \\
-\fakeverb{Term 1 AND Term 2} & Materials containing both \fakeverb{Term 1} and \fakeverb{Term 2} will be returned. This is used to narrow down a search. \\
-\fakeverb{Term 1 OR Term 2} & Materials containing only \fakeverb{Term 1} or only \fakeverb{Term 2} or both will be returned. This is used to expand a search. \\
- \fakeverb{NOT Term 1} & Materials \emph{not} containing \fakeverb{Term 1} will be returned. This is used to narrow down a search. \\
+\begin{SimpleNColTable}{tab:booleanoperators}{2}{Combining search terms with Boolean operators}
+[X[1]X[3]]
+ Boolean operator & Effect of the search results\\
+\fakeverb{Term 1 AND Term 2} & Results will contain both \fakeverb{Term 1} and \fakeverb{Term 2}. This is used to narrow down a search. \\
+\fakeverb{Term 1 OR Term 2} & Results may contain only \fakeverb{Term 1} or only \fakeverb{Term 2} or both. This is used to expand a search. \\
+ \fakeverb{NOT Term 1} & Results will \emph{not} contain \fakeverb{Term 1}. This is used to narrow down a search. \\
 \end{SimpleNColTable}
 
 \begin{example}{Using Boolean operators}
@@ -996,7 +1000,7 @@ Let's return to our example. We have conducted the following searches.
 
 	\fakeverb{safety critical systems AND software testing}
 
-	to Google Scholar and this returned 5310 results: that's a lot of papers to read, so we knew that we needed to narrow the search down.
+	to Google Scholar and this returned 5310 results: that's a lot of papers to read, so we knew we needed to narrow the search down.
 	
 	\item We therefore added another term and typed in:
 
@@ -1004,7 +1008,7 @@ Let's return to our example. We have conducted the following searches.
 
 	which returned 389 results: more manageable, but still a very large number.
 
-	\item To narrow the search further, we typed in:
+	\item To narrow down the search further, we typed in:
 
 	\fakeverb{safety critical systems AND software testing AND avionics systems AND testing techniques}
 
@@ -1017,13 +1021,13 @@ Let's return to our example. We have conducted the following searches.
 	which returned 35 results.
 \end{enumerate}
 
-In this case, adding \fakeverb{avionics systems} helped us narrow down the search, presumably because only avionics applications were returned, rather than any kind of safety critical system; similarly, adding \fakeverb{testing techniques} presumably helped the search engine focus on techniques rather than, say testing processes or other. However, when we added \fakeverb{testing methods} using the \fakeverb{OR} operator, the hit list got even smaller, which was surprising. This demonstrate that search engines do not always behave as we would expect, so that it is important to try different approaches to arrive at a desirable outcome.
+In this case, adding \fakeverb{avionics systems} helped us narrow down the search, presumably because only avionics applications were returned, rather than any kind of safety critical system; similarly, adding \fakeverb{testing techniques} presumably helped the search engine focus on techniques rather than, say testing processes or other. However, when we added \fakeverb{testing methods} using the \fakeverb{OR} operator, the hit list got even smaller, which was surprising. This demonstrates that search engines do not always behave as we would expect, so that it is important to try different approaches to arrive at a desirable outcome.
 \end{example}
 
 
-\begin{question}[subtitle={Activity: Your first literature search}] Conduct a search in Google Scholar from the search terms you brainstormed out of your research problem elements, combining them using the operators above if appropriate.
+\begin{question}[subtitle={Activity: Your first literature search}] Conduct searches in Google Scholar using the search terms you have brainstormed, combining them with Boolean operators above when appropriate.
 
-For each, record both the combination you have used and how many articles Google Scholar returns as hits. Reflect on how using different terms and operators may change the number of hits and how that may inform ways to widen or narrow down your searches.
+For each search, record both the combination you use and how many articles Google Scholar returns as hits. Reflect on how using different terms and operators may change the number of hits and how that may inform ways to widen or narrow down your searches.
 
 \begin{guidance}
 In combining your search terms, you could start by using the \fakeverb{AND} operator, then repeat the search trying different combinations of search terms, different operators, adding and removing terms, or even using synonyms of your search terms.
@@ -1034,26 +1038,24 @@ You should ensure you record both the combinations you've used and the resulting
 %%Hack to correct tcbox behaviour
 \color{black}
 
-As you may have gathered from this activity, to a large extent your initial search will be a trial-and-error process\footnote{Be sure to be systematic and record which search terms you have used: this will save a lot of pain later when you're trying to remember which search term you used to pick a particular article!} and you may end up iterating several times. It's not wasted effort, though. You can make the most of the time spent by:
+As the example shows, to a large extent your initial search will be a trial-and-error process\footnote{Be sure to be systematic and record which search terms you have used: this will save a lot of pain later when you're trying to remember which search term you used to pick a particular article!} and you may end up iterating several times. It's not wasted effort, though. You can make the most of the time spent by:
 
 \begin{itemize}
-\item Using Boolean combinations of search terms wisely to narrow or widen your searches
+\item using Boolean combinations of search terms wisely to narrow or widen your searches
 
-\item Particularly if only few hits are returned, replacing your search terms with new terms -- often synonyms for existing ones.
+\item particularly if only few hits are returned, replacing your search terms with new terms -- often synonyms for existing ones.
 \end{itemize}
 
-Finally, although in this section we have focussed on Google Scholar, the same techniques apply to most bibliographical database search engines, so you could repeat the activities on subscription databases you can access through your library.
+Although in this section we have focussed on Google Scholar, the same techniques apply to most bibliographical database search engines, so you could repeat the activity on any database you can access through your library.
 
 \paragraph{What if there are still too many hits?}
 Even if you spend your search time wisely, you may still end up with a large number of hits to consider. An important thing to recognise is that not all of the hits returned will be relevant, so you will need to make an initial assessment of what to exclude from further consideration. When the number of search hits is high this will take time, so you will need to select which articles to look at first.
 
-We recommend you start by considering recent review articles. Review articles, also known as surveys, are academic articles which summarise the current understanding of a specific topic or phenomenon. They are usually the result of analysing and synthesising academic literature or bringing together findings from several studies. Any recent review articles that appear in your search offer a very easy way to start your literature review: not only do they collect together recent relevant papers, but they may have an overview or a précis of each.
+We recommend you start by considering recent review articles. \gloss{Review articles}, also known as surveys, are academic articles which summarise the current understanding of a specific topic or phenomenon. They are the result of analysing and synthesising academic literature or bringing together findings from several studies. Any recent review articles that appear in your search offer a very easy way into your literature review: not only do they collect together recent relevant papers, but they often summarise and compare their  contributions and methods. If no review articles are included in your hits, you could repeat your search by adding \fakeverb{AND Review} or \fakeverb{AND Survey} to the end of your search term. Alternatively, you could ask your supervisor if they can suggest a review article you can start with. It's a great question to ask at an early meeting with them. Your supervisor may also suggest other seminal papers for you to look at.
 
-If no review articles are included in your hits, you could repeat your search by adding \fakeverb{AND Review} or \fakeverb{AND Survey} to the end of your search term. Alternatively, you could ask your supervisor if they can suggest a review article you can start with. It's a great question to ask at an early meeting with them. Your supervisor may also suggest other seminal papers for you to look at.
+By `recent' we mean within 2 to 5 years to ensure you are reviewing work at the leading edge. This is particularly important for fast changing disciplines, such as Computing, where research can become quickly obsolete --- for slow changing disciplines, the timeframe of publication may be less important. Reducing the timeframe of publication is an effective way to cut down the returns considerably. Google Scholar and most bibliographical database search engines allow you to select articles within a specified timeframe.
 
-By `recent' we mean within 2 to 5 years, particularly for fast changing disciplines, such as Computing. For slow changing disciplines, the time frame of publication may be less important. Reducing the timeframe of publication is an effective way to cut down the returns considerably. Google Scholar allows you to select articles within a specified timeframe, and similar facilities are available in most bibliographical database search engines.
-
-Second thing to recognise is that not all hits may be accurate -- they may have the wrong date on them for instance -- so care is warranted. Repeating the search on different bibliographical databases may help you identify erroneous entries.
+You should also be aware that not all hits may be accurate -- they may have the wrong date on them for instance -- so care is warranted. Repeating your search on different bibliographical databases may help you identify erroneous entries.
 
 \begin{question}[subtitle={Activity: Narrowing down your hit list}] Consider the outcome of one of your searches. Identify any recent review paper which may be included. If necessary, revise your search term by including \fakeverb{AND Review} or \fakeverb{AND Survey} and try again, or set a specific timeframe to reduce the number of outputs.
 
@@ -1061,7 +1063,7 @@ Second thing to recognise is that not all hits may be accurate -- they may have 
 
 \fakeverb{review OR survey}
 
-to our last search term, and only considered publications since 2020. The resulting list only included 9 hits, of which 4 were literature reviews.
+to our last search term, and only considered publications since 2020. The resulting list included only 9 hits, of which 4 were literature reviews.
 \end{solution}\end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
@@ -1082,66 +1084,67 @@ During processing you need an efficient way to decide which of the papers in you
   
   You'll know a paper is potentially relevant if the phenomena that are mentioned in its abstract bear some relation to those of your research problem. Therefore, focusing on such phenomena is what we recommend you do at this point. 
   
-  You should keep an open mind at this point, as it is likely the articles you are considering will use a different terminology from yours. Nevertheless, you should be able to judge whether they are close enough to elements of your own research problem, particularly the knowledge gap and its context.  
+  You should keep an open mind, as it is likely the articles you are considering will use a different terminology from yours. Nevertheless, you should be able to judge whether they are close enough to elements of your own research problem, particularly the knowledge gap and its context.  
   
 
-It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
+%\todo{LR -- do we need this? if so, Jon should edit...}
+%
+%It is important to acknowledge that there is no standard way of referring to phenomena, so having an open mind -- at least initially -- as to what could constitute them would be good. Remember, phenomena were defined very generally as observables. In a paper, phenomena, as observables, can be referred to in many ways, including:
+%
+%
+%\begin{itemize}
+%\item Directly: statements such as \enquote{the prices of software services were \emph{observable} in this study} -- the observables are the prices of software services.
+%
+%\item Indirectly: statement such as \enquote{the prices of software services were \emph{not directly observable} in this study, so we used the proxy of hours worked accumulated across the team of developers} -- the observables are the number of hours worked.
+%
+%\item As measurable: statements such as \enquote{the number of bugs in the software were given through the collection of bug reports} -- the observables are the bugs in the software.
+%
+%\item As inferences from other phenomena: statements such as \enquote{the number of bugs in the software were estimated from the number of bug reports} -- the observables are the number of bugs reported.
+%\end{itemize}
 
-\todo{LR -- this, till the end of the sub-section, needs work; for Jon to do}
-
-\begin{itemize}
-\item Directly: statements such as \enquote{the prices of software services were \emph{observable} in this study} -- the observables are the prices of software services.
-
-\item Indirectly: statement such as \enquote{the prices of software services were \emph{not directly observable} in this study, so we used the proxy of hours worked accumulated across the team of developers} -- the observables are the number of hours worked.
-
-\item As measurable: statements such as \enquote{the number of bugs in the software were given through the collection of bug reports} -- the observables are the bugs in the software.
-
-\item As inferences from other phenomena: statements such as \enquote{the number of bugs in the software were estimated from the number of bug reports} -- the observables are the number of bugs reported.
-\end{itemize}
-
-\begin{example}{Going back to our example of safety-critical development...}...one of the review articles we found in our search is:
-
-\fullcite{garousi2018testing}
-
-Its abstract reads\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.}:
-
-\newcommand{\firstquotedparagraph}[1]{\textbf{#1}\quad}%%So that textcquote places quotes in correct place
-
-\textcquote{garousi2018testing}{\firstquotedparagraph{Context}\quad Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
-
-\paragraph{Objective} However, reviewing and getting an overview of the entire state-of-the-art and the – practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
-
-\paragraph{Method} To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion/exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
-
-\paragraph{Results} Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
-
-\paragraph{Conclusion} The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques/approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an \enquote{index} to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.}
-
-\end{example}
-
-\begin{question}[subtitle={Activity: the relevance of early hits to your search terms}] For five of the hits to the search you conducted in Activity ??, fill in the relevancy matrix below, and score them for relevance.
-
-\begin{SimpleNColTable}{tab:earlyHits}{3}{Early Hit Relevance}
-Type&Comment&Score\\
- Direct & TBD& TBD\\
- Indirect & & \\
- Measurable & & \\
- Inferences & & \\
-Complete this...& &
-\end{SimpleNColTable}
-
-\begin{solution}TBD
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
+%\begin{example}{Going back to our example of safety-critical development...}...one of the review articles we found in our search is:
+%
+%\fullcite{garousi2018testing}
+%
+%Its abstract reads\footnote{Increasingly, and very helpfully, many journals and conferences research articles are beginning to use \emph{structured abstracts}, such as the one in this article. A structured abstract has sections which bring out the context, objectives, results and other information.}:
+%
+%\newcommand{\firstquotedparagraph}[1]{\textbf{#1}\quad}%%So that textcquote places quotes in correct place
+%
+%\textcquote{garousi2018testing}{\firstquotedparagraph{Context}\quad Embedded systems have overwhelming penetration around the world. Innovations are increasingly triggered by software embedded in automotive, transportation, medical-equipment, communication, energy, and many other types of systems. To test embedded software in an effective and efficient manner, a large number of test techniques, approaches, tools and frameworks have been proposed by both practitioners and researchers in the last several decades.
+%
+%\paragraph{Objective} However, reviewing and getting an overview of the entire state-of-the-art and the – practice in this area is challenging for a practitioner or a (new) researcher. Also unfortunately, as a result, we often see that many companies reinvent the wheel (by designing a test approach new to them, but existing in the domain) due to not having an adequate overview of what already exists in this area.
+%
+%\paragraph{Method} To address the above need, we conducted and report in this paper a systematic literature review (SLR) in the form of a systematic literature mapping (SLM) in this area. After compiling an initial pool of 588 papers, a systematic voting about inclusion/exclusion of the papers was conducted among the authors, and our final pool included 312 technical papers.
+%
+%\paragraph{Results} Among the various aspects that we aim at covering, our review covers the types of testing topics studied, types of testing activity, types of test artifacts generated (e.g., test inputs or test code), and the types of industries in which studies have focused on, e.g., automotive and home appliances. Furthermore, we assess the benefits of this review by asking several active test engineers in the Turkish embedded software industry to review its findings and provide feedbacks as to how this review has benefitted them.
+%
+%\paragraph{Conclusion} The results of this review paper have already benefitted several of our industry partners in choosing the right test techniques/approaches for their embedded software testing challenges. We believe that it will also be useful for the large world-wide community of software engineers and testers in the embedded software industry, by serving as an \enquote{index} to the vast body of knowledge in this important area. Our results will also benefit researchers in observing the latest trends in this area and for identifying the topics which need further investigations.}
+%
+%\end{example}
+%
+%\begin{question}[subtitle={Activity: the relevance of early hits to your search terms}] For five of the hits to the search you conducted in Activity ??, fill in the relevancy matrix below, and score them for relevance.
+%
+%\begin{SimpleNColTable}{tab:earlyHits}{3}{Early Hit Relevance}
+%Type&Comment&Score\\
+% Direct & TBD& TBD\\
+% Indirect & & \\
+% Measurable & & \\
+% Inferences & & \\
+%Complete this...& &
+%\end{SimpleNColTable}
+%
+%\begin{solution}TBD
+%\end{solution}\end{question}
+%%%Hack to correct tcbox behaviour
+%\color{black}
 
 \paragraph{What to do when you find a potentially relevant paper}
-First thing you should do is to record it in your BMT. You should record it with the search term that you used to find it so that you can rerun the search to:
+First thing you should do is to record it in your BMT. You should record it with the search term that you used to find it so that you can rerun the search to find:
 
 \begin{itemize}
-\item Find similar papers that might later have added relevance to your work
+\item similar papers that might later have added relevance to your work
 
-\item Find new papers that have been added to the literature since you last looked
+\item new papers that have been added to the literature since you last looked.
 
 \end{itemize}
 
@@ -1151,9 +1154,9 @@ In the latter case, you should also record the date\footnote{Many bibliographic 
 This is a point where you need to iterate back to searching bibliographical databases for new hits, using different search terms to widen the scope of your search. Also useful on these occasions is to ask your supervisor for advice: they should be able to point to seminal or review papers you should start from, or indicate  which authors have made core contributions to your topic.
 
 \paragraph{What if too few hits appear relevant?}
-In this case too you will need to iterate back to searching bibliographical databases for new hits. In such cases, however, the few hits you have identified can also help you find other potentially relevant work. This is because articles cite other related articles, and in turn they are cited by other others in their papers. 
+In this case too you will need to iterate back to searching bibliographical databases for new hits. In such cases, however, the few hits you have identified can also help you find other potentially relevant work. This is because articles cite other related articles, and in turn they are cited by other authors in their papers. 
 
-\textit{Citation searching} is the process of looking backwards and forwards to track citations, starting from an article of interest. Specifically, backward  searching looks through the articles cited by a paper, while forward  searching looks through the articles which cite that paper.
+\gloss{Citation searching} is the process of looking backwards and forwards to track citations, starting from an article of interest. Specifically, backward  searching looks through the articles cited by a paper, while forward  searching looks through the articles which cite that paper.
 
 Looking backward is straightforward: all you have to do is go through the reference list at the end of the article. Looking forward, instead, will require you to make use of Google Scholar which, for every hit, provides a list of the articles that cite that paper\footnote{Similar features are available in many other bibliographical databases, like the Web of Science.}. 
 
@@ -1169,13 +1172,13 @@ Alongside, the `Cited by...' link, Google Scholar also provides a `Related artic
 
 \begin{question}[subtitle={Activity: Using Google Scholar `Related articles' feature}] Return to your Google Scholar search for Keshav's paper and click on the `Related articles' link. Compare this list of articles to those at the 'Cited by...' link.  What's their main difference?
 \begin{solution}
-The `Cited by...' list includes articles which cite Keshav's work. As such they may be addressing very different topics and may belong to different disciplines. On the other hand, the `Related articles' list includes papers which address the same topic as Keshav, including various approaches to reviewing the literature.
+The `Cited by...' list includes articles which cite Keshav's work. As such they may be addressing very different topics and may belong to different disciplines. On the other hand, the `Related articles' list includes papers which address the same topic as Keshav, including various approaches to reviewing the literature, even if they don't cite Keshav's article.
 \end{solution}
 \end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
 
-You should make good use of such facilities as they can speed up considerably your  search for relevant work to review. They are equally valuable at the beginning of your literature review process, while you are trying to identify an initial set of articles to read, and later on, when you wish to expand your literature review on specific topics.
+You should make good use of such facilities as they can speed up considerably your  search for relevant work to review. They are equally valuable at the beginning of your literature review process, while you are trying to identify an initial set of articles to read, and later on, when you wish to expand your literature review on specific sub-topics.
 
 \subsection{Assimilating and analysing}\label{sect:Stage1AssimilatingAndAnalysing}\label{ssect:AssimilatingAndAnalysing}
 It's time to engage with the content of the articles you've identified as potentially relevant during processing. For this, you need to refer back to the Keshav's workflow you practiced in Cref{sect:Keshav}.
