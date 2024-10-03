@@ -14,8 +14,8 @@
 %%Define the widest tables width
 \newlength{\widetablewidth}
 \newlength{\narrowtablewidth}
-\setlength{\widetablewidth}{\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
-\setlength{\narrowtablewidth}{\dimexpr(\textwidth)\relax}
+\setlength{\widetablewidth}{\dimexpr(\textwidth-2\marginparsep+\marginparwidth)\relax}
+\setlength{\narrowtablewidth}{\dimexpr(\textwidth-\marginparwidth/4)\relax}
 
 \newcommand{\tableBackgroundColor}{black!90!white}
 
