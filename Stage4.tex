@@ -977,11 +977,11 @@ Although neither of these characteristics are insuperable, they make timely cont
 
 \section{Statistical thinking}\label{sect:StatisticalThinking}
 
-Statistical thinking is problem solving with Statistics. It is used to identify patterns, trends and relationships in data from which inferences are possible through probabilistic reasoning, which acknowledges the data inherent variability and uncertainty. 
+Statistical thinking is problem solving with Statistics. You can use it to identify patterns, trends and relationships in data by using probabilistic reasoning, which acknowledges variability and uncertainty inherent in the data. 
 
-\ResModTechnique{statistical thinking}
+%\ResModTechnique{statistical thinking}
 
-Statistical inferences are particularly valuable for prediction and forecasting -- for instance, to predict the spread of a virus in a population or how the average house price in a geographical area may change over a certain period of time, or to test hypotheses\footnote{We will introduce statistical tests in Cref{sect:inferentialStatistics}}, for instance whether a medical treatment is effective. Statistical thinking is essential in quantitative analysis, which will cover in Cref{sect:statisticalAnalysis}: in this section we only provide a brief introduction with a focus on modelling.
+Statistical thinking is particularly valuable for prediction and forecasting -- for instance, to predict the spread of a virus in a population or how the average house price may change in a geographical area and over a certain period of time, or to test hypotheses\footnote{We will introduce statistical tests in \Cref{sect:inferentialStatistics}} -- for instance whether a medical treatment is likely to be effective. Statistical thinking is essential in quantitative analysis, which will cover in \Cref{sect:statisticalAnalysis}.
 
 %
 %Statistical thinking\todo{Source: \textcite{chance2024statistical}.} involves designing a study to collect data, analyse patterns in the data, and draw conclusions that go beyond the observed data. Sampling is key to being able to generalise results, while random assignment is key for cause-and-effect conclusions. Probability models help assess random variation and estimate margin of error.
@@ -990,25 +990,29 @@ Statistical inferences are particularly valuable for prediction and forecasting 
 
 \subsection{Procedural considerations}\label{ssect:StatisticalThinkingProceduralConsiderations}
 
-\paragraph{Sampling} Statistical modelling requires relevant data, so that you have to consider how you will obtain such data. Sampling is a way to do so\footnote{You should refer back to Cref{sect:DG:sampling}}: in such case, you need to worry about both sample size and the extent it is representative of the population of interest.
+To build statistical models you need to consider:
 
-\paragraph{Data quality} Quality data are data with no missing, inconsistent or erroneous entries. Typically, you will need to pre-process your data to ensure this is the case before applying any statistical technique. 
+\paragraph{Sampling} Statistical modelling requires relevant data, so that you have to consider how you will obtain such data. Sampling\footnote{See \Cref{sect:sampling}.} is a standard way to do so, for which you need to worry about both sample size and the extent it is representative of the population of interest.
+
+\paragraph{Data quality} You will need quality data for your models, that is data with no missing, inconsistent or erroneous entries. Typically, you will need to pre-process your data to ensure this is the case before applying any statistical technique. 
 
 \paragraph{Choice of techniques} You will need to decide which statistical techniques to apply in relation to the research problem you are trying to address. Like Mathematics, Statistics too includes a vast repertoire of techniques applicable to different problems. If you do not possess sufficient expertise to be able to choose by yourself, then you will need to take expert advice, as applying inappropriate techniques will lead to invalid or misleading results.
 
-\paragraph{Statistical software} The use of computational tools is the norm to support statistical thinking and many bespoke statistical software applications are available. In addition, many programming languages and environments now come equipped with full libraries of statistical functions ready for use\footnote{R and Python are two of them.}. Such applications and environments allow you to perform most statistical modelling and testing alongside data manipulation and visualisation with graphs and charts.
+\paragraph{Statistical software} The use of computational tools is the norm to support statistical thinking and many bespoke statistical software applications are available. In addition, many current programming languages and environments\footnote{E.g., R or Python.} come equipped with full libraries of statistical functions ready for use. These allow you to perform most statistical modelling and testing alongside data manipulation and visualisation with graphs and charts.
 
 \subsection{Other things to think about}\label{ssect:StatisticalThinkingOtherThingsTo}
 
-\paragraph{Foundational knowledge} Statistical techniques can be complex and require specialised knowledge and skills to apply them effectively, particularly for advanced modelling, but also to provide meaningful interpretation of outcomes. As for mathematical thinking, unless you have sufficient foundational knowledge, it is unlikely you will be able to develop knowledge and skills beyond the basics within the remit of a Masters project.
+To be successful with statistical modelling you also need to consider:
 
-\paragraph{Data bias} Even when your data are of good quality, they can still be biased in that they may over- or under-represent certain characteristics of the population of interest, leading to invalid or unreliable generalisations. For instance, if all that data in a clinical trial for a new medicinal drug are from male participants, then the effectiveness or otherwise of the drug for female patients cannot be inferred from those data, so that any generalisation to the wider population may be unsound.
+\paragraph{Foundational knowledge} Statistical techniques can be complex and require specialised knowledge and skills to apply them effectively, particularly for advanced modelling, but also to provide meaningful interpretation of outcomes. As for mathematical thinking, unless you have sufficient foundational knowledge, you need to evaluate carefully whether you will be able to develop the required advanced knowledge and skills within the remit of your project.
 
-\paragraph{Confounding factors} Unfortunately, things can still go wrong even when you have good quality, unbiased data to start with. This may be due to \emph{confounding factors} you may not have considered in your study. For instance, say you are interested in the possible relationship between physical activity and heart health. If you only focus on (some measures for) those two variables, you are likely to miss possible effects of, say, age and gender on heart health in addition to physical activity, and may, once again, infer the wrong conclusions. 
+\paragraph{Data bias} Even when your data are of good quality, they can still be biased in that they may over- or under-represent certain characteristics of the population of interest, leading to invalid or unreliable generalisations. For instance, if all data in a clinical trial for a new medicinal drug are from male participants, then the effectiveness or otherwise of the drug for female patients cannot be inferred from those data, so that any generalisation to the wider population may be unsound.
 
-\paragraph{Model assumptions} Statistical methods are usually based on specific assumptions made of data characteristics. For instance, many statistical tests assume that the data are normally distributed\footnote{We will cover these topics in Cref{sect:inferentialStatistics}}. It is therefore essential for you to check that all required assumptions hold, otherwise your model, and any conclusions you derive from it, may be invalid.
+\paragraph{Confounding factors} Unfortunately, things can still go wrong even when you have good quality, unbiased data to start with. This may be due to {confounding factors} you may not have considered in your study. For instance, say you are interested in the possible relationship between physical activity and heart health. If you only focus on (some measures for) those two variables, you are likely to miss possible effects of, say, age and gender on heart health in addition to physical activity, and may, once again, infer the wrong conclusions. 
 
-\paragraph{Ethical considerations} As statistical thinking relies on data, then ethical and legal issues arise in relation to how the data are obtained and used in your research, particularly around privacy and data protection. In addition, ethical issues arise in relation to  social implications of applying statistical thinking in decision-making, particularly when decisions are increasingly taken by algorithms. This can lead to inequality and discrimination, as demonstrated by some shocking cases which have been reported widely, such as the COMPAS system, discriminating against black offenders, or the Amazon's recruitment algorithm, discriminating against women. 
+\paragraph{Model assumptions} Statistical models are usually based on specific assumptions made of data characteristics. For instance, many statistical tests assume that the data are normally distributed\footnote{We will cover these topics in \Cref{sect:inferentialStatistics}}. It is therefore essential for you to check that all required assumptions hold, otherwise your model, and any conclusions you derive from it, may be invalid.
+
+\paragraph{Ethical considerations} As statistical thinking relies on data, then ethical and legal issues arise in relation to how the data are obtained and used in your research, particularly around privacy and data protection. In addition, ethical issues arise in relation to  social implications of applying statistical thinking in decision-making, particularly when decisions are increasingly taken by algorithms. This can lead to inequality and discrimination, as demonstrated by some shocking cases which have been reported widely -- such as the COMPAS system, discriminating against black offenders, or the Amazon's recruitment algorithm, discriminating against women. 
 
 \subsection{Further reading}\label{ssect:StatisticalThinkingFurtherReading}
 
@@ -1016,9 +1020,9 @@ Statistical inferences are particularly valuable for prediction and forecasting 
 
 \section{Systemic thinking}\label{sect:SystemicThinking}
 
-Systemic thinking\footnote{The term `systems thinking' is also used in the literature} is yet another problem solving approach which focuses on systems and their dynamics. By \emph{system} we mean a set of elements coming together in a complex whole and whose behaviour stems from the interaction of those elements. Any kind of system is in scope, whether natural, social or artificial, with systemic thinking aimed at understanding how the different elements influence each other and the system behaviour emerges from their interaction. 
+Systemic thinking\footnote{The term `systems thinking' is also used in the literature.} is yet another problem solving approach which focuses on systems and their dynamics. By \gloss{system} we mean a set of elements coming together in a complex whole and whose behaviour stems from the interaction of those elements. Any kind of system is in scope, whether natural, social or artificial, with systemic thinking aimed at understanding how the different elements influence each other and how the system behaviour emerges from their interaction. 
 
-\ResGenTechnique{systemic thinking}
+%\ResGenTechnique{systemic thinking}
 
 Systemic thinking takes a holistic approach to understanding a system, encouraging different stakeholders' perspectives and a participative approach to develop a shared understanding. This also means that the enquiry process is iterative, with insights being revisited, reviewed and refined as more knowledge is acquired through ongoing analysis and interaction with stakeholders.
 
@@ -1027,30 +1031,33 @@ Like mathematical and statistical thinking, systemic thinking may be used in com
 Systemic thinking also relies on system models based on diagrammatic notations, of which there are a great variety. Among the most common are\footnote{This is by no means a complete list!}:
 
 \begin{itemize}
-	\item \textit{systems maps}, which allow you to sketch the structure of a system by identifying key components and sub-systems;
-	\item \textit{influence diagrams}, which extend system maps to show how those elements influence each other;
-	\item \textit{causal loop diagrams}, which are used to capture cause-and-effect relations, and particularly feedback loops in the system dynamics which affect behaviour over time;
-	\item \textit{stock and flow diagrams}, which augment causal loop diagrams with quantitative information that can be exploited in computational simulations;
-	\item \textit{UML (Unified Modeling Language) diagrams}, where UML is a standardised engineering modelling language specifically defined to capture and analyse various aspects of a software system\footnote{Although it is also used for other kind of design and engineering, beyond software.}, either in terms of its structure or behaviour.
+	\item \emph{systems maps}, which allow you to sketch the structure of a system by identifying key components and sub-systems
+	\item \emph{influence diagrams}, which extend system maps to show how those elements influence each other
+	\item \emph{causal loop diagrams}, which are used to capture cause-and-effect relations, and particularly feedback loops in the system dynamics which affect behaviour over time
+	\item \emph{stock and flow diagrams}, which augment causal loop diagrams with quantitative information that can be exploited in computational simulations
+	\item \emph{UML (Unified Modeling Language) diagrams}, where UML is a standardised engineering modelling language specifically defined to capture and analyse various aspects of a software system\footnote{Although it is also used for other kind of design and engineering, beyond software.}, either in terms of its structure or behaviour.
 \end{itemize}
 
 \subsection{Procedural considerations}\label{ssect:SystemThinkingProceduralConsiderations}
+When applying statistical thinking you need to consider:
 
 \paragraph{Scope and boundaries} Before you start your investigation you need to define clearly the scope of your system of interest, its boundaries and the purpose of your analysis, to inform your data gathering and interaction with stakeholders. Your analysis should encompass different system dimensions, say social, cultural, economical or environmental. 
 
-\paragraph{Stakeholders} You need to decide who you will involve in your research, focusing on stakeholders with an interest and understanding of the system, and ensuring that a plurality of views and perspectives are represented. If you aim for some form of intervention on an existing system, then you must also ensure you involve stakeholders who will champion or support it. In all cases, you should encourage collaboration and communication among stakeholders, including exchanging knowledge and ideas to foster shared understanding.
+\paragraph{Stakeholders} You need to decide who you will involve in your research, focusing on stakeholders with an interest and understanding of the system, and ensuring that a plurality of views and perspectives are represented. If you aim for some form of intervention on an existing system, then you must also ensure you involve stakeholders who will champion or support it. In all cases, you should encourage collaboration and communication among stakeholders, including exchanging knowledge and ideas to foster a shared understanding of the system.
 
-\paragraph{Data gathering} To gather your data about the system you can apply any relevant method from Cref{sect:genMethods}\todo{Check reference}. It is likely you will need both qualitative and quantitative data as you are aiming for a comprehensive characterisation and analysis of your system from a plurality of perspectives.
+\paragraph{Data gathering} To gather your data about the system you can apply any relevant method from \Cref{ch:DataGenerationMethods}. Likely, you will need both qualitative and quantitative data as you are aiming for a comprehensive characterisation and analysis of your system from a plurality of perspectives.
 
-\paragraph{Modelling} You need to decide which notations to use to model key aspects of the system relevant to your research. You should also consider whether a computational simulation would be appropriate, in which case, you should review the operational considerations related to computational thinking. For both, you will need to develop a certain level of expertise to be able to apply them effectively in your enquiry. This will require time, and ideally some expert guidance, which you must ensure are available within the constraints of your Masters project.
+\paragraph{Modelling} You need to decide which notations to use to model key aspects of the system which are relevant to your research. You should also consider whether a computational simulation would be appropriate, in which case, you should review the operational considerations related to computational thinking\footnote{See \Cref{ssect:ComputationalThinkingProceduralConsiderations}.}. For both, you will need to develop a certain level of expertise to be able to apply them effectively in your enquiry. This will require time, and ideally some expert guidance, which you must ensure are available within the constraints of your project.
 
 \subsection{Other things to think about}\label{ssect:SystemThinkingOtherThingsTo}
+
+For successful systemic modelling you should also consider:
 
 \paragraph{Complexity} Analysing complex systems can be challenging, and taking a systemic thinking approach is time consuming and resource intensive due to the need for large amount of data to gather and protracted interactions with many stakeholders. You need to ensure access to both data and people for your systemic thinking enquiry to be meaningful.
 
 \paragraph{Subjectivity and bias} As a system thinker, you establish the system boundaries, the perspectives to take, who to involve and how to gather and interpret your data. This leaves your research open to your own bias. Reflexive practices, alongside triangulation, say by cross-validating with independent data, are therefore necessary to support the validity of your findings.
 
-\paragraph{Model validity} As for all modelling, your system characterisation will be based on simplifications and assumptions, which will need careful checking with respect to the system being modelled. To validate both assumptions and  resulting models you could apply triangulation, including asking independent experts to review them or compare model behaviour with real-world observations.  
+\paragraph{Model validity} As for all modelling, your system characterisation will be based on simplifications and assumptions, which you will need to check careful with respect to the system being modelled. To validate both assumptions and resulting models you could apply triangulation, including asking independent experts to review them or compare model behaviour with real-world observations.  
 
 
 \subsection{Further reading}\label{ssect:SystemThinkingFurtherReading}
