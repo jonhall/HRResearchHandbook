@@ -124,6 +124,8 @@
 %%TODO: tidy up code for tables
 \usepackage{ifthen}
 
+\newcommand{\ordColour}[0]{gray8}
+
 %TODO: Colours need sorting out
 \newcommand{\ritem}[2]{%
 	\ifthenelse{\equal{#1}{!}}
@@ -133,14 +135,19 @@
 			%%updated section
 			{\item[\color{white}\textbullet]\color{white}}
 			%%not yet included						
-			{\item[\color{gray8}\textbullet]\color{gray8}}
+			{\ifthenelse{\equal{#1}{?}}
+				%%major update section
+				{\item[\color{orange}{\footnotesize update}]\color{white}}
+				%%not yet included						
+				{\item[\color{\ordColour}\textbullet]\color{\ordColour}}
+			}
 		}
 	#2}
 
 \newcommand{\titem}[2]{%
 	\ifthenelse{\equal{#1}{*}}%
 		{\color{white}}%
-		{\color{gray8}}%
+		{\color{\ordColour}}%
 	#2}
 
 \newcommand\ReportTitle[1]{\ReportLineHeader\titem{#1}{Title}}
@@ -214,7 +221,6 @@
 
 \newcommand\ReportRefs[1]{\ReportLineHeader\titem{#1}{References}}
 
-\newcommand\ReportAppendices[1]{\ReportLineHeader\titem{#1}{Appendices}}
 
 \newcommand\ReportProgressTracking[7]%
 	{\ReportLineHeader\titem{#1}{Appendix - Progress tracking}
@@ -234,6 +240,17 @@
 		\ritem{#2}{Personal statement}
 	\end{reportenum}
 }
+
+\newcommand\ReportDissertationAppendices[2]%
+	{\ReportLineHeader\titem{#1}{Dissertation appendices}
+	\begin{reportenum}
+		\ritem{#2}{Raw data, questionnaires, code, etc.}
+	\end{reportenum}
+}
+
+\newcommand\ReportAppendices[1]{\ReportLineHeader\titem{#1}{Appendices}}
+
+
 
 \newcommand{\WOCaption}[2]{Stage #1{} Writing Outcomes (#2\% of stage effort)}
 \newcommand{\RActivitiesTableCaption}[1]{Stage #1{} Research Activities}
