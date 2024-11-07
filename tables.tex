@@ -91,10 +91,12 @@
 					column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 					row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
 					rowhead = 1,
-					colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[4,preto={\raggedright}]},
+%					cell{1}{1}={c=1}{l, font=\bfseries},
+%					cell{1}{2}={c=1}{l, font=\bfseries},
+					colspec={X[8,l]X[18]X[4]},
 					}
 %Header					
-	Part/Structure&\SetCell[c=1]{l}Guidance\\
+	Part/Structure&Guidance\\
 %Body
 		#3
 	\end{tblr}}{}
