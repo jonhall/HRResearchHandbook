@@ -14,7 +14,7 @@
 %%Define the widest tables width
 \newlength{\widetablewidth}
 \newlength{\narrowtablewidth}
-\setlength{\widetablewidth}{\dimexpr(\textwidth-2\marginparsep+\marginparwidth)\relax}
+\setlength{\widetablewidth}{\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
 \setlength{\narrowtablewidth}{\dimexpr(\textwidth-\marginparwidth/4)\relax}
 
 \newcommand{\tableBackgroundColor}{black!90!white}
@@ -38,7 +38,7 @@
 				stretch=-1,%%Allows lists in body, with no padding
 	 			width = #3,
 				colspec = {#5},
-		  		hlines = {fg = white, wd=2pt}, %column{2} = {co=1}, 
+		  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep = 5pt,
 %TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
@@ -91,10 +91,12 @@
 					column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 					row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
 					rowhead = 1,
-					colspec={X[8,l]X[18,preto={\begin{itemize}[nosep,left=0pt]\item },appto={\end{itemize}}]X[4,preto={\raggedright}]},
+%					cell{1}{1}={c=1}{l, font=\bfseries},
+%					cell{1}{2}={c=1}{l, font=\bfseries},
+					colspec={X[8,l]X[18]X[4,preto={\raggedright}]},
 					}
 %Header					
-	Part/Structure&\SetCell[c=1]{l}Guidance\\
+	Part/Structure&Guidance\\
 %Body
 		#3
 	\end{tblr}}{}
