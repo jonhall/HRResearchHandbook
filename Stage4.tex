@@ -1343,7 +1343,7 @@ The housing price data set contains over 9,316 entries, each corresponding to a 
 %%\label{fig:exampledata set}
 %%\end{figure}
 %
-\begin{SimpleNColTable}{tab:exampledata set}{7}[\narrowtablewidth]{Example: the US housing market}[X[1]X[3]X[3]X[3]X[3]X[3]X[3]|]
+\begin{SimpleNColTable}{tab:exampledata set}{7}[\narrowtablewidth]{Example: the US housing market}[X[1,r]X[3]X[3]X[3]X[3]X[3]X[3]|]
 	ID & Square feed & Bedrooms & Bathrooms & Neighbourhood & Year build & Price (US dollars)\\
 	1 & 2126 & 4 & 1 & Rural & 1969 & 215,355\\
 	2 & 2459 & 3 & 2 & Rural & 1980 & 195,014\\
@@ -1365,7 +1365,7 @@ Pivot tables can be used to summarise data to answer specific questions. For ins
 
 
 
-\begin{SimpleNColTable}{tab:pivot1}{5}[\narrowtablewidth]{Pivot table of average property prices by neighbourhood and number of bedrooms}[X[2]X[3]X[3]X[3]X[3]|]
+\begin{SimpleNColTable}{tab:pivot1}{5}[\narrowtablewidth]{Pivot table of average property prices by neighbourhood and number of bedrooms}[X[2,r]X[3]X[3]X[3]X[3]|]
 	Neighbourhood & Rural & Suburb & Urban & Average \\
 	Bedrooms & Price (Average) (US dollar) \\
 	2 & 218,323 & 216,300 & 220,050 & 215,355\\
@@ -1385,25 +1385,27 @@ Alternatively, you may be interested in how many properties of each kind have be
 %\label{fig:pivot2}
 %\end{figure}
 
-\begin{SimpleNColTable}{tab:pivot2}{6}[\narrowtablewidth]{Pivot table of property counts by neighbourhood and number of bedrooms/bathrooms}[X[3]X[3]X[3]X[3]X[3]X[3]|]
+\begin{SimpleNColTable}{tab:pivot2}{6}[\narrowtablewidth]{Pivot table of property counts by neighbourhood and number of bedrooms/bathrooms}[X[-1,r]X[-1,r,fg = white, bg=\frameColor]X[3]X[3]X[3]X[3]|]
 	Neighbourhood & & Rural & Suburb & Urban & Count \\
-	Bedrooms & Bathrooms & Count \\
+	Bedrooms & Bathrooms & \SetCell[c=4]{X[-1,r,fg = white, bg=\frameColor]}Count \\
 	2 & 1 & 180 & 220 & 261 & 661\\
 	  & 2 & 129 & 214 & 283 & 626\\
 	  & 3 & 155 & 45 & 75 & 257\\
 	2 totals & & 464 &479 & 619 & 1562 \\
-	\hline	
+%	\hline	
 	3 & 1 & 96 & 130 & 129 & 355\\
 	  & 2 & 397 & 149 & 245 & 791\\
 	  & 3 & 127 & 139 & 889 & 1155\\
 	3 totals & & 620 & 418 & 1263 & 2301 \\
-	\hline	
+%	\hline	
 	4 & 1 & 142 & 306 & 228 & 676\\
 	  & 2 & 453 & 379 & 410 & 1242\\
 	  & 3 & 315 & 175 & 194 & 684\\
 	4 totals & & 910 & 860 & 832 & 2602 \\
 \end{SimpleNColTable}
 \end{example}
+
+\end{document}
 
 In the example, you have sees just a couple of ways you can use pivot table to address specific questions of your data, out of a vast range of the possibilities. If your data are organised in tables, then it is well worth spending some time becoming familiar with pivot tables.
 
@@ -1425,14 +1427,14 @@ If you use Excel, its help facility and documentation provide all the info you n
 \begin{example}{Frequency and contingency tables for degree classifications}
 In our university, after studying a degree, a student's outcome is classed as one of distinction, merit, pass or fail. You could use a frequency table to summarise the frequency of each class of outcome for a particular students' cohort, as shown in~\Cref{tab:frequencyTableExample}.
  
-\begin{SimpleNColTable}{tab:frequencyTableExample}{5}[\narrowtablewidth]{Classifications frequencies}[X[1]X[3]X[3]X[3]X[3]|]
+\begin{SimpleNColTable}{tab:frequencyTableExample}{5}[\narrowtablewidth]{Classifications frequencies}[rllll|]
 	& Distinction & Merit & Pass & Fail \\
 	Outcome & 12 & 26 & 42 & 5\\
 \end{SimpleNColTable}
 
 You could also use a contingency table to tabulate the outcome value frequencies in the cohort against gender, as shown in~\Cref{tab:contingencyTableExample}. 
 
-\begin{SimpleNColTable}{tab:contingencyTableExample}{4}[\narrowtablewidth]{Classifications frequencies by gender} [X[3]X[3]X[3]X[3]|]
+\begin{SimpleNColTable}{tab:contingencyTableExample}{4}[\narrowtablewidth]{Classifications frequencies by gender} [rlll|]
 	 & Female & Male & Other\\
 	Distinction & 7 & 5 & 0\\
 	Merit & 12 & 13 & 1\\
