@@ -129,3 +129,57 @@
 \newenvironment{answer}{\textbf{Answer}\begin{trivlist}
 \item}
     {\end{trivlist}}
+    
+    
+%%%%%%% for choosing strategies/methods and related further deep dive into literature
+%%%%From Stage 4
+%%Resource type = fulltext cite in itemized list
+%%From authoryear.cbx
+%% Candidate for moving to header files
+\DeclareMultiCiteCommand{\fullcites}{\fullcite}{\multicitedelim\\}
+
+\DeclareCiteCommand{\resourcelistcite}
+  {\usebibmacro{prenote}\begin{itemize}\item[] }
+  {\usedriver
+     {\DeclareNameAlias{sortname}{default}}
+     {\thefield{entrytyper}}
+  } 
+%     {%
+%		\footnote{\thefield{annotation}}
+%	 }
+  {\item[] \addspace}
+  {\end{itemize}\usebibmacro{postnote}}
+
+\newenvironment{MoreDetails}[0]{\subsection{More details} The following citations provide good starting points for further reading: \label{ssect:MoreDetails}}{}
+
+
+\newcommand{\ResGenTechnique}[1]{\begin{question}[subtitle={Activity: Do I need to know about #1?}]
+Check back to your chosen research strategy from Stage 3. Does it involve data generation using #1? If so, read through the remainder of this section and complete the activities.
+\end{question}}
+
+\newcommand{\ResGenExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
+To find out more about #1, take a look at these resources:
+
+\fullcites#2
+
+\end{question}}
+
+\newcommand{\ResModTechnique}[1]{\begin{question}[subtitle={Activity: Do I need to know about #1?}]
+Check back to your chosen research strategy from Stage 3. Does it involve modelling using #1? If so, read through the remainder of this section and complete the activities.
+\end{question}}
+
+\newcommand{\ResModExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
+To find out more about #1, take a look at these resources:
+
+\fullcites#2
+
+\end{question}}
+
+\newcommand{\ReadingExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
+To find out more about #1, take a look at these resources:
+
+\fullcites#2
+
+\end{question}}
+
+%%%%%%%%%
