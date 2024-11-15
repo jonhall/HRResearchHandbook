@@ -1,20 +1,5 @@
 \part{The Methodology}\label{part:methodology}
 
-%%Resource type = fulltext cite in itemized list
-\DeclareCiteCommand{\resourcelistcite}
-  {\usebibmacro{prenote}\begin{itemize}\item[] }
-  {\usedriver
-     {\DeclareNameAlias{sortname}{default}}
-     {\thefield{entrytyper}}
-  } 
-%     {%
-%		\footnote{\thefield{annotation}}
-%	 }
-  {\item[] \addspace}
-  {\end{itemize}\usebibmacro{postnote}}
-
-\newenvironment{MoreDetails}[0]{\subsection{More details} The following citations provide good starting points for further reading: \label{ssect:MoreDetails}}{}
-
 %\section{Developing your research design}\label{sect:DevelopingYourResearch}\label{sect:DevelopingYourResearch}
 
 It's time to move to Stage 3 of our 5-stage framework. This assumes you have completed your work at the previous stages and have discussed it with your supervisor, who will have helped you assess whether it is appropriate for your course. 
@@ -456,9 +441,9 @@ These are example of, respectively:
 
 \subsection{Reflexivity}\label{ssect:Reflexivity}
 
-Reflexivity should not be a new concept to you! As you learnt in~\Cref{ssect:ReflectionAndReflexivity,ch:ReflectinReflexivity}, reflexivity should be an integral part of doing research and a way to help you become a better researcher. We revisit this topic here to argue that it is also an effective ways to deal with potential methodological weaknesses.
+Reflexivity should not be a new concept to you! As you learnt in~\Cref{ssect:ReflectionAndReflexivity,ch:ReflectingReflexivity}, reflexivity should be an integral part of doing research and a way to help you become a better researcher. We revisit this topic here to argue that it is also an effective ways to deal with potential methodological weaknesses.
 
-According to \cite{jamieson2023reflexivity}\todo{need to add jamieson}:
+According to \cite{jamieson2023reflexivity}:
 
 \begin{quotation}
 	Reflexivity is the act of examining one's own assumption, belief, and judgement systems, and thinking carefully and critically about how these influence the research process. The practice of reflexivity confronts and questions who we are as researchers and how this guides our work.
@@ -745,7 +730,8 @@ This strategy sets certain requirements of the researcher for them to be success
 	\end{enumerate}
 	
 \subsection{Further reading}\label{ssect:SurveyResearchFurtherReading}	
-To deepen your understanding of this strategy, you can start from \cite{dillman2014internet,oates2008researching,johannesson2014research,kalaian2008encyclopedia}.
+
+\ReadingExtras{survey research}{{dillman2014internet}{oates2008researching}{johannesson2014research}{kalaian2008encyclopedia}}
 
 \newcommand{\RSActivity}[2]{\begin{question}[subtitle={Activity: Considering #1}]
 	Having read the above section, do you consider #1 to be a serious candidate for your research strategy?
@@ -824,8 +810,7 @@ For this strategy to be successful:
 
 \subsection{Further reading}\label{ssect:DesignScienceResearchFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{oates2008researching,brocke2020introduction}.
-
+\ReadingExtras{design science research}{{oates2008researching}{brocke2020introduction}}
 
 %\RSActivity{Design and creation research strategy}{oates2008researching,brocke2020introduction}
 
@@ -927,12 +912,8 @@ Although widely applicable, experimental research has some counter-indications:
 
 \subsection{Further reading}\label{ssect:ExperimentalResearchFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{oates2008researching,
-johannesson2014research,field2002design}.
+\ReadingExtras{experimental research}{{oates2008researching}{johannesson2014research}{field2002design}}
 
-%\RSActivity{experimental research strategy}{%oates2008researching,
-%	%johannesson2014research,
-%	field2002design}	
 
 \section{Case study research}\label{sect:CaseStudyResearch}
 
@@ -1024,7 +1005,7 @@ There are conditions for this strategy to be successful:
 
 \subsection{Further reading}\label{ssect:CaseStudyFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \textcite{yin2009case, oates2008researching}.
+\ReadingExtras{case study research}{{yin2009case}{oates2008researching}}
 
 %\RSActivity{case study research}{oates2008researching}
 
@@ -1102,11 +1083,8 @@ There are conditions for this strategy to be successful:
 
 \subsection{Further reading}\label{ssect:ActionResearchFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{oates2008researching,johannesson2014research}.
+\ReadingExtras{action research}{{johannesson2014research}{oates2008researching}}
 
-%\RSActivity{action research}{oates2008researching,johannesson2014research}
-
-%\endinput
 
 \section{Ethnography}\label{sect:Ethnography}
 
@@ -1167,13 +1145,7 @@ There are conditions for this strategy to be successful:
 
 \subsection{Further reading}\label{ssect:EthnographyFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{oates2008researching,johannesson2014research}.
-
-%https://study.sagepub.com/sites/default/files/Eriksson%20and%20Kovalainen.pdf
-
-
-%\RSActivity{ethnography}{oates2008researching,johannesson2014research}
-
+\ReadingExtras{ethnography}{{johannesson2014research}{oates2008researching}}
 
 \section{Systematic review}\label{sect:SystematicResearchReviews}
 
@@ -1268,8 +1240,8 @@ You should consider the following points when choosing this strategy:
 								
 \subsection{Further reading}\label{ssect:SystematicResearchReviewsFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{wright2007write,moher2009preferred,pollock2018systematic}. 
-
+\ReadingExtras{systematic reviews}{{wright2007write}{moher2009preferred}{pollock2018systematic}}
+ 
 In addition, you should consider the PRISMA statement\footnote{http://prisma-statement.org/prismastatement/checklist.aspx}, a 27-item checklist to help authors improve the reporting of narrative reviews and meta-analyses.
 					
 %\RSActivity{systematic research survey}{wright2007write,moher2009preferred,pollock2018systematic}
@@ -1424,9 +1396,7 @@ In choosing this strategy, you should consider the following:
 								
 \subsection{Further reading}\label{ssect:GroundedTheoryFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{smith1997understanding,drew202310-grounded,corbin1990grounded,strauss1998basics,gibson2013rediscovering,charmaz2014constructing}.
-				
-%\RSActivity{grounded theory}{smith1997understanding,drew202310-grounded,corbin1990grounded,strauss1998basics,gibson2013rediscovering,charmaz2014constructing}
+\ReadingExtras{grounded theory}{{drew202310-grounded}{smith1997understanding}{corbin1990grounded}{strauss1998basics}{gibson2013rediscovering}{charmaz2014constructing}}
 
 
 \section{Phenomenology}\label{sect:Phenomenology}
@@ -1540,8 +1510,9 @@ In choosing this strategy, you should consider the following:
 
 
 \subsection{Further reading}\label{ssect:PhenomenologyFurtherReading}
-To deepen your understanding of this strategy, you can start from \cite{merleau1956phenomenology,anderson1991qualitative,smith2018phenomenology,shudak2018phenomenology,academic-educational-materials2019understanding,office2020the-phenomenological,groenewald2004a-phenomenological,hycner1985some}.
 
+
+\ReadingExtras{phenomenology}{{merleau1956phenomenology}{anderson1991qualitative}{smith2018phenomenology}{shudak2018phenomenology}{academic-educational-materials2019understanding}{office2020the-phenomenological}{groenewald2004a-phenomenological}{hycner1985some}}
 
 \section{Simulation}\label{sect:Simulation}
 
@@ -1641,7 +1612,7 @@ If you are considering this research strategy, then you should consider the foll
 
 \subsection{Further reading}\label{ssect:SimulationFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{dooley2017simulation}.
+\ReadingExtras{simulation}{{dooley2017simulation}}
 
 \section{Mathematical and logical proof}\label{sect:MathematicalAndLogical}
 
@@ -1682,9 +1653,10 @@ If you are considering this strategy, you should ask yourself:
 
 %Am I trying to predict future behaviours of a system? If so, mathematical, statistical or computational modelling might be a better option.
 
+
 \subsection{Further reading}\label{ssect:MathematicalAndLogicalFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{Kleene1964introduction,lakatos2015proofs,antonini2011examples,johannesson2014research}.
+\ReadingExtras{mathematical and logical proof}{{Kleene1964introduction}{lakatos2015proofs}{antonini2011examples}{johannesson2014research}}
 
 \section{Mixed methods research}\label{sect:MixedMethodsResearch}
 
@@ -1749,8 +1721,7 @@ If you are considering mixed methods research, you should take the following int
 
 \subsection{Further reading}\label{ssect:MixedMethodsFurtherReading}
 
-To deepen your understanding of this strategy, you can start from \cite{johnson2007toward,denzin1978research,webb1999unobtrusive}.
-
+\ReadingExtras{mixed methods}{{johnson2007toward}{denzin1978research}{webb1999unobtrusive}}
 
 %\subsection{More details}\label{ssect:MoreDetails}
 %
