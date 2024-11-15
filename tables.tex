@@ -25,7 +25,7 @@
 		m%					% number of columns – not currently used
 		O{\the\widetablewidth}% 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{X[1]*{10}{X[7]}|}%	% optional colspec
+		O{X[1,l]*{10}{X[7,l]}|}%	% optional colspec
 		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
 		}%
 		{
@@ -68,7 +68,7 @@
 			column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 			row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
 			rowhead = 1,
-			colspec = {lX[8]X[13]X[-1]X[5]}}
+			colspec = {lX[8]X[13]X[-1]X[5]|}}
 %Header					
 	&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
 %Body
