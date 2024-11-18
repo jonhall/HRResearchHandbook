@@ -10,6 +10,7 @@
 \UseTblrLibrary{varwidth}%%For itemize in entries
 \UseTblrLibrary{booktabs}%%For lines in entries
 \UseTblrLibrary{siunitx}%%For aligned decimal points
+\SetTblrOuter{expand=\frameColor}
 
 %%Define the widest tables width
 \newlength{\widetablewidth}
@@ -25,7 +26,7 @@
 		m%					% number of columns – not currently used
 		O{\the\widetablewidth}% 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{X[1,l]*{10}{X[7,l]}|}%	% optional colspec
+		O{X[1,l]*{10}{X[7,l]}|[2pt]}%	% optional colspec
 		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
 		}%
 		{
@@ -39,6 +40,7 @@
 	 			width = #3,
 				colspec = {#5},
 		  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep = 5pt,
 %TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
@@ -63,7 +65,8 @@
 			measure=vbox, 
 			stretch=-1,%%Allows lists in body, with no padding
  			width=\widetablewidth,
-	  		hlines = {fg = white, wd=2pt}, %column{2} = {co=1}, 
+	  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+			vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 			colsep = 5pt,
 			column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 			row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
@@ -86,7 +89,8 @@
 		}{
 	\begin{tblr}[long,caption={#2},label={#1}]{measure=vbox, stretch=-1,%%Allows lists in body, with no padding
  				 	width=\widetablewidth,
-			  		hlines = {fg = white, wd=2pt}, %column{2} = {co=1}, 
+			  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+					vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 					colsep = 5pt,
 					column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 					row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
