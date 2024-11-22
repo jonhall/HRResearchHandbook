@@ -27,8 +27,10 @@ Equally, we have also stressed the importance of considering risk in your resear
 
 In this chapter, you will start by thinking about how you will organise your work in this stage, while in the following chapters, we will look at the other activities in turn.
 
+%%Create new column type for ragged right in body.
+\NewColumnType{R}[1][]{X[#1,preto={\raggedright}]}
 
-\begin{SimpleNColTable}{stage1ResearchActivities}{4}{\RActivitiesTableCaption{1}}[X[4]X[1]X[8]X[8]]
+\begin{SimpleNColTable}{stage1ResearchActivities}{4}{\RActivitiesTableCaption{1}}[R[4]cR[8]R[8]]
 Research activity&Effort&Description&Supervisor Interaction Focus\\
 Identifying the research problem&20\%&Develop problem statement and intended contribution to knowledge&Suitability of research problem for academic research and to meet the requirements of specific  course\\
 Reviewing the literature&30\%&Compile initial draft of literature review and plan remaining review&Scope of literature review and possible gaps\\
@@ -313,7 +315,7 @@ For a research student's project, that larger research community might be repres
 
 It is now time to write down Anna's problem, by using the template we have provided, and based on what we have found out so far, which is summarised in~\Cref{tab:Annaproblemelements}.
 
-\begin{SimpleNColTable}{tab:Annaproblemelements}{2}[\the\textwidth]{Elements of Anna's problem}
+\begin{SimpleNColTable}{tab:Annaproblemelements}{2}[\narrowtablewidth]{Elements of Anna's problem}[lR[4]]
 Problem element & Description \\
 Phenomena P & Forecasting of time and resources and its accuracy \\ 
 Context C & Anna's PMO\\
@@ -359,8 +361,8 @@ Descriptive problems aim to describe phenomena accurately and systematically. Th
 Here is our mapping of the problem statements onto the template:
 
 %Table in Latex
-\begin{SimpleNColTable}{tab:descriptiveProblemsA}{2}[\the\textwidth]{Description Problems  – Example 1}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:descriptiveProblemsA}{2}[\narrowtablewidth]{Description Problems  – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C & European commercial synthetic biology ecosystem\\
 Phenomena P   & The current state of the ecosystem \\
@@ -369,7 +371,7 @@ Stakeholders S  & Consumers and producers within the ecosystem  \\
 Justification J & To inform effective routes to commercialisation\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:descriptiveProblemsB}{2}[\the\textwidth]{Description Problems  – Example 2}[X[1]X[2]]
+\begin{SimpleNColTable}{tab:descriptiveProblemsB}{2}[\narrowtablewidth]{Description Problems  – Example 2}[lR[4]]
 Problem element & Description \\
 Context C & UK organisations\\
 Phenomena P   & Those organisations' management of cloud-based IT services \\
@@ -400,8 +402,8 @@ Lots of academic research is exploratory as it strives to develop a deep underst
 \begin{solution}
 Here is our mapping of the problem statements onto the template:
 
-\begin{SimpleNColTable}{tab:exploratoryProblemsA}{2}[\the\textwidth]{Exploratory Problems – Example 1}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:exploratoryProblemsA}{2}[\narrowtablewidth]{Exploratory Problems – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C & Public service providers\\
 Phenomena P   & End-users' demographic and behavioural factors; cyber security threats \\
@@ -410,8 +412,8 @@ Stakeholders S  & The providers and their customers \\
 Justification J & Successful cyber security attacks can result in loss of confidential information \\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:exploratoryProblemsB}{2}[\the\textwidth]{Exploratory Problems – Example 2}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:exploratoryProblemsB}{2}[\narrowtablewidth]{Exploratory Problems – Example 2}
+	[lR[4]]
 Problem element & Description \\
 Context C & Government organisations dealing with natural disasters \\
 Phenomena P   & Social media; the management of natural disasters \\
@@ -430,7 +432,7 @@ Explanatory problems aim to explain why certain phenomena occur or are related. 
 
 \begin{example}{Example of explanatory problems}
 \begin{enumerate}
-	\item In the context of software development companies, to investigate how learning strategies adopted by software engineers allow them to develop new skills fast and efficiently. These matters to those companies as software technology changes rapidly, so that software engineers need upskilling and retraining very frequently.
+	\item In the context of software development companies, to investigate how learning strategies adopted by software engineers allow them to develop new skills fast and efficiently. These matters to those companies as software technology changes rapidly, so that software engineers need up-skilling and retraining very frequently.
 	\item Within the public sector, to investigate how practices adopted by organisations and employees lead to an effective and efficient use of teleconferencing technology. This matters to public sector organisations due to the recent significant increase in flexible and home working, so that much of their business is now conducted online.
 \end{enumerate}
 \end{example}
@@ -438,10 +440,16 @@ Explanatory problems aim to explain why certain phenomena occur or are related. 
 \begin{question}[subtitle={Activity - Explanatory problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-This is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is in~\Cref{tab:explanatoryProblemsA,tab:explanatoryProblemsB}.
 
-\begin{SimpleNColTable}{tab:explanatoryProblemsA}{2}[\the\textwidth]{Explanatory Problems – Example 1}
-	[X[1]X[2]]
+%%Tables moves to body
+In both cases, the goal is to explore how and why certain phenomena are related. In the first problem, the focus is why certain learning strategies lead to more effective up-skilling; in the second problem, why certain practices lead to a more efficient use of teleconferencing technology.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:explanatoryProblemsA}{2}[\narrowtablewidth]{Explanatory Problems – Example 1}{\activityColor}
+	[lR[4]]
 Problem element & Description \\
 Context C & The public sector  \\
 Phenomena P   & Use of teleconferencing technology\\
@@ -450,20 +458,16 @@ Stakeholders S  &  Public sector organisations\\
 Justification J & More and more business is conducted online\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:explanatoryProblemsB}{2}[\the\textwidth]{Explanatory Problems – Example 2}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:explanatoryProblemsB}{2}[\narrowtablewidth]{Explanatory Problems – Example 2}{\activityColor}
+	[lR[4]]
 Problem element & Description \\
 Context C & Software development companies \\
 Phenomena P & Learning strategies; skills development   \\
 Knowledge gap G & How learning strategies adopted by software engineers allow them to develop new skills fast and efficiently  \\                         
 Stakeholders S  &  Software development companies and software engineer\\
-Justification J & Software technology changes rapidly, so that software engineers need upskilling and retraining very frequently\\
+Justification J & Software technology changes rapidly, so that software engineers need up-skilling and retraining very frequently\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to explore how and why certain phenomena are related. In the first problem, the focus is why certain learning strategies lead to more effective upskilling; in the second problem, why certain practices lead to a more efficient use of teleconferencing technology.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 \subsection{Predictive Problems}\label{ssect:PredictiveProblems}
 Predictive problems aim to predict future phenomena. The goal is often to define a model, extrapolating from current knowledge, that allows predictions to be made together with an assessment of how accurate they might be.
@@ -480,8 +484,8 @@ Predictive problems aim to predict future phenomena. The goal is often to define
 \begin{solution}
 Here is our mapping of the problem statements onto the template:
 
-\begin{SimpleNColTable}{tab:PredictiveProblemsA}{2}[\the\textwidth]{Predictive Problems – Example 1}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:PredictiveProblemsA}{2}[\narrowtablewidth]{Predictive Problems – Example 1}
+	[X[1]R[4]]
 Problem element & Description \\
 Context C & UK in the next decade \\
 Phenomena P   & Fresh water consumption; recycling domestic bathroom water \\
@@ -490,8 +494,8 @@ Stakeholders S  &  Water management agencies; water suppliers and consumers\\
 Justification J & Preserving fresh water is important as it is becoming a scarce resource\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:PredictiveProblemsB}{2}[\the\textwidth]{Predictive Problems – Example 2}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:PredictiveProblemsB}{2}[\narrowtablewidth]{Predictive Problems – Example 2}
+	[X[1]R[4]]
 Problem element & Description \\
 Context C &  Higher Education \\
 Phenomena P   & Student drop-outs; demographic and curriculum data\\
@@ -525,8 +529,8 @@ Evaluative research may also take the form of a well-founded critique of diverse
 \begin{solution}
 This is our mapping of the problem statements onto the template:
 
-\begin{SimpleNColTable}{tab:EvaluativeProblemsA}{2}[\the\textwidth]{Evaluative Problems – Example 1}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:EvaluativeProblemsA}{2}[\narrowtablewidth]{Evaluative Problems – Example 1}
+	[X[1]R[4]]
 Problem element & Description \\
 Context C &  The financial sector\\
 Phenomena P & AI techniques and cyber security attacks   \\
@@ -535,8 +539,8 @@ Stakeholders S  & Operators in the sector and their customers \\
 Justification J & Significant financial losses are due to such attacks every year, and the cost of preventing them is high\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:EvaluativeProblemsB}{2}[\the\textwidth]{Evaluative Problems – Example 2}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:EvaluativeProblemsB}{2}[\narrowtablewidth]{Evaluative Problems – Example 2}
+	[X[1]R[4]]
 Problem element & Description \\
 Context C & Non clinical laboratories \\
 Phenomena P   & Lean techniques; process flow; demand and supply\\
@@ -563,10 +567,15 @@ In design problems the focus is on phenomena that take the form of new artefacts
 \begin{question}[subtitle={Activity - Design problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-Here is our mapping of the problem statements onto the template:
+Our mapping onto the template is in~\Cref{tab:DesignProblemsA,tab:DesignProblemsB}
 
-\begin{SimpleNColTable}{tab:DesignProblemsA}{2}[\the\textwidth]{Design Problems – Example 1}
-	[X[1]X[2]]
+In both cases, the goal is to design something new. In the first problem, new algorithms for the automated generation of text summaries; in the second problem, a framework for hybrid project management.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:DesignProblemsA}{2}[\the\narrowtablewidth]{Design Problems – Example 1}{\activityColor}
+	[lR]
 Problem element & Description \\
 Context C & Data visualisation tool development industry \\
 Phenomena P   & Text summaries; multiple time series line graphs; algorithms\\
@@ -575,8 +584,8 @@ Stakeholders S  & Tool providers and sight-impaired end-users \\
 Justification J & To improve the accessibility of such tools\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:DesignProblemsB}{2}[\the\textwidth]{Design Problems – Example 2}
-	[X[1]X[2]]
+\begin{SimpleNColTable}{tab:DesignProblemsB}{2}[\the\narrowtablewidth]{Design Problems – Example 2}
+	[lR]
 Problem element & Description \\
 Context C &  Embedded software systems development sector\\
 Phenomena P   & Complexity and volatility characteristics; project failure; project management\\
@@ -585,10 +594,6 @@ Stakeholders S  &  Project managers in the sector\\
 Justification J & Project failure rate is high, resulting in a high financial burden for the sector\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to design something new. In the first problem, new algorithms for the automated generation of text summaries; in the second problem, a framework for hybrid project management.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 Note that an essential characteristic of a design research problem is that the to-be-designed artefact is a genuine contribution to knowledge in that it augments what is currently possible. Some of the most exciting research in technology-related subjects is about developing new artefacts. However, for such development to fit academic research it is important to establish what the contribution to knowledge is, and assess its originality and significance. In particular, it is important to distinguish the very first development of an innovative artefact from the routine of implementation of known systems: the former augments knowledge; the latter does not.
 
@@ -857,18 +862,20 @@ The approach we introduce in this section is one that we have used many hundreds
 Keshav's approach is summarised in~\Cref{tab:Keshav}.
 
 \begin{SimpleNColTable}{tab:Keshav}{5}{Summary of Keshav's approach --- adapted from \textcite{keshav2007read}}
+	[ccR[5]R[4]R[4]]
 Pass & Time & What to read or do & What you should know after the pass & Criteria for stopping at current pass \\
- 1 & 5--10 minutes & Title, abstract, introduction; Section and sub-heading; Glance at mathematical content (if any); Conclusions; Glance over references & Main contribution; Relation to other papers & Paper not in research area \\
+ 1 & 5--10 mins & Title, abstract, introduction; Section and sub-heading; Glance at mathematical content (if any); Conclusions; Glance over references & Main contribution; Relation to other papers & Paper not in research area \\
  2 & 1 hour & Write down key points, comments, questions; Mark relevant unread references & Main thrust of the paper with supporting evidence & Paper of interest but not key to your research \\
- 3 & $>$1hour & Virtually reimplement the paper; Identify/challenge assumptions  & New knowledge contributed; Strong/weak points, implicit assumptions, missing citations, potential issues; Insight into complex arguments and presentation techniques; Jot down ideas for future work  &  \\
+ 3 & $>$1hour & Virtually reimplement the paper; Identify/challenge assumptions  & New knowledge contributed; Strong/weak points, implicit assumptions, missing citations, potential issues; Insight into complex arguments and presentation techniques; Jot down ideas for future work  &  n/a\\
 \end{SimpleNColTable}
 
 Ok, now it's time to give you something to try Keshav's workflow on!
 
-\begin{question}[subtitle={Activity: Applying Keshav's approach to Keshav's paper!}] The paper you need to investigate is Keshav's paper itself:
+\begin{question}[subtitle={Activity: Applying Keshav's approach}] 
+The paper you need to investigate is Keshav's paper itself:
 %
 \begin{quotation}
-	\fullcite{keshav2007read}
+	\noindent\fullcite{keshav2007read}
 \end{quotation}
 
 Use Google Scholar to search the article's title and then download the paper.
@@ -909,7 +916,7 @@ Reviewing the literature is a process of knowledge discovery\footnote{To know wh
 To conduct your literature review successfully, you will need to be able to select work which is relevant and should be included, assimilate and summarise relevant work of other researchers, synthesise and critically appraise ideas from different sources, establish links between studies and their findings, and draw on strengths and limitations of published research. In summary, in your literature review you will need to make use critically and creatively of the content of articles, books and other literature sources you have reviewed to demonstrate your knowledge of the subject, support your own arguments and justify your research. This chapter and the next will help you develop and apply these skills.
 
 \begin{SimpleNColTable}{tab:litrevactivities}{4}{Key activities in reviewing the literature, including key skills required and outputs}
-[X[1]X[2]X[2]X[2]]
+[R[1]R[3]R[3]R[]]
 Activity & Aim & Key skills & Outputs \\
 Searching and gathering & To identify search terms, conduct bibliographical searches and collect articles for consideration & Applying effective search strategies; systematic searching bibliographical databases & Successfully applied search terms and related electronic (or paper) articles for further consideration \\
 Processing & To establish the relevance of searched articles for follow-up in-depth analysis, and record them in a BMT & Skim reading, note taking, bibliographic management & Populated BMT, article annotations, notes, article ranking for follow-up in-depth analysis  \\
@@ -966,7 +973,7 @@ To evaluate the effectiveness of techniques to test embedded safety-critical sof
 We can take each problem element in turn to identify possible search terms. In doing so, we have come up with this initial set, which should be sufficient to perform our initial search:
 
 \begin{SimpleNColTable}{tab:searchTerms}{3}[\textwidth]{Brainstormed search term}
-[X[3]X[6]X[6]]
+[R[3]R[6]R[6]]
  Problem element & From problem statement & Our brainstormed search terms \\
  Context C& Avionics systems development & Avionic systems; system development \\
  Phenomena P& Embedded software; safety-critical applications; testing approaches & Embedded software; safety-critical systems; software testing \\
@@ -990,7 +997,7 @@ Your brainstormed search terms will provide a starting point for searching the l
 Search terms are often used in combination to create more complex search terms which may widen or narrow the number of results, so to increase the likelihood of finding articles which are close to your topic of interest. Basic Boolean operators\footnote{\gloss{Boolean operators} are used in Mathematics and Logic to build expressions which can be either true or false.} are used for this purpose, as indicated in~\Cref{tab:booleanoperators}.
 
 \begin{SimpleNColTable}{tab:booleanoperators}{2}[\narrowtablewidth]{Combining search terms with Boolean operators}
-[X[1]X[3]]
+[cR[3]]
  Boolean operator & Effect of the search results\\
 \fakeverb{Term 1 AND Term 2} & Results will contain both \fakeverb{Term 1} and \fakeverb{Term 2}. This is used to narrow down a search. \\
 \fakeverb{Term 1 OR Term 2} & Results may contain only \fakeverb{Term 1} or only \fakeverb{Term 2} or both. This is used to expand a search. \\
@@ -1086,9 +1093,9 @@ Each academic paper is characterised by bibliographical information, including i
 \begin{example}{Bibliographical styles}
 These are three different bibliographical styles (in brackets) applied to the same article:
 \begin{itemize}
-	\item \emph{(APA)} Keshav, S. (2007). How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), 83-84.
-	\item \emph{(Chicago)} Keshav, Srinivasan. "How to read a paper." ACM SIGCOMM Computer Communication Review 37, no. 3 (2007): 83-84.
-	\item \emph{(Harvard)} Keshav, S., 2007. How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), pp.83-84.
+	\item[] \emph{(APA)} Keshav, S. (2007). How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), 83-84.
+	\item[] \emph{(Chicago)} Keshav, Srinivasan. "How to read a paper." ACM SIGCOMM Computer Communication Review 37, no. 3 (2007): 83-84.
+	\item[] \emph{(Harvard)} Keshav, S., 2007. How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), pp.83-84.
 \end{itemize}
 Note how different typographical conventions are used for different bibliographical elements.
 \end{example}
@@ -1239,8 +1246,8 @@ You can use a spreadsheet to create the matrix. To fill in the entry, you will n
 \begin{solution}
 	This is our attempt. Yours may differ.
 	
-\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \citeauthor{keshav2007read}, \citeyear{keshav2007read}}[{X[1]X[4]}]
-\relax\\
+\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \textcite{keshav2007read}}[lR[4]]
+Reference&\fullcite{keshav2007read}\\
 %\SetCell[c=2]{l}\fullcite{keshav2007read}\\
 Research problem & to define an approach to reading and assimilating academic articles \\
 Methods & the approach is explained and exemplified; no formal evaluation is presented \\
@@ -1269,17 +1276,10 @@ How to leverage curriculum data effectively in Higher Education Institutions (HE
 %	\item[] \textbf{Stakeholders:} HEIs, students, society
 %	\item[] \textbf{Reasons:} HEIs' key role is to develop and deliver curriculum to educate and exchange knowledge. It’s vital to HEIs that their curriculum is fit-for-purpose and continuously adapts to the changing needs of students and society. Data can be use as an effective tool for measuring and predicting, in support of curricular decision making 
 %\end{itemize}
-We conducted a literature search, out of which we identified a number of potentially relevant articles. We constructed a summary-comparison matrix, whose first couple of entries are illustrated in~\Cref{t:exampleSCMatrix}. It is not necessary for you to understand all the details, but you may notice that our entries are quite detailed.
-
-\begin{SimpleNColTable}{t:exampleSCMatrix}{6}[\narrowtablewidth]{Example of summary-comparison matrix entries}[{X[1]X[1]X[1]X[1]X[1]X[1]}]
-\relax\\
-Reference & Research problem & Methods & Premises & Contribution & Comments\\
-Hillinger et al., 2023 & to understand how stakeholders can contribute effectively to the design process and adoption strategies of learning analytical tools & cross-analysis of quantitative and qualitative evidence from three case studies & general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development
-& some mechanisms for engaging stakeholders at various development stages; success factors for adoption & not sufficiently specific to curriculum analytics; useful as background\\
-Dennehy et al., 2023 & to evaluate the use of ‘sentiment analytics’ to improve curriculum design and students’ learning & one case study
-& capturing student sentiments on their learning can help understand the quality of their experience and inform teacher inquiry & should be used to complement other kind of analytics and teacher inquiry practices; students as active participants is good for their own development
-& approach seems original; paper lacks focus at times\\
-\end{SimpleNColTable}
+We conducted a literature search, out of which we identified a number of potentially relevant articles. We constructed a summary-comparison matrix, whose first couple of entries are illustrated in~\Cref{t:exampleSCMatrix}. 
+\begin{guidance}
+It is not necessary for you to understand all the details, but you may notice that our entries are quite detailed.	
+\end{guidance}
 \end{example}
 
 \begin{question}[subtitle={Activity: Building your own summary-comparison matrix}] Create a summary-comparison matrix for your project, based on the articles you have identified as potentially relevant during processing.
@@ -1290,15 +1290,27 @@ You should apply the Keshav's approach to read and assimilate the content of eac
 %%Hack to correct tcbox behaviour
 \color{black}
 
+\begin{SimpleNColTable}{t:exampleSCMatrix}{6}{Example of summary-comparison matrix entries}[{rR[1]R[1]R[1]R[1]R[1]}]
+Reference & Research problem & Methods & Premises & Contribution & Comments\\
+Hillinger et al., 2023 & to understand how stakeholders can contribute effectively to the design process and adoption strategies of learning analytical tools & cross-analysis of quantitative and qualitative evidence from three case studies & general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development
+& some mechanisms for engaging stakeholders at various development stages; success factors for adoption & not sufficiently specific to curriculum analytics; useful as background\\
+Dennehy et al., 2023 & to evaluate the use of ‘sentiment analytics’ to improve curriculum design and students’ learning & one case study
+& capturing student sentiments on their learning can help understand the quality of their experience and inform teacher inquiry & should be used to complement other kind of analytics and teacher inquiry practices; students as active participants is good for their own development
+& approach seems original; paper lacks focus at times\\
+\end{SimpleNColTable}
+
 \paragraph{Identifying concepts of interest}
 
 Once you have a number of entries in your summary-comparison matrix, you can start analysing them in order to identify concepts --- facts, ideas, questions, etc. --- relevant to your research problem. You are looking for concepts that can help you address the following questions in relation to your research problem:
 
-\begin{SimpleNColTable}{tab:conceptsOfInterest}{2}[\narrowtablewidth]{Concepts of interest}[X[4]X[4]]
+\begin{SimpleNColTable}{tab:conceptsOfInterest}{2}[\narrowtablewidth]{Concepts of interest}[R[4]R[4]]
  Questions & Contribute to \\
- {\textbullet~When, where and why does the problem occur?} & Articulating the problem in its context \\
- {\textbullet~Whom does it affect?\\ \textbullet~How serious is it?\\ \textbullet~What are the benefits of addressing it?} & Establishing its significance, stakeholders and beneficiaries \\
-{ \textbullet~What has been done so far to address it?\\ \textbullet~What else could be done to address it? }& Establishing knowledge gaps and the potential contribution to knowledge \\
+ {~\textbullet~When, where and why does the problem occur?} & Articulating the problem in its context \\
+ {~\textbullet~Whom does it affect?}&\SetCell[r=3]{m}Establishing its significance, stakeholders and beneficiaries \\
+ {~\textbullet~How serious is it?}&\\
+ {~\textbullet~What are the benefits of addressing it?}\\ 
+ {~\textbullet~What has been done so far to address it?}& \SetCell[r=2]{m}Establishing knowledge gaps and the potential contribution to knowledge \\
+{~\textbullet~What else could be done to address it? }& \\
 \end{SimpleNColTable}
 
 To this end, we recommend you highlight concepts of interest within your summary-comparison matrix, then collect them in a \gloss{concept matrix}. This is yet another table, with one concept per row and one article per column, and a tick at their intersection to indicate whether the concept appears in the article. Some concepts will recur across several articles, and the concept matrix is a useful visual tool to identify those recurring concepts. 
@@ -1308,7 +1320,7 @@ Note that an entry from your summary-comparison matrix may include several conce
 \begin{example}{Entry granularity}
 One of the entries in our example summary-comparison matrix reads:
 \begin{quotation}
-general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development	
+\noindent general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development	
 \end{quotation}
 from which we can extract a couple of concepts:
 \begin{itemize}
@@ -1334,16 +1346,13 @@ In our example, we have applied the following heuristics to each article, to dec
 We have, however, avoided details about research methods at this point, as our focus is to characterise and justify our research problem. Research methods are, of course, very important, and something we will consider in detail in Stages 3 and 4.
 
 
-\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\narrowtablewidth]{Example of concept matrix entries}[{X[1]X[1]X[1]X[1]X[1]}]
-\relax\\
+\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\the\narrowtablewidth]{Example of concept matrix entries}[R[4]R[-1]R[-1]R[-1]]
 & Hillinger et al., 2023 & McEneaney and Morsink, 2022 & Hillinger et al., 2022  \\
-how stakeholders can contribute effectively to the design process and adoption strategies  & \checkmark & \checkmark & \checkmark  \\
-analytics tools to support continuous curriculum improvement & \checkmark & & \\
-simulation method to explore the possible causal effects of curriculum design before implementation & & \checkmark & \\
+How stakeholders can contribute effectively to the design process and adoption strategies  & \checkmark & \checkmark & \checkmark  \\
+Analytics tools to support continuous curriculum improvement & \checkmark\\
+Simulation method to explore the possible causal effects of curriculum design before implementation & & \checkmark \\
 \end{SimpleNColTable}
 \end{example}
-
-
 
 \begin{question}[subtitle={Activity: Building your own concept matrix}] Create a concept matrix for your own project, derived from your summary-comparison matrix through the identification of concepts of interest.
 \begin{guidance}
@@ -1911,7 +1920,7 @@ It is also essential you identify any regulations which may limit what you can d
 \section{Summarising your project risk}\label{sect:SummarisingYourProjectRisk}
 It is time to summarise the outcome of your risk analysis. To do so, you could use a risk table similar to~\Cref{tab:riskTable}. Note that the table encourages you to consider also risk specific to your project which may not fall within the categories we have already considered.
 
-\begin{SimpleNColTable}{tab:riskTable}{5}{Risk table}[X[3]X[1]X[1]X[1]X[1]]
+\begin{SimpleNColTable}{tab:riskTable}{5}[\narrowtablewidth]{Project risk table}[lcccc]
 Category & Specific risks & & Likelihood & Impact & Mitigation/contingency
 \\
  Technical skills & & & &  \\
@@ -2030,20 +2039,20 @@ You should ensure that each required section by the end of Stage 1 includes at l
 \section{Assessing and iterating}\label{sect:AssessingAndIterating}
 After you have filled in your report with as much material as you can, you should review and revise it until you are happy with your account, and ready to move on. This may take more than one iteration, but you should ensure you do not delay your work for the follow-up stage.
 
-In the next activity, you will use~\Cref{tab:criteriaForReport} to assess whether your report is of good standard. Even if you are not required to submit a report at this stage of your project, a good report will give you a solid base on which to build and report your next research increment. B and in the long run, will save you time and effort in writing up your dissertation.
+In the next activity you will use~\Cref{tab:criteriaForFirstReport} to assess whether your report is of good standard. Even if you are not required to submit a report at this stage of your project, a good report will give you a solid base on which to build and report your next research increment. Now and in the long run, will save you time and effort in writing up your dissertation.
 
-\begin{SimpleNColTable}{tab:criteriaForReport}{2}{Criteria for reviewing your report}[X[2]X[6]]
-Criteria & Prompts \\
-Completeness & Are all sections included and their content complete? What is missing?\\
-Academic writing & Is your writing clear, concise and precise? Should you improve it further? \\
-Logical structure and flow & Have you structured your writing so that your narrative follows a logical flow? Which restructuring may be needed?\\
-Supporting evidence & Are all your claims supported by appropriate references or other evidence? Which further evidence do you still need?\\
-Citation and reference style & Do all your citations and references comply with the bibliographical style required by your course? \\
-Avoiding plagiarism & Have you acknowledged the work of others? Is it clearly distinguished from your own? \\
-Grammar and spelling & Have you proof-read your report carefully to remove all typos and grammatical errors? \\
+\begin{SimpleNColTable}{tab:criteriaForFirstReport}{3}{Reviewing your report}[lRR]
+Criteria & Prompt& Remedy \\
+Completeness & Are all sections included and their content complete? &What is missing?\\
+Academic writing & Is your writing clear, concise and precise? &How will you improve it?\\
+Logical structure and flow & Have you structured your writing so that your narrative has a logical flow? & What restructuring do you need to do?\\
+Supporting evidence & Are all your claims supported by appropriate references or other evidence? &What further evidence do you need?\\
+Citation and reference style & Do all your citations and references comply with the bibliographical style required by your course, if any? & How should you change them? \\
+Avoiding plagiarism & Have you acknowledged the work of others? & How will you distinguished it from your own? \\
+Grammar and spelling & Have you proof-read your report carefully to remove all typos and grammatical errors? & What do you need to revise?\\
 \end{SimpleNColTable}
 
-\begin{question}[subtitle={Activity: Reviewing your first report}] Apply the criteria in~\Cref{tab:criteriaForFirstReport} to review and improve on your current report. Think about what is good, what is weak and what is yet to do, and write up a summary of your assessment. For work still do do, decide whether to complete it within Stage 1 or carry it over to Stage 2.
+\begin{question}[subtitle={Activity: Reviewing your first report}] Apply the criteria in~\Cref{tab:criteriaForFirstReport} to review and improve on your current report. Think about what is good, what is weak and what is yet to do, and write up a summary of your assessment. For work still to do, decide whether to complete it within Stage 1 or carry it over to Stage 2.
 \begin{guidance}
 For each criteria, consider the related prompts to help you assess your report overall, and write down any further work needed: some will be minor and may be done with another pass at editing your report; others may point to substantial work you will need to do in Stage 2, and should be included in your work plan.
 \end{guidance}
@@ -2054,8 +2063,10 @@ For each criteria, consider the related prompts to help you assess your report o
 Writing up your report is an excellent way to consolidated the work you have completed and that you are still planning to do, and is something tangible you can share with your supervisor for feedback and guidance.
 
 \chapter*{Stage 1 Takeaways}\label{ch:Stage1Takeaways}
+
+Stage 1 gives you a solid foundation for your whole research project. This is where you establish the scope of your research and its contribution to knowledge. Here're the takeaways from Stage 1.
+%
 \begin{itemize}
-\item Stage 1 gives you a solid foundation for your whole research project. This is where you establish the scope of your research and its contribution to knowledge
 \item You should plan your overall project from the start, then review, refine and adjust your work plan as you make progress in your research. The 5-stage framework gives you the guidance you need to establish your initial project work plan, including identifying major milestones, deliverables and research activities stage by stage
 \item You work plan should guide you work, but not constrain it unnecessarily. It should be flexible enough to allow for the unknowns of doing research
 \item You can express your research problem in terms of its key elements, that is, context, knowledge gap, phenomena of interest, stakeholders and justification
