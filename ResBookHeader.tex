@@ -1,5 +1,5 @@
 %%Git integration
-\usepackage[nowatermark]{gitstatus}
+%\usepackage[watermark]{gitstatus}
 
 %%For fakeverb, so tables show \verb
 \usepackage{codehigh}
@@ -21,6 +21,8 @@
   includehead,
 }
 
+\usepackage{titling}
+
 %\usepackage{parskip}%%Doesn't seem to have an effect
 %
 %%JGH 2024-10-03: fiddle with table of contents spacing
@@ -35,8 +37,15 @@
 \usepackage[svgnames]{xcolor}
 
 %%Footnotes
+\newcommand{\footnotetextbulletsize}{1.8}
 \usepackage[perpage,side,marginal,flushmargin,symbol*]{footmisc}
-\DefineFNsymbols{hallrapanotti}{{\color{red}\textbullet}{\color{green}\textbullet}{\color{blue}\textbullet}{\color{orange}\textbullet}{\color{gray}\textbullet}{\color{purple}\textbullet}{\color{black}\textbullet}}
+\DefineFNsymbols{hallrapanotti}{{\color{red}\ScaleTextBullet{\footnotetextbulletsize}}%
+	{\color{green}\ScaleTextBullet{\footnotetextbulletsize}}%
+	{\color{blue}\ScaleTextBullet{\footnotetextbulletsize}}%
+	{\color{orange}\ScaleTextBullet{\footnotetextbulletsize}}%
+	{\color{gray}\ScaleTextBullet{\footnotetextbulletsize}}
+	{\color{purple}\ScaleTextBullet{\footnotetextbulletsize}}
+	{\color{black}\ScaleTextBullet{\footnotetextbulletsize}}}
 \setfnsymbol{hallrapanotti}
 
 %%Set numbering depth
@@ -68,6 +77,9 @@
 \usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
 \usepackage{xurl}
 
+%%Glossary
+\input{glossaries}
+
 %%Ensure bibliography always included, even if \end{document} early
 %\AtEndDocument{%
 %%%Removed \if for convenience, 2024-06-05
@@ -95,6 +107,7 @@
 	
 %%Table definitions
 \input{tables}
+\input{WOtables}
 
 %%T.o.d.o notes
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
@@ -108,5 +121,5 @@
 
 %%Load lasts
 \usepackage{cleveref}
+\usepackage{listliketab}
 
-\newcommand{\gloss}[0]{\emph}

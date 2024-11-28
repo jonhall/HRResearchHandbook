@@ -10,8 +10,8 @@
 \UseTblrLibrary{varwidth}%%For itemize in entries
 \UseTblrLibrary{booktabs}%%For lines in entries
 \UseTblrLibrary{siunitx}%%For aligned decimal points
-\SetTblrOuter{expand=\frameColor}
-\SetTblrOuter{expand=\activityColor}
+%\SetTblrOuter{expand=\frameColor}
+%\SetTblrOuter{expand=\activityColor}
 
 %%Define the widest tables width
 %\newlength{\widetablewidth}
@@ -19,38 +19,43 @@
 %\newcommand{\widetablewidth}{\the\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
 %\newcommand{\narrowtablewidth}{\the\dimexpr(\textwidth-\marginparwidth/8)\relax}
 \newcommand{\widetablewidth}{\textwidth+\marginparsep+\marginparwidth}
-\newcommand{\narrowtablewidth}{\textwidth-\marginparwidth/8}
+\newcommand{\narrowtablewidth}{\textwidth-\marginparwidth/4}%Ensure - isn't –
 
+%Table colours – not used
 \newcommand{\tableBackgroundColor}{black!90!white}
+
+%%Create new column type for ragged right in body.
+\NewColumnType{R}[1][1]{X[#1,preto={\raggedright}]}
 
 %%Simple N column table
 \NewDocumentEnvironment{SimpleNColTable}{
 		m% 					% label
-		m%					% number of columns – not currently used
+		m%					% number of columns
 		O{\widetablewidth} 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{X[1,l]*{10}{X[7,l]}|[2pt]}%	% optional colspec
-		O{}					% Table background colour – hack for when table needs to appear outside of tcbox
+		O{XXXXXXXXXX|}%	% optional colspec
+		O{}					% Any other options to pass
 		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
 		}%
 		{
 		\begin{tblr}[
 				long,
 	 			label={#1},
-				caption={#4},
-				expand=\activityColor
+				caption={#4}
+%				expand=\activityColor
 			]{
+		  		colspec = {#5},
+	 			width = {#3},
 				stretch=-1,%%Allows lists in body, with no padding
-	 			width = #3,
-				colspec = {#5},
-%				cells={c,#6}, %Cell background colour
-		  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+				hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep = 5pt,
 %TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
+				row{1} = {font=\bfseries, fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
+				rows = {m,rowsep = 3mm},
 				rowhead = 1,
+				#6, % Any other options passed directly
 				measure=vbox, 
 			}
 			#7
@@ -124,8 +129,6 @@
 	
 %%ReportTable list formats 
 \usepackage{enumitem}
-%%To define reportenumerate list for report tables
-%\usepackage{enumitem}
 \newlist{reportenum}{enumerate}{2}
 \setlist[reportenum]{nosep}
 \setlist[reportenum,1]{label={\arabic*}}
@@ -133,12 +136,10 @@
 \newlist{reportitem}{itemize}{1}
 \setlist[reportitem]{nosep,label=\textbullet}
 
-%%TODO: tidy up code for tables
 \usepackage{ifthen}
 
 \newcommand{\ordColour}[0]{gray8}
 
-%TODO: Colours need sorting out
 \newcommand{\ritem}[2]{%
 	\ifthenelse{\equal{#1}{!}}
 		%%new section

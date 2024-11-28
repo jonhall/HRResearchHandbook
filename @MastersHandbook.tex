@@ -9,7 +9,7 @@
 %\ErrorsOff
 
 %\documentclass[a4paper,12pt,oneside,landscape]{memoir}
-\documentclass[a4paper,12pt,oneside,landscape,draft]{memoir}
+\documentclass[a4paper,12pt,landscape,oneside,draft]{memoir}
 
 %\usepackage[draft]{showlabels}
 
@@ -19,24 +19,25 @@
 \title{Academic Research\\%
 	A Guide for the Perplexed}
 \author{Lucia Rapanotti and Jon Hall}
-\date{Branch: \gitbranch\\\small Hash: \gitcommit}
+%\date{Branch: \gitbranch\\\small Hash: \gitcommit}
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-\includeonly{Stage1}
+%\includeonly{Stage1}
 
 %\usepackage{showlabels}
 %\renewcommand{\showlabelfont}{\small\slshape\color{red}}
-
 \begin{document}
 
-\maketitle
+\newgeometry{margin=7cm}
+\maketitle	
+\restoregeometry
 
 \frontmatter
 %\setcounter{tocdepth}{3}
 \tableofcontents
 
-%\newpage
+\newpage
 %\listoffigures
 %
 %\newpage
