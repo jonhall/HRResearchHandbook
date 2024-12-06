@@ -56,9 +56,13 @@
   {
     \IfPackageLoadedTF {changepage}
       {
+%      	\write16{"Changepage~loaded:~setting~tblr~option"}
         \cs_gset_protected:Npn \__tblr_check_odd_page:
           {
-            \checkoddpage
+          	\checkoddpage
+%            \ifoddpage{\write16{"tblr:~oddpage"}}
+%            \else{\write16{"tblr:~evenpage"}}
+%            \fi
           }
         \cs_gset:Npn \__tblr_toggle_left_right:nn #1#2
           {
@@ -77,8 +81,10 @@
 
 % glue code for https://github.com/muzimuzhi/tabularray-dev
 \keys_if_exist:nnTF { tblr/__outer } { halign }
-  { \keys_define:nn { tblr/__outer} }
-  { \keys_define:nn { tblr/outer } }
+  { \write16{"halign~exists~in~tblr/__outer"}
+  	\keys_define:nn { tblr/__outer} }
+  { \write16{"halign~doesn't~exist~in~tblr/__outer"}
+	\keys_define:nn { tblr/outer } }
   {
     toggle-left-and-right .bool_set:N = \l__tblr_toggle_left_right_bool
   , toggle-left-and-right .default:n  = true
@@ -113,12 +119,12 @@
 		\begin{tblr}[
 				long,
 	 			label={#1},
-				caption={#4}
+				caption={#4},
 %				expand=\activityColor
   % outer option "halign" is undocumented!
   % new value "r-hss": ragged right using \hss
-%				halign=r-hss,
-%				toggle-left-and-right
+				halign=r-hss,
+				toggle-left-and-right
 			]{
 		  		colspec = {#5},
 	 			width = {#3},
@@ -147,7 +153,12 @@
 \NewDocumentEnvironment{ResActTable}{O{Missing caption}+b}{
 	\begin{tblr}[
 			long,
-			caption={#1}
+			caption={#1},
+			  % outer option "halign" is undocumented!
+  % new value "r-hss": ragged right using \hss
+				halign=r-hss,
+				toggle-left-and-right
+
 		]{
 			measure=vbox, 
 			stretch=-1,%%Allows lists in body, with no padding
