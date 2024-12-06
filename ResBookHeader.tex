@@ -7,7 +7,7 @@
 %%For layout
 \usepackage{geometry}
 \geometry{
-% showframe,
+ showframe,
 %  paperwidth=6in,
 %  paperheight=9in,
 %	asymmetric,
@@ -71,6 +71,9 @@
 	refsegment=part,
 ]{biblatex}
 \addbibresource{Bibs/MastersBib.bib}
+%%Define the fullcites to be an itemized list
+\newcommand{\fullcites}[1]{\def\multicitedelim{\item }\begin{itemize}\item \itemcites{#1}\end{itemize}}
+\DeclareMultiCiteCommand{\itemcites}{\fullcite}{}
 
 
 %%Xrefs
