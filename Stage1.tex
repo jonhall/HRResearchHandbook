@@ -1,4 +1,8 @@
+\newgeometry{margin=6cm}
+\begin{titlingpage}
 \part{The Scope}\label{part:scope}
+\end{titlingpage}
+\restoregeometry
 
 In all research, but particularly at Masters where time is limited, it is important to establish the scope of your project early on: this is the main focus of Stage 1. 
 
@@ -27,8 +31,7 @@ Equally, we have also stressed the importance of considering risk in your resear
 
 In this chapter, you will start by thinking about how you will organise your work in this stage, while in the following chapters, we will look at the other activities in turn.
 
-
-\begin{SimpleNColTable}{stage1ResearchActivities}{4}{\RActivitiesTableCaption{1}}[X[4]X[1]X[8]X[8]|]
+\begin{SimpleNColTable}{stage1ResearchActivities}{4}{\RActivitiesTableCaption{1}}[R[4]cR[8]R[8]]
 Research activity&Effort&Description&Supervisor Interaction Focus\\
 Identifying the research problem&20\%&Develop problem statement and intended contribution to knowledge&Suitability of research problem for academic research and to meet the requirements of specific  course\\
 Reviewing the literature&30\%&Compile initial draft of literature review and plan remaining review&Scope of literature review and possible gaps\\
@@ -53,7 +56,8 @@ Our dissertation structure is a generic structure based on our experience as res
 This book and its practical activities are designed to help you meet your writing outcomes stage by stage. In Stage 1 they revolve around defining the focus of your research and providing sufficient background and justification for your research choices.
 
 %\input{Tables/StageBegin/Stage1}
-\input{WritingOutcomes/Stage1}
+%\input{WritingOutcomes/Stage1}
+\StageOneWritingOutcomes
 
 \section{Planning your work for this stage}\label{sect:stage1WorkPlan}
 
@@ -291,7 +295,7 @@ It is important to know that this is only a \emph{candidate knowledge gap}: what
 \subsection{The justification}\label{ssect:Justification}
 Some research is motivated by the researcher' pure curiosity and desire to advance knowledge in a field of study, which is good justification to conduct research!
 
-However, most research, particularly when located in a real-world context, matters to other people too, usually referred to as the stakeholders, including beneficiaries\footnote{A \gloss{beneficiary} benefits from the research; a \gloss{stakeholder} may be affected by the research, but not necessarily positively.} (these include the researcher, of course!) and may have measurable real-world impact.
+However, most research, particularly when located in a real-world context, matters to other people too, usually referred to as the stakeholders, including beneficiaries\footnote{A \gls{beneficiary} benefits from the research; a \gls{stakeholder} may be affected by the research, but not necessarily positively.} (these include the researcher, of course!) and may have measurable real-world impact.
 
 Measuring\footnote{Universities these days are assessed on their real world impact, so it is possible that your project will have some form of impact assessment in it.} the real-world benefit delivered through research is an easy way of showing that it has value. Having beneficiaries also means that you can more easily conclude that the research problem has been solved in context -- as you can ask the beneficiaries. Asking why the research is important to them is another good thing to know as you can then use their criteria to assess the value of your research.
 
@@ -311,9 +315,9 @@ For a research student's project, that larger research community might be repres
 
 \subsection{Problem formulation}\label{ssect:ProblemFormulation}
 
-It is now time to write down Anna's problem, by using the template we have provided, and based on what we have found out so far, which is summarised in~\Cref{tab:Annaproblemelements}.
+We can now write down Anna's problem using the template we have provided and based on what we have found out so far which is summarised in~\Cref{tab:Annaproblemelements}.
 
-\begin{SimpleNColTable}{tab:Annaproblemelements}{2}[\the\textwidth]{Elements of Anna's problem}
+\begin{SimpleNColTable}{tab:Annaproblemelements}{2}[\narrowtablewidth]{Elements of Anna's problem}[lR[4]]%%[\activityColor]
 Problem element & Description \\
 Phenomena P & Forecasting of time and resources and its accuracy \\ 
 Context C & Anna's PMO\\
@@ -356,11 +360,16 @@ Descriptive problems aim to describe phenomena accurately and systematically. Th
 \begin{question}[subtitle={Activity - Descriptive problems}] For each example problem above, identify its constituent parts with reference to the research problem template provided. Write down any similarity between the problems.
 
 \begin{solution}
-Here is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is shown in~\Cref{tab:descriptiveProblemsA,tab:descriptiveProblemsB}.
+
+In both cases, the goal is to provide a description where one is currently lacking: of a state-of-the-art in the first problem, and of the use of a framework in the second problem.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
 
 %Table in Latex
-\begin{SimpleNColTable}{tab:descriptiveProblemsA}{2}[\the\textwidth]{Description Problems  – Example 1}
-	[X[1]X[2]|]
+%Table moved outside of activity.
+\begin{SimpleNColTable}{tab:descriptiveProblemsA}{2}[\narrowtablewidth]{Description Problems  – Example 1}[lR[4]]%%[\activityColor]
 Problem element & Description \\
 Context C & European commercial synthetic biology ecosystem\\
 Phenomena P   & The current state of the ecosystem \\
@@ -369,7 +378,7 @@ Stakeholders S  & Consumers and producers within the ecosystem  \\
 Justification J & To inform effective routes to commercialisation\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:descriptiveProblemsB}{2}[\the\textwidth]{Description Problems  – Example 2}[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:descriptiveProblemsB}{2}[\narrowtablewidth]{Description Problems  – Example 2}[lR[4]]%[\activityColor]
 Problem element & Description \\
 Context C & UK organisations\\
 Phenomena P   & Those organisations' management of cloud-based IT services \\
@@ -378,10 +387,6 @@ Stakeholders S  & Those organisations' managers  \\
 Justification J & To improve service management\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to provide a description where one is currently lacking: of a state-of-the-art in the first problem, and of the use of a framework in the second problem.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 \subsection{Exploratory problems}\label{ssect:ExploratoryProblems}
 Exploratory problems aim to investigate phenomena of which little is known. The goal is typically to generate new ideas, hypotheses, theories, models or predictions which can be investigated in further research.
@@ -398,10 +403,16 @@ Lots of academic research is exploratory as it strives to develop a deep underst
 \begin{question}[subtitle={Activity - Exploratory problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-Here is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is shown in~\Cref{tab:exploratoryProblemsA,tab:exploratoryProblemsB}:
 
-\begin{SimpleNColTable}{tab:exploratoryProblemsA}{2}[\the\textwidth]{Exploratory Problems – Example 1}
-	[X[1]X[2]|]
+In both cases, the goal is to explore a situation for which little understanding is currently available (this being the knowledge gap): in the first problem, the focus are possible effects of demographic and behavioural factors on awareness of cyber security threats; in the second, whether social media could be used effectively for communication in the management of a natural disaster.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+%Table moved outside of activity.
+\begin{SimpleNColTable}{tab:exploratoryProblemsA}{2}[\narrowtablewidth]{Exploratory Problems – Example 1}
+	[lR[4]]%[\activityColor]
 Problem element & Description \\
 Context C & Public service providers\\
 Phenomena P   & End-users' demographic and behavioural factors; cyber security threats \\
@@ -410,8 +421,8 @@ Stakeholders S  & The providers and their customers \\
 Justification J & Successful cyber security attacks can result in loss of confidential information \\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:exploratoryProblemsB}{2}[\the\textwidth]{Exploratory Problems – Example 2}
-	[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:exploratoryProblemsB}{2}[\narrowtablewidth]{Exploratory Problems – Example 2}
+	[lR[4]]%[\activityColor]
 Problem element & Description \\
 Context C & Government organisations dealing with natural disasters \\
 Phenomena P   & Social media; the management of natural disasters \\
@@ -420,17 +431,12 @@ Stakeholders S  & Those government organisations  \\
 Justification J & Social media could be integrated within critical communication infrastructures\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to explore a situation for which little understanding is currently available (this being the knowledge gap): in the first problem, the focus are possible effects of demographic and behavioural factors on awareness of cyber security threats; in the second, whether social media could be used effectively for communication in the management of a natural disaster.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
-
 \subsection{Explanatory Problems}\label{ssect:ExplanatoryProblems}
 Explanatory problems aim to explain why certain phenomena occur or are related. The goal is often to test a conjecture, hypothesis, theory or model.
 
 \begin{example}{Example of explanatory problems}
 \begin{enumerate}
-	\item In the context of software development companies, to investigate how learning strategies adopted by software engineers allow them to develop new skills fast and efficiently. These matters to those companies as software technology changes rapidly, so that software engineers need upskilling and retraining very frequently.
+	\item In the context of software development companies, to investigate how learning strategies adopted by software engineers allow them to develop new skills fast and efficiently. These matters to those companies as software technology changes rapidly, so that software engineers need up-skilling and retraining very frequently.
 	\item Within the public sector, to investigate how practices adopted by organisations and employees lead to an effective and efficient use of teleconferencing technology. This matters to public sector organisations due to the recent significant increase in flexible and home working, so that much of their business is now conducted online.
 \end{enumerate}
 \end{example}
@@ -438,10 +444,17 @@ Explanatory problems aim to explain why certain phenomena occur or are related. 
 \begin{question}[subtitle={Activity - Explanatory problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-This is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is in~\Cref{tab:explanatoryProblemsA,tab:explanatoryProblemsB}.
 
-\begin{SimpleNColTable}{tab:explanatoryProblemsA}{2}[\the\textwidth]{Explanatory Problems – Example 1}
-	[X[1]X[2]|]
+%%Tables moves to body
+In both cases, the goal is to explore how and why certain phenomena are related. In the first problem, the focus is why certain learning strategies lead to more effective up-skilling; in the second problem, why certain practices lead to a more efficient use of teleconferencing technology.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+%Table moved outside of activity.
+\begin{SimpleNColTable}{tab:explanatoryProblemsA}{2}[\narrowtablewidth]{Explanatory Problems – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C & The public sector  \\
 Phenomena P   & Use of teleconferencing technology\\
@@ -450,20 +463,16 @@ Stakeholders S  &  Public sector organisations\\
 Justification J & More and more business is conducted online\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:explanatoryProblemsB}{2}[\the\textwidth]{Explanatory Problems – Example 2}
-	[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:explanatoryProblemsB}{2}[\narrowtablewidth]{Explanatory Problems – Example 2}
+	[lR[4]]
 Problem element & Description \\
 Context C & Software development companies \\
 Phenomena P & Learning strategies; skills development   \\
 Knowledge gap G & How learning strategies adopted by software engineers allow them to develop new skills fast and efficiently  \\                         
 Stakeholders S  &  Software development companies and software engineer\\
-Justification J & Software technology changes rapidly, so that software engineers need upskilling and retraining very frequently\\
+Justification J & Software technology changes rapidly, so that software engineers need up-skilling and retraining very frequently\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to explore how and why certain phenomena are related. In the first problem, the focus is why certain learning strategies lead to more effective upskilling; in the second problem, why certain practices lead to a more efficient use of teleconferencing technology.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 \subsection{Predictive Problems}\label{ssect:PredictiveProblems}
 Predictive problems aim to predict future phenomena. The goal is often to define a model, extrapolating from current knowledge, that allows predictions to be made together with an assessment of how accurate they might be.
@@ -478,10 +487,16 @@ Predictive problems aim to predict future phenomena. The goal is often to define
 \begin{question}[subtitle={Activity - Predictive problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-Here is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is shown in~\Cref{tab:PredictiveProblemsA,tab:PredictiveProblemsB}:
 
-\begin{SimpleNColTable}{tab:PredictiveProblemsA}{2}[\the\textwidth]{Predictive Problems – Example 1}
-	[X[1]X[2]|]
+In both cases, the goal is to make predictions. In the first problem, on the impact of recycling water on fresh water availability; in the second problem, on the likelihood of students dropping out.
+\end{solution}
+\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:PredictiveProblemsA}{2}[\narrowtablewidth]{Predictive Problems – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C & UK in the next decade \\
 Phenomena P   & Fresh water consumption; recycling domestic bathroom water \\
@@ -490,8 +505,8 @@ Stakeholders S  &  Water management agencies; water suppliers and consumers\\
 Justification J & Preserving fresh water is important as it is becoming a scarce resource\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:PredictiveProblemsB}{2}[\the\textwidth]{Predictive Problems – Example 2}
-	[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:PredictiveProblemsB}{2}[\narrowtablewidth]{Predictive Problems – Example 2}
+	[lR[4]]
 Problem element & Description \\
 Context C &  Higher Education \\
 Phenomena P   & Student drop-outs; demographic and curriculum data\\
@@ -499,12 +514,6 @@ Knowledge gap G  & To predict which current students are at risk of dropping out
 Stakeholders S  & Universities; their students  \\
 Justification J & Student retention is a statutory duty; retentions means that enough skilled people enter the job market\\
 \end{SimpleNColTable}
-
-In both cases, the goal is to make predictions. In the first problem, on the impact of recycling water on fresh water availability; in the second problem, on the likelihood of students dropping out.
-\end{solution}
-\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 \subsection{Evaluative Problems }\label{ssect:EvaluativeProblems}
 Evaluative problems aim to establish whether phenomena that have been introduced have achieved the desired outcome. These might be concepts, theories, products, technology, etc., and the goal is to establish how they have performed.
@@ -523,10 +532,15 @@ Evaluative research may also take the form of a well-founded critique of diverse
 \begin{question}[subtitle={Activity - Evaluative problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-This is our mapping of the problem statements onto the template:
+Our mapping of the problem statements onto the template is shown in~\Cref{tab:EvaluativeProblemsA,tab:EvaluativeProblemsB}:
 
-\begin{SimpleNColTable}{tab:EvaluativeProblemsA}{2}[\the\textwidth]{Evaluative Problems – Example 1}
-	[X[1]X[2]|]
+In both cases, the goal is to evaluate how approaches applied within a certain context perform. In the first problem, the focus is on the performance of AI to counter cyber security attacks; in the second problem, the focus is on the effect of lean techniques on the flow of processes with unpredictable demand and supply.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:EvaluativeProblemsA}{2}[\narrowtablewidth]{Evaluative Problems – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C &  The financial sector\\
 Phenomena P & AI techniques and cyber security attacks   \\
@@ -535,8 +549,8 @@ Stakeholders S  & Operators in the sector and their customers \\
 Justification J & Significant financial losses are due to such attacks every year, and the cost of preventing them is high\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:EvaluativeProblemsB}{2}[\the\textwidth]{Evaluative Problems – Example 2}
-	[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:EvaluativeProblemsB}{2}[\narrowtablewidth]{Evaluative Problems – Example 2}
+	[lR[4]]
 Problem element & Description \\
 Context C & Non clinical laboratories \\
 Phenomena P   & Lean techniques; process flow; demand and supply\\
@@ -545,10 +559,6 @@ Stakeholders S  &  Those laboratories and their customers\\
 Justification J & Inefficiencies in process flow are costly\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to evaluate how approaches applied within a certain context perform. In the first problem, the focus is on the performance of AI to counter cyber security attacks; in the second problem, the focus is on the effect of lean techniques on the flow of processes with unpredictable demand and supply.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 \subsection{Design problems}\label{ssect:DesignProblems}
 In design problems the focus is on phenomena that take the form of new artefacts: the aim is to create artefacts which embed new knowledge. The term `artefact' is meant in its widest meaning of something created by people, and includes tangible and intangible products, processes, novel combinations of ideas or technologies, etc. The goal is to embed within the artefact new knowledge which extends human and/or organisational capabilities, including improved ways of doing something.
@@ -563,10 +573,15 @@ In design problems the focus is on phenomena that take the form of new artefacts
 \begin{question}[subtitle={Activity - Design problems}] For each example problem above, identify its constituent parts with reference to the research problem template we have provided. Write down any similarity between the problems.
 
 \begin{solution}
-Here is our mapping of the problem statements onto the template:
+Our mapping onto the template is in~\Cref{tab:DesignProblemsA,tab:DesignProblemsB}
 
-\begin{SimpleNColTable}{tab:DesignProblemsA}{2}[\the\textwidth]{Design Problems – Example 1}
-	[X[1]X[2]|]
+In both cases, the goal is to design something new. In the first problem, new algorithms for the automated generation of text summaries; in the second problem, a framework for hybrid project management.
+\end{solution}\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:DesignProblemsA}{2}[\the\narrowtablewidth]{Design Problems – Example 1}
+	[lR[4]]
 Problem element & Description \\
 Context C & Data visualisation tool development industry \\
 Phenomena P   & Text summaries; multiple time series line graphs; algorithms\\
@@ -575,8 +590,8 @@ Stakeholders S  & Tool providers and sight-impaired end-users \\
 Justification J & To improve the accessibility of such tools\\
 \end{SimpleNColTable}
 
-\begin{SimpleNColTable}{tab:DesignProblemsB}{2}[\the\textwidth]{Design Problems – Example 2}
-	[X[1]X[2]|]
+\begin{SimpleNColTable}{tab:DesignProblemsB}{2}[\the\narrowtablewidth]{Design Problems – Example 2}
+	[lR[4]]
 Problem element & Description \\
 Context C &  Embedded software systems development sector\\
 Phenomena P   & Complexity and volatility characteristics; project failure; project management\\
@@ -585,10 +600,6 @@ Stakeholders S  &  Project managers in the sector\\
 Justification J & Project failure rate is high, resulting in a high financial burden for the sector\\
 \end{SimpleNColTable}
 
-In both cases, the goal is to design something new. In the first problem, new algorithms for the automated generation of text summaries; in the second problem, a framework for hybrid project management.
-\end{solution}\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 Note that an essential characteristic of a design research problem is that the to-be-designed artefact is a genuine contribution to knowledge in that it augments what is currently possible. Some of the most exciting research in technology-related subjects is about developing new artefacts. However, for such development to fit academic research it is important to establish what the contribution to knowledge is, and assess its originality and significance. In particular, it is important to distinguish the very first development of an innovative artefact from the routine of implementation of known systems: the former augments knowledge; the latter does not.
 
@@ -711,17 +722,19 @@ To identify techniques which can produce more accurate project estimates and for
 
 from which we could derive the following research objectives:
 
+\begin{description}
+	\item [Objective 1:] To \emph{identify} a set of techniques that can be used to make project estimates and forecasting
+	\item [Objective 2:] To \emph{apply} those techniques in the context of Anna's university to a number of projects
+	\item [Objective 3:] To \emph{evaluate} their accuracy in relation to those project outcomes, particularly cost and duration, and in comparison with current practice
+\end{description}
+
+%
 \begin{itemize}
-	\item Objective 1: To \emph{identify} a set of techniques that can be used to make project estimates and forecasting
-	\item Objective 2: To \emph{apply} those techniques in the context of Anna's university to a number of projects
-	\item Objective 3: To \emph{evaluate} their accuracy in relation to those project outcomes, particularly cost and duration, and in comparison with current practice
+\item Objective 1 requires the identification of specific techniques that could be used in the project. An appropriate selection should take into consideration whether their use on the project is feasible in relation to available knowledge, time, resources.
+\item Objective 2 concerns the application of the techniques selected in context of the target UK university. Feasibility may relate to the kind of data required and their availability with the target university.
+\item Objective 3 concerns the evaluation of the techniques applied in relation to known project outcomes and current practice: this will allow Anna to decide if improvements have been made. Feasibility may concern the availability of such data, say from historic or ongoing projects.
 \end{itemize}
-
-Objective 1 requires the identification of specific techniques that could be used in the project. An appropriate selection should take into consideration whether their use on the project is feasible in relation to available knowledge, time, resources.
-
-Objective 2 concerns the application of the techniques selected in context of the target UK university. Feasibility may relate to the kind of data required and their availability with the target university.
-
-Objective 3 concerns the evaluation of the techniques applied in relation to known project outcomes and current practice: this will allow Anna to decide if improvements have been made. Feasibility may concern the availability of such data, say from historic or ongoing projects. 
+%
 
 Note how those objectives are expressed using action verbs and build on each other -- if successfully completed, they will allow Anna to meet the overall research aim.
 \end{example}
@@ -827,7 +840,7 @@ Another source of articles is Google Scholar (\url{http://scholar.google.com}) w
 
 Google Scholar provides links to access to the full-text of an article, particularly for published articles from commercial publishers, although these are usually behind a pay-wall\footnote{A pay wall is an electronic way of protecting an electronic document.}. In addition, Google Scholar collects together `versions' of the same paper so that, even if you don't have access to a paid service version, there may be a pre-print version of the article also available for free. If there is no version available except a pay-for-access one, you may be able to link Google Scholar to your university library online services: this is an incredibly useful service which gives you direct access to those articles found in Google Scholar that are included in your library subscriptions.
 
-Google Scholar can also help you access the so-called \gloss{grey literature}, which is the collection of information produced by organisations other than publishers, such as as academia, government bodies, or non-publishing businesses and industries. It includes pre-publication and non-peer-reviewed articles, theses and dissertations, research and committee reports, government reports, conference papers, accounts of ongoing research, etc.
+Google Scholar can also help you access the so-called \gls{grey literature}, which is the collection of information produced by organisations other than publishers, such as as academia, government bodies, or non-publishing businesses and industries. It includes pre-publication and non-peer-reviewed articles, theses and dissertations, research and committee reports, government reports, conference papers, accounts of ongoing research, etc.
 
 Google Scholar is an amazing resource for the researcher!
 
@@ -857,18 +870,20 @@ The approach we introduce in this section is one that we have used many hundreds
 Keshav's approach is summarised in~\Cref{tab:Keshav}.
 
 \begin{SimpleNColTable}{tab:Keshav}{5}{Summary of Keshav's approach --- adapted from \textcite{keshav2007read}}
+	[ccR[5]R[4]R[4]]
 Pass & Time & What to read or do & What you should know after the pass & Criteria for stopping at current pass \\
- 1 & 5--10 minutes & Title, abstract, introduction; Section and sub-heading; Glance at mathematical content (if any); Conclusions; Glance over references & Main contribution; Relation to other papers & Paper not in research area \\
+ 1 & 5--10 mins & Title, abstract, introduction; Section and sub-heading; Glance at mathematical content (if any); Conclusions; Glance over references & Main contribution; Relation to other papers & Paper not in research area \\
  2 & 1 hour & Write down key points, comments, questions; Mark relevant unread references & Main thrust of the paper with supporting evidence & Paper of interest but not key to your research \\
- 3 & $>$1hour & Virtually reimplement the paper; Identify/challenge assumptions  & New knowledge contributed; Strong/weak points, implicit assumptions, missing citations, potential issues; Insight into complex arguments and presentation techniques; Jot down ideas for future work  &  \\
+ 3 & $>$1hour & Virtually reimplement the paper; Identify/challenge assumptions  & New knowledge contributed; Strong/weak points, implicit assumptions, missing citations, potential issues; Insight into complex arguments and presentation techniques; Jot down ideas for future work  &  n/a\\
 \end{SimpleNColTable}
 
 Ok, now it's time to give you something to try Keshav's workflow on!
 
-\begin{question}[subtitle={Activity: Applying Keshav's approach to Keshav's paper!}] The paper you need to investigate is Keshav's paper itself:
+\begin{question}[subtitle={Activity: Applying Keshav's approach}] 
+The paper you need to investigate is Keshav's paper itself:
 %
 \begin{quotation}
-	\fullcite{keshav2007read}
+	\noindent\fullcite{keshav2007read}
 \end{quotation}
 
 Use Google Scholar to search the article's title and then download the paper.
@@ -909,7 +924,7 @@ Reviewing the literature is a process of knowledge discovery\footnote{To know wh
 To conduct your literature review successfully, you will need to be able to select work which is relevant and should be included, assimilate and summarise relevant work of other researchers, synthesise and critically appraise ideas from different sources, establish links between studies and their findings, and draw on strengths and limitations of published research. In summary, in your literature review you will need to make use critically and creatively of the content of articles, books and other literature sources you have reviewed to demonstrate your knowledge of the subject, support your own arguments and justify your research. This chapter and the next will help you develop and apply these skills.
 
 \begin{SimpleNColTable}{tab:litrevactivities}{4}{Key activities in reviewing the literature, including key skills required and outputs}
-[X[1]X[2]X[2]X[2]|]
+[R[1]R[3]R[3]R[3]]
 Activity & Aim & Key skills & Outputs \\
 Searching and gathering & To identify search terms, conduct bibliographical searches and collect articles for consideration & Applying effective search strategies; systematic searching bibliographical databases & Successfully applied search terms and related electronic (or paper) articles for further consideration \\
 Processing & To establish the relevance of searched articles for follow-up in-depth analysis, and record them in a BMT & Skim reading, note taking, bibliographic management & Populated BMT, article annotations, notes, article ranking for follow-up in-depth analysis  \\
@@ -953,7 +968,7 @@ Most references in your literature review should be peer-reviewed, therefore you
 
 The number of peer-reviewed academic articles is very large and growing exponentially\footnote{2023 estimates put the number of published academic articles to between 40 and 50 millions, with 5 millions new articles published in 2022!}. So even without the grey literature, focussing on the most relevant articles for your research could be a challenge if not approached systematically.
 
-A good place to start is to brainstorm a set of search terms\footnote{\gloss{A search term} is a word or a combination of words that you can key into a search engine.} that bear a relationship to each of the elements of your research problem: our quest for knowledge about each of them will drive your literature search.
+A good place to start is to brainstorm a set of search terms\footnote{A \gls{search term} is a word or a combination of words that you can key into a search engine.} that bear a relationship to each of the elements of your research problem: our quest for knowledge about each of them will drive your literature search.
 
 Let's see how this could be done on an example.
 
@@ -963,10 +978,13 @@ Let's see how this could be done on an example.
 To evaluate the effectiveness of techniques to test embedded safety-critical software while the hardware is still unavailable. Full software testing can only occur once the software is embedded in its hardware. However, in many safety-critical avionics systems, this can happen very late in the development process, leading to expensive re-design if errors are found. Early software testing while the hardware is still unavailable could reduce such late occurrence of errors and expensive re-design.
 \end{quotation}
 
-We can take each problem element in turn to identify possible search terms. In doing so, we have come up with this initial set, which should be sufficient to perform our initial search:
+We can take each problem element in turn to identify possible search terms. In doing so, we have come up with this initial set, which should be sufficient to perform our initial search. The results are shown in~\Cref{tab:searchTerms}.
+
+
+\end{running}
 
 \begin{SimpleNColTable}{tab:searchTerms}{3}[\textwidth]{Brainstormed search term}
-[X[3]X[6]X[6]|]
+[R[3]R[6]R[6]]
  Problem element & From problem statement & Our brainstormed search terms \\
  Context C& Avionics systems development & Avionic systems; system development \\
  Phenomena P& Embedded software; safety-critical applications; testing approaches & Embedded software; safety-critical systems; software testing \\
@@ -974,9 +992,8 @@ We can take each problem element in turn to identify possible search terms. In d
  Stakeholders S& Software developers, safety engineers within the context & Software developers; software engineers \\
  Justification J& Early software testing while the hardware is still unavailable could reduce the late occurrence of errors and expensive redesign. & Late errors; redesign
 \end{SimpleNColTable}
-\end{running}
 
-\begin{question}[subtitle={Activity: Search terms brainstorming}] Using your research problem, fill in a table similar to that in the example, indicating search terms you have brainstormed for each problem element.
+\begin{question}[subtitle={Activity: Search-term brainstorming}] Using your research problem, fill in a table similar to that in the example, indicating search terms you have brainstormed for each problem element.
 
 \begin{guidance}The aim of this activity is to arrive at an initial set of search terms you can use to start your own literature search. You should start by words in your problem statement, but you could also include synonyms, particularly if you are not sure which technical terms are used in the literature.
 
@@ -987,10 +1004,10 @@ You shouldn't worry too much if you have come up with too many or too few terms 
 
 Your brainstormed search terms will provide a starting point for searching the literature. Initially, you should be prepared for the fact that very large numbers of articles might be returned with many of them irrelevant to your final goal of understanding your chosen topic. Therefore, you will refine your search terms and find ways to narrow down your search results to manageable set of relevant articles.
 
-Search terms are often used in combination to create more complex search terms which may widen or narrow the number of results, so to increase the likelihood of finding articles which are close to your topic of interest. Basic Boolean operators\footnote{\gloss{Boolean operators} are used in Mathematics and Logic to build expressions which can be either true or false.} are used for this purpose, as indicated in~\Cref{tab:booleanoperators}.
+Search terms are often used in combination to create more complex search terms which may widen or narrow the number of results, so to increase the likelihood of finding articles which are close to your topic of interest. Basic Boolean operators\footnote{A \gls{boolean operator} is used in mathematics and logic to build expressions which can be either true or false.} are used for this purpose, as indicated in~\Cref{tab:booleanoperators}.
 
 \begin{SimpleNColTable}{tab:booleanoperators}{2}[\narrowtablewidth]{Combining search terms with Boolean operators}
-[X[1]X[3]|]
+[cR[3]]
  Boolean operator & Effect of the search results\\
 \fakeverb{Term 1 AND Term 2} & Results will contain both \fakeverb{Term 1} and \fakeverb{Term 2}. This is used to narrow down a search. \\
 \fakeverb{Term 1 OR Term 2} & Results may contain only \fakeverb{Term 1} or only \fakeverb{Term 2} or both. This is used to expand a search. \\
@@ -1056,7 +1073,7 @@ Although in this section we have focussed on Google Scholar, the same techniques
 \paragraph{What if there are still too many hits?}
 Even if you spend your search time wisely, you may still end up with a large number of hits to consider. An important thing to recognise is that not all of the hits returned will be relevant, so you will need to make an initial assessment of what to exclude from further consideration. When the number of search hits is high this will take time, so you will need to select which articles to look at first.
 
-We recommend you start by considering recent review articles. \gloss{Review articles}, also known as surveys, are academic articles which summarise the current understanding of a specific topic or phenomenon. They are the result of analysing and synthesising academic literature or bringing together findings from several studies. Any recent review articles that appear in your search offer a very easy way into your literature review: not only do they collect together recent relevant papers, but they often summarise and compare their  contributions and methods. If no review articles are included in your hits, you could repeat your search by adding \fakeverb{AND Review} or \fakeverb{AND Survey} to the end of your search term. Alternatively, you could ask your supervisor if they can suggest a review article you can start with. It's a great question to ask at an early meeting with them. Your supervisor may also suggest other seminal papers for you to look at.
+We recommend you start by considering recent review articles. A \gls{review article}, also known as a survey, is an academic article which summarises the current understanding of a specific topic or phenomenon. They are the result of analysing and synthesising academic literature or bringing together findings from several studies. Any recent review articles that appear in your search offer a very easy way into your literature review: not only do they collect together recent relevant papers, but they often summarise and compare their  contributions and methods. If no review articles are included in your hits, you could repeat your search by adding \fakeverb{AND Review} or \fakeverb{AND Survey} to the end of your search term. Alternatively, you could ask your supervisor if they can suggest a review article you can start with. It's a great question to ask at an early meeting with them. Your supervisor may also suggest other seminal papers for you to look at.
 
 By `recent' we mean within 2 to 5 years to ensure you are reviewing work at the leading edge. This is particularly important for fast changing disciplines, such as Computing, where research can become quickly obsolete --- for slow changing disciplines, the timeframe of publication may be less important. Reducing the timeframe of publication is an effective way to cut down the returns considerably. Google Scholar and most bibliographical database search engines allow you to select articles within a specified timeframe.
 
@@ -1081,14 +1098,14 @@ Although you will need to read all of the papers that you find potentially relev
 Don't be too picky at this point: it's better to include something in your database that you don't use later, than to discard something that you find later might have been relevant.
 
 \paragraph{How do I record papers in my BMT?}
-Each academic paper is characterised by bibliographical information, including its title, its authors and their affiliation, where and when it was published and its length in pages. Other information may also be included, like a Digital Object Identifier (DOI)\footnote{A unique alphanumerical string which provides a persistent link to a resource on the internet.} or a web link to where it can be found in an online repository. Several bibliographical styles are used in the academic literature to express bibliographical information\todo{These references need generating automatically, if possible.}.
+Each academic paper is characterised by bibliographical information, including its title, its authors and their affiliation, where and when it was published and its length in pages. Other information may also be included, like a Digital Object Identifier (DOI)\footnote{A unique alphanumerical string which provides a persistent link to a resource on the internet.} or a web link to where it can be found in an online repository. Several bibliographical styles are used in the academic literature to express bibliographical information%\todo{These references need generating automatically, if possible.}.
 
 \begin{example}{Bibliographical styles}
 These are three different bibliographical styles (in brackets) applied to the same article:
 \begin{itemize}
-	\item \emph{(APA)} Keshav, S. (2007). How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), 83-84.
-	\item \emph{(Chicago)} Keshav, Srinivasan. "How to read a paper." ACM SIGCOMM Computer Communication Review 37, no. 3 (2007): 83-84.
-	\item \emph{(Harvard)} Keshav, S., 2007. How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), pp.83-84.
+	\item[] \emph{(APA)} Keshav, S. (2007). How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), 83-84.
+	\item[] \emph{(Chicago)} Keshav, Srinivasan. "How to read a paper." ACM SIGCOMM Computer Communication Review 37, no. 3 (2007): 83-84.
+	\item[] \emph{(Harvard)} Keshav, S., 2007. How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), pp.83-84.
 \end{itemize}
 Note how different typographical conventions are used for different bibliographical elements.
 \end{example}
@@ -1179,7 +1196,7 @@ This is a point where you need to iterate back to searching bibliographical data
 \paragraph{What if too few hits appear relevant?}
 In this case too you will need to iterate back to searching bibliographical databases for new hits. In such cases, however, the few hits you have identified can also help you find other potentially relevant work. This is because articles cite other related articles, and in turn they are cited by other authors in their papers. 
 
-\gloss{Citation searching} is the process of looking backwards and forwards to track citations, starting from an article of interest. Specifically, backward  searching looks through the articles cited by a paper, while forward  searching looks through the articles which cite that paper.
+\Gls{citation searching} is the process of looking backwards and forwards to track citations, starting from an article of interest. Specifically, backward  searching looks through the articles cited by a paper, while forward  searching looks through the articles which cite that paper.
 
 Looking backward is straightforward: all you have to do is go through the reference list at the end of the article. Looking forward, instead, will require you to make use of Google Scholar which, for every hit, provides a list of the articles that cite that paper\footnote{Similar features are available in many other bibliographical databases, like the Web of Science.}. 
 
@@ -1219,7 +1236,7 @@ To understand an academic paper is to understand the contribution to knowledge t
 
 A summary-comparison matrix\footnote{This term is used in \textcite{sastry2013summary}, although another term used online is `literature matrix.'}is a useful tool to track the content of academic articles in a way which also makes it easier to compare the articles you have read. 
 
-A \gloss{summary-comparison matrix} is a table which includes a row for each article you have reviewed, and a number of columns corresponding to key aspects of the article you wish to summarise and compare with other articles, such as the research problem or question addressed, contextual facts known at start of the reported study,  key contributions made, research methods applied, etc. The exact form of the matrix can vary, but we recommend you include at least the following columns in your matrix\footnote{Feel free to adapt it to your own needs, for instance by changing the columns or adding new ones.}:
+A \gls{summary-comparison matrix} is a table which includes a row for each article you have reviewed, and a number of columns corresponding to key aspects of the article you wish to summarise and compare with other articles, such as the research problem or question addressed, contextual facts known at start of the reported study,  key contributions made, research methods applied, etc. The exact form of the matrix can vary, but we recommend you include at least the following columns in your matrix\footnote{Feel free to adapt it to your own needs, for instance by changing the columns or adding new ones.}:
 
 \begin{itemize}
 	\item Reference: either the full reference or the citation key or a link to your BMT, to help you locate the article quickly
@@ -1237,10 +1254,15 @@ A \gloss{summary-comparison matrix} is a table which includes a row for each art
 You can use a spreadsheet to create the matrix. To fill in the entry, you will need to go back to your notes on the article, and possibly skim through the article again to extract the relevant points.
 \end{guidance}
 \begin{solution}
-	This is our attempt. Yours may differ.
+	Our attempt is shown in~\Cref{tab:keshavBibdata}. Yours may differ.
 	
-\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \citeauthor{keshav2007read}, \citeyear{keshav2007read}}[{X[1]X[4]}]
-\relax\\
+\end{solution}
+\end{question}
+%%Hack to correct tcbox behaviour
+\color{black}
+
+\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \textcite{keshav2007read}}[lR[4]]
+Reference&\fullcite{keshav2007read}\\
 %\SetCell[c=2]{l}\fullcite{keshav2007read}\\
 Research problem & to define an approach to reading and assimilating academic articles \\
 Methods & the approach is explained and exemplified; no formal evaluation is presented \\
@@ -1248,10 +1270,6 @@ Premises & research requires spending a significant amount of time and effort re
 Contribution & a practical approach to help researchers engage with the content of an academic articles effectively and efficiently; an outlined process for reviewing the literature based on the approach \\
 Comments & it seems a simple, yet effective approach, well worth applying when working on my literature\\
 \end{SimpleNColTable}
-\end{solution}
-\end{question}
-%%Hack to correct tcbox behaviour
-\color{black}
 
 What to include in your summary-comparison matrix is, of course, a matter of judgement, so there is an element of subjective interpretation of each article content. This is expected, so that the column headings we have chosen should help you be consistent and systematic across different articles. It is also up to you to choose the level of detail for each entry: while you should try to be succinct, it is important that you include enough information to use the matrix without having to continually refer back to your notes and articles. These may result in quite a bit of text included in the matrix, as shown in the next example.
 
@@ -1269,17 +1287,10 @@ How to leverage curriculum data effectively in Higher Education Institutions (HE
 %	\item[] \textbf{Stakeholders:} HEIs, students, society
 %	\item[] \textbf{Reasons:} HEIs' key role is to develop and deliver curriculum to educate and exchange knowledge. It’s vital to HEIs that their curriculum is fit-for-purpose and continuously adapts to the changing needs of students and society. Data can be use as an effective tool for measuring and predicting, in support of curricular decision making 
 %\end{itemize}
-We conducted a literature search, out of which we identified a number of potentially relevant articles. We constructed a summary-comparison matrix, whose first couple of entries are illustrated in~\Cref{t:exampleSCMatrix}. It is not necessary for you to understand all the details, but you may notice that our entries are quite detailed.
-
-\begin{SimpleNColTable}{t:exampleSCMatrix}{6}[\narrowtablewidth]{Example of summary-comparison matrix entries}[{X[1]X[1]X[1]X[1]X[1]X[1]}]
-\relax\\
-Reference & Research problem & Methods & Premises & Contribution & Comments\\
-Hillinger et al., 2023 & to understand how stakeholders can contribute effectively to the design process and adoption strategies of learning analytical tools & cross-analysis of quantitative and qualitative evidence from three case studies & general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development
-& some mechanisms for engaging stakeholders at various development stages; success factors for adoption & not sufficiently specific to curriculum analytics; useful as background\\
-Dennehy et al., 2023 & to evaluate the use of ‘sentiment analytics’ to improve curriculum design and students’ learning & one case study
-& capturing student sentiments on their learning can help understand the quality of their experience and inform teacher inquiry & should be used to complement other kind of analytics and teacher inquiry practices; students as active participants is good for their own development
-& approach seems original; paper lacks focus at times\\
-\end{SimpleNColTable}
+We conducted a literature search, out of which we identified a number of potentially relevant articles. We constructed a summary-comparison matrix, whose first couple of entries are illustrated in~\Cref{t:exampleSCMatrix}. 
+\begin{guidance}
+It is not necessary for you to understand all the details, but you may notice that our entries are quite detailed.	
+\end{guidance}
 \end{example}
 
 \begin{question}[subtitle={Activity: Building your own summary-comparison matrix}] Create a summary-comparison matrix for your project, based on the articles you have identified as potentially relevant during processing.
@@ -1290,25 +1301,37 @@ You should apply the Keshav's approach to read and assimilate the content of eac
 %%Hack to correct tcbox behaviour
 \color{black}
 
+\begin{SimpleNColTable}{t:exampleSCMatrix}{6}{Example of summary-comparison matrix entries}[{rR[1]R[1]R[1]R[1]R[1]}]
+Reference & Research problem & Methods & Premises & Contribution & Comments\\
+Hillinger et al., 2023 & to understand how stakeholders can contribute effectively to the design process and adoption strategies of learning analytical tools & cross-analysis of quantitative and qualitative evidence from three case studies & general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development
+& some mechanisms for engaging stakeholders at various development stages; success factors for adoption & not sufficiently specific to curriculum analytics; useful as background\\
+Dennehy et al., 2023 & to evaluate the use of ‘sentiment analytics’ to improve curriculum design and students’ learning & one case study
+& capturing student sentiments on their learning can help understand the quality of their experience and inform teacher inquiry & should be used to complement other kind of analytics and teacher inquiry practices; students as active participants is good for their own development
+& approach seems original; paper lacks focus at times\\
+\end{SimpleNColTable}
+
 \paragraph{Identifying concepts of interest}
 
 Once you have a number of entries in your summary-comparison matrix, you can start analysing them in order to identify concepts --- facts, ideas, questions, etc. --- relevant to your research problem. You are looking for concepts that can help you address the following questions in relation to your research problem:
 
-\begin{SimpleNColTable}{tab:conceptsOfInterest}{2}[\narrowtablewidth]{Concepts of interest}[X[4]X[4]|]
+\begin{SimpleNColTable}{tab:conceptsOfInterest}{2}[\narrowtablewidth]{Concepts of interest}[R[5]R[4]]
  Questions & Contribute to \\
- {\textbullet~When, where and why does the problem occur?} & Articulating the problem in its context \\
- {\textbullet~Whom does it affect?\\ \textbullet~How serious is it?\\ \textbullet~What are the benefits of addressing it?} & Establishing its significance, stakeholders and beneficiaries \\
-{ \textbullet~What has been done so far to address it?\\ \textbullet~What else could be done to address it? }& Establishing knowledge gaps and the potential contribution to knowledge \\
+ {~\textbullet~When, where and why does the problem occur?} & Articulating the problem in its context \\
+ {~\textbullet~Whom does it affect?}&\SetCell[r=3]{m}Establishing the problem's significance, stakeholders, and beneficiaries \\
+ {~\textbullet~How serious is it?}&\\
+ {~\textbullet~What are the benefits of addressing it?}\\ 
+ {~\textbullet~What has been done so far to address it?}& \SetCell[r=2]{m}Establishing knowledge gaps and the potential contribution to knowledge \\
+{~\textbullet~What else could be done to address it? }& \\
 \end{SimpleNColTable}
 
-To this end, we recommend you highlight concepts of interest within your summary-comparison matrix, then collect them in a \gloss{concept matrix}. This is yet another table, with one concept per row and one article per column, and a tick at their intersection to indicate whether the concept appears in the article. Some concepts will recur across several articles, and the concept matrix is a useful visual tool to identify those recurring concepts. 
+To this end, we recommend you highlight concepts of interest within your summary-comparison matrix, then collect them in a \gls{concept matrix}. This is yet another table, with one concept per row and one article per column, and a tick at their intersection to indicate whether the concept appears in the article. Some concepts will recur across several articles, and the concept matrix is a useful visual tool to identify those recurring concepts. 
 
 Note that an entry from your summary-comparison matrix may include several concepts, so that the entries in your concept matrix will be, in general, more granular. 
 
 \begin{example}{Entry granularity}
 One of the entries in our example summary-comparison matrix reads:
 \begin{quotation}
-general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development	
+\noindent general lack of awareness of how learning analytics tools can provide meaningful and actionable information for everyday use; stakeholder engagement needed throughout tool development	
 \end{quotation}
 from which we can extract a couple of concepts:
 \begin{itemize}
@@ -1332,17 +1355,14 @@ In our example, we have applied the following heuristics to each article, to dec
 	\item Any specific tool/technique/technology developed or adopted to address the problem
 \end{itemize}
 We have, however, avoided details about research methods at this point, as our focus is to characterise and justify our research problem. Research methods are, of course, very important, and something we will consider in detail in Stages 3 and 4.
-
-
-\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\narrowtablewidth]{Example of concept matrix entries}[{X[1]X[1]X[1]X[1]X[1]}]
-\relax\\
-& Hillinger et al., 2023 & McEneaney and Morsink, 2022 & Hillinger et al., 2022  \\
-how stakeholders can contribute effectively to the design process and adoption strategies  & \checkmark & \checkmark & \checkmark  \\
-analytics tools to support continuous curriculum improvement & \checkmark & & \\
-simulation method to explore the possible causal effects of curriculum design before implementation & & \checkmark & \\
-\end{SimpleNColTable}
 \end{example}
 
+\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\the\narrowtablewidth]{Example of concept matrix entries}[R[3]R[3]R[3]R[3]]
+& Hillinger et al., 2023 & McEneaney and Morsink, 2022 & Hillinger et al., 2022  \\
+How stakeholders can contribute effectively to the design process and adoption strategies  & \checkmark & \checkmark & \checkmark  \\
+Analytics tools to support continuous curriculum improvement & \checkmark\\
+Simulation method to explore the possible causal effects of curriculum design before implementation & & \checkmark \\
+\end{SimpleNColTable}
 
 
 \begin{question}[subtitle={Activity: Building your own concept matrix}] Create a concept matrix for your own project, derived from your summary-comparison matrix through the identification of concepts of interest.
@@ -1356,14 +1376,14 @@ You could start by applying the heuristics from the example to identify concepts
 \subsection{Synthesising}%\label{sect:stage1Synthesising} -- old
 \label{ssect:Synthesising}
 
-The next step is to analyse both recurrent concepts and concept relationships to work out whether they contribute to wider common themes. This is a step of synthesis and abstraction: \gloss{synthesis} in the sense of bringing together different ideas; \gloss{abstraction} in the sense of deciding whether specific concepts may be instances of more general ones. Let's look at what we mean through our example.
+The next step is to analyse both recurrent concepts and concept relationships to work out whether they contribute to wider common themes. This is a step of synthesis and abstraction: \gls{synthesis} in the sense of bringing together different ideas; \gls{abstraction} in the sense of deciding whether specific concepts may be instances of more general ones. Let's look at what we mean through our example.
 
 \begin{example}{What we mean by common themes}
 In our review, we found that many concepts we have identify point to some sort of modelling of students' study pathways through study programmes. While both modelling techniques and the purpose of it may vary from article to article, they all shared this common theme. By recognising `modelling study pathways' as an emerging theme, we can both abstract and bring together research from different authors, making it easier for us to write a summary which compares and contrasts their work.  
 \end{example}
 
 \paragraph{Developing a concept map}
-To find common themes you will need to exercise both judgement and creativity, and the tool we recommend you use is a \gloss{concept map}: this is a diagram where you can visualise concepts and their relationship. To produce your map you could use any drawing package, or a physical board. What matters is that the tool you use should allow you to `move things around' to explore different ways to relate and group your concepts. 
+To find common themes you will need to exercise both judgement and creativity, and the tool we recommend you use is a \gls{concept map}: this is a diagram where you can visualise concepts and their relationship. To produce your map you could use any drawing package, or a physical board. What matters is that the tool you use should allow you to `move things around' to explore different ways to relate and group your concepts. 
 
 In constructing your concept map, we recommend you follow the following process:
 \begin{description}
@@ -1516,9 +1536,9 @@ In your research, you may wish to collect data about your human participants. Th
 
 \paragraph{Personal data}
 Within the European Union, the General Data Protection Regulation (GDPR) applies. %\footnote{At the time of writing{\ldots}} 
-GDPR defines \gloss{personal data} as any information which may identify a living person, be that a name or a personal identification number, or a combination of physical characteristics, or cultural or social identities, and establishes rules for the use of such data.
+GDPR defines \gls{personal data} as any information which may identify a living person, be that a name or a personal identification number, or a combination of physical characteristics, or cultural or social identities, and establishes rules for the use of such data.
 
-It also establishes particular legal protection or safeguards for \gloss{sensitive personal data}, that is, data which may reveal:
+It also establishes particular legal protection or safeguards for \gls{sensitive personal data}, that is, data which may reveal:
 
 \begin{itemize}
 \item Racial or ethnic origin
@@ -1605,14 +1625,14 @@ In the UK, national EDI definitions and principles have been established across 
 
 As stated by the UKRI EDI guidance\footnote{https://www.ukri.org/manage-your-award/good-research-resource-hub/guidance-for-equality-diversity-and-inclusion/}: \enquote{research and innovation should be by everyone, for everyone -- a dynamic, diverse and inclusive research and innovation system in the UK is an integral part of society and should give everyone the opportunity to participate and to benefit.} And also that: \enquote{By valuing all, we recognise that a diversity of ideas, opinions, knowledge and people enriches our work and enlarges our knowledge economy.}
 
-Equity\footnote{It is worth noting that both equity and equality are often used in the literature as the `E' in EDI. There is, however, a difference: \gloss{equality} refers to treating everybody in the same way, while equity acknowledges specific barriers or obstacles which affect certain individuals or groups of individuals, and seeks to remove them. The latter is now considered the better definition of the two.}, Diversity and Inclusion are as follows:
+Equity\footnote{It is worth noting that both equity and equality are often used in the literature as the `E' in EDI. There is, however, a difference: \gls{equality} refers to treating everybody in the same way, while equity acknowledges specific barriers or obstacles which affect certain individuals or groups of individuals, and seeks to remove them. The latter is now considered the better definition of the two.}, Diversity and Inclusion are as follows:
 
 \begin{itemize}
-\item \gloss{Equity} relates to fairness and justice, in the sense of removing barriers or bias\footnote{We discuss bias in~\Cref{sect:biasInResearch}.} which may prevent individuals, or groups of individuals, from having equality of access, opportunity or outcomes
+\item \gls{equity} relates to fairness and justice, in the sense of removing barriers or bias\footnote{We discuss bias in~\Cref{sect:biasInResearch}.} which may prevent individuals, or groups of individuals, from having equality of access, opportunity or outcomes
 
-\item \gloss{Diversity} refers to the full spectrum of differences and similarities between individuals, whether socio-demographic, such as age, gender, race, ethnicity, etc., or in terms of beliefs and values, life experiences or personal preferences
+\item \gls{diversity} refers to the full spectrum of differences and similarities between individuals, whether socio-demographic, such as age, gender, race, ethnicity, etc., or in terms of beliefs and values, life experiences or personal preferences
 
-\item \gloss{Inclusion} concerns ensuring that all individuals feel welcome, valued and confident to be treated fairly and respectfully. Inclusion is often paraphrased as `diversity becoming normal'.
+\item \gls{inclusion} concerns ensuring that all individuals feel welcome, valued and confident to be treated fairly and respectfully. Inclusion is often paraphrased as `diversity becoming normal'.
 \end{itemize}
 
 Your university is likely to have policies that guide research towards good EDI, with which you should become familiar.
@@ -1679,7 +1699,7 @@ At our university, all research involving animals is tightly regulated: all prop
 \section{Intellectual property}\label{sect:IntellectualProperty}
 
 
-\gloss{Intellectual property} (IP) is the owned property created through intellect, such as an invention, an artwork, a formula for some chemical compounds, etc. It is worth noticing that in this definition\footnote{If you find this confusing, think about a house or a car you may own. In legal terms, you have the property of that house or car, which gives you certain rights in law. However, in common language you may refer to your house or car as your own property.} \enquote{property} has the legal meaning of a collection of rights applying to the things which have been created, rather than the things themselves The two meanings are often confused in the wider literature on intellectual property: in this book we will use the term IP to refer to the system of rights.
+\Gls{intellectual property} (IP) is the owned property created through intellect, such as an invention, an artwork, a formula for some chemical compounds, etc. It is worth noticing that in this definition\footnote{If you find this confusing, think about a house or a car you may own. In legal terms, you have the property of that house or car, which gives you certain rights in law. However, in common language you may refer to your house or car as your own property.} \enquote{property} has the legal meaning of a collection of rights applying to the things which have been created, rather than the things themselves The two meanings are often confused in the wider literature on intellectual property: in this book we will use the term IP to refer to the system of rights.
 
 Some IP gives rise to specific rights which are protected by law\footnote{For instance, the UK Intellectual Property Act 2014 (\url{https://www.legislation.gov.uk/ukpga/2014/18/contents/enacted}) defines a number of IP rights, establishing whom they belong to and what they allow the owner to do.}.
 
@@ -1737,7 +1757,7 @@ At the time of writing, these are among the most used GenAI systems:
 
 Impressive as it may be, GenAI has a number of pitfalls you should be aware of. Firstly, the content generated depends heavily on the data set used to train the algorithm, so that any intrinsic bias in the data set will also be present in the newly generated content. For instance, if discriminatory language is present in the training data, the same will be the case in the content generated by the algorithm.
 
-Secondly, the technology is designed to fill in any gap there may be in their knowledge base with plausible, but made-up information, so that what is generated may not be true or reliable. The term \gloss{hallucination} is used to denote such behaviour, although fabrication would probably be a more accurate term! So, for instance, if you ask the AI to provide a summary of a particular topic including a list of references on which the summary is based,  more often than not, those references will include completely made-up entries, although constructed in a way which makes them look perfectly legitimate (by applying the patterns learnt from academic paper references used in the training process). Hallucination means that you can't necessarily rely on the veracity of the content generated, and any significant use of it in your research is only possibly after you have double checked both its accuracy and authenticity, and, ideally where it comes from. 
+Secondly, the technology is designed to fill in any gap there may be in their knowledge base with plausible, but made-up information, so that what is generated may not be true or reliable. The term \gls{hallucination} is used to denote such behaviour, although fabrication would probably be a more accurate term! So, for instance, if you ask the AI to provide a summary of a particular topic including a list of references on which the summary is based,  more often than not, those references will include completely made-up entries, although constructed in a way which makes them look perfectly legitimate (by applying the patterns learnt from academic paper references used in the training process). Hallucination means that you can't necessarily rely on the veracity of the content generated, and any significant use of it in your research is only possibly after you have double checked both its accuracy and authenticity, and, ideally where it comes from. 
 
 Another important consideration is that not being copied from somewhere else doesn't mean novelty: although originally expressed, the content is still pieced together from what is already known, so there is no new knowledge contribution or creative invention. Equally, the algorithm has no understanding or critical insight of what is generated: it is just very clever at putting the puzzle together from existing pieces and rules learnt. As a result, you should not expect deep or critical accounts of a topic of interest, but you may still obtain good factual summaries or descriptions.
 
@@ -1767,7 +1787,7 @@ Our university explicitly states some admissible and not admissible uses of GenA
 
 \section{Bias in research}\label{sect:biasInResearch}
 
-\gloss{Bias} is a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence. \gloss{Cognitive bias}, in particular, prevents people from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning. 
+\Gls{bias} is a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence. \Gls{cognitive bias}, in particular, prevents people from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning. 
 
 Bias is problematic when it leads to the unfair treatment of others, particularly as a result of pre-conceptions or prejudice.  Bias is subtle. We are all affected by it. It is easy to see in others, but extremely difficult to see in oneself.
 
@@ -1781,15 +1801,15 @@ Bias is problematic when it leads to the unfair treatment of others, particularl
 \begin{solution} Among others, you may have encountered the following:
 
 \begin{itemize}
-\item \gloss{Confirmation bias} is the tendency to favour the selection, analysis and interpretation of data which support the researcher's prior beliefs. A way to counteract it is to consider your own beliefs and actively look for reasons why you might be wrong. Another way is to ask colleagues and/or your peers to review your work, including your arguments and results
+\item \gls{confirmation bias} is the tendency to favour the selection, analysis and interpretation of data which support the researcher's prior beliefs. A way to counteract it is to consider your own beliefs and actively look for reasons why you might be wrong. Another way is to ask colleagues and/or your peers to review your work, including your arguments and results
 
-\item \gloss{Observation bias}\footnote{Observation bias is also known as the Hawthorne effect. You can read about the original Hawthorne experiment here: \href{https://en.wikipedia.org/wiki/Hawthorne_effect}{https://en.wikipedia.org/wiki/Hawthorne\_effect}.} is the tendency of participants being observed during a study to change their behaviour, possibly to please the researcher or provide the answers they think the research is seeking. A way to counteract it is to complement your observation with other kinds of data collection and compare the outcomes -- this is called \gloss{triangulation}
+\item \gls{observation bias}\footnote{Observation bias is also known as the Hawthorne effect. You can read about the original Hawthorne experiment here: \href{https://en.wikipedia.org/wiki/Hawthorne_effect}{https://en.wikipedia.org/wiki/Hawthorne\_effect}.} is the tendency of participants being observed during a study to change their behaviour, possibly to please the researcher or provide the answers they think the research is seeking. A way to counteract it is to complement your observation with other kinds of data collection and compare the outcomes -- this is called \gls{triangulation}
 
-\item \gloss{Selection bias} occurs when data or participants are selected subjectively, leading to samples which are not representative of the population under study. A common way to avoid selection bias is \gloss{randomisation}, that is applying an algorithm that guarantees that all population data or individuals have equal chance to be selected for a study
+\item \gls{selection bias} occurs when data or participants are selected subjectively, leading to samples which are not representative of the population under study. A common way to avoid selection bias is \gls{randomisation}, that is applying an algorithm that guarantees that all population data or individuals have equal chance to be selected for a study
 
-\item \gloss{Recall bias} is the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories. It can be mitigated by reducing the recall period, for instance by interviewing participants soon after the fact, or by asking then to keep detailed diaries of their experience 
+\item \gls{recall bias} is the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories. It can be mitigated by reducing the recall period, for instance by interviewing participants soon after the fact, or by asking then to keep detailed diaries of their experience 
 
-\item \gloss{Algorithmic bias}, particularly in relation to AI applications, occurs when an algorithm produces outcomes which systematically and repeatably disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic, particularly given the rise of AI algorithms which may replace human decision makers, and much remains unknown. Current approaches include involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outputs, as well as ensuring that the working of the algorithm is transparent to its users, and its behaviour can be explained.
+\item \gls{algorithmic bias}, particularly in relation to AI applications, occurs when an algorithm produces outcomes which systematically and repeatably disadvantage one group of individuals over others. Counteracting algorithmic bias effectively is a hot research topic, particularly given the rise of AI algorithms which may replace human decision makers, and much remains unknown. Current approaches include involving domain experts alongside data scientists in the detailed consideration of both the data used by an algorithm and its outputs, as well as ensuring that the working of the algorithm is transparent to its users, and its behaviour can be explained.
 \end{itemize}
 \end{solution}\end{question}
 %%Hack to correct tcbox behaviour
@@ -1911,8 +1931,8 @@ It is also essential you identify any regulations which may limit what you can d
 \section{Summarising your project risk}\label{sect:SummarisingYourProjectRisk}
 It is time to summarise the outcome of your risk analysis. To do so, you could use a risk table similar to~\Cref{tab:riskTable}. Note that the table encourages you to consider also risk specific to your project which may not fall within the categories we have already considered.
 
-\begin{SimpleNColTable}{tab:riskTable}{5}{Risk table}[X[3]X[1]X[1]X[1]X[1]|]
-Category & Specific risks & & Likelihood & Impact & Mitigation/contingency
+\begin{SimpleNColTable}{tab:riskTable}{5}{Project risk table}[lRRRR]
+Category & Specific risks & Likelihood & Impact & Mitigation/contingency
 \\
  Technical skills & & & &  \\
  Study time & & & &  \\
@@ -1922,7 +1942,7 @@ Category & Specific risks & & Likelihood & Impact & Mitigation/contingency
 \end{SimpleNColTable}
 
 
-\begin{question}[subtitle={Activity: Risk assessment for your project }] Complete your project risk assessment by filling in the entries in~\Cref{tab:riskTable}. 
+\begin{question}[subtitle={Activity: Risk assessment for your project }] Complete your project risk assessment by making your own version of~\Cref{tab:riskTable} and filling it in.
 
 \begin{guidance}
 You should already have most of the required content from your previous activities.
@@ -2030,20 +2050,20 @@ You should ensure that each required section by the end of Stage 1 includes at l
 \section{Assessing and iterating}\label{sect:AssessingAndIterating}
 After you have filled in your report with as much material as you can, you should review and revise it until you are happy with your account, and ready to move on. This may take more than one iteration, but you should ensure you do not delay your work for the follow-up stage.
 
-In the next activity, you will use~\Cref{tab:criteriaForReport} to assess whether your report is of good standard. Even if you are not required to submit a report at this stage of your project, a good report will give you a solid base on which to build and report your next research increment. B and in the long run, will save you time and effort in writing up your dissertation.
+In the next activity you will use~\Cref{tab:criteriaForFirstReport} to assess whether your report is of good standard. Even if you are not required to submit a report at this stage of your project, a good report will give you a solid base on which to build and report your next research increment. Now and in the long run, will save you time and effort in writing up your dissertation.
 
-\begin{SimpleNColTable}{tab:criteriaForReport}{2}{Criteria for reviewing your report}[X[2]X[6]|]
-Criteria & Prompts \\
-Completeness & Are all sections included and their content complete? What is missing?\\
-Academic writing & Is your writing clear, concise and precise? Should you improve it further? \\
-Logical structure and flow & Have you structured your writing so that your narrative follows a logical flow? Which restructuring may be needed?\\
-Supporting evidence & Are all your claims supported by appropriate references or other evidence? Which further evidence do you still need?\\
-Citation and reference style & Do all your citations and references comply with the bibliographical style required by your course? \\
-Avoiding plagiarism & Have you acknowledged the work of others? Is it clearly distinguished from your own? \\
-Grammar and spelling & Have you proof-read your report carefully to remove all typos and grammatical errors? \\
+\begin{SimpleNColTable}{tab:criteriaForFirstReport}{3}{Reviewing your report}[lRR]
+Criteria & Prompt& Remedy \\
+Completeness & Are all sections included and their content complete? &What is missing?\\
+Academic writing & Is your writing clear, concise and precise? &How will you improve it?\\
+Logical structure and flow & Have you structured your writing so that your narrative has a logical flow? & What restructuring do you need to do?\\
+Supporting evidence & Are all your claims supported by appropriate references or other evidence? &What further evidence do you need?\\
+Citation and reference style & Do all your citations and references comply with the bibliographical style required by your course, if any? & How should you change them? \\
+Avoiding plagiarism & Have you acknowledged the work of others? & How will you distinguished it from your own? \\
+Grammar and spelling & Have you proof-read your report carefully to remove all typos and grammatical errors? & What do you need to revise?\\
 \end{SimpleNColTable}
 
-\begin{question}[subtitle={Activity: Reviewing your first report}] Apply the criteria in~\Cref{tab:criteriaForFirstReport} to review and improve on your current report. Think about what is good, what is weak and what is yet to do, and write up a summary of your assessment. For work still do do, decide whether to complete it within Stage 1 or carry it over to Stage 2.
+\begin{question}[subtitle={Activity: Reviewing your first report}] Apply the criteria in~\Cref{tab:criteriaForFirstReport} to review and improve on your current report. Think about what is good, what is weak and what is yet to do, and write up a summary of your assessment. For work still to do, decide whether to complete it within Stage 1 or carry it over to Stage 2.
 \begin{guidance}
 For each criteria, consider the related prompts to help you assess your report overall, and write down any further work needed: some will be minor and may be done with another pass at editing your report; others may point to substantial work you will need to do in Stage 2, and should be included in your work plan.
 \end{guidance}
@@ -2054,8 +2074,10 @@ For each criteria, consider the related prompts to help you assess your report o
 Writing up your report is an excellent way to consolidated the work you have completed and that you are still planning to do, and is something tangible you can share with your supervisor for feedback and guidance.
 
 \chapter*{Stage 1 Takeaways}\label{ch:Stage1Takeaways}
+
+Stage 1 gives you a solid foundation for your whole research project. This is where you establish the scope of your research and its contribution to knowledge. Here're the takeaways from Stage 1.
+%
 \begin{itemize}
-\item Stage 1 gives you a solid foundation for your whole research project. This is where you establish the scope of your research and its contribution to knowledge
 \item You should plan your overall project from the start, then review, refine and adjust your work plan as you make progress in your research. The 5-stage framework gives you the guidance you need to establish your initial project work plan, including identifying major milestones, deliverables and research activities stage by stage
 \item You work plan should guide you work, but not constrain it unnecessarily. It should be flexible enough to allow for the unknowns of doing research
 \item You can express your research problem in terms of its key elements, that is, context, knowledge gap, phenomena of interest, stakeholders and justification
