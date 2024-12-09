@@ -97,13 +97,15 @@
 %\newcommand{\widetablewidth}{\the\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
 %\newcommand{\narrowtablewidth}{\the\dimexpr(\textwidth-\marginparwidth/8)\relax}
 \newcommand{\widetablewidth}{\textwidth+\marginparsep+\marginparwidth}
-\newcommand{\narrowtablewidth}{\textwidth-\marginparwidth/4}%Ensure - isn't –
+\newcommand{\narrowtablewidth}{\textwidth} %Ensure - isn't –
 
 %Table colours – not used
 \newcommand{\tableBackgroundColor}{black!90!white}
 
 %%Create new column type for ragged right in body.
 \NewColumnType{R}[1][1]{X[#1,preto={\raggedright}]}
+
+
 
 %%Simple N column table
 \NewDocumentEnvironment{SimpleNColTable}{
