@@ -96,6 +96,9 @@
 \newcommand{\fullcites}[1]{\def\multicitedelim{\item }\begin{itemize}\item \itemcites{#1}\end{itemize}}
 \DeclareMultiCiteCommand{\itemcites}{\fullcite}{}
 
+\RequirePackage{glossaries}
+\RequirePackage{glossaries-extra}
+\makenoidxglossaries
 
 %%Xrefs
 \usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
