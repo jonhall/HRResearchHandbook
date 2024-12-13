@@ -4,12 +4,10 @@
 %%For fakeverb, so tables show \verb
 \usepackage{codehigh}
 
-%%For layout
+%%Layout
 \usepackage{geometry}
 \geometry{
 % showframe,
-%  paperwidth=6in,
-%  paperheight=9in,
   left=2cm,
   right=1cm,
   top=1.5cm,
@@ -41,11 +39,8 @@
 ]{Arial}
 \setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
 
-
 \usepackage{titling}
 
-%\usepackage{parskip}%%Doesn't seem to have an effect
-%
 %%JGH 2024-10-03: fiddle with table of contents spacing
 \usepackage{tocloft}
 \makeatletter
@@ -71,14 +66,6 @@
 
 %%Set numbering depth
 \setsecnumdepth{subsubsection}
-%%memoir: Adjust spacing in toc for part number
-%\renewcommand\partnumberline[1]{#1}
-%\renewcommand*{\partname}{Stage}
-%\renewcommand*{\partrefname}{Stage~}
-
-%%Correcting tableofcontents overfull boxes
-%\usepackage{tocloft} % not loaded
-%\cftsetpnumwidth{1cm}
 
 \usepackage[UKenglish]{babel}% recommended
 %%Biblatex stuff
@@ -95,24 +82,37 @@
 %%Define the fullcites to be an itemized list
 \newcommand{\fullcites}[1]{\def\multicitedelim{\item }\begin{itemize}\item \itemcites{#1}\end{itemize}}
 \DeclareMultiCiteCommand{\itemcites}{\fullcite}{}
+%%Autoinclude bib below (after Glossary)
 
-\RequirePackage{glossaries}
-\RequirePackage{glossaries-extra}
-\makenoidxglossaries
+%%Glossary
+\usepackage[
+	record,				% create group field and other stuff
+	postpunc={dot},		% full stop after description
+	nostyles,			% don't load default style packages
+	stylemods={tree}	% load glossary-tree.sty and patch styles
+]{glossaries-extra}
+
+\GlsXtrLoadResources[
+	src={glossary.bib},		% bib file
+	selection={all}		% select all entries
+]
+%%%To process the glossary, use bib2gls @MastersHandbook.aux in the appropriate directory
+
+%%Ensure bibliography/glossary always included, even if \end{document} early
+\AtEndDocument{%
+	%%Removed \if for convenience, 2024-06-05
+	%\ifoptionfinal{%\printsolutions}{}
+
+	\printbibliography[title=Collated \bibname]
+	
+	\printunsrtglossary[style=tree,type=main]\label{ch:Glossary}
+}
+
 
 %%Xrefs
 \usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
 \usepackage{xurl}
 
-%%Glossary
-\input{glossaries}
-
-%%Ensure bibliography always included, even if \end{document} early
-%\AtEndDocument{%
-%%%Removed \if for convenience, 2024-06-05
-%%\ifoptionfinal{%\printsolutions}{}
-%	\printbibliography}
-	
 \usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
 %%Uncomment for italicised quotes
 %\renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
@@ -138,13 +138,6 @@
 
 %%T.o.d.o notes
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
-% 2022-10-11: so that todos don't eat following spaces.
-% https://tex.stackexchange.com/questions/11802/todo-note-steals-space
-%\usepackage{xpatch}
-%\makeatletter
-%\xpretocmd{\todo}{\@bsphack}{}{}
-%\xapptocmd{\todo}{\@esphack}{}{}
-%\makeatother
 
 %%Load lasts
 \usepackage{cleveref}
