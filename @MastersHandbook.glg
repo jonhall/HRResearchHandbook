@@ -1,0 +1,191 @@
+bib2gls 3.9 (2024-01-30)
+Default encoding: UTF-8
+Reading @MastersHandbook.log
+Encoding: not set
+Detected package fontspec
+Detected package glossaries-extra 2023/09/29
+Detected package glossaries 2024/11/01
+Detected package mfirstuc 2022/10/14
+No sentence case protection required now
+Default setting --no-mfirstuc-protection now applied, use --mfirstuc-protection to revert
+Default setting --no-mfirstuc-math-protection now applied, use --mfirstuc-math-protection to revert
+Reading @MastersHandbook.aux
+Encoding: UTF-8
+Reading Foreword.aux
+Encoding: UTF-8
+TeX character encoding: UTF-8
+Initialising resource @MastersHandbook.glstex.
+Parsing bib files for resource @MastersHandbook.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossary.bib
+Encoding: UTF-8
+Cross-resource references allowed.
+Processing resource @MastersHandbook.glstex.
+Warning: Entry 'box-and-whiskers-plot' missing required field: description
+Warning: Entry 'sensitive-personal-datum' missing required field: description
+Selecting entries for resource @MastersHandbook.glstex.
+Warning: Parent 'project' not found for entry capstone-project
+Warning: Parent 'probablility distribution' not found for entry normal-distribution
+Identical sort values for 'sample' and 'samples'
+Falling back on ID
+Writing /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/@MastersHandbook.glstex
+Encoding: UTF-8
+abstraction
+academic-literature
+accidental-plagiarism
+active-reader
+algorithmic-bias
+analysis-method
+anti-positivism
+association
+bell-curve
+beneficiary
+bias
+bias-weakness
+cognitive-bias
+confirmation-bias
+observation-bias
+recall-bias
+bibliographic-management-tool
+bin-size
+boolean-operator
+bcw-model
+box-and-whiskers-plot
+boxplot
+bracketing
+capstone-project
+Warning: Parent project does not occur before entry capstone-project so removing relationship.
+categorical-datum
+citation-searching
+code
+code-categorisation
+codebook
+coding
+concept-map
+concept-matrix
+confounding-factor
+constructivism
+content-analysis
+contingency-table
+correlation
+critical-theory
+cross-tabulation
+data-source
+datum
+primary-datum
+decision
+deductive-coding
+deductive-reasoning
+deliverable
+descriptive
+discourse-analysis
+diversity
+empirical-data
+epistemology
+equality
+equity
+evidence
+experiential-learning
+falsification
+frequency-table
+gantt-chart
+generation-methods
+grey-literature
+groupthink
+hallucination
+histogram
+hypotheses
+hypothesis
+alternative-hypothesis
+null-hypothesis
+in-vivo
+inclusion
+indigenous
+inductive-coding
+inductive-reasoning
+intellectual-property
+interval-data
+learning-outcome
+logical-fallacies
+longitudinal-data
+mean
+median
+meta-analysis
+methodology
+milestone
+mode
+model
+modelling-methods
+multi-method-research
+narrative-analysis
+narrative-review
+nominal-datum
+normal-design
+normal-distribution
+Warning: Parent probablility distribution does not occur before entry normal-distribution so removing relationship.
+novelty-weaknesses
+numerical-approximation
+numerical-data
+ontology
+ordinal-data
+personal-datum
+sensitive-personal-datum
+pivot-table
+plagiarism
+self-plagiarism
+plan-act-reflect
+point-data
+population
+positivism
+post-positivism
+primary-evidence
+probability-sampling
+proof-by-contradiction
+proposition
+p-value
+qualitative-data
+quantitative-data
+random-sampling
+randomisation
+range
+ratio-data
+raw-data
+reflection
+reflexivity
+reliability-weaknesses
+research-assets
+research-beneficiary
+research-design
+research-methods
+research-paradigms
+research-problem
+research-process
+research-strategy
+research-style
+review-article
+sample
+samples
+sample-bias
+sampling
+sampling-frame
+saturation
+search-term
+secondary-data
+secondary-evidence
+selection-bias
+significance
+skewness
+stakeholder
+standard-deviation
+statistical-significance
+summary-comparison-matrix
+synthesis
+system
+thematic-analysis
+theory
+triangulation
+validity-weaknesses
+version-control-system
+work-plan
+155 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/@MastersHandbook.glstex.
