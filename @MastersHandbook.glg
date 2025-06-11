@@ -13,6 +13,20 @@ Reading @MastersHandbook.aux
 Encoding: UTF-8
 Reading Foreword.aux
 Encoding: UTF-8
+Reading HowTo.aux
+Encoding: UTF-8
+Reading Introduction.aux
+Encoding: UTF-8
+Reading FrameworkOverview.aux
+Encoding: UTF-8
+Reading Stage1.aux
+Encoding: UTF-8
+Reading Stage2.aux
+Encoding: UTF-8
+Reading Stage3.aux
+Encoding: UTF-8
+Reading Stage4.aux
+Encoding: UTF-8
 TeX character encoding: UTF-8
 Initialising resource @MastersHandbook.glstex.
 Parsing bib files for resource @MastersHandbook.glstex.
@@ -22,11 +36,10 @@ Reading glossary.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource @MastersHandbook.glstex.
-Warning: Entry 'box-and-whiskers-plot' missing required field: description
 Warning: Entry 'sensitive-personal-datum' missing required field: description
+Warning: Can't find target Gaussian-distribution, bell-curve for aliased entry normal-distribution.
+Aliased entries must be in the same resource set as their target entries with option alias-loc=transfer.
 Selecting entries for resource @MastersHandbook.glstex.
-Warning: Parent 'project' not found for entry capstone-project
-Warning: Parent 'probablility distribution' not found for entry normal-distribution
 Identical sort values for 'sample' and 'samples'
 Falling back on ID
 Writing /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/@MastersHandbook.glstex
@@ -45,8 +58,11 @@ bias
 bias-weakness
 cognitive-bias
 confirmation-bias
+novelty-bias
 observation-bias
 recall-bias
+reliability-bias
+validity-bias
 bibliographic-management-tool
 bin-size
 boolean-operator
@@ -55,7 +71,6 @@ box-and-whiskers-plot
 boxplot
 bracketing
 capstone-project
-Warning: Parent project does not occur before entry capstone-project so removing relationship.
 categorical-datum
 citation-searching
 code
@@ -73,7 +88,11 @@ critical-theory
 cross-tabulation
 data-source
 datum
+nominal-datum
+numerical-datum
+ordinal-datum
 primary-datum
+qualitative-datum
 decision
 deductive-coding
 deductive-reasoning
@@ -81,16 +100,18 @@ deliverable
 descriptive
 discourse-analysis
 diversity
-empirical-data
+empirical-datum
 epistemology
 equality
 equity
 evidence
 experiential-learning
+fallacy
+logical-fallacy
 falsification
 frequency-table
 gantt-chart
-generation-methods
+generation-method
 grey-literature
 groupthink
 hallucination
@@ -105,10 +126,9 @@ indigenous
 inductive-coding
 inductive-reasoning
 intellectual-property
-interval-data
+interval-datum
 learning-outcome
-logical-fallacies
-longitudinal-data
+longitudinal-datum
 mean
 median
 meta-analysis
@@ -116,48 +136,44 @@ methodology
 milestone
 mode
 model
-modelling-methods
+modelling-method
 multi-method-research
 narrative-analysis
 narrative-review
-nominal-datum
 normal-design
-normal-distribution
-Warning: Parent probablility distribution does not occur before entry normal-distribution so removing relationship.
-novelty-weaknesses
+novelty-weakness
 numerical-approximation
-numerical-data
 ontology
-ordinal-data
 personal-datum
 sensitive-personal-datum
 pivot-table
 plagiarism
 self-plagiarism
 plan-act-reflect
-point-data
+point-datum
 population
 positivism
 post-positivism
 primary-evidence
+probability-distribution
+normal-distribution
 probability-sampling
 proof-by-contradiction
 proposition
 p-value
-qualitative-data
-quantitative-data
+quantitative-datum
 random-sampling
 randomisation
 range
-ratio-data
-raw-data
+ratio-datum
+raw-datum
 reflection
 reflexivity
-reliability-weaknesses
+reliability-weakness
 research-assets
 research-beneficiary
 research-design
-research-methods
+research-method
 research-paradigms
 research-problem
 research-process
@@ -171,7 +187,7 @@ sampling
 sampling-frame
 saturation
 search-term
-secondary-data
+secondary-datum
 secondary-evidence
 selection-bias
 significance
@@ -185,7 +201,13 @@ system
 thematic-analysis
 theory
 triangulation
-validity-weaknesses
+data-source-triangulation
+investigator-triangulation
+methodological-triangulation
+theory-triangulation
+validity
+internal-validity
+validity-weakness
 version-control-system
 work-plan
-155 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/@MastersHandbook.glstex.
+166 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/@MastersHandbook.glstex.
