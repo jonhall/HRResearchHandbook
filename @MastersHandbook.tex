@@ -22,7 +22,7 @@
 %\usepackage[draft]{showlabels}
 
 %%Main document preamble files
-\input{ResBookHeader}
+\input{Code/ResBookHeader}
 
 \title{Academic Research\\%
 	\emph{A Guide for the Perplexed}}
@@ -31,7 +31,7 @@
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-%\includeonly{}
+\includeonly{Chapters/Stage1}
 
 %\usepackage{showlabels}
 %\renewcommand{\showlabelfont}{\small\slshape\color{red}}
@@ -51,29 +51,29 @@
 %\newpage
 %\listoftables
 
-\include{Foreword}
+\include{Chapters/Foreword}
 
-\include{HowTo}
+\include{Chapters/HowTo}
 
 \mainmatter
 
-	\include{Introduction}
+	\include{Chapters/Introduction}
 
-	\include{FrameworkOverview}
+	\include{Chapters/FrameworkOverview}
 
-	\include{Stage1}
+	\include{Chapters/Stage1}
 	
-	\include{Stage2}
+	\include{Chapters/Stage2}
 	
-	\include{Stage3}
+	\include{Chapters/Stage3}
 	
-	\include{Stage4}
+	\include{Chapters/Stage4}
 	
-	\include{Stage5}
+	\include{Chapters/Stage5}
 
 \backmatter
 
-	\include{Closing}
+	\include{Chapters/Closing}
 	
 %%Bibliography and Glossary include automatically
 
