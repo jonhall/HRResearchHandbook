@@ -36,6 +36,10 @@
 	 			label={#1},
 				caption={#4},
 				expand=\headers,
+				  % outer option "halign" is undocumented!
+  % new value "r-hss": ragged right using \hss
+				halign=r-hss,
+				toggle-left-and-right
 			]{
 	 			width = \widetablewidth,
 				colspec = {R[3]R[6]R[1]|[2pt,gray]},
@@ -59,7 +63,7 @@
 %\newcommand{\widetablewidth}[0]{\textwidth}
 
 \newcommand{\StageOneWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage2WO}{3}{\stageWO{1}}
+\begin{SimpleNColTableWO}{stage1WritingOutcomes}{3}{\stageWO{1}}
         \headers\\
     %%Title
 	Title & Your provisional title &\Cref{sect:ChoosingATitle}\\
@@ -109,7 +113,7 @@
 }
 
 \newcommand{\StageTwoWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage2WO}{3}{\stageWO{2}}
+\begin{SimpleNColTableWO}{stage2WritingOutcomes}{3}{\stageWO{2}}
         \headers\\
     %%Title
 	Title & \WOrevise\\
@@ -158,7 +162,7 @@
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageThreeWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage3WO}{3}{\stageWO{3}}
+\begin{SimpleNColTableWO}{stage3WritingOutcomes}{3}{\stageWO{3}}
         \headers\\
    %%Title
 	Title & \WOclose\\
@@ -207,7 +211,7 @@
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageFourWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage4WO}{3}{\stageWO{4}}
+\begin{SimpleNColTableWO}{stage4WritingOutcomes}{3}{\stageWO{4}}
         \headers\\
     %%Title
 	Title & \WOclose \\
@@ -256,7 +260,7 @@
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageFiveWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage5WO}{3}{\stageWO{5}}
+\begin{SimpleNColTableWO}{stage5WritingOutcomes}{3}{\stageWO{5}}
         \headers\\
     %%Title
 	Title & Finalise your title  \\
@@ -502,7 +506,7 @@
 %\end{SimpleNColTableWO}}
 
 \newcommand{\StageFiveWritingGuidance}{
-\begin{SimpleNColTableWO}{stage5WG}{3}{Final form of your dissertation}
+\begin{SimpleNColTableWO}{stage5WritingGoals}{3}{Final form of your dissertation}
         \headers\\
     %%Title
 	Title & Your title should capture succinctly your research problem and aim  &\Cref{sect:ChoosingATitle}\\

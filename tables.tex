@@ -13,19 +13,99 @@
 %\SetTblrOuter{expand=\frameColor}
 %\SetTblrOuter{expand=\activityColor}
 
+%%Hack from Yakai Chou
+\ExplSyntaxOn
+\cs_undefine:N \__tblr_halign_whole:Nn
+\cs_new_protected:Npn \__tblr_halign_whole:Nn #1#2
+  {
+    \__tblr_check_odd_page:
+    \use:e
+      {
+        \__tblr_halign_whole_aux:Nnn #1
+          \__tblr_toggle_left_right:nn
+            {
+              \str_if_eq:nnT {#2} {l} { \hfil }
+              \str_if_eq:nnT {#2} {l-hss} { \hss }
+            }
+            {
+              \str_if_eq:nnT {#2} {r} { \hfil }
+              \str_if_eq:nnT {#2} {r-hss} { \hss }
+            }
+      }
+  }
+
+\cs_new_protected:Npn \__tblr_halign_whole_aux:Nnn #1#2#3
+  {
+    \noindent
+    % why not use \__tblr_prop_item:nn { inner } { width }?
+    \hbox_to_wd:nn { \linewidth }
+      {
+        #2
+        \box_use:N #1
+        #3
+      }
+  }
+
+\cs_new_protected:Npn \__tblr_check_odd_page: {}
+
+% named after "/tcb/toggle left and right" key from tcolorbox
+\cs_new:Npn \__tblr_toggle_left_right:nn #1#2 { {#1} {#2} }
+
+% pity, file hooks like "package/<pkgname>/after" are not one-time hooks
+\hook_gput_code:nnn { begindocument } { tblr }
+  {
+    \IfPackageLoadedTF {changepage}
+      {
+%      	\write16{"Changepage~loaded:~setting~tblr~option"}
+        \cs_gset_protected:Npn \__tblr_check_odd_page:
+          {
+          	\checkoddpage
+%            \ifoddpage{\write16{"tblr:~oddpage"}}
+%            \else{\write16{"tblr:~evenpage"}}
+%            \fi
+          }
+        \cs_gset:Npn \__tblr_toggle_left_right:nn #1#2
+          {
+            \bool_lazy_all:nTF
+              {
+                { \l__tblr_toggle_left_right_bool }
+                { \legacy_if_p:n { @twoside } } % \if@twoside
+                { ! \legacy_if_p:n { oddpage } } % \ifoddpage from changepage pkg
+              }
+              { {#2} {#1} }
+              { {#1} {#2} }
+          }
+      }
+      {}
+  }
+
+% glue code for https://github.com/muzimuzhi/tabularray-dev
+\keys_if_exist:nnTF { tblr/__outer } { halign }
+  { \write16{"halign~exists~in~tblr/__outer"}
+  	\keys_define:nn { tblr/__outer} }
+  { \write16{"halign~doesn't~exist~in~tblr/__outer"}
+	\keys_define:nn { tblr/outer } }
+  {
+    toggle-left-and-right .bool_set:N = \l__tblr_toggle_left_right_bool
+  , toggle-left-and-right .default:n  = true
+  }
+\ExplSyntaxOff
+
 %%Define the widest tables width
 %\newlength{\widetablewidth}
 %\newlength{\narrowtablewidth}
 %\newcommand{\widetablewidth}{\the\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
 %\newcommand{\narrowtablewidth}{\the\dimexpr(\textwidth-\marginparwidth/8)\relax}
 \newcommand{\widetablewidth}{\textwidth+\marginparsep+\marginparwidth}
-\newcommand{\narrowtablewidth}{\textwidth-\marginparwidth/4}%Ensure - isn't –
+\newcommand{\narrowtablewidth}{\textwidth} %Ensure - isn't –
 
 %Table colours – not used
 \newcommand{\tableBackgroundColor}{black!90!white}
 
 %%Create new column type for ragged right in body.
 \NewColumnType{R}[1][1]{X[#1,preto={\raggedright}]}
+
+
 
 %%Simple N column table
 \NewDocumentEnvironment{SimpleNColTable}{
@@ -41,8 +121,12 @@
 		\begin{tblr}[
 				long,
 	 			label={#1},
-				caption={#4}
+				caption={#4},
 %				expand=\activityColor
+  % outer option "halign" is undocumented!
+  % new value "r-hss": ragged right using \hss
+				halign=r-hss,
+				toggle-left-and-right
 			]{
 		  		colspec = {#5},
 	 			width = {#3},
@@ -71,7 +155,12 @@
 \NewDocumentEnvironment{ResActTable}{O{Missing caption}+b}{
 	\begin{tblr}[
 			long,
-			caption={#1}
+			caption={#1},
+			  % outer option "halign" is undocumented!
+  % new value "r-hss": ragged right using \hss
+				halign=r-hss,
+				toggle-left-and-right
+
 		]{
 			measure=vbox, 
 			stretch=-1,%%Allows lists in body, with no padding

@@ -1,10 +1,13 @@
-\newgeometry{margin=6cm}
-\begin{titlingpage}
-\part{The Scope}\label{part:scope}
-\end{titlingpage}
+\newcommand{\MRpart}[3]{
+\cleardoublepage
+\newgeometry{margin=8cm}
+\begin{titlingpage*}
+\renewcommand{\afterpartskip}{\vfill \noindent\Large #3}
+\part{#1}\label{#2}
+\end{titlingpage*}
 \restoregeometry
-
-In all research, but particularly at Masters where time is limited, it is important to establish the scope of your project early on: this is the main focus of Stage 1. 
+}
+\MRpart{The Scope}{part:scope}{In all research, but particularly at Masters where time is limited, it is important to establish the scope of your project early on: this is the main focus of Stage 1.}
 
 %\todo{Resolve confusion around here}
 
@@ -12,10 +15,9 @@ In all research, but particularly at Masters where time is limited, it is import
 
 Stage 1 is fundamental as it gives you the solid foundation for the whole of your research project. As such it is an intense stage, where you will be expected to undertake a wide range of research activities.
 
-For this stage, and the following ones, we provide two really important tables that structure and drive the work by which you will see progress in your research and in the creation of your dissertation. For the research, each stage contains a Research Activity table\footnote{The first such table is~\Cref{stage1ResearchActivities}, and we'll get back to it in a minute or so.} and a Writing Outcome table\footnote{The first of which is~\Cref{stage1WritingOutcomes}.} through which you can understand and track the stage's contribution to your dissertation. The Research Activity table also inlcudes prompts in relation to topics it is important you discuss with your supervisor during the stage, while the Writing Outcomes table includes references to materials in this book which can help you achieve each of them. 
+For this stage, and the following ones, we provide two really important tables that structure and drive the work by which you will see progress in your research and in the creation of your dissertation. For the research, each stage contains a Research Activity table\footnote{The first such table is~\Cref{stage1ResearchActivities}, and we'll get back to it in a minute or so.} and a Writing Outcome table\footnote{The first of which is~\Cref{stage1WritingOutcomes}.} through which you can understand and track the stage's contribution to your dissertation. The Research Activity table also includes prompts in relation to topics it is important you discuss with your supervisor during the stage, while the Writing Outcomes table includes references to materials in this book which can help you achieve each of them. 
 
 So you should get familiar with these tables, they're of the same form and in the same place in all stages – right at the beginning, up front, and centre.
-
 
 
 \section{Your Research Activities for this stage}
