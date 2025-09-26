@@ -70,7 +70,7 @@
 \usepackage[UKenglish]{babel}% recommended
 %%Biblatex stuff
 \usepackage[
-	backend=bibtex8,
+%	backend=bibtex8,
 	style=authoryear,
 	autocite=inline,
 	sortcites,
@@ -102,6 +102,7 @@
 \usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
 \usepackage{xurl}
 
+%%Quotes and such
 \usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
 %%Uncomment for italicised quotes
 %\renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
@@ -119,11 +120,11 @@
 \setcounter{tocdepth}{2}
 
 %%Activity environment definitions
-\input{Code/environments}
+\input{environments.tex}
 	
 %%Table definitions
-\input{Code/tables}
-\input{Code/WOtables}
+\input{tables.tex}
+\input{WOtables.tex}
 
 %%T.o.d.o notes
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
@@ -132,3 +133,13 @@
 \usepackage{cleveref}
 \usepackage{listliketab}
 
+%%Part formatting
+\newcommand{\MRpart}[3]{
+	\cleardoublepage
+	\newgeometry{margin=8cm}
+	\begin{titlingpage*}
+	\renewcommand{\afterpartskip}{\vfill \noindent\Large #3}
+	\part{#1}\label{#2}
+	\end{titlingpage*}
+\restoregeometry
+}

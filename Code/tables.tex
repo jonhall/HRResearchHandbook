@@ -6,145 +6,57 @@
 \counterwithout*{figure}{part}
 
 %%Migrating to tabularray as for tabular
-\usepackage{Code/tabularray}
+\usepackage{tabularray}
 \UseTblrLibrary{varwidth}%%For itemize in entries
 \UseTblrLibrary{booktabs}%%For lines in entries
 \UseTblrLibrary{siunitx}%%For aligned decimal points
 %\SetTblrOuter{expand=\frameColor}
 %\SetTblrOuter{expand=\activityColor}
+\NewTblrColumnType{R}[1][]{Q[co=1,#1]}
 
-%%Hack from Yakai Chou
-\ExplSyntaxOn
-\cs_undefine:N \__tblr_halign_whole:Nn
-\cs_new_protected:Npn \__tblr_halign_whole:Nn #1#2
-  {
-    \__tblr_check_odd_page:
-    \use:e
-      {
-        \__tblr_halign_whole_aux:Nnn #1
-          \__tblr_toggle_left_right:nn
-            {
-              \str_if_eq:nnT {#2} {l} { \hfil }
-              \str_if_eq:nnT {#2} {l-hss} { \hss }
-            }
-            {
-              \str_if_eq:nnT {#2} {r} { \hfil }
-              \str_if_eq:nnT {#2} {r-hss} { \hss }
-            }
-      }
-  }
-
-\cs_new_protected:Npn \__tblr_halign_whole_aux:Nnn #1#2#3
-  {
-    \noindent
-    % why not use \__tblr_prop_item:nn { inner } { width }?
-    \hbox_to_wd:nn { \linewidth }
-      {
-        #2
-        \box_use:N #1
-        #3
-      }
-  }
-
-\cs_new_protected:Npn \__tblr_check_odd_page: {}
-
-% named after "/tcb/toggle left and right" key from tcolorbox
-\cs_new:Npn \__tblr_toggle_left_right:nn #1#2 { {#1} {#2} }
-
-% pity, file hooks like "package/<pkgname>/after" are not one-time hooks
-\hook_gput_code:nnn { begindocument } { tblr }
-  {
-    \IfPackageLoadedTF {changepage}
-      {
-%      	\write16{"Changepage~loaded:~setting~tblr~option"}
-        \cs_gset_protected:Npn \__tblr_check_odd_page:
-          {
-          	\checkoddpage
-%            \ifoddpage{\write16{"tblr:~oddpage"}}
-%            \else{\write16{"tblr:~evenpage"}}
-%            \fi
-          }
-        \cs_gset:Npn \__tblr_toggle_left_right:nn #1#2
-          {
-            \bool_lazy_all:nTF
-              {
-                { \l__tblr_toggle_left_right_bool }
-                { \legacy_if_p:n { @twoside } } % \if@twoside
-                { ! \legacy_if_p:n { oddpage } } % \ifoddpage from changepage pkg
-              }
-              { {#2} {#1} }
-              { {#1} {#2} }
-          }
-      }
-      {}
-  }
-
-% glue code for https://github.com/muzimuzhi/tabularray-dev
-\keys_if_exist:nnTF { tblr/__outer } { halign }
-  { \write16{"halign~exists~in~tblr/__outer"}
-  	\keys_define:nn { tblr/__outer} }
-  { \write16{"halign~doesn't~exist~in~tblr/__outer"}
-	\keys_define:nn { tblr/outer } }
-  {
-    toggle-left-and-right .bool_set:N = \l__tblr_toggle_left_right_bool
-  , toggle-left-and-right .default:n  = true
-  }
-\ExplSyntaxOff
-
-%%Define the widest tables width
-%\newlength{\widetablewidth}
-%\newlength{\narrowtablewidth}
-%\newcommand{\widetablewidth}{\the\dimexpr(\textwidth+\marginparsep+\marginparwidth)\relax}
-%\newcommand{\narrowtablewidth}{\the\dimexpr(\textwidth-\marginparwidth/8)\relax}
-\newcommand{\widetablewidth}{\textwidth+\marginparsep+\marginparwidth}
-\newcommand{\narrowtablewidth}{\textwidth} %Ensure - isn't –
-
-%Table colours – not used
-\newcommand{\tableBackgroundColor}{black!90!white}
-
-%%Create new column type for ragged right in body.
-\NewColumnType{R}[1][1]{X[#1,preto={\raggedright}]}
-
-
+\let\narrowtablewidth=\textwidth
+\let\widetablewidth=\textwidth
 
 %%Simple N column table
 \NewDocumentEnvironment{SimpleNColTable}{
+		s					% * = not-long table, for tblrs in tcboxes
 		m% 					% label
 		m%					% number of columns
-		O{\widetablewidth} 	% tablewidth (default: \widetablewidth)
+		O{\linewidth} 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{XXXXXXXXXX|}%	% optional colspec
-		O{}					% Any other options to pass
-		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
+		O{X[1,l]*{10}{X[7,l]}}%	% optional colspec
+		O{}					% Additional options
+		+b%					% body
 		}%
 		{
-		\begin{tblr}[
+		\IfBooleanTF{#1}{\begin{center}}	
+			{\SetTblrOuter{	%%Add Outer only if non-star
 				long,
-	 			label={#1},
-				caption={#4},
-%				expand=\activityColor
-  % outer option "halign" is undocumented!
-  % new value "r-hss": ragged right using \hss
-				halign=r-hss,
-				toggle-left-and-right
-			]{
-		  		colspec = {#5},
-	 			width = {#3},
-				stretch=-1,%%Allows lists in body, with no padding
-				hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+	 			label={#2},
+				caption={#5},
+				expand=\headers,
+				}
+			}
+		\begin{tblr}
+			{
+	 			width = #4, % default = \linewidth
+				colspec = {#6},
+		  		hline{Z} = {fg = \frameColor, wd=2pt},
 				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep = 5pt,
-%TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} = {font=\bfseries, fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
-				rows = {m,rowsep = 3mm},
+				row{1} = {font=\bfseries, fg = white, bg=\frameColor},
+				rows = {m},
 				rowhead = 1,
-				#6, % Any other options passed directly
 				measure=vbox, 
+				#7		%%Additional options
 			}
-			#7
+			#8
 		\end{tblr}
-	}{}
+	}{\IfBooleanT{#1}{%%If non-star version, ensure center
+			\end{center}
+		}
+	}	
 
 %%Complex table definitions
 %%All ResActTables follow this format

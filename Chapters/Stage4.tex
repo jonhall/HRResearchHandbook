@@ -1333,15 +1333,8 @@ You can generate a pivot table from any data set organised in rows and columns, 
 \Cref{tab:exampledata set} gives the first few rows of Kaggle's housing price data set, a data set  related to the US housing market. Kaggle is possibly the largest and best known online community for data science and machine learning, so that its data sets are often used in research and teaching.  
 
 The housing price data set contains over 9,316 entries, each corresponding to a distinct US property, characterised by the following attributes: size in square feet, number of bedrooms and bathrooms, type of neighbourhood, the year it was built and its market price in US dollars. As you can see, the table includes both numerical and categorical variables.
-%
-%%\begin{figure}[htbp]
-%%\centering
-%%\includegraphics[width=\textwidth]{figures/exampledata set.pdf}
-%%\caption{first few rows of the example data set}
-%%\label{fig:exampledata set}
-%%\end{figure}
-%
-\begin{SimpleNColTable}{tab:exampledata set}{7}[\narrowtablewidth]{Example: the US housing market}[X[-1,r]X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]]
+
+\begin{SimpleNColTable}*{tab:exampledataset}{7}{Example: the US housing market}[rrrrcrr]
 	ID & Square feet & Bedrooms & Bathrooms & N.hood & Year & Price (\$)\\
 	1 & 2126 & 4 & 1 & Rural & 1969 & 215,355\\
 	2 & 2459 & 3 & 2 & Rural & 1980 & 195,014\\
@@ -1352,16 +1345,13 @@ The housing price data set contains over 9,316 entries, each corresponding to a 
 
 
 Pivot tables can be used to summarise data to answer specific questions. For instance, you may ask what is the average house price by neighbourhood and number of bedrooms, which would result in the pivot table in~\Cref{tab:pivot1}, which gives the mean price of each combination. From this you can analyse how the mean price is affected by each of the factor, for instance you can see how 5-bedroom houses in the suburbs tend to have the highest average price, while 2-bedroom houses in the same neighbourhood are the cheapest.
-%
-%%\begin{figure}[htbp]
-%%\centering
-%%\includegraphics[width=\textwidth]{figures/pivot1.pdf}
-%%\caption{Pivot table of average property prices by neighbourhood and number of bedrooms}
-%%\label{fig:pivot1}
-%%\end{figure}
-%
 
-\begin{SimpleNColTable}{tab:pivot1}{5}[\narrowtablewidth]{Pivot table of average property prices by neighbourhood and number of bedrooms}[X[-1,r]X[c]X[c]X[c]X[c]][row{2,Z} = {bg=\frameColor,fg=white,font=\bfseries}]
+\begin{SimpleNColTable}*{tab:pivot1}
+	{5}
+	[\narrowtablewidth]
+	{Pivot table of average property prices by neighbourhood and number of bedrooms}
+	[rrrrr]
+	[row{2,Z} = {bg=\frameColor,fg=white,font=\bfseries}]
 	N.hood & Rural & Suburb & Urban & Mean \\
 	Bedrooms & \SetCell[c=4]{c}{Price (Mean/\$)}\\
 	2 & 218,323 & 216,300 & 220,050 & 215,355\\
@@ -1380,7 +1370,7 @@ Alternatively, you may be interested in how many properties of each kind have be
 %\label{fig:pivot2}
 %\end{figure}
 
-\begin{SimpleNColTable}{tab:pivot2}{6}[\narrowtablewidth]{Pivot table of property counts by neighbourhood and number of bedrooms/bathrooms}[X[-1,c]X[-1,c]X[c]X[c]X[c]X[c]][row{2,6,10,Z} = {bg=\frameColor,fg=white,font=\bfseries},column{2,Z} = {bg=\frameColor,fg=white,font=\bfseries}]
+\begin{SimpleNColTable}*{tab:pivot2}{6}[\narrowtablewidth]{Pivot table of property counts by neighbourhood and number of bedrooms/bathrooms}[X[-1,c]X[-1,c]X[c]X[c]X[c]X[c]][row{2,6,10,Z} = {bg=\frameColor,fg=white,font=\bfseries},column{2,Z} = {bg=\frameColor,fg=white,font=\bfseries}]
 	&\SetCell[c=1]{r}N.hood:  & Rural & Suburb & Urban & \\
 	Beds & Baths &&&&Total \\
 	2 & 1 & 180 & 220 & 261 & 661\\
@@ -1422,7 +1412,7 @@ If you use Excel, its help facility and documentation provide all the info you n
 \begin{example}{Frequency and contingency tables for degree classifications}
 In our university, after studying a degree, a student's outcome is classed as one of distinction, merit, pass or fail. You could use a frequency table to summarise the frequency of each class of outcome for a particular students' cohort, as shown in~\Cref{tab:frequencyTableExample}.
  
-\begin{SimpleNColTable}{tab:frequencyTableExample}{5}[\narrowtablewidth]{Classifications frequencies}[rcccc|]
+\begin{SimpleNColTable}*{tab:frequencyTableExample}{5}[\narrowtablewidth]{Classifications frequencies}[rcccc|]
 	& Distinction & Merit & Pass & Fail \\
 	Outcome & 12 & 26 & 42 & 5\\
 \end{SimpleNColTable}
@@ -1430,7 +1420,7 @@ In our university, after studying a degree, a student's outcome is classed as on
 You could also use a contingency table to tabulate the outcome value frequencies in the cohort against gender, as shown in~\Cref{tab:contingencyTableExample}. 
 
 
-\begin{SimpleNColTable}{tab:contingencyTableExample}{4}[\narrowtablewidth]{Classifications frequencies by gender} [rccc|]
+\begin{SimpleNColTable}*{tab:contingencyTableExample}{4}[\narrowtablewidth]{Classifications frequencies by gender} [rccc|]
 	 & Female & Male & Other\\
 	Distinction & 7 & 5 & 0\\
 	Merit & 12 & 13 & 1\\
@@ -1560,7 +1550,7 @@ In the current version of Excel, you can access this function from the Data tab,
 
 You should have obtained the values in~\Cref{tab:values}.
 
-\begin{SimpleNColTable}{tab:values}{2}{Values}[{rS[table-format=3.2]}]
+\begin{SimpleNColTable}*{tab:values}{2}{Values}[{rS[table-format=3.2]}]
 {{{Attribute}}} & {{{Value}}} \\%%Triple {{{}}} on page 51 of tabularray manual
 mean & 128.47 \\
 median & 129 \\

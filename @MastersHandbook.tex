@@ -1,14 +1,3 @@
-%To reduce warning overload 
-\hfuzz 12cm%%Doesn't affect overfull table reports
-%\vfuzz 9999pt
-%\vbadness=10001
-%\hbadness=10001
-%\RequirePackage{silence}
-%\WarningFilter{latex}{Reference}
-%\WarningFilter{latex}{Marginpar}
-%\ErrorsOff
-
-%\documentclass[a4paper,12pt,oneside,landscape]{memoir}
 \documentclass[a4paper,10pt,landscape,twoside,openany]{memoir}
 
 %%Trying to get Part pages correct
@@ -20,9 +9,11 @@
 }
 
 %\usepackage[draft]{showlabels}
+%%Nest code for neatness with import package
+\usepackage{import}
 
 %%Main document preamble files
-\input{Code/ResBookHeader}
+\inputfrom{Code}{ResBookHeader}
 
 \title{Academic Research\\%
 	\emph{A Guide for the Perplexed}}
@@ -31,7 +22,7 @@
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-\includeonly{Chapters/Stage1}
+%\includeonly{Chapters/Stage2}%,Chapters/Stage2}%,Chapters/Stage3,Chapters/Stage4,Chapters/Stage5,Chapters/Closing}
 
 %\usepackage{showlabels}
 %\renewcommand{\showlabelfont}{\small\slshape\color{red}}
