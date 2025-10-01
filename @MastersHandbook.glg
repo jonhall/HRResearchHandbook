@@ -1,0 +1,220 @@
+bib2gls 4.6 (2025-07-27)
+Default encoding: UTF-8
+Current working directory: /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook
+Reading @MastersHandbook.log
+Encoding: not set
+Detected package fontspec
+Detected package glossaries-extra 2025/08/13
+Detected package glossaries 2025/08/11
+Detected package mfirstuc 2025/04/03
+No sentence case protection required now
+Default setting --no-mfirstuc-protection now applied, use --mfirstuc-protection to revert
+Default setting --no-mfirstuc-math-protection now applied, use --mfirstuc-math-protection to revert
+Reading @MastersHandbook.aux
+Encoding: UTF-8
+Reading Chapters/Foreword.aux
+Encoding: UTF-8
+Reading Chapters/HowTo.aux
+Encoding: UTF-8
+Reading Chapters/Introduction.aux
+Encoding: UTF-8
+Reading Chapters/FrameworkOverview.aux
+Encoding: UTF-8
+Reading Chapters/Stage1.aux
+Encoding: UTF-8
+Reading Chapters/Stage2.aux
+Encoding: UTF-8
+Reading Chapters/Stage3.aux
+Encoding: UTF-8
+Reading Chapters/Stage4.aux
+Encoding: UTF-8
+Reading Chapters/Stage5.aux
+Encoding: UTF-8
+Reading Chapters/Closing.aux
+Encoding: UTF-8
+TeX character encoding: UTF-8
+Initialising resource @MastersHandbook.glstex.
+Parsing bib files for resource @MastersHandbook.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossary.bib
+Encoding: UTF-8
+Cross-resource references allowed.
+Processing resource @MastersHandbook.glstex.
+Warning: Entry 'sensitive-personal-datum' missing required field: description
+Warning: Can't find target Gaussian-distribution, bell-curve for aliased entry normal-distribution.
+Aliased entries must be in the same resource set as their target entries with option alias-loc=transfer.
+Selecting entries for resource @MastersHandbook.glstex.
+Identical sort values for 'sample' and 'samples'
+Falling back on ID
+Writing /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex
+Encoding: UTF-8
+abstraction
+academic-literature
+accidental-plagiarism
+active-reader
+algorithmic-bias
+analysis-method
+anti-positivism
+association
+bell-curve
+beneficiary
+bias
+bias-weakness
+cognitive-bias
+confirmation-bias
+novelty-bias
+observation-bias
+recall-bias
+reliability-bias
+validity-bias
+bibliographic-management-tool
+bin-size
+boolean-operator
+bcw-model
+box-and-whiskers-plot
+boxplot
+bracketing
+capstone-project
+categorical-datum
+citation-searching
+code
+code-categorisation
+codebook
+coding
+computational-model
+computational-thinking
+concept-map
+concept-matrix
+confounding-factor
+constructivism
+content-analysis
+contingency-table
+correlation
+critical-theory
+cross-tabulation
+data-source
+datum
+nominal-datum
+numerical-datum
+ordinal-datum
+primary-datum
+qualitative-datum
+decision
+deductive-coding
+deductive-reasoning
+deliverable
+descriptive
+discourse-analysis
+diversity
+empirical-datum
+epistemology
+equality
+equity
+evidence
+experiential-learning
+fallacy
+logical-fallacy
+falsification
+frequency-table
+gantt-chart
+generation-method
+grey-literature
+groupthink
+hallucination
+histogram
+hypotheses
+hypothesis
+alternative-hypothesis
+null-hypothesis
+in-vivo
+inclusion
+indigenous
+inductive-coding
+inductive-reasoning
+intellectual-property
+interval-datum
+learning-outcome
+longitudinal-datum
+mean
+median
+meta-analysis
+methodology
+milestone
+mode
+model
+modelling-method
+multi-method-research
+narrative-analysis
+narrative-review
+normal-design
+novelty-weakness
+numerical-approximation
+ontology
+personal-datum
+sensitive-personal-datum
+pivot-table
+plagiarism
+self-plagiarism
+plan-act-reflect
+point-datum
+population
+positivism
+post-positivism
+primary-evidence
+probability-distribution
+normal-distribution
+probability-sampling
+proof-by-contradiction
+proposition
+p-value
+quantitative-datum
+random-sampling
+randomisation
+range
+ratio-datum
+raw-datum
+reflection
+reflexivity
+reliability-weakness
+research-assets
+research-beneficiary
+research-design
+research-method
+research-paradigms
+research-problem
+research-process
+research-strategy
+research-style
+review-article
+sample
+samples
+sample-bias
+sampling
+sampling-frame
+saturation
+search-term
+secondary-datum
+secondary-evidence
+selection-bias
+significance
+skewness
+stakeholder
+standard-deviation
+statistical-significance
+summary-comparison-matrix
+synthesis
+system
+thematic-analysis
+theory
+triangulation
+data-source-triangulation
+investigator-triangulation
+methodological-triangulation
+theory-triangulation
+validity
+internal-validity
+validity-weakness
+version-control-system
+work-plan
+168 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.

@@ -36,13 +36,13 @@
 	 			label={#1},
 				caption={#4},
 				expand=\headers,
-				  % outer option "halign" is undocumented!
-  % new value "r-hss": ragged right using \hss
+% outer option "halign" is undocumented!
+% new value "r-hss": ragged right using \hss
 				halign=r-hss,
-				toggle-left-and-right
+%				toggle-left-and-right
 			]{
 	 			width = \widetablewidth,
-				colspec = {R[3]R[6]R[1]|[2pt,gray]},
+				colspec = {X[3]X[6]X[1]|[2pt,gray]},
 				cells={#6}, %Cell background colour
 %		  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 		  		hline{2,3,8,12,15,19,24,28,35,36,38} = {fg = \frameColor,3pt},
@@ -59,9 +59,6 @@
 		\end{tblr}
 	}{}
 	
-%\newcommand{\frameColor}{blue}
-%\newcommand{\widetablewidth}[0]{\textwidth}
-
 \newcommand{\StageOneWritingOutcomes}{
 \begin{SimpleNColTableWO}{stage1WritingOutcomes}{3}{\stageWO{1}}
         \headers\\
@@ -298,7 +295,7 @@
 		
 	Chapter 6: Evaluation and conclusion&provide an overall evaluation of your research and draw your conclusions&\Cref{sect:evaluateWholeResearch}\\
 		\newitem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
-		\newitem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic literature} to highlight your novel contribution\\
+		\newitem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight your novel contribution\\
 		\newitem Validity of the research&Argue the validity, reliability and lack of bias of your research, highlighting how you have addressed research weaknesses in your methodology\\
 		\newitem Future work&Discuss ways in which your findings may inform future research\\
 		\newitem Implications for practice&If applicable, argue how your findings may influence professional practice\\
@@ -561,7 +558,7 @@
 	You should discuss possible implications of your work for further research and, if applicable, for professional practice\\
 	Your concluding reflexive statement should highlight what you have learnt during your project from a personal standpoint in relation to thinking and behaving as an academic researcher}&\Cref{sect:evaluateWholeResearch}\\
 		\olditem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
-		\olditem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic literature} to highlight your novel contribution\\
+		\olditem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight your novel contribution\\
 		\olditem Validity of the research&Argue the validity, reliability and lack of bias of your research, highlighting how you have addressed research weaknesses in your methodology\\
 		\olditem Future work&Discuss ways in which your findings may inform future research\\
 		\olditem Implications for practice&If applicable, argue how your findings may influence professional practice\\
