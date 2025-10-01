@@ -5,114 +5,78 @@
 \newcommand{\discussionColor}{\activityColor} 
 \newcommand{\tipColor}{Green!20!white} 
 \newcommand{\quoteColor}{Linen} 
+\newcommand{\takeawaysColor}{black!10!white}
 \newcommand{\frameColor}{black!50!white}
-\usepackage[many]{tcolorbox}
-\newtcolorbox{activity}{
-%  enhanced,
-  breakable,
-%  pad at break=2mm,
-  left=2mm,
-  right=2mm,
-  colback=\activityColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
-  frame hidden, 
-  segmentation hidden,
-  before=\par\vspace*{2mm},
-  after=\par\bigskip,
-	title=%\textbf
-		{\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID}}
 
-\newtcolorbox{discussion}{
+%%for activities, etc
+\usepackage[many]{tcolorbox}
+%%Default tcbox settings
+\tcbset{%
 %  enhanced,
   breakable,
+%  before={\par\Needspace{5\baselineskip}}, % adjust to taste
   pad at break=2mm,
   left=2mm,
   right=2mm,
-  colback=\discussionColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
+  width=\textwidth, 
   frame hidden, 
   segmentation hidden,
-  before=\par\vspace*{2mm},
+%  before=\par\vspace*{2mm},
   after=\par\bigskip,
+  colframe=\frameColor,
+ }
+
+%%Takeaways
+\newtcolorbox{takeaways}[1]{
+	move upwards=\topmargin,
+	colback=\takeawaysColor,
+	title={\Large{#1 Takeaways}},
+  }
+
+%%Activities
+\newtcolorbox{activity}{
+  colback=\activityColor,
+  title=%\textbf
+		{\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID}
+}
+
+%%Discussions
+\newtcolorbox{discussion}{
+  colback=\discussionColor,
   title={Discussion\hfill \#\CurrentQuestionID},
 }
 
- %%Guidance environment
+%%Guidance environment
 \newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
           {\textbf{Guidance}}}
     {}
 
+%%tips
 \newtcolorbox{tip}{
-%  enhanced,
-  breakable,
-  pad at break=2mm,
-  left=2mm,
-  right=2mm,
   colback=\tipColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
-  frame hidden, 
-  segmentation hidden,
-  before=\par\vspace*{2mm},
-  after=\par\bigskip,
   title={Tip},
 }
 
 \newtcolorbox{example}[1]{
-%  enhanced,
-  breakable,
-  pad at break=2mm,
-  left=2mm,
-  right=2mm,
   colback=\exampleColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
-%  frame hidden, 
-  segmentation hidden,
-  before=\par\vspace*{2mm},
-  after=\par\bigskip,
-  title=\textbf{#1}}%
+  title=\textbf{Example: #1}}%
   
 \newtcolorbox{running}[1]{
-%  enhanced,
-  breakable,
-  pad at break=2mm,
-  left=2mm,
-  right=2mm,
   colback=\exampleColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
-%  frame hidden, 
-  segmentation hidden,
-  before=\par\vspace*{2mm},
-  after=\par\bigskip,
   title=\textbf{#1}}%
 
 %%Quote environment
 \renewtcolorbox{quote}{
-%  enhanced,
-  breakable,
-  pad at break=2mm,
-  left=2mm,
-  right=2mm,
   colback=\quoteColor,
-  colframe=\frameColor,
-%  drop fuzzy midday shadow=black!50!yellow, 
-  width={\textwidth}, 
-%  frame hidden, 
-  segmentation hidden,
-  before=\par\vspace*{2mm},
-  after=\par\bigskip,
   title=\textbf{Quote}}%
-
-%%%For question solution pairs, with delayed printing
+  
+%%Answer environment
+%%Is this used?
+\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
+\item}
+    {\end{trivlist}}
+    
+%%%For question solution pairs, with optional delayed printing
 \usepackage{exsheets}
 \SetupExSheets{
 	headings=empty,
@@ -124,13 +88,6 @@
 	}
 %\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
 
-%%Answer environment
-%%Is this used?
-\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
-\item}
-    {\end{trivlist}}
-    
-    
 %%%%%%% for choosing strategies/methods and related further deep dive into literature
 %%%%From Stage 4
 %%Resource type = fulltext cite in itemized list

@@ -20,9 +20,11 @@
 }
 
 %\usepackage[draft]{showlabels}
+%%Nest code for neatness with import package
+\usepackage{import}
 
 %%Main document preamble files
-\input{ResBookHeader}
+\inputfrom{Code}{ResBookHeader}
 
 \title{Academic Research\\%
 	\emph{A Guide for the Perplexed}}
@@ -31,7 +33,7 @@
 
 \def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
-\includeonly{FrameworkOverview,Stage1}
+%\includeonly{Chapters/Stage1}%,Chapters/Stage2}%,Chapters/Stage3,Chapters/Stage4,Chapters/Stage5,Chapters/Closing}
 
 %\usepackage{showlabels}
 %\renewcommand{\showlabelfont}{\small\slshape\color{red}}
@@ -42,7 +44,7 @@
 \restoregeometry
 
 \frontmatter
-%\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{3}
 \tableofcontents
 
 \newpage
@@ -51,35 +53,30 @@
 %\newpage
 %\listoftables
 
-%\include{Foreword,Introduction,FrameworkOverview}
+\include{Chapters/Foreword}
 
-\include{HowTo}
+\include{Chapters/HowTo}
 
 \mainmatter
 
-	\include{Foreword}
-	
-	\include{Introduction}
+	\include{Chapters/Introduction}
 
-	\include{FrameworkOverview}
+	\include{Chapters/FrameworkOverview}
 
-	\include{Stage1}
+	\include{Chapters/Stage1}
 	
-	\include{Stage2}
+	\include{Chapters/Stage2}
 	
-	\include{Stage3}
+	\include{Chapters/Stage3}
 	
-	\include{Stage4}
+	\include{Chapters/Stage4}
 	
-	\include{Stage5}
+	\include{Chapters/Stage5}
 
 \backmatter
 
-	\include{Closing}
+	\include{Chapters/Closing}
 	
-	\printbibliography[title=Collated \bibname]
-	
-	\printnoidxglossary[style=tree]\label{ch:Glossary}
-
+%%Bibliography and Glossary include automatically
 
 \end{document}
