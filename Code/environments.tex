@@ -5,6 +5,7 @@
 \newcommand{\discussionColor}{\activityColor} 
 \newcommand{\tipColor}{Green!20!white} 
 \newcommand{\quoteColor}{Linen} 
+\newcommand{\takeawaysColor}{black!10!white}
 \newcommand{\frameColor}{black!50!white}
 
 %%for activities, etc
@@ -13,16 +14,24 @@
 \tcbset{%
 %  enhanced,
   breakable,
+%  before={\par\Needspace{5\baselineskip}}, % adjust to taste
   pad at break=2mm,
   left=2mm,
   right=2mm,
   width=\textwidth, 
   frame hidden, 
   segmentation hidden,
-  before=\par\vspace*{2mm},
+%  before=\par\vspace*{2mm},
   after=\par\bigskip,
   colframe=\frameColor,
  }
+
+%%Takeaways
+\newtcolorbox{takeaways}[1]{
+	move upwards=\topmargin,
+	colback=\takeawaysColor,
+	title={\Large{#1 Takeaways}},
+  }
 
 %%Activities
 \newtcolorbox{activity}{
@@ -50,7 +59,7 @@
 
 \newtcolorbox{example}[1]{
   colback=\exampleColor,
-  title=\textbf{#1}}%
+  title=\textbf{Example: #1}}%
   
 \newtcolorbox{running}[1]{
   colback=\exampleColor,

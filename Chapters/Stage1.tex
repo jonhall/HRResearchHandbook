@@ -1248,25 +1248,24 @@ You can use a spreadsheet to create the matrix. To fill in the entry, you will n
 \end{guidance}
 \begin{solution}
 	Our attempt is shown in~\Cref{tab:keshavBibdata}. Yours may differ.
-	
 \end{solution}
 \end{question}
 %%Hack to correct tcbox behaviour
 \color{black}
 
-\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \textcite{keshav2007read}}[lR[4]]
-Reference&\\\fullcite{keshav2007read}\\
+\begin{SimpleNColTable}{tab:keshavBibdata}{2}[\narrowtablewidth]{Summary-comparison matrix entries for \textcite{keshav2007read}}[X[-1]X[l,4]]
+Reference&{\fullcite{keshav2007read}}\\
 %\SetCell[c=2]{l}\fullcite{keshav2007read}\\
 Research problem & to define an approach to reading and assimilating academic articles \\
 Methods & the approach is explained and exemplified; no formal evaluation is presented \\
 Premises & research requires spending a significant amount of time and effort reading academic papers; particularly novice researchers lack the skills to do so effectively, leading to wasted effort; such skills are rarely taught  \\
-Contribution & a practical approach to help researchers engage with the content of an academic articles effectively and efficiently; an outlined process for reviewing the literature based on the approach \\
-Comments & it seems a simple, yet effective approach, well worth applying when working on my literature\\
+Contribution & a practical approach to help researchers engage with the content of academic articles effectively and efficiently; an outlined process for reviewing the literature based on the approach \\
+Comments & it seems a simple, yet effective, approach well worth applying when working on my literature\\
 \end{SimpleNColTable}
 
 What to include in your summary-comparison matrix is, of course, a matter of judgement, so there is an element of subjective interpretation of each article content. This is expected, so that the column headings we have chosen should help you be consistent and systematic across different articles. It is also up to you to choose the level of detail for each entry: while you should try to be succinct, it is important that you include enough information to use the matrix without having to continually refer back to your notes and articles. These may result in quite a bit of text included in the matrix, as shown in the next example.
 
-\begin{example}{An example of summary-comparison matrix}
+\begin{example}{An example of a summary-comparison matrix}
 We are interested in reviewing the literature in relation to the following research problem: 
 
 \begin{quotation}
@@ -1350,7 +1349,7 @@ In our example, we have applied the following heuristics to each article, to dec
 We have, however, avoided details about research methods at this point, as our focus is to characterise and justify our research problem. Research methods are, of course, very important, and something we will consider in detail in Stages 3 and 4.
 \end{example}
 
-\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\the\narrowtablewidth]{Example of concept matrix entries}[R[3]R[3]R[3]R[3]]
+\begin{SimpleNColTable}{t:exampleCMatrix}{4}[\the\narrowtablewidth]{Example of concept matrix entries}[R[3]ccc][row{1}={halign=l}]
 & Hillinger et al., 2023 & McEneaney and Morsink, 2022 & Hillinger et al., 2022  \\
 How stakeholders can contribute effectively to the design process and adoption strategies  & \checkmark & \checkmark & \checkmark  \\
 Analytics tools to support continuous curriculum improvement & \checkmark\\
@@ -2064,9 +2063,9 @@ For each criteria, consider the related prompts to help you assess your report o
 %%Hack to correct tcbox behaviour
 \color{black}
 
-Writing up your report is an excellent way to consolidated the work you have completed and that you are still planning to do, and is something tangible you can share with your supervisor for feedback and guidance.
+Writing up your report is an excellent way to consolidate the work you have completed and that you are still planning to do, and is something tangible you can share with your supervisor for feedback and guidance.
 
-\chapter*{Stage 1 Takeaways}\label{ch:Stage1Takeaways}
+\begin{takeaways}{1}\label{ch:Stage1Takeaways}
 
 Stage 1 gives you a solid foundation for your whole research project. This is where you establish the scope of your research and its contribution to knowledge. Here're the takeaways from Stage 1.
 %
@@ -2095,6 +2094,7 @@ Stage 1 gives you a solid foundation for your whole research project. This is wh
 \item Reflection and reflexivity are critical practices for an academic researcher, allowing you to think deeply and critically about your actions and their outcomes, your experiences, motivations and assumptions
 \item Writing up a report at the end of each stage will help you consolidate your work, practice and improve your academic writing, and develop your dissertation incrementally.
 \end{itemize}
+\end{takeaways}
 
 %%Sectional bibliography
 \printbibliography[segment=\therefsegment,title=Stage 1 \bibname]
