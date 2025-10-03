@@ -43,10 +43,12 @@
 
 %%JGH 2024-10-03: fiddle with table of contents spacing
 \usepackage{tocloft}
-\makeatletter
-\renewcommand{\@pnumwidth}{2em}
-\makeatother
-\setlength{\cftpartnumwidth}{3em}
+%\makeatletter
+%\renewcommand{\@pnumwidth}{2em}
+%\makeatother
+\setlength{\cftpartnumwidth}{4em}
+\setlength{\cftsectionnumwidth}{4em}
+\setlength{\cftsubsectionnumwidth}{4em}
 %\setlength{\cftnumwidth}{1cm}
 
 %%Colors
@@ -95,7 +97,10 @@
 
 \GlsXtrLoadResources[
 	src={glossary.bib},		% bib file
-	selection={all}		% select all entries
+	selection={all},		% select all entries
+	field-aliases={fulllong=long}, %%Glossary-extra manual, pg. 572
+	trigger-type=ignored, 
+	category={same as entry}
 ]
 %%%To process the glossary, use bib2gls @MastersHandbook.aux in the appropriate directory
 
