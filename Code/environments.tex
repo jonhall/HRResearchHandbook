@@ -158,4 +158,14 @@ To find out more about #1, take a look at these resources:
 
 \end{question}}
 
+%%Part Title Page formatting
+\NewDocumentEnvironment{PartTitlePage}{m m +b}{
+	\renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%%\newpage supplied by \restoregeometry
+	\cleardoublepage
+	\newgeometry{margin=7cm}
+	\part{#1}\label{#2}
+	\restoregeometry
+	\cleardoublepage
+	}{}
+
 %%%%%%%%%

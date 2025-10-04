@@ -138,14 +138,3 @@
 %%Load lasts
 \usepackage{cleveref}
 \usepackage{listliketab}
-
-%%Part formatting
-\newcommand{\MRpart}[3]{
-	\cleardoublepage
-	\newgeometry{margin=8cm}
-	\begin{titlingpage*}
-	\renewcommand{\afterpartskip}{\vfill \noindent\Large #3}
-	\part{#1}\label{#2}
-	\end{titlingpage*}
-\restoregeometry
-}
