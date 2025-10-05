@@ -10,8 +10,9 @@
 
 %%for activities, etc
 \usepackage[many]{tcolorbox}
-%%Add marginnote for marginal footnotes
+%%%Add marginnote for marginal footnotes
 \RequirePackage{marginnote}
+
 
 % A tcolorbox style that swaps \footnote for a margin note locally
 \tcbset{
@@ -27,6 +28,7 @@
     after upper={\let\footnote\realfootnote},
   },
 }
+
 
 %%Default tcbox settings
 \tcbset{%
