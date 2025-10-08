@@ -42,7 +42,7 @@ Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource @MastersHandbook.glstex.
 Warning: Entry 'sensitive-personal-datum' missing required field: description
-Warning: Can't find target Gaussian-distribution, bell-curve for aliased entry normal-distribution.
+Warning: Can't find target gaussian-distribution, bell-curve for aliased entry normal-distribution.
 Aliased entries must be in the same resource set as their target entries with option alias-loc=transfer.
 Selecting entries for resource @MastersHandbook.glstex.
 Identical sort values for 'sample' and 'samples'
@@ -118,6 +118,7 @@ logical-fallacy
 falsification
 frequency-table
 gantt-chart
+gaussian-distribution
 generation-method
 grey-literature
 groupthink
@@ -217,4 +218,4 @@ internal-validity
 validity-weakness
 version-control-system
 work-plan
-168 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+169 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.

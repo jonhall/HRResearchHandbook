@@ -11,15 +11,10 @@
 %\documentclass[a4paper,12pt,oneside,landscape]{memoir}
 \documentclass[a4paper,10pt,landscape,twoside,openany]{memoir}
 
-%%Trying to get Part pages correct
-\usepackage{fancyhdr}
-\fancypagestyle{plain}{%
-	\fancyhf{}% clear all header and footer fields
-	\renewcommand{\headrulewidth}{0pt}%
-	\renewcommand{\footrulewidth}{0pt}%
-}
-
+%%For debugging labels
 %\usepackage[draft]{showlabels}
+%\renewcommand{\showlabelfont}{\small\slshape\color{red}}
+
 %%Nest code for neatness with import package
 \usepackage{import}
 
@@ -31,12 +26,13 @@
 \author{Lucia Rapanotti and Jon Hall}
 %\date{Branch: \gitbranch\\\small Hash: \gitcommit}
 
-\def\mycopyright{Copyright 2024, Lucia Rapanotti and Jon Hall. All rights reserved.}
+\def\mycopyright{Copyright 2025, Lucia Rapanotti and Jon Hall. All rights reserved.}
 
 \includeonly{Chapters/Stage2}%Chapters/Stage1}%,Chapters/Stage2}%,Chapters/Stage3,Chapters/Stage4,Chapters/Stage5,Chapters/Closing}
 
-%\usepackage{showlabels}
-%\renewcommand{\showlabelfont}{\small\slshape\color{red}}
+%%Colourblind version
+%%From https://tex.org.uk/macros/latex/contrib/colorblind/colorblind_doc.pdf
+\RequirePackage{colorblind}
 \begin{document}
 
 \newgeometry{margin=7cm}
@@ -53,9 +49,9 @@
 %\newpage
 %\listoftables
 
-\include{Chapters/Foreword}
-
-\include{Chapters/HowTo}
+	\include{Chapters/Foreword}
+	
+	\include{Chapters/HowTo}
 
 \mainmatter
 
@@ -79,4 +75,4 @@
 	
 %%Bibliography and Glossary include automatically
 
-\end{document}
+\end{document} 

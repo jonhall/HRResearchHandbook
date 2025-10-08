@@ -62,13 +62,12 @@ sort={abstraction|}}%
 
 
 \bibglsnewentry{academic-literature}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{42}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{59}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{66}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{68}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{70}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{75}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{77}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{98}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{107}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{110}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{116}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{126}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{151}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{158}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{160}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{196}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{297}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{302}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{308}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{309}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{42}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{59}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{66}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{68}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{70}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{75}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{77}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{98}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{107}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{110}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{116}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{126}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{151}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{158}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{160}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{196}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{297}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{302}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{308}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{309}},
 sort={academic|literature|}}%
 {academic literature}%
 {the published work of academic authors and researchers}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
-\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{42}}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{59}}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{66}}
@@ -683,6 +682,12 @@ sort={Gantt|chart|}}%
 \glsxtrfieldlistadd{gantt-chart}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}}
 
 
+\bibglsnewentry{gaussian-distribution}%
+{sort={Gaussian|distribution|}}%
+{Gaussian distribution}%
+{{\color{red} missing}}
+
+
 \bibglsnewentry{generation-method}%
 {location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{154}},
 sort={generation|method|}}%
@@ -1000,7 +1005,7 @@ sort={plagiarism|}}%
 location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{129}},
 sort={self-plagiarism|}}%
 {self-plagiarism}%
-{the re-use existing material that you yourself have published, without clear attribution}
+{the re-use of existing material that you yourself have published, without clear attribution}
 \glsxtrfieldlistadd{self-plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{129}}
 
 
@@ -1065,12 +1070,12 @@ sort={primary|evidence|}}%
 
 \bibglsnewentry{normal-distribution}%
 {parent={probability-distribution},
-alias={Gaussian-distribution, bell-curve},
+alias={gaussian-distribution, bell-curve},
 location={\bibglsusealias{normal-distribution}},
 sort={normal|distribution|}}%
 {normal distribution}%
 {a normal distribution is a type of continuous probability distribution for a real-valued random variable that has a central peak with tails tending to zero either side}
-\glsxtrfieldlistadd{normal-distribution}{loclist}{\glsseeformat{Gaussian-distribution, bell-curve}{}}
+\glsxtrfieldlistadd{normal-distribution}{loclist}{\glsseeformat{gaussian-distribution, bell-curve}{}}
 
 
 \bibglsnewentry{probability-sampling}%

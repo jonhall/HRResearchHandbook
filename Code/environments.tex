@@ -10,10 +10,31 @@
 
 %%for activities, etc
 \usepackage[many]{tcolorbox}
+%%%Add marginnote for marginal footnotes
+\RequirePackage{marginnote}
+
+
+% A tcolorbox style that swaps \footnote for a margin note locally
+\tcbset{
+  footnotes-in-margin/.style={
+    before upper={
+      \let\realfootnote\footnote
+      \renewcommand{\footnote}[1]{%
+        \refstepcounter{footnote}%
+        \textsuperscript{\thefootnote}%
+        \marginnote{\footnotesize\thefootnote\quad ####1}%
+      }%
+    },
+    after upper={\let\footnote\realfootnote},
+  },
+}
+
+
 %%Default tcbox settings
 \tcbset{%
 %  enhanced,
   breakable,
+  footnotes-in-margin,
 %  before={\par\Needspace{5\baselineskip}}, % adjust to taste
   pad at break=2mm,
   left=2mm,
@@ -24,7 +45,7 @@
 %  before=\par\vspace*{2mm},
   after=\par\bigskip,
   colframe=\frameColor,
- }
+}
 
 %%Takeaways
 \newtcolorbox{takeaways}[1]{
@@ -48,7 +69,7 @@
 
 %%Guidance environment
 \newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
-          {\textbf{Guidance}}}
+          {Guidance}}
     {}
 
 %%tips
@@ -138,5 +159,15 @@ To find out more about #1, take a look at these resources:
 \fullcites#2
 
 \end{question}}
+
+%%Part Title Page formatting
+\NewDocumentEnvironment{PartTitlePage}{m m +b}{
+	\renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%%\newpage supplied by \restoregeometry
+	\cleardoublepage
+	\newgeometry{margin=7cm}
+	\part{#1}\label{#2}
+	\restoregeometry
+	\cleardoublepage
+	}{}
 
 %%%%%%%%%
