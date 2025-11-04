@@ -53,26 +53,57 @@
 }
 
 \bibglsnewentry{abstraction}%
-{sort={abstraction|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{84}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{256}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{258}},
+sort={abstraction|},
 category={entry}}%
 {abstraction}%
 {deciding whether specific concepts may be instances of more general ones}
+\glsxtrfieldlistadd{abstraction}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{84}}
+\glsxtrfieldlistadd{abstraction}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{256}}
+\glsxtrfieldlistadd{abstraction}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{258}}
 
 
 \bibglsnewentry{academic-literature}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{42}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{59}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{66}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{68}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{70}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{75}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{77}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{99}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{108}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{111}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{118}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{128}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{151}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{162}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{164}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{202}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{303}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{308}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{314}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{315}},
 sort={academic|literature|},
 category={entry}}%
 {academic literature}%
 {the published work of academic authors and researchers}
 \glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{42}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{59}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{66}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{68}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{69}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{70}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{75}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{76}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{77}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{99}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{108}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{111}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{118}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{128}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{162}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{164}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{202}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{303}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{308}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{314}}
+\glsxtrfieldlistadd{academic-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{315}}
 
 
 \bibglsnewentry{accidental-plagiarism}%
-{sort={accidental|plagiarism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{132}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{134}},
+sort={accidental|plagiarism|},
 category={entry}}%
 {accidental plagiarism}%
 {unintended plagiarism that is the result of poor organisation or sloppy review practices}
+\glsxtrfieldlistadd{accidental-plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{132}}
+\glsxtrfieldlistadd{accidental-plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{133}}
+\glsxtrfieldlistadd{accidental-plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{134}}
 
 
 \bibglsnewentry{active-reader}%
@@ -85,81 +116,119 @@ category={entry}}%
 
 
 \bibglsnewentry{algorithmic-bias}%
-{sort={algorithmic|bias|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}},
+sort={algorithmic|bias|},
 category={entry}}%
 {algorithmic bias}%
 {when an algorithm produces outcomes which systematically and repeatably disadvantage one group of individuals over others}
+\glsxtrfieldlistadd{algorithmic-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
 
 
 \bibglsnewentry{analysis-method}%
-{sort={analysis|method|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{188}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{195}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{197}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{213}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{256}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{266}},
+sort={analysis|method|},
 category={entry}}%
 {analysis method}%
 {a method used to analyse data}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{188}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{195}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{197}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{213}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{256}}
+\glsxtrfieldlistadd{analysis-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{266}}
 
 
 \bibglsnewentry{anti-positivism}%
-{sort={anti-positivism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}},
+sort={anti-positivism|},
 category={entry}}%
 {anti-positivism}%
 {that different people experience and understand reality in different ways}
+\glsxtrfieldlistadd{anti-positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}}
+\glsxtrfieldlistadd{anti-positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
 
 
 \bibglsnewentry{association}%
-{sort={association|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{283}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{285}},
+sort={association|},
 category={entry}}%
 {association}%
 {when one variable can be used to provide information about another}
+\glsxtrfieldlistadd{association}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
+\glsxtrfieldlistadd{association}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{283}}
+\glsxtrfieldlistadd{association}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{284}}
+\glsxtrfieldlistadd{association}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{285}}
 
 
 \bibglsnewentry{bell-curve}%
-{sort={bell|curve|},
+{alias={normal-distribution},
+location={\bibglsusealias{bell-curve}},
+sort={bell|curve|},
 category={entry}}%
 {bell curve}%
 {the density function of the normal distribution; a limiting probability distribution according to the central limit theorem}
+\glsxtrfieldlistadd{bell-curve}{loclist}{\glsseeformat{normal-distribution}{}}
 
 
 \bibglsnewentry{beneficiary}%
 {plural={benificiaries},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{47}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{48}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{77}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{82}},
 sort={beneficiary|},
 category={entry}}%
 {beneficiary}%
 {one who identified to benefit from research}
+\glsxtrfieldlistadd{beneficiary}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{47}}
+\glsxtrfieldlistadd{beneficiary}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{48}}
+\glsxtrfieldlistadd{beneficiary}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{77}}
+\glsxtrfieldlistadd{beneficiary}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{82}}
 
 
 \bibglsnewentry{bias}%
 {plural={biases},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{97}},
 sort={bias|},
 category={entry}}%
 {bias}%
 {a tendency to support or oppose particular ideas or things based on personal preferences rather than objective evidence}
+\glsxtrfieldlistadd{bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
+\glsxtrfieldlistadd{bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{97}}
 
 
 \bibglsnewentry{bias-weakness}%
 {parent={bias},
 plural={bias weaknesses},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{177}},
 sort={bias|weakness|},
 category={entry}}%
 {bias weakness}%
 {when the claim you have made to new knowledge has been affected by your implicit or explicit biases, or bias affecting human participants in your study, making the new knowledge invalid}
+\glsxtrfieldlistadd{bias-weakness}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{177}}
 
 
 \bibglsnewentry{cognitive-bias}%
 {parent={bias},
 plural={cognitive biases},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{97}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={cognitive|bias|},
 category={entry}}%
 {cognitive bias}%
 {that which prevents someone from processing information objectively due to limited processing capabilities of our mind or due to emotional responses or social norms and conditioning}
+\glsxtrfieldlistadd{cognitive-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
+\glsxtrfieldlistadd{cognitive-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{97}}
+\glsxtrfieldlistadd{cognitive-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{cognitive-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{confirmation-bias}%
 {parent={bias},
 plural={confirmation biases},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}},
 sort={confirmation|bias|},
 category={entry}}%
 {confirmation bias}%
 {the tendency to favour the selection, analysis and interpretation of data which support the researcher's prior beliefs}
+\glsxtrfieldlistadd{confirmation-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
 
 
 \bibglsnewentry{novelty-bias}%
@@ -173,19 +242,24 @@ category={entry}}%
 \bibglsnewentry{observation-bias}%
 {parent={bias},
 plural={observation biases},
+alias={hawthorne-effect},
+location={\bibglsusealias{observation-bias}},
 sort={observation|bias|},
 category={entry}}%
 {observation bias}%
 {the tendency of participants being observed during a study to change their behaviour}
+\glsxtrfieldlistadd{observation-bias}{loclist}{\glsseeformat{hawthorne-effect}{}}
 
 
 \bibglsnewentry{recall-bias}%
 {parent={bias},
 plural={recall baises},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}},
 sort={recall|bias|},
 category={entry}}%
 {recall bias}%
 {the tendency of people to recall certain types of events more vividly than others, and can affect the outcomes of research which relies on participants' memories}
+\glsxtrfieldlistadd{recall-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
 
 
 \bibglsnewentry{reliability-bias}%
@@ -213,25 +287,41 @@ category={entry}}%
 \glsxtrfieldlistadd{bibliographic-management-tool}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{9}}
 
 
+\bibglsnewentry{bin}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={bin|},
+category={entry}}%
+{bin}%
+{of a histogram, a way to group a number of values}
+\glsxtrfieldlistadd{bin}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
+
+
 \bibglsnewentry{bin-size}%
-{sort={bin|size|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={bin|size|},
 category={entry}}%
 {bin size}%
 {of a histogram, how measured values are arranged}
+\glsxtrfieldlistadd{bin-size}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
 
 
 \bibglsnewentry{boolean-operator}%
-{sort={boolean|operator|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{73}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{74}},
+sort={boolean|operator|},
 category={entry}}%
 {boolean operator}%
 {used in mathematics and logic to build expressions which can be either true or false}
+\glsxtrfieldlistadd{boolean-operator}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{73}}
+\glsxtrfieldlistadd{boolean-operator}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{74}}
 
 
 \bibglsnewentry{bcw-model}%
-{sort={Booth|Colomb|and|Williams|BCW|model|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{134}},
+sort={Booth|Colomb|and|Williams|BCW|model|},
 category={entry}}%
 {Booth, Colomb, and Williams (BCW) model}%
 {a model for an (academic) argument. There are at least 2 parts: the \textit{claim} and the \textit{evidence}. Additionally, a more complex argument may have up to 3 other parts: the \textit{reason}, the \textit{warrant} and any \textit{qualifications}}
+\glsxtrfieldlistadd{bcw-model}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{134}}
 
 
 \bibglsnewentry{box-and-whiskers-plot}%
@@ -245,17 +335,21 @@ category={entry}}%
 
 
 \bibglsnewentry{boxplot}%
-{sort={boxplot|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={boxplot|},
 category={entry}}%
 {boxplot}%
 {illustrates the spread and skewness of a data set, The \emph{box} includes the two quartiles on each side of the median, which, together, account for half of the values in the data set. The wihsikers account for the remainder of the data}
+\glsxtrfieldlistadd{boxplot}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
 
 
 \bibglsnewentry{bracketing}%
-{sort={bracketing|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}},
+sort={bracketing|},
 category={entry}}%
 {bracketing}%
 {of an analysis process, the requirement that a researcher set aside any preconception, assumption or bias to focus solely on the data, considering every participant's statement or expression as equally important and relevant}
+\glsxtrfieldlistadd{bracketing}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}}
 
 
 \bibglsnewentry{capstone-project}%
@@ -267,142 +361,195 @@ category={entry}}%
 \glsxtrfieldlistadd{capstone-project}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 
 
-\bibglsnewentry{categorical-datum}%
-{plural={categorical data},
-sort={categorical|datum|},
-category={entry}}%
-{categorical datum}%
-{data that denote categories}
-
-
 \bibglsnewentry{citation-searching}%
-{sort={citation|searching|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{78}},
+sort={citation|searching|},
 category={entry}}%
 {citation searching}%
 {the process of looking backwards and forwards to track citations, starting from an article of interest; backward searching looks through the articles cited by a paper; forward searching looks through the articles which cite that paper}
+\glsxtrfieldlistadd{citation-searching}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{78}}
+
+
+\bibglsnewentry{closed-form-solution}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}},
+sort={closed|form|solution|},
+category={entry}}%
+{closed form solution}%
+{a solutions calculated exactly from mathematical expressions}
+\glsxtrfieldlistadd{closed-form-solution}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}}
 
 
 \bibglsnewentry{code}%
-{sort={code|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={code|},
 category={entry}}%
 {code}%
 {a label which describes an extract from a qualitative data set}
+\glsxtrfieldlistadd{code}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{code-categorisation}%
-{sort={code|categorisation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={code|categorisation|},
 category={entry}}%
 {code categorisation}%
 {the process of reviewing what you have coded and organise it into categories}
+\glsxtrfieldlistadd{code-categorisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{codebook}%
-{sort={codebook|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={codebook|},
 category={entry}}%
 {codebook}%
 {a list of all the codes and their intended meaning}
+\glsxtrfieldlistadd{codebook}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{coding}%
-{sort={coding|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={coding|},
 category={entry}}%
 {coding}%
 {the process of creating and assigning codes to categorise qualitative data}
+\glsxtrfieldlistadd{coding}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{computational-model}%
-{sort={computational|model|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{259}},
+sort={computational|model|},
 category={entry}}%
 {computational model}%
 {the way computations take place in the implemented artefact, one of sequential, concurrent, distributed or agent-based}
+\glsxtrfieldlistadd{computational-model}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{259}}
 
 
 \bibglsnewentry{computational-thinking}%
-{sort={computational|thinking|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{257}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{260}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{263}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{264}},
+sort={computational|thinking|},
 category={entry}}%
 {computational thinking}%
 {a problem solving approach in which problems are explored with a view to identify and implement computational solutions in the form of computer programmes and systems}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{258}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{259}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{263}}
+\glsxtrfieldlistadd{computational-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{264}}
 
 
 \bibglsnewentry{concept-map}%
-{sort={concept|map|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{85}},
+sort={concept|map|},
 category={entry}}%
 {concept map}%
 {a diagram which helps visualises concepts and their relationship}
+\glsxtrfieldlistadd{concept-map}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{85}}
 
 
 \bibglsnewentry{concept-matrix}%
 {plural={concept matrices},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{82}},
 sort={concept|matrix|},
 category={entry}}%
 {concept matrix}%
 {a table with one concept per row and one article per column, and a tick at their intersection to indicate whether the concept appears in the article}
+\glsxtrfieldlistadd{concept-matrix}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{82}}
 
 
 \bibglsnewentry{confounding-factor}%
-{sort={confounding|factor|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{192}},
+sort={confounding|factor|},
 category={entry}}%
 {confounding factor}%
 {of a cause-effect relationship, factors not measured in the experiment that may influence cause and effect}
+\glsxtrfieldlistadd{confounding-factor}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{192}}
 
 
 \bibglsnewentry{constructivism}%
-{sort={constructivism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}},
+sort={constructivism|},
 category={entry}}%
 {constructivism}%
 {that reality is a construct of our minds and so is absolutely subjective}
+\glsxtrfieldlistadd{constructivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}}
+\glsxtrfieldlistadd{constructivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
 
 
 \bibglsnewentry{content-analysis}%
 {plural={content analyses},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}},
 sort={content|analysis|},
 category={entry}}%
 {content analysis}%
 {to identify patterns used for communication}
+\glsxtrfieldlistadd{content-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}}
 
 
 \bibglsnewentry{contingency-table}%
-{sort={contingency|table|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}},
+sort={contingency|table|},
 category={entry}}%
 {contingency table}%
 {an extension of frequency tables to tabulate the value frequencies of two categorical variables}
+\glsxtrfieldlistadd{contingency-table}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}}
 
 
 \bibglsnewentry{correlation}%
-{sort={correlation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={correlation|},
 category={entry}}%
 {correlation}%
 {a particular type of association such that the two associated variables always change together}
+\glsxtrfieldlistadd{correlation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{critical-theory}%
 {plural={critical theories},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}},
 sort={critical|theory|},
 category={entry}}%
 {critical theory}%
 {that social science can never be 100\% objective or value-free}
+\glsxtrfieldlistadd{critical-theory}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{153}}
+\glsxtrfieldlistadd{critical-theory}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
 
 
 \bibglsnewentry{cross-tabulation}%
-{sort={cross-tabulation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}},
+sort={cross-tabulation|},
 category={entry}}%
 {cross-tabulation}%
 {see contingency table}
+\glsxtrfieldlistadd{cross-tabulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}}
+
+
+\bibglsnewentry{data-generation-method}%
+{sort={data|generation|method|},
+category={entry}}%
+{data generation method}%
+{a method by which relevant empirical data may be obtained }
 
 
 \bibglsnewentry{data-source}%
-{sort={data|source|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{234}},
+sort={data|source|},
 category={entry}}%
 {data source}%
 {the location from which your data originates}
+\glsxtrfieldlistadd{data-source}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{234}}
 
 
 \bibglsnewentry{datum}%
 {plural={data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
 sort={datum|},
 category={entry}}%
 {datum}%
 {the raw information with no interpretation attached}
+\glsxtrfieldlistadd{datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
+\glsxtrfieldlistadd{datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
 
 
 \bibglsnewentry{nominal-datum}%
@@ -417,130 +564,165 @@ category={entry}}%
 \bibglsnewentry{numerical-datum}%
 {parent={datum},
 plural={numerical data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
 sort={numerical|datum|},
 category={entry}}%
 {numerical datum}%
 {a number}
+\glsxtrfieldlistadd{numerical-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
 
 
 \bibglsnewentry{ordinal-datum}%
 {parent={datum},
 plural={ordinal data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
 sort={ordinal|datum|},
 category={entry}}%
 {ordinal datum}%
 {a non numerical datum that can be arranged in an order}
+\glsxtrfieldlistadd{ordinal-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
 
 
 \bibglsnewentry{primary-datum}%
 {parent={datum},
 plural={primary data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={primary|datum|},
 category={entry}}%
 {primary datum}%
 {data newly generated or collected during research}
+\glsxtrfieldlistadd{primary-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{qualitative-datum}%
 {parent={datum},
 plural={qualitative data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={qualitative|datum|},
 category={entry}}%
 {qualitative datum}%
 {datum that is descriptive and defies ordering}
+\glsxtrfieldlistadd{qualitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{decision}%
-{sort={decision|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}},
+sort={decision|},
 category={entry}}%
 {decision}%
 {determining the status of the null hypothesis based on the p-value in relation to the $\alpha$ value}
+\glsxtrfieldlistadd{decision}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}}
 
 
 \bibglsnewentry{deductive-coding}%
-{sort={deductive|coding|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={deductive|coding|},
 category={entry}}%
 {deductive coding}%
 {in which codes are decided upfront, before looking at the data}
+\glsxtrfieldlistadd{deductive-coding}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{deductive-reasoning}%
-{sort={deductive|reasoning|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}},
+sort={deductive|reasoning|},
 category={entry}}%
 {deductive reasoning}%
 {reasoning that starts from assumptions and arrives at the proposition as a conclusion}
+\glsxtrfieldlistadd{deductive-reasoning}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}}
 
 
 \bibglsnewentry{deliverable}%
-{sort={deliverable|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}},
+sort={deliverable|},
 category={entry}}%
 {deliverable}%
 {a concrete artefact you must have produced at a specific point}
+\glsxtrfieldlistadd{deliverable}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}}
 
 
 \bibglsnewentry{descriptive}%
-{sort={descriptive|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={descriptive|},
 category={entry}}%
 {descriptive}%
 {coding which encapsulate a general idea}
+\glsxtrfieldlistadd{descriptive}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{discourse-analysis}%
-{sort={discourse|analysis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}},
+sort={discourse|analysis|},
 category={entry}}%
 {discourse analysis}%
 {deconstructing language in conversations in a real-world context}
+\glsxtrfieldlistadd{discourse-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}}
 
 
 \bibglsnewentry{diversity}%
-{sort={diversity|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}},
+sort={diversity|},
 category={entry}}%
 {diversity}%
 {the differences and similarities between individuals}
+\glsxtrfieldlistadd{diversity}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}}
 
 
 \bibglsnewentry{empirical-datum}%
 {plural={empirical data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{195}},
 sort={empirical|datum|},
 category={entry}}%
 {empirical datum}%
 {a datum that comes from observation or experience}
+\glsxtrfieldlistadd{empirical-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{195}}
 
 
 \bibglsnewentry{epistemology}%
 {plural={epistemologies},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}},
 sort={epistemology|},
 category={entry}}%
 {epistemology}%
 {the philosophical study of knowledge and addresses the question: \emph{How is knowledge generated and from what sources?}}
+\glsxtrfieldlistadd{epistemology}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}}
 
 
 \bibglsnewentry{equality}%
-{sort={equality|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{91}},
+sort={equality|},
 category={entry}}%
 {equality}%
 {treating everybody in the same way}
+\glsxtrfieldlistadd{equality}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{91}}
 
 
 \bibglsnewentry{equity}%
-{sort={equity|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}},
+sort={equity|},
 category={entry}}%
 {equity}%
 {relates to fairness and justice, in the sense of removing barriers or bias}
+\glsxtrfieldlistadd{equity}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}}
 
 
 \bibglsnewentry{evidence}%
-{sort={evidence|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
+sort={evidence|},
 category={entry}}%
 {evidence}%
 {information interpreted to support your academic arguments}
+\glsxtrfieldlistadd{evidence}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
+\glsxtrfieldlistadd{evidence}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
 
 
 \bibglsnewentry{experiential-learning}%
-{sort={experiential|learning|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
+sort={experiential|learning|},
 category={entry}}%
 {experiential learning}%
 {learning by doing, using reflection to think critically about what you have experienced and relate it to knowledge and how it can apply to new situations}
+\glsxtrfieldlistadd{experiential-learning}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 
 
 \bibglsnewentry{fallacy}%
@@ -554,201 +736,282 @@ category={entry}}%
 \bibglsnewentry{logical-fallacy}%
 {parent={fallacy},
 plural={logical fallacies},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}},
 sort={logical|fallacy|},
 category={entry}}%
 {logical fallacy}%
 {errors of reasoning that can undermine your argument}
+\glsxtrfieldlistadd{logical-fallacy}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
 
 
 \bibglsnewentry{circular-reasoning}%
 {parent={logical-fallacy},
 plural={circular reasoning},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={circular|reasoning|},
 category={entry}}%
 {circular reasoning}%
 {argument in which the supporting evidence is just a restating of the claim}
+\glsxtrfieldlistadd{circular-reasoning}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{circular-reasoning}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{false-dichotomy}%
 {parent={logical-fallacy},
 plural={false dichotomies},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{125}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={false|dichotomy|},
 category={entry}}%
 {false dichotomy}%
 {argument which claims that two phenomena are mutually exclusive where that's not the case}
+\glsxtrfieldlistadd{false-dichotomy}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{125}}
+\glsxtrfieldlistadd{false-dichotomy}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{false-dichotomy}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{hasty-generalisation}%
 {parent={logical-fallacy},
 plural={hasty generalisation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={hasty|generalisation|},
 category={entry}}%
 {hasty generalisation}%
 {argument in which a claim is made based on insufficient evidence}
+\glsxtrfieldlistadd{hasty-generalisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{hasty-generalisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{post-hoc-ergo-propter-hoc}%
 {parent={logical-fallacy},
 plural={post hoc ergo propter hoc},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}},
 sort={post|hoc|ergo|propter|hoc|},
 category={entry}}%
 {post hoc ergo propter hoc}%
 {argument which claims a causal relation between two phenomena because one happens after the other}
+\glsxtrfieldlistadd{post-hoc-ergo-propter-hoc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
 
 
 \bibglsnewentry{sweeping-generalisation}%
 {parent={logical-fallacy},
 plural={sweeping generalisation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={sweeping|generalisation|},
 category={entry}}%
 {sweeping generalisation}%
 {argument in which a claim based on evidence within a specific situation or context, is assumed to be true in other situations/contexts}
+\glsxtrfieldlistadd{sweeping-generalisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{sweeping-generalisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{falsification}%
-{sort={falsification|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}},
+sort={falsification|},
 category={entry}}%
 {falsification}%
 {that a posited theory must make predictions which are testable}
+\glsxtrfieldlistadd{falsification}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}}
+
+
+\bibglsnewentry{focus-group}%
+{plural={biases},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{246}},
+sort={focus|group|},
+category={entry}}%
+{focus group}%
+{a group of carefully participants carefully chosen to obtain data regarding ideas, attitudes, understanding, and perceptions on a specific topic}
+\glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{246}}
 
 
 \bibglsnewentry{frequency-table}%
-{sort={frequency|table|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}},
+sort={frequency|table|},
 category={entry}}%
 {frequency table}%
 {a table used to summarise the frequency (or count) of values taken by a categorical variables in a data set}
+\glsxtrfieldlistadd{frequency-table}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{268}}
 
 
 \bibglsnewentry{gantt-chart}%
-{sort={Gantt|chart|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}},
+sort={Gantt|chart|},
 category={entry}}%
 {Gantt chart}%
 {a scheduling chart that you can use to plan and organise your project work; gives an overview of how your work will be broken down and organised over time; is useful to communicate your project plan to third parties}
+\glsxtrfieldlistadd{gantt-chart}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}}
 
 
 \bibglsnewentry{gaussian-distribution}%
-{sort={Gaussian|distribution|},
+{alias={normal-distribution},
+location={\bibglsusealias{gaussian-distribution}},
+sort={Gaussian|distribution|},
 category={entry}}%
 {Gaussian distribution}%
 {{\color{red} missing}}
+\glsxtrfieldlistadd{gaussian-distribution}{loclist}{\glsseeformat{normal-distribution}{}}
 
 
 \bibglsnewentry{generation-method}%
-{sort={generation|method|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}},
+sort={generation|method|},
 category={entry}}%
 {generation method}%
 {methods used to generate data}
+\glsxtrfieldlistadd{generation-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}}
 
 
 \bibglsnewentry{grey-literature}%
-{sort={grey|literature|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{67}},
+sort={grey|literature|},
 category={entry}}%
 {grey literature}%
 {the collection of information produced by organisations other than publishers, such as as academia, government bodies, or non-publishing businesses and industries; includes pre-publication and non-peer-reviewed articles, theses and dissertations, research and committee reports, government reports, conference papers, accounts of ongoing research, etc.}
+\glsxtrfieldlistadd{grey-literature}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{67}}
 
 
 \bibglsnewentry{groupthink}%
-{sort={groupthink|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{197}},
+sort={groupthink|},
 category={entry}}%
 {groupthink}%
 {a tendency to conform to majority option to maintain unanimity and avoid confrontation}
+\glsxtrfieldlistadd{groupthink}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{197}}
 
 
 \bibglsnewentry{hallucination}%
-{sort={hallucination|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{96}},
+sort={hallucination|},
 category={entry}}%
 {hallucination}%
 {of Generative AI, the tendency to fill in any gap there may be in a knowledge base with plausible, but made-up information. A source of concern for unvalidated use of GenAI outputs}
+\glsxtrfieldlistadd{hallucination}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{96}}
+
+
+\bibglsnewentry{hawthorne-effect}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{238}},
+sort={Hawthorne|effect|},
+category={entry}}%
+{Hawthorne effect}%
+{the tendency of participants being observed during a study to change their behaviour}
+\glsxtrfieldlistadd{hawthorne-effect}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
+\glsxtrfieldlistadd{hawthorne-effect}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{238}}
 
 
 \bibglsnewentry{histogram}%
-{sort={histogram|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={histogram|},
 category={entry}}%
 {histogram}%
 {a chart in which the data on one axis is plotted against the number of times it occurs}
+\glsxtrfieldlistadd{histogram}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
 
 
 \bibglsnewentry{hypotheses}%
 {plural={hypotheses},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
 sort={hypotheses|},
 category={entry}}%
 {hypotheses}%
 {a proposed explanation for a phenomenon (Wikipedia)}
+\glsxtrfieldlistadd{hypotheses}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{hypothesis}%
-{sort={hypothesis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{192}},
+sort={hypothesis|},
 category={entry}}%
 {hypothesis}%
 {a tentative statement about the relationship between the phenomena to be tested in the experiment}
+\glsxtrfieldlistadd{hypothesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{192}}
 
 
 \bibglsnewentry{alternative-hypothesis}%
 {parent={hypothesis},
 plural={alternative hypotheses},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{281}},
 sort={alternative|hypothesis|},
 category={entry}}%
 {alternative hypothesis}%
-{in statistical hypothesis testing, the alternative hypothesis is one of the proposed proposition in the hypothesis test. In general the goal of hypothesis test is to demonstrate that in the given condition, there is sufficient evidence supporting the credibility of alternative hypothesis instead of the exclusive proposition in the test \parencite{Wikipedia}}
+{in statistical hypothesis testing, the alternative hypothesis is one of the proposed proposition in the hypothesis test. In general the goal of hypothesis test is to demonstrate that in the given condition, there is sufficient evidence supporting the credibility of alternative hypothesis instead of the exclusive proposition in the test (Wikipedia)}
+\glsxtrfieldlistadd{alternative-hypothesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
+\glsxtrfieldlistadd{alternative-hypothesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}}
 
 
 \bibglsnewentry{null-hypothesis}%
 {parent={hypothesis},
 plural={null hypotheses},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{281}},
 sort={null|hypothesis|},
 category={entry}}%
 {null hypothesis}%
 {the hypothesis that states that there is no relation between the phenomena whose relation is under investigation, or at least not of the form given by the alternative hypothesism (Wikipedia)}
+\glsxtrfieldlistadd{null-hypothesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
+\glsxtrfieldlistadd{null-hypothesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}}
 
 
 \bibglsnewentry{in-vivo}%
-{sort={in|vivo|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={in|vivo|},
 category={entry}}%
 {in vivo}%
 {of coding, one that uses the exact language which occurs in the data}
+\glsxtrfieldlistadd{in-vivo}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{inclusion}%
-{sort={inclusion|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}},
+sort={inclusion|},
 category={entry}}%
 {inclusion}%
 {ensuring that all individuals feel welcome, valued and confident to be treated fairly and respectfully}
+\glsxtrfieldlistadd{inclusion}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{92}}
 
 
 \bibglsnewentry{indigenous}%
-{sort={indigenous|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{154}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}},
+sort={indigenous|},
 category={entry}}%
 {indigenous}%
 {emphasises the connection between people, their culture, and the spiritual and natural worlds, valuing knowledge which is local to communities, and holistic in connecting all beings with nature and spirituality}
+\glsxtrfieldlistadd{indigenous}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{154}}
+\glsxtrfieldlistadd{indigenous}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
 
 
 \bibglsnewentry{inductive-coding}%
-{sort={inductive|coding|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}},
+sort={inductive|coding|},
 category={entry}}%
 {inductive coding}%
 {in which codes emerge from the data and are not pre-defined}
+\glsxtrfieldlistadd{inductive-coding}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{287}}
 
 
 \bibglsnewentry{inductive-reasoning}%
-{sort={inductive|reasoning|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}},
+sort={inductive|reasoning|},
 category={entry}}%
 {inductive reasoning}%
 {reasoning that draws general conclusions from observations}
+\glsxtrfieldlistadd{inductive-reasoning}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}}
 
 
 \bibglsnewentry{intellectual-property}%
-{sort={intellectual|property|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{94}},
+sort={intellectual|property|},
 category={entry}}%
 {intellectual property}%
 {the owned property created through intellect}
+\glsxtrfieldlistadd{intellectual-property}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{94}}
 
 
 \bibglsnewentry{interval-datum}%
 {plural={interval data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={interval|datum|},
 category={entry}}%
 {interval datum}%
 {a datum which can be arranged on a scale, so that we can calculate the distance between any two data points}
+\glsxtrfieldlistadd{interval-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{learning-outcome}%
@@ -762,125 +1025,189 @@ category={entry}}%
 
 \bibglsnewentry{longitudinal-datum}%
 {plural={longitudinal data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{189}},
 sort={longitudinal|datum|},
 category={entry}}%
 {longitudinal datum}%
 {data collected over time}
+\glsxtrfieldlistadd{longitudinal-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{189}}
+
+
+\bibglsnewentry{mathematical-thinking}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}},
+sort={mathematical|thinking|},
+category={entry}}%
+{mathematical thinking}%
+{a problem solving approach in which problems are explored with a view to identify and implement mathematical solutions in the form of intergral or differentail equations, or other mathematical techniques}
+\glsxtrfieldlistadd{mathematical-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
 
 
 \bibglsnewentry{mean}%
-{sort={mean|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={mean|},
 category={entry}}%
 {mean}%
 {the average value of the data set}
+\glsxtrfieldlistadd{mean}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
 
 
 \bibglsnewentry{median}%
-{sort={median|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={median|},
 category={entry}}%
 {median}%
 {the midpoint of a data set, sorted by magnitude}
+\glsxtrfieldlistadd{median}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
 
 
 \bibglsnewentry{meta-analysis}%
-{sort={meta-analysis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{201}},
+sort={meta-analysis|},
 category={entry}}%
 {meta-analysis}%
 {statistical techniques to analyse and combine quantitative results from many sources}
+\glsxtrfieldlistadd{meta-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{201}}
 
 
 \bibglsnewentry{methodology}%
 {plural={methodologies},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}},
 sort={methodology|},
 category={entry}}%
 {methodology}%
 {the system of principles and methods by which research is conducted, that is, investigate phenomena, and generate and analyse data and evidence}
+\glsxtrfieldlistadd{methodology}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}}
 
 
 \bibglsnewentry{milestone}%
-{sort={milestone|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}},
+sort={milestone|},
 category={entry}}%
 {milestone}%
 {a point on your project timeline where you can assess your progress against your ultimate aim and objectives}
+\glsxtrfieldlistadd{milestone}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}}
 
 
 \bibglsnewentry{mode}%
-{sort={mode|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={mode|},
 category={entry}}%
 {mode}%
 {the value in a data set that occurs most frequently}
+\glsxtrfieldlistadd{mode}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
 
 
 \bibglsnewentry{model}%
-{sort={model|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{256}},
+sort={model|},
 category={entry}}%
 {model}%
 {a representation of something, be that a system, a structure, a process or a behaviour}
+\glsxtrfieldlistadd{model}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{256}}
 
 
 \bibglsnewentry{modelling-method}%
-{sort={modelling|method|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}},
+sort={modelling|method|},
 category={entry}}%
 {modelling method}%
 {a method used to build models of complex real-world situations, possibly being used to generate further data}
+\glsxtrfieldlistadd{modelling-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{158}}
 
 
 \bibglsnewentry{multi-method-research}%
-{sort={multi-method|research|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{210}},
+sort={multi-method|research|},
 category={entry}}%
 {multi-method research}%
 {research that uses many methods, typically mixing qualitative or quantitative forms together}
+\glsxtrfieldlistadd{multi-method-research}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{210}}
 
 
 \bibglsnewentry{narrative-analysis}%
-{sort={narrative|analysis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}},
+sort={narrative|analysis|},
 category={entry}}%
 {narrative analysis}%
 {focussing on stories made and told by people, to investigate their meaning and how people make sense of reality}
+\glsxtrfieldlistadd{narrative-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}}
 
 
 \bibglsnewentry{narrative-review}%
-{sort={narrative|review|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{201}},
+sort={narrative|review|},
 category={entry}}%
 {narrative review}%
 {a narrative synthesis of qualitative results}
+\glsxtrfieldlistadd{narrative-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{201}}
+
+
+\bibglsnewentry{non-probability-sampling}%
+{alias={non-random-sampling},
+location={\bibglsusealias{non-probability-sampling}},
+sort={non|probability|sampling|},
+category={entry}}%
+{non probability sampling}%
+{when the sample is chosen by the researcher based on their own judgement and discretion, so that some element of bias may exist}
+\glsxtrfieldlistadd{non-probability-sampling}{loclist}{\glsseeformat{non-random-sampling}{}}
+
+
+\bibglsnewentry{non-random-sampling}%
+{alias={non-probability-sampling},
+location={\bibglsusealias{non-random-sampling}},
+sort={non|random|sampling|},
+category={entry}}%
+{non random sampling}%
+{when the sample is chosen by the researcher based on their own judgement and discretion, so that some element of bias may exist}
+\glsxtrfieldlistadd{non-random-sampling}{loclist}{\glsseeformat{non-probability-sampling}{}}
 
 
 \bibglsnewentry{normal-design}%
-{sort={normal|design|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{191}},
+sort={normal|design|},
 category={entry}}%
 {normal design}%
 {re-implementing a solution to a well-known problem through a well-known development process and well-practiced skills}
+\glsxtrfieldlistadd{normal-design}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{191}}
 
 
 \bibglsnewentry{novelty-weakness}%
-{sort={novelty|weakness|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{177}},
+sort={novelty|weakness|},
 category={entry}}%
 {novelty weakness}%
 {when the knowledge you claim to have generated already exists in the academic literature}
+\glsxtrfieldlistadd{novelty-weakness}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{177}}
 
 
 \bibglsnewentry{numerical-approximation}%
-{sort={numerical|approximation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}},
+sort={numerical|approximation|},
 category={entry}}%
 {numerical approximation}%
 {a numerical value \enquote{close} to the actual value}
+\glsxtrfieldlistadd{numerical-approximation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}}
 
 
 \bibglsnewentry{ontology}%
 {plural={ontologies},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}},
 sort={ontology|},
 category={entry}}%
 {ontology}%
 {the philosophical study of the nature of existence and addresses the question: \emph{What is the reality that I will research?}}
+\glsxtrfieldlistadd{ontology}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}}
 
 
 \bibglsnewentry{personal-datum}%
 {plural={personal data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{89}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{90}},
 sort={personal|datum|},
 category={entry}}%
 {personal datum}%
 {any data by which a living person could be identified, be that a name or a personal identification number, or a combination of physical characteristics, or cultural or social identities, and establishes rules for the use of such data}
+\glsxtrfieldlistadd{personal-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{89}}
+\glsxtrfieldlistadd{personal-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{90}}
 
 
 \bibglsnewentry{sensitive-personal-datum}%
@@ -891,73 +1218,94 @@ location={\bibglsusealias{sensitive-personal-datum}},
 sort={sensitive|personal|datum|},
 category={entry}}%
 {sensitive personal datum}%
-{}
+{any data by which a living person could be identified, be that a name or a personal identification number, or a combination of physical characteristics, or cultural or social identities, and establishes rules for the use of such data}
 \glsxtrfieldlistadd{sensitive-personal-datum}{loclist}{\glsseeformat{personal-datum}{}}
 
 
 \bibglsnewentry{pivot-table}%
-{sort={pivot|table|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{266}},
+sort={pivot|table|},
 category={entry}}%
 {pivot table}%
 {a table used to summarise, sort, filter, re-organise or group data}
+\glsxtrfieldlistadd{pivot-table}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{266}}
 
 
 \bibglsnewentry{plagiarism}%
-{sort={plagiarism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{132}},
+sort={plagiarism|},
 category={entry}}%
 {plagiarism}%
 {passing off the work of others as if it were your own}
+\glsxtrfieldlistadd{plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{132}}
 
 
 \bibglsnewentry{self-plagiarism}%
 {parent={plagiarism},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{133}},
 sort={self-plagiarism|},
 category={entry}}%
 {self-plagiarism}%
 {the re-use of existing material that you yourself have published, without clear attribution}
+\glsxtrfieldlistadd{self-plagiarism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{133}}
 
 
-\bibglsnewentry{plan-act-reflect}%
-{sort={plan-act-reflect|},
+\bibglsnewentry{plan-act-reflect-cycle}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{196}},
+sort={plan-act-reflect|},
 category={entry}}%
 {plan-act-reflect}%
-{a cognitive cycle which generates both knowledge and action}
+{an iterative process in which you plan what to do to improve a situation, then enact the plan and reflect on the outcome to inform the next iteration}
+\glsxtrfieldlistadd{plan-act-reflect-cycle}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{196}}
 
 
 \bibglsnewentry{point-datum}%
 {plural={point data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{189}},
 sort={point|datum|},
 category={entry}}%
 {point datum}%
 {a datum collected at a point in time}
+\glsxtrfieldlistadd{point-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{189}}
 
 
 \bibglsnewentry{population}%
-{sort={population|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{279}},
+sort={population|},
 category={entry}}%
 {population}%
 {the entire group you are interested in studying}
+\glsxtrfieldlistadd{population}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{279}}
 
 
 \bibglsnewentry{positivism}%
-{sort={positivism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}},
+sort={positivism|},
 category={entry}}%
 {positivism}%
 {a philosophy of science that posits a single, objective reality that can be accurately known, described and explained}
+\glsxtrfieldlistadd{positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}}
+\glsxtrfieldlistadd{positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
 
 
 \bibglsnewentry{post-positivism}%
-{sort={post-positivism|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{155}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{156}},
+sort={post-positivism|},
 category={entry}}%
 {post-positivism}%
 {introduces the idea of falsification \parencite{kuhn2012structure}, i.e., that any posited theory must make predictions which are testable, the currency of a theory being determined by whether or not it had yet been proven false}
+\glsxtrfieldlistadd{post-positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}}
+\glsxtrfieldlistadd{post-positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{155}}
+\glsxtrfieldlistadd{post-positivism}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{156}}
 
 
 \bibglsnewentry{primary-evidence}%
-{sort={primary|evidence|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
+sort={primary|evidence|},
 category={entry}}%
 {primary evidence}%
 {evidence newly generated or collected during research}
+\glsxtrfieldlistadd{primary-evidence}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{probability-distribution}%
@@ -969,107 +1317,133 @@ category={entry}}%
 
 \bibglsnewentry{normal-distribution}%
 {parent={probability-distribution},
-alias={gaussian-distribution, bell-curve},
-location={\bibglsusealias{normal-distribution}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{285}},
 sort={normal|distribution|},
 category={entry}}%
 {normal distribution}%
 {a normal distribution is a type of continuous probability distribution for a real-valued random variable that has a central peak with tails tending to zero either side}
-\glsxtrfieldlistadd{normal-distribution}{loclist}{\glsseeformat{gaussian-distribution, bell-curve}{}}
+\glsxtrfieldlistadd{normal-distribution}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
+\glsxtrfieldlistadd{normal-distribution}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{285}}
 
 
 \bibglsnewentry{probability-sampling}%
-{sort={probability|sampling|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}},
+sort={probability|sampling|},
 category={entry}}%
 {probability sampling}%
 {see random sampling}
+\glsxtrfieldlistadd{probability-sampling}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}}
 
 
 \bibglsnewentry{proof-by-contradiction}%
-{sort={proof|by|contradiction|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}},
+sort={proof|by|contradiction|},
 category={entry}}%
 {proof by contradiction}%
 {reasoning that arrives at a contradiction by assuming a proposition to be false, hence demonstrating that it must be true}
+\glsxtrfieldlistadd{proof-by-contradiction}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{209}}
 
 
 \bibglsnewentry{proposition}%
-{sort={proposition|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={proposition|},
 category={entry}}%
 {proposition}%
 {a statement concerning the population you are studying}
+\glsxtrfieldlistadd{proposition}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{p-value}%
-{sort={p-value|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}},
+sort={p-value|},
 category={entry}}%
 {p-value}%
 {the probability calculated for your test by your statistical package, and which is used to decide the outcome of the test}
+\glsxtrfieldlistadd{p-value}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}}
 
 
 \bibglsnewentry{quantitative-datum}%
 {plural={qualitative data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
 sort={quantitative|datum|},
 category={entry}}%
 {quantitative datum}%
 {a datum that can be quantified or measured}
+\glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
 
 
 \bibglsnewentry{random-sampling}%
-{sort={random|sampling|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}},
+sort={random|sampling|},
 category={entry}}%
 {random sampling}%
 {an unbiased way of choosing the subset members from the population to inform sample collection}
+\glsxtrfieldlistadd{random-sampling}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}}
 
 
 \bibglsnewentry{randomisation}%
-{sort={randomisation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}},
+sort={randomisation|},
 category={entry}}%
 {randomisation}%
 {sampling so that all population data or individuals have equal chance to be selected for a study}
+\glsxtrfieldlistadd{randomisation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
 
 
 \bibglsnewentry{range}%
-{sort={range|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={range|},
 category={entry}}%
 {range}%
 {the difference between smallest (minimum) and largest (maximum) numerical values}
+\glsxtrfieldlistadd{range}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
 
 
 \bibglsnewentry{ratio-datum}%
 {plural={ratio data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={ratio|datum|},
 category={entry}}%
 {ratio datum}%
 {datum with an absolute zero considered as a point of origin}
+\glsxtrfieldlistadd{ratio-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{raw-datum}%
 {plural={raw data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}},
 sort={raw|datum|},
 category={entry}}%
 {raw datum}%
 {data generated and analysed as part of research, upon which evidence and a contribution to knowledge are based}
+\glsxtrfieldlistadd{raw-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}}
 
 
 \bibglsnewentry{reflection}%
-{sort={reflection|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
+sort={reflection|},
 category={entry}}%
 {reflection}%
 {thinking back of what we have done or experienced}
+\glsxtrfieldlistadd{reflection}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 
 
 \bibglsnewentry{reflexivity}%
-{sort={reflexivity|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
+sort={reflexivity|},
 category={entry}}%
 {reflexivity}%
 {examining your own views, assumptions and beliefs, thinking critically about how they influence your research; through reflexivity you can bring more objectivity into your research choices}
+\glsxtrfieldlistadd{reflexivity}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 
 
 \bibglsnewentry{reliability-weakness}%
-{sort={reliability|weakness|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{175}},
+sort={reliability|weakness|},
 category={entry}}%
 {reliability weakness}%
 {when the steps you have taken to establish your claim of new knowledge are not dependable, cannot be replicated under the same conditions or are not sufficiently repeatable in other contexts, or the descriptions and interpretations you have provided are incoherent or inadequate}
+\glsxtrfieldlistadd{reliability-weakness}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{175}}
 
 
 \bibglsnewentry{research-assets}%
@@ -1089,68 +1463,87 @@ category={entry}}%
 
 
 \bibglsnewentry{research-design}%
-{sort={research|design|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{149}},
+sort={research|design|},
 category={entry}}%
 {research design}%
 {how your research is conducted}
+\glsxtrfieldlistadd{research-design}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
+\glsxtrfieldlistadd{research-design}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{149}}
 
 
 \bibglsnewentry{research-method}%
-{sort={research|method|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{157}},
+sort={research|method|},
 category={entry}}%
 {research method}%
 {a standard way to collect, analyse, synthesise, present and interpret data to generate evidence and derive findings}
+\glsxtrfieldlistadd{research-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{157}}
 
 
 \bibglsnewentry{research-paradigms}%
-{sort={research|paradigms|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}},
+sort={research|paradigms|},
 category={entry}}%
 {research paradigms}%
 {a philosophical way of thinking, a set of shared beliefs which shape a worldview}
+\glsxtrfieldlistadd{research-paradigms}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{152}}
 
 
 \bibglsnewentry{research-problem}%
-{sort={research|problem|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
+sort={research|problem|},
 category={entry}}%
 {research problem}%
 {captures the knowledge gap to be addressed (\emph{the need}) by the researcher within a particular field of study (\emph{the context})}
+\glsxtrfieldlistadd{research-problem}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 
 
 \bibglsnewentry{research-process}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{4}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
 sort={research|process|},
 category={entry}}%
 {research process}%
 {a sequence of activities you undertake when conducting academic research}
 \glsxtrfieldlistadd{research-process}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{4}}
+\glsxtrfieldlistadd{research-process}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 
 
 \bibglsnewentry{research-strategy}%
-{sort={research|strategy|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{159}},
+sort={research|strategy|},
 category={entry}}%
 {research strategy}%
 {a systematisation of a set of research methods, which can be applied together in order to address research problems of a particular kind}
+\glsxtrfieldlistadd{research-strategy}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{159}}
 
 
 \bibglsnewentry{research-style}%
-{sort={research|style|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}},
+sort={research|style|},
 category={entry}}%
 {research style}%
 {your preferred style for how you conduct your research}
+\glsxtrfieldlistadd{research-style}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 
 
 \bibglsnewentry{review-article}%
-{sort={review|article|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{75}},
+sort={review|article|},
 category={entry}}%
 {review article}%
 {an academic article which summarises the understanding at the time of writing of a specific topic or phenomenon}
+\glsxtrfieldlistadd{review-article}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{75}}
 
 
 \bibglsnewentry{sample}%
-{sort={sample|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{279}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{281}},
+sort={sample|},
 category={entry}}%
 {sample}%
 {the portion or subset of that group you have access to in your research}
+\glsxtrfieldlistadd{sample}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{279}}
+\glsxtrfieldlistadd{sample}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{281}}
 
 
 \bibglsnewentry{samples}%
@@ -1161,169 +1554,316 @@ category={entry}}%
 
 
 \bibglsnewentry{sample-bias}%
-{sort={sample|bias|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{193}},
+sort={sample|bias|},
 category={entry}}%
 {sample bias}%
 {when some elements of the population are more likely to be selected than others}
+\glsxtrfieldlistadd{sample-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{193}}
 
 
 \bibglsnewentry{sampling}%
-{sort={sampling|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={sampling|},
 category={entry}}%
 {sampling}%
 {the process of selecting a subset or a population}
+\glsxtrfieldlistadd{sampling}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}}
+\glsxtrfieldlistadd{sampling}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{sampling-frame}%
-{sort={sampling|frame|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}},
+sort={sampling|frame|},
 category={entry}}%
 {sampling frame}%
 {a sub-set of the collection of the population of interest from which your sample is taken}
+\glsxtrfieldlistadd{sampling-frame}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{229}}
 
 
 \bibglsnewentry{saturation}%
-{sort={saturation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{230}},
+sort={saturation|},
 category={entry}}%
 {saturation}%
 {when collecting more data would not bring extra relevant information}
+\glsxtrfieldlistadd{saturation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{230}}
 
 
 \bibglsnewentry{search-term}%
-{sort={search|term|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{72}},
+sort={search|term|},
 category={entry}}%
 {search term}%
 {a word or a combination of words that you can key into a search engine}
+\glsxtrfieldlistadd{search-term}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{72}}
 
 
 \bibglsnewentry{secondary-datum}%
 {plural={secondary data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={secondary|datum|},
 category={entry}}%
 {secondary datum}%
 {data available from previous research, and re-used during new research}
+\glsxtrfieldlistadd{secondary-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{secondary-evidence}%
-{sort={secondary|evidence|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
+sort={secondary|evidence|},
 category={entry}}%
 {secondary evidence}%
 {evidence available from previous research, and re-used during new research}
+\glsxtrfieldlistadd{secondary-evidence}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{selection-bias}%
-{sort={selection|bias|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}},
+sort={selection|bias|},
 category={entry}}%
 {selection bias}%
 {when data or participants are selected subjectively, leading to samples which are not representative of the population under study}
+\glsxtrfieldlistadd{selection-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
 
 
 \bibglsnewentry{significance}%
-{sort={significance|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={significance|},
 category={entry}}%
 {significance}%
 {the level of statistical significance for the test}
+\glsxtrfieldlistadd{significance}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{skewness}%
-{sort={skewness|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={skewness|},
 category={entry}}%
 {skewness}%
 {a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean (Wikipedia)}
+\glsxtrfieldlistadd{skewness}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
+
+
+\bibglsnewentry{spread}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}},
+sort={spread|},
+category={entry}}%
+{spread}%
+{the extent to which a distribution is stretched or squeezed (Wikipedia)}
+\glsxtrfieldlistadd{spread}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{274}}
 
 
 \bibglsnewentry{stakeholder}%
-{sort={stakeholder|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{47}},
+sort={stakeholder|},
 category={entry}}%
 {stakeholder}%
 {one affected by the research, not necessarily positively}
+\glsxtrfieldlistadd{stakeholder}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{47}}
 
 
 \bibglsnewentry{standard-deviation}%
-{sort={standard|deviation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={standard|deviation|},
 category={entry}}%
 {standard deviation}%
 {a measure of the distance of a data set from its mean value}
+\glsxtrfieldlistadd{standard-deviation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
+
+
+\bibglsnewentry{statistical-analysis}%
+{sort={statistical|analysis|},
+category={entry}}%
+{statistical analysis}%
+{an umbrella term for a set of methods which you can apply to numerical and categorical data}
+
+
+\bibglsnewentry{statistical-datum}%
+{plural={statistical data},
+sort={statistical|datum|},
+category={entry}}%
+{statistical datum}%
+{a method that build statistical models of complex real-world situations}
+
+
+\bibglsnewentry{categorical-datum}%
+{parent={statistical-datum},
+plural={categorical data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{271}},
+sort={categorical|datum|},
+category={entry}}%
+{categorical datum}%
+{data that denote categories}
+\glsxtrfieldlistadd{categorical-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
+\glsxtrfieldlistadd{categorical-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}}
+
+
+\bibglsnewentry{scalar-datum}%
+{parent={statistical-datum},
+plural={scalar data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}},
+sort={scalar|datum|},
+category={entry}}%
+{scalar datum}%
+{data that denote values}
+\glsxtrfieldlistadd{scalar-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}}
+
+
+\bibglsnewentry{statistical-method}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={statistical|method|},
+category={entry}}%
+{statistical method}%
+{a method that build statistical models of complex real-world situations}
+\glsxtrfieldlistadd{statistical-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
+
+
+\bibglsnewentry{descriptive-statistics}%
+{parent={statistical-method},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
+sort={descriptive|statistics|},
+category={entry}}%
+{descriptive statistics}%
+{aiming to describe data}
+\glsxtrfieldlistadd{descriptive-statistics}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
+
+
+\bibglsnewentry{inferential-statistics}%
+{parent={statistical-method},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={inferential|statistics|},
+category={entry}}%
+{inferential statistics}%
+{aiming to make predictions from data}
+\glsxtrfieldlistadd{inferential-statistics}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
+\glsxtrfieldlistadd{inferential-statistics}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
 
 
 \bibglsnewentry{statistical-significance}%
-{sort={statistical|significance|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}},
+sort={statistical|significance|},
 category={entry}}%
 {statistical significance}%
 {used to provide evidence (or otherwise) that any pattern or effect observed in your sample is also likely to exist in the population, and is not just the effect of chance}
+\glsxtrfieldlistadd{statistical-significance}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{280}}
+
+
+\bibglsnewentry{statistical-thinking}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{264}},
+sort={statistical|thinking|},
+category={entry}}%
+{statistical thinking}%
+{a problem solving approach in which problems are explored with a view to identify and implement statistical solutions}
+\glsxtrfieldlistadd{statistical-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
+\glsxtrfieldlistadd{statistical-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{264}}
 
 
 \bibglsnewentry{summary-comparison-matrix}%
-{sort={summary-comparison|matrix|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{79}},
+sort={summary-comparison|matrix|},
 category={entry}}%
 {summary-comparison matrix}%
 {a table which includes a row for each article you have reviewed, and a number of columns corresponding to key aspects of the article you wish to summarise and compare with other articles, such as the research problem or question addressed, contextual facts known at start of the reported study, key contributions made, research methods applied, etc}
+\glsxtrfieldlistadd{summary-comparison-matrix}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{79}}
 
 
 \bibglsnewentry{synthesis}%
-{sort={synthesis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{84}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{123}},
+sort={synthesis|},
 category={entry}}%
 {synthesis}%
 {the act of bringing ideas together into a cogent whole}
+\glsxtrfieldlistadd{synthesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{84}}
+\glsxtrfieldlistadd{synthesis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{123}}
 
 
 \bibglsnewentry{system}%
-{sort={system|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{263}},
+sort={system|},
 category={entry}}%
 {system}%
 {a set of elements coming together in a complex whole and whose behaviour stems from the interaction of those elements}
+\glsxtrfieldlistadd{system}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{263}}
+
+
+\bibglsnewentry{systemic-thinking}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}},
+sort={systemic|thinking|},
+category={entry}}%
+{systemic thinking}%
+{problem solving approach which focuses on systems and their dynamics}
+\glsxtrfieldlistadd{systemic-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
 
 
 \bibglsnewentry{thematic-analysis}%
-{sort={thematic|analysis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}},
+sort={thematic|analysis|},
 category={entry}}%
 {thematic analysis}%
 {to identify recurring themes, their definition and relationships}
+\glsxtrfieldlistadd{thematic-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{286}}
 
 
 \bibglsnewentry{theory}%
-{sort={theory|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{202}},
+sort={theory|},
 category={entry}}%
 {theory}%
 {a system of ideas intended to explain something}
+\glsxtrfieldlistadd{theory}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{202}}
 
 
 \bibglsnewentry{triangulation}%
-{sort={triangulation|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{178}},
+sort={triangulation|},
 category={entry}}%
 {triangulation}%
 {using multiple data sources and methods, or even multiple researchers, to develop a comprehensive understanding of a phenomena under study and arrive at a particular conclusion about that phenomenon}
+\glsxtrfieldlistadd{triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{98}}
+\glsxtrfieldlistadd{triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{178}}
 
 
 \bibglsnewentry{data-source-triangulation}%
 {parent={triangulation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{178}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{179}},
 sort={data|source|triangulation|},
 category={entry}}%
 {data source triangulation}%
 {using several independent data sources}
+\glsxtrfieldlistadd{data-source-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{178}}
+\glsxtrfieldlistadd{data-source-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}}
 
 
 \bibglsnewentry{investigator-triangulation}%
 {parent={triangulation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{178}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{179}},
 sort={investigator|triangulation|},
 category={entry}}%
 {investigator triangulation}%
 {involving several researchers collecting and analysing data}
+\glsxtrfieldlistadd{investigator-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{178}}
+\glsxtrfieldlistadd{investigator-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}}
 
 
 \bibglsnewentry{methodological-triangulation}%
 {parent={triangulation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}},
 sort={methodological|triangulation|},
 category={entry}}%
 {methodological triangulation}%
 {the use of multiple methods in the examination of a phenomenon}
+\glsxtrfieldlistadd{methodological-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}}
 
 
 \bibglsnewentry{theory-triangulation}%
 {parent={triangulation},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}},
 sort={theory|triangulation|},
 category={entry}}%
 {theory triangulation}%
 {the use of different theories or hypotheses to analyse data and interpret phenomena}
+\glsxtrfieldlistadd{theory-triangulation}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{179}}
 
 
 \bibglsnewentry{validity}%
@@ -1343,10 +1883,39 @@ category={entry}}%
 
 
 \bibglsnewentry{validity-weakness}%
-{sort={validity|weakness|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{175}},
+sort={validity|weakness|},
 category={entry}}%
 {validity weakness}%
 {when the claim you have made to new knowledge isn't sufficiently credible, trustworthy, or accurate to be considered knowledge, or can't be generalised or transferred beyond your study}
+\glsxtrfieldlistadd{validity-weakness}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{175}}
+
+
+\bibglsnewentry{variable}%
+{sort={variable|},
+category={entry}}%
+{variable}%
+{a holder of potentially changeable data}
+
+
+\bibglsnewentry{non-numerical-variable}%
+{parent={variable},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{267}},
+sort={non-numerical|variable|},
+category={entry}}%
+{non-numerical variable}%
+{a variable that can hold other than numeric data}
+\glsxtrfieldlistadd{non-numerical-variable}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{267}}
+
+
+\bibglsnewentry{numerical-variable}%
+{parent={variable},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{267}},
+sort={numerical|variable|},
+category={entry}}%
+{numerical variable}%
+{a variable that can hold numerical data}
+\glsxtrfieldlistadd{numerical-variable}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{267}}
 
 
 \bibglsnewentry{version-control-system}%
@@ -1358,10 +1927,21 @@ category={entry}}%
 \glsxtrfieldlistadd{version-control-system}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
 
 
+\bibglsnewentry{visualisation-technique}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}},
+sort={visualisation|technique|},
+category={entry}}%
+{visualisation technique}%
+{a technqiue for visualising qualitative and quantitative data}
+\glsxtrfieldlistadd{visualisation-technique}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}}
+
+
 \bibglsnewentry{work-plan}%
-{sort={work|plan|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
+sort={work|plan|},
 category={entry}}%
 {work plan}%
 {summarises all activities and work to be conducted to complete the research, how to organise and execute them in the time-span of the project and which milestones must be met}
+\glsxtrfieldlistadd{work-plan}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 
 

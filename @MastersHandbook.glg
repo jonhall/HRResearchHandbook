@@ -12,17 +12,26 @@ Default setting --no-mfirstuc-protection now applied, use --mfirstuc-protection 
 Default setting --no-mfirstuc-math-protection now applied, use --mfirstuc-math-protection to revert
 Reading @MastersHandbook.aux
 Encoding: UTF-8
-Warning: @MastersHandbook.aux:43: File 'Chapters/Foreword.aux' not found.
-Warning: @MastersHandbook.aux:44: File 'Chapters/HowTo.aux' not found.
+Reading Chapters/Foreword.aux
+Encoding: UTF-8
+Reading Chapters/HowTo.aux
+Encoding: UTF-8
 Reading Chapters/Introduction.aux
 Encoding: UTF-8
-Warning: @MastersHandbook.aux:47: File 'Chapters/FrameworkOverview.aux' not found.
-Warning: @MastersHandbook.aux:48: File 'Chapters/Stage1.aux' not found.
-Warning: @MastersHandbook.aux:49: File 'Chapters/Stage2.aux' not found.
-Warning: @MastersHandbook.aux:50: File 'Chapters/Stage3.aux' not found.
-Warning: @MastersHandbook.aux:51: File 'Chapters/Stage4.aux' not found.
-Warning: @MastersHandbook.aux:52: File 'Chapters/Stage5.aux' not found.
-Warning: @MastersHandbook.aux:53: File 'Chapters/Closing.aux' not found.
+Reading Chapters/FrameworkOverview.aux
+Encoding: UTF-8
+Reading Chapters/Stage1.aux
+Encoding: UTF-8
+Reading Chapters/Stage2.aux
+Encoding: UTF-8
+Reading Chapters/Stage3.aux
+Encoding: UTF-8
+Reading Chapters/Stage4.aux
+Encoding: UTF-8
+Reading Chapters/Stage5.aux
+Encoding: UTF-8
+Reading Chapters/Closing.aux
+Encoding: UTF-8
 TeX character encoding: UTF-8
 Initialising resource @MastersHandbook.glstex.
 Parsing bib files for resource @MastersHandbook.glstex.
@@ -32,9 +41,6 @@ Reading glossary.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource @MastersHandbook.glstex.
-Warning: Entry 'sensitive-personal-datum' missing required field: description
-Warning: Can't find target gaussian-distribution, bell-curve for aliased entry normal-distribution.
-Aliased entries must be in the same resource set as their target entries with option alias-loc=transfer.
 Selecting entries for resource @MastersHandbook.glstex.
 Identical sort values for 'sample' and 'samples'
 Falling back on ID
@@ -60,6 +66,7 @@ recall-bias
 reliability-bias
 validity-bias
 bibliographic-management-tool
+bin
 bin-size
 boolean-operator
 bcw-model
@@ -67,8 +74,8 @@ box-and-whiskers-plot
 boxplot
 bracketing
 capstone-project
-categorical-datum
 citation-searching
+closed-form-solution
 code
 code-categorisation
 codebook
@@ -84,6 +91,7 @@ contingency-table
 correlation
 critical-theory
 cross-tabulation
+data-generation-method
 data-source
 datum
 nominal-datum
@@ -112,6 +120,7 @@ hasty-generalisation
 post-hoc-ergo-propter-hoc
 sweeping-generalisation
 falsification
+focus-group
 frequency-table
 gantt-chart
 gaussian-distribution
@@ -119,6 +128,7 @@ generation-method
 grey-literature
 groupthink
 hallucination
+hawthorne-effect
 histogram
 hypotheses
 hypothesis
@@ -133,6 +143,7 @@ intellectual-property
 interval-datum
 learning-outcome
 longitudinal-datum
+mathematical-thinking
 mean
 median
 meta-analysis
@@ -144,6 +155,8 @@ modelling-method
 multi-method-research
 narrative-analysis
 narrative-review
+non-probability-sampling
+non-random-sampling
 normal-design
 novelty-weakness
 numerical-approximation
@@ -153,7 +166,7 @@ sensitive-personal-datum
 pivot-table
 plagiarism
 self-plagiarism
-plan-act-reflect
+plan-act-reflect-cycle
 point-datum
 population
 positivism
@@ -196,12 +209,22 @@ secondary-evidence
 selection-bias
 significance
 skewness
+spread
 stakeholder
 standard-deviation
+statistical-analysis
+statistical-datum
+categorical-datum
+scalar-datum
+statistical-method
+descriptive-statistics
+inferential-statistics
 statistical-significance
+statistical-thinking
 summary-comparison-matrix
 synthesis
 system
+systemic-thinking
 thematic-analysis
 theory
 triangulation
@@ -212,6 +235,10 @@ theory-triangulation
 validity
 internal-validity
 validity-weakness
+variable
+non-numerical-variable
+numerical-variable
 version-control-system
+visualisation-technique
 work-plan
-174 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+195 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
