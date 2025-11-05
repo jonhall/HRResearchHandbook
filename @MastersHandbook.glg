@@ -41,6 +41,7 @@ Reading glossary.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource @MastersHandbook.glstex.
+Warning: Entry 'gaussian-distribution' missing required field: description
 Selecting entries for resource @MastersHandbook.glstex.
 Identical sort values for 'sample' and 'samples'
 Falling back on ID
@@ -62,6 +63,7 @@ cognitive-bias
 confirmation-bias
 novelty-bias
 observation-bias
+observer-bias
 recall-bias
 reliability-bias
 validity-bias
@@ -241,4 +243,4 @@ numerical-variable
 version-control-system
 visualisation-technique
 work-plan
-195 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+196 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.

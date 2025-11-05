@@ -251,6 +251,17 @@ category={entry}}%
 \glsxtrfieldlistadd{observation-bias}{loclist}{\glsseeformat{hawthorne-effect}{}}
 
 
+\bibglsnewentry{observer-bias}%
+{parent={bias},
+plural={observer biases},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{238}},
+sort={observer|bias|},
+category={entry}}%
+{observer bias}%
+{the bias brought by the observer, either implicat or explicit}
+\glsxtrfieldlistadd{observer-bias}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{238}}
+
+
 \bibglsnewentry{recall-bias}%
 {parent={bias},
 plural={recall baises},
@@ -526,10 +537,12 @@ category={entry}}%
 
 
 \bibglsnewentry{data-generation-method}%
-{sort={data|generation|method|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{234}},
+sort={data|generation|method|},
 category={entry}}%
 {data generation method}%
 {a method by which relevant empirical data may be obtained }
+\glsxtrfieldlistadd{data-generation-method}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{234}}
 
 
 \bibglsnewentry{data-source}%
@@ -555,10 +568,12 @@ category={entry}}%
 \bibglsnewentry{nominal-datum}%
 {parent={datum},
 plural={nominal data},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}},
 sort={nominal|datum|},
 category={entry}}%
 {nominal datum}%
 {of data, in named categories}
+\glsxtrfieldlistadd{nominal-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{151}}
 
 
 \bibglsnewentry{numerical-datum}%
@@ -784,12 +799,13 @@ category={entry}}%
 \bibglsnewentry{post-hoc-ergo-propter-hoc}%
 {parent={logical-fallacy},
 plural={post hoc ergo propter hoc},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{140}},
 sort={post|hoc|ergo|propter|hoc|},
 category={entry}}%
 {post hoc ergo propter hoc}%
 {argument which claims a causal relation between two phenomena because one happens after the other}
 \glsxtrfieldlistadd{post-hoc-ergo-propter-hoc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{139}}
+\glsxtrfieldlistadd{post-hoc-ergo-propter-hoc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{140}}
 
 
 \bibglsnewentry{sweeping-generalisation}%
@@ -847,7 +863,7 @@ location={\bibglsusealias{gaussian-distribution}},
 sort={Gaussian|distribution|},
 category={entry}}%
 {Gaussian distribution}%
-{{\color{red} missing}}
+{}
 \glsxtrfieldlistadd{gaussian-distribution}{loclist}{\glsseeformat{normal-distribution}{}}
 
 
@@ -1034,12 +1050,13 @@ category={entry}}%
 
 
 \bibglsnewentry{mathematical-thinking}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{260}},
 sort={mathematical|thinking|},
 category={entry}}%
 {mathematical thinking}%
 {a problem solving approach in which problems are explored with a view to identify and implement mathematical solutions in the form of intergral or differentail equations, or other mathematical techniques}
 \glsxtrfieldlistadd{mathematical-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
+\glsxtrfieldlistadd{mathematical-thinking}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{260}}
 
 
 \bibglsnewentry{mean}%
@@ -1364,12 +1381,13 @@ category={entry}}%
 
 \bibglsnewentry{quantitative-datum}%
 {plural={qualitative data},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{272}},
 sort={quantitative|datum|},
 category={entry}}%
 {quantitative datum}%
 {a datum that can be quantified or measured}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{150}}
+\glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{272}}
 
 
 \bibglsnewentry{random-sampling}%
@@ -1673,10 +1691,12 @@ category={entry}}%
 
 
 \bibglsnewentry{statistical-analysis}%
-{sort={statistical|analysis|},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}},
+sort={statistical|analysis|},
 category={entry}}%
 {statistical analysis}%
 {an umbrella term for a set of methods which you can apply to numerical and categorical data}
+\glsxtrfieldlistadd{statistical-analysis}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{271}}
 
 
 \bibglsnewentry{statistical-datum}%
