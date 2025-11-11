@@ -1,6 +1,25 @@
 %%Git integration
 %\usepackage[watermark]{gitstatus}
 
+%%Bibliography
+\usepackage[UKenglish]{babel}% recommended
+%%Biblatex stuff
+\usepackage[
+%	backend=bibtex8,
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true,
+%	backrefstyle=three,%consecutive pages are compressed
+	refsegment=part,
+]{biblatex}
+\addbibresource{Bibs/MastersBib.bib}
+\addbibresource{collatedBib.bib}
+
+%%Xrefs
+\usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
+\usepackage{xurl}
+
 %%For fakeverb, so tables show \verb
 \usepackage{codehigh}
 
@@ -40,16 +59,33 @@
 \setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
 
 \usepackage{titling}
+\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
+\usepackage{tocloft,calc}% for \widthof below
 
-%%JGH 2024-10-03: fiddle with table of contents spacing
-\usepackage{tocloft}
-%\makeatletter
-%\renewcommand{\@pnumwidth}{2em}
-%\makeatother
-\setlength{\cftpartnumwidth}{4em}
-\setlength{\cftsectionnumwidth}{4em}
-\setlength{\cftsubsectionnumwidth}{4em}
-%\setlength{\cftnumwidth}{1cm}
+% headings and refs
+\renewcommand{\partname}{Stage}
+\crefname{part}{Stage}{Stages}
+\Crefname{part}{Stage}{Stages}
+%\providecommand{\partautorefname}{Stage}
+
+% ToC: show "Stage I"
+\renewcommand{\cftpartpresnum}{Stage~}
+\renewcommand{\cftpartaftersnum}{\quad}
+\setlength{\cftpartnumwidth}{\widthof{Stage~\Roman{part}\quad}}
+
+
+%%%JGH 2024-10-03: fiddle with table of contents spacing
+%\usepackage{tocloft}
+%%\makeatletter
+%%\renewcommand{\@pnumwidth}{2em}
+%%\makeatother
+%\setlength{\cftpartnumwidth}{4em}
+%\setlength{\cftsectionnumwidth}{4em}
+%\setlength{\cftsubsectionnumwidth}{4em}
+%%\setlength{\cftnumwidth}{1cm}
+%%%Add Part to TOC, response to JW335,JW166
+%\renewcommand{\partname}{Stage}
+%\renewcommand\thepart{\partname~\Roman{part}}
 
 %%Colors
 \usepackage[svgnames]{xcolor}
@@ -68,20 +104,6 @@
 
 %%Set numbering depth
 \setsecnumdepth{subsubsection}
-
-\usepackage[UKenglish]{babel}% recommended
-%%Biblatex stuff
-\usepackage[
-%	backend=bibtex8,
-	style=authoryear,
-	autocite=inline,
-	sortcites,
-	backref=true,
-%	backrefstyle=three,%consecutive pages are compressed
-	refsegment=part,
-]{biblatex}
-\addbibresource{Bibs/MastersBib.bib}
-\addbibresource{collatedBib.bib}
 
 %%Define the fullcites to be an itemized list
 \newcommand{\fullcites}[1]{\def\multicitedelim{\item }\begin{itemize}\item \itemcites{#1}\end{itemize}}
@@ -104,10 +126,6 @@
 	category={same as entry}
 ]
 %%%To process the glossary, use bib2gls @MastersHandbook.aux in the appropriate directory
-
-%%Xrefs
-\usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
-\usepackage{xurl}
 
 %%Quotes and such
 \usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
