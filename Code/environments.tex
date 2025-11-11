@@ -1,173 +1,249 @@
-%%%For Activities and the like
-%%TODO clean up Activity code
+%%% ===============================================================
+%%% Activity / discussion boxes and supporting commands
+%%% ===============================================================
+
+% Colours (expects xcolor with svgnames already loaded)
 \newcommand{\exampleColor}{CornflowerBlue!40!white}
-\newcommand{\activityColor}{Pink!70!white} 
-\newcommand{\discussionColor}{\activityColor} 
-\newcommand{\tipColor}{Green!20!white} 
-\newcommand{\quoteColor}{Linen} 
+\newcommand{\activityColor}{Pink!70!white}
+\newcommand{\discussionColor}{\activityColor}
+\newcommand{\tipColor}{Green!20!white}
+\newcommand{\quoteColor}{Linen}
 \newcommand{\takeawaysColor}{black!10!white}
 \newcommand{\frameColor}{black!50!white}
 
-%%for activities, etc
+% tcolorbox (load common libraries)
 \usepackage[many]{tcolorbox}
-%%%Add marginnote for marginal footnotes
-\RequirePackage{marginnote}
 
+%%======================================================================
+%% Footnotes (coloured symbol cycle in the margin)
+%%======================================================================
+\newcommand{\footnotetextbulletsize}{1.8}
 
-% A tcolorbox style that swaps \footnote for a margin note locally
+\usepackage[perpage,side,marginal,symbol*]{footmisc}
+\DefineFNsymbols{hallrapanotti}%
+  {{\color{red}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{green}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{blue}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{orange}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{gray}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{purple}\scaletextbullet{\footnotetextbulletsize}}%
+   {\color{black}\scaletextbullet{\footnotetextbulletsize}}}
+\setfnsymbol{hallrapanotti}
+
+% --- margin notes that respect page side and ragged-outer formatting ---
+\usepackage{marginnote}
+
+\makeatletter
+\newcommand{\HRoutermnote}[1]{%
+  \begingroup
+    \if@twoside
+      \ifodd\value{page}\normalmarginpar\raggedright
+      \else\reversemarginpar\raggedleft\fi
+    \fi
+    \marginnote{\footnotesize #1}%
+  \endgroup
+}
+\makeatother
+
+\newcommand{\HRtcboxfootnote}[1]{%
+  \refstepcounter{footnote}%
+  \textsuperscript{\thefootnote}%
+  \HRoutermnote{\thefootnote\quad #1}%
+}
+
 \tcbset{
   footnotes-in-margin/.style={
-    before upper={
-      \let\realfootnote\footnote
-      \renewcommand{\footnote}[1]{%
-        \refstepcounter{footnote}%
-        \textsuperscript{\thefootnote}%
-        \marginnote{\footnotesize\thefootnote\quad ####1}%
-      }%
-    },
-    after upper={\let\footnote\realfootnote},
+    before upper={\let\HRsavedfootnote\footnote \let\footnote\HRtcboxfootnote},
+    after  upper={\let\footnote\HRsavedfootnote},
   },
 }
 
+%% --- Local style: swap \footnote for a margin note inside box content ---
+%% Note the use of '##1' (one level of macro parameterization in key handlers).
+%\tcbset{
+%  footnotes-in-margin/.style={
+%    before upper={
+%      \let\realfootnote\footnote
+%      \renewcommand{\footnote}[1]{%
+%        \refstepcounter{footnote}%
+%        \textsuperscript{\thefootnote}%
+%        \marginnote{\footnotesize\thefootnote\quad #1}%
+%      }%
+%    },
+%    after upper={\let\footnote\realfootnote},
+%  },
+%}
 
-%%Default tcbox settings
-\tcbset{%
-%  enhanced,
-  breakable,
-  footnotes-in-margin,
-%  before={\par\Needspace{5\baselineskip}}, % adjust to taste
-  pad at break=2mm,
-  left=2mm,
-  right=2mm,
-  width=\textwidth, 
-  frame hidden, 
-  segmentation hidden,
-%  before=\par\vspace*{2mm},
-  after=\par\bigskip,
-  colframe=\frameColor,
+% --- Sensible defaults for all boxes here ---
+\tcbset{
+  boxbase/.style={
+%    enhanced jigsaw,
+	parbox=false,%%tcolorbox.pdf, 4.18 Text Characteristics, page 111
+    breakable,
+    footnotes-in-margin,
+    pad at break=2mm,
+    left=2mm,
+    right=2mm,
+    width=\linewidth,      % more robust inside lists/floats than \textwidth
+    frame hidden,
+    segmentation hidden,
+    after=\par\bigskip,
+    colframe=\frameColor,
+    fonttitle=\bfseries,
+    colbacktitle=\frameColor,
+    coltitle=white,
+    title style={opacity=1}, % ensure title text prints even with light fills
+    title after break,       % keep title visible when a box breaks
+  },
 }
 
-%%Takeaways
-\newtcolorbox{takeaways}[1]{
-	move upwards=\topmargin,
-	colback=\takeawaysColor,
-	title={\Large{#1 Takeaways}},
-  }
+% --- Specific boxes -------------------------------------------------
 
-%%Activities
-\newtcolorbox{activity}{
+% Takeaways
+\newtcolorbox{takeaways}[1]{%
+  boxbase,
+  move upwards=0pt,
+  colback=\takeawaysColor,
+  title={\Large #1\space Takeaways},
+}
+
+% Activity
+\newtcolorbox{activity}{%
+  boxbase,
   colback=\activityColor,
-  title=%\textbf
-		{\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID}
+  title={\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID},
 }
 
-%%Discussions
-\newtcolorbox{discussion}{
+% Discussion
+\newtcolorbox{discussion}{%
+  boxbase,
   colback=\discussionColor,
-  title={Discussion\hfill \#\CurrentQuestionID},
+  title={Discussion\hfill\#\CurrentQuestionID},
 }
 
-%%Guidance environment
-\newenvironment{guidance}{\tcbsubtitle%[before skip=\baselineskip]%
-          {Guidance}}
-    {}
+% Guidance (to be used *inside* a tcolorbox)
+\newenvironment{guidance}{\tcbsubtitle{Guidance}}{}
 
-%%tips
-\newtcolorbox{tip}{
+% Tips
+\newtcolorbox{tip}{%
+  boxbase,
   colback=\tipColor,
   title={Tip},
 }
 
-\newtcolorbox{example}[1]{
+% Example (argument = short title)
+\newtcolorbox{example}[1]{%
+  boxbase,
   colback=\exampleColor,
-  title=\textbf{Example: #1}}%
-  
-\newtcolorbox{running}[1]{
-  colback=\exampleColor,
-  title=\textbf{#1}}%
+  title={\textbf{Example: #1}},
+}
 
-%%%Quote environment
-%\renewtcolorbox{quote}{
-%  colback=\quoteColor,
-%  title=\textbf{Quote}}%
-  
-%%Answer environment
-%%Is this used?
-\newenvironment{answer}{\textbf{Answer}\begin{trivlist}
-\item}
-    {\end{trivlist}}
-    
-%%%For question solution pairs, with optional delayed printing
+% Running (argument = title)
+\newtcolorbox{running}[1]{%
+  boxbase,
+  colback=\exampleColor,
+  title={\textbf{#1}},
+}
+
+%%% Quote box style (kept commented as in your original)
+% \renewtcolorbox{quote}{boxbase,colback=\quoteColor,title=\textbf{Quote}}
+
+% Simple Answer environment (unchanged)
+\newenvironment{answer}{\textbf{Answer}\begin{trivlist}\item}{\end{trivlist}}
+
+%%% ===============================================================
+%%% exsheets integration: question/solution as boxes
+%%% ===============================================================
 \usepackage{exsheets}
 \SetupExSheets{
-	headings=empty,
-	question/pre-hook=\begin{activity},
-	question/post-hook=\end{activity},
-	solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
-	solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
-	solution/print=true,
-	}
-%\ifoptionfinal{\SetupExSheets{solution/print=false}}{}	
+  headings=empty,
+  question/pre-hook=\begin{activity},
+  question/post-hook=\end{activity},
+  solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
+  solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
+  solution/print=true,
+}
+% To hide solutions in 'final' builds, you can flip this at class level or here:
+% \SetupExSheets{solution/print=false}
 
-%%%%%%% for choosing strategies/methods and related further deep dive into literature
-%%%%From Stage 4
-%%Resource type = fulltext cite in itemized list
-%%From authoryear.cbx
-%% Candidate for moving to header files
-\DeclareMultiCiteCommand{\fullcites}{\fullcite}{\multicitedelim\\}
+%%% ===============================================================
+%%% Resource list helpers (avoid name clashes)
+%%% ===============================================================
 
-\DeclareCiteCommand{\resourcelistcite}
-  {\usebibmacro{prenote}\begin{itemize}\item[] }
-  {\usedriver
-     {\DeclareNameAlias{sortname}{default}}
-     {\thefield{entrytyper}}
-  } 
-%     {%
-%		\footnote{\thefield{annotation}}
-%	 }
-  {\item[] \addspace}
-  {\end{itemize}\usebibmacro{postnote}}
+% If the upstream preamble already defined \itemcites, don't redefine.
+\makeatletter
+\@ifundefined{itemcites}{%
+  \DeclareMultiCiteCommand{\itemcites}{\fullcite}{}%
+}{}
+\makeatother
 
-\newenvironment{MoreDetails}[0]{\subsection{More details} The following citations provide good starting points for further reading: \label{ssect:MoreDetails}}{}
+% Produce an itemised list of full citations for a comma-separated key list.
+% Uses existing \itemcites if present; no-op if already defined elsewhere.
+\providecommand{\fullcites}[1]{%
+  \begingroup
+  \def\multicitedelim{\item }%
+  \begin{itemize}
+    \item \itemcites{#1}%
+  \end{itemize}
+  \endgroup
+}
 
+%%% ===============================================================
+%%% “More details” section and helpers
+%%% ===============================================================
 
-\newcommand{\ResGenTechnique}[1]{\begin{question}[subtitle={Activity: Do I need to know about #1?}]
-Check back to your chosen research strategy from~\Cref{stage3}. Does it involve data generation using #1? If so, read through the remainder of this section and complete the activities.
-\end{question}}
+\newenvironment{MoreDetails}{%
+  \subsection{More details}%
+  The following citations provide good starting points for further reading:%
+  % (No fixed \label here to avoid duplicate-label warnings on reuse.)
+}{}
 
-\newcommand{\ResGenExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
-To find out more about #1, take a look at these resources:
+% Macros that wrap exsheets' question with consistent subtitles + resources
+\newcommand{\ResGenTechnique}[1]{%
+  \begin{question}[subtitle={Activity: Do I need to know about #1?}]%
+  Check back to your chosen research strategy from~\Cref{stage3}. Does it involve data generation using #1? If so, read through the remainder of this section and complete the activities.%
+  \end{question}%
+}
 
-\fullcites#2
+\newcommand{\ResGenExtras}[2]{%
+  \begin{question}[subtitle={Activity: Deep dive into #1}]%
+  To find out more about #1, take a look at these resources:%
+  
+  \fullcites{#2}%
+  \end{question}%
+}
 
-\end{question}}
+\newcommand{\ResModTechnique}[1]{%
+  \begin{question}[subtitle={Activity: Do I need to know about #1?}]%
+  Check back to your chosen research strategy from~\Cref{stage3}. Does it involve modelling using #1? If so, read through the remainder of this section and complete the activities.%
+  \end{question}%
+}
 
-\newcommand{\ResModTechnique}[1]{\begin{question}[subtitle={Activity: Do I need to know about #1?}]
-Check back to your chosen research strategy from~\Cref{stage3}. Does it involve modelling using #1? If so, read through the remainder of this section and complete the activities.
-\end{question}}
+\newcommand{\ResModExtras}[2]{%
+  \begin{question}[subtitle={Activity: Deep dive into #1}]%
+  To find out more about #1, take a look at these resources:%
+  
+  \fullcites{#2}%
+  \end{question}%
+}
 
-\newcommand{\ResModExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
-To find out more about #1, take a look at these resources:
+\newcommand{\ReadingExtras}[2]{%
+  \begin{question}[subtitle={Activity: Deep dive into #1}]%
+  To find out more about #1, take a look at these resources:%
+  
+  \fullcites{#2}%
+  \end{question}%
+}
 
-\fullcites#2
+%%% ===============================================================
+%%% Part title page helper
+%%% ===============================================================
 
-\end{question}}
-
-\newcommand{\ReadingExtras}[2]{\begin{question}[subtitle={Activity: Deep dive into #1}]
-To find out more about #1, take a look at these resources:
-
-\fullcites#2
-
-\end{question}}
-
-%%Part Title Page formatting
-\NewDocumentEnvironment{PartTitlePage}{m m +b}{
-	\renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%%\newpage supplied by \restoregeometry
-	\cleardoublepage
-	\newgeometry{margin=7cm}
-	\part{#1}\label{#2}
-	\restoregeometry
-	\cleardoublepage
-	}{}
-
-%%%%%%%%%
+\NewDocumentEnvironment{PartTitlePage}{m m +b}{%
+  \renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%
+  \cleardoublepage
+  \newgeometry{margin=7cm}%
+  \part{#1}\label{#2}%
+  \restoregeometry
+  \cleardoublepage
+}{}

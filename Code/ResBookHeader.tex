@@ -1,159 +1,162 @@
-%%Git integration
-%\usepackage[watermark]{gitstatus}
+%%======================================================================
+%% Document language & quotation handling
+%%======================================================================
+\usepackage[UKenglish]{babel}
+\usepackage[threshold=1]{csquotes} % load before biblatex
 
-%%Bibliography
-\usepackage[UKenglish]{babel}% recommended
-%%Biblatex stuff
+%%======================================================================
+%% Bibliography (biblatex + biber)
+%%======================================================================
 \usepackage[
-%	backend=bibtex8,
-	style=authoryear,
-	autocite=inline,
-	sortcites,
-	backref=true,
-%	backrefstyle=three,%consecutive pages are compressed
-	refsegment=part,
+  style=authoryear,
+  autocite=inline,
+  sortcites,
+  backref=true,
+  refsegment=part
 ]{biblatex}
 \addbibresource{Bibs/MastersBib.bib}
 \addbibresource{collatedBib.bib}
 
-%%Xrefs
-\usepackage{hyperref}% load after biblatex, from docs sect 1.5.4
-\usepackage{xurl}
+%%======================================================================
+%% Fonts & maths (XeLaTeX via mathspec)
+%%======================================================================
+\usepackage{mathspec} % loads fontspec + amsmath
+% --- Workaround for mathspec package loader quirk (as in your original) ---
+\makeatletter
+\let\RequirePackage\original@RequirePackage
+\let\usepackage\RequirePackage
+\makeatother
 
-%%For fakeverb, so tables show \verb
-\usepackage{codehigh}
+\setmainfont[
+  Ligatures=TeX
+]{Arial}
+\setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
 
-%%Layout
+%%======================================================================
+%% Layout, graphics, colours, micro-typography
+%%======================================================================
 \usepackage{geometry}
 \geometry{
-% showframe,
   left=2cm,
   right=1cm,
   top=1.5cm,
   bottom=1.5cm,
   marginparsep=8mm,
   marginparwidth=55mm,
-  includemp,%pagewidth is done including marginpar
-%  includehead,
-  includefoot,
+  includemp,
+  includefoot
 }
 
-%%Fonts stuff
-%%Explicit Italic, etc, for Texifier's old format
-\usepackage{mathspec}
-%%Hack from https://tex.stackexchange.com/questions/85696/what-causes-this-strange-interaction-between-glossaries-and-amsmath
-\makeatletter % undo the wrong changes made by mathspec
-\let\RequirePackage\original@RequirePackage
-\let\usepackage\RequirePackage
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+
+\usepackage[svgnames]{xcolor}
+\usepackage{microtype} % safe with XeLaTeX; improves justification/kerning
+
+%% Maths must be seen before cleveref
+\usepackage{amsmath} % safe even if mathspec already loaded it
+
+%% Xrefs
+\usepackage{xurl}
+\usepackage{hyperref}      % after biblatex
+\usepackage{bookmark}      % immediately after hyperref
+\usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
+
+%% -------------------------------------------------------------------
+%% URLs, hyperlinks, cross-references (no \hypersetup, no nameinlink)
+%% Place these as early as possible after \documentclass
+%% -------------------------------------------------------------------
+\PassOptionsToPackage{hyphens}{url} % allow URL line breaks
+\PassOptionsToPackage{unicode,linktoc=all,pdfborder={0 0 0}}{hyperref}
+
+% Make sure amsmath is seen before cleveref to avoid the warning
+\makeatletter
+\@ifpackageloaded{amsmath}{}{\usepackage{amsmath}}
+% Load hyperref only if not already loaded by the class or another package
+\@ifpackageloaded{hyperref}{}{\usepackage{hyperref}}
 \makeatother
 
-\setmainfont[
-	Mapping=tex-text,
-%	BoldFont={* Bold},
-%	ItalicFont={* Italic},
-%	BoldItalicFont={* Bold Italic},
-%%%Turns off ligatures
-%	Ligatures=NoCommon,
-%	Ligatures=NoRare,
-]{Arial}
-\setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
+% xurl after hyperref extends URL breaking without changing options
+\usepackage{xurl}
+% bookmark immediately after hyperref
+\usepackage{bookmark}
+% cleveref without nameinlink (recommended), but with your other prefs
+\usepackage[capitalise,noabbrev]{cleveref}
 
+%%======================================================================
+%% Code-ish verbatim for tables
+%%======================================================================
+\usepackage{codehigh}
+
+%%======================================================================
+%% ToC / headings (Stages)
+%%======================================================================
 \usepackage{titling}
-\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
-\usepackage{tocloft,calc}% for \widthof below
+\usepackage{tocloft,calc} % \widthof for number width calculations
 
-% headings and refs
-\renewcommand{\partname}{Stage}
 \crefname{part}{Stage}{Stages}
 \Crefname{part}{Stage}{Stages}
-%\providecommand{\partautorefname}{Stage}
 
 % ToC: show "Stage I"
 \renewcommand{\cftpartpresnum}{Stage~}
 \renewcommand{\cftpartaftersnum}{\quad}
 \setlength{\cftpartnumwidth}{\widthof{Stage~\Roman{part}\quad}}
 
+%Correct babel's tendency to name parts Parts.
+\addto\captionsUKenglish{%
+  \renewcommand{\partname}{Stage}%
+}
 
-%%%JGH 2024-10-03: fiddle with table of contents spacing
-%\usepackage{tocloft}
-%%\makeatletter
-%%\renewcommand{\@pnumwidth}{2em}
-%%\makeatother
-%\setlength{\cftpartnumwidth}{4em}
-%\setlength{\cftsectionnumwidth}{4em}
-%\setlength{\cftsubsectionnumwidth}{4em}
-%%\setlength{\cftnumwidth}{1cm}
-%%%Add Part to TOC, response to JW335,JW166
-%\renewcommand{\partname}{Stage}
-%\renewcommand\thepart{\partname~\Roman{part}}
 
-%%Colors
-\usepackage[svgnames]{xcolor}
+%%======================================================================
+%% Numbering depth
+%%======================================================================
+\setcounter{secnumdepth}{2} % subsection
+\setcounter{tocdepth}{2}    % up to subsection in ToC
 
-%%Footnotes
-\newcommand{\footnotetextbulletsize}{1.8}
-\usepackage[perpage,side,marginal,symbol*]{footmisc}
-\DefineFNsymbols{hallrapanotti}{{\color{red}\scaletextbullet{\footnotetextbulletsize}}%
-	{\color{green}\scaletextbullet{\footnotetextbulletsize}}%
-	{\color{blue}\scaletextbullet{\footnotetextbulletsize}}%
-	{\color{orange}\scaletextbullet{\footnotetextbulletsize}}%
-	{\color{gray}\scaletextbullet{\footnotetextbulletsize}}
-	{\color{purple}\scaletextbullet{\footnotetextbulletsize}}
-	{\color{black}\scaletextbullet{\footnotetextbulletsize}}}
-\setfnsymbol{hallrapanotti}
-
-%%Set numbering depth
-\setsecnumdepth{subsubsection}
-
-%%Define the fullcites to be an itemized list
-\newcommand{\fullcites}[1]{\def\multicitedelim{\item }\begin{itemize}\item \itemcites{#1}\end{itemize}}
-\DeclareMultiCiteCommand{\itemcites}{\fullcite}{}
-%%Autoinclude bib below (after Glossary)
-
-%%Glossary
+%%======================================================================
+%% Glossary (bib2gls workflow)
+%%======================================================================
 \usepackage[
-	record,				% create group field and other stuff
-	postpunc={dot},		% full stop after description
-	nostyles,			% don't load default style packages
-	stylemods={tree}	% load glossary-tree.sty and patch styles
+  record,
+  postpunc={dot},
+  nostyles,
+  stylemods={tree}
 ]{glossaries-extra}
 
 \GlsXtrLoadResources[
-	src={glossary.bib},		% bib file
-	selection={all},		% select all entries
-	field-aliases={fulllong=long}, %%Glossary-extra manual, pg. 572
-	trigger-type=ignored, 
-	category={same as entry}
+  src={glossary.bib},
+  selection={all},
+  field-aliases={fulllong=long},
+  trigger-type=ignored,
+  category={same as entry}
 ]
-%%%To process the glossary, use bib2gls @MastersHandbook.aux in the appropriate directory
+% Process with: bib2gls <jobname>.aux
 
-%%Quotes and such
-\usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
-%%Uncomment for italicised quotes
+%%======================================================================
+%% Quotes (styling)
+%%======================================================================
 \renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
 \renewcommand{\mkblockquote}[4]{#1\emph{#2}#4#3}
 
-%%Graphics
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
-
-%%Symbols
+%%======================================================================
+%% Symbols
+%%======================================================================
 \usepackage{amssymb}
 
-%%Numbering options to subsection
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{2}
-
-%%Activity environment definitions
+%%======================================================================
+%% Project-specific environments & tables
+%%======================================================================
 \input{environments.tex}
-	
-%%Table definitions
 \input{tables.tex}
 \input{WOtables.tex}
 
-%%T.o.d.o notes
+%%======================================================================
+%% TODO notes
+%%======================================================================
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 
-%%Load lasts
-\usepackage{cleveref}
+%%======================================================================
+%% Load last (as requested)
+%%======================================================================
 \usepackage{listliketab}
