@@ -41,9 +41,7 @@ Reading glossary.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource @MastersHandbook.glstex.
-Warning: Entry 'sensitive-personal-datum' missing required field: description
-Warning: Can't find target gaussian-distribution, bell-curve for aliased entry normal-distribution.
-Aliased entries must be in the same resource set as their target entries with option alias-loc=transfer.
+Warning: Entry 'gaussian-distribution' missing required field: description
 Selecting entries for resource @MastersHandbook.glstex.
 Identical sort values for 'sample' and 'samples'
 Falling back on ID
@@ -65,10 +63,12 @@ cognitive-bias
 confirmation-bias
 novelty-bias
 observation-bias
+observer-bias
 recall-bias
 reliability-bias
 validity-bias
 bibliographic-management-tool
+bin
 bin-size
 boolean-operator
 bcw-model
@@ -76,8 +76,8 @@ box-and-whiskers-plot
 boxplot
 bracketing
 capstone-project
-categorical-datum
 citation-searching
+closed-form-solution
 code
 code-categorisation
 codebook
@@ -93,6 +93,7 @@ contingency-table
 correlation
 critical-theory
 cross-tabulation
+data-generation-method
 data-source
 datum
 nominal-datum
@@ -115,7 +116,13 @@ evidence
 experiential-learning
 fallacy
 logical-fallacy
+circular-reasoning
+false-dichotomy
+hasty-generalisation
+post-hoc-ergo-propter-hoc
+sweeping-generalisation
 falsification
+focus-group
 frequency-table
 gantt-chart
 gaussian-distribution
@@ -123,6 +130,7 @@ generation-method
 grey-literature
 groupthink
 hallucination
+hawthorne-effect
 histogram
 hypotheses
 hypothesis
@@ -137,6 +145,7 @@ intellectual-property
 interval-datum
 learning-outcome
 longitudinal-datum
+mathematical-thinking
 mean
 median
 meta-analysis
@@ -148,6 +157,8 @@ modelling-method
 multi-method-research
 narrative-analysis
 narrative-review
+non-probability-sampling
+non-random-sampling
 normal-design
 novelty-weakness
 numerical-approximation
@@ -157,7 +168,7 @@ sensitive-personal-datum
 pivot-table
 plagiarism
 self-plagiarism
-plan-act-reflect
+plan-act-reflect-cycle
 point-datum
 population
 positivism
@@ -200,12 +211,22 @@ secondary-evidence
 selection-bias
 significance
 skewness
+spread
 stakeholder
 standard-deviation
+statistical-analysis
+statistical-datum
+categorical-datum
+scalar-datum
+statistical-method
+descriptive-statistics
+inferential-statistics
 statistical-significance
+statistical-thinking
 summary-comparison-matrix
 synthesis
 system
+systemic-thinking
 thematic-analysis
 theory
 triangulation
@@ -216,6 +237,10 @@ theory-triangulation
 validity
 internal-validity
 validity-weakness
+variable
+non-numerical-variable
+numerical-variable
 version-control-system
+visualisation-technique
 work-plan
-169 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+196 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.

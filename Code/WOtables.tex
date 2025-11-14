@@ -6,11 +6,16 @@
 \newcommand{\redbullet}[0]{\makebox[1cm]{\hfil\color{red}\scaletextbullet{3.0}\hfil}}
 \newcommand{\greybullet}[0]{\makebox[1cm]{\hfil\color{gray8}\textbullet\hfil}}
 \newcommand{\normbullet}[0]{\makebox[1cm]{\hfil\textbullet\hfil}}
-\newcommand{\newitem}{\redbullet}
+
+%%In response to JW183, changed from 
+%\newcommand{\newitem}{\redbullet}
+\newcommand{\newitem}{{\color{red}$\ast$}}
 \newcommand{\olditem}{\normbullet}
 
 \newcommand{\naitem}{\greybullet\color{gray8}}
-\newcommand{\upditem}{\orangebullet}
+%%In response to JW183, changed from 
+%\newcommand{\upditem}{\orangebullet}
+\newcommand{\upditem}{{\color{orange}$\ast$}}
 \newcommand{\nocontent}{No content at this stage}
 \newcommand{\WOclose}[0]{Should be close to final form}
 \newcommand{\WOrevise}[0]{Revise as necessary}
@@ -18,7 +23,7 @@
 
 \newcommand{\stageWG}[1]{Stage #1 Writing Outcomes }
 \newcommand{\stageWO}[1]{Stage #1{} Writing Outcomes}
-\newcommand{\headers}{Part/Structure ({\color{red}\textbullet} new, {\color{orange}\textbullet} updated)&Guidance&Where?}
+\newcommand{\headers}{Part/Structure ({\newitem} new, {\color{orange}\textbullet} updated)&Guidance&Where?}
 
 %%Simple N column table for Writing Outcomes
 \NewDocumentEnvironment{SimpleNColTableWO}{
@@ -106,7 +111,7 @@
 	References&Include all used citations &\Cref{ssect:Processing}\\
 	Dissertation appendices\\
 		\newitem Articles still to review & Include list of articles you have identified to review next\\
-		\naitem Raw data, questionnaires, code, etc.\\
+		\naitem Raw data, questionnaires, code,~\etc{}\\
 \end{SimpleNColTableWO}
 }
 
@@ -127,7 +132,7 @@
 		\upditem Justification for the research&\\
 		\newitem Definitions&Define your acronyms and other technical terms, to assist the reader\\
 		
-	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should be completed by the end of Stage 2. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in Stage 1&\Cref{sect:DevelopingYourLiterature}\\
+	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should be completed by the end of~\Cref{stage2}. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in~\Cref{stage1}&\Cref{sect:DevelopingYourLiterature}\\
 		\olditem Review of existing relevant knowledge &\\
 		\newitem Critical summary, including knowledge gap to be addressed by the research&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address&\Cref{ssect:WritingYourReview}\\
 		
@@ -156,7 +161,7 @@
 		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
 	References&\WOrevise\\
 	Dissertation appendices&\nocontent\\
-		\naitem Raw data, questionnaires, code, etc.\\
+		\naitem Raw data, questionnaires, code,~\etc{}\\
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageThreeWritingOutcomes}{
@@ -205,7 +210,7 @@
 		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
 	References&\WOrevise\\
 	Dissertation appendices&\nocontent\\
-		\naitem Raw data, questionnaires, code, etc.\\
+		\naitem Raw data, questionnaires, code,~\etc{}\\
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageFourWritingOutcomes}{
@@ -254,7 +259,7 @@
 		\upditem Reflexive account&\WOrevise\\
 	References&\WOrevise\\
 	Dissertation appendices&\\
-		\newitem Raw data, questionnaires, code, etc. & If applicable, include raw data, questionnaires you've used, transcripts of interviews, etc. \\
+		\newitem Raw data, questionnaires, code,~\etc{}. & If applicable, include raw data, questionnaires you've used, transcripts of interviews,~\etc{}. \\
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageFiveWritingOutcomes}{
@@ -303,7 +308,7 @@
 		\upditem Reflexive account&\WOrevise\\
 	References&\WOrevise\\
 	Dissertation appendices&\WOrevise\\
-		\upditem Raw data, questionnaires, code, etc. \\
+		\upditem Raw data, questionnaires, code,~\etc{}. \\
 \end{SimpleNColTableWO}}
 
 %\newcommand{\StageOneWritingGuidance}{
@@ -352,7 +357,7 @@
 %		\newitem Reflexive account&Include your critical account of your research actions and outcomes in this stage of your research, including your insights into your assumptions and motivations &\Cref{ch:ReflectingReflexivity}\\
 %	References&Include all used citations &\Cref{ssect:Processing}\\
 %	Dissertation appendices&\WOTBD\\
-%		\naitem Raw data, questionnaires, code, etc.\\
+%		\naitem Raw data, questionnaires, code,~\etc{}\\
 %\end{SimpleNColTableWO}
 %}
 %
@@ -373,7 +378,7 @@
 %		\upditem Justification for the research&\\
 %		\newitem Definitions&Explain your use of acronyms and other technical terms, to assist the reader\\
 %		
-%	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should now be completed. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in Stage 1&\Cref{sect:DevelopingYourLiterature}\\
+%	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should now be completed. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in~\Cref{stage1}&\Cref{sect:DevelopingYourLiterature}\\
 %		\olditem Review of existing relevant knowledge &\\
 %		\newitem Critical summary, including knowledge gap to be addressed by the research&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address&\Cref{???}\\
 %		
@@ -402,7 +407,7 @@
 %		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
 %	References&\WOrevise\\
 %	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code, etc.\\
+%		\naitem Raw data, questionnaires, code,~\etc{}\\
 %\end{SimpleNColTableWO}}
 %
 %\newcommand{\StageThreeWritingGuidance}{
@@ -451,7 +456,7 @@
 %		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
 %	References&\WOrevise\\
 %	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code, etc.\\
+%		\naitem Raw data, questionnaires, code,~\etc{}\\
 %\end{SimpleNColTableWO}}
 %
 %\newcommand{\StageFourWritingGuidance}{
@@ -500,7 +505,7 @@
 %		\upditem Reflexive account&\WOrevise\\
 %	References&\WOrevise\\
 %	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code, etc.\\
+%		\naitem Raw data, questionnaires, code,~\etc{}\\
 %\end{SimpleNColTableWO}}
 
 \newcommand{\StageFiveWritingGuidance}{
@@ -565,5 +570,5 @@
 		\olditem Implications for practice&If applicable, argue how your findings may influence professional practice\\
 		\olditem Reflexive account&\WOrevise\\
 	References&{You references should be accurate and complete in relation to citations in the body Section 6.4.2 of the dissertation}&\Cref{ssect:Processing}\\
-	Dissertation appendices&{You can use appendices to include supplementary material in support of the main body of your dissertation, for instance sample raw data, questionnaires used in data generation, programme code for models or artefacts, detailed calculations, etc.}\\
+	Dissertation appendices&{You can use appendices to include supplementary material in support of the main body of your dissertation, for instance sample raw data, questionnaires used in data generation, programme code for models or artefacts, detailed calculations,~\etc{}}\\
 \end{SimpleNColTableWO}}
