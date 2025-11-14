@@ -1,68 +1,80 @@
-%%Better bullets
+%% Better bullets
 \RequirePackage{scaletextbullet}
 \settextbulletfactor{0.45}
-\newcommand{\orangebullet}[0]{{\makebox[1cm]{\color{orange}\hfil
-\scaletextbullet{3.0}\hfil}}}
-\newcommand{\redbullet}[0]{\makebox[1cm]{\hfil\color{red}\scaletextbullet{3.0}\hfil}}
-\newcommand{\greybullet}[0]{\makebox[1cm]{\hfil\color{gray8}\textbullet\hfil}}
-\newcommand{\normbullet}[0]{\makebox[1cm]{\hfil\textbullet\hfil}}
 
-%%In response to JW183, changed from 
-%\newcommand{\newitem}{\redbullet}
-\newcommand{\newitem}{{\color{red}$\ast$}}
-\newcommand{\olditem}{\normbullet}
+% Common width for all status bullets
+\newlength{\WObulletwidth}
+\setlength{\WObulletwidth}{1cm}
 
-\newcommand{\naitem}{\greybullet\color{gray8}}
-%%In response to JW183, changed from 
-%\newcommand{\upditem}{\orangebullet}
-\newcommand{\upditem}{{\color{orange}$\ast$}}
+\newcommand{\WObulletbox}[1]{%
+  \makebox[\WObulletwidth][c]{#1}%
+}
+
+\newcommand{\orangebullet}{\textcolor{orange}{\scaletextbullet{3}}}
+\newcommand{\redbullet}{\textcolor{red}{\scaletextbullet{3}}}
+\newcommand{\greybullet}{\textcolor{gray8}{\scaletextbullet{2}}}
+\newcommand{\normbullet}{\textbullet}
+
+% Status markers
+% (new/updated are asterisks by design after JW183;
+%  NA makes both bullet and following text grey)
+\newcommand{\newitem}{\WObulletbox{\redbullet}}
+\newcommand{\upditem}{\WObulletbox{\orangebullet}}
+\newcommand{\olditem}{\WObulletbox{\normbullet}}
+\newcommand{\naitem}{\WObulletbox{\greybullet}\color{gray8}}
+
 \newcommand{\nocontent}{No content at this stage}
-\newcommand{\WOclose}[0]{Should be close to final form}
-\newcommand{\WOrevise}[0]{Revise as necessary}
-\newcommand{\WOTBD}[0]{\color{red}TBD}
+\newcommand{\WOclose}{Should be close to final form}
+\newcommand{\WOrevise}{Revise as necessary}
+\newcommand{\WOTBD}{\textcolor{red}{TBD}}
 
 \newcommand{\stageWG}[1]{Stage #1 Writing Outcomes }
 \newcommand{\stageWO}[1]{Stage #1{} Writing Outcomes}
-\newcommand{\headers}{Part/Structure ({\newitem} new, {\color{orange}\textbullet} updated)&Guidance&Where?}
 
-%%Simple N column table for Writing Outcomes
+\newcommand{\ShortCrefsInThisTable}{%
+  \crefname{section}{S}{Ss}%
+  \Crefname{section}{S}{Ss}%
+  \crefname{chapter}{Ch}{Chs}%
+  \Crefname{chapter}{Ch}{Chs}%
+}
+
+% Legend: now uses \upditem so it matches the actual updated marker
+\newcommand{\headers}{%
+  Element ({\redbullet} new, {\orangebullet} updated)&Guidance&{Where\\covered}%
+}
+
+%% Simple N column table for Writing Outcomes
 \NewDocumentEnvironment{SimpleNColTableWO}{
-		m% 					% label
-		m%					% number of columns
-		O{\widetablewidth} 	% tablewidth (default: \widetablewidth)
-		m% 					% caption
-		O{X[3]X[6]X[1]}		% optional colspec
-		O{white}			% Table background colour – hack for when table needs to appear outside of tcbox
-		+b%					% body
-		}%
-		{
-		\begin{tblr}[
-				long,
-	 			label={#1},
-				caption={#4},
-				expand=\headers,
-% outer option "halign" is undocumented!
-% new value "r-hss": ragged right using \hss
-				halign=r-hss,
-%				toggle-left-and-right
-			]{
-	 			width 	= #3,
-				colspec = {#5},
-				cells	={bg=#6}, %Cell background colour
-		  		hline{3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg = \frameColor,wd=2pt},
-		  		hline{3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg = #6,wd=2pt},
-				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-				colsep 	= 5pt,
-%%TODO change colours to neutral/transparent, if possible.
-				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} 	= {font=\bfseries, fg = white, bg=\frameColor},
-				rows 	= {m},
-				rowhead = 1,
-				measure	= vbox, 
-			}
-			#7
-		\end{tblr}
-	}{}
+    m                      % #1 label
+    m                      % #2 number of columns (currently unused)
+    O{\widetablewidth}     % #3 table width (default: \widetablewidth)
+    m                      % #4 caption
+    O{X[3,l]X[6,l]X[-1,l]} % #5 colspec
+    O{white}               % #6 table background colour
+    +b                     % #7 body
+}{\ShortCrefsInThisTable
+  \begin{tblr}[
+      long,
+      label   = {#1},
+      caption = {#4},
+      expand  = \headers,
+  ]{
+      width   = #3,
+      colspec = {#5},
+      cells   = {bg=#6}, % Cell background colour
+      hline{3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg=\frameColor, wd=2pt},
+      hline{3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg=#6,          wd=2pt},
+      vline{Z} = {fg=\frameColor, wd=2pt},
+      colsep  = 5pt,
+       column{1} = {fg=white, bg=\frameColor},
+      row{1}    = {font=\bfseries, fg=white, bg=\frameColor},
+      rows      = {m},
+      rowhead   = 1,
+      measure   = vbox,
+  }
+  #7
+  \end{tblr}
+}{}
 	
 \newcommand{\StageOneWritingOutcomes}{
 \begin{SimpleNColTableWO}{stage1WritingOutcomes}{3}{\stageWO{1}}
@@ -186,9 +198,9 @@
 		\upditem Critical summary, including knowledge gap to be addressed by the research&Update based on any further reading you may have completed.&\\
 		
 	Chapter 3: Research definition&\WOrevise\\	
-		\upditem Problem statement &&\WOclose\\
-		\upditem Aim and objectives &&\WOclose\\
-		\upditem Knowledge contribution&&\WOclose\\
+		\upditem Problem statement &\WOclose\\
+		\upditem Aim and objectives &\WOclose\\
+		\upditem Knowledge contribution&\WOclose\\
 		
 	Chapter 4: Research design&Expand with a detailed account of your chosen methodology\\
 		\upditem Data and evidence&Revise in view of your chosen methodology&\\
