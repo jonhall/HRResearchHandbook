@@ -31,9 +31,9 @@
 		m%					% number of columns
 		O{\widetablewidth} 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{X[1,l]*{10}{X[7,l]}|[2pt]}%	% optional colspec
-		O{white}					% Table background colour – hack for when table needs to appear outside of tcbox
-		+b%					% body – *{10} is "upto 10 repeats, depending on how many entries the table has.
+		O{X[3]X[6]X[1]|[2pt,\frameColor]}%	% optional colspec
+		O{white}			% Table background colour – hack for when table needs to appear outside of tcbox
+		+b%					% body
 		}%
 		{
 		\begin{tblr}[
@@ -46,21 +46,19 @@
 				halign=r-hss,
 %				toggle-left-and-right
 			]{
-	 			width = \widetablewidth,
-				colspec = {X[3]X[6]X[1]|[2pt,\frameColor]},
-				cells={#6}, %Cell background colour
-%		  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg = \frameColor,2pt},
-		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg = #6,2pt},
+	 			width 	= \widetablewidth,
+				colspec = {#5},
+				cells	={bg=#6}, %Cell background colour
+		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg = \frameColor,wd=2pt},
+		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg = #6,wd=2pt},
 				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-				vline{2} = {1}{fg = #6, wd=2pt}, %column{2} = {co=1}, 
-				colsep = 5pt,
+				colsep 	= 5pt,
 %TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} = {font=\bfseries, fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
-				rows = {m},%Removed 3mm spacing
+				row{1} 	= {font=\bfseries, fg = white, bg=\frameColor},
+				rows 	= {m},
 				rowhead = 1,
-				measure=vbox, 
+				measure	= vbox, 
 			}
 			#7
 		\end{tblr}
