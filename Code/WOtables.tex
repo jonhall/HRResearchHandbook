@@ -31,7 +31,7 @@
 		m%					% number of columns
 		O{\widetablewidth} 	% tablewidth (default: \widetablewidth)
 		m% 					% caption
-		O{X[3]X[6]X[1]|[2pt,\frameColor]}%	% optional colspec
+		O{X[3]X[6]X[1]}		% optional colspec
 		O{white}			% Table background colour – hack for when table needs to appear outside of tcbox
 		+b%					% body
 		}%
@@ -46,14 +46,14 @@
 				halign=r-hss,
 %				toggle-left-and-right
 			]{
-	 			width 	= \widetablewidth,
+	 			width 	= #3,
 				colspec = {#5},
 				cells	={bg=#6}, %Cell background colour
-		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg = \frameColor,wd=2pt},
-		  		hline{2,3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg = #6,wd=2pt},
+		  		hline{3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg = \frameColor,wd=2pt},
+		  		hline{3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg = #6,wd=2pt},
 				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep 	= 5pt,
-%TODO change colours to neutral/transparent, if possible.
+%%TODO change colours to neutral/transparent, if possible.
 				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
 				row{1} 	= {font=\bfseries, fg = white, bg=\frameColor},
 				rows 	= {m},
