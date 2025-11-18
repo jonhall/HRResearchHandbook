@@ -5,6 +5,11 @@
 \usepackage[threshold=1]{csquotes} % load before biblatex
 
 %%======================================================================
+%% Document headers
+%%======================================================================
+\usepackage{fancyhdr}
+
+%%======================================================================
 %% Bibliography (biblatex + biber)
 %%======================================================================
 \usepackage[
@@ -125,7 +130,7 @@
 ]{glossaries-extra}
 
 \GlsXtrLoadResources[
-  src={glossary.bib},
+  src={Bibs/glossary.bib},
   selection={all},
   field-aliases={fulllong=long},
   trigger-type=ignored,
