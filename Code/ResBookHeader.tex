@@ -4,10 +4,10 @@
 \usepackage[UKenglish]{babel}
 \usepackage[threshold=1]{csquotes} % load before biblatex
 
-%%======================================================================
-%% Document headers
-%%======================================================================
-\usepackage{fancyhdr}
+%%%======================================================================
+%%% Document headers
+%%%======================================================================
+%\usepackage{fancyhdr}
 
 %%======================================================================
 %% Bibliography (biblatex + biber)
@@ -94,30 +94,60 @@
 \usepackage{codehigh}
 
 %%======================================================================
-%% ToC / headings (Stages)
+%% memoir ToC / headings (Stages)
 %%======================================================================
-\usepackage{titling}
-\usepackage{tocloft,calc} % \widthof for number width calculations
+
+%%======================================================================
+%% Numbering depth
+%%======================================================================
+
+\RequirePackage{calc}%%for \widthof{...}
+% How much detail to include
+\setsecnumdepth{subsubsection}
+\settocdepth{subsubsection}
+
+% Dots between title and page – memoir *does* provide \cftdotsep
+\renewcommand*{\cftdotsep}{4}
+
+% --- Parts in ToC ---
+\renewcommand{\cftpartpresnum}{Stage~}
+\renewcommand{\cftpartaftersnum}{\quad}
+\renewcommand*{\cftpartfont}{\bfseries}
+\renewcommand*{\cftpartpagefont}{\bfseries}
+\setlength{\cftpartindent}{0em}
+\setlength{\cftpartnumwidth}{\widthof{Stage~XXX\ }}
+\setlength{\cftbeforepartskip}{2.5em}
+
+% --- Chapters in ToC ---
+\renewcommand{\cftchapterpresnum}{Chapter~}
+\renewcommand{\cftchapteraftersnum}{\quad}
+\renewcommand*{\cftchapterfont}{\bfseries}
+\renewcommand*{\cftchapterpagefont}{\bfseries}
+\setlength{\cftchapterindent}{0em}
+\setlength{\cftchapternumwidth}{\widthof{Chapter~99\ }}
+\setlength{\cftbeforechapterskip}{1.5em}
+
+% --- Sections in ToC ---
+\renewcommand*{\cftsectionfont}{\normalfont}
+\renewcommand*{\cftsectionpagefont}{\normalfont}
+\setlength{\cftsectionindent}{1.5em}      % <-- section, not sec
+\setlength{\cftsectionnumwidth}{\widthof{99.99\ }}      % <-- sectionnumwidth
+\setlength{\cftbeforesectionskip}{0.2em}  % <-- beforesectionskip
+
+% --- Subsections in ToC ---
+\setlength{\cftsubsectionindent}{\widthof{99.99.99\ }}         % <-- subsection, not subsec
+\setlength{\cftsubsectionnumwidth}{3.5em}     % <-- subsectionnumwidth
+% (optional)
+% \setlength{\cftbeforesubsectionskip}{0.2em}
 
 \crefname{part}{Stage}{Stages}
 \Crefname{part}{Stage}{Stages}
-
-% ToC: show "Stage I"
-\renewcommand{\cftpartpresnum}{Stage~}
-\renewcommand{\cftpartaftersnum}{\quad}
-\setlength{\cftpartnumwidth}{\widthof{Stage~\Roman{part}\quad}}
 
 %Correct babel's tendency to name parts Parts.
 \addto\captionsUKenglish{%
   \renewcommand{\partname}{Stage}%
 }
 
-
-%%======================================================================
-%% Numbering depth
-%%======================================================================
-\setcounter{secnumdepth}{2} % subsection
-\setcounter{tocdepth}{2}    % up to subsection in ToC
 
 %%======================================================================
 %% Glossary (bib2gls workflow)

@@ -1124,6 +1124,13 @@ category={entry}}%
 {questions about characteristics such as gender, age, ethnicity and similar attributes, often used so that answers can be compared across different sub-groups of respondents}
 
 
+\bibglsnewentry{descriptive-coding}%
+{sort={descriptive|coding|},
+category={entry}}%
+{descriptive coding}%
+{in which codes are chosen to encapsulate a general idea. Particularly useful for non textual data, such as images or videos}
+
+
 \bibglsnewentry{descriptive-encoding}%
 {sort={descriptive|encoding|},
 category={entry}}%
@@ -1540,12 +1547,12 @@ category={entry}}%
 
 
 \bibglsnewentry{focus-group}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{204}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{301}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{303}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{318}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{320}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{322}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{301}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{303}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{318}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{320}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{322}},
 sort={focus|group|},
 category={entry}}%
 {focus group}%
 {a group of carefully participants carefully chosen to obtain data regarding ideas, attitudes, understanding, and perceptions on a specific topic}
-\glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{204}}
+\glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}}
 \glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{301}}
 \glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{303}}
 \glsxtrfieldlistadd{focus-group}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{318}}
@@ -2602,7 +2609,7 @@ category={entry}}%
 
 \bibglsnewentry{quantitative-datum}%
 {plural={quantitative data},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{191}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{192}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{195}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{202}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{204}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{240}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{264}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{265}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{271}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{323}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{346}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{352}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{353}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{355}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{372}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{374}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{378}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{379}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{191}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{192}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{195}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{202}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{205}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{240}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{264}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{265}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{271}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{323}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{346}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{352}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{353}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{355}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{372}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{374}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{378}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{379}},
 sort={quantitative|datum|},
 category={entry}}%
 {quantitative datum}%
@@ -2612,7 +2619,7 @@ category={entry}}%
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{192}}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{195}}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{202}}
-\glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{204}}
+\glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{240}}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{264}}
 \glsxtrfieldlistadd{quantitative-datum}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{265}}
@@ -2630,7 +2637,7 @@ category={entry}}%
 
 
 \bibglsnewentry{questionnaire}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{113}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{191}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{200}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{204}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{240}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{249}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{303}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{308}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{311}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{324}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{371}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{377}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{113}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{191}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{200}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{205}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{240}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{249}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{303}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{308}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{311}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{324}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{371}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{377}},
 sort={questionnaire|},
 category={entry}}%
 {questionnaire}%
@@ -2639,7 +2646,7 @@ category={entry}}%
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{113}}
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{191}}
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{200}}
-\glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{204}}
+\glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{205}}
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{240}}
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{249}}
 \glsxtrfieldlistadd{questionnaire}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{303}}
@@ -3642,13 +3649,13 @@ category={entry}}%
 
 
 \bibglsnewentry{systematic-review}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{203}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{236}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{257}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{260}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{204}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{236}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{257}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{260}},
 sort={systematic|review|},
 category={entry}}%
 {systematic review}%
 {research strategy used to generate new insights from accumulated published academic work that are not contained in individual articles}
 \glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
-\glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{203}}
+\glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{204}}
 \glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{236}}
 \glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{257}}
 \glsxtrfieldlistadd{systematic-review}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{258}}

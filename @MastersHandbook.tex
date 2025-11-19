@@ -9,8 +9,7 @@
 %\ErrorsOff
 
 \documentclass[a4paper,12pt,oneside,landscape]{memoir}
-%\documentclass[a4paper,10pt,landscape,twoside,openany]{memoir}
-%\documentclass[a4paper,10pt,twoside,openany]{memoir}
+%\documentclass[a4paper,12pt,oneside,portrait]{memoir}
 
 %%For debugging labels
 %\usepackage[draft]{showlabels}
@@ -34,6 +33,7 @@
 %%Colourblind version
 %%From https://tex.org.uk/macros/latex/contrib/colorblind/colorblind_doc.pdf
 \RequirePackage{colorblind}
+
 \begin{document}
 
 \newgeometry{margin=7cm}
@@ -41,7 +41,6 @@
 \restoregeometry
 
 \frontmatter
-\setcounter{tocdepth}{3}
 \tableofcontents
 
 \newpage
