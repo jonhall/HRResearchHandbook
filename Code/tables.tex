@@ -60,7 +60,7 @@
 
 %%Complex table definitions
 %%All ResActTables follow this format
-\NewTableCommand{\ResActTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
+\NewTableCommand{\ResActTableHeader}{&\Gls{deliverable}&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
 \NewTableCommand{\ResActChHeader}{\SetCell[c=5]{l}}
 \NewTableCommand{\ReportLineHeader}{\SetCell[c=3]{l}}
 
@@ -85,13 +85,13 @@
 			rowhead = 1,
 			colspec = {lX[8]X[13]X[-1]X[5]|}}
 %Header					
-	&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
+	&\Gls{deliverable}&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
 %Body
 		#2
 	\end{tblr}}{}
 	
 %%All ReportTables follow this format
-\NewTableCommand{\ReportTableHeader}{&Deliverable&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
+\NewTableCommand{\ReportTableHeader}{&\Gls{deliverable}&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction}
 \NewTableCommand{\ReportChHeader}{\SetCell[c=5]{l}}
 
 \NewDocumentEnvironment{ReportTable}{
