@@ -21,6 +21,10 @@
 ]{biblatex}
 \addbibresource{Bibs/MastersBib.bib}
 \addbibresource{collatedBib.bib}
+\DeclareDelimFormat{nameyeardelim}{\addcomma\space}%%Comma separator.
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{\printbibliography}
 
 %%======================================================================
 %% Fonts & maths (XeLaTeX via mathspec)
