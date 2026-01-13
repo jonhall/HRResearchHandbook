@@ -44,6 +44,7 @@ Processing resource @MastersHandbook.glstex.
 Selecting entries for resource @MastersHandbook.glstex.
 texparserlib: \href{http://prisma-statement.org/prismastatement/checklist.aspx}{PRISMA} -> PRISMA
 texparserlib: \emph{viva voce} -> viva voce
+texparserlib: \emph{in-vivo} -> in-vivo
 Writing /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex
 Encoding: UTF-8
 abstraction
@@ -118,6 +119,7 @@ qualitative-datum
 decision
 deductive-coding
 deductive-reasoning
+deliverable
 delphi
 demographic-question
 descriptive-coding
@@ -172,7 +174,6 @@ hypotheses
 hypothesis
 alternative-hypothesis
 null-hypothesis
-in-vivo
 inclusion
 indigenous
 inductive-coding
@@ -181,6 +182,7 @@ integrated-development-environment
 intellectual-property
 interval-datum
 interview
+in-vivo
 journaling
 knowledge-gap
 learning-outcome
@@ -329,4 +331,4 @@ viva-voce
 warrant
 work-plan
 writing-outcome
-283 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+284 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.

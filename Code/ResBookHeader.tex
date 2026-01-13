@@ -172,6 +172,12 @@
 ]
 % Process with: bib2gls <jobname>.aux
 
+%%tiny macro –gladupe- to allow different text to entry:
+\newcommand{\glsdupe}[2]{%
+  \glsadd{#1}
+  \glshyperlink{#1}{#2}
+}
+
 %%======================================================================
 %% Quotes (styling)
 %%======================================================================
@@ -191,7 +197,7 @@
 \input{WOtables.tex}
 
 %%======================================================================
-%% TODO notes
+%% TO{}DO notes
 %%======================================================================
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 
