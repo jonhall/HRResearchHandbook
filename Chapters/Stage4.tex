@@ -505,7 +505,7 @@ To be successful at interviews you should also consider:
 
 \section{Focus groups}\label{sect:focusGroups}
 
-Focus groups engage participants in interactive discussions to develop an understanding of complex \glspl{phenomenon} and generate new \gls{hypotheses} for further research or practice. They are effective at surfacing a full range of perspectives held by the participants and, through their interaction, expand on their individual contributions. They are particularly useful to uncover \glspl{datum} and ideas that may not come up in one-on-one interviews, and are generally a more efficient way of collecting \glspl{datum} than multiple interviews.
+Focus groups engage participants in interactive discussions to develop an understanding of complex \glspl{phenomenon} and generate new \glspl{hypothesis} for further research or practice. They are effective at surfacing a full range of perspectives held by the participants and, through their interaction, expand on their individual contributions. They are particularly useful to uncover \glspl{datum} and ideas that may not come up in one-on-one interviews, and are generally a more efficient way of collecting \glspl{datum} than multiple interviews.
 
 %\ResGenTechnique{focus groups}
 
@@ -1024,7 +1024,7 @@ Although neither of these characteristics are insuperable, they make timely cont
 
 %\ResModTechnique{\gls{statistical-thinking}}
 
-\Gls{statistical-thinking} is particularly valuable for prediction and forecasting -- for instance, to predict the \gls{spread} of a virus in a \gls{population} or how the average house price may change in a geographical area and over a certain period of time, or to test \gls{hypotheses}\footnote{You will encounter statistical tests in~\Cref{sect:inferentialStatistics}} -- for instance whether a medical treatment is likely to be effective. \Gls{statistical-thinking} is essential in quantitative analysis, which will be covered in~\Cref{sect:statisticalAnalysis}.
+\Gls{statistical-thinking} is particularly valuable for prediction and forecasting -- for instance, to predict the \gls{spread} of a virus in a \gls{population} or how the average house price may change in a geographical area and over a certain period of time, or to test \glspl{hypothesis}\footnote{You will encounter statistical tests in~\Cref{sect:inferentialStatistics}} -- for instance whether a medical treatment is likely to be effective. \Gls{statistical-thinking} is essential in quantitative analysis, which will be covered in~\Cref{sect:statisticalAnalysis}.
 
 %
 %\Gls{statistical-thinking}\todo{Source: \textcite{chance2024statistical}.} involves designing a study to collect \glspl{datum}, analyse patterns in the \glspl{datum}, and draw conclusions that go beyond the observed \glspl{datum}. \Gls{sampling} is key to being able to generalise results, while random assignment is key for cause-and-effect conclusions. Probability models help assess random variation and estimate margin of error.
@@ -1701,7 +1701,7 @@ Statistical tests can be used to estimate the strength of an \gls{association} (
 Each statistical test comprises the following elements:
 
 \begin{itemize}
-	\item \gls{hypotheses}: there are two, the \glsdupe{null-hypothesis}{null} and \glsdupe{alternative-hypothesis}{alternative} \gls{hypotheses}. \Gls{inferential-statistics} assumes you can't prove something to be true, but you can disprove something by finding an exception. Here is a classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the \gls{null-hypothesis} to what you want to disprove about the \gls{population}, with the \gls{alternative-hypothesis} being what you are really interested in finding out. So, the \gls{null-hypothesis} is usually a statement of no pattern/effect in the \gls{population}
+	\item \glspl{hypothesis}: there are two, the \glshyperlink[null]{null-hypothesis} and \glshyperlink[alternative]{alternative-hypothesis} \glspl{hypothesis}. \Gls{inferential-statistics} assumes you can't prove something to be true, but you can disprove something by finding an exception. Here is a classic example: you can't prove that all swans are white, but you can disprove they are by finding a black swan! So, you must  set the \gls{null-hypothesis} to what you want to disprove about the \gls{population}, with the \gls{alternative-hypothesis} being what you are really interested in finding out. So, the \gls{null-hypothesis} is usually a statement of no pattern/effect in the \gls{population}
 	\item \gls{significance}: this is the level of \gls{statistical-significance} for the test. It's known as the \textit{alpha} ($\alpha$) value from the Greek name of the mathematical \gls{variable} used to express it. Most tests are run with $\alpha=0.05$, which gives a 5\% probability that you may infer that the \gls{null-hypothesis} is disproved while in actuality it is correct\footnote{This is called a Type I error in Statistics.}
 	\item \gls{sample}(s): you need to have one or more (representative) samples of the \gls{population} of interest  on which to perform the test. Multiple samples are used in some tests, typically to compare specific statistics in different groups within the \gls{population} or changes within a group over time or after an intervention of interest, say treating patients with a new pharmacological drug
 	\item \gls{p-value}: this is the probability calculated for your test by your statistical package, and which is used to decide the outcome of the test
@@ -1710,9 +1710,9 @@ Each statistical test comprises the following elements:
 
 There are very many statistical tests to choose from, depending on the kind of \glspl{datum} you have and their distribution, the purpose of your analysis and the number of samples involved.  This introductory section does not detail all possible statistical tests --- once again, entire books have been written about them! Instead, it provides~\Cref{tab:testsForComparison} and~\Cref{tab:testsForAssociation} as summaries of the most common tests that you can then follow up in the literature, should you wish to apply any in your research.
 
-{\color{red} Bring the examples our of the table???}
+%{\color{red} Bring the examples our of the table???}
 
-\begin{SimpleNColTable}{tab:testsForComparison}{6}{Common statistical tests for comparison. \emph{Parametric} tests apply to normally distributed \glspl{datum} (see~\Cref{ssect:DescriptiveStatistics}); \emph{non parametric} tests to skewed distributions}[R[4]X[2,c]R[4]R[2]R[2]R[4]]
+\begin{SimpleNColTable}{tab:testsForComparison}{6}{Common statistical tests for comparison. \emph{Parametric} tests apply to normally distributed \glspl{datum} (see~\Cref{ssect:DescriptiveStatistics}); \emph{non parametric} tests to skewed distributions}[X[4]X[2,c]X[4]X[2]X[2]X[4]]
 	Purpose & Variables & Example & Parametric & Non-parametric & Notes  \\
 to compare the \gls{sample} \gls{mean} against a specific value & one scalar & to investigate whether AA batteries of a particular brand have the claimed lifespan  & one \gls{sample} t-test & n/a  & \\
 to compare the \gls{sample} proportion against a specific value & one categorical & to investigate the proportion of people who voted for a particular party in a city against that for the whole country & one \gls{sample} z-test & n/a  & \\
@@ -1787,7 +1787,7 @@ You should make use of a statistical package to perform your test(s). In documen
 \begin{itemize}
 	\item the kind of test performed
 	\item how your \glspl{datum} met its conditions
-	\item the \gls{hypotheses}, \gls{sample}(s) and level of \gls{significance}
+	\item the \glspl{hypothesis}, \gls{sample}(s) and level of \gls{significance}
 	\item the outcome, in terms of \gls{p-value} and \gls{decision}
 	\item how the outcome relates to your aim and objectives
 \end{itemize} 
