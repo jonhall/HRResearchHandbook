@@ -63,15 +63,16 @@
       colspec = {#5},
       cells   = {bg=#6}, % Cell background colour
       hline{3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg=\frameColor, wd=2pt},
-      hline{3,8,12,15,19,24,28,35,36,38,Z} = {1}{fg=#6,          wd=2pt},
-      vline{Z} = {fg=\frameColor, wd=2pt},
+      hline{3,8,12,15,19,24,28,35,36,38} = {1}{fg=#6,          wd=2pt},
       colsep  = 5pt,
        column{1} = {fg=white, bg=\frameColor},
       row{1}    = {font=\bfseries, fg=white, bg=\frameColor},
       rows      = {m},
       rowhead   = 1,
       measure   = vbox,
-  }
+      vline{Z} = {fg=\frameColor, wd=2pt},%last column
+      hline{Z} = {fg=\frameColor, wd=2pt},%last row
+}
   #7
   \end{tblr}
 }{}
