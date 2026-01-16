@@ -261,10 +261,31 @@
 %%% ===============================================================
 
 \NewDocumentEnvironment{PartTitlePage}{m m +b}{%
+%#1: Stage number
+%#2: Stage title
+%#3: text
   \renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%
   \cleardoublepage
   \newgeometry{margin=7cm}%
   \part{#1}\label{#2}%
+  \restoregeometry
+  \cleardoublepage
+}{}
+
+\NewDocumentEnvironment{Dedication}{+b}{%
+%#1: text
+  \centering
+  \ %to establish an initial line
+  \vspace{3cm}
+  
+  \addcontentsline{toc}{chapter}{Dedication}
+  \noindent\LARGE\textbf{Dedication}
+  
+  \vspace{3cm}  
+  
+  \Large #1%
+  \cleardoublepage
+  \newgeometry{margin=7cm}%
   \restoregeometry
   \cleardoublepage
 }{}

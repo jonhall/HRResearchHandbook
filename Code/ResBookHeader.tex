@@ -67,7 +67,10 @@
 
 %% Xrefs
 \usepackage{xurl}
-\usepackage{hyperref}      % after biblatex
+\usepackage[colorlinks = true,
+	linkcolor=blue,
+    urlcolor = blue
+    ]{hyperref}      % after biblatex
 \usepackage{bookmark}      % immediately after hyperref
 \usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
 
@@ -159,9 +162,10 @@
 \usepackage[
   record,
   postpunc={dot},
-  nostyles,
-  stylemods={tree}
-]{glossaries-extra}
+%  nostyles,
+  stylemods={all},
+  ]{glossaries-extra}
+\usepackage{glossary-tree}
 
 \GlsXtrLoadResources[
   src={Bibs/glossary.bib},
@@ -170,6 +174,13 @@
   trigger-type=ignored,
   category={same as entry}
 ]
+
+\GlsTreeSetup{
+  hang-indent=2em,
+  par-indent=3em,
+  pre-description={\glspar\noindent\hspace{\hangindent}}
+}
+
 % Process with: bib2gls <jobname>.aux
 
 %%======================================================================
@@ -186,9 +197,9 @@
 %%======================================================================
 %% Project-specific environments & tables
 %%======================================================================
-\input{environments.tex}
-\input{tables.tex}
-\input{WOtables.tex}
+\input{Code/environments.tex}
+\input{Code/tables.tex}
+\input{Code/WOtables.tex}
 
 %%======================================================================
 %% TO{}DO notes
@@ -204,3 +215,4 @@
 %% Utility macros
 %%======================================================================
 \newcommand\etc{etc}
+\newcommand{\glsforce}[2]{\glsadd{#1}\glshyperlink[#2]{#1}}
