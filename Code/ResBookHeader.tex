@@ -67,10 +67,16 @@
 
 %% Xrefs
 \usepackage{xurl}
-\usepackage[colorlinks = true,
+\usepackage[
+	colorlinks = true,
 	linkcolor=blue,
-    urlcolor = blue
+    urlcolor = blue,
     ]{hyperref}      % after biblatex
+%%Hyperref manual: All those (footnote) redefinitions can be suppressed by defining \hyper@nopatch@footnote
+%\makeatletter
+%\let\hyper@nopatch@footnote\relax
+%\makeatother
+
 \usepackage{bookmark}      % immediately after hyperref
 \usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
 
@@ -95,18 +101,14 @@
 % cleveref without nameinlink (recommended), but with your other prefs
 \usepackage[capitalise,noabbrev]{cleveref}
 
-%%======================================================================
-%% Code-ish verbatim for tables
-%%======================================================================
+%=======================================================
+%% Fake verb for tables
+%=======================================================
 \usepackage{codehigh}
 
-%%======================================================================
-%% memoir ToC / headings (Stages)
-%%======================================================================
-
-%%======================================================================
+%======================================================
 %% Numbering depth
-%%======================================================================
+%%====================================================
 
 \RequirePackage{calc}%%for \widthof{...}
 % How much detail to include
@@ -155,33 +157,11 @@
   \renewcommand{\partname}{Stage}%
 }
 
-
-%%======================================================================
-%% Glossary (bib2gls workflow)
-%%======================================================================
-\usepackage[
-  record,
-  postpunc={dot},
-%  nostyles,
-  stylemods={all},
-  ]{glossaries-extra}
-\usepackage{glossary-tree}
-
-\GlsXtrLoadResources[
-  src={Bibs/glossary.bib},
-  selection={all},
-  field-aliases={fulllong=long},
-  trigger-type=ignored,
-  category={same as entry}
-]
-
-\GlsTreeSetup{
-  hang-indent=2em,
-  par-indent=3em,
-  pre-description={\glspar\noindent\hspace{\hangindent}}
-}
-
-% Process with: bib2gls <jobname>.aux
+%=============================================
+%	Glossary
+%=============================================
+\input{Code/glossary}		% create glossaries
+\input{Code/glossary-mods}	% restrict gls to 1st on page
 
 %%======================================================================
 %% Quotes (styling)

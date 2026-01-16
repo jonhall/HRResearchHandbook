@@ -1,0 +1,22 @@
+\usepackage[postdot,style=tree*]%, entrycounter,subentrycounter]
+{glossaries-extra}
+\makenoidxglossaries
+
+\GlsXtrLoadResources[
+    selection=all,
+    src=Bibs/glossary
+]
+
+\setupglossaries{style-options={
+ tree*={
+  group-headings,
+  name-symbol-sep=\textasteriskcentered,
+  post-name-symbol=:\ ,
+%  pre-description=\textbullet,
+  pre-location=\dotfill,
+  post-location=\P,
+  }
+ }
+}
+
+% Process with: bib2gls <jobname>.aux

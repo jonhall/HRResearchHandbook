@@ -1,0 +1,64 @@
+\ExplSyntaxOn
+
+\prop_new:N \g__poetix_gls_seen_prop
+
+% Clear at each page shipout so the next page starts fresh.
+% Use shipout/after (end-of-page point; hook is grouped, so use global clear).
+\AddToHook{shipout/after}{\prop_gclear:N \g__poetix_gls_seen_prop}
+
+\cs_new_protected:Npn \__poetix_call_gls:Nnnn #1#2#3#4
+  {
+    \IfBooleanTF{#2}
+      {
+        \tl_if_novalue:nTF {#3}
+          { #1*{#4} }
+          { #1*[#3]{#4} }
+      }
+      {
+        \tl_if_novalue:nTF {#3}
+          { #1{#4} }
+          { #1[#3]{#4} }
+      }
+  }
+
+\cs_new_protected:Npn \__poetix_first_on_page:NNnnn #1#2#3#4#5
+  {
+    \prop_if_in:NnTF \g__poetix_gls_seen_prop {#5}
+      { #2{#5} }
+      {
+        \prop_gput:Nnn \g__poetix_gls_seen_prop {#5} {1}
+        \__poetix_call_gls:Nnnn #1{#3}{#4}{#5}
+      }
+  }
+
+% Plural: same logic; MUST be global put
+\cs_new_protected:Npn \__poetix_first_on_page_plural:NNnnn #1#2#3#4#5
+  {
+    \prop_if_in:NnTF \g__poetix_gls_seen_prop {#5}
+      { #2{#5} }
+      {
+        \prop_gput:Nnn \g__poetix_gls_seen_prop {#5} {1}
+        \__poetix_call_gls:Nnnn #1{#3}{#4}{#5}
+      }
+  }
+
+% Public wrappers
+\NewDocumentCommand \glsf   { s o m }
+  { \__poetix_first_on_page:NNnnn \gls    \glsentrytext    {#1}{#2}{#3} }
+
+\NewDocumentCommand \Glsf   { s o m }
+  { \__poetix_first_on_page:NNnnn \Gls    \Glsentrytext    {#1}{#2}{#3} }
+
+\NewDocumentCommand \GLSf   { s o m }
+  { \__poetix_first_on_page:NNnnn \GLS    \GLSentrytext    {#1}{#2}{#3} }
+
+\NewDocumentCommand \glsplf { s o m }
+  { \__poetix_first_on_page_plural:NNnnn \glspl  \glsentryplural  {#1}{#2}{#3} }
+
+\NewDocumentCommand \Glsplf { s o m }
+  { \__poetix_first_on_page_plural:NNnnn \Glspl  \Glsentryplural  {#1}{#2}{#3} }
+
+\NewDocumentCommand \GLSplf { s o m }
+  { \__poetix_first_on_page_plural:NNnnn \GLSpl  \GLSentryplural  {#1}{#2}{#3} }
+
+\ExplSyntaxOff

@@ -59,6 +59,7 @@ qualitative-analysis
 quantitative-analysis
 anti-positivism
 artificial-intelligence
+generative-artificial-intelligence
 association
 bell-curve
 beneficiary
@@ -82,6 +83,8 @@ boxplot
 bracketing
 capstone-project
 case-study-research
+centrality
+mean
 citation-searching
 claim
 closed-form-solution
@@ -129,6 +132,7 @@ design-problem
 design-science-research
 design-creation-strategy
 discourse-analysis
+dispersion
 diversity
 document
 double-barrelled-question
@@ -190,7 +194,6 @@ machine-learning
 masking
 mathematical-logical-proof
 mathematical-thinking
-mean
 median
 meta-analysis
 milestone
@@ -198,6 +201,12 @@ mixed-methods-research
 mode
 model
 modelling-method
+causal-loop-diagram
+influence-diagram
+stock-and-flow-diagram
+system-model
+systems-map
+unified-modeling-language
 multi-method-research
 narrative-analysis
 narrative-autobiography
@@ -258,6 +267,7 @@ research-beneficiary
 research-deliverable
 research-design
 research-method
+scientific-method
 research-methodology
 research-objective
 research-paradigms
@@ -268,6 +278,7 @@ research-strategy
 research-style
 response-option
 review-article
+risk
 sample
 sample-bias
 sampling
@@ -330,4 +341,4 @@ viva-voce
 warrant
 work-plan
 writing-outcome
-283 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
+294 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
