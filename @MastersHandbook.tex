@@ -30,7 +30,11 @@
 \RequirePackage{colorblind}
 
 %\includeonly{Chapters/Stage1}
-%\includeonly{Chapters/Stage2,Chapters/Closing}%,Chapters/Stage2}%,Chapters/Stage3,Chapters/Stage4,Chapters/Stage5}
+%\includeonly{Chapters/Stage2}
+%\includeonly{Chapters/Closing}
+\includeonly{Chapters/Stage3}
+%\includeonly{Chapters/Stage4}
+%\includeonly{Chapters/Stage5}
 
 \begin{document}
 
@@ -71,6 +75,14 @@
 
 	\include{Chapters/Closing}
 	
-%%Bibliography and Glossary include automatically
+%%Glossary
+%\twocolumn
+	\printnoidxglossary
+	\label{ch:Glossary}
+	
+%%Bibliography in one column
+\onecolumn
+	\printbibliography[title=Collated \bibname]
+
 
 \end{document} 
