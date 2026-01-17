@@ -23,9 +23,6 @@
 \addbibresource{collatedBib.bib}
 \DeclareDelimFormat{nameyeardelim}{\addcomma\space}%%Comma separator.
 
-%%%Ensure bibliography always included, even if \end{document} early
-%\AtEndDocument{\printbibliography}
-
 %%======================================================================
 %% Fonts & maths (XeLaTeX via mathspec)
 %%======================================================================
@@ -71,6 +68,7 @@
 	colorlinks=false,
 	allbordercolors={0 0 0},
     pdfborderstyle={/S/U/W 1},
+    hyperfootnotes = false,
     ]{hyperref}      % after biblatex
 %%Hyperref manual: All those (footnote) redefinitions can be suppressed by defining \hyper@nopatch@footnote
 %\makeatletter

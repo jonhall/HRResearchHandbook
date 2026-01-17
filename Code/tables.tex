@@ -37,15 +37,32 @@
 				expand=\headers,
 				}
 			}
+%		\begin{tblr}
+%			{
+%	 			width = #4, % default = \linewidth
+%				colspec = {#6},
+%		  		hline{Z} = {fg = \frameColor, wd=2pt},
+%				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+%				colsep = 5pt,
+%				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
+%				row{1} = {font=\bfseries, fg = white, bg=\frameColor},
+%				rows = {m},
+%				rowhead = 1,
+%				measure=vbox, 
+%				#7		%%Additional options
+%			}
+%			#8
+%		\end{tblr}
 		\begin{tblr}
 			{
+				cells={bg=\tableColor},
 	 			width = #4, % default = \linewidth
 				colspec = {#6},
-		  		hline{Z} = {fg = \frameColor, wd=2pt},
-				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+		  		hline{1,2,Z} = {fg = \frameColor, wd=2pt},
+				vline{1,2,Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
 				colsep = 5pt,
-				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} = {font=\bfseries, fg = white, bg=\frameColor},
+%				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
+				row{1} = {font=\bfseries, fg=white, bg=\frameColor},
 				rows = {m},
 				rowhead = 1,
 				measure=vbox, 

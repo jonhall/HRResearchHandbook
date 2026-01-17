@@ -10,8 +10,8 @@
   \makebox[\WObulletwidth][c]{#1}%
 }
 
-\newcommand{\orangebullet}{\textcolor{orange}{\scaletextbullet{3}}}
-\newcommand{\redbullet}{\textcolor{red}{\scaletextbullet{3}}}
+\newcommand{\orangebullet}{\textcolor{orange}{\scaletextbullet{2}}}
+\newcommand{\redbullet}{\textcolor{red}{\scaletextbullet{2}}}
 \newcommand{\greybullet}{\textcolor{gray8}{\scaletextbullet{2}}}
 \newcommand{\normbullet}{\textbullet}
 
@@ -23,13 +23,15 @@
 \newcommand{\olditem}{\WObulletbox{\normbullet}}
 \newcommand{\naitem}{\WObulletbox{\greybullet}\color{gray8}}
 
-\newcommand{\nocontent}{No content at this stage}
+\newcommand{\WOtableColor}{\tableColor} %Default Linen
+
+\newcommand{\WOnocontent}{No content at this stage}
 \newcommand{\WOclose}{Should be close to final form}
 \newcommand{\WOrevise}{Revise as necessary}
 \newcommand{\WOTBD}{\textcolor{red}{TBD}}
 
-\newcommand{\stageWG}[1]{Stage #1 Writing Outcomes }
-\newcommand{\stageWO}[1]{Stage #1{} Writing Outcomes}
+%\newcommand{\stageWG}[1]{Stage #1 Writing Outcomes  }
+\newcommand{\stageWO}[1]{Stage #1 Writing Outcomes ({\redbullet} new, {\orangebullet} updated)}
 
 \newcommand{\ShortCrefsInThisTable}{%
   \crefname{section}{S}{Ss}%
@@ -38,90 +40,90 @@
   \Crefname{chapter}{Ch}{Chs}%
 }
 
-% Legend: now uses \upditem so it matches the actual updated marker
-\newcommand{\headers}{%
-  Element ({\redbullet} new, {\orangebullet} updated)&Guidance&{Where\\covered}%
-}
+%% Legend: now uses \upditem so it matches the actual updated marker
+%\newcommand{\headers}{%
+%  Element% ({\redbullet} new, {\orangebullet} updated)
+%  	&Guidance&{Where\\covered}%
+%}
 
 %% Simple N column table for Writing Outcomes
 \NewDocumentEnvironment{SimpleNColTableWO}{
-    m                      % #1 label
-    m                      % #2 number of columns (currently unused)
-    O{\widetablewidth}     % #3 table width (default: \widetablewidth)
-    m                      % #4 caption
-    O{X[3,l]X[6,l]X[-1,l]} % #5 colspec
-    O{white}               % #6 table background colour
-    +b                     % #7 body
-}{\ShortCrefsInThisTable
-  \begin{tblr}[
-      long,
-      label   = {#1},
-      caption = {#4},
-      expand  = \headers,
+	    m        % #1 stage number
+	    +b       % #2 body
+}{\ShortCrefsInThisTable %Change \Cref settings
+  \begin{longtblr}[
+      label   = {stage#1WritingOutcomes},
+      caption = {Stage #1 Writing Outcomes ({\redbullet} new, {\orangebullet} updated)},
+      expand=\WOhaline,
   ]{
-      width   = #3,
-      colspec = {#5},
-      cells   = {bg=#6}, % Cell background colour
-      hline{3,8,12,15,19,24,28,35,36,38,Z} = {2-3}{fg=\frameColor, wd=2pt},
-      hline{3,8,12,15,19,24,28,35,36,38} = {1}{fg=#6,          wd=2pt},
+      width   = \widetablewidth,
+      colspec = {X[3,l]X[6,l]X[-1,l]},
+      cells   = {bg=\WOtableColor},
       colsep  = 5pt,
-       column{1} = {fg=white, bg=\frameColor},
-      row{1}    = {font=\bfseries, fg=white, bg=\frameColor},
-      rows      = {m},
+      rowsep  = 5pt,
+      row{1}    = {font=\bfseries, 
+      				fg=white, 
+      				bg=\frameColor},
+%      rows      = {m},
       rowhead   = 1,
-      measure   = vbox,
-      vline{Z} = {fg=\frameColor, wd=2pt},%last column
-      hline{Z} = {fg=\frameColor, wd=2pt},%last row
-}
-  #7
-  \end{tblr}
+      vline{1,2,Y,Z} = {fg=\frameColor, wd=2pt},
+      hline{1,2,Z} = {fg=\frameColor, wd=2pt},
+	  hline{
+		WOLineoh,WOLineih,WOLineiih,WOLineiiih,
+		WOLineivh,WOLinevh,WOLinevih,WOLineviih,
+		WOLineviiih
+	  }={2pt,fg=\frameColor},
+	  }
+  #2
+  \end{longtblr}
 }{}
-	
-\newcommand{\StageOneWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage1WritingOutcomes}{3}{\stageWO{1}}
-        \headers\\
-    %%Title
-	Title & Your provisional title &\Cref{sect:ChoosingATitle}\\
 
-	Abstract& \nocontent\\
+\newcommand{\StageOneWritingOutcomes}{
+\begin{SimpleNColTableWO}{1}
+  Element&Guidance&{Where?}\\
+	Title & Your provisional title &\Cref{sect:ChoosingATitle}\\
+\SetChild{idh=WOLineo}
+	Abstract& \WOnocontent\\
 	   	\naitem Research problem, its context and significance\\
 		\naitem Research aim\\
 		\naitem Research methodology\\
 		\naitem Knowledge contribution and its implications\\
-		
+\SetChild{idh=WOLinei}
 	Chapter 1: Introduction&&\Cref{sect:stage1ChoosingATopic}\\
 		\newitem Background to the research & Add background to your research topic in its broader context&\\
 		\newitem Justification for the research&Add justification for your research in terms of your context of application&\\
 		\naitem Definitions\\
-		
+\SetChild{idh=WOLineii}		
 	Chapter 2: Literature Review&&\Cref{sect:stage1LiteratureReview}\\
 		\newitem Review of existing relevant knowledge & Include a thematic summary of the literature you have read up to this point. This will include key trends, ideas and possible knowledge gaps. Most of your citations should  be academic in nature. This will only be an initial draft – many references could still be missing, to be added in next stage; those references that remain to be read should be captured in your progress tracking appendix (described below) and added to as other articles come to light\\
-		\naitem Critical summary, including knowledge gap to be addressed by the research&\nocontent\\
-		
+		\naitem Critical summary, including knowledge gap to be addressed by the research&\WOnocontent\\
+\SetChild{idh=WOLineiii}		
 	Chapter 3: Research definition\\	
 		\newitem Problem statement &Formulate your initial research problem, capturing the knowledge gap your research intends to address, based on your increased understanding from engaging with the literature&\Cref{sect:stage1ResearchProblem,sect:Formulating}\\
 		\newitem Aim and objectives &Related to your research problem, state you aim to indicate how you intend to address the knowledge gap. Break down your aim into few research objectives&\Cref{ch:SettingResearchAim,sect:researchObectives}\\
 		\newitem Knowledge contribution& Summarise your increasing understanding of how your research can contribute new knowledge&\Cref{ssect:KnowledgeGap}\\
-		
+\SetChild{idh=WOLineiv}		
 	Chapter 4: Research design\\
 		\naitem Data and evidence\\
 		\naitem Research strategy and methods\\
 		\naitem Research procedures \\
 		\newitem Ethics and regulations&Include your initial consideration of ethics and of regulations relevant to your project, particularly those specific to your course and university&\Cref{ch:EthicsAndRegulations}\\
-		
+\SetChild{idh=WOLinev}		
 	Chapter 5: Analysis and interpretation&No content at this stage\\
 		\naitem Summary and analysis of data\\
 		\naitem Summary of key findings\\
 		\naitem Interpretation in relation to aim and objectives\\
-		
-	Chapter 6: Evaluation and conclusion&\nocontent\\
+\SetChild{idh=WOLinevi}		
+	Chapter 6: Evaluation and conclusion&\WOnocontent\\
 		\naitem Evaluation against aim and objectives\\
 		\naitem Evaluation against related work in the literature\\
 		\naitem Validity of the research\\
 		\naitem Future work\\
 		\naitem Implications for practice\\
 		\newitem Reflexive account&Include your critical account of your research actions and outcomes in this stage, including your insights into your assumptions and motivations &\Cref{ch:ReflectingReflexivity}\\
+\SetChild{idh=WOLinevii}		
 	References&Include all used citations &\Cref{ssect:Processing}\\
+\SetChild{idh=WOLineviii}		
 	Dissertation appendices\\
 		\newitem Articles still to review & Include list of articles you have identified to review next\\
 		\naitem Raw data, questionnaires, code,~\etc{}\\
@@ -129,42 +131,47 @@
 }
 
 \newcommand{\StageTwoWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage2WritingOutcomes}{3}{\stageWO{2}}
-        \headers\\
+\begin{SimpleNColTableWO}{2}
+  Element&Guidance&{Where\\covered}\\
     %%Title
 	Title & \WOrevise\\
-
-	Abstract& \nocontent\\
+\SetChild{idh=WOLineo}
+	Abstract& \WOnocontent\\
 	   	\naitem Research problem, its context and significance\\
 		\naitem Research aim\\
 		\naitem Research methodology\\
 		\naitem Knowledge contribution and its implications\\
-		
-	Chapter 1: Introduction&Update background and justification based on your increasing understanding from reviewing the literature\\
-		\upditem Background to the research & \\
-		\upditem Justification for the research&\\
-		\newitem Definitions&Define your acronyms and other technical terms, to assist the reader\\
-		
-	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should be completed by the end of~\Cref{stage2}. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in~\Cref{stage1}&\Cref{sect:DevelopingYourLiterature}\\
-		\upditem Review of existing relevant knowledge &\\
-		\newitem Critical summary, including knowledge gap to be addressed by the research&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address&\Cref{ssect:WritingYourReview}\\
-		
-	Chapter 3: Research definition&Revise problem statement, aim and objectives, and knowledge contribution based on your increased understanding from your literature review \\	
-		\upditem Problem statement &\\
-		\upditem Aim and objectives &\\
-		\upditem Knowledge contribution& \\
-		
+\SetChild{idh=WOLinei}		
+	Chapter 1: Introduction\\
+	{\upditem Background to the research \\
+	\upditem Justification for the research}
+		&Update background and justification based on your increasing understanding from reviewing the literature\\
+	\newitem Definitions
+		&Define your acronyms and other technical terms, to assist the reader\\
+\SetChild{idh=WOLineii}		
+	Chapter 2: Literature Review\\
+	\upditem Review of existing relevant knowledge
+		&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should be completed by the end of~\Cref{stage2}. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in~\Cref{stage1}&\Cref{sect:DevelopingYourLiterature}\\
+	\newitem Critical summary
+		&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address&\Cref{ssect:WritingYourReview}\\
+\SetChild{idh=WOLineiii}		
+	Chapter 3: Research definition\\
+	{\upditem Problem statement \\
+		\upditem Aim and objectives \\
+		\upditem Knowledge contribution}
+&Revise problem statement, aim and objectives, and knowledge contribution based on your increased understanding from your literature review \\
+\SetChild{idh=WOLineiv}		
 	Chapter 4: Research design&\\
 		\newitem Data and evidence&Include your initial consideration of the data and evidence you will need in your project and where they may come from.&\Cref{sect:evidenceAndData}\\
-		\newitem Research strategy and methods&Outline possible research methods and strategy you could apply, justifying why you think they may be appropriate for your project. At this point this is only a tentative account that you will review and develop in the next stage&\Cref{sect:stage2methodology}\\
+		\newitem Research strategy and methods&Outline possible research strategy and methods you could apply, justifying why you think they are appropriate for your project. At this point this is only a tentative account that you will review and develop in the next stage&\Cref{sect:stage2methodology}\\
 		\naitem Research procedures &\\
 		\upditem Ethics and regulations&\\
-		
-	Chapter 5: Analysis and interpretation&\nocontent&\\
+\SetChild{idh=WOLinev}		
+	Chapter 5: Analysis and interpretation&\WOnocontent&\\
 		\naitem Summary and analysis of data\\
 		\naitem Summary of key findings\\
 		\naitem Interpretation in relation to aim and objectives\\
-		
+\SetChild{idh=WOLinevi}		
 	Chapter 6: Evaluation and conclusion& \\
 		\naitem Evaluation against aim and objectives\\
 		\naitem Evaluation against related work in the literature\\
@@ -172,48 +179,50 @@
 		\naitem Future work\\
 		\naitem Implications for practice\\
 		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
+\SetChild{idh=WOLinevii}
 	References&\WOrevise\\
-	Dissertation appendices&\nocontent\\
+\SetChild{idh=WOLineviii}
+	Dissertation appendices&\WOnocontent\\
 		\naitem Raw data, questionnaires, code,~\etc{}\\
 \end{SimpleNColTableWO}}
 
 \newcommand{\StageThreeWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage3WritingOutcomes}{3}{\stageWO{3}}
-        \headers\\
-   %%Title
+\begin{SimpleNColTableWO}{3} %Caption
+  Element&Guidance&{Where\\covered}\\
 	Title & \WOclose\\
-
-	Abstract& \nocontent\\
+\SetChild{idh=WOLineo}
+	Abstract& \WOnocontent\\
 	   	\naitem Research problem, its context and significance\\
 		\naitem Research aim\\
 		\naitem Research methodology\\
 		\naitem Knowledge contribution and its implications\\
-		
+\SetChild{idh=WOLinei}		
 	Chapter 1: Introduction&Revise introduction and justification, if needed\\
 		\upditem Background to the research &\WOclose\\
 		\upditem Justification for the research&\WOclose\\
-		\upditem Definitions & Continue to add new definitions, if necessary.\\
-		
-	Chapter 2: Literature Review&Continue to develop, adding late-found papers\\
-		\upditem Review of existing relevant knowledge &\\
-		\upditem Critical summary, including knowledge gap to be addressed by the research&Update based on any further reading you may have completed.&\\
-		
+		\upditem Definitions & Continue to add new definitions as necessary.\\
+\SetChild{idh=WOLineii}		
+	Chapter 2: Literature Review\\
+		\upditem Review of existing relevant knowledge &Continue to develop, adding late-found papers\\
+		\upditem Critical summary
+			&Update based on any further reading you may have completed.&\\
+\SetChild{idh=WOLineiii}		
 	Chapter 3: Research definition&\WOrevise\\	
 		\upditem Problem statement &\WOclose\\
 		\upditem Aim and objectives & Revise in view of your chosen methodology\\
 		\upditem Knowledge contribution& Revise in view of your chosen methodology\\
-		
+\SetChild{idh=WOLineiv}		
 	Chapter 4: Research design&Expand with a detailed account of your chosen methodology\\
 		\upditem Data and evidence&Revise in view of your chosen methodology&\\
 		\upditem Research strategy and methods&Summarise and justify your chosen research strategy and methods&\Cref{ch:ResearchStrategyCandidates,ch:yourResearchMethodology}\\
 		\naitem Research procedures \\
 		\upditem Ethics and regulations&Revise your account of relevant ethics and regulations in view of your methodological choices \\
-		
+\SetChild{idh=WOLinev}		
 	Chapter 5: Analysis and interpretation&No content at this stage\\
 		\naitem Summary and analysis of data\\
 		\naitem Summary of key findings\\
 		\naitem Interpretation in relation to aim and objectives\\
-		
+\SetChild{idh=WOLinevi}		
 	Chapter 6: Evaluation and conclusion&\\
 		\naitem Evaluation against aim and objectives\\
 		\naitem Evaluation against related work in the literature\\
@@ -221,48 +230,49 @@
 		\naitem Future work\\
 		\naitem Implications for practice\\
 		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
+\SetChild{idh=WOLinevii}
 	References&\WOrevise\\
-	Dissertation appendices&\nocontent\\
+\SetChild{idh=WOLineviii}
+	Dissertation appendices&\WOnocontent\\
 		\naitem Raw data, questionnaires, code,~\etc{}\\
 \end{SimpleNColTableWO}}
 
-\newcommand{\StageFourWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage4WritingOutcomes}{3}{\stageWO{4}}
-        \headers\\
-    %%Title
+\newcommand{\StageFourWritingOutcomes}{\begin{SimpleNColTableWO}{4}
+  Element&Guidance&{Where\\covered}\\
 	Title & \WOclose \\
-
-	Abstract& \nocontent\\
+\SetChild{idh=WOLineo}
+	Abstract& \WOnocontent\\
 	   	\naitem Research problem, its context and significance\\
 		\naitem Research aim\\
 		\naitem Research methodology\\
 		\naitem Knowledge contribution and its implications\\
-		
+\SetChild{idh=WOLinei}
 	Chapter 1: Introduction&\\
 		\upditem Background to the research & \WOclose\\
 		\upditem Justification for the research&\WOclose\\
 		\upditem Definitions&\WOrevise\\
-		
+\SetChild{idh=WOLineii}
 	Chapter 2: Literature Review&\\
 		\upditem Review of existing relevant knowledge &Continue to add late-found papers\\
-		\upditem Critical summary, including knowledge gap to be addressed by the research&\WOrevise\\
-		
+		\upditem Critical summary
+			&\WOrevise\\
+\SetChild{idh=WOLineiii}
 	Chapter 3: Research definition&\WOrevise\\	
 		\upditem Problem statement \\
 		\upditem Aim and objectives& Break down objectives into tasks \\
 		\upditem Knowledge contribution\\
-		
+\SetChild{idh=WOLineiv}
 	Chapter 4: Research design& Finalise your methodological choices&\Cref{ch:DataGenerationMethods,ch:ModellingMethods,ch:AnalysisMethods}\\
 		\upditem Data and evidence\\
 		\upditem Research strategy and methods \\
-		\newitem Research procedures& Detail your procedures for applying your chosen methods &\\
+		\newitem Research procedures& Detail your procedures for applying your chosen methods &\Cref{???}\\
 		\upditem Ethics and regulations& Revise in view of your procedures\\
-		
+\SetChild{idh=WOLinev}
 	Chapter 5: Analysis and interpretation\\
 		\newitem Summary and analysis of data&Summarise the data generated in this stage, and report their analysis. Ensure your report is appropriately structured and presented to convey your work concisely, clearly and systematically&\Cref{ch:writingUpInStage4}\\
-		\newitem Summary of key findings&Summarise the key findings from your data analysis in this stage\\
+		\newitem Summary of key findings&Summarise the key findings from your data analysis in this stage&\Cref{???}\\
 		\naitem Interpretation in relation to aim and objectives\\
-		
+\SetChild{idh=WOLinevi}
 	Chapter 6: Evaluation and conclusion&\\
 		\naitem Evaluation against aim and objectives\\
 		\naitem Evaluation against related work in the literature\\
@@ -270,48 +280,49 @@
 		\naitem Future work\\
 		\naitem Implications for practice\\
 		\upditem Reflexive account&\WOrevise\\
+\SetChild{idh=WOLinevii}
 	References&\WOrevise\\
+\SetChild{idh=WOLineviii}
 	Dissertation appendices&\\
 		\newitem Raw data, questionnaires, code,~\etc{}. & If applicable, include raw data, questionnaires you've used, transcripts of interviews,~\etc{}. \\
 \end{SimpleNColTableWO}}
 
-\newcommand{\StageFiveWritingOutcomes}{
-\begin{SimpleNColTableWO}{stage5WritingOutcomes}{3}{\stageWO{5}}
-        \headers\\
+\newcommand{\StageFiveWritingOutcomes}{\begin{SimpleNColTableWO}{5}
+  Element&Guidance&{Where\\covered}\\
     %%Title
 	Title & Finalise your title  \\
-
+\SetChild{idh=WOLineo}
 	Abstract& Write your abstract&\Cref{sect:writingAbstract}\\
 	   	\newitem Research problem, its context and significance\\
 		\newitem Research aim\\
 		\newitem Research methodology\\
 		\newitem Knowledge contribution and its implications\\
-		
+\SetChild{idh=WOLinei}
 	Chapter 1: Introduction&Finalise your introduction\\
 		\upditem Background to the research \\
 		\upditem Justification for the research\\
 		\upditem Definitions\\
-		
+\SetChild{idh=WOLineii}
 	Chapter 2: Literature Review&Finalise your literature review\\
 		\upditem Review of existing relevant knowledge \\
 		\upditem Critical summary, including knowledge gap to be addressed by the research\\
-		
+\SetChild{idh=WOLineiii}
 	Chapter 3: Research definition&Finalise your research definition\\	
 		\upditem Problem statement\\
 		\upditem Aim and objectives\\
 		\upditem Knowledge contribution\\
-		
+\SetChild{idh=WOLineiv}
 	Chapter 4: Research design&Finalise your research design, taking into account the full execution of your methodology\\
 		\upditem Data and evidence\\
 		\upditem Research strategy and methods\\
 		\upditem Research procedures \\
 		\upditem Ethics and regulations\\
-		
+\SetChild{idh=WOLinev}
 	Chapter 5: Analysis and interpretation&&\Cref{ch:CompletingYourResearch}\\
 		\upditem Summary and analysis of data&Summarise all data generated and report their completed analysis. Ensure your report is appropriately structured and presented to convey your work concisely, clearly and systematically&\\
 		\upditem Summary of key findings&Summarise all key findings from your data analysis\\
 		\newitem Interpretation in relation to aim and objectives&Interpret your finding in relation to your aim and objectives\\
-		
+\SetChild{idh=WOLinevi}
 	Chapter 6: Evaluation and conclusion&Provide an overall evaluation of your research and draw your conclusions&\Cref{sect:evaluateWholeResearch}\\
 		\newitem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
 		\newitem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight the novelty of your contribution\\
@@ -319,269 +330,106 @@
 		\newitem Future work&Discuss ways in which your findings may inform future research\\
 		\newitem Implications for practice&If applicable, argue how your findings may influence professional practice\\
 		\upditem Reflexive account&\WOrevise\\
+\SetChild{idh=WOLinevii}
 	References&\WOrevise\\
+\SetChild{idh=WOLineviii}
 	Dissertation appendices&\WOrevise\\
 		\upditem Raw data, questionnaires, code,~\etc{}. \\
 \end{SimpleNColTableWO}}
 
-%\newcommand{\StageOneWritingGuidance}{
-%\begin{SimpleNColTableWO}{stage1WG}{3}{\stageWG{1}}
-%        \headers\\
-%    %%Title
-%	Title & Your provisional title &\Cref{sect:ChoosingATitle}\\
-%
-%	Abstract& \nocontent\\
-%	   	\naitem Research problem, its context and significance\\
-%		\naitem Research aim\\
-%		\naitem Research methodology\\
-%		\naitem Knowledge contribution and its implications\\
-%		
-%	Chapter 1: Introduction&&\Cref{sect:stage1ChoosingATopic}\\
-%		\newitem Background to the research & Add background to your research topic in its broader context&\\
-%		\newitem Justification for the research&Add justification for your research in terms of your context of application&\\
-%		\naitem Definitions\\
-%		
-%	Chapter 2: Literature Review&&\Cref{sect:stage1LiteratureReview}\\
-%		\newitem Review of existing relevant knowledge &A thematic summary for the literature you have read up to this point. These will include key trends, ideas and possible knowledge gaps. Most of your citations should typically be academic in nature. This will only be an initial draft – many references could still be missing, to be added in next stage; these references that remain to be read should be captured in your progress tracking appendix (described below) and added to as other papers come to light\\
-%		\naitem Critical summary, including knowledge gap to be addressed by the research&\nocontent\\
-%		
-%	Chapter 3: Research definition\\	
-%		\newitem Problem statement &Formulate your initial research problem, capturing the knowledge gap your research intends to address, based on your increased understanding from engaging with the literature&\Cref{sect:stage1ResearchProblem,sect:Formulating}\\
-%		\newitem Aim and objectives &Related to your research problem, state you aim to indicate how you intend to address the knowledge gap. Breakdown of your aim into a few research objectives&\Cref{ch:SettingResearchAim,sect:researchObectives}\\
-%		\newitem Knowledge contribution& Summarise your increasing understanding of how your research can contribute new knowledge&\Cref{ssect:KnowledgeGap}\\
-%		
-%	Chapter 4: Research design\\
-%		\naitem Data and evidence\\
-%		\naitem Research strategy and methods\\
-%		\naitem Research procedures \\
-%		\newitem Ethics and regulations&Include your initial consideration of ethics and of regulations relevant to your project, particularly those specific to your course and university&\Cref{ch:EthicsAndRegulations}\\
-%		
-%	Chapter 5: Analysis and interpretation&No content at this stage\\
-%		\naitem Summary and analysis of data\\
-%		\naitem Summary of key findings\\
-%		\naitem Interpretation in relation to aim and objectives\\
-%		
-%	Chapter 6: Evaluation and conclusion&\nocontent\\
-%		\naitem Evaluation against aim and objectives\\
-%		\naitem Evaluation against related work in the literature\\
-%		\naitem Validity of the research\\
-%		\naitem Future work\\
-%		\naitem Implications for practice\\
-%		\newitem Reflexive account&Include your critical account of your research actions and outcomes in this stage of your research, including your insights into your assumptions and motivations &\Cref{ch:ReflectingReflexivity}\\
-%	References&Include all used citations &\Cref{ssect:Processing}\\
-%	Dissertation appendices&\WOTBD\\
-%		\naitem Raw data, questionnaires, code,~\etc{}\\
-%\end{SimpleNColTableWO}
-%}
-%
-%\newcommand{\StageTwoWritingGuidance}{
-%\begin{SimpleNColTableWO}{stage2WG}{3}{\stageWG{2}}
-%        \headers\\
-%    %%Title
-%	Title & \WOrevise\\
-%
-%	Abstract& \nocontent\\
-%	   	\naitem Research problem, its context and significance\\
-%		\naitem Research aim\\
-%		\naitem Research methodology\\
-%		\naitem Knowledge contribution and its implications\\
-%		
-%	Chapter 1: Introduction&Update background and justification based on your increasing understanding from reviewing the literature\\
-%		\upditem Background to the research & \\
-%		\upditem Justification for the research&\\
-%		\newitem Definitions&Explain your use of acronyms and other technical terms, to assist the reader\\
-%		
-%	Chapter 2: Literature Review&Complete a full draft of your literature review. There may be small additions and adjustments required later on in your project, but the main body of your literature review should now be completed. Your review should be the outcome of your deep engagement with the academic (and other) literature around your chosen topic, building on the work you started in~\Cref{stage1}&\Cref{sect:DevelopingYourLiterature}\\
-%		\olditem Review of existing relevant knowledge &\\
-%		\newitem Critical summary, including knowledge gap to be addressed by the research&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address&\Cref{???}\\
-%		
-%	Chapter 3: Research definition&Revise problem statement, aim and objectives, and knowledge contribution based on your increased understanding from your literature review \\	
-%		\upditem Problem statement &\\
-%		\upditem Aim and objectives &\\
-%		\upditem Knowledge contribution& \\
-%		
-%	Chapter 4: Research design&\\
-%		\newitem Data and evidence&Include your initial consideration of the data and evidence you will need in your project and where they may come from.&\Cref{sect:evidenceAndData}\\
-%		\newitem Research strategy and methods&Outline possible research methods and strategy you could apply, justifying why you think they may be appropriate for your project. At this point this is only a tentative account that you will review and develop in the next stage&\Cref{sect:stage2methodology}\\
-%		\naitem Research procedures &\\
-%		\upditem Ethics and regulations&\\
-%		
-%	Chapter 5: Analysis and interpretation&\nocontent&\\
-%		\naitem Summary and analysis of data\\
-%		\naitem Summary of key findings\\
-%		\naitem Interpretation in relation to aim and objectives\\
-%		
-%	Chapter 6: Evaluation and conclusion&\nocontent\\
-%		\naitem Evaluation against aim and objectives\\
-%		\naitem Evaluation against related work in the literature\\
-%		\naitem Validity of the research\\
-%		\naitem Future work\\
-%		\naitem Implications for practice\\
-%		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
-%	References&\WOrevise\\
-%	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code,~\etc{}\\
-%\end{SimpleNColTableWO}}
-%
-%\newcommand{\StageThreeWritingGuidance}{
-%\begin{SimpleNColTableWO}{stage3WG}{3}{\stageWG{3}}
-%        \headers\\
-%   %%Title
-%	Title & \WOclose\\
-%
-%	Abstract& \nocontent\\
-%	   	\naitem Research problem, its context and significance\\
-%		\naitem Research aim\\
-%		\naitem Research methodology\\
-%		\naitem Knowledge contribution and its implications\\
-%		
-%	Chapter 1: Introduction&Revise introduction and justification, also adding any new definitions, if necessary\\
-%		\upditem Background to the research &\WOclose\\
-%		\upditem Justification for the research&\WOclose\\
-%		\upditem Definitions & Continue to add new definitions, if necessary.\\
-%		
-%	Chapter 2: Literature Review&Continue to develop, adding late-found papers\\
-%		\upditem Review of existing relevant knowledge &\\
-%		\upditem Critical summary, including knowledge gap to be addressed by the research&Write a critical summary of the key insights, including articulating and justifying the knowledge gap your project will address.&\Cref{???}\\
-%		
-%	Chapter 3: Research definition&\WOrevise\\	
-%		\upditem Problem statement &\\
-%		\upditem Aim and objectives &\\
-%		\upditem Knowledge contribution& \\
-%		
-%	Chapter 4: Research design&Revise as necessary\\
-%		\upditem Data and evidence&Provide a detailed account of all data needed in the project, its uses and sources&\Cref{ch:ResearchStrategyCandidates}\\
-%		\upditem Research strategy and methods&Summarise and justify your chosen research strategy(ies) and methods&\Cref{ch:yourResearchMethodology}\\
-%		\naitem Research procedures \\
-%		\upditem Ethics and regulations&Revise your account of relevant ethics and regulations in view of your methodological choices \\
-%		
-%	Chapter 5: Analysis and interpretation&No content at this stage\\
-%		\naitem Summary and analysis of data\\
-%		\naitem Summary of key findings\\
-%		\naitem Interpretation in relation to aim and objectives\\
-%		
-%	Chapter 6: Evaluation and conclusion&\nocontent\\
-%		\naitem Evaluation against aim and objectives\\
-%		\naitem Evaluation against related work in the literature\\
-%		\naitem Validity of the research\\
-%		\naitem Future work\\
-%		\naitem Implications for practice\\
-%		\upditem Reflexive account&Update your personal statement based on actions and outcomes in this stage\\
-%	References&\WOrevise\\
-%	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code,~\etc{}\\
-%\end{SimpleNColTableWO}}
-%
-%\newcommand{\StageFourWritingGuidance}{
-%\begin{SimpleNColTableWO}{stage4WG}{3}{\stageWG{4}}
-%        \headers\\
-%    %%Title
-%	Title & \WOclose \\
-%
-%	Abstract& \nocontent\\
-%	   	\naitem Research problem, its context and significance\\
-%		\naitem Research aim\\
-%		\naitem Research methodology\\
-%		\naitem Knowledge contribution and its implications\\
-%		
-%	Chapter 1: Introduction&\\
-%		\upditem Background to the research & \WOclose\\
-%		\upditem Justification for the research&\WOclose\\
-%		\upditem Definitions&\WOrevise\\
-%		
-%	Chapter 2: Literature Review&\\
-%		\upditem Review of existing relevant knowledge &Continue to add late-found papers\\
-%		\naitem Critical summary, including knowledge gap to be addressed by the research&\\
-%		
-%	Chapter 3: Research definition&\WOrevise\\	
-%		\upditem Problem statement \\
-%		\upditem Aim and objectives \\
-%		\upditem Knowledge contribution\\
-%		
-%	Chapter 4: Research design&&\Cref{ch:DataGenerationMethods,ch:ModellingMethods,ch:AnalysisMethods}\\
+%% Simple N column table for Writing Guidance
+\NewDocumentEnvironment{SimpleNColTableWG}{
+	    m        % #1 stage number
+	    +b       % #2 body
+}{\ShortCrefsInThisTable %Change \Cref settings
+  \begin{longtblr}[
+      label   = {stage#1WritingGuidance},
+      caption = {Stage #1 Writing Guidance},
+  ]{
+      width   = \widetablewidth,
+      colspec = {X[3,l]X[6,l]X[-1,l]},
+      cells   = {bg=\WOtableColor},
+      colsep  = 5pt,
+      rowsep  = 5pt,
+      row{1}    = {font=\bfseries, 
+      				fg=white, 
+      				bg=\frameColor},
+%      rows      = {m},
+      rowhead   = 1,
+      vline{1,2,Y,Z} = {fg=\frameColor, wd=2pt},
+      hline{1,2,Z} = {fg=\frameColor, wd=2pt},
+	  hline{
+		WOLineoh,WOLineih,WOLineiih,WOLineiiih,
+		WOLineivh,WOLinevh,WOLinevih,WOLineviih,
+		WOLineviiih
+	  }={2pt,fg=\frameColor},
+	  }
+  #2
+  \end{longtblr}
+}{}
+
+\newcommand{\StageFiveWritingGuidance}{\begin{SimpleNColTableWG}{5}
+  Element&Guidance&{Where?}\\
+    %%Title
+	Title & Your title should capture succinctly your research problem and aim. &\Cref{sect:ChoosingATitle}\\
+\SetChild{idh=WOLineo}
+	Abstract& Your abstract should provide a succinct account of your research for a specialist audience.%, covering each of the bullet points indicated
+		&\Cref{sect:writingAbstract}\\
+%	   	\olditem Research problem, its context and significance\\
+%		\olditem Research aim\\
+%		\olditem Research methodology\\
+%		\olditem Knowledge contribution and its implications\\
+\SetChild{idh=WOLinei}		
+	Chapter 1: Introduction&{This chapter should provide an introduction to your research topic in its wider context (as background) and your justification of why your research was worth pursuing. Its purpose is to introduce and justify your research in overview, before entering the detailed work of the subsequent chapters. \\
+		It should be well argued and supported by appropriate citations and other evidence.\\
+		You can use a separate section for key technical definitions and acronyms used throughout your dissertation, for the reader’s benefit.}&\Cref{sect:stage1ChoosingATopic}\\
+%		\olditem Background to the research \\
+%		\olditem Justification for the research\\
+%		\olditem Definitions\\
+\SetChild{idh=WOLineii}		
+	Chapter 2: Literature Review&{Your literature review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and knowledge gaps. \\
+		Most of your citations should point to academic articles. Both the coverage and the depth of your review matter\\You should ensure your review is well structured, with a logical narrative flow and with arguments well supported by appropriate citations.\\
+		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}&\Cref{sect:stage2literatureReview}\\
+		
+%		\olditem Review of existing relevant knowledge \\
+%		\olditem Critical summary, including knowledge gap to be addressed by the research&{
+%		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}\\
+\SetChild{idh=WOLineiii}
+	Chapter 3: Research definition&{You should ensure that your research problem is well articulated, your aim consistent with your research problem and broken down into appropriate objectives, and that the intended knowledge contribution is clearly expressed. \\
+		You must ensure that these elements of your research definition form a coherent whole and clearly relate to each other.}&\Cref{sect:stage1ResearchProblem,sect:stage1AimAndObjectives}\\	
+%		\olditem Problem statement \\
+%		\olditem Aim and objectives \\
+%		\olditem Knowledge contribution\\
+\SetChild{idh=WOLineiv}		
+	Chapter 4: Research design&{This chapter should demonstrate your critical engagement with all elements of research design, including a detailed account of the data and evidence on which your research is based, its sources and use, and the research strategy(ies) and methods you have chosen and applied.\\
+		You should justify your choices in relation to your research problem, aim and objectives, and possibly with reference to accepted viewpoints and approaches in your field of study.\\
+		You should provide a summary of the procedures you have followed in the application of your research methods, including measures you have taken to deal with potential research weaknesses.\\
+		You should demonstrate your careful consideration of ethical and regulatory matters relevant to your project, and that your research complies with your course and university requirements.}&\Cref{ch:ResearchDesignFoundation,ch:yourResearchMethodology,ch:DataGenerationMethods,ch:ModellingMethods,ch:EthicsAndRegulations}\\
 %		\olditem Data and evidence\\
 %		\olditem Research strategy and methods\\
-%		\newitem Research procedures&Finalise and justify your methodological choices and detail your procedures for generating and analysing data &\\
-%		\upditem Ethics and regulations&Include your initial consideration of ethics and of regulations relevant to your project, particularly those specific to your course and university\\
-%		
-%	Chapter 5: Analysis and interpretation\\
-%		\newitem Summary and analysis of data&Summarise the data generated in this stage, and report their analysis. Ensure your report is appropriately structured and presented to convey your work concisely, clearly and systematically&\Cref{ch:writingUpInStage4}\\
-%		\newitem Summary of key findings&Summarise the key findings from your data analysis in this stage\\
-%		\naitem Interpretation in relation to aim and objectives\\
-%		
-%	Chapter 6: Evaluation and conclusion&\nocontent\\
-%		\naitem Evaluation against aim and objectives\\
-%		\naitem Evaluation against related work in the literature\\
-%		\naitem Validity of the research\\
-%		\naitem Future work\\
-%		\naitem Implications for practice\\
-%		\upditem Reflexive account&\WOrevise\\
-%	References&\WOrevise\\
-%	Dissertation appendices&\nocontent\\
-%		\naitem Raw data, questionnaires, code,~\etc{}\\
-%\end{SimpleNColTableWO}}
-
-\newcommand{\StageFiveWritingGuidance}{
-\begin{SimpleNColTableWO}{stage5WritingGoals}{3}{Final form of your dissertation}
-        \headers\\
-    %%Title
-	Title & Your title should capture succinctly your research problem and aim  &\Cref{sect:ChoosingATitle}\\
-
-	Abstract& \SetCell[r=5]{l}Your abstract should provide a succinct account of your research for a specialist audience, covering each of the bullet points indicated&\Cref{sect:writingAbstract}\\
-	   	\olditem Research problem, its context and significance\\
-		\olditem Research aim\\
-		\olditem Research methodology\\
-		\olditem Knowledge contribution and its implications\\
-		
-	Chapter 1: Introduction&\SetCell[r=4]{l}{This chapter should provide an introduction to your research topic in its wider context (as background) and your justification of why your research was worth pursuing. Its purpose is to introduce and justify your research in overview, before entering the detailed work of the subsequent chapters. It should be well argued and supported by appropriate citations and other evidence\\You can use a separate section for key technical definitions and acronyms used throughout your dissertation, for the reader’s benefit}&\Cref{sect:stage1ChoosingATopic}\\
-		\olditem Background to the research \\
-		\olditem Justification for the research\\
-		\olditem Definitions\\
-		
-%	Chapter 2: Literature Review&\SetCell[r=3]{l}{Your literature review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and knowledge gaps. Most of your citations should point to academic articles. Both the coverage and the depth of your review matter\\
-%		You should ensure your review is well structured, with a logical narrative flow and with arguments well supported by appropriate citations\\
-%		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}&\Cref{sect:stage2literatureReview}\\
-%		\olditem Review of existing relevant knowledge \\
-%		\olditem Critical summary, including knowledge gap to be addressed by the research\\
-%%Better spacing		
-	Chapter 2: Literature Review&\SetCell[r=2]{l}{Your literature review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and knowledge gaps. Most of your citations should point to academic articles. Both the coverage and the depth of your review matter\\You should ensure your review is well structured, with a logical narrative flow and with arguments well supported by appropriate citations}&\Cref{sect:stage2literatureReview}\\
-		
-		\olditem Review of existing relevant knowledge \\
-		\olditem Critical summary, including knowledge gap to be addressed by the research&{
-		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}\\
-
-	Chapter 3: Research definition&\SetCell[r=4]{l}You should ensure that your research problem is well articulated, your aim consistent with your research problem and broken down into appropriate objectives, and that the intended knowledge contribution is clearly expressed. You must ensure that these elements of your research definition form a coherent whole and clearly relate to each other&\Cref{sect:stage1ResearchProblem,sect:stage1AimAndObjectives}\\	
-		\olditem Problem statement \\
-		\olditem Aim and objectives \\
-		\olditem Knowledge contribution\\
-		
-	Chapter 4: Research design&\SetCell[r=5]{l}{This chapter should demonstrate your critical engagement with all elements of research design, including a detailed account of the data and evidence on which your research is based, its sources and use, and the research strategy(ies) and methods you have chosen and applied\\
-		You should justify your choices in relation to your research problem, aim and objectives, and possibly with reference to accepted viewpoints and approaches in your field of study\\
-		You should provide a summary of the procedures you have followed in the application of your research methods, including measures you have taken to deal with potential research weaknesses\\
-		You should demonstrate your careful consideration of ethical and regulatory matters relevant to your project, and that your research complies with your course and university requirements}&\Cref{ch:ResearchDesignFoundation,ch:yourResearchMethodology,ch:DataGenerationMethods,ch:ModellingMethods,ch:EthicsAndRegulations}\\
-		\olditem Data and evidence\\
-		\olditem Research strategy and methods\\
-		\olditem Research procedures \\
-		\olditem Ethics and regulations\\
-		
-	Chapter 5: Analysis and interpretation&\SetCell[r=4]{l}{This chapter should provide a detailed account of your data generation and analysis, the findings you have derived and their interpretation in relation to your research aim and objectives\\
-		It should demonstrate a competent execution of your methodology, including providing appropriate summaries of your data, a clear account of your analysis, and how it led to the key findings in a logical manner\\
-		Your interpretation in relation to aim and objectives should demonstrate in-depth critical reflection}&\Cref{ch:CompletingYourResearch,ch:AnalysisMethods,sect:interpretingFindings}\\
-		\olditem Summary and analysis of data\\
-		\olditem Summary of key findings\\
-		\olditem Interpretation in relation to aim and objectives\\
-		
-	Chapter 6: Evaluation and conclusion&\SetCell[r=7]{l}{This chapter should demonstrate good critical reflection on the extent your research has met its stated aim and objectives. In a succinct way, your conclusions should bring all your findings together, both from your literature review and your data generation, analysis and interpretation\\
-	You should reflect on how your research has contributed new knowledge in relation to related published work, including highlighting how its novelty\\
-	You should evaluate your research in terms of its validity, reliability and lack of bias, highlighting measures you have taken to avoid research weaknesses, but also acknowledging limitations\\
-	You should discuss possible implications of your work for further research and, if applicable, for professional practice\\
-	Your concluding reflexive statement should highlight what you have learnt during your project from a personal standpoint in relation to thinking and behaving like an academic researcher}&\Cref{sect:evaluateWholeResearch}\\
-		\olditem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
-		\olditem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight your novel contribution\\
-		\olditem Validity of the research&Argue the validity, reliability and lack of bias of your research, highlighting how you have addressed research weaknesses in your methodology\\
-		\olditem Future work&Discuss ways in which your findings may inform future research\\
-		\olditem Implications for practice&If applicable, argue how your findings may influence professional practice\\
-		\olditem Reflexive account&\WOrevise\\
-	References&{You references should be accurate and complete in relation to citations in the body of your dissertation}&\Cref{ssect:Processing}\\
-	Dissertation appendices&{You can use appendices to include supplementary material in support of the main body of your dissertation, for instance sample raw data, questionnaires used in data generation, programme code for models or artefacts, detailed calculations,~\etc{}}\\
-\end{SimpleNColTableWO}}
+%		\olditem Research procedures \\
+%		\olditem Ethics and regulations\\
+\SetChild{idh=WOLinev}		
+	Chapter 5: Analysis and interpretation&{This chapter should provide a detailed account of your data generation and analysis, the findings you have derived and their interpretation in relation to your research aim and objectives.\\
+		It should demonstrate a competent execution of your methodology, including providing appropriate summaries of your data, a clear account of your analysis, and how it led to the key findings in a logical manner.\\
+		Your interpretation in relation to aim and objectives should demonstrate in-depth critical reflection.}&\Cref{ch:CompletingYourResearch,ch:AnalysisMethods,sect:interpretingFindings}\\
+%		\olditem Summary and analysis of data\\
+%		\olditem Summary of key findings\\
+%		\olditem Interpretation in relation to aim and objectives\\
+\SetChild{idh=WOLinevi}		
+	Chapter 6: Evaluation and conclusion&{This chapter should demonstrate good critical reflection on the extent your research has met its stated aim and objectives. Your conclusions should bring all your findings together succinctly, consistent with your literature review and your data generation, analysis and interpretation.\\
+	You should reflect on how your research has contributed new knowledge in relation to related published work, including highlighting how its novelty.\\
+	You should evaluate your research in terms of its validity, reliability and lack of bias, highlighting measures you have taken to avoid research weaknesses, but also acknowledging limitations.\\
+	You should discuss possible implications of your work for further research and, if applicable, for professional practice.\\
+	Your concluding reflexive statement should highlight what you have learnt during your project from a personal standpoint in relation to thinking and behaving like an academic researcher.}&\Cref{sect:evaluateWholeResearch}\\
+%		\olditem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
+%		\olditem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight your novel contribution\\
+%		\olditem Validity of the research&Argue the validity, reliability and lack of bias of your research, highlighting how you have addressed research weaknesses in your methodology\\
+%		\olditem Future work&Discuss ways in which your findings may inform future research\\
+%		\olditem Implications for practice&If applicable, argue how your findings may influence professional practice\\
+%		\olditem Reflexive account&\WOrevise\\
+\SetChild{idh=WOLinevii}
+	References&{Your references should be accurate and complete in relation to citations in the body of your dissertation.}&\Cref{ssect:Processing}\\
+\SetChild{idh=WOLineviii}
+	Dissertation appendices&{You can use appendices to include supplementary material in support of the main body of your dissertation, for instance sample raw data, questionnaires used in data generation, programme code for software models, and other created artefacts, detailed calculations,~\etc{}.}&\Cref{???}\\
+\end{SimpleNColTableWG}}
