@@ -30,14 +30,29 @@
 \newcommand{\WOrevise}{Revise as necessary}
 \newcommand{\WOTBD}{\textcolor{red}{TBD}}
 
-%\newcommand{\stageWG}[1]{Stage #1 Writing Outcomes  }
-\newcommand{\stageWO}[1]{Stage #1 Writing Outcomes ({\redbullet} new, {\orangebullet} updated)}
+%\newcommand{\stageWO}[1]{Stage #1 Writing Outcomes ({\redbullet} new, {\orangebullet} updated)}
 
 \newcommand{\ShortCrefsInThisTable}{%
   \crefname{section}{S}{Ss}%
   \Crefname{section}{S}{Ss}%
+  \crefname{subsection}{S}{Ss}%
+  \Crefname{subsection}{S}{Ss}%
   \crefname{chapter}{Ch}{Chs}%
   \Crefname{chapter}{Ch}{Chs}%
+  \renewcommand{\crefpairconjunction}{ \& }
+  \renewcommand{\crefmiddleconjunction}{, }
+  \renewcommand{\creflastconjunction}{ \& }
+  \renewcommand{\crefpairgroupconjunction}{ \& }
+  \renewcommand{\crefmiddlegroupconjunction}{, }
+  \renewcommand{\creflastgroupconjunction}{ \& }
+}
+
+\newcommand{\celllinesep}[2][.6ex]{%
+  \begingroup
+  \let\OldRow\\%
+  \renewcommand\\{\OldRow[#1]}%
+  #2%
+  \endgroup
 }
 
 %% Legend: now uses \upditem so it matches the actual updated marker
@@ -305,7 +320,7 @@
 \SetChild{idh=WOLineii}
 	Chapter 2: Literature Review&Finalise your literature review\\
 		\upditem Review of existing relevant knowledge \\
-		\upditem Critical summary, including knowledge gap to be addressed by the research\\
+		\upditem Critical summary\\%, including knowledge gap to be addressed by the research\\
 \SetChild{idh=WOLineiii}
 	Chapter 3: Research definition&Finalise your research definition\\	
 		\upditem Problem statement\\
@@ -344,7 +359,7 @@
 }{\ShortCrefsInThisTable %Change \Cref settings
   \begin{longtblr}[
       label   = {stage#1WritingGuidance},
-      caption = {Stage #1 Writing Guidance},
+      caption = {Your dissertation's final structure and content},
   ]{
       width   = \widetablewidth,
       colspec = {X[3,l]X[6,l]X[-1,l]},
@@ -368,6 +383,8 @@
   \end{longtblr}
 }{}
 
+\newlength\WGlinesep
+\setlength\WGlinesep{10pt}
 \newcommand{\StageFiveWritingGuidance}{\begin{SimpleNColTableWG}{5}
   Element&Guidance&{Where?}\\
     %%Title
@@ -380,47 +397,48 @@
 %		\olditem Research methodology\\
 %		\olditem Knowledge contribution and its implications\\
 \SetChild{idh=WOLinei}		
-	Chapter 1: Introduction&{This chapter should provide an introduction to your research topic in its wider context (as background) and your justification of why your research was worth pursuing. Its purpose is to introduce and justify your research in overview, before entering the detailed work of the subsequent chapters. \\
-		It should be well argued and supported by appropriate citations and other evidence.\\
+	Chapter 1: Introduction&{This chapter should provide an introduction to your research topic in its wider context (as background) and your justification of why your research was worth pursuing. Its purpose is to introduce and justify your research in overview, before entering the detailed work of the subsequent chapters. \\[\WGlinesep]
+		It should be well argued and supported by appropriate citations and other evidence.\\[\WGlinesep]
 		You can use a separate section for key technical definitions and acronyms used throughout your dissertation, for the reader’s benefit.}&\Cref{sect:stage1ChoosingATopic}\\
 %		\olditem Background to the research \\
 %		\olditem Justification for the research\\
 %		\olditem Definitions\\
 \SetChild{idh=WOLineii}		
-	Chapter 2: Literature Review&{Your literature review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and knowledge gaps. \\
-		Most of your citations should point to academic articles. Both the coverage and the depth of your review matter\\You should ensure your review is well structured, with a logical narrative flow and with arguments well supported by appropriate citations.\\
+	Chapter 2: Literature Review&{Your literature review should provide a critical account of your in-depth engagement with the academic (and other) relevant literature, including identifying key trends, ideas and knowledge gaps. \\[\WGlinesep]
+		Most of your citations should point to academic articles. Both the coverage and the depth of your review matter\\[\WGlinesep]
+		You should ensure your review is well structured, with a logical narrative flow and with arguments well supported by appropriate citations.\\[\WGlinesep]
 		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}&\Cref{sect:stage2literatureReview}\\
 		
 %		\olditem Review of existing relevant knowledge \\
 %		\olditem Critical summary, including knowledge gap to be addressed by the research&{
 %		Your critical summary should highlight key insights from your review and the knowledge gap your research is meant to address}\\
 \SetChild{idh=WOLineiii}
-	Chapter 3: Research definition&{You should ensure that your research problem is well articulated, your aim consistent with your research problem and broken down into appropriate objectives, and that the intended knowledge contribution is clearly expressed. \\
+	Chapter 3: Research definition&{You should ensure that your research problem is well articulated, your aim consistent with your research problem and broken down into appropriate objectives, and that the intended knowledge contribution is clearly expressed. \\[\WGlinesep]
 		You must ensure that these elements of your research definition form a coherent whole and clearly relate to each other.}&\Cref{sect:stage1ResearchProblem,sect:stage1AimAndObjectives}\\	
 %		\olditem Problem statement \\
 %		\olditem Aim and objectives \\
 %		\olditem Knowledge contribution\\
 \SetChild{idh=WOLineiv}		
-	Chapter 4: Research design&{This chapter should demonstrate your critical engagement with all elements of research design, including a detailed account of the data and evidence on which your research is based, its sources and use, and the research strategy(ies) and methods you have chosen and applied.\\
-		You should justify your choices in relation to your research problem, aim and objectives, and possibly with reference to accepted viewpoints and approaches in your field of study.\\
-		You should provide a summary of the procedures you have followed in the application of your research methods, including measures you have taken to deal with potential research weaknesses.\\
+	Chapter 4: Research design&{This chapter should demonstrate your critical engagement with all elements of research design, including a detailed account of the data and evidence on which your research is based, its sources and use, and the research strategy(ies) and methods you have chosen and applied.\\[\WGlinesep]
+		You should justify your choices in relation to your research problem, aim and objectives, and possibly with reference to accepted viewpoints and approaches in your field of study.\\[\WGlinesep]
+		You should provide a summary of the procedures you have followed in the application of your research methods, including measures you have taken to deal with potential research weaknesses.\\[\WGlinesep]
 		You should demonstrate your careful consideration of ethical and regulatory matters relevant to your project, and that your research complies with your course and university requirements.}&\Cref{ch:ResearchDesignFoundation,ch:yourResearchMethodology,ch:DataGenerationMethods,ch:ModellingMethods,ch:EthicsAndRegulations}\\
 %		\olditem Data and evidence\\
 %		\olditem Research strategy and methods\\
 %		\olditem Research procedures \\
 %		\olditem Ethics and regulations\\
 \SetChild{idh=WOLinev}		
-	Chapter 5: Analysis and interpretation&{This chapter should provide a detailed account of your data generation and analysis, the findings you have derived and their interpretation in relation to your research aim and objectives.\\
-		It should demonstrate a competent execution of your methodology, including providing appropriate summaries of your data, a clear account of your analysis, and how it led to the key findings in a logical manner.\\
+	Chapter 5: Analysis and interpretation&{This chapter should provide a detailed account of your data generation and analysis, the findings you have derived and their interpretation in relation to your research aim and objectives.\\[\WGlinesep]
+		It should demonstrate a competent execution of your methodology, including providing appropriate summaries of your data, a clear account of your analysis, and how it led to the key findings in a logical manner.\\[\WGlinesep]
 		Your interpretation in relation to aim and objectives should demonstrate in-depth critical reflection.}&\Cref{ch:CompletingYourResearch,ch:AnalysisMethods,sect:interpretingFindings}\\
 %		\olditem Summary and analysis of data\\
 %		\olditem Summary of key findings\\
 %		\olditem Interpretation in relation to aim and objectives\\
 \SetChild{idh=WOLinevi}		
-	Chapter 6: Evaluation and conclusion&{This chapter should demonstrate good critical reflection on the extent your research has met its stated aim and objectives. Your conclusions should bring all your findings together succinctly, consistent with your literature review and your data generation, analysis and interpretation.\\
-	You should reflect on how your research has contributed new knowledge in relation to related published work, including highlighting how its novelty.\\
-	You should evaluate your research in terms of its validity, reliability and lack of bias, highlighting measures you have taken to avoid research weaknesses, but also acknowledging limitations.\\
-	You should discuss possible implications of your work for further research and, if applicable, for professional practice.\\
+	Chapter 6: Evaluation and conclusion&{This chapter should demonstrate good critical reflection on the extent your research has met its stated aim and objectives. Your conclusions should bring all your findings together succinctly, consistent with your literature review and your data generation, analysis and interpretation.\\[\WGlinesep]
+	You should reflect on how your research has contributed new knowledge in relation to related published work, including highlighting how its novelty.\\[\WGlinesep]
+	You should evaluate your research in terms of its validity, reliability and lack of bias, highlighting measures you have taken to avoid research weaknesses, but also acknowledging limitations.\\[\WGlinesep]
+	You should discuss possible implications of your work for further research and, if applicable, for professional practice.\\[\WGlinesep]
 	Your concluding reflexive statement should highlight what you have learnt during your project from a personal standpoint in relation to thinking and behaving like an academic researcher.}&\Cref{sect:evaluateWholeResearch}\\
 %		\olditem Evaluation against aim and objectives&Evaluate all your findings, both from your literature review and your data generation and analysis, against your aim and objectives\\
 %		\olditem Evaluation against related work in the literature&Evaluate your findings comparing and contrasting them to related work in the \gls{academic-literature} to highlight your novel contribution\\

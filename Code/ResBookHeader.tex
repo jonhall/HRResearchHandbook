@@ -1,17 +1,12 @@
-%%======================================================================
-%% Document language & quotation handling
-%%======================================================================
+%=======================================================
+% Document language & quotation handling
+%=======================================================
 \usepackage[UKenglish]{babel}
 \usepackage[threshold=1]{csquotes} % load before biblatex
 
-%%%======================================================================
-%%% Document headers
-%%%======================================================================
-%\usepackage{fancyhdr}
-
-%%======================================================================
-%% Bibliography (biblatex + biber)
-%%======================================================================
+%=======================================================
+%% Bibliography (biblatex + biker
+%=====================================================
 \usepackage[
   style=authoryear,
   autocite=inline,
@@ -21,11 +16,12 @@
 ]{biblatex}
 \addbibresource{Bibs/MastersBib.bib}
 \addbibresource{collatedBib.bib}
-\DeclareDelimFormat{nameyeardelim}{\addcomma\space}%%Comma separator.
+%Comma separator.
+	\DeclareDelimFormat{nameyeardelim}{\addcomma\space}%
 
-%%======================================================================
-%% Fonts & maths (XeLaTeX via mathspec)
-%%======================================================================
+%=======================================================
+% Fonts & maths (XeLaTeX via mathspec)
+%=======================================================
 \usepackage{mathspec} % loads fontspec + amsmath
 % --- Workaround for mathspec package loader quirk (as in your original) ---
 \makeatletter
@@ -38,9 +34,9 @@
 ]{Arial}
 \setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
 
-%%======================================================================
-%% Layout, graphics, colours, micro-typography
-%%======================================================================
+%=======================================================
+% Layout, graphics, colours, micro-typography
+%=====================================================
 \usepackage{geometry}
 \geometry{
   left=2cm,
@@ -65,10 +61,13 @@
 %% Xrefs
 \usepackage{xurl}
 \usepackage[
-	colorlinks=false,
-	allbordercolors={0 0 0},
-    pdfborderstyle={/S/U/W 1},
-    hyperfootnotes = false,
+%%%% for underlined, only in pdf
+%	colorlinks=false,
+%	allbordercolors={0 0 0},
+%    pdfborderstyle={/S/U/W 1},
+%    hyperfootnotes = false,
+	colorlinks=true,
+	linkcolor=blue,	
     ]{hyperref}      % after biblatex
 %%Hyperref manual: All those (footnote) redefinitions can be suppressed by defining \hyper@nopatch@footnote
 %\makeatletter
@@ -78,10 +77,10 @@
 \usepackage{bookmark}      % immediately after hyperref
 \usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
 
-%% -------------------------------------------------------------------
-%% URLs, hyperlinks, cross-references (no \hypersetup, no nameinlink)
-%% Place these as early as possible after \documentclass
-%% -------------------------------------------------------------------
+% ------------------------------------------------------
+% URLs, hyperlinks, cross-references (no \hypersetup, no nameinlink)
+% Place these as early as possible after \documentclass
+% ------------------------------------------------------
 \PassOptionsToPackage{hyphens}{url} % allow URL line breaks
 \PassOptionsToPackage{unicode,linktoc=all,pdfborder={0 0 0}}{hyperref}
 
@@ -161,36 +160,36 @@
 \input{Code/glossary}		% create glossaries
 \input{Code/glossary-mods}	% restrict gls to 1st on page
 
-%%======================================================================
-%% Quotes (styling)
-%%======================================================================
+%=======================================================
+% Quotes (styling)
+%=======================================================
 \renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
 \renewcommand{\mkblockquote}[4]{#1\emph{#2}#4#3}
 
-%%======================================================================
-%% Symbols
-%%======================================================================
+%=======================================================
+% Symbols
+%=======================================================
 \usepackage{amssymb}
 
-%%======================================================================
-%% Project-specific environments & tables
-%%======================================================================
+%=======================================================
+% Project-specific environments & tables
+%=======================================================
 \input{Code/environments.tex}
 \input{Code/tables.tex}
 \input{Code/WOtables.tex}
 
-%%======================================================================
-%% TO{}DO notes
-%%======================================================================
+%=======================================================
+% TO{}DO notes
+%=======================================================
 \usepackage[textsize=tiny,obeyFinal]{todonotes}
 
-%%======================================================================
-%% Load last (as requested)
-%%======================================================================
+%=======================================================
+% Load last (as requested)
+%=======================================================
 \usepackage{listliketab}
 
-%%======================================================================
-%% Utility macros
-%%======================================================================
+%=======================================================
+% Utility macros
+%=======================================================
 \newcommand\etc{etc}
 \newcommand{\glsforce}[2]{\glsadd{#1}\glshyperlink[#2]{#1}}

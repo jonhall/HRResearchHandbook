@@ -37,22 +37,6 @@
 				expand=\headers,
 				}
 			}
-%		\begin{tblr}
-%			{
-%	 			width = #4, % default = \linewidth
-%				colspec = {#6},
-%		  		hline{Z} = {fg = \frameColor, wd=2pt},
-%				vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-%				colsep = 5pt,
-%				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-%				row{1} = {font=\bfseries, fg = white, bg=\frameColor},
-%				rows = {m},
-%				rowhead = 1,
-%				measure=vbox, 
-%				#7		%%Additional options
-%			}
-%			#8
-%		\end{tblr}
 		\begin{tblr}
 			{
 				cells={bg=\tableColor},
@@ -83,25 +67,24 @@
 
 \NewDocumentEnvironment{ResActTable}{O{Missing caption}+b}{
 	\begin{tblr}[
-			long,
-			caption={#1},
-			  % outer option "halign" is undocumented!
-  % new value "r-hss": ragged right using \hss
-				halign=r-hss,
-				toggle-left-and-right
-
-		]{
-			measure=vbox, 
-			stretch=-1,%%Allows lists in body, with no padding
- 			width=\widetablewidth,
-	  		hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-			vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-			colsep = 5pt,
-			column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-			row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
-			rowhead = 1,
-			colspec = {lX[8]X[13]X[-1]X[5]|}}
-%Header					
+		long,
+		caption={#1},
+%		  % outer option "halign" is undocumented!
+%	% new value "r-hss": ragged right using \hss
+%			halign=r-hss,
+%			toggle-left-and-right	
+	]{
+		measure=vbox, 
+		stretch=-1,%%Allows lists in body, with no padding
+			width=\widetablewidth,
+			hlines = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+		vline{Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
+		colsep = 5pt,
+		column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
+		row{1} = {fg = white, bg=\frameColor},%, font=\bfseries\sffamily},
+		rowhead = 1,
+		colspec = {lX[8]X[13]X[-1]X[5]|}}
+	%Header					
 	&\Gls{deliverable}&{Writing Outcome:\\ by the end of this stage you will}&Effort&Supervisor Interaction\\
 %Body
 		#2
