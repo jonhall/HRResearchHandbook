@@ -1,6 +1,6 @@
-%%% ===============================================================
-%%% Activity / discussion boxes and supporting commands
-%%% ===============================================================
+% =====================================================
+% Activity / discussion boxes and supporting commands
+% =====================================================
 
 % Colours (expects xcolor with svgnames already loaded)
 \newcommand{\exampleColor}{CornflowerBlue!40!white}
@@ -15,9 +15,9 @@
 % tcolorbox (load common libraries)
 \usepackage[many]{tcolorbox}
 
-%%======================================================================
-%% Footnotes (coloured symbol cycle in the margin)
-%%======================================================================
+%======================================================
+% Footnotes (coloured symbol cycle in the margin)
+%======================================================
 \newcommand{\footnotetextbulletsize}{1.8}
 
 \usepackage[perpage,side,marginal,symbol*]{footmisc}
@@ -59,72 +59,59 @@
   },
 }
 
-%% --- Local style: swap \footnote for a margin note inside box content ---
-%% Note the use of '##1' (one level of macro parameterization in key handlers).
-%\tcbset{
-%  footnotes-in-margin/.style={
-%    before upper={
-%      \let\realfootnote\footnote
-%      \renewcommand{\footnote}[1]{%
-%        \refstepcounter{footnote}%
-%        \textsuperscript{\thefootnote}%
-%        \marginnote{\footnotesize\thefootnote\quad #1}%
-%      }%
-%    },
-%    after upper={\let\footnote\realfootnote},
-%  },
-%}
-
 % --- Sensible defaults for all boxes here ---
 \tcbset{
   boxbase/.style={
-%    enhanced jigsaw,
-	parbox=false,%%tcolorbox.pdf, 4.18 Text Characteristics, page 111
     breakable,
     footnotes-in-margin,
     pad at break=2mm,
     left=2mm,
     right=2mm,
-    width=\linewidth,      % more robust inside lists/floats than \textwidth
+    width=\linewidth,
     frame hidden,
     segmentation hidden,
     after=\par\bigskip,
     colframe=\frameColor,
-    fonttitle=\bfseries,
+    boxrule=2pt,
+	before upper={
+	  \setlength{\parskip}{0.5\baselineskip}
+	  \setlength{\parindent}{10pt}
+	},
+	fonttitle=\bfseries,
     colbacktitle=\frameColor,
     coltitle=white,
     title style={opacity=1}, % ensure title text prints even with light fills
-    title after break,       % keep title visible when a box breaks
-    sharp corners,
+%    title after break,       % keep title visible when a box breaks
+    sharp corners
   },
 }
 
-% --- Specific boxes -------------------------------------------------
+% --- Specific boxes -------------------------
 
 % Takeaways
 \newtcolorbox{takeaways}[1]{%
   boxbase,
   move upwards=-50pt,%%Arbitrary value
   colback=\takeawaysColor,
-  title={\Large #1\space Takeaways},
+  title={\Large #1\space Takeaways%
+  \addcontentsline{toc}{chapter}{#1\ Takeaways}},
 }
 
 % Activity
-\newtcolorbox{activity}{%
+\newtcolorbox{activity}[1][No title]{%
   boxbase,
   colback=\activityColor,
-  title={\GetQuestionProperty{subtitle}{\CurrentQuestionID}\hfill\#\CurrentQuestionID},
+  title={Activity: #1},
 }
 
 % Discussion
-\newtcolorbox{discussion}{%
-  boxbase,
-  colback=\discussionColor,
-  title={Discussion\hfill\#\CurrentQuestionID},
-}
+\newenvironment{discussion}{\tcbsubtitle{Discussion}}{}
 
 % Guidance (to be used *inside* a tcolorbox)
 \newenvironment{guidance}{\tcbsubtitle{Guidance}}{}
+
+% Guidance (to be used *inside* a tcolorbox)
+\newenvironment{solution}{\tcbsubtitle{Solution}}{}
 
 % Tips
 \newtcolorbox{tip}{%
@@ -153,24 +140,9 @@
 % Simple Answer environment (unchanged)
 \newenvironment{answer}{\textbf{Answer}\begin{trivlist}\item}{\end{trivlist}}
 
-%%% ===============================================================
-%%% exsheets integration: question/solution as boxes
-%%% ===============================================================
-\usepackage{exsheets}
-\SetupExSheets{
-  headings=empty,
-  question/pre-hook=\begin{activity},
-  question/post-hook=\end{activity},
-  solution/pre-hook=\IfInsideQuestionTF{\tcbsubtitle{Discussion}}{\begin{discussion}},
-  solution/post-hook=\IfInsideQuestionTF{}{\end{discussion}},
-  solution/print=true,
-}
-% To hide solutions in 'final' builds, you can flip this at class level or here:
-% \SetupExSheets{solution/print=false}
-
-%%% ===============================================================
-%%% Resource list helpers (avoid name clashes)
-%%% ===============================================================
+% =====================================================
+% Resource list helpers (avoid name clashes)
+% =====================================================
 
 % If the upstream preamble already defined \itemcites, don't redefine.
 \makeatletter
@@ -190,9 +162,9 @@
   \endgroup
 }
 
-%%% ===============================================================
-%%% “More details” section and helpers
-%%% ===============================================================
+% =====================================================
+% “More details” section and helpers
+% =====================================================
 
 \newenvironment{MoreDetails}{%
   \subsection{More details}%
@@ -200,27 +172,12 @@
   % (No fixed \label here to avoid duplicate-label warnings on reuse.)
 }{}
 
-% Macros that wrap exsheets' question with consistent subtitles + resources
+% Macros that wrap tcolorboxes question with consistent subtitles + resources
 \newcommand{\ResGenTechnique}[1]{%
-  \begin{question}[subtitle={Activity: Do I need to know about #1?}]%
+  \begin{activity}[{Do I need to know about #1?}]%
   Check back to your chosen research strategy from~\Cref{stage3}. Does it involve data generation using #1? If so, read through the remainder of this section and complete the activities.%
-  \end{question}%
+  \end{activity}%
 }
-
-%\newcommand{\ResGenExtras}[2]{%
-%  \begin{question}[subtitle={Activity: Deep dive into #1}]%
-%  To find out more about #1, take a look at these resources:%
-%  
-%  \fullcites{#2}%
-%  \end{question}%
-%}
-%
-%%Not used, other than in commented text
-%\newcommand{\ResModTechnique}[1]{%
-%  \begin{question}[subtitle={Activity: Do I need to know about #1?}]%
-%  Check back to your chosen research strategy from~\Cref{stage3}. Does it involve modelling using #1? If so, read through the remainder of this section and complete the activities.%
-%  \end{question}%
-%}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\ReadingList}{m m}
@@ -230,36 +187,25 @@
 
 \cs_new_protected:Npn \readingextras:nn #1 #2
  {
-  % Heading / intro, tweak to taste:
-  \begin{question}[subtitle={Activity:~Deep~dive~into~#1}]%
+  % Heading / intro
+  \begin{activity}[{Deep~dive~into~#1}]%
   To~find~out~more~about~#1,~take~a~look~at~these~references:%
   \begin{itemize}
     % #2 is a comma-separated list of keys
     \clist_map_inline:nn { #2 }
       {
         \item \fullcite{##1}
-        % or, for "Author Year, Title":
-        % \item \textcite{##1}, \mkbibemph{\citetitle{##1}}
       }
   \end{itemize}
-  \end{question}
+  \end{activity}
   %%Hack to correct tcbox behaviour
 	\color{black}
  }
-
 \ExplSyntaxOff
 
-%\newcommand{\ReadingList}[2]{%
-%  \begin{question}[subtitle={Activity: Deep dive into #1}]%
-%  To find out more about #1, take a look at these resources:%
-%  
-%  \fullcites{#2}%
-%  \end{question}%
-%}
-
-%%% ===============================================================
-%%% Part title page helper
-%%% ===============================================================
+% =====================================================
+% Part title page helper
+% =====================================================
 
 \NewDocumentEnvironment{PartTitlePage}{m m +b}{%
 %#1: Stage number
@@ -267,7 +213,8 @@
 %#3: text
   \renewcommand*{\afterpartskip}{\beforepartskip \noindent\Large #3}%
   \cleardoublepage
-  \newgeometry{margin=7cm}%
+  \thispagestyle{empty}
+  \newgeometry{left=7cm,right=7cm,bottom=4cm}%
   \part{#1}\label{#2}%
   \restoregeometry
   \cleardoublepage

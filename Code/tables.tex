@@ -14,42 +14,49 @@
 %\SetTblrOuter{expand=\activityColor}
 \NewTblrColumnType{R}[1][]{Q[co=1,#1,l]}%%Same as X
 
-\let\narrowtablewidth=\textwidth
-\let\widetablewidth=\textwidth
+\newcommand{\narrowtablewidth}	{\linewidth}
+\newcommand{\widetablewidth}	{1.3\linewidth}
+
+\newcommand\zapgls{%
+	\renewcommand\glsf{\glsentryname}%
+	\renewcommand\glsplf{\glsentryplural}%
+	\renewcommand\Glsf{\Glsentryname}%
+	\renewcommand\Glsplf{\Glsentryplural}%
+}
 
 %%Simple N column table
 \NewDocumentEnvironment{SimpleNColTable}{
-		s					% * = not-long table, for tblrs in tcboxes
-		m% 					% label
-		m%					% number of columns
-		O{\linewidth} 	% tablewidth (default: \widetablewidth)
-		m% 					% caption
-		O{X[1,l]*{10}{X[7,l]}}%	% optional colspec
-		O{}					% Additional options
-		+b%					% body
-		}%
-		{
+		s	% * = not-long table, for tblrs in tcboxes
+		m 	% label
+		m	% number of columns
+		O{\linewidth} % tablewidth
+		m	% caption
+		O{X[1,l]*{10}{X[7,l]}}% optional colspec
+		O{}	% Additional options
+		+b	% body
+	}{
 		\IfBooleanTF{#1}{\begin{center}}	
 			{\SetTblrOuter{	%%Add Outer only if non-star
 				long,
 	 			label={#2},
 				caption={#5},
-				expand=\headers,
 				}
 			}
-		\begin{tblr}
-			{
-				cells={bg=\tableColor},
-	 			width = #4, % default = \linewidth
-				colspec = {#6},
-		  		hline{1,2,Z} = {fg = \frameColor, wd=2pt},
-				vline{1,2,Z} = {fg = \frameColor, wd=2pt}, %column{2} = {co=1}, 
-				colsep = 5pt,
-%				column{1} = {fg = white, bg=\frameColor},%, font=\sffamily},
-				row{1} = {font=\bfseries, fg=white, bg=\frameColor},
-				rows = {m},
-				rowhead = 1,
-				measure=vbox, 
+		\begin{tblr}{
+	 			width 		= #4,
+				cells		= {bg=\tableColor},
+				colspec 	= {#6},
+				colsep 		= 5pt,
+				row{1} 		= {font=\bfseries, 
+								fg=white,
+								bg=\frameColor,
+								cmd=\zapgls
+							  },
+				rows 		= {m},
+				rowhead 	= 1,
+				column{1} 	= {2-Z}{cmd=\zapgls},
+		  		hline{1,2,Z}= {fg = \frameColor, wd=2pt},
+				vline{1,2,Z}= {fg = \frameColor, wd=2pt},
 				#7		%%Additional options
 			}
 			#8
@@ -139,7 +146,7 @@
 
 \usepackage{ifthen}
 
-\newcommand{\ordColour}[0]{gray8}
+\newcommand{\ordColour}{gray8}
 
 \newcommand{\ritem}[2]{%
 	\ifthenelse{\equal{#1}{!}}

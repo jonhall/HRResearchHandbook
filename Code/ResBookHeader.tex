@@ -19,9 +19,9 @@
 %Comma separator.
 	\DeclareDelimFormat{nameyeardelim}{\addcomma\space}%
 
-%=======================================================
+%======================================================
 % Fonts & maths (XeLaTeX via mathspec)
-%=======================================================
+%======================================================
 \usepackage{mathspec} % loads fontspec + amsmath
 % --- Workaround for mathspec package loader quirk (as in your original) ---
 \makeatletter
@@ -74,8 +74,8 @@
 %\let\hyper@nopatch@footnote\relax
 %\makeatother
 
-\usepackage{bookmark}      % immediately after hyperref
-\usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
+%\usepackage{bookmark}      % immediately after hyperref
+%\usepackage[capitalise,noabbrev]{cleveref} % after amsmath + hyperref
 
 % ------------------------------------------------------
 % URLs, hyperlinks, cross-references (no \hypersetup, no nameinlink)
@@ -102,6 +102,11 @@
 %% Fake verb for tables
 %=======================================================
 \usepackage{codehigh}
+
+%=======================================================
+%% Titlesec to avoid orphans (https://tex.stackexchange.com/questions/2347/avoiding-page-breaks-shortly-after-section-subsection-headings)
+%=======================================================
+\usepackage[nobottomtitles*]{titlesec}
 
 %======================================================
 %% Numbering depth
