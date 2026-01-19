@@ -130,7 +130,7 @@ sort={quantitative|analysis|}}%
 \bibglsnewentry{generative-artificial-intelligence}%
 {parent={artificial-intelligence},
 sort={generative|artificial|intelligence|}}%
-{generative artificial intelligence }%
+{generative artificial intelligence}%
 {a digital technology able to generate new content in response to prompts from the user}
 
 
@@ -467,6 +467,13 @@ sort={critical|theory|}}%
 {sort={data|anonymisation|technique|}}%
 {data anonymisation technique}%
 {a method used to protect individuals' privacy by transforming or removing personal data so that people cannot be directly or easily identified from the data set}
+
+
+\bibglsnewentry{data-bias}%
+{plural={data biases},
+sort={data|bias|}}%
+{data bias}%
+{a tendency of data in a sample to over- or under-represent certain characteristics of the population of interest}
 
 
 \bibglsnewentry{data-generation-method}%
@@ -1149,6 +1156,12 @@ category={sampling}}%
 {re-implementing a solution to a well-known problem through a well-known development process and well-practiced skills}
 
 
+\bibglsnewentry{novelty}%
+{sort={novelty|}}%
+{novelty}%
+{when the knowledge you claim to have generated is a genuine advancement of knowledge in your discipline}
+
+
 \bibglsnewentry{novelty-weakness}%
 {sort={novelty|weakness|}}%
 {novelty weakness}%
@@ -1435,6 +1448,12 @@ sort={raw|datum|}}%
 {sort={reflexivity|}}%
 {reflexivity}%
 {examining your own views, assumptions and beliefs, thinking critically about how they influence your research; through reflexivity you can bring more objectivity into your research choices}
+
+
+\bibglsnewentry{reliability}%
+{sort={reliability|}}%
+{reliability}%
+{when the steps you have taken to establish your claim of new knowledge are dependable, can be replicated under the same conditions or are sufficiently repeatable in other contexts, or the descriptions and interpretations you have provided are incoherent or inadequate}
 
 
 \bibglsnewentry{reliability-weakness}%
@@ -1789,9 +1808,10 @@ category={observation}}%
 {problem solving approach focused on understanding and improving systems and their dynamics}
 
 
-\bibglsnewentry{tables-and-charts}%
-{sort={tables|and|charts|}}%
-{tables and charts}%
+\bibglsnewentry{table-and-chart}%
+{plural={tables and charts},
+sort={table|and|chart|}}%
+{table and chart}%
 {tools to summarise and visualise data in order to identify interesting patterns}
 
 
