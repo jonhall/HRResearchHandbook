@@ -1,4 +1,4 @@
-\begin{PartTitlePage}{The \Glsplf{datum}}{stage4}
+\begin{PartTitlePage}{The Data}{stage4}
 In~\Cref{stage4} you will focus on your research methods and their application to generate and analyse the \glsplf{datum} you need in your project to make your original contribution to knowledge.	
 \end{PartTitlePage}
 
@@ -168,7 +168,7 @@ You can skip this activity if \glsf{sampling} is not required by your choice of 
 
 \section{Sharing and anonymising data}\label{sect:sharingAnonymising}
 
-Modern standards of research often require that your \glsplf{datum} be made available to other researchers so that your research can be verified or even rerun. In fact, it is increasingly the case that \glsplf{datum} sets are published and shared by entire research communities, often used as testbeds or benchmarks for new knowledge contributions. For instance, in medical applications of \glsforce{machine-learning}{Machine-Learning}, in which new knowledge can be the fractional improvement of the performance of an AI algorithm to, say, diagnose a medical condition from images, not being able to share the \glsplf{datum} set you have used in your research can negate your knowledge contribution. Therefore, you should consider whether your \glsplf{datum} (or a \glsf{sample} of it) should appear as an appendix to your dissertation, or whether they should be made available in their entirety to your examiners, or even to the wider research community, and how.
+Modern standards of research often require that your \glsplf{datum} be made available to other researchers so that your research can be verified or even rerun. In fact, it is increasingly the case that \glsplf{datum} sets are published and shared by entire research communities, often used as testbeds or benchmarks for new knowledge contributions. For instance, in medical applications of Machine Learning, in which new knowledge can be the fractional improvement of the performance of an AI algorithm to, say, diagnose a medical condition from images, not being able to share the \glsplf{datum} set you have used in your research can negate your knowledge contribution. Therefore, you should consider whether your \glsplf{datum} (or a \glsf{sample} of it) should appear as an appendix to your dissertation, or whether they should be made available in their entirety to your examiners, or even to the wider research community, and how.
 
 Modern standards of research also require you to comply with regulations on \glsplf{datum} privacy and protection. These put many constraints on the use of \glsplf{personal-datum} as they are designed to protect the identity of the people they refer to\footnote{You encountered GDPR in~\Cref{sect:personalData}.}. 
 
@@ -277,7 +277,7 @@ For each \glsf{data-generation-method} in this chapter\footnote{And also for eac
 
 You concluded~\Cref{stage3} with an initial draft of your methodology which included both your chosen \glsf{research-strategy} and possible research methods within. Now it's the time to consider those methods in detail to ensure they are the right ones for your project, to plan how to apply them, and to start generating your \glsplf{datum}. 
 
-\subsection{Choosing and applying your data generation methods}\label{sect:choosing-data-generation}
+\section{Choosing and applying your data generation methods}\label{sect:choosing-data-generation}
 
 The next two activities will help you do that for your chosen \glsplf{datum} generation methods. These are very substantial activities which will allow you to take a significant step in your research.
 
@@ -313,7 +313,7 @@ You may have to iterate with your supervisor to refine your choices and procedur
 
 %%%Intentionally \ref, not~\Cref
 %\newcommand{\tick}{$\Box$}
-\begin{SimpleNColTable}{tab:generationMethodsChoice}{2}[\narrowtablewidth]{\Glsplf{datum} generation methods}[rX[c, wd=20ex]]
+\begin{SimpleNColTable}{tab:generationMethodsChoice}{2}[\narrowtablewidth]{Data generation methods}[rX[c, wd=20ex]]
 	Method & Section\\
 	\Glsplf{observation}&\ref{sect:observations}\\
 	\Glsplf{questionnaire}&\ref{sect:questionnaire}\\
@@ -1099,11 +1099,11 @@ To be successful with statistical modelling you also need to consider:
 
 \paragraph{Foundational knowledge} Statistical techniques can be complex and require specialised knowledge and skills to apply them effectively, particularly for advanced modelling, but also to provide meaningful interpretation of outcomes. As for \glsf{mathematical-thinking}, unless you have sufficient foundational knowledge, you need to evaluate carefully whether you will be able to develop the required advanced knowledge and skills within the remit of your project.
 
-\paragraph{\Glsplf{datum} \glsf{bias}} Even when your \glsplf{datum} are of good quality, they can still be biased in that they may over- or under-represent certain characteristics of the \glsf{population} of interest, leading to invalid or unreliable generalisations. For instance, if all \glsplf{datum} in a clinical trial for a new medicinal drug are from male participants, then the effectiveness or otherwise of the drug for female patients cannot be inferred from those \glsplf{datum}, so that any \glsf{generalisation} to the wider \glsf{population} may be unsound.
+\paragraph{\Glsf{data-bias}} Even when your \glsplf{datum} are of good quality, they can still be biased in that they may over- or under-represent certain characteristics of the \glsf{population} of interest, leading to invalid or unreliable generalisations. For instance, if all \glsplf{datum} in a clinical trial for a new medicinal drug are from male participants, then the effectiveness or otherwise of the drug for female patients cannot be inferred from those \glsplf{datum}, so that any \glsf{generalisation} to the wider \glsf{population} may be unsound.
 
 \paragraph{Confounding factors} Unfortunately, things can still go wrong even when you have good quality, unbiased \glsplf{datum} to start with. This may be due to {confounding factors} you may not have considered in your study. For instance, say you are interested in the possible relationship between physical activity and heart health. If you only focus on (some measures for) those two variables, you are likely to miss possible effects of, say, age and gender on heart health in addition to physical activity, and may, once again, infer the wrong conclusions. 
 
-\paragraph{\Glsf{model} assumptions} Statistical models are usually based on specific assumptions made of \glsplf{datum} characteristics. For instance, many statistical tests assume that the \glsplf{datum} are normally distributed\footnote{You will study these topics in~\Cref{sect:inferentialStatistics}}. It is therefore essential for you to check that all required assumptions hold, otherwise your \glsf{model}, and any conclusions you derive from it, may be invalid.
+\paragraph{Model assumptions} Statistical models are usually based on specific assumptions made of \glsplf{datum} characteristics. For instance, many statistical tests assume that the \glsplf{datum} are normally distributed\footnote{You will study these topics in~\Cref{sect:inferentialStatistics}}. It is therefore essential for you to check that all required assumptions hold, otherwise your \glsf{model}, and any conclusions you derive from it, may be invalid.
 
 \paragraph{Ethical considerations} As \glsf{statistical-thinking} relies on \glsplf{datum}, then ethical and legal issues arise in relation to how the \glsplf{datum} are obtained and used in your research, particularly around privacy and \glsplf{datum} protection. In addition, ethical issues arise in relation to  social implications of applying \glsf{statistical-thinking} in decision-making, particularly when decisions are increasingly taken by algorithms. This can lead to inequality and discrimination, as demonstrated by some shocking cases which have been reported widely -- such as the COMPAS \glsf{system}, discriminating against black offenders, or the Amazon's recruitment algorithm, discriminating against women. 
 
