@@ -198,3 +198,35 @@
 %=======================================================
 \newcommand\etc{etc}
 \newcommand{\glsforce}[2]{\glsadd{#1}\glshyperlink[#2]{#1}}
+
+%=======================================================
+% Initial background page
+%=======================================================
+\usepackage{eso-pic}
+
+% Put a full-page background image on the *current* page
+\newcommand{\BackgroundPic}[1]{%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+    }%
+  }%
+}
+
+%=======================================================
+% Massive title text
+%=======================================================
+\makeatletter
+\renewcommand{\maketitle}{%
+  \thispagestyle{empty}% no page number on title page
+  \begin{center}
+    {\HUGE\bfseries \@title\par}
+    \vspace{1.2\baselineskip}
+    {\Huge \@author\par}
+    \vspace{0.8\baselineskip}
+    {\large \@date\par}
+  \end{center}
+  \BackgroundPic{Images/Coverpic}
+  \clearpage
+}
+\makeatother
