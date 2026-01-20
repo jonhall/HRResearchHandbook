@@ -200,6 +200,11 @@
 \newcommand{\glsforce}[2]{\glsadd{#1}\glshyperlink[#2]{#1}}
 
 %=======================================================
+% Poetix press macros
+%=======================================================
+\newcommand\poetix{\textit{poetix}}
+
+%=======================================================
 % Initial background page
 %=======================================================
 \usepackage{eso-pic}
@@ -209,6 +214,18 @@
   \AddToShipoutPictureBG*{%
     \AtPageLowerLeft{%
       \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+    }%
+  }%
+}
+
+% #1 = filename, #2 = width (e.g. 18mm), #3 = inset from right, #4 = inset from bottom
+\newcommand{\AddCornerLogoToAllPages}[4]{%
+  \AddToShipoutPictureBG{%
+    \AtPageLowerLeft{%
+      \raisebox{#4}{%
+        \hspace*{\dimexpr\paperwidth-#3\relax}%
+        \makebox[0pt][r]{\includegraphics[width=#2]{#1}}%
+      }%
     }%
   }%
 }
