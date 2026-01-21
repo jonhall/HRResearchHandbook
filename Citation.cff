@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use or cite this work, please cite it as below."
 type: book
-title: "HR Research Handbook"
+title: "Academic Research: A Guide for the Perplexed"
 authors:
-  - family-names: "Hall"
-    given-names: "Jon"
   - family-names: "Rapanotti"
     given-names: "Lucia"
+  - family-names: "Hall"
+    given-names: "Jon"
 publisher: "poetix press"
-repository-code: "https://github.com/<ORG_OR_USER>/HRResearchHandbook"
+repository-code: "https://github.com/jonhall/HRResearchHandbook"
 license: "CC-BY-NC-ND-4.0"
