@@ -2,11 +2,11 @@
 
 A **free** 450-page book on research: how it works, how to do it well, and how to stay constructively critical without losing the joy.
 
+## How to read
+Download the latest release from the GitHub “Releases” page on the right.
+
 ## What’s in this repository
 - `/Manuscript/` — LaTeX source
-
-## How to read
-Download the latest release from the GitHub “Releases” page.
 
 ## Licence
 The book text and figures are licensed under: CC BY-NC-ND 4.0 (share widely, no changes, no commercial reuse)
