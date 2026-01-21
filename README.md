@@ -13,7 +13,8 @@ We recommend `latexmk`:
 
 ```sh
 cd manuscript
-latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
+latexmk -xelatex -interaction=nonstopmode -file-line-error @MastersHandbook.tex
+```
 
 ## How to read
 Download the latest release from the GitHub “Releases” page.
@@ -22,7 +23,7 @@ Download the latest release from the GitHub “Releases” page.
 The book text and figures are licensed under: CC BY-NC-ND 4.0 (share widely, no changes, no commercial reuse)
 See `LICENSE`.
 
-Code/scripts (if any) are licensed under: MIT (or Apache-2.0).
+Code/latex/scripts are licensed under: MIT (or Apache-2.0).
 See `LICENSE-CODE`.
 
 ## Support
