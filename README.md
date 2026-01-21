@@ -1,20 +1,9 @@
 # <Book Title>
 
-A 450-page book on research: how it works, how to do it well, and how to stay constructively critical without losing the joy.
+A **free** 450-page book on research: how it works, how to do it well, and how to stay constructively critical without losing the joy.
 
 ## What’s in this repository
 - `/Manuscript/` — LaTeX source
-
-## Build the book (XeLaTeX)
-
-This project is built with **XeLaTeX**.
-
-We recommend `latexmk`:
-
-```sh
-cd manuscript
-latexmk -xelatex -interaction=nonstopmode -file-line-error @MastersHandbook.tex
-```
 
 ## How to read
 Download the latest release from the GitHub “Releases” page.
@@ -37,3 +26,15 @@ See `CONTRIBUTING.md`.
 ## Citation
 - BibTeX: `CITATION.bib`
 - GitHub citation metadata: `CITATION.cff`
+
+## Building the book from source (XeLaTeX)
+
+This project is built with **XeLaTeX**.
+
+We recommend `latexmk`:
+
+```sh
+cd manuscript
+latexmk -xelatex -interaction=nonstopmode -file-line-error @MastersHandbook.tex
+```
+
