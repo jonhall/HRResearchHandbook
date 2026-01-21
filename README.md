@@ -4,15 +4,16 @@ A 450-page book on research: how it works, how to do it well, and how to stay co
 
 ## What’s in this repository
 - `/Manuscript/` — LaTeX source
-- `/Releases/` — tagged PDFs/EPUBs of official editions
 
-## Building the book
-Requirements:
-- TeX Live (or equivalent)
-- <any other tools>
+## Build the book (XeLaTeX)
 
-Build:
-- `latexmk -pdf <mainfile>.tex`
+This project is built with **XeLaTeX**.
+
+We recommend `latexmk`:
+
+```sh
+cd manuscript
+latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
 
 ## How to read
 Download the latest release from the GitHub “Releases” page.
