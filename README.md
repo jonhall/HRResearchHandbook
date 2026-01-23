@@ -36,7 +36,7 @@ See `CONTRIBUTING.md`.
 This project is built with **XeLaTeX**.
 
 ### Source
-You can also download the source LaTeX from `/Manuscript/`.
+You can download the source LaTeX from `/Manuscript/`.
 
 To build, we recommend `latexmk`:
 
