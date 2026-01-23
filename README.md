@@ -1,4 +1,6 @@
-![HR Research Handbook cover](Assets/cover-small.png)# HR Research Handbook
+![HR Research Handbook cover](Assets/cover-small.png)
+
+# A Research Handbook
 
 Our **free** 450-page handbook on research: how it works, how to do it well, and how to stay constructively critical without losing the joy.
 
