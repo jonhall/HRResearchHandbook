@@ -1,0 +1,347 @@
+bib2gls 4.7 (2025-11-13)
+Default encoding: UTF-8
+Current working directory: /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook
+Reading @MastersHandbook.log
+Encoding: not set
+Detected package fontspec
+Detected package glossaries-extra 2025/11/03
+Detected package glossaries 2025/11/09
+Detected package mfirstuc 2025/04/03
+No sentence case protection required now
+Default setting --no-mfirstuc-protection now applied, use --mfirstuc-protection to revert
+Default setting --no-mfirstuc-math-protection now applied, use --mfirstuc-math-protection to revert
+Reading @MastersHandbook.aux
+Encoding: UTF-8
+Reading Chapters/Foreword.aux
+Encoding: UTF-8
+Reading Chapters/HowTo.aux
+Encoding: UTF-8
+Reading Chapters/Introduction.aux
+Encoding: UTF-8
+Reading Chapters/FrameworkOverview.aux
+Encoding: UTF-8
+Reading Chapters/Stage1.aux
+Encoding: UTF-8
+Reading Chapters/Stage2.aux
+Encoding: UTF-8
+Reading Chapters/Stage3.aux
+Encoding: UTF-8
+Reading Chapters/Stage4.aux
+Encoding: UTF-8
+Reading Chapters/Stage5.aux
+Encoding: UTF-8
+Reading Chapters/Closing.aux
+Encoding: UTF-8
+TeX character encoding: UTF-8
+Initialising resource @MastersHandbook.glstex.
+Parsing bib files for resource @MastersHandbook.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading Bibs/glossary.bib
+Encoding: UTF-8
+Cross-resource references allowed.
+Processing resource @MastersHandbook.glstex.
+Selecting entries for resource @MastersHandbook.glstex.
+texparserlib: \href{http://prisma-statement.org/prismastatement/checklist.aspx}{PRISMA} -> PRISMA
+texparserlib: \emph{viva voce} -> viva voce
+texparserlib: \emph{in-vivo} -> in-vivo
+Writing /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex
+Encoding: UTF-8
+abstraction
+academic-literature
+academic-research
+accidental-plagiarism
+action-research
+active-reader
+algorithmic-bias
+analysis-method
+qualitative-analysis
+quantitative-analysis
+anti-positivism
+artificial-intelligence
+generative-artificial-intelligence
+association
+bell-curve
+beneficiary
+bias
+bias-weakness
+cognitive-bias
+confirmation-bias
+novelty-bias
+observation-bias
+observer-bias
+recall-bias
+reliability-bias
+validity-bias
+bibliographic-management-tool
+bin
+bin-size
+boolean-operator
+bcw-model
+box-and-whiskers-plot
+boxplot
+bracketing
+capstone-project
+case-study-research
+centrality
+mean
+citation-searching
+claim
+closed-form-solution
+cluster-sampling
+code
+code-categorisation
+codebook
+coding
+collaborative-reflexivity
+computational-model
+computational-thinking
+concept-map
+concept-matrix
+confounding-factor
+constructivism
+content-analysis
+contingency-table
+convenience-sampling
+copyright
+correlation
+covert-observation
+critical-theory
+critical-thinking
+critical-writing
+cross-tabulation
+data-anonymisation-technique
+data-bias
+data-generation-method
+data-source
+datum
+nominal-datum
+numerical-datum
+ordinal-datum
+primary-datum
+qualitative-datum
+decision
+deductive-coding
+deductive-reasoning
+deliverable
+delphi
+demographic-question
+descriptive-coding
+descriptive-encoding
+descriptive-problem
+design-problem
+design-science-research
+design-creation-strategy
+discourse-analysis
+dispersion
+diversity
+document
+double-barrelled-question
+duelling-moderator
+empirical-datum
+epistemology
+equality
+equity
+essential-question
+ethics
+ethnography
+evaluative-problem
+evidence
+experiential-learning
+experimental-research
+explanatory-problem
+fallacy
+logical-fallacy
+circular-reasoning
+false-dichotomy
+hasty-generalisation
+post-hoc-ergo-propter-hoc
+sweeping-generalisation
+falsification
+fieldwork
+focus-group
+mini-focus-group
+frequency-table
+gantt-chart
+gaussian-distribution
+genai
+generalisation
+generation-method
+grey-literature
+grounded-theory
+group-dynamics
+groupthink
+hallucination
+hawthorne-effect
+hiding
+histogram
+hypothesis
+alternative-hypothesis
+null-hypothesis
+inclusion
+indigenous
+inductive-coding
+inductive-reasoning
+integrated-development-environment
+intellectual-property
+interval-datum
+interview
+in-vivo
+journaling
+knowledge-gap
+learning-outcome
+longitudinal-datum
+machine-learning
+masking
+mathematical-logical-proof
+mathematical-thinking
+median
+meta-analysis
+milestone
+mixed-methods-research
+mode
+model
+modelling-method
+causal-loop-diagram
+influence-diagram
+stock-and-flow-diagram
+system-model
+systems-map
+unified-modeling-language
+multi-method-research
+narrative-analysis
+narrative-autobiography
+narrative-review
+naturalistic-observation
+non-probability-sampling
+non-random-sampling
+normal-design
+novelty
+novelty-weakness
+numerical-approximation
+observation
+observations-measurements
+ontology
+overt-observation
+patent
+personal-datum
+sensitive-personal-datum
+phenomenology
+phenomenon
+pivot-table
+plagiarism
+self-plagiarism
+plan-act-reflect-cycle
+point-datum
+population
+positionality-statement
+positivism
+post-positivism
+predictive-problem
+primary-evidence
+PRISMA
+probability-distribution
+normal-distribution
+probability-sampling
+profiling-question
+proof-by-contradiction
+proposition
+pseudonymisation
+purposive-sampling
+p-value
+qualification
+quantitative-datum
+questionnaire
+random-sampling
+randomisation
+range
+ratio-datum
+raw-datum
+reader-response-exercise
+reason
+reflection
+reflexive-writing
+reflexivity
+reliability
+reliability-weakness
+research-aim
+research-assets
+research-beneficiary
+research-deliverable
+research-design
+research-method
+scientific-method
+research-methodology
+research-objective
+research-paradigms
+research-problem
+research-process
+research-risk
+research-strategy
+research-style
+response-option
+review-article
+risk
+sample
+sample-bias
+sampling
+sampling-frame
+saturation
+search-term
+secondary-datum
+secondary-evidence
+selection-bias
+semi-structured-interview
+significance
+simple-random-sampling
+simulation
+skewness
+snowball-sampling
+social-desirability-bias
+spread
+stakeholder
+standard-deviation
+statistical-analysis
+statistical-datum
+categorical-datum
+scalar-datum
+statistical-method
+descriptive-statistics
+inferential-statistics
+statistical-significance
+statistical-thinking
+stratified-random-sampling
+structured-interview
+structured-observation
+summary-comparison-matrix
+survey-research
+synthesis
+system
+systematic-review
+systemic-thinking
+table-and-chart
+thematic-analysis
+theory
+trade-mark
+trade-secret
+triangulation
+data-source-triangulation
+investigator-triangulation
+methodological-triangulation
+theory-triangulation
+two-moderator-focus-group
+two-way-focus-group
+unstructured-interview
+validity
+internal-validity
+validity-weakness
+variable
+non-numerical-variable
+numerical-variable
+version-control-system
+visualisation-technique
+viva-voce
+warrant
+work-plan
+writing-outcome
+297 entries written to /Users/jon/Library/Mobile Documents/com~apple~CloudDocs/Texifier/Masters Handbook/./@MastersHandbook.glstex.
